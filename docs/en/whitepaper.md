@@ -2,19 +2,19 @@
 
 > **Canonical whitepaper:** [https://www.novapage.online/en/docs/](https://www.novapage.online/en/docs/) · [中文](https://www.novapage.online/docs/)
 >
-> This file is a community-repo overlay, not a second product. Do not invent metrics or customers. Official chapters 6, 8, 9, 10 (team, enterprise security, landing guide, architecture) stay on the official site — do not claim they ship when you clone this repo.
+> Numbers and wording for the community workbench. Team hosting and private-pack chapters stay on the official site.
 
 Machine-readable summary: [llms.txt](https://www.novapage.online/llms.txt)
 
 ## 1. What Nova is
 
-Nova Ai-Studio 2.0 is an AI project-delivery platform for companies and teams: an enterprise Agent that finishes work.
+Nova Ai-Studio 2.0 is an Agent workbench that delivers project files through conversation. This community edition runs that workbench on your machine.
 
 Goal-Loop: **listen → analyze → set targets → produce → accept.** Acceptance is a file checklist, not a verbal “done”.
 
 Smart routing: light steps on small models, hard steps on flagship models. Official tests: on typical multi-step jobs with routing + a model pool, token cost can drop by up to about 70% vs all-flagship; some heavy orchestrations around 1/6. **Upper-bound wording, not an SLA.** Cite [claims](https://www.novapage.online/claims/).
 
-The hosted product is browser-only, supports teams, and can stay inside a customer network. **This GitHub cut does not:** zero-install SaaS, multi-user sharing, or the commercial Docker private-pack. It keeps the same engine, Hub, deliverable checklist, and Goal-Loop workbench for one local admin.
+This repo is one-operator self-host: `pnpm run dev`, one `admin`, data on disk. Templates and the Hub cover “I do not know the first sentence.” Team accounts or hosted options: official site.
 
 ## 2. What it can produce
 

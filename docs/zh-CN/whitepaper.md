@@ -1,8 +1,8 @@
 # 开源版白皮书摘要
 
-> **完整白皮书（请以此为准）**：[https://www.novapage.online/docs/](https://www.novapage.online/docs/) · [English](https://www.novapage.online/en/docs/)
+> **完整白皮书**：[https://www.novapage.online/docs/](https://www.novapage.online/docs/) · [English](https://www.novapage.online/en/docs/)
 >
-> 本文只做社区开源仓对照：不另编数字、不另编客户案例、不写系统架构书。官网第 6、8、9、10 章（团队协作、企业安全与私有化、企业级应用指南、系统架构）请直接读官网，不要把那些能力写成「克隆本仓就有」。
+> 本文给社区版对照数字和说法，不另编客户案例。团队托管、私有化交付包请看官网，不写成「克隆本仓就有」。
 
 机器可读总述：[llms.txt](https://www.novapage.online/llms.txt)
 
@@ -10,7 +10,7 @@
 
 ## 1. Nova 是什么
 
-Nova Ai-Studio 2.0 是给企业和团队用的 AI 项目交付平台，也可以理解为「能完成项目的企业级人工智能 Agent」。
+Nova Ai-Studio 2.0 是用对话交付项目文件的 Agent 工作台。社区版把这套工作台跑在你自己的电脑上。
 
 Goal-Loop：
 
@@ -20,16 +20,7 @@ Goal-Loop：
 
 智能路由：简单步骤走轻量模型、关键步骤再上旗舰。官方实测，在启用路由与模型池的典型多步骤交付里，相对全程旗舰直打，Token 费用最高约可节省七成；部分硬核编排可到约 1/6。**这是上限口径，不是 SLA。** 引用方式见 [Token 节省方法论](https://www.novapage.online/claims/)。
 
-官网白皮书还写明：官网上打开浏览器就能用；能多人一起用；数据可放公司内网（私有化）；不会写提示词也能从模板和能力入口开始。
-
-**本仓库做不到的官网能力（请不要在开源介绍里写成已交付）：**
-
-- 免安装的托管 SaaS（社区版要本机 `pnpm run dev`）
-- 多用户团队共享项目（社区版只有 `admin`）
-- 官网那套多租户隔离与 Docker 私有化交付包（商务见 [联系](https://www.novapage.online/contact/)）
-
-社区版保留同一套对话引擎、能力中心、成果清单与 Goal-Loop 工作台，给你一个人在本机跑。
-
+本仓是单人自托管：`pnpm run dev`、一个 `admin`、数据在本机。不知道怎么开口时用模板和能力中心。团队账号或托管方案见官网。
 ---
 
 ## 2. 具体能做什么

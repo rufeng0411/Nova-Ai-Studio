@@ -1,1 +1,1 @@
-Nova Ai-Studio 2.0: conversation-driven Agent that delivers files, not chat. Official product https://www.novapage.online/ - AGPL community edition (self-host, one admin, 400+ Hub skills).
+Self-host Nova Ai-Studio: Agent workbench that writes files, not chat logs. AGPL. 400+ Hub skills, Goal-Loop acceptance, keys stay on your machine.

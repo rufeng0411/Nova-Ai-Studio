@@ -1,24 +1,22 @@
 # 能力亮点
 
-> 结构跟官网首页八个亮点一致；数字跟白皮书一致。社区版差异单独标明。
+> 结构跟产品八个亮点一致；数字跟白皮书一致。本页写你在社区版工作台里能用到的。
 
-官网：[novapage.online](https://www.novapage.online/) · 白皮书：[docs](https://www.novapage.online/docs/)
+## 统计条
 
-## 统计条（官网）
-
-400+ 即用能力 · Goal-Loop · 35 条流程模板 · Token 最高约 70%（[方法论](https://www.novapage.online/claims/)）· SuperPreview 40+ 格式 · 企业可私有化
+400+ 即用能力 · Goal-Loop · 35 条流程模板 · Token 最高约 70%（[方法论](https://www.novapage.online/claims/)）· SuperPreview 40+ 格式 · 本机自托管
 
 ## ① Agent Harness
 
 Skills 与 MCP 统一编排，图像 / 视频 / 抓取等可以串起来，成果写入任务目录。Goal-Loop：听需求 → 做分析 → 定目标 → 搞生产 → 严验收。
 
-**社区版：** 工作台内核在；要跑通必须自己在后台配模型 Key 和需要的 MCP。
+跑通任务：在后台贴你自己的模型 Key，按需接 MCP。钥匙不经过别人的平台。
 
 ## ② 一句话，交付一整个项目
 
 对话就是工作流。调研报告、设计稿、视频脚本，说完即得——交给别人的是文件。
 
-**社区版：** 成果清单与预览在；没有官网那种多人共享项目。
+成果清单和预览都在工作台里。单人使用，文件留在本机项目目录。
 
 ## ③ 营销飞轮，六阶段
 
@@ -32,13 +30,13 @@ Skills 与 MCP 统一编排，图像 / 视频 / 抓取等可以串起来，成�
 
 对外统一写 **400+**，不展示精确目录数。发现入口与输入框「能力」双入口。官网写八大分类 Tab。
 
-**社区版：** 登录后 Hub 可浏览；「试一下」需要 Key。
+登录后 Hub 可浏览；「试一下」需要你自己的 Key。
 
 ## ⑥ 模型一池
 
 GPT、Claude、Gemini、通义、Seedream 等可统一接入，难任务旗舰、轻任务轻量。
 
-**社区版：** 不会替你提供平台 Key，在 `/admin/platform/service/models` 自己填。
+在 `/admin/platform/service/models` 自己填 Key，模型池由你接。
 
 ## ⑦ 流程模板
 
@@ -48,6 +46,6 @@ GPT、Claude、Gemini、通义、Seedream 等可统一接入，难任务旗舰�
 
 成果清单冻结；四十多种格式预览。假完成靠清单，不靠模型口头宣布。
 
-## 社区版额外裁掉的
+## 本仓范围
 
-N2 Bot 工作台入口、营销站、注册、多用户后台。详见 [README](../../README.zh-CN.md)。
+单人工作台。没有注册、没有多用户运营台、没有 N2 Bot 入口。详见 [README](../../README.zh-CN.md)。

@@ -3,78 +3,66 @@
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md) · [Français](README.fr.md)
 
 <p align="center">
-  <a href="https://www.novapage.online/"><img src="assets/community/official/home-hero.png" width="920" alt="Nova Ai-Studio 官网：用对话，交付整个项目"></a>
+  <img src="assets/community/official/home-hero.png" width="920" alt="Nova Ai-Studio：用对话，交付整个项目">
 </p>
 
-**产品主站（请先看这里）：[https://www.novapage.online/](https://www.novapage.online/)**
-
-Nova Ai-Studio 2.0 是企业级 AI Agent 平台：听懂需求、编排工具、写好成果、Goal-Loop 严验收。SaaS 即用，亦可完全私有化。完整产品白皮书、演示案例、Token 口径与 FAQ 都以官网为准。
-
-| | 链接 |
-| --- | --- |
-| 官网首页 | [novapage.online](https://www.novapage.online/) |
-| 产品白皮书 | [novapage.online/docs](https://www.novapage.online/docs/) |
-| 白皮书（EN） | [novapage.online/en/docs](https://www.novapage.online/en/docs/) |
-| 演示案例 | [novapage.online/showcase](https://www.novapage.online/showcase/) |
-| 常见问题 | [novapage.online/faq](https://www.novapage.online/faq/) |
-| Token 节省方法论 | [novapage.online/claims](https://www.novapage.online/claims/) |
-| 联系 / 合作 | [novapage.online/contact](https://www.novapage.online/contact/) |
-| 机器可读摘要 | [novapage.online/llms.txt](https://www.novapage.online/llms.txt) |
+**AGPL 社区版：在自己电脑上跑 Agent 工作台。** 用平常说话提需求，交出能打开的文件，而不是一屏聊完就散的文字。
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](LICENSE)
 [![Release](https://img.shields.io/github/v/release/rufeng0411/Nova-Ai-Studio)](https://github.com/rufeng0411/Nova-Ai-Studio/releases)
 
 ---
 
-## 这个 GitHub 仓库是什么
+## 社区版是什么
 
-本仓是同一产品内核的 **AGPL-3.0 社区版**：给你在自己的电脑上跑工作台。
+克隆、装依赖、登录，你就有一套本机工作台：能力中心、流程模板、成果清单、多格式预览。模型 Key 自己贴，数据在仓库旁的 SQLite，不交给别人的云。
 
-社区版是**个人 SaaS**：一个 `admin`、本地 SQLite 控制面、登录后进工作台。没有官网那种营销首页、没有注册、没有邀请码、没有多租户运营台，也没有工作台 **N2 Bot** 入口。
+主标语还是那句人话：**用对话，交付整个项目。**
 
-团队协作、浏览器免安装的 SaaS、Docker 私有化、企业安全与商务，走官网：[novapage.online](https://www.novapage.online/)。
+系统按 Goal-Loop 跑：听需求 → 做分析 → 定目标 → 搞生产 → 严验收。收尾对照清单，报告、PPT、网页、视频写进项目。不是「模型说做完了就算完」。
 
-品牌主称 **Nova Ai-Studio**。与 Amazon Nova / Nova Act 无关。不要把产品窄化成「只做营销的 AI」。
+品牌叫 **Nova Ai-Studio**。和 Amazon Nova / Nova Act 不是一家。办公、调研、营销、GEO、创作、媒体、开发、教育都能做，不要把它理解成「只做投放文案的 AI」。
 
 ---
 
-## 产品能干什么（与官网同一套说法）
+## 社区版好在哪
 
-官网主标语：**用对话，交付整个项目。**
+- **文件当交付，聊天当过程。** 同事要的是打得开的稿，不是对话框截图。
+- **钥匙和数据在你机器上。** 一个 `admin`，本地 SQLite（`.saas-dev-data/`，不进 git）。没有把对话送到别人 SaaS 的默认路径。
+- **开箱是工作台，不是 Prompt 玩具。** 登录就能逛 Hub；配上 Key 就能按模板开跑。
+- **数字跟产品白皮书同一套口径**（引用时不要改成保证）：
 
-你用平常说话提需求。系统按 Goal-Loop 跑：听需求 → 做分析 → 定目标 → 搞生产 → 严验收。收尾对照成果清单，交出报告、PPT、网页、视频等文件，而不是一屏聊完就散的文字。
-
-对外数字以官网白皮书为准（不要把内部目录精确数当卖点）：
-
-| 口径 | 写法 | 出处 |
+| | 怎么写 | 说明 |
 | --- | --- | --- |
-| 能力规模 | **400+** | 官网 / [白皮书](https://www.novapage.online/docs/) |
-| 流程模板 | **35** 条 | 官网白皮书第 2 章 |
-| Token | 典型多步骤任务中，相对全程旗舰直打，**最高约 70%**；部分硬核编排约 **1/6** | 场景依赖，见 [claims](https://www.novapage.online/claims/) |
-| 预览 | **40+** 种格式（SuperPreview） | 官网白皮书 |
-| 业务域 | **八大**分类 | 官网：办公、调研、营销飞轮、GEO、创作、媒体、开发、教育 |
+| 能力 | **400+** | Hub 里按业务域排，不是一张扁平技能表 |
+| 模板 | **35** 条 | 不知道第一句怎么说时，点模板开跑 |
+| Token | 相对全程旗舰直打，**最高约 70%**；部分硬核约 **1/6** | 场景依赖，见 [claims](https://www.novapage.online/claims/) |
+| 预览 | **40+** 种格式 | SuperPreview，对照清单看真文件 |
+| 业务域 | **八类** | 办公、调研、营销飞轮、GEO、创作、媒体、开发、教育 |
 
-八个产品亮点（官网首页原文结构）：Agent Harness、一句话交付项目、营销飞轮六阶段、调研获客、400+ 能力、模型一池、流程模板、SuperPreview 验收。展开见 [能力亮点](docs/zh-CN/capabilities.md) 与 [开源版白皮书摘要](docs/zh-CN/whitepaper.md)。
+亮点展开：[能力亮点](docs/zh-CN/capabilities.md) · [白皮书摘要](docs/zh-CN/whitepaper.md)
 
 ---
 
-## 官网 SaaS / 企业  vs  本仓社区版
+## 和别的用法怎么选
 
-| | [官网](https://www.novapage.online/) | 本仓库社区版 |
+不是贬谁，是避免装错工具。完整企业向对照也可看官网 [FAQ · 选型](https://www.novapage.online/faq/#q-compare)。
+
+| 你更常遇到的 | 它擅长 | 本仓社区版更适合 |
 | --- | --- | --- |
-| 给谁 | 企业与团队；SaaS 即用或私有化 | 一个人在自己机器上自托管 |
-| 怎么进 | 浏览器打开官网，登录（注册需邀请码） | `pnpm run dev` → `/login` → `admin` |
-| 账号 | 多用户、租户隔离 | 仅 `admin` |
-| 数据 | 云端或客户私有化边界 | 仓库旁 `.saas-dev-data/`（不进 git） |
-| 模型 Key | 平台可统一配置 | 你在后台自己填 |
-| 完整白皮书 / 案例 | 官网 docs、showcase | 本仓只放开源摘要 + 安装手册 |
-| N2 Bot | 以官网/企业配置为准 | 社区版关闭 |
+| ChatGPT / 各类网页聊天 | 把话说顺、即问即答 | 要把一轮对话收成可打开的项目文件，并且清单能对上 |
+| 套一层 Prompt 的开源壳 | 演示「能调模型」 | 要 Hub、模板、预览、验收，而不是一个输入框 |
+| Dify / FastGPT | 自建工作流、知识库问答 | 要的是「听懂需求 → 写好成果 → 对照文件验收」，不是先画节点 |
+| Coze（扣子）等 Bot 搭建器 | 对话 Bot、渠道分发 | 要落盘的报告 / PPT / 页面，而不是上线一个客服机器人 |
+| 把 Key 交给托管聊天 | 免安装 | Key 和成果必须留在本机时 |
+
+社区版自己的形状：单人自托管、pnpm 启动、AGPL 可审计。要团队账号或托管服务，文末有官网和合作方式。
 
 ---
 
-## 本机安装（社区版黄金路径）
+## 本机安装
 
-完整步骤只认仓内 **[安装](docs/zh-CN/install.md)**。摘要：
+完整步骤只认 **[安装手册](docs/zh-CN/install.md)**。摘要：
 
 ```bash
 git clone https://github.com/rufeng0411/Nova-Ai-Studio.git
@@ -86,19 +74,13 @@ pnpm install
 pnpm run dev
 ```
 
-打开启动器打印的 **Vite URL** → `/login` → `admin` + `.env` 口令 → 工作台。
+打开终端打印的 **Vite 地址**（占用会换端口）→ `/login` → 用户名 `admin` → 进入工作台。没有 Key 也能先逛 Hub；跑任务再在后台填模型。
 
-健康检查（Bridge，常见 3001，占用会 +1）：`GET /api/saas/health` 与 `GET /api/saas/health/ready`。
+健康检查：`GET /api/saas/health` 与 `GET /api/saas/health/ready`（Bridge 端口以启动器打印为准）。
 
-不要用 `dev:standalone`。不要把开发启动器当黄金路径。不要用裸 `npm install`（本仓库锁的是 pnpm）。
+不要裸 `npm install`（锁的是 pnpm）。不要把 `dev:standalone` 当这条路径。
 
----
-
-## 社区版明确没有的
-
-营销站首页、注册、邀请码、用户列表、用户组、线索、Showcase CMS、钱包积分 UI、工作台 **N2 Bot**。源码里可能仍有控制面骨架，运行时 403 / 无导航。
-
-没有模型 Key 也能登录看 Hub；真要跑任务再在 `/admin/platform/service/models` 填你自己的 Key。
+本仓按单人使用裁过：没有注册页、没有多用户运营台、没有工作台 N2 Bot。源码里若还有控制面骨架，运行时不会当作功能承诺。
 
 ---
 
@@ -107,18 +89,18 @@ pnpm run dev
 - [安装](docs/zh-CN/install.md)
 - [使用手册](docs/zh-CN/user-guide.md)
 - [产品总览](docs/zh-CN/product.md)
-- [开源版白皮书摘要](docs/zh-CN/whitepaper.md)（全文以 [官网白皮书](https://www.novapage.online/docs/) 为准）
+- [白皮书摘要](docs/zh-CN/whitepaper.md)
 - [能力亮点](docs/zh-CN/capabilities.md)
 - [信任与数据](docs/zh-CN/trust.md)
 - [配置](docs/zh-CN/configure.md)
 - [二次开发（配置级）](docs/zh-CN/develop.md)
 - [FAQ](docs/zh-CN/faq.md)
 
-## 交流合作
+---
 
-企业试用、私有化、商务：官网 [联系我们](https://www.novapage.online/contact/)。
+## 官网与合作
 
-也可以加微信 **山君**：
+产品介绍、演示案例、团队 / 托管方案见官网 [novapage.online](https://www.novapage.online/)。商务或交流可走 [联系我们](https://www.novapage.online/contact/)，或加微信 **山君**：
 
 <p align="center">
   <img src="assets/community/wechat-contact.png" width="280" alt="微信：山君">
@@ -126,4 +108,4 @@ pnpm run dev
 
 ## License
 
-GNU Affero General Public License v3.0. 见 [LICENSE](LICENSE)。通过网络提供基于本仓的服务时，需要开放对应源码。
+GNU Affero General Public License v3.0。见 [LICENSE](LICENSE)。通过网络提供基于本仓的服务时，需要开放对应源码。
