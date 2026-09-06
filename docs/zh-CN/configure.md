@@ -21,6 +21,6 @@
 
 启动器会探测空闲端口：Bridge / Express 常见 3001，Vite 常见 5173。以终端打印为准。
 
-## 回滚到商用树行为
+## 维护说明
 
-不要改商用源。在工厂仓库重新 `organize.py` 即可得到未 overlay 的拷贝。
+社区版开关见上表。完整产品与企业部署说明以官网为准：https://www.novapage.online/

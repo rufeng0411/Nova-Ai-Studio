@@ -1,1 +1,1 @@
-Self-hosted personal Agent workbench (Nova Ai-Studio). Login-only admin, Hub with 400+ skills, SQLite control plane.
+Nova Ai-Studio 2.0: conversation-driven Agent that delivers files, not chat. Official product https://www.novapage.online/ - AGPL community edition (self-host, one admin, 400+ Hub skills).

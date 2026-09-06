@@ -2,9 +2,9 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md) · [Français](README.fr.md)
 
-직접 호스팅하는 대화형 Agent 작업대. 로그인만 있는 개인 SaaS입니다.
+공식 사이트(먼저 보세요): [https://www.novapage.online/](https://www.novapage.online/)
 
-Full docs: [English README](README.md) · [简体中文](README.zh-CN.md)
+대화로 프로젝트 산출물을 만드는 기업용 AI Agent. 이 GitHub는 AGPL 개인 셀프호스트 판입니다. 전문은 [English README](README.md) · [简体中文](README.zh-CN.md).
 
 ```bash
 cp .env.example .env
@@ -13,7 +13,7 @@ pnpm install
 pnpm run dev
 ```
 
-Open the Vite URL → `/login` → `admin` + `SAAS_ADMIN_PASSWORD` → `/app`.
+Vite URL → `/login` → `admin` + `SAAS_ADMIN_PASSWORD` → 작업대.
 
 <p align="center">
   <img src="assets/community/wechat-contact.png" width="280" alt="WeChat: 山君">

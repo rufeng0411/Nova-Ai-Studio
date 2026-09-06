@@ -2,6 +2,8 @@
 
 This is the only golden path. Do not use `dev:standalone`, the Electron launcher, a marketing homepage, or a register page.
 
+Product story, whitepaper, and showcase live at <https://www.novapage.online/>. This page only boots the community edition on your machine.
+
 ## What you get
 
 - The Vite workbench URL printed by the launcher
