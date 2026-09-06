@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-07-05T15:49:14.778Z",
+  "source": "C:\\Users\\rufen\\Downloads\\web-s_0dd9097f-1a97-4ea7-b746-d4cbc61d0d__帮我做【雷蛇2026主题】的品牌传播 campaign 全案，按阶段一次规划执行，产出存 artif-2026-07-05 (1).html",
+  "mode": "html",
+  "totalSessions": 1,
+  "zeroInterventionRate": 0,
+  "false_incomplete_rate": 0,
+  "medianUserTurns": 9,
+  "phantomSessions": 0,
+  "rows": [
+    {
+      "file": "web-s_0dd9097f-1a97-4ea7-b746-d4cbc61d0d__帮我做【雷蛇2026主题】的品牌传播 campaign 全案，按阶段一次规划执行，产出存 artif-2026-07-05 (1).html",
+      "sessionPrefix": "0dd9097f",
+      "userTurns": 9,
+      "zeroIntervention": false,
+      "lastAcceptanceStatus": "unknown",
+      "phantomHintCount": 0,
+      "summaryMountInExport": true,
+      "phantomHints": []
+    }
+  ]
+}

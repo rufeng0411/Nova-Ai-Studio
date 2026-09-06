@@ -1,0 +1,55 @@
+{
+  "at": "2026-07-11T15:38:30.658Z",
+  "report": [
+    {
+      "id": "social-matrix-pipeline",
+      "status": "updated",
+      "checklistCount": 9
+    },
+    {
+      "id": "product-launch-full",
+      "status": "unchanged",
+      "checklistCount": 7
+    },
+    {
+      "id": "saas-growth-full",
+      "status": "updated",
+      "checklistCount": 8
+    },
+    {
+      "id": "brand-campaign-full",
+      "status": "unchanged",
+      "checklistCount": 6
+    },
+    {
+      "id": "geo-visibility-quick",
+      "status": "unchanged",
+      "checklistCount": 3
+    },
+    {
+      "id": "geo-visibility-standard",
+      "status": "unchanged",
+      "checklistCount": 5
+    },
+    {
+      "id": "geo-brand-full",
+      "status": "unchanged",
+      "checklistCount": 7
+    },
+    {
+      "id": "ai-citable-content",
+      "status": "unchanged",
+      "checklistCount": 2
+    },
+    {
+      "id": "geo-monitor-loop",
+      "status": "unchanged",
+      "checklistCount": 3
+    },
+    {
+      "id": "sales-battlecard-full",
+      "status": "unchanged",
+      "checklistCount": 3
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+name: Feature request
+description: Suggest an idea
+about: Suggest an idea for the community edition
+title: "[feat] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea
+    validations:
+      required: true

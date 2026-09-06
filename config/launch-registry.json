@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "x_pilotdeck_fork": "PD-SAAS-FORK: Creation launcher registry — Preflight Studio pilot",
+  "auto_seed": [
+    "html-ppt",
+    "open-design",
+    "ppt-master"
+  ],
+  "capabilities": {
+    "html-ppt": {
+      "launch_mode": "visual",
+      "launch_tier": "theme_deck",
+      "launch_profile_ref": "skills/vendor/html-ppt/launch.profile.json",
+      "replaces_elicitation": true,
+      "seeded_by": "vendor:html-ppt"
+    },
+    "open-design": {
+      "launch_mode": "visual",
+      "launch_tier": "design_system",
+      "launch_profile_ref": "skills/open-design/launch.profile.json",
+      "replaces_elicitation": true,
+      "seeded_by": "skill:open-design"
+    },
+    "ppt-master": {
+      "launch_mode": "visual",
+      "launch_tier": "office_form",
+      "launch_profile_ref": "skills/vendor/ppt-master/launch.profile.json",
+      "replaces_elicitation": true,
+      "seeded_by": "vendor:ppt-master"
+    }
+  },
+  "process_templates": {}
+}

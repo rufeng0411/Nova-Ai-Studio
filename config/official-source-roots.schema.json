@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nova-ai-studio.local/schemas/official-source-roots.schema.json",
+  "$comment": "PD-SAAS-FORK P0-3: domain-agnostic official source roots registry.",
+  "title": "Official source roots registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "roots"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "roots": {
+      "type": "array",
+      "maxItems": 1000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "rootUrl",
+          "sourceTier"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9._-]{0,79}$"
+          },
+          "rootUrl": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https?://"
+          },
+          "sourceTier": {
+            "enum": [
+              "brand_official",
+              "authorized_partner_official",
+              "platform_verified_official"
+            ]
+          },
+          "includeSubdomains": {
+            "type": "boolean",
+            "default": false
+          }
+        }
+      }
+    }
+  }
+}

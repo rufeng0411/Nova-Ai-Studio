@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "slug": "open-design",
+  "display_name": "Open Design",
+  "skill_root": "skills/open-design",
+  "launch_tier": "design_system",
+  "preflight_catalog_ref": "config/preflight-catalog-od.json",
+  "steps": [
+    {
+      "id": "surface",
+      "type": "visual_grid",
+      "title": "选择设计系统",
+      "required": true,
+      "source": "preflight-od-catalog"
+    }
+  ],
+  "compile": {
+    "prompt_template": "{brief}。使用 Open Design 设计系统 `{surface}`（{surface_label}）。必须先 read_skill open-design，写入系统分配任务目录，跳过模板问卷。"
+  }
+}

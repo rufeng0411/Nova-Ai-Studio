@@ -1,0 +1,15 @@
+{
+  "id": "rog-706c4514-user-ack-stop",
+  "description": "706c4514: user says 已完成没问题 → ack detected",
+  "userGoal": "用「PPT 生成」做一套演示稿：【吴裕泰2026新品上市，10页】",
+  "capabilitySlug": "ppt-master",
+  "expectedProfileId": "ppt-master",
+  "lastUserMessage": "已完成，没问题",
+  "expectUserAck": true,
+  "verifiedPaths": [
+    "artifacts/slides/wuyutai/wuyutai-deck.pptx"
+  ],
+  "missingPaths": [
+    "artifacts/slides/wuyutai/presentation.pptx"
+  ]
+}

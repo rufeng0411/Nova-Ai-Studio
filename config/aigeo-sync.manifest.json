@@ -1,0 +1,7 @@
+{
+  "upstream": "https://github.com/chnjames/AIGEOTOOLS",
+  "license": "MIT",
+  "pinnedRef": "main",
+  "syncedAt": "2026-06-02T00:00:00+08:00",
+  "note": "Headless modules referenced by scripts/aigeo-cli.py; Streamlit UI not integrated."
+}

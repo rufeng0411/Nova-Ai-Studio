@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-06-21T08:28:02.079Z",
+  "logPath": "F:\\Ai-pilotdeck\\.saas-dev-data\\telemetry\\turn-timing.jsonl",
+  "sampleCount": 109,
+  "firstTurnCount": 61,
+  "laterTurnCount": 48,
+  "memoryRetrievePresence": {
+    "firstTurnWithStage": 61,
+    "firstTurnTotal": 61,
+    "laterTurnWithStage": 48,
+    "laterTurnTotal": 48,
+    "firstTurnSkipRate": "0%"
+  },
+  "memoryRetrieveMs": {
+    "firstTurn": {
+      "p50": 5005,
+      "p95": 5015,
+      "count": 61
+    },
+    "laterTurn": {
+      "p50": 5008,
+      "p95": 5015,
+      "count": 48
+    }
+  },
+  "totalTurnMs": {
+    "firstTurn": {
+      "p50": 99870,
+      "p95": 573921
+    },
+    "laterTurn": {
+      "p50": 58407,
+      "p95": 741648
+    }
+  },
+  "p2Implementation": {
+    "shouldSkipMemoryRetrievalForTurn": true,
+    "defaultTimeoutMs": 5000,
+    "note": "首 turn 应无 turn.memory_retrieve 阶段；若样本为 0 请先 dev:saas 跑若干对话再重跑"
+  },
+  "estimatedFirstTurnTtftBenefitPct": 22.6
+}

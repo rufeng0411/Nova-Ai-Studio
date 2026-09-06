@@ -1,0 +1,748 @@
+{
+  "productInfo": {
+    "openAbout": "About Nova Ai-Studio",
+    "mainMenu": "Main menu",
+    "accountMenu": "Account menu",
+    "title": "Nova Ai-Studio",
+    "brandCaption": "Nova Ai Studio 2.0 · Enterprise agent platform",
+    "tagline": "A conversation-driven AI workspace for complex work in natural language.",
+    "intro": "Nova Ai-Studio is a conversation-driven AI workspace that helps you handle research, creation, office work, and development through natural language.",
+    "versionLabel": "Version",
+    "highlightsSection": "Platform highlights",
+    "groups": {
+      "workflow": "Conversation & efficiency",
+      "platform": "Capabilities & workflows",
+      "trust": "Enterprise security"
+    },
+    "highlights": {
+      "agent-harness": {
+        "title": "Agent Harness — complex work, delivered",
+        "heroSubtitle": "Skills and MCP in one chain—image, video, and web fetch orchestrated automatically, with outputs landing in artifacts/ instantly.",
+        "summary": "Media + web fetch + shippable outputs"
+      },
+      "conversation": {
+        "title": "One prompt, a full project",
+        "heroSubtitle": "From instruction to deliverables—reports, designs, and scripts—conversation is the workflow.",
+        "summary": "Natural language straight to complete project outputs"
+      },
+      "token-savings": {
+        "title": "Smart routing saves tokens",
+        "heroSubtitle": "Hard steps use flagship models; polish and layout use lighter models—up to ~70% token savings in official benchmarks without sacrificing quality.",
+        "summary": "Flagship for hard tasks, light models for easy ones—up to ~70% saved"
+      },
+      "flywheel": {
+        "title": "Marketing flywheel, six stages",
+        "heroSubtitle": "Research → strategy → creative → reach → publish → monitor—one continuous loop.",
+        "summary": "End-to-end marketing from research to monitoring"
+      },
+      "research-growth": {
+        "title": "Deep research, smart acquisition",
+        "heroSubtitle": "Multi-source queries and market intel in one pass—lead profiles auto-organized so you find and reach the right customers.",
+        "summary": "Powerful research and intelligent acquisition in one loop"
+      },
+      "capabilities": {
+        "title": "400+ ready-to-use capabilities",
+        "heroSubtitle": "Marketing, office, creation, development, and education—five hubs, one click away.",
+        "summary": "Five capability hubs, ready when you are"
+      },
+      "models": {
+        "title": "Top global models, one pool",
+        "heroSubtitle": "GPT, Claude, Gemini, Qwen, Seedream, and more—unified access with task-aware routing.",
+        "summary": "Leading models unified and routed per task"
+      },
+      "pipeline": {
+        "title": "Full-case templates, one click",
+        "heroSubtitle": "Not sure where to start? Nearly 30 proven templates from outline to deck to video.",
+        "summary": "Nearly 30 templates from outline to video in one run"
+      },
+      "security": {
+        "title": "Enterprise-grade security",
+        "heroSubtitle": "Tenant isolation for projects and memory, JWT auth, tool allowlists, sandboxed Always-On workspaces, and usage attribution—engine-level sandboxing plus SaaS isolation.",
+        "summary": "Tenant isolation, permission sandbox, and usage audit"
+      }
+    },
+    "securityNodes": {
+      "tenant": "Tenant isolation",
+      "auth": "JWT auth",
+      "tools": "Tool permissions",
+      "sandbox": "Workspace sandbox",
+      "audit": "Usage audit"
+    },
+    "stats": {
+      "capabilities": { "value": "400+", "label": "Capabilities" },
+      "flywheel": { "value": "6 stages", "label": "Marketing flywheel" },
+      "research": { "value": "Dual", "label": "Research · leads" },
+      "pipeline": { "value": "~30", "label": "Full-case templates" },
+      "token": { "value": "≈70%", "label": "Token savings" },
+      "security": { "value": "Multi-layer", "label": "Enterprise security" }
+    }
+  },
+  "buttons": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "create": "Create",
+    "edit": "Edit",
+    "close": "Close",
+    "confirm": "Confirm",
+    "submit": "Submit",
+    "retry": "Retry",
+    "refresh": "Refresh",
+    "search": "Search",
+    "clear": "Clear",
+    "copy": "Copy",
+    "download": "Download",
+    "upload": "Upload",
+    "browse": "Browse"
+  },
+  "tabsNavLabel": "Tools",
+  "resize": {
+    "dragToResize": "Drag to resize",
+    "dragToResizePanel": "Drag to resize panel"
+  },
+  "clipboard": {
+    "copy": "Copy to clipboard"
+  },
+  "mobileMenu": {
+    "open": "Open menu"
+  },
+  "gitPanel": {
+    "selectProject": "Pick a project to view source control.",
+    "fetch": "Fetch",
+    "loadingStatus": "Loading git status…",
+    "staged": "Staged",
+    "changes": "Changes",
+    "workingTreeClean": "Working tree clean.",
+    "commitMessagePlaceholder": "Commit message",
+    "commit": "Commit",
+    "push": "Push",
+    "dismiss": "Dismiss",
+    "aiSuggestCommit": "AI suggest commit message"
+  },
+  "tabs": {
+    "home": "Home",
+    "chat": "Agent",
+    "alwaysOn": "Scheduled Tasks",
+    "shell": "Shell",
+    "files": "Files",
+    "git": "Source Control",
+    "tasks": "Tasks",
+    "dashboard": "Usage",
+    "memory": "Memory",
+    "discover": "Capability Hub",
+    "skills": "Skills",
+    "me": "Me"
+  },
+  "mobile": {
+    "me": {
+      "title": "Me",
+      "roleAdmin": "Admin",
+      "roleMember": "Member",
+      "usageTokens": "Tokens (mo.)",
+      "usageRequests": "Requests",
+      "usageCost": "Est. cost",
+      "profile": "Profile",
+      "memory": "Memory",
+      "tasks": "Scheduled Tasks",
+      "theme": "Appearance",
+      "themeSystem": "System",
+      "themeLight": "Light",
+      "themeDark": "Dark",
+      "language": "Language",
+      "settings": "More Settings",
+      "productIntro": "About v2.0",
+      "logout": "Logout",
+      "back": "Back",
+      "desktopOnlyAdmin": "Admin console is desktop-only",
+      "desktopOnlyAdminHint": "Please open this system in a desktop browser to access the admin console.",
+      "backToApp": "Back to workspace"
+    },
+    "install": {
+      "title": "Add to Home Screen",
+      "subtitle": "Use it full-screen like an app, with faster launches.",
+      "action": "Install",
+      "dismiss": "Dismiss",
+      "iosStep1": "Tap the",
+      "iosStep2": "share button below, then choose",
+      "iosStep3": "\"Add to Home Screen\""
+    }
+  },
+  "skillsTab": {
+    "pickProject": "Open a project to manage its skills.",
+    "generalChat": "General chat — user-scope skills only",
+    "refresh": "Refresh",
+    "newSkill": "New",
+    "loading": "Loading…",
+    "empty": "No skills yet. Click \"New\" to install or create one.",
+    "selectHint": "Pick a skill on the left to view or edit its SKILL.md.",
+    "projectScope": "Project Skills",
+    "userScope": "User Skills",
+    "save": "Save",
+    "saving": "Saving…",
+    "savedSuccess": "Saved",
+    "delete": "Delete",
+    "deletedSuccess": "Deleted",
+    "revert": "Revert",
+    "confirmDelete": "Delete this skill? This will remove the entire folder.",
+    "discardUnsaved": "Discard unsaved changes?",
+    "newTitle": "New Skill",
+    "close": "Close",
+    "tabInstall": "Install from ClawHub",
+    "tabImport": "Import folder",
+    "tabCreate": "Write my own",
+    "importSource": "Source folder",
+    "importSourceHint": "Absolute path to a folder containing SKILL.md. Tilde (~) is expanded server-side.",
+    "importSourceHintBoth": "Pick a folder via the native dialog, or paste an absolute path. ~ is expanded server-side.",
+    "pickFolder": "Pick folder…",
+    "files": "files",
+    "complianceCheck": "Compliance check",
+    "complianceClean": "All checks passed.",
+    "symlinkUnavailable": "— unavailable for picker uploads (no source path on disk).",
+    "importSlug": "Slug (target folder name)",
+    "importSlugHint": "Defaults to the source folder name. Edit to override.",
+    "importMode": "Import mode",
+    "importModeCopy": "Copy",
+    "importModeCopyHint": "— independent copy, edits live in the skills folder.",
+    "importModeSymlink": "Symlink",
+    "importModeSymlinkHint": "— edits in the source folder propagate live; deleting the source breaks the skill.",
+    "importForce": "Overwrite if exists",
+    "importEnableForce": "Enable \"Overwrite\" to replace it.",
+    "importAction": "Import skill",
+    "importing": "Importing…",
+    "scan": "Scan",
+    "scanning": "Scanning…",
+    "foundSkills": "Found {{count}} skills in {{total}} subfolders",
+    "noSkillsFound": "No skills found in this folder.",
+    "selectAll": "Select All ({{count}})",
+    "importNSkills": "Import {{count}} skills",
+    "batchProgress": "Importing {{current}}/{{total}}…",
+    "batchComplete": "Batch import complete: {{success}} succeeded, {{failed}} failed",
+    "batchDone": "Done",
+    "noSkillMd": "No SKILL.md",
+    "alreadyExists": "already exists",
+    "scope": "Scope",
+    "scopeUser": "User",
+    "scopeProject": "Project",
+    "searchPlaceholder": "Search clawhub.com…",
+    "searchHint": "Type to search clawhub.com.",
+    "noResults": "No results.",
+    "install": "Install",
+    "installing": "Installing…",
+    "installForce": "Install (force)",
+    "installedSuccess": "Installed {{name}}",
+    "flaggedSuspicious": "\"{{slug}}\" is flagged as suspicious by VirusTotal. Click again to install with --force.",
+    "fieldSlug": "Slug",
+    "slugHint": "Folder name, e.g. my-skill",
+    "fieldName": "Display name",
+    "fieldNamePlaceholder": "Optional, defaults to slug",
+    "fieldDescription": "Description",
+    "descHint": "Shown in the slash menu — describe what this skill does and when to invoke it.",
+    "fieldBody": "Initial body (Markdown)",
+    "bodyHint": "Optional. Edit in detail later from the main view.",
+    "create": "Create skill",
+    "creating": "Creating…"
+  },
+  "newSessionInProject": "New session",
+  "deleteProject": "Delete project",
+  "boot": {
+    "authenticating": "Verifying your session",
+    "entering": "Preparing your workspace"
+  },
+  "status": {
+    "loading": "Loading...",
+    "success": "Success",
+    "error": "Error",
+    "failed": "Failed",
+    "pending": "Pending",
+    "completed": "Completed",
+    "inProgress": "In Progress"
+  },
+  "messages": {
+    "savedSuccessfully": "Saved successfully",
+    "deletedSuccessfully": "Deleted successfully",
+    "updatedSuccessfully": "Updated successfully",
+    "operationFailed": "Operation failed",
+    "networkError": "Network error. Please check your connection.",
+    "unauthorized": "Unauthorized. Please log in.",
+    "notFound": "Not found",
+    "invalidInput": "Invalid input",
+    "requiredField": "This field is required",
+    "unknownError": "An unknown error occurred"
+  },
+  "navigation": {
+    "settings": "Settings",
+    "home": "Home",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "logout": "Logout"
+  },
+  "common": {
+    "language": "Language",
+    "theme": "Theme",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "name": "Name",
+    "description": "Description",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "optional": "Optional",
+    "version": "Version",
+    "select": "Select",
+    "selectAll": "Select All",
+    "deselectAll": "Deselect All"
+  },
+  "time": {
+    "justNow": "Just now",
+    "minutesAgo": "{{count}} mins ago",
+    "hoursAgo": "{{count}} hours ago",
+    "daysAgo": "{{count}} days ago",
+    "yesterday": "Yesterday"
+  },
+  "fileOperations": {
+    "newFile": "New File",
+    "newFolder": "New Folder",
+    "rename": "Rename",
+    "move": "Move",
+    "copyPath": "Copy Path",
+    "openInEditor": "Open in Editor"
+  },
+  "mainContent": {
+    "loading": "Loading Nova Ai-Studio",
+    "settingUpWorkspace": "Setting up your workspace...",
+    "chooseProject": "Choose Your Project",
+    "selectProjectDescription": "Select a project from the sidebar to start coding with Nova Ai-Studio. Each project contains your chat sessions and file history.",
+    "tip": "Tip",
+    "createProjectMobile": "Tap the menu button above to access projects",
+    "createProjectDesktop": "Create a new project by clicking the folder icon in the sidebar",
+    "newSession": "New Session",
+    "untitledSession": "Untitled Session",
+    "projectFiles": "Project Files"
+  },
+  "alwaysOn": {
+    "title": "Always-On Overview",
+    "description": "Review discovery plans and scheduled cron jobs for the current project in one place.",
+    "lastUpdated": "Last updated: {{timestamp}}",
+    "loadingTitle": "Loading Always-On data",
+    "loadingDescription": "Reading discovery plans and scheduled tasks for the current project.",
+    "emptyTitle": "No scheduled tasks yet",
+    "emptyDescription": "This project does not currently have any visible durable cron jobs or session-scoped tasks.",
+    "summary": {
+      "total": "Total jobs",
+      "recurring": "Recurring jobs",
+      "failed": "Failed recently"
+    },
+    "status": {
+      "draft": "Draft",
+      "ready": "Ready",
+      "queued": "Queued",
+      "scheduled": "Scheduled",
+      "running": "Running",
+      "completed": "Completed",
+      "failed": "Failed",
+      "superseded": "Superseded",
+      "unknown": "Unknown"
+    },
+    "actions": {
+      "viewDetails": "View details for {{id}}",
+      "discoverTasks": "Discover tasks",
+      "runNow": "Run now"
+    },
+    "flags": {
+      "durable": "Durable",
+      "sessionScoped": "Session",
+      "oneShot": "One-shot",
+      "recurring": "Recurring",
+      "manualOnly": "Manual only",
+      "permanent": "Permanent"
+    },
+    "fields": {
+      "scope": "Scope",
+      "type": "Type",
+      "kind": "Kind",
+      "jobId": "Task ID",
+      "prompt": "Prompt",
+      "cron": "Cron schedule",
+      "status": "Status",
+      "createdAt": "Created",
+      "lastFiredAt": "Last fired",
+      "originSessionId": "Origin session",
+      "transcriptKey": "Transcript key",
+      "lastActivity": "Last activity",
+      "latestRunSummary": "Latest run summary",
+      "latestRunTaskId": "Latest run task ID",
+      "latestRunTranscript": "Latest run transcript",
+      "outputFile": "Output file"
+    },
+    "detail": {
+      "title": "Task details",
+      "oneShotRunNowHint": "Run now executes this one-shot task immediately without changing the original scheduled trigger. It can still fire again at the scheduled time.",
+      "missingTitle": "Task no longer available",
+      "missingDescription": "This task may have been deleted or become unavailable since the overview was loaded.",
+      "noLatestRun": "This task does not have a recorded background run yet.",
+      "sections": {
+        "definition": "Task definition",
+        "latestRun": "Latest run"
+      }
+    },
+    "values": {
+      "notUpdated": "Not updated yet",
+      "notAvailable": "Not available"
+    },
+    "confirmations": {
+      "delete": "Delete scheduled task {{id}}?"
+    },
+    "feedback": {
+      "deleted": "Deleted scheduled task {{id}}.",
+      "runNowStarted": "Started {{id}} immediately.",
+      "alreadyRunning": "Task {{id}} is already running."
+    },
+    "errors": {
+      "loadFailed": "Failed to load Always-On data.",
+      "deleteFailed": "Failed to delete cron job.",
+      "runNowFailed": "Failed to run cron job immediately."
+    },
+    "discovery": {
+      "title": "Discovery plans",
+      "description": "Structured plans generated by Always-On discovery before execution.",
+      "emptyTitle": "No discovery plans yet",
+      "emptyDescription": "Run discovery to generate structured plans for follow-up work.",
+      "summary": {
+        "running": "Running plans"
+      },
+      "actions": {
+        "viewDetails": "View details",
+        "openSession": "Open session",
+        "archive": "Archive"
+      },
+      "fields": {
+        "title": "Title",
+        "summary": "Summary",
+        "rationale": "Rationale",
+        "updatedAt": "Updated",
+        "planFile": "Plan file",
+        "sourceSession": "Discovery session",
+        "executionSession": "Execution session",
+        "executionStartedAt": "Execution started",
+        "executionLastActivityAt": "Last activity",
+        "latestSummary": "Latest summary",
+        "contextRefsWorkingDirectory": "Workspace signals",
+        "contextRefsMemory": "Memory references",
+        "contextRefsPlans": "Related plans",
+        "contextRefsCron": "Related cron jobs",
+        "contextRefsChats": "Recent chats"
+      },
+      "detail": {
+        "meta": "Plan metadata",
+        "plan": "Plan content",
+        "noContent": "This discovery plan does not have stored markdown content.",
+        "missingTitle": "Discovery plan no longer available",
+        "missingDescription": "This plan may have been updated or archived since the overview was loaded."
+      },
+      "feedback": {
+        "executionQueued": "Queued discovery plan {{id}} for execution.",
+        "archived": "Archived discovery plan {{id}}."
+      },
+      "errors": {
+        "executeFailed": "Failed to execute discovery plan.",
+        "archiveFailed": "Failed to archive discovery plan."
+      }
+    },
+    "cron": {
+      "title": "Scheduled cron jobs",
+      "description": "Existing durable and session-scoped cron tasks for this project."
+    }
+  },
+  "fileTree": {
+    "loading": "Loading files...",
+    "files": "Files",
+    "simpleView": "Simple view",
+    "compactView": "Compact view",
+    "detailedView": "Detailed view",
+    "searchPlaceholder": "Search files and folders...",
+    "clearSearch": "Clear search",
+    "name": "Name",
+    "size": "Size",
+    "modified": "Modified",
+    "permissions": "Permissions",
+    "noFilesFound": "No files found",
+    "checkProjectPath": "Check if the project path is accessible",
+    "noMatchesFound": "No matches found",
+    "tryDifferentSearch": "Try a different search term or clear the search",
+    "justNow": "just now",
+    "minAgo": "{{count}} min ago",
+    "hoursAgo": "{{count}} hours ago",
+    "daysAgo": "{{count}} days ago",
+    "newFile": "New File (Cmd+N)",
+    "newFolder": "New Folder (Cmd+Shift+N)",
+    "refresh": "Refresh",
+    "collapseAll": "Collapse All",
+    "selectProject": "Pick a project to browse files.",
+    "upload": "Upload files or folder",
+    "uploadFiles": "Upload files",
+    "uploadFolder": "Upload folder",
+    "downloadProject": "Download project as zip",
+    "deleteSelected": "Delete selected",
+    "close": "Close file tree",
+    "downloadFile": "Download file",
+    "openHtmlPreview": "Open HTML preview in new tab",
+    "empty": "This project is empty.",
+    "saasReadOnlyHint": "Read-only cloud browse. Download files here or from chat deliverables.",
+    "sync": {
+      "syncNow": "Sync to cloud",
+      "syncing": "Syncing"
+    },
+    "context": {
+      "rename": "Rename",
+      "delete": "Delete",
+      "copyPath": "Copy Path",
+      "download": "Download",
+      "reference": "Reference",
+      "newFile": "New File",
+      "newFolder": "New Folder",
+      "refresh": "Refresh",
+      "menuLabel": "File context menu",
+      "loading": "Loading..."
+    }
+  },
+  "projectWizard": {
+    "title": "Create New Project",
+    "steps": {
+      "type": "Type",
+      "configure": "Configure",
+      "confirm": "Confirm"
+    },
+    "step1": {
+      "question": "Do you already have a workspace, or would you like to create a new one?",
+      "existing": {
+        "title": "Existing Workspace",
+        "description": "I already have a workspace on my server and just need to add it to the project list"
+      },
+      "new": {
+        "title": "New Workspace",
+        "description": "Create a new workspace, optionally clone from a GitHub repository"
+      }
+    },
+    "step2": {
+      "existingPath": "Workspace Path",
+      "newPath": "Workspace Path",
+      "existingPlaceholder": "/path/to/existing/workspace",
+      "newPlaceholder": "/path/to/new/workspace",
+      "existingHelp": "Full path to your existing workspace directory",
+      "newHelp": "Full path to your workspace directory",
+      "githubUrl": "GitHub URL (Optional)",
+      "githubPlaceholder": "https://github.com/username/repository",
+      "githubHelp": "Optional: provide a GitHub URL to clone a repository",
+      "githubAuth": "GitHub Authentication (Optional)",
+      "githubAuthHelp": "Only required for private repositories. Public repos can be cloned without authentication.",
+      "loadingTokens": "Loading stored tokens...",
+      "storedToken": "Stored Token",
+      "newToken": "New Token",
+      "nonePublic": "None (Public)",
+      "selectToken": "Select Token",
+      "selectTokenPlaceholder": "-- Select a token --",
+      "tokenPlaceholder": "ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "tokenHelp": "This token will be used only for this operation",
+      "publicRepoInfo": "Public repositories don't require authentication. You can skip providing a token if cloning a public repo.",
+      "noTokensHelp": "No stored tokens available. You can add tokens in Settings → API Keys for easier reuse.",
+      "optionalTokenPublic": "GitHub Token (Optional for Public Repos)",
+      "tokenPublicPlaceholder": "ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx (leave empty for public repos)"
+    },
+    "step3": {
+      "reviewConfig": "Review Your Configuration",
+      "workspaceType": "Workspace Type:",
+      "existingWorkspace": "Existing Workspace",
+      "newWorkspace": "New Workspace",
+      "path": "Path:",
+      "cloneFrom": "Clone From:",
+      "authentication": "Authentication:",
+      "usingStoredToken": "Using stored token:",
+      "usingProvidedToken": "Using provided token",
+      "noAuthentication": "No authentication",
+      "sshKey": "SSH Key",
+      "existingInfo": "The workspace will be added to your project list and will be available for Nova Ai-Studio sessions.",
+      "newWithClone": "The repository will be cloned from this folder.",
+      "newEmpty": "The workspace will be added to your project list and will be available for Nova Ai-Studio sessions.",
+      "cloningRepository": "Cloning repository..."
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "back": "Back",
+      "next": "Next",
+      "createProject": "Create Project",
+      "creating": "Creating...",
+      "cloning": "Cloning..."
+    },
+    "folderBrowser": {
+      "browseFolders": "Browse folders",
+      "title": "Select folder",
+      "createNewFolder": "Create new folder",
+      "createNewFile": "Create new file",
+      "newFolderName": "New folder name",
+      "newFileName": "New file name",
+      "create": "Create",
+      "cancel": "Cancel",
+      "select": "Select",
+      "useThisFolder": "Use this folder",
+      "go": "Go",
+      "pathLabel": "Path",
+      "quickAccess": "Quick access",
+      "recent": "Recent",
+      "thisPc": "This PC",
+      "parent": "Parent folder",
+      "noSubfolders": "No subfolders",
+      "showHidden": "Show hidden",
+      "hideHidden": "Hide hidden",
+      "willCreateOnConfirm": "Path does not exist yet — it will be created when you confirm",
+      "pathNotFound": "Path not found or not accessible",
+      "rootsLabel": "Locations"
+    },
+    "errors": {
+      "selectType": "Please select whether you have an existing workspace or want to create a new one",
+      "providePath": "Please provide a workspace path",
+      "failedToCreate": "Failed to create workspace",
+      "failedToCreateFolder": "Failed to create folder"
+    }
+  },
+  "notifications": {
+    "genericTool": "a tool",
+    "codes": {
+      "generic": {
+        "info": {
+          "title": "Notification"
+        }
+      },
+      "permission": {
+        "required": {
+          "title": "Action Required",
+          "body": "{{toolName}} is waiting for your decision."
+        }
+      },
+      "run": {
+        "stopped": {
+          "title": "Run Stopped",
+          "body": "Reason: {{reason}}"
+        },
+        "failed": {
+          "title": "Run Failed"
+        }
+      },
+      "agent": {
+        "notification": {
+          "title": "Agent Notification"
+        }
+      }
+    }
+  },
+  "documentCanvas": {
+    "prev": "Previous page",
+    "next": "Next page",
+    "zoom": "Zoom",
+    "loading": "Loading preview…",
+    "loadFailed": "Preview could not be loaded. Please download the file.",
+    "unsupported": "This format is not supported for document preview",
+    "largeFileHint": "Large file — preview may take a few seconds",
+    "pageRail": "Page navigation",
+    "railView": "Thumbnail view",
+    "railStrip": "List thumbnails",
+    "railGrid": "Grid thumbnails",
+    "zoomModes": {
+      "fitWidth": "Fit width",
+      "fitPage": "Fit page",
+      "100": "100%",
+      "125": "125%",
+      "150": "150%"
+    }
+  },
+  "superPreview": {
+    "referenceLabel": "Reference",
+    "referenceHint": "Add to chat references ({{count}} files)",
+    "referenceAdded": "Added to chat references",
+    "referenceNoChat": "Open the chat tab to reference files",
+    "referenceDisabled": "Nothing to reference"
+  },
+  "versionUpdate": {
+    "title": "Update Available",
+    "newVersionReady": "A new version is ready",
+    "currentVersion": "Current Version",
+    "latestVersion": "Latest Version",
+    "whatsNew": "What's New:",
+    "viewFullRelease": "View full release",
+    "updateProgress": "Update Progress:",
+    "manualUpgrade": "Manual upgrade:",
+    "npmUpgradeCommand": "git pull && npm run build && (cd ui && npm run build)",
+    "manualUpgradeHint": "Or click \"Update Now\" to run the update automatically.",
+    "updateCompleted": "Update completed successfully!",
+    "restartServer": "Please restart the server to apply changes.",
+    "updateFailed": "Update failed",
+    "buttons": {
+      "close": "Close",
+      "later": "Later",
+      "copyCommand": "Copy Command",
+      "updateNow": "Update Now",
+      "updating": "Updating..."
+    },
+    "ariaLabels": {
+      "closeModal": "Close version upgrade modal",
+      "showSidebar": "Show sidebar",
+      "settings": "Settings",
+      "updateAvailable": "Update available",
+      "closeSidebar": "Close sidebar"
+    }
+  },
+  "workbenchBeta": {
+    "shell": {
+      "title": "Workbench 1.1 Beta"
+    },
+    "tour": {
+      "skip": "Skip",
+      "next": "Next",
+      "done": "Get started",
+      "replay": "Replay tour",
+      "step1Title": "Start a new task here",
+      "step1Body": "Open New chat for the welcome page, or type your goal in the composer.",
+      "step2Title": "Not sure how to ask? Pick a capability",
+      "step2Body": "Discover and the composer Capabilities entry share the same hub.",
+      "step3Title": "Finished work lands in the results list",
+      "step3Body": "Expand the sticky results bar to preview; the right rail stays task-folder only."
+    },
+    "turn": {
+      "copy": "Copy",
+      "credits": "credits",
+      "preview": "preview",
+      "tokensTip": "Session model usage (not context-window %)",
+      "creditsTip": "Credits for this turn (about 1 per completed turn)"
+    },
+    "next": {
+      "heading": "You can next",
+      "hint": "Click to prefill — send only after you confirm",
+      "dismiss": "Dismiss",
+      "geo_dual_html": "Build dual-report HTML",
+      "md_to_html": "Build visual HTML report",
+      "export_pdf": "Export PDF",
+      "to_pptx": "Make a deck",
+      "campaign_social": "Social slices",
+      "campaign_ppt": "Pitch deck"
+    },
+    "toast": {
+      "copied": "Copied",
+      "prefilled": "Prefilled — confirm before sending"
+    },
+    "account": {
+      "settings": "Settings",
+      "admin": "Admin",
+      "logout": "Sign out"
+    },
+    "welcome": {
+      "greeting": "What do you want to do today?",
+      "greetingWithProject": "What do you want to do today?",
+      "sub": "Start from a capability or full playbook — click a card to prefill, then send.",
+      "modeLabel": "Shortcut type",
+      "modeCaps": "Capabilities",
+      "modePlaybooks": "Playbooks",
+      "refresh": "Shuffle",
+      "openHub": "Not sure where to start? → Open Capabilities",
+      "exploreAll": "Explore all capabilities →"
+    }
+  }
+}

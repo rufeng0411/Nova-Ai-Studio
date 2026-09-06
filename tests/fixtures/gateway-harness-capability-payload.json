@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "description": "Golden submit_turn payload shape for capability-bound live harness (align with UI sessionLauncher).",
+  "method": "submit_turn",
+  "params": {
+    "sessionKey": "<sessionKey>",
+    "channelKey": "cli",
+    "projectKey": "general",
+    "workspaceCwd": "<absolute-workspace-root>",
+    "mode": "bypassPermissions",
+    "maxTurns": 12,
+    "message": "[SCENARIO-ID] user message text",
+    "promptLanguage": "zh-CN",
+    "capabilityContext": {
+      "slug": "nova-ppt-aesthetic-slides",
+      "displayName": "Nova 美学幻灯",
+      "completionMode": "report"
+    }
+  },
+  "requiredKeys": [
+    "sessionKey",
+    "channelKey",
+    "projectKey",
+    "workspaceCwd",
+    "mode",
+    "maxTurns",
+    "message",
+    "promptLanguage"
+  ],
+  "capabilityRequiredKeys": [
+    "slug",
+    "displayName"
+  ]
+}

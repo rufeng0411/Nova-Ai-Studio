@@ -1,0 +1,22 @@
+{
+  "scenario": "modric-campaign-partial",
+  "description": "Campaign 8 步 — 部分文件已写出应显示已交付",
+  "expectedManifest": [
+    { "id": "stage_research", "label": "调研", "kind": "markdown" },
+    { "id": "stage_plan_html", "label": "Campaign 策划 HTML", "kind": "html" },
+    { "id": "stage_brief", "label": "传播 brief", "kind": "markdown", "path": "brief.md" }
+  ],
+  "items": [
+    {
+      "path": "artifacts/campaign/modric/competitive-brief.md",
+      "validationStatus": "verified"
+    },
+    {
+      "path": "artifacts/campaign/modric/strategy-deck.html",
+      "kind": "html",
+      "validationStatus": "verified"
+    }
+  ],
+  "expectDeliveredMin": 2,
+  "expectMissingMin": 1
+}

@@ -1,0 +1,73 @@
+/**
+ * Nova Ai-Studio SaaS design tokens — chosen default (v1 Native Slate)
+ * Phase 1 React 实现时引用此文件作为视觉基准。
+ */
+:root {
+ /* Brand */
+ --brand-name: "Nova Ai-Studio";
+ --brand-mark-gradient: linear-gradient(135deg, #5b8ee8, #3d6fbf);
+
+ /* Neutrals */
+ --color-bg: #f4f5f7;
+ --color-bg-subtle: #eef0f4;
+ --color-surface: #ffffff;
+ --color-border: #e2e6ec;
+ --color-border-subtle: rgba(30, 37, 48, 0.06);
+
+ /* Slate scale */
+ --color-slate-900: #1e2530;
+ --color-slate-800: #2a3545;
+ --color-slate-700: #3d4654;
+ --color-slate-500: #6b7585;
+ --color-slate-300: #c5cad3;
+ --color-slate-100: #f0f2f6;
+ --color-on-dark: #e8ecf2;
+ --color-on-dark-muted: #a8b4c4;
+
+ /* Accent */
+ --color-accent: #4a7fd4;
+ --color-accent-hover: #3d6fbf;
+ --color-accent-soft: #e8f0fb;
+
+ /* Semantic */
+ --color-success: #2d8f6f;
+ --color-warning: #b8860b;
+ --color-danger: #c94c4c;
+
+ /* Layout */
+ --sidebar-width: 232px;
+ --topbar-height: 60px;
+ --content-padding: 32px;
+ --content-padding-x: 36px;
+ --content-padding-y: 32px;
+ --content-max-width: 1440px;
+ --section-gap: 24px;
+ --page-gap: 28px;
+ --panel-padding: 24px;
+
+ /* Radius */
+ --radius-sm: 6px;
+ --radius-md: 8px;
+ --radius-lg: 12px;
+ --radius-xl: 14px;
+
+ /* Shadow */
+ --shadow-card: 0 1px 2px rgba(30, 37, 48, 0.04), 0 12px 32px rgba(30, 37, 48, 0.06);
+ --shadow-elevated: 0 4px 16px rgba(30, 37, 48, 0.08);
+ --shadow-kpi: 0 1px 2px rgba(30, 37, 48, 0.03), 0 8px 24px rgba(30, 37, 48, 0.05);
+
+ /* Typography */
+ --font-sans: "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+ --font-mono: ui-monospace, Consolas, "Courier New", monospace;
+ --text-xs: 11px;
+ --text-sm: 13px;
+ --text-base: 14px;
+ --text-lg: 17px;
+ --text-xl: 22px;
+ --text-2xl: 28px;
+ --text-3xl: 34px;
+
+ /* Interaction */
+ --focus-ring: 0 0 0 3px var(--color-accent-soft);
+ --touch-min: 44px;
+}

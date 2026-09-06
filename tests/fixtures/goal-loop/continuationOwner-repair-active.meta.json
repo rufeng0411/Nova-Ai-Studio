@@ -1,0 +1,17 @@
+{
+  "description": "Goal-Loop fixture: repair-active turn_acceptance_meta snapshot",
+  "turnId": "turn-goal-loop-repair-sample",
+  "continuationOwner": "deliverable_repair",
+  "acceptanceStatus": "needs_repair",
+  "expectedManifest": [{ "id": "required_png", "kind": "png", "count": 6, "required": true }],
+  "verifiedPaths": [
+    "artifacts/slides-argentina/slide-01.png",
+    "artifacts/slides-argentina/slide-02.png",
+    "artifacts/slides-argentina/slide-03.png"
+  ],
+  "missingPaths": [
+    "artifacts/slides-argentina/slide-04.png",
+    "artifacts/slides-argentina/slide-05.png",
+    "artifacts/slides-argentina/slide-06.png"
+  ]
+}

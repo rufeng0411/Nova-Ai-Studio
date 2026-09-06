@@ -1,0 +1,17 @@
+{
+  "name": "@nova/im-notify-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Outbound notify MCP for WeCom / DingTalk / WhatsApp (no LINE)",
+  "bin": {
+    "im-notify-mcp": "./index.mjs"
+  },
+  "scripts": {
+    "start": "node index.mjs",
+    "test": "node --test lib/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HyperFrames Golden</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0f172a; overflow: hidden; }
+    #stage {
+      width: 1280px;
+      height: 720px;
+      position: relative;
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #title {
+      font-family: system-ui, sans-serif;
+      font-size: 64px;
+      font-weight: 700;
+      color: #f8fafc;
+      transform: translateY(48px);
+    }
+  </style>
+</head>
+<body>
+  <div
+    id="stage"
+    data-composition-id="golden"
+    data-start="0"
+    data-duration="4"
+    data-width="1280"
+    data-height="720"
+  >
+    <h1 id="title" class="clip" data-start="0.5" data-duration="3" data-track-index="1">
+      Nova HyperFrames
+    </h1>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    tl.from("#title", { y: 48, opacity: 0, duration: 0.8, ease: "power3.out" }, 0.5);
+    window.__timelines.golden = tl;
+  </script>
+</body>
+</html>

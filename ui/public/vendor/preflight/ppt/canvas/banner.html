@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1280, initial-scale=1" />
+<title>横幅 16:9</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1280px; height: 800px; overflow: hidden; }
+  body { font-family: Inter, "Segoe UI", system-ui, sans-serif; background: #082f49; }
+</style>
+</head>
+<body>
+<div style="width:1280px;height:800px;background:#082f49;display:flex;align-items:center;justify-content:center;position:relative;">
+  <div style="width:1280px;height:720px;border-radius:14px;overflow:hidden;box-shadow:0 24px 60px #0006;border:2px solid #0ea5e9;">
+    
+      <div style="height:100%;display:grid;grid-template-columns:1.1fr 0.9fr;background:#082f49;color:#fff;">
+        <div style="padding:24px 28px;display:flex;flex-direction:column;justify-content:center;">
+          <div style="font-size:10px;color:#0ea5e9;margin-bottom:8px;">横幅 Banner</div>
+          <h1 style="font-size:26px;font-weight:800;line-height:1.15;margin-bottom:8px;">横幅 16:9</h1>
+          <p style="font-size:12px;opacity:0.82;">网页横幅 / 大屏</p>
+        </div>
+        <div style="background:linear-gradient(135deg,#0ea5e9,#bae6fd);"></div>
+      </div>
+  </div>
+  <div style="position:absolute;bottom:14px;left:24px;right:24px;display:flex;gap:4px;"><span style="flex:1;height:5px;border-radius:2px;background:#0ea5e9"></span><span style="flex:1;height:5px;border-radius:2px;background:#082f49"></span><span style="flex:1;height:5px;border-radius:2px;background:#f0f9ff"></span><span style="flex:1;height:5px;border-radius:2px;background:#0369a1"></span><span style="flex:1;height:5px;border-radius:2px;background:#bae6fd"></span></div>
+</div></body>
+</html>

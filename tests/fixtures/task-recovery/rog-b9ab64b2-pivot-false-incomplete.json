@@ -1,0 +1,46 @@
+{
+  "id": "rog-b9ab64b2-pivot-false-incomplete",
+  "description": "Competitor 2-step: verified 2 files, missing=[], spurious pivot_html_2 slot → passed, no repair",
+  "userGoal": "帮我做竞品口碑分析，两步一次做完：\n1. competitive-brief.md 竞品简报\n2. sentiment-notes.md 口碑要点\n直接开始做，做完告诉我文件在哪。",
+  "sessionManifest": {
+    "manifestVersion": 2,
+    "goalVersion": 1,
+    "sessionGoalAnchor": "帮我做竞品口碑分析，两步一次做完：\n1. competitive-brief.md 竞品简报\n2. sentiment-notes.md 口碑要点\n直接开始做，做完告诉我文件在哪。",
+    "slots": [
+      {
+        "id": "slot_1_competitive_brief_md",
+        "label": "competitive-brief.md 竞品简报",
+        "pathHint": "competitive-brief.md",
+        "required": true,
+        "status": "done",
+        "kind": "markdown"
+      },
+      {
+        "id": "slot_2_sentiment_notes_md",
+        "label": "sentiment-notes.md 口碑要点",
+        "pathHint": "sentiment-notes.md",
+        "required": true,
+        "status": "done",
+        "kind": "markdown"
+      },
+      {
+        "id": "pivot_html_2",
+        "label": "html",
+        "kind": "html",
+        "required": true,
+        "status": "active"
+      }
+    ]
+  },
+  "validationResult": {
+    "verified": [
+      "artifacts/competitive/competitive-brief.md",
+      "artifacts/competitive/sentiment-notes.md"
+    ],
+    "missing": [],
+    "broken": []
+  },
+  "expectedAcceptance": "passed",
+  "expectedContinuationAction": "none",
+  "invariants": ["INV-1"]
+}

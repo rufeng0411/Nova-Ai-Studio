@@ -1,0 +1,149 @@
+{
+  "title": "能力中心",
+  "totalCount": "系统具备 400+ 能力",
+  "flywheelIntro": "先选大类，再选子阶段与子类浏览能力。营销飞轮可一站式完成 Campaign；办公/创作/开发用于加深工具池；脑爆用名人视角拆解问题。",
+  "catalogDocHint": "完整中文能力目录见 docs/capabilities-hub-catalog.zh-CN.md",
+  "loopHint": "监测复盘后的洞察回流到调研，形成闭环",
+  "categoryNavLabel": "能力大类",
+  "categoryMarketing": "营销",
+  "categoryMedia": "媒体",
+  "categoryMediaHint": "户外与数字媒体投放：Brief → 策略 → 创意 → 上线 → 优化 → 结案",
+  "categoryGeo": "GEO",
+  "categoryGeoHint": "AI 搜索可见度六段：基线 → 策略 → 可引用 → 技术 → 分发 → 监测",
+  "categoryFinance": "金融",
+  "categoryFinanceHint": "投研建模、估值、FP&A 与金融科技",
+  "categoryEnterpriseCompliance": "企业",
+  "categoryEnterpriseComplianceHint": "经营监管、合同招投标、人力、公司商事与惠企政策（中国大陆）",
+  "categoryMarketingHint": "营销飞轮子阶段（1–6）：调研 → 策略 → 创意 → 触达 → 发布 → 复盘",
+  "categoryEducation": "教育",
+  "categoryEducationHint": "按学籍学段选择：学前、小学、初中、高中、综合升学、学术研究",
+  "categoryBrainstorming": "脑爆",
+  "categoryBrainstormingHint": "用名人思维视角脑暴、拆解决策与激发创意",
+  "categoryItemCount": "{{count}} 项",
+  "allInCategory": "本类全部",
+  "educationBands": {
+    "preschool": {
+      "label": "学前教育",
+      "summary": "拼音、数感、专注力与入园前启蒙"
+    },
+    "primary": {
+      "label": "小学",
+      "summary": "小学教材同步、每日练习与阅读写作"
+    },
+    "junior": {
+      "label": "初中",
+      "summary": "初中同步、中考复习与学科专项"
+    },
+    "senior": {
+      "label": "高中",
+      "summary": "高中同步、高考冲刺与选科备考"
+    },
+    "general": {
+      "label": "综合升学",
+      "summary": "大学备考、公考、留学与成人学习"
+    },
+    "academic_research": {
+      "label": "学术研究",
+      "summary": "论文阅读、文献综述、学术写作与引文"
+    }
+  },
+  "majorCategories": {
+    "geo": "GEO",
+    "finance": "金融",
+    "enterprise_compliance": "企业",
+    "office": "办公",
+    "creation": "创作",
+    "development": "开发",
+    "brainstorming": "脑爆"
+  },
+  "taskGroupNavHint": "本阶段任务子类（按思考顺序）",
+  "taskGroupGeneral": "其他能力",
+  "allInStage": "本阶段全部",
+  "subtagPrefix": "子类",
+  "pathCount": "{{count}} 项",
+  "categorySubtagHint": "{{category}} · 选择子类",
+  "searchPlaceholder": "搜索能力名称或任务描述",
+  "searchPlaceholderMobile": "搜索能力",
+  "hubPinnedBadge": "必留",
+  "hubExpandMore": "更多能力",
+  "hubCollapseMore": "收起",
+  "hubSecondaryHint": "补充能力",
+  "uncategorized": "待归类",
+  "stageHasSkills": "本阶段有能力",
+  "stageEmpty": "本阶段暂无能力",
+  "stageItemCount": "{{count}} 项",
+  "loading": "能力中心加载中…",
+  "refreshing": "同步中",
+  "status": {
+    "available": "可用",
+    "pending": "即将接入",
+    "unavailable": "未安装",
+    "needs_config": "待配置"
+  },
+  "tryIt": "试一下",
+  "tryItNoProject": "请先在左侧选择一个项目，再试能力。",
+  "comingSoonTitle": "即将接入",
+  "comingSoonBody": "本阶段能力正在整合中（如社媒一键发布、跨平台分发等）。可先使用相邻阶段的能力，或从策略/触达侧准备内容。",
+  "comingSoonHint": "L2/L3 接入后此处会自动出现可用卡片",
+  "empty": {
+    "noData": "暂时没有可用能力",
+    "noDataHint": "请确认服务已启动，或稍后刷新页面",
+    "filtered": "当前筛选下没有能力",
+    "stageEmpty": "本阶段暂无能力",
+    "filteredHintSearch": "已在全部能力中搜索，可换个关键词或清空搜索",
+    "filteredHintStage": "试试切换阶段，或查看其他飞轮环节",
+    "clearFilters": "清除筛选 · 回到调研洞察",
+    "loadFailed": "加载失败，请稍后重试"
+  },
+  "nav": {
+    "lastStage": "已到飞轮末端。回到起点，用新一轮调研开启循环。",
+    "continue": "继续推进：{{from}} → {{to}}",
+    "backToStart": "回到起点 · 调研洞察",
+    "next": "下一步 · {{stage}}"
+  },
+  "onboarding": {
+    "step": "首次引导（{{step}}/3）",
+    "roleTitle": "你的主要工作角色是什么？",
+    "roles": {
+      "brand": "品牌营销",
+      "ops": "运营增长",
+      "content": "内容创作",
+      "analysis": "调研分析"
+    },
+    "stageTitle": "推荐先从这个阶段开始",
+    "stageHint": "已按「{{role}}」为你推荐：{{stage}}",
+    "stageBody": "完成后会自动定位到该阶段；点任意卡片上的「试一下」，即可把示例指令发到对话里。",
+    "startTitle": "开始第一条任务",
+    "startBody": "顶部色带是完整营销飞轮。沿「下一步」走完全链路，或直接从推荐阶段开始。",
+    "prev": "上一步",
+    "next": "下一步",
+    "finish": "完成引导"
+  },
+  "geoStages": {
+    "geo_baseline": { "label": "基线调研", "summary": "AI 问句库、竞品可见度、站点基线" },
+    "geo_strategy": { "label": "策略定位", "summary": "关键词矩阵、内容缺口、全案编排" },
+    "geo_citability": { "label": "可引用内容", "summary": "事实密度、可摘录段落、平台成稿" },
+    "geo_technical": { "label": "技术与结构", "summary": "robots/llms.txt/schema/AI 可达" },
+    "geo_distribution": { "label": "发布与分发", "summary": "程序化页、邮件触达、国内草稿" },
+    "geo_monitor": { "label": "监测与迭代", "summary": "多引擎可见度、双格式报告与趋势" }
+  },
+  "mediaLanes": {
+    "media_ooh": { "label": "户外媒体投放", "summary": "大牌/公交/商场/DOOH 策略与制作" },
+    "media_digital": { "label": "数字媒体投放", "summary": "付费广告账户、创意、上线与优化" }
+  },
+  "mediaSteps": {
+    "ooh_brief": { "label": "定目标与 Brief" },
+    "ooh_strategy": { "label": "媒介策略与预算" },
+    "ooh_planning": { "label": "点位与场景" },
+    "ooh_creative": { "label": "创意与制作规格" },
+    "ooh_traffic": { "label": "上刊与监播" },
+    "ooh_measure": { "label": "效果与结案" },
+    "dig_brief": { "label": "定目标与 Brief" },
+    "dig_plan": { "label": "渠道与媒介计划" },
+    "dig_setup": { "label": "账户与追踪" },
+    "dig_creative": { "label": "创意生产" },
+    "dig_launch": { "label": "上线与预算" },
+    "dig_optimize": { "label": "优化与实验" },
+    "dig_report": { "label": "报表与归因" }
+  }
+}

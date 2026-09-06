@@ -1,0 +1,73 @@
+{
+  "generatedAt": "2026-06-10T08:49:26.507Z",
+  "totalSkills": 11,
+  "source": "https://github.com/tmstack/awesome-persona-skills#商业思维",
+  "skills": [
+    {
+      "vendoredSlug": "persona-buffett",
+      "repo": "https://github.com/will2025btc/buffett-perspective.git",
+      "commit": "e18afcfc208f0cb144dfc2a11276e2eaafb9bdbd",
+      "sourcePath": "."
+    },
+    {
+      "vendoredSlug": "persona-duan-yongping",
+      "repo": "https://github.com/derrickgong87/duan-yongping-skill.git",
+      "commit": "356c80a7e983f3af1a6fc58b6ae4d9d96cba2e44",
+      "sourcePath": "."
+    },
+    {
+      "vendoredSlug": "persona-steve-jobs",
+      "repo": "https://github.com/alchaincyf/steve-jobs-skill.git",
+      "commit": "cd724b0e2e2d9e83a436063b5b915294b5925d28",
+      "sourcePath": "."
+    },
+    {
+      "vendoredSlug": "persona-elon-musk",
+      "repo": "https://github.com/alchaincyf/elon-musk-skill.git",
+      "commit": "5a7d8cf0f23ca6071d18ed8c5c80e8996459a443",
+      "sourcePath": "."
+    },
+    {
+      "vendoredSlug": "persona-munger",
+      "repo": "https://github.com/alchaincyf/munger-skill.git",
+      "commit": "2d5d7a388a0c4c7865accda39f1f2e741c886d9d",
+      "sourcePath": "."
+    },
+    {
+      "vendoredSlug": "persona-feynman",
+      "repo": "https://github.com/alchaincyf/feynman-skill.git",
+      "commit": "5ae5c5079909ef8654cc9815fe58fb3b89bfcb4c",
+      "sourcePath": "."
+    },
+    {
+      "vendoredSlug": "persona-naval",
+      "repo": "https://github.com/alchaincyf/naval-skill.git",
+      "commit": "259e452ef6f6c2bfdbe30368f7c85bc683fe1949",
+      "sourcePath": "."
+    },
+    {
+      "vendoredSlug": "persona-taleb",
+      "repo": "https://github.com/alchaincyf/taleb-skill.git",
+      "commit": "48303e725d24a8865731baa4869caa4d49014704",
+      "sourcePath": "."
+    },
+    {
+      "vendoredSlug": "persona-zizek",
+      "repo": "https://github.com/JikunR/zizek-skill.git",
+      "commit": "e80e230377194924436ad4a4a18c153b3a3d18df",
+      "sourcePath": "."
+    },
+    {
+      "vendoredSlug": "persona-trump",
+      "repo": "https://github.com/alchaincyf/trump-skill.git",
+      "commit": "4bdb94895a01a84b9f55d90ae5889747c0736757",
+      "sourcePath": "."
+    },
+    {
+      "vendoredSlug": "persona-zhang-yiming",
+      "repo": "https://github.com/alchaincyf/zhang-yiming-skill.git",
+      "commit": "6708af58665dfb60154592d04dc203e0b74045a2",
+      "sourcePath": "."
+    }
+  ]
+}

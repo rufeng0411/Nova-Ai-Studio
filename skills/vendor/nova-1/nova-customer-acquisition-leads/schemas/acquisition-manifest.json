@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://novapage.local/skills/customer-acquisition-leads/schemas/acquisition-manifest.json",
+  "title": "Customer Acquisition Run Manifest",
+  "type": "object",
+  "required": [
+    "skill_version",
+    "keyword",
+    "data_sources",
+    "pages_discovered",
+    "pages_classified_kept",
+    "leads_count",
+    "leads"
+  ],
+  "properties": {
+    "skill_version": { "type": "string" },
+    "keyword": { "type": "string", "minLength": 1 },
+    "search_keyword": { "type": "string" },
+    "data_sources": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "max_results": { "type": "integer", "minimum": 1 },
+    "query_expansion": { "$ref": "query-expansion.json" },
+    "pages_discovered": { "type": "integer", "minimum": 0 },
+    "pages_classified_kept": { "type": "integer", "minimum": 0 },
+    "leads_count": { "type": "integer", "minimum": 0 },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "discovery_tools": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "e.g. manual_search, bocha, tavily, firecrawl, user_urls"
+    },
+    "leads": {
+      "type": "array",
+      "items": { "$ref": "lead-record.json" }
+    }
+  },
+  "additionalProperties": false
+}

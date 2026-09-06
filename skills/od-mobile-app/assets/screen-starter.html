@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Screen</title>
+  <style>
+    :root {
+      --fifa-blue: #004b8d;
+      --fifa-gold: #c9a227;
+      --bg: #0a1020;
+      --card: rgba(255, 255, 255, 0.06);
+      --text: #f4f7ff;
+      --muted: rgba(244, 247, 255, 0.62);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      background: linear-gradient(180deg, #0f1a35 0%, var(--bg) 42%, #060910 100%);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;
+      padding: 52px 20px 28px;
+    }
+    .status {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 22px;
+      font-size: 13px;
+      font-weight: 600;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.35), transparent);
+      pointer-events: none;
+    }
+    .hero {
+      margin-bottom: 18px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(201, 162, 39, 0.16);
+      color: var(--fifa-gold);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 28px;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .sub {
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--muted);
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 18px;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+    .card h2 {
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+    .card p {
+      font-size: 13px;
+      line-height: 1.45;
+      color: var(--muted);
+    }
+    .cta {
+      margin-top: 18px;
+      display: block;
+      width: 100%;
+      border: 0;
+      border-radius: 14px;
+      padding: 14px 16px;
+      background: linear-gradient(135deg, var(--fifa-blue), #0066b3);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      text-align: center;
+    }
+    .tabbar {
+      position: fixed;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      padding: 10px 8px;
+      border-radius: 22px;
+      background: rgba(8, 12, 22, 0.92);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+    }
+    .tab {
+      text-align: center;
+      font-size: 10px;
+      color: var(--muted);
+      padding: 6px 2px;
+    }
+    .tab.active { color: var(--fifa-gold); font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="status"><span>9:41</span><span>LTE ▮▮▮</span></div>
+
+  <header class="hero">
+    <div class="badge">FIFA 2026</div>
+    <h1>标题占位</h1>
+    <p class="sub">一句话说明本屏任务（如：观赛指南首页）</p>
+  </header>
+
+  <section class="card">
+    <h2>模块标题</h2>
+    <p>替换为真实内容：赛程、球队、城市、购票提示等。单屏只做一个主任务。</p>
+  </section>
+
+  <section class="card">
+    <h2>第二模块</h2>
+    <p>列表项、数据卡片或操作入口。</p>
+  </section>
+
+  <button type="button" class="cta">主操作按钮</button>
+
+  <nav class="tabbar" aria-label="底部导航">
+    <div class="tab active">首页</div>
+    <div class="tab">赛程</div>
+    <div class="tab">球队</div>
+    <div class="tab">我的</div>
+  </nav>
+</body>
+</html>

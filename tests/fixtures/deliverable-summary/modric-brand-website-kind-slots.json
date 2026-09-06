@@ -1,0 +1,22 @@
+{
+  "scenario": "modric-brand-website",
+  "description": "品牌官网全案 — SDM kind-only slots (html/markdown) 应匹配真实文件",
+  "expectedManifest": [
+    { "id": "required_html_1", "label": "html", "kind": "html" },
+    { "id": "required_markdown_1", "label": "markdown", "kind": "markdown" }
+  ],
+  "items": [
+    {
+      "path": "artifacts/modric-legend/index.html",
+      "kind": "html",
+      "validationStatus": "verified"
+    },
+    {
+      "path": "artifacts/modric-legend/brand-brief.md",
+      "kind": "document",
+      "validationStatus": "verified"
+    }
+  ],
+  "expectDeliveredCount": 2,
+  "expectMissingCount": 0
+}

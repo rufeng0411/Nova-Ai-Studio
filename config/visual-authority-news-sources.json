@@ -1,0 +1,24 @@
+{
+  "$comment": "PD-SAAS-FORK VAP: news/editorial portal fallbacks",
+  "version": 1,
+  "sources": [
+    {
+      "id": "xinhuanet",
+      "label": "新华网",
+      "buildUrl": "https://so.news.cn/#search/{subject}",
+      "sourceTier": "authority_editorial"
+    },
+    {
+      "id": "people",
+      "label": "人民网",
+      "buildUrl": "http://search.people.cn/s?keyword={subject}",
+      "sourceTier": "authority_editorial"
+    },
+    {
+      "id": "cctv",
+      "label": "央视网",
+      "buildUrl": "https://search.cctv.com/search.php?qtext={subject}",
+      "sourceTier": "authority_editorial"
+    }
+  ]
+}

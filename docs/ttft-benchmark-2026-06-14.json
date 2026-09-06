@@ -1,0 +1,82 @@
+{
+  "generatedAt": "2026-06-14T15:07:24.798Z",
+  "gatewayUrl": "ws://127.0.0.1:18789/ws",
+  "logPath": "F:\\Ai-pilotdeck\\.saas-dev-data\\telemetry\\turn-timing.jsonl",
+  "sampleCount": 4,
+  "scenarioRuns": [],
+  "totalMs": {
+    "p50": 44902,
+    "p95": 885848
+  },
+  "firstVisibleMs": {
+    "p50": 19202,
+    "p95": 26898
+  },
+  "stages": {
+    "turn.config_reload": {
+      "count": 4,
+      "p50": 25,
+      "p95": 51
+    },
+    "turn.plugin_refresh": {
+      "count": 2,
+      "p50": 1,
+      "p95": 692
+    },
+    "turn.mcp_ready": {
+      "count": 2,
+      "p50": 0,
+      "p95": 0
+    },
+    "turn.per_session_mcp": {
+      "count": 2,
+      "p50": 560,
+      "p95": 613
+    },
+    "turn.session_prepare": {
+      "count": 4,
+      "p50": 2,
+      "p95": 1273
+    },
+    "turn.attachments": {
+      "count": 4,
+      "p50": 0,
+      "p95": 1
+    },
+    "turn.compact": {
+      "count": 52,
+      "p50": 147,
+      "p95": 574
+    },
+    "turn.memory_retrieve": {
+      "count": 52,
+      "p50": 2372,
+      "p95": 5012
+    },
+    "turn.context_prepare": {
+      "count": 52,
+      "p50": 2376,
+      "p95": 5019
+    },
+    "turn.router_judge": {
+      "count": 4,
+      "p50": 2,
+      "p95": 3
+    },
+    "turn.model_ttfb": {
+      "count": 40,
+      "p50": 9946,
+      "p95": 20758
+    },
+    "turn.first_visible_ui": {
+      "count": 3,
+      "p50": 0,
+      "p95": 0
+    }
+  },
+  "sla": {
+    "hotFirstVisibleP95Ms": 3000,
+    "hotFirstTextP95Ms": 8000,
+    "newSessionFirstVisibleP95Ms": 5000
+  }
+}

@@ -1,0 +1,4 @@
+{"type":"metadata","id":"path-false-done","expectedStatus":"repairable"}
+{"role":"user","content":"生成近期舆情简报并给出可点击文件路径。"}
+{"role":"assistant","content":"舆情报告已保存至：[artifacts/last30days-brand/report.md](artifacts/last30days-brand/report.md)"}
+{"type":"deliverable_validation","verified":[],"missing":[],"broken":["[artifacts/last30days-brand/report.md"]}

@@ -1,0 +1,19 @@
+{
+  "id": "rog-433ce25a-malformed-missing",
+  "description": "433ce25a: malformed missingPaths with backticks stripped",
+  "userGoal": "帮我把「吴裕泰2026新品上市」做成国内社媒矩阵",
+  "capabilitySlug": "social-creative-matrix",
+  "expectedProfileId": "social_matrix",
+  "verifiedPaths": [
+    "artifacts/social-matrix/wuyutai/manifest.json",
+    "artifacts/social-matrix/wuyutai/brief.md"
+  ],
+  "missingPaths": [
+    "`artifacts/social-matrix/wuyutai/copywriting.md`",
+    "copywriting.md",
+    "artifacts/social-matrix/wuyutai/copywriting.md"
+  ],
+  "expectMalformedSanitizedMissing": [
+    "artifacts/social-matrix/wuyutai/copywriting.md"
+  ]
+}

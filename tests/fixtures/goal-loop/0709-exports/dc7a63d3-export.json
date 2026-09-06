@@ -1,0 +1,32 @@
+{
+  "sessionIdPrefix": "dc7a63d3",
+  "title": "雷蛇 GEO C4",
+  "userGoal": "雷蛇 GEO 全案七步",
+  "manifest": {
+    "manifestVersion": 2,
+    "goalVersion": 1,
+    "profileId": "geo",
+    "baselineLocked": true,
+    "sessionGoalAnchor": "雷蛇 GEO 全案",
+    "slots": [
+      { "id": "slot_1", "label": "geo-aeo-audit 审计清单", "required": true, "status": "pending", "pathHints": ["geo-aeo-audit-checklist.md", "01-aeo-audit-checklist.md", "audit-checklist.md"] },
+      { "id": "slot_2", "label": "关键词调研 pd-geo", "required": true, "status": "pending", "pathHints": ["02-keyword-research.md"] },
+      { "id": "slot_3", "label": "平台成稿", "required": true, "status": "pending", "count": 3 },
+      { "id": "slot_4", "label": "引用优化", "required": true, "status": "pending" },
+      { "id": "slot_5", "label": "schema.jsonld", "required": true, "status": "pending" },
+      { "id": "slot_6", "label": "citability 评分", "required": true, "status": "pending" },
+      { "id": "slot_7", "label": "小红书草稿", "required": false, "status": "pending" }
+    ]
+  },
+  "verifiedPaths": [
+    "artifacts/razer-geo/README.md",
+    "artifacts/razer-geo/deliverables-index.md",
+    "artifacts/razer-geo/01-aeo-audit-checklist.md",
+    "artifacts/razer-geo/final-executive-report.md"
+  ],
+  "expect": {
+    "exportRowCount": 7,
+    "maxDeliveredRows": 7,
+    "forbiddenAllDeliveredWhenIncomplete": true
+  }
+}

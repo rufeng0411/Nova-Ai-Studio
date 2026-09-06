@@ -1,0 +1,26 @@
+{
+  "name": "Nova Ai Studio · 分享阅读",
+  "short_name": "Nova 分享",
+  "description": "Nova Ai Studio 公开文档阅读页 — 支持竖屏与横屏",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f5f7",
+  "theme_color": "#f4f5f7",
+  "orientation": "any",
+  "scope": "/",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png?v=nova2",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-512x512.png?v=nova2",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+}

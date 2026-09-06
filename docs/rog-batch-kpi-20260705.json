@@ -1,0 +1,106 @@
+{
+  "generatedAt": "2026-07-05T09:06:40.042Z",
+  "source": "C:\\Users\\rufen/Downloads",
+  "totalSessions": 9,
+  "zeroInterventionRate": 0.4444444444444444,
+  "medianUserTurns": 2,
+  "phantomSessions": 1,
+  "rows": [
+    {
+      "file": "web-s_32722b6a-afe5-45b4-a725-a774d94aca__给【ROG】做 AI 搜索可见度审计：优先改哪几条、验证问句怎么写，直接开始做，做完告诉我路径。-2026-07-05.html",
+      "sessionPrefix": "32722b6a",
+      "userTurns": 1,
+      "zeroIntervention": true,
+      "lastAcceptanceStatus": "unknown",
+      "phantomHintCount": 0,
+      "phantomHints": [],
+      "messageCountEstimate": 0
+    },
+    {
+      "file": "web-s_57dfa750-7a52-4e5f-b444-31053d3604__帮我为【ROG产品】搭一套获客套件，3 步一次做完，存 artifacts_ 报路径：_1. 落地页-2026-07-05.html",
+      "sessionPrefix": "57dfa750",
+      "userTurns": 3,
+      "zeroIntervention": false,
+      "lastAcceptanceStatus": "unknown",
+      "phantomHintCount": 0,
+      "phantomHints": [],
+      "messageCountEstimate": 0
+    },
+    {
+      "file": "web-s_78a3a26e-7471-4418-9668-07f1518ef3__用「HTML 演示」做【页数】页动画演示：【ROG2026】，横屏翻页、每页一屏。-2026-07-05.html",
+      "sessionPrefix": "78a3a26e",
+      "userTurns": 3,
+      "zeroIntervention": false,
+      "lastAcceptanceStatus": "unknown",
+      "phantomHintCount": 0,
+      "phantomHints": [],
+      "messageCountEstimate": 0
+    },
+    {
+      "file": "web-s_7e5b46b4-f64f-401c-9a23-8fdaae68d8__帮【ROG产品_品牌】做一支品牌广告的分镜与即梦提示词包，4 步一次做完，存 artifacts_a-2026-07-05.html",
+      "sessionPrefix": "7e5b46b4",
+      "userTurns": 1,
+      "zeroIntervention": true,
+      "lastAcceptanceStatus": "unknown",
+      "phantomHintCount": 0,
+      "phantomHints": [],
+      "messageCountEstimate": 0
+    },
+    {
+      "file": "web-s_ab42c821-3d16-4fd2-a91e-d63827bd8a__帮我就【ROG研究主题】做一份正式调研报告，3 步一次做完，存 artifacts_research-2026-07-05.html",
+      "sessionPrefix": "ab42c821",
+      "userTurns": 1,
+      "zeroIntervention": true,
+      "lastAcceptanceStatus": "unknown",
+      "phantomHintCount": 0,
+      "phantomHints": [],
+      "messageCountEstimate": 0
+    },
+    {
+      "file": "web-s_b269ebd2-dc7c-4b54-86f4-fdf7912662__帮我为【ROG 主题】做一套内容 IP 启动全案，按阶段一次执行，存 artifacts_ 报路径：-2026-07-05.html",
+      "sessionPrefix": "b269ebd2",
+      "userTurns": 1,
+      "zeroIntervention": true,
+      "lastAcceptanceStatus": "unknown",
+      "phantomHintCount": 0,
+      "phantomHints": [],
+      "messageCountEstimate": 0
+    },
+    {
+      "file": "web-s_e56b3a8c-4e4f-46bd-bdd4-d4ec601261__为【ROG vs 竞品】做销售 Battlecard 全链路，三步一次做完，存 artifacts_-2026-07-05.html",
+      "sessionPrefix": "e56b3a8c",
+      "userTurns": 3,
+      "zeroIntervention": false,
+      "lastAcceptanceStatus": "unknown",
+      "phantomHintCount": 0,
+      "phantomHints": [],
+      "messageCountEstimate": 0
+    },
+    {
+      "file": "web-s_e67172cc-3be7-4c8c-aaac-aefd74c237__帮我做【ROG主题】的品牌传播 campaign 全案，按阶段一次规划执行，产出存 artifact-2026-07-05.html",
+      "sessionPrefix": "e67172cc",
+      "userTurns": 4,
+      "zeroIntervention": false,
+      "lastAcceptanceStatus": "unknown",
+      "phantomHintCount": 9,
+      "phantomHints": [
+        "campaign-plan.md",
+        "campaign-plan.md&quot;是任务系统对已存在 campaign-plan.md",
+        "campaign-plan.md&quot;: &quot;artifacts/rog-campaign/好，campaign-plan.md",
+        "campaign-plan.md&quot;: &quot;artifacts/rog-campaign/分析原因：任务系统将对话中「好，campaign-plan.md",
+        "campaign-plan.md&quot;这个文件，看起来是任务系统把中文逗号后面的文字误解成了缺失文件名，实际上 campaign-plan.md"
+      ],
+      "messageCountEstimate": 0
+    },
+    {
+      "file": "web-s_fb81e334-9793-44f6-aa7d-df816a5611__做一版 programmatic SEO 打法：【ROG商场地推】落地页清单+模板骨架，直接输出。-2026-07-05.html",
+      "sessionPrefix": "fb81e334",
+      "userTurns": 2,
+      "zeroIntervention": false,
+      "lastAcceptanceStatus": "unknown",
+      "phantomHintCount": 0,
+      "phantomHints": [],
+      "messageCountEstimate": 0
+    }
+  ]
+}

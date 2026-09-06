@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skills / MCP 全球热榜推荐表（2026-06-17）</title>
+<style>
+:root {
+  --bg: #eef0f3;
+  --surface: #ffffff;
+  --surface-2: #f7f8fa;
+  --border: #dde1e8;
+  --text: #1c2128;
+  --text-muted: #5c6573;
+  --accent: #3d6b8a;
+  --accent-soft: #e8f0f5;
+  --star: #c9a227;
+  --l1: #2d6a4f;
+  --l1-bg: #e8f5ef;
+  --l2: #3d6b8a;
+  --l2-bg: #e8f0f5;
+  --l3: #7c5c8a;
+  --l3-bg: #f3ecf5;
+  --radius: 0.625rem;
+  --shadow: 0 1px 3px rgba(28,33,40,.06), 0 8px 24px rgba(28,33,40,.04);
+  --font: "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --mono: "Cascadia Code", "SF Mono", Consolas, monospace;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+.layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  max-width: 1600px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+@media (max-width: 960px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { position: static; height: auto; border-right: none; border-bottom: 1px solid var(--border); }
+}
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 1.25rem 1rem;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+}
+.sidebar h2 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--text-muted);
+  margin: 0 0 .75rem;
+  font-weight: 600;
+}
+.sidebar nav a {
+  display: block;
+  padding: .4rem .6rem;
+  margin-bottom: 2px;
+  border-radius: calc(var(--radius) - 2px);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.875rem;
+  line-height: 1.35;
+}
+.sidebar nav a:hover { background: var(--surface-2); color: var(--accent); }
+.sidebar .meta-link {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+}
+.sidebar .meta-link a { color: var(--accent); }
+.main { padding: 1.5rem 1.75rem 3rem; min-width: 0; }
+.hero {
+  background: linear-gradient(135deg, #2a3544 0%, #3d5266 100%);
+  color: #f0f3f6;
+  border-radius: var(--radius);
+  padding: 1.75rem 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow);
+}
+.hero h1 {
+  margin: 0 0 .5rem;
+  font-size: 1.5rem;
+  font-weight: 650;
+  letter-spacing: -.02em;
+}
+.hero .subtitle { opacity: .85; font-size: 0.9rem; margin: 0; }
+.intro-cards {
+  display: grid;
+  gap: .75rem;
+  margin-bottom: 1.5rem;
+}
+.intro-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  font-size: 0.9rem;
+  box-shadow: var(--shadow);
+}
+.intro-card strong { color: var(--accent); }
+.intro-card a { color: var(--accent); }
+.section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.section-header {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.section-header h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 650;
+  color: var(--text);
+}
+.section-header .count {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  background: var(--surface);
+  padding: .2rem .6rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+}
+.section-body { padding: 0; }
+.section-body .prose {
+  padding: 1rem 1.25rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+.section-body .prose a { color: var(--accent); }
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8125rem;
+}
+.data-table th {
+  text-align: left;
+  padding: .65rem .75rem;
+  background: #eef1f5;
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.data-table td {
+  padding: .6rem .75rem;
+  border-bottom: 1px solid #eef0f3;
+  vertical-align: top;
+  max-width: 220px;
+}
+.data-table tbody tr:hover { background: #fafbfc; }
+.data-table tbody tr:has(.row-check:checked) { background: var(--accent-soft); }
+.data-table .sticky {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: inherit;
+  box-shadow: 2px 0 4px rgba(0,0,0,.04);
+}
+.data-table th.sticky { z-index: 3; background: #eef1f5; }
+.data-table td.sticky:nth-child(2) { left: 52px; }
+.data-table th.sticky:nth-child(2) { left: 52px; }
+.check-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  min-width: 36px;
+}
+.row-check { position: absolute; opacity: 0; width: 0; height: 0; }
+.check-box {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface);
+  transition: all .15s;
+}
+.row-check:checked + .check-box {
+  background: var(--accent);
+  border-color: var(--accent);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 10'%3E%3Cpath fill='none' stroke='%23fff' stroke-width='2' d='M1 5l3 3 7-7'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+}
+.stars { white-space: nowrap; }
+.star.on { color: var(--star); }
+.star.off { color: #d0d4da; }
+.badge {
+  display: inline-block;
+  padding: .15rem .45rem;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.badge.l1 { background: var(--l1-bg); color: var(--l1); }
+.badge.l2 { background: var(--l2-bg); color: var(--l2); }
+.badge.l3 { background: var(--l3-bg); color: var(--l3); }
+.badge.muted { background: var(--surface-2); color: var(--text-muted); }
+.pill-new { font-size: 0.85em; }
+code, .snippet {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  background: #f0f2f5;
+  padding: .1rem .35rem;
+  border-radius: 3px;
+  word-break: break-all;
+}
+.snippet { display: block; max-width: 200px; }
+.link-out {
+  color: var(--accent);
+  text-decoration: none;
+  word-break: break-all;
+}
+.link-out:hover { text-decoration: underline; }
+.simple-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+.simple-table th, .simple-table td {
+  padding: .6rem 1rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+.simple-table th { background: var(--surface-2); color: var(--text-muted); font-size: 0.8rem; }
+.footer-note {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.toolbar {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.toolbar button {
+  font: inherit;
+  font-size: 0.8rem;
+  padding: .4rem .75rem;
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) - 2px);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+}
+.toolbar button:hover { border-color: var(--accent); color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <h2>目录</h2>
+  <nav>
+    <a href="#权威门禁-入表标准">权威门禁（入表标准）</a>
+    <a href="#表-a-热门-skills-推荐-全局热榜-缺口">表 A — 热门 Skills 推荐（全局热榜 + 缺口）</a>
+    <a href="#表-b-热门-mcp-推荐">表 B — 热门 MCP 推荐</a>
+    <a href="#表-c-垂直补遗-按你的方向">表 C — 垂直补遗（按你的方向）</a>
+    <a href="#表-d-已装-建议升级-非新装">表 D — 已装·建议升级（非新装）</a>
+    <a href="#表-e-明确不推荐">表 E — 明确不推荐</a>
+    <a href="#附录-f-候选池未入表项-未过门禁">附录 F — 候选池未入表项（未过门禁）</a>
+    <a href="#附录-新建分类提案-勾选表-c-后启用">附录 — 新建分类提案（勾选表 C 后启用）</a>
+    <a href="#勾选落地与-smoke-阶段-5">勾选落地与 Smoke（阶段 5）</a>
+  </nav>
+  <div class="meta-link">
+    <a href="./skills-system-inventory-2026-06-17.md">系统基线 inventory</a><br>
+    <a href="./skills-mcp-selected-batch-2026-06-17.md">接入批次表</a><br>
+    <a href="./skills-mcp-hot-recommendations-2026-06-17.md">Markdown 源文件</a>
+  </div>
+</aside>
+<main class="main">
+<section class="hero">
+  <h1>Skills / MCP 全球热榜推荐表</h1>
+  <p class="subtitle">2026-06-17 · 877 catalog · 413 Hub 可见 · 权威双源门禁</p>
+</section>
+<div class="toolbar">
+  <button type="button" id="btn-export">导出已勾选项</button>
+  <button type="button" id="btn-clear">清除全部勾选</button>
+</div>
+<div class="intro-cards">
+  <div class="intro-card"><strong>前置基线</strong>：<a href="./skills-system-inventory-2026-06-17.md" target="_blank" rel="noopener">skills-system-inventory-2026-06-17.md</a>（877 catalog · 413 Hub 可见）  <br><strong>权威门禁</strong>：每项 ≥2 独立来源 + SKILL/README 核验 + 对照本仓 inventory  <br><strong>用法</strong>：在「选」列将 <code>[ ]</code> 改为 <code>[x]</code>；勾选后发回维护者或进入 <a href="./skills-mcp-selected-batch-2026-06-17.md" target="_blank" rel="noopener">skills-mcp-selected-batch-2026-06-17.md</a> 批次落地</div>
+</div>
+<section class="section" id="权威门禁-入表标准">
+  <div class="section-header">
+    <h2>权威门禁（入表标准）</h2>
+    <span class="count">4 项</span>
+  </div>
+  <div class="section-body"><div class="table-wrap" role="region" aria-label="表格" tabindex="0">
+<table class="data-table" id="table-0-sub">
+<thead><tr><th>维度</th><th>要求</th></tr></thead><tbody><tr><td>交叉验证</td><td>skills.sh 安装量 + GitHub 官方 repo / OpenAI curated / Skillselion 等 <strong>≥2 源</strong></td></tr><tr><td>可核验</td><td>已读 SKILL.md 或官方 README 摘要</td></tr><tr><td>与本仓</td><td>必须写清「无 / 部分重叠 slug / 已装·可升级」</td></tr><tr><td>星级</td><td>★3 以上入表；★2 以下见 <a href="#附录-f候选池未入表项" target="_blank" rel="noopener">附录 F</a></td></tr></tbody></table></div></div>
+</section>
+<section class="section" id="表-a-热门-skills-推荐-全局热榜-缺口">
+  <div class="section-header">
+    <h2>表 A — 热门 Skills 推荐（全局热榜 + 缺口）</h2>
+    <span class="count">30 项</span>
+  </div>
+  <div class="section-body"><div class="table-wrap" role="region" aria-label="表格" tabindex="0">
+<table class="data-table" id="table-1-sub">
+<thead><tr><th class="sticky">选</th><th class="sticky">名称</th><th>地址</th><th>简介</th><th>权威依据</th><th>安装量/★</th><th>星级</th><th>系统已有对照</th><th>建议 Hub 落位</th><th>额外 API</th><th>L级</th><th>相对提升</th><th>评价与优势</th></tr></thead><tbody><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-l6bn3sv"><span class="check-box"></span></label></td><td class="sticky">find-skills</td><td><a class="link-out" href="https://skills.sh/vercel-labs/skills/find-skills" target="_blank" rel="noopener" title="https://skills.sh/vercel-labs/skills/find-skills">skills.sh/vercel-labs/skills/find-skills</a></td><td>帮用户发现并安装社区 Skills 的 meta 能力</td><td>skills.sh <strong>#1 · 2.1M</strong> + Vercel 官方 skills 生态</td><td>2.1M</td><td><span class="stars" aria-label="5星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span></span></td><td><strong>无</strong>（2026-06 已删）</td><td>开发·<code>dev_tools</code> 或办公</td><td>无</td><td><span class="badge l1">L1</span></td><td>补能力发现入口，替代手动搜 catalog</td><td>跨 Agent 通用；中文 prompt 可用</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-pypz0mp"><span class="check-box"></span></label></td><td class="sticky">vercel-react-best-practices</td><td><a class="link-out" href="https://skills.sh/vercel-labs/agent-skills/react-best-practices" target="_blank" rel="noopener" title="https://skills.sh/vercel-labs/agent-skills/react-best-practices">skills.sh/vercel-labs/agent-skills/react-b…</a></td><td>React 性能/架构最佳实践</td><td>skills.sh <strong>#3 · 485K</strong> + Vercel agent-skills repo</td><td>485K</td><td><span class="stars" aria-label="5星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span></span></td><td>部分：<code>dev-next-best-practices</code>（Next 专精）</td><td>开发·<code>dev_frontend</code></td><td>无</td><td><span class="badge l1">L1</span></td><td>补 React 专项，与 Next 技能并存</td><td>官方维护，适合前端对话审查</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-vpganlt"><span class="check-box"></span></label></td><td class="sticky">agent-browser</td><td><a class="link-out" href="https://skills.sh/vercel-labs/agent-browser/agent-browser" target="_blank" rel="noopener" title="https://skills.sh/vercel-labs/agent-browser/agent-browser">skills.sh/vercel-labs/agent-browser/agent-…</a></td><td>Agent 驱动浏览器自动化</td><td>skills.sh <strong>#4 · 461K</strong> + vercel-labs 独立 repo</td><td>461K</td><td><span class="stars" aria-label="5星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span></span></td><td><strong>无</strong> Skill（仅有 <code>dev-playwright</code> 不同栈）</td><td>开发·<code>dev_testing</code></td><td>无</td><td><span class="badge l1">L1</span></td><td>补 Vercel 系浏览器 Agent 工作流</td><td>与 Playwright MCP 可互补</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-v197881"><span class="check-box"></span></label></td><td class="sticky">frontend-design</td><td><a class="link-out" href="https://skills.sh/anthropics/skills/frontend-design" target="_blank" rel="noopener" title="https://skills.sh/anthropics/skills/frontend-design">skills.sh/anthropics/skills/frontend-desig…</a></td><td>Anthropic 官方前端设计审美与实现规范</td><td>skills.sh <strong>#2 · 561K</strong> + anthropics/skills 官方</td><td>561K</td><td><span class="stars" aria-label="5星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span></span></td><td><strong>无</strong>（曾删，与 od-* 不同层）</td><td>创作·<code>create_ui</code></td><td>无</td><td><span class="badge l1">L1</span></td><td>补「设计规范」层，不替代 od 物料</td><td>官方；可中文 brief</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-7kl9gjv"><span class="check-box"></span></label></td><td class="sticky">firecrawl（CLI 总控）</td><td><a class="link-out" href="https://skills.sh/firecrawl/cli/firecrawl" target="_blank" rel="noopener" title="https://skills.sh/firecrawl/cli/firecrawl">skills.sh/firecrawl/cli/firecrawl</a></td><td>Firecrawl 集成：搜索/抓取/提取</td><td>skills.sh <strong>76K</strong> + Firecrawl 官方 CLI repo</td><td>76K</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td>部分：仅 <code>mcp-firecrawl</code> 虚拟卡</td><td>营销·调研·<code>web_fetch</code></td><td><code>FIRECRAWL_API_KEY</code></td><td><span class="badge l2">L2</span></td><td>Skill 层工作流，补 MCP 单工具缺口</td><td>与现有 web_fetch 软失败策略对齐</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-qy3up87"><span class="check-box"></span></label></td><td class="sticky">firecrawl-scrape</td><td><a class="link-out" href="https://skills.sh/firecrawl/cli/firecrawl-scrape" target="_blank" rel="noopener" title="https://skills.sh/firecrawl/cli/firecrawl-scrape">skills.sh/firecrawl/cli/firecrawl-scrape</a></td><td>单页 scrape 集成</td><td>skills.sh 60K + 同官方包</td><td>60K</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td>无 Skill</td><td>营销·<code>web_fetch</code></td><td>同上</td><td><span class="badge l2">L2</span></td><td>结构化单页提取 playbook</td><td>适合竞品页/定价页采集</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-c0ial0j"><span class="check-box"></span></label></td><td class="sticky">firecrawl-search</td><td><a class="link-out" href="https://skills.sh/firecrawl/cli/firecrawl-search" target="_blank" rel="noopener" title="https://skills.sh/firecrawl/cli/firecrawl-search">skills.sh/firecrawl/cli/firecrawl-search</a></td><td>查询优先 discovery</td><td>skills.sh 60K + 官方</td><td>60K</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td>无</td><td>营销·<code>web_fetch</code></td><td>同上</td><td><span class="badge l2">L2</span></td><td>补「搜索→抓取」链，优于纯 web_search</td><td>与 bocha 联网互补</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-06lyg1v"><span class="check-box"></span></label></td><td class="sticky">just-scrape</td><td><a class="link-out" href="https://skills.sh/scrapegraphai/just-scrape/just-scrape" target="_blank" rel="noopener" title="https://skills.sh/scrapegraphai/just-scrape/just-scrape">skills.sh/scrapegraphai/just-scrape/just-s…</a></td><td>ScrapeGraphAI 轻量抓取 Skill</td><td>skills.sh <strong>196K</strong> + scrapegraphai 官方</td><td>196K</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td><strong>无</strong></td><td>营销·<code>web_fetch</code></td><td>可能需 ScrapeGraph Key</td><td><span class="badge l2">L2</span></td><td>多一种爬虫栈，降级备选</td><td>热榜高；接入前读 LICENSE</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-gxxslku"><span class="check-box"></span></label></td><td class="sticky">obra brainstorming</td><td><a class="link-out" href="https://skills.sh/obra/superpowers/brainstorming" target="_blank" rel="noopener" title="https://skills.sh/obra/superpowers/brainstorming">skills.sh/obra/superpowers/brainstorming</a></td><td>Superpowers 结构化脑暴工作流</td><td>skills.sh <strong>230K</strong> + obra/superpowers 高星生态</td><td>230K</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td>部分：<code>pmd-*</code>/<code>brainstorm-structured</code></td><td>脑爆·<code>methodology</code></td><td>无</td><td><span class="badge l1">L1</span></td><td>补「对话式脑暴流程」，非 PM 模板</td><td>英文为主；与现有 Pill 重叠可控</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-g4rt52a"><span class="check-box"></span></label></td><td class="sticky">obra writing-plans</td><td><a class="link-out" href="https://skills.sh/obra/superpowers/writing-plans" target="_blank" rel="noopener" title="https://skills.sh/obra/superpowers/writing-plans">skills.sh/obra/superpowers/writing-plans</a></td><td>实施计划编写（TDD 前置）</td><td>skills.sh 149K + superpowers 套件</td><td>149K</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td>无</td><td>脑爆·<code>methodology</code></td><td>无</td><td><span class="badge l1">L1</span></td><td>补复杂任务计划链</td><td>适合开发/全案模板前置</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-hqi47jo"><span class="check-box"></span></label></td><td class="sticky">supabase-postgres-best-practices</td><td><a class="link-out" href="https://skills.sh/supabase/agent-skills/postgres-best-practices" target="_blank" rel="noopener" title="https://skills.sh/supabase/agent-skills/postgres-best-practices">skills.sh/supabase/agent-skills/postgres-b…</a></td><td>Postgres/Supabase 最佳实践</td><td>skills.sh 239K + supabase 官方 agent-skills</td><td>239K</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td><strong>无</strong></td><td>开发·<code>dev_backend</code></td><td>Supabase 项目可选</td><td><span class="badge l2">L2</span></td><td>补 SaaS PG 阶段数据库规范</td><td>与本仓 PG 控制面相关</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-5jbhl1v"><span class="check-box"></span></label></td><td class="sticky">shadcn/ui skill</td><td><a class="link-out" href="https://skills.sh/shadcn/ui/shadcn" target="_blank" rel="noopener" title="https://skills.sh/shadcn/ui/shadcn">skills.sh/shadcn/ui/shadcn</a></td><td>shadcn 组件接入与规范</td><td>skills.sh 196K + shadcn 官方 ui repo</td><td>196K</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td><strong>无</strong></td><td>创作·<code>create_ui</code></td><td>无</td><td><span class="badge l1">L1</span></td><td>加速 Nova UI 组件化对话</td><td>与 od 设计系统互补</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-ccngdd0"><span class="check-box"></span></label></td><td class="sticky">ui-ux-pro-max</td><td><a class="link-out" href="https://skills.sh/nextlevelbuilder/ui-ux-pro-max-skill/ui-ux-pro-max" target="_blank" rel="noopener" title="https://skills.sh/nextlevelbuilder/ui-ux-pro-max-skill/ui-ux-pro-max">skills.sh/nextlevelbuilder/ui-ux-pro-max-s…</a></td><td>UI/UX 专业审查与改进</td><td>skills.sh 223K + 独立高安装技能</td><td>223K</td><td><span class="stars" aria-label="3星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span><span class="star off">☆</span></span></td><td><strong>无</strong></td><td>创作·<code>create_ui</code></td><td>无</td><td><span class="badge l1">L1</span></td><td>补 UX 审查 checklist</td><td>社区；接入前 smoke 中文输出</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-szzzzrh"><span class="check-box"></span></label></td><td class="sticky">remotion-best-practices</td><td><a class="link-out" href="https://skills.sh/remotion-dev/skills/remotion-best-practices" target="_blank" rel="noopener" title="https://skills.sh/remotion-dev/skills/remotion-best-practices">skills.sh/remotion-dev/skills/remotion-bes…</a></td><td>Remotion 视频代码最佳实践</td><td>skills.sh 378K + remotion-dev 官方</td><td>378K</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td>部分：<code>remotion</code> vendor 包已有</td><td>创作·<code>create_video</code></td><td>无</td><td><span class="badge l1">L1</span></td><td><strong>升级</strong> remotion 包对齐 upstream</td><td>与 hf 视频链互补</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-ers1i5x"><span class="check-box"></span></label></td><td class="sticky">context7（Skill）</td><td><a class="link-out" href="https://skills.sh/intellectronica/agent-skills/context7" target="_blank" rel="noopener" title="https://skills.sh/intellectronica/agent-skills/context7">skills.sh/intellectronica/agent-skills/con…</a></td><td>最新库文档检索（Context7）</td><td>skills.sh 7.9K + Upstash Context7 生态</td><td>7.9K</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td><strong>无</strong> Skill/MCP</td><td>开发·<code>dev_tools</code></td><td>Context7 API</td><td><span class="badge l2">L2</span></td><td>补「查最新 API 文档」能力</td><td>开发对话刚需；需 MCP 或 Key</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-d8px89x"><span class="check-box"></span></label></td><td class="sticky">microsoft playwright-cli</td><td><a class="link-out" href="https://skills.sh/microsoft/playwright-cli/playwright-cli" target="_blank" rel="noopener" title="https://skills.sh/microsoft/playwright-cli/playwright-cli">skills.sh/microsoft/playwright-cli/playwri…</a></td><td>微软官方 Playwright CLI Skill</td><td>skills.sh 60K + microsoft/playwright-cli</td><td>60K</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td>部分：<code>dev-playwright</code>（vendor 不同源）</td><td>开发·<code>dev_testing</code></td><td>无</td><td><span class="badge l2">L2</span></td><td>对齐微软官方 CLI 路径</td><td>与 Codex curated <code>playwright</code> 可二选一</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-m3as1ly"><span class="check-box"></span></label></td><td class="sticky">legal-risk-assessment</td><td><a class="link-out" href="https://skills.sh/anthropics/knowledge-work-plugins/legal-risk-assessment" target="_blank" rel="noopener" title="https://skills.sh/anthropics/knowledge-work-plugins/legal-risk-assessment">skills.sh/anthropics/knowledge-work-plugin…</a></td><td>Cowork 法务风险评估</td><td>skills.sh 2.9K + Anthropic 官方插件</td><td>2.9K</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td>弱：<code>pms-*</code> 含 NDA 非专法务</td><td>办公·<code><span class="pill-new">🆕</span>legal_compliance</code></td><td>无</td><td><span class="badge l1">L1</span></td><td>补 <strong>法律垂直</strong> 代表卡</td><td>中文 prompt；Hub 可 hidden 大包</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-nmx8avk"><span class="check-box"></span></label></td><td class="sticky">legal-response</td><td><a class="link-out" href="https://skills.sh/anthropics/knowledge-work-plugins/legal-response" target="_blank" rel="noopener" title="https://skills.sh/anthropics/knowledge-work-plugins/legal-response">skills.sh/anthropics/knowledge-work-plugin…</a></td><td>法律函件/回应草稿</td><td>skills.sh 2K + 官方</td><td>2K</td><td><span class="stars" aria-label="3星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span><span class="star off">☆</span></span></td><td>无</td><td>办公·<code>legal_compliance</code></td><td>无</td><td><span class="badge l1">L1</span></td><td>与 risk-assessment 成套</td><td>须标注「非律师意见」免责声明</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-oy7ynpu"><span class="check-box"></span></label></td><td class="sticky">codex-playwright</td><td><a class="link-out" href="https://github.com/openai/skills/tree/main/skills/.curated/playwright" target="_blank" rel="noopener" title="https://github.com/openai/skills/tree/main/skills/.curated/playwright">github.com/openai/skills/tree/main/skills/…</a></td><td>OpenAI Codex 官方 Playwright curated</td><td>openai/skills <strong>22K★</strong> + curated 目录</td><td>curated</td><td><span class="stars" aria-label="5星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span></span></td><td>部分：<code>dev-playwright</code></td><td>开发·<code>dev_testing</code></td><td>无</td><td><span class="badge l2">L2</span></td><td>官方 Codex 路径，可 vendor 前缀 <code>codex-*</code></td><td>与微软 CLI 选型见批次表</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-0ldnvgl"><span class="check-box"></span></label></td><td class="sticky">codex-figma 套件</td><td><a class="link-out" href="https://github.com/openai/skills/tree/main/skills/.curated/figma" target="_blank" rel="noopener" title="https://github.com/openai/skills/tree/main/skills/.curated/figma">github.com/openai/skills/tree/main/skills/…</a></td><td>Figma 设计→代码（多子 skill）</td><td>OpenAI curated + Figma 官方合作语义</td><td>curated</td><td><span class="stars" aria-label="5星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span></span></td><td>部分：<code>mcp-figma</code> 文档卡</td><td>创作·<code>create_ui</code></td><td>Figma Token</td><td><span class="badge l2">L2</span></td><td>Skill 层补 Figma 工作流</td><td>7 个子 skill，可只 vendor 代表项</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-3xzd2l6"><span class="check-box"></span></label></td><td class="sticky">codex-notion-research-documentation</td><td><a class="link-out" href="https://github.com/openai/skills/tree/main/skills/.curated/notion-research-documentation" target="_blank" rel="noopener" title="https://github.com/openai/skills/tree/main/skills/.curated/notion-research-documentation">github.com/openai/skills/tree/main/skills/…</a></td><td>Notion 研究文档工作流</td><td>OpenAI curated + Notion 官方 skills 生态</td><td>curated</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td>部分：<code>mcp-notion-collab</code> 卡</td><td>办公·协作</td><td>Notion OAuth</td><td><span class="badge l2">L2</span></td><td>补办公研究交付链</td><td>适合调研报告入库</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-9omjgw8"><span class="check-box"></span></label></td><td class="sticky">codex-transcribe / speech</td><td><a class="link-out" href="https://github.com/openai/skills/tree/main/skills/.curated/transcribe" target="_blank" rel="noopener" title="https://github.com/openai/skills/tree/main/skills/.curated/transcribe">github.com/openai/skills/tree/main/skills/…</a></td><td>音视频转写与语音</td><td>OpenAI curated 官方</td><td>curated</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td><strong>无</strong></td><td>办公·<code>office_media</code></td><td>OpenAI API</td><td><span class="badge l2">L2</span></td><td>补会议录音→文字</td><td>与 meeting-recorder 可联动</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-mar6d4g"><span class="check-box"></span></label></td><td class="sticky">hyperframes 上游对齐</td><td><a class="link-out" href="https://skills.sh/heygen-com/hyperframes/hyperframes" target="_blank" rel="noopener" title="https://skills.sh/heygen-com/hyperframes/hyperframes">skills.sh/heygen-com/hyperframes/hyperfram…</a></td><td>HeyGen HyperFrames 官方视频 HTML</td><td>skills.sh 103K + 已 vendor <code>hf-*</code></td><td>103K</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td><strong>已装</strong> <code>hf-hyperframes*</code></td><td>创作·视频</td><td>无</td><td><span class="badge l1">L1</span></td><td><strong>升级 bump</strong> vendor commit</td><td>对照 heygen 上游 changelog</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-nhw7rld"><span class="check-box"></span></label></td><td class="sticky">html-ppt 上游 bump</td><td><a class="link-out" href="https://github.com/lewislulu/html-ppt-skill" target="_blank" rel="noopener" title="https://github.com/lewislulu/html-ppt-skill">github.com/lewislulu/html-ppt-skill</a></td><td>HTML 幻灯工作室</td><td>已 vendor + Launch Registry</td><td>vendor</td><td><span class="stars" aria-label="5星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span></span></td><td><strong>已装</strong> <code>html-ppt</code></td><td>营销·<code>deck_report</code></td><td>无</td><td><span class="badge l1">L1</span></td><td><strong>升级</strong> 主题/模板同步 upstream</td><td>勿重复安装，仅 bump</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-14djv97"><span class="check-box"></span></label></td><td class="sticky">seo-audit（marketingskills）</td><td><a class="link-out" href="https://skills.sh/coreyhaines31/marketingskills/seo-audit" target="_blank" rel="noopener" title="https://skills.sh/coreyhaines31/marketingskills/seo-audit">skills.sh/coreyhaines31/marketingskills/se…</a></td><td>站内 SEO 审计</td><td>skills.sh 140K + 已 vendor <code>mkt-seo-audit</code></td><td>140K</td><td><span class="stars" aria-label="5星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span></span></td><td><strong>已装</strong> <code>mkt-seo-audit</code></td><td>营销·<code>ai_search</code></td><td>无</td><td><span class="badge muted">—</span></td><td><strong>勿装</strong>；可核对 upstream 更新</td><td>表 D 升级项</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-c15mqye"><span class="check-box"></span></label></td><td class="sticky">phuryn pm-skills 重拉</td><td><a class="link-out" href="https://skillsmp.com/skills/phuryn-pm-skills" target="_blank" rel="noopener" title="https://skillsmp.com/skills/phuryn-pm-skills">skillsmp.com/skills/phuryn-pm-skills</a></td><td>65 项 PM/调研框架</td><td>SkillsMP + 上次升级 SSL 失败记录</td><td>聚合</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td>部分：<code>pms-*</code> 68 项在仓</td><td>脑爆·PM</td><td>无</td><td><span class="badge l2">L2</span></td><td><strong>升级</strong> 补齐失败 vendor</td><td>重跑 <code>vendor:skills-ecosystem</code></td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-ilv2q43"><span class="check-box"></span></label></td><td class="sticky">lawvable agent-skills</td><td><a class="link-out" href="https://github.com/lawvable/agent-skills" target="_blank" rel="noopener" title="https://github.com/lawvable/agent-skills">github.com/lawvable/agent-skills</a></td><td>法律 Agent 技能精选集</td><td>法律垂直社区 + awesome-legal-skills 交叉</td><td>社区</td><td><span class="stars" aria-label="3星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span><span class="star off">☆</span></span></td><td><strong>无</strong> 法律包</td><td>办公·<code>legal_compliance</code> hidden</td><td>视子 skill</td><td><span class="badge l3">L3</span></td><td>补 <strong>法律垂直</strong> 深度</td><td>须合规审查；默认 hidden</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-pwnydwl"><span class="check-box"></span></label></td><td class="sticky">lpm-skills</td><td><a class="link-out" href="https://github.com/legalopsconsulting/lpm-skills" target="_blank" rel="noopener" title="https://github.com/legalopsconsulting/lpm-skills">github.com/legalopsconsulting/lpm-skills</a></td><td>法律项目管理 LPM</td><td>法律 Ops 社区 + Codex legal 生态引用</td><td>社区</td><td><span class="stars" aria-label="3星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span><span class="star off">☆</span></span></td><td><strong>无</strong></td><td>办公·<code>legal_compliance</code></td><td>无</td><td><span class="badge l2">L2</span></td><td>补律所/法务 PM 场景</td><td>英文；Hub 代表卡 1–2 即可</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-9jeeuvr"><span class="check-box"></span></label></td><td class="sticky">edu-sci 代表卡外露</td><td>（本仓）<code>edu-sci-*</code></td><td>145 项科研/行业技能</td><td>已 vendor，Skillselion 科研类</td><td>145 hidden</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td><strong>已装 hidden</strong></td><td>教育·<code>academic</code></td><td>部分需 API</td><td><span class="badge l1">L1</span></td><td><strong>策略</strong>：Hub 增 3–5 代表卡，非全装</td><td>见 inventory §五</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-01xkmdd"><span class="check-box"></span></label></td><td class="sticky">mkt-sales-enablement 强化</td><td>（本仓）<code>mkt-sales-enablement</code></td><td>销售赋能与 battlecard</td><td>已 vendor marketingskills</td><td>已装</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td><strong>已装</strong></td><td>营销·触达·<code>copy</code></td><td>无</td><td><span class="badge muted">—</span></td><td>流程模板强化，非新 skill</td><td>可新建 <code>sales_enablement</code> Pill</td></tr></tbody></table></div></div>
+</section>
+<section class="section" id="表-b-热门-mcp-推荐">
+  <div class="section-header">
+    <h2>表 B — 热门 MCP 推荐</h2>
+    <span class="count">15 项</span>
+  </div>
+  <div class="section-body"><div class="table-wrap" role="region" aria-label="表格" tabindex="0">
+<table class="data-table" id="table-2-sub">
+<thead><tr><th class="sticky">选</th><th class="sticky">名称</th><th>地址</th><th>简介</th><th>权威依据</th><th>安装量/★</th><th>星级</th><th>系统已有对照</th><th>建议 Hub 落位</th><th>额外 API</th><th>L级</th><th>相对提升</th><th>mcp.json 片段</th></tr></thead><tbody><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-4iqy66x"><span class="check-box"></span></label></td><td class="sticky">Firecrawl MCP</td><td><a class="link-out" href="https://github.com/mendableai/firecrawl-mcp-server" target="_blank" rel="noopener" title="https://github.com/mendableai/firecrawl-mcp-server">github.com/mendableai/firecrawl-mcp-server…</a></td><td>官方 Firecrawl MCP</td><td>MCP 生态标准 + 本仓已有虚拟卡</td><td>官方</td><td><span class="stars" aria-label="5星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span></span></td><td>卡有 <code>mcp-firecrawl</code>，<strong>MCP 未配</strong></td><td>营销·<code>web_fetch</code></td><td><code>FIRECRAWL_API_KEY</code></td><td><span class="badge l2">L2</span></td><td>虚拟卡→真实连通</td><td><code>&quot;firecrawl&quot;: { &quot;command&quot;: &quot;npx&quot;, &quot;args&quot;: [&quot;-y&quot;,&quot;firecrawl-mcp&quot;] }</code></td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-bubdg60"><span class="check-box"></span></label></td><td class="sticky">Context7 MCP</td><td><a class="link-out" href="https://github.com/upstash/context7" target="_blank" rel="noopener" title="https://github.com/upstash/context7">github.com/upstash/context7</a></td><td>最新文档注入 MCP</td><td>Upstash 官方 + skills.sh Context7 skill 双源</td><td>官方</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td><strong>无</strong></td><td>开发·<code>dev_tools</code></td><td>Context7 Key</td><td><span class="badge l2">L2</span></td><td>查库文档，减幻觉</td><td>HTTP MCP 见 Upstash 文档</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-nwku3t5"><span class="check-box"></span></label></td><td class="sticky">Playwright MCP</td><td><a class="link-out" href="https://github.com/microsoft/playwright-mcp" target="_blank" rel="noopener" title="https://github.com/microsoft/playwright-mcp">github.com/microsoft/playwright-mcp</a></td><td>微软 Playwright MCP</td><td>Microsoft 官方 + Codex curated playwright</td><td>官方</td><td><span class="stars" aria-label="5星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span></span></td><td><strong>无</strong> MCP（有 dev-playwright skill）</td><td>开发·<code>dev_testing</code></td><td>无</td><td><span class="badge l2">L2</span></td><td>浏览器自动化 MCP 层</td><td><code>@playwright/mcp</code> stdio</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-8u8jq8x"><span class="check-box"></span></label></td><td class="sticky">Browserbase MCP</td><td><a class="link-out" href="https://github.com/browserbase/mcp-server-browserbase" target="_blank" rel="noopener" title="https://github.com/browserbase/mcp-server-browserbase">github.com/browserbase/mcp-server-browserb…</a></td><td>云端浏览器 MCP</td><td>PulseMCP 热榜 + Browserbase 官方</td><td>商业</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td><strong>无</strong></td><td>开发·<code>dev_testing</code></td><td>Browserbase Key</td><td><span class="badge l2">L2</span></td><td>云端爬取/测试</td><td>适合 SaaS 无本地浏览器</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-a4uha4b"><span class="check-box"></span></label></td><td class="sticky">Apify MCP</td><td><a class="link-out" href="https://github.com/apify/apify-mcp-server" target="_blank" rel="noopener" title="https://github.com/apify/apify-mcp-server">github.com/apify/apify-mcp-server</a></td><td>社媒/网页 Actor 抓取</td><td>Apify 官方 + ad-pr 目录 P1</td><td>官方</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td><strong>无</strong></td><td>营销·<code>web_fetch</code></td><td>Apify Token</td><td><span class="badge l2">L2</span></td><td>结构化社媒/电商数据</td><td>与 CreatorCrawl 互补</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-78oi3jy"><span class="check-box"></span></label></td><td class="sticky">Figma MCP</td><td><a class="link-out" href="https://github.com/GLips/Figma-Developer-MCP" target="_blank" rel="noopener" title="https://github.com/GLips/Figma-Developer-MCP">github.com/GLips/Figma-Developer-MCP</a></td><td>读改 Figma 设计稿</td><td>文档已有 + Claude Partners Figma</td><td>高星</td><td><span class="stars" aria-label="5星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span></span></td><td>卡有 <code>mcp-figma</code></td><td>创作·设计</td><td><code>FIGMA_TOKEN</code></td><td><span class="badge l2">L2</span></td><td>设计交付闭环</td><td>见 admin-guide</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-7zesdao"><span class="check-box"></span></label></td><td class="sticky">skills.sh MCP（skillsh-mcp）</td><td><a class="link-out" href="https://github.com/brandonqr/skillsh-mcp" target="_blank" rel="noopener" title="https://github.com/brandonqr/skillsh-mcp">github.com/brandonqr/skillsh-mcp</a></td><td>搜索/安装 skills.sh 生态</td><td>GitHub 官方 README + MCP.Directory</td><td>社区</td><td><span class="stars" aria-label="3星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span><span class="star off">☆</span></span></td><td><strong>无</strong></td><td>开发·<code>dev_tools</code></td><td>无</td><td><span class="badge l2">L2</span></td><td>Agent 内发现新 Skill</td><td>元能力；SaaS 需评估</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-u5kd6bi"><span class="check-box"></span></label></td><td class="sticky">Exa MCP</td><td><a class="link-out" href="https://github.com/exa-labs/exa-mcp-server" target="_blank" rel="noopener" title="https://github.com/exa-labs/exa-mcp-server">github.com/exa-labs/exa-mcp-server</a></td><td>语义搜索 MCP</td><td>best-of-mcp 榜 + 本仓 <code>mcp-exa</code> 卡</td><td>官方</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td>卡有 <code>mcp-exa</code></td><td>营销·<code>web_fetch</code></td><td><code>EXA_API_KEY</code></td><td><span class="badge l2">L2</span></td><td>卡→连通</td><td>已有 catalog 条目</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-35wgorg"><span class="check-box"></span></label></td><td class="sticky">CreatorCrawl MCP</td><td><a class="link-out" href="https://github.com/CreatorCrawl/creatorcrawl-mcp" target="_blank" rel="noopener" title="https://github.com/CreatorCrawl/creatorcrawl-mcp">github.com/CreatorCrawl/creatorcrawl-mcp</a></td><td>社媒公开数据</td><td>ad-pr 目录 + 本仓 <code>mcp-creatorcrawl</code></td><td>商业</td><td><span class="stars" aria-label="3星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span><span class="star off">☆</span></span></td><td>卡有，<strong>未配</strong></td><td>营销·监测</td><td>API Key</td><td><span class="badge l2">L2</span></td><td>小红书/抖音监测补强</td><td>见 ad-pr §6</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-qoe8ja0"><span class="check-box"></span></label></td><td class="sticky">DataForSEO / seo-mcp</td><td><a class="link-out" href="https://github.com/dataforseo/mcp-server-typescript" target="_blank" rel="noopener" title="https://github.com/dataforseo/mcp-server-typescript">github.com/dataforseo/mcp-server-typescrip…</a></td><td>SEO 关键词/排名数据</td><td>MCP 生态 SEO 类热榜</td><td>商业</td><td><span class="stars" aria-label="3星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span><span class="star off">☆</span></span></td><td>卡有 <code>mcp-seo-data</code></td><td>营销·<code>ai_search</code></td><td>DataForSEO 凭据</td><td><span class="badge l2">L2</span></td><td>GEO 监测数据层</td><td>L2 凭据放 SkillServices</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-ppw1f7j"><span class="check-box"></span></label></td><td class="sticky">Notion MCP（官方）</td><td><a class="link-out" href="https://github.com/makenotion/notion-mcp-server" target="_blank" rel="noopener" title="https://github.com/makenotion/notion-mcp-server">github.com/makenotion/notion-mcp-server</a></td><td>Notion 官方 MCP</td><td>Notion 官方 + Codex notion curated</td><td>官方</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td>卡有 <code>mcp-notion-collab</code></td><td>办公·协作</td><td>Notion OAuth</td><td><span class="badge l2">L2</span></td><td>调研交付入库</td><td>与 codex-notion skill 成套</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-1nbe3sd"><span class="check-box"></span></label></td><td class="sticky">Linear MCP</td><td><a class="link-out" href="https://github.com/linear/linear-mcp-server" target="_blank" rel="noopener" title="https://github.com/linear/linear-mcp-server">github.com/linear/linear-mcp-server</a></td><td>Issue/路线图</td><td>Claude Partners Linear + Codex curated</td><td>官方</td><td><span class="stars" aria-label="3星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span><span class="star off">☆</span></span></td><td><strong>无</strong></td><td>办公·协作</td><td>Linear OAuth</td><td><span class="badge l2">L2</span></td><td>研发/运营任务链</td><td>可选</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-46tzloo"><span class="check-box"></span></label></td><td class="sticky">Sentry MCP</td><td><a class="link-out" href="https://github.com/getsentry/sentry-mcp" target="_blank" rel="noopener" title="https://github.com/getsentry/sentry-mcp">github.com/getsentry/sentry-mcp</a></td><td>错误追踪 MCP</td><td>Sentry 官方 + dev-sentry stub</td><td>官方</td><td><span class="stars" aria-label="3星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span><span class="star off">☆</span></span></td><td>stub <code>dev-sentry-sdk-setup</code></td><td>开发·<code>dev_ops</code></td><td><code>SENTRY_DSN</code></td><td><span class="badge l2">L2</span></td><td>补 stub 为真实 MCP</td><td>已有 needs_config 条目</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-nrl66qe"><span class="check-box"></span></label></td><td class="sticky">DeepWiki / 文档类 MCP</td><td><a class="link-out" href="https://github.com/devin/deepwiki-mcp（示例）" target="_blank" rel="noopener" title="https://github.com/devin/deepwiki-mcp（示例）">github.com/devin/deepwiki-mcp（示例）</a></td><td>仓库文档问答</td><td>MCP 社区热榜类</td><td>社区</td><td><span class="stars" aria-label="3星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span><span class="star off">☆</span></span></td><td><strong>无</strong></td><td>开发·<code>dev_tools</code></td><td>视提供商</td><td><span class="badge l2">L2</span></td><td>开源库文档问答</td><td>接入前安全审计</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-9mxkibf"><span class="check-box"></span></label></td><td class="sticky">Smithery 聚合安装</td><td><a class="link-out" href="https://smithery.ai" target="_blank" rel="noopener" title="https://smithery.ai">smithery.ai</a></td><td>MCP 一键安装/registry</td><td>PulseMCP + Smithery 官方</td><td>聚合</td><td><span class="stars" aria-label="3星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span><span class="star off">☆</span></span></td><td><strong>无</strong></td><td>—</td><td>—</td><td><span class="badge l2">L2</span></td><td>运维发现 MCP，非单卡</td><td>管理员用，不进 Hub</td></tr></tbody></table></div></div>
+</section>
+<section class="section" id="表-c-垂直补遗-按你的方向">
+  <div class="section-header">
+    <h2>表 C — 垂直补遗（按你的方向）</h2>
+    <span class="count">11 项</span>
+  </div>
+  <div class="section-body"><div class="table-wrap" role="region" aria-label="表格" tabindex="0">
+<table class="data-table" id="table-3-sub">
+<thead><tr><th class="sticky">选</th><th class="sticky">名称</th><th>地址</th><th>简介</th><th>权威依据</th><th>星级</th><th>系统已有对照</th><th>建议 Hub 落位</th><th>L级</th><th>相对提升</th></tr></thead><tbody><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-dglu3oq"><span class="check-box"></span></label></td><td class="sticky">AI 搜索 · metawhisp best-aeo</td><td><a class="link-out" href="https://github.com/metawhisp/best-aeo-skill" target="_blank" rel="noopener" title="https://github.com/metawhisp/best-aeo-skill">github.com/metawhisp/best-aeo-skill</a></td><td>Princeton GEO 四维审计</td><td>GitHub + ai-search-matrix 已列</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td><strong>已装</strong> <code>geo-aeo-audit</code></td><td>营销·<code>ai_search</code></td><td><span class="badge muted">—</span></td><td>核对 upstream，表 D</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-tuapoy7"><span class="check-box"></span></label></td><td class="sticky">爬虫 · firecrawl 全包 vendor</td><td><a class="link-out" href="https://github.com/firecrawl/cli" target="_blank" rel="noopener" title="https://github.com/firecrawl/cli">github.com/firecrawl/cli</a></td><td>6+ build/scrape/search skills</td><td>skills.sh 58–76K 各项 + 官方</td><td><span class="stars" aria-label="5星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span></span></td><td>仅 MCP 卡</td><td>营销·<code>web_fetch</code></td><td><span class="badge l2">L2</span></td><td><strong>整包 vendor</strong> 优于单条 L1</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-gc2n043"><span class="check-box"></span></label></td><td class="sticky">爬虫 · just-scrape</td><td>见表 A</td><td>见表 A</td><td>见表 A</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td>无</td><td>营销·<code>web_fetch</code></td><td><span class="badge l2">L2</span></td><td>Firecrawl 备选栈</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-xjhlhcr"><span class="check-box"></span></label></td><td class="sticky">销售 · battlecard 强化</td><td>本仓 <code>mkt-competitive-intel</code> 等</td><td>已有 battlecard 类</td><td>marketingskills 140K seo 同包</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td>已装多项</td><td>营销·策略</td><td><span class="badge l1">L1</span></td><td>新建 <strong>sales_enablement</strong> Pill + 模板</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-qv13rk9"><span class="check-box"></span></label></td><td class="sticky">HR · 无专包</td><td>—</td><td>缺口</td><td>inventory 确认</td><td>—</td><td><strong>空白</strong></td><td>办公·<code><span class="pill-new">🆕</span>hr_ops</code></td><td><span class="badge l3">L3</span></td><td>候选：<code>phuryn</code> HR 子集或 Greenhouse 类 MCP</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-9ft5ivd"><span class="check-box"></span></label></td><td class="sticky">法律 · lawvable 包</td><td><a class="link-out" href="https://github.com/lawvable/agent-skills" target="_blank" rel="noopener" title="https://github.com/lawvable/agent-skills">github.com/lawvable/agent-skills</a></td><td>法律 skill 精选</td><td>法律社区双源</td><td><span class="stars" aria-label="3星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span><span class="star off">☆</span></span></td><td>无</td><td>办公·legal hidden</td><td><span class="badge l3">L3</span></td><td>代表卡 2 + 流程模板</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-0u5uhfx"><span class="check-box"></span></label></td><td class="sticky">儿童趣味 · caveman/grill</td><td><a class="link-out" href="https://skills.sh/juliusbrussee/caveman" target="_blank" rel="noopener" title="https://skills.sh/juliusbrussee/caveman">skills.sh/juliusbrussee/caveman</a></td><td>趣味 CLI/学习向</td><td>skills.sh 261K 热榜</td><td><span class="stars" aria-label="3星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span><span class="star off">☆</span></span></td><td>无</td><td>教育·<code><span class="pill-new">🆕</span>edu_fun</code></td><td><span class="badge l1">L1</span></td><td>非 K12 课纲，偏趣味</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-g6c7v3y"><span class="check-box"></span></label></td><td class="sticky">行业 · edu-sci 外露</td><td>本仓 vendor</td><td>科研/医疗/生信</td><td>145 项已装 hidden</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td>hidden</td><td>教育·<code>academic</code></td><td><span class="badge l1">L1</span></td><td>挑 5 代表进 Hub</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-ywbai18"><span class="check-box"></span></label></td><td class="sticky">创意 · ai-video-generation</td><td><a class="link-out" href="https://skills.sh/qu-skills/skills/ai-video-generation" target="_blank" rel="noopener" title="https://skills.sh/qu-skills/skills/ai-video-generation">skills.sh/qu-skills/skills/ai-video-genera…</a></td><td>热榜视频生成 skill</td><td>skills.sh 306K + qu-skills</td><td><span class="stars" aria-label="3星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span><span class="star off">☆</span></span></td><td>部分 hf/seedance</td><td>创作·<code>create_video</code></td><td><span class="badge l2">L2</span></td><td>与模型池 Seedance 对齐 Key</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-r9odej1"><span class="check-box"></span></label></td><td class="sticky">企管 · OKR（飞书 Lark）</td><td><a class="link-out" href="https://skills.sh/open.feishu.cn/lark-okr" target="_blank" rel="noopener" title="https://skills.sh/open.feishu.cn/lark-okr">skills.sh/open.feishu.cn/lark-okr</a></td><td>飞书 OKR Skill</td><td>skills.sh 231K + 飞书官方</td><td><span class="stars" aria-label="4星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star off">☆</span></span></td><td>无</td><td>办公·<code><span class="pill-new">🆕</span>enterprise_mgmt</code></td><td><span class="badge l2">L2</span></td><td>国内企管；需飞书 OAuth</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-s2uxeep"><span class="check-box"></span></label></td><td class="sticky">办公 · anthropic pptx/pdf 升级</td><td>本仓 <code>anth-*</code></td><td>官方办公包</td><td>skills.sh pptx 150K</td><td><span class="stars" aria-label="5星"><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span><span class="star on">★</span></span></td><td>已装</td><td>办公</td><td><span class="badge l1">L1</span></td><td>bump anthropics-skills vendor</td></tr></tbody></table></div></div>
+</section>
+<section class="section" id="表-d-已装-建议升级-非新装">
+  <div class="section-header">
+    <h2>表 D — 已装·建议升级（非新装）</h2>
+    <span class="count">8 项</span>
+  </div>
+  <div class="section-body"><div class="table-wrap" role="region" aria-label="表格" tabindex="0">
+<table class="data-table" id="table-4-sub">
+<thead><tr><th class="sticky">选</th><th class="sticky">名称</th><th>系统 slug</th><th>权威依据</th><th>相对提升</th><th>建议动作</th></tr></thead><tbody><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-99inrov"><span class="check-box"></span></label></td><td class="sticky">html-ppt</td><td><code>html-ppt</code></td><td>lewislulu upstream · Launch 已接</td><td>主题/整稿 preview 已本地修复</td><td><code>npm run vendor:html-ppt</code> bump</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-3grb353"><span class="check-box"></span></label></td><td class="sticky">hyperframes</td><td><code>hf-*</code></td><td>skills.sh 103K vs 本地 vendor</td><td>CLI/registry 子 skill 可能落后</td><td><code>npm run vendor:video-coding</code></td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-nzp6vux"><span class="check-box"></span></label></td><td class="sticky">marketingskills</td><td><code>mkt-*</code></td><td>seo-audit 140K 仍在榜</td><td>核对 coreyhaines31 新 commit</td><td>vendor marketingskills</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-ueba2kz"><span class="check-box"></span></label></td><td class="sticky">seo-geo 包</td><td><code>geo-*</code></td><td>aaron-he-zhu 仍在 skills.sh</td><td>7 项完整性</td><td><code>npm run vendor:marketing</code></td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-4qg1t6c"><span class="check-box"></span></label></td><td class="sticky">phuryn PM</td><td><code>pms-*</code></td><td>SkillsMP 65 项</td><td>SSL 失败项补齐</td><td><code>npm run vendor:skills-ecosystem</code></td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-9n3uiup"><span class="check-box"></span></label></td><td class="sticky">anthropics-skills</td><td><code>anth-*</code></td><td>pptx 150K/pdf 137K 榜</td><td>canvas/webapp-testing 等待</td><td>vendor anthropics 子目录</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-7cndb49"><span class="check-box"></span></label></td><td class="sticky">remotion</td><td><code>remotion</code> + vendor</td><td>remotion-best-practices 378K</td><td>最佳实践 skill 未独立 slug</td><td>合并 remotion-best-practices</td></tr><tr><td class="sticky"><label class="check-cell"><input type="checkbox" class="row-check" data-id="chk-fc5rqc7"><span class="check-box"></span></label></td><td class="sticky">pd-geo / Nova 模板</td><td>流程模板</td><td>内部</td><td>对齐 geo-aeo 新 Pill</td><td><code>npm run templates:gen</code> 核对</td></tr></tbody></table></div></div>
+</section>
+<section class="section" id="表-e-明确不推荐">
+  <div class="section-header">
+    <h2>表 E — 明确不推荐</h2>
+    <span class="count">7 项</span>
+  </div>
+  <div class="section-body"><div class="table-wrap" role="region" aria-label="表格" tabindex="0">
+<table class="data-table" id="table-5-sub">
+<thead><tr><th class="sticky">名称</th><th>地址</th><th>原因</th></tr></thead><tbody><tr><td class="sticky">postiz-agent / xiaohongshu-mcp</td><td>历史目录</td><td>upgrade-report <strong>明确排除</strong></td></tr><tr><td class="sticky">n8n-skills / notebooklm-skill</td><td>社区</td><td>维护/合规未过门禁</td></tr><tr><td class="sticky">find-skills 重复安装</td><td>若恢复 meta</td><td>与表 A 二选一；勿双份</td></tr><tr><td class="sticky">全量 azure-skills 6M 安装包</td><td>microsoft/azure-skills</td><td>与本仓 SaaS 场景无关，体量过大</td></tr><tr><td class="sticky">全量 runcomfy 视频包 2.8M</td><td>agentspace-so</td><td>与 hf/模型池重复；Key 成本高</td></tr><tr><td class="sticky">Trail of Bits 安全包</td><td>—</td><td>历史排除</td></tr><tr><td class="sticky">低星 fork skills</td><td>各类</td><td>附录 F；无双源</td></tr></tbody></table></div></div>
+</section>
+<section class="section" id="附录-f-候选池未入表项-未过门禁">
+  <div class="section-header">
+    <h2>附录 F — 候选池未入表项（未过门禁）</h2>
+    <span class="count">4 项</span>
+  </div>
+  <div class="section-body"><div class="table-wrap" role="region" aria-label="表格" tabindex="0">
+<table class="data-table" id="table-6-sub">
+<thead><tr><th class="sticky">名称</th><th>原因</th></tr></thead><tbody><tr><td class="sticky">jackiexiao/just-scrape fork</td><td>仅 106 安装，权威不足</td></tr><tr><td class="sticky">hr 关键词 skills find</td><td>无直接结果；hr 搜到 frontend-design 噪声</td></tr><tr><td class="sticky">单源 GitHub Trending 无 skills.sh</td><td>缺交叉验证</td></tr><tr><td class="sticky">★2 以下社区 empty SKILL</td><td>未读 SKILL.md 或 6 个月未更新</td></tr></tbody></table></div>
+<p class="prose">完整候选 JSON：<code>docs/.skills-candidate-pool.json</code></p></div>
+</section>
+<section class="section" id="附录-新建分类提案-勾选表-c-后启用">
+  <div class="section-header">
+    <h2>附录 — 新建分类提案（勾选表 C 后启用）</h2>
+    
+  </div>
+  <div class="section-body"><p class="prose">见 <a href="./skills-mcp-new-taxonomy-proposals-2026-06-17.md" target="_blank" rel="noopener">skills-mcp-new-taxonomy-proposals-2026-06-17.md</a></p></div>
+</section>
+<section class="section" id="勾选落地与-smoke-阶段-5">
+  <div class="section-header">
+    <h2>勾选落地与 Smoke（阶段 5）</h2>
+    <span class="count">6 项</span>
+  </div>
+  <div class="section-body"><div class="table-wrap" role="region" aria-label="表格" tabindex="0">
+<table class="data-table" id="table-8-sub">
+<thead><tr><th>勾选项类型</th><th>建议命令</th></tr></thead><tbody><tr><td>L1 单 skill</td><td><code>npx skills add owner/repo@skill</code> → <code>node scripts/bootstrap-pilotdeck-config.mjs</code> → <code>npm run capabilities:gen</code></td></tr><tr><td>L2 vendor 包</td><td><code>npm run vendor:skills-ecosystem</code> / <code>vendor:marketing</code> / 扩 manifest</td></tr><tr><td>Hub 分类</td><td>改 <code>capabilityHubTaxonomy.mjs</code> + <code>capability-hub-zh.json</code> → <code>npm run capabilities:gen</code></td></tr><tr><td>验收</td><td><code>npm run smoke:capability-hub</code> · <code>npm run smoke:capability-try-prompts</code></td></tr><tr><td>营销 GEO</td><td><code>npm run smoke:marketing-install</code> · <code>npm run verify:marketing-saas</code></td></tr><tr><td>MCP 连通</td><td>Settings MCP 绿点 + 对话 <code>mcp__*</code> 试调用</td></tr></tbody></table></div>
+<p class="prose"><strong>批次表模板</strong>：<a href="./skills-mcp-selected-batch-2026-06-17.md" target="_blank" rel="noopener">skills-mcp-selected-batch-2026-06-17.md</a></p></div>
+</section>
+<p class="footer-note">调研完成：2026-06-17 · 数据源 skills.sh / npx skills find / openai/skills curated / 本仓 inventory</p>
+</main>
+</div>
+<script>
+(function () {
+  const KEY = 'skills-mcp-rec-2026-06-17';
+  const checks = document.querySelectorAll('.row-check');
+  try {
+    const saved = JSON.parse(localStorage.getItem(KEY) || '{}');
+    checks.forEach(function (el, i) {
+      const k = 'r' + i;
+      if (saved[k]) { el.checked = true; }
+      el.addEventListener('change', function () {
+        saved[k] = el.checked;
+        localStorage.setItem(KEY, JSON.stringify(saved));
+      });
+    });
+  } catch (e) { /* ignore */ }
+
+  document.getElementById('btn-clear').addEventListener('click', function () {
+    checks.forEach(function (el) { el.checked = false; });
+    localStorage.removeItem(KEY);
+  });
+
+  document.getElementById('btn-export').addEventListener('click', function () {
+    const picked = [];
+    checks.forEach(function (el) {
+      if (!el.checked) return;
+      const row = el.closest('tr');
+      const nameCell = row && row.cells[1];
+      if (nameCell) picked.push(nameCell.textContent.trim());
+    });
+    const text = picked.length ? picked.join('\n') : '(无勾选项)';
+    navigator.clipboard.writeText(text).then(function () {
+      alert('已复制 ' + picked.length + ' 项到剪贴板');
+    }).catch(function () { prompt('已勾选项：', text); });
+  });
+})();
+</script>
+</body>
+</html>

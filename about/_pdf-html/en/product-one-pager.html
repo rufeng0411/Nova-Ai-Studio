@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nova Ai-Studio 2.0 · Product One-Pager (EN)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <style>
+    
+  :root {
+    --nova-ink: #1a202c;
+    --nova-primary: #2d3748;
+    --nova-muted: #4a5568;
+    --nova-border: #e2e8f0;
+    --nova-bg: #f8fafc;
+    --nova-accent: #edf2f7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Inter', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.55;
+    color: var(--nova-ink);
+    margin: 0;
+    background: #fff;
+  }
+  .print-header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 14mm;
+    padding: 2mm 12mm;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--nova-border);
+    background: #fff;
+    z-index: 100;
+  }
+  .header-logo { height: 9mm; width: auto; }
+  .header-text { display: flex; flex-direction: column; line-height: 1.2; }
+  .header-brand { font-weight: 700; font-size: 9pt; color: var(--nova-primary); }
+  .header-doc { font-size: 7.5pt; color: var(--nova-muted); }
+  .print-footer {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    height: 10mm;
+    padding: 2mm 12mm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 7pt;
+    color: #718096;
+    border-top: 1px solid var(--nova-border);
+    background: #fff;
+  }
+  .doc-main {
+    padding: 18mm 14mm 14mm 14mm;
+  }
+  .doc-title {
+    font-size: 20pt;
+    font-weight: 700;
+    color: var(--nova-primary);
+    margin: 0 0 6mm;
+    padding-bottom: 3mm;
+    border-bottom: 2px solid var(--nova-primary);
+  }
+  .cover-page + .page-break + .doc-body .doc-title { display: none; }
+  .cover-page {
+    min-height: 240mm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(180deg, #fff 0%, var(--nova-bg) 100%);
+    margin: -18mm -14mm 0;
+    padding: 20mm;
+  }
+  .cover-logo {
+    display: block;
+    height: 28mm;
+    width: auto;
+    max-width: 75%;
+    object-fit: contain;
+    object-position: center;
+    margin: 0 auto 16px;
+  }
+  .cover-title { font-size: 26pt; color: var(--nova-primary); margin: 0 0 8px; border: none; }
+  .cover-sub { font-size: 12pt; color: var(--nova-muted); margin: 0 0 24px; }
+  .cover-tag { font-size: 9pt; color: #718096; letter-spacing: 0.08em; text-transform: uppercase; }
+  .page-break { page-break-after: always; }
+  h1 { font-size: 16pt; color: var(--nova-primary); margin: 5mm 0 3mm; }
+  h2 { font-size: 13pt; color: var(--nova-primary); margin: 4mm 0 2mm; border-left: 3px solid var(--nova-primary); padding-left: 8px; }
+  h3 { font-size: 11pt; margin: 3mm 0 2mm; }
+  h4 { font-size: 10pt; margin: 2mm 0 1mm; }
+  p { margin: 0 0 2.5mm; }
+  blockquote {
+    margin: 3mm 0;
+    padding: 3mm 4mm;
+    background: var(--nova-accent);
+    border-left: 3px solid var(--nova-muted);
+    font-size: 9.5pt;
+    color: var(--nova-muted);
+  }
+  hr.section-rule { border: none; border-top: 1px solid var(--nova-border); margin: 4mm 0; }
+  ul, ol { margin: 0 0 3mm; padding-left: 5mm; }
+  li { margin-bottom: 1mm; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 3mm 0 4mm;
+    font-size: 9pt;
+  }
+  th {
+    background: var(--nova-primary);
+    color: #fff;
+    font-weight: 600;
+    text-align: left;
+    padding: 2.5mm 3mm;
+  }
+  td {
+    border: 1px solid var(--nova-border);
+    padding: 2mm 3mm;
+    vertical-align: top;
+  }
+  tr:nth-child(even) td { background: var(--nova-bg); }
+  code {
+    font-family: Consolas, monospace;
+    font-size: 8.5pt;
+    background: var(--nova-accent);
+    padding: 0 3px;
+    border-radius: 2px;
+  }
+  pre {
+    background: #1a202c;
+    color: #e2e8f0;
+    padding: 3mm;
+    border-radius: 4px;
+    font-size: 8pt;
+    overflow-x: auto;
+  }
+  a { color: var(--nova-primary); }
+  .stats-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 5mm;
+    padding: 4mm;
+    background: var(--nova-accent);
+    border-radius: 6px;
+  }
+  .stat { flex: 1; min-width: 80px; text-align: center; }
+  .stat-val { display: block; font-size: 14pt; font-weight: 700; color: var(--nova-primary); }
+  .stat-lbl { font-size: 7.5pt; color: var(--nova-muted); }
+  .highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    margin-bottom: 5mm;
+  }
+  .hcard {
+    background: var(--nova-bg);
+    border: 1px solid var(--nova-border);
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 8.5pt;
+  }
+  .hcard .num { display: block; font-size: 7pt; color: #718096; margin-bottom: 2px; }
+  .color-palette { display: flex; gap: 6px; margin-bottom: 5mm; }
+  .swatch {
+    flex: 1; height: 36px; border-radius: 4px;
+    display: flex; align-items: flex-end; padding: 4px;
+  }
+  .swatch span { font-size: 6.5pt; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,.4); }
+  .dual-track { display: flex; gap: 10px; margin-bottom: 5mm; }
+  .track {
+    flex: 1; padding: 10px; border-radius: 6px;
+    background: var(--nova-bg); border: 1px solid var(--nova-border);
+  }
+  .track.saas { background: var(--nova-primary); color: #fff; }
+  .track.saas h4 { color: #fff; }
+  .pricing-tiers { display: flex; gap: 6px; margin-bottom: 5mm; }
+  .tier {
+    flex: 1; text-align: center; padding: 8px 4px;
+    border: 1px solid var(--nova-border); border-radius: 4px; font-size: 8.5pt;
+  }
+  .tier.featured { background: var(--nova-primary); color: #fff; border-color: var(--nova-primary); }
+  .tier.featured h4 { color: #fff; }
+  .tier h4 { margin: 0 0 4px; font-size: 9pt; }
+  .tier p { margin: 0; font-size: 7.5pt; }
+  .mermaid { margin: 4mm 0; text-align: center; }
+  .risk-high { background: #fed7d7; color: #c53030; padding: 2px 6px; border-radius: 3px; font-size: 8pt; margin-right: 6px; }
+  .risk-mid { background: #feebc8; color: #c05621; padding: 2px 6px; border-radius: 3px; font-size: 8pt; margin-right: 6px; }
+  .landscape table { font-size: 8pt; }
+  .landscape th, .landscape td { padding: 1.5mm 2mm; }
+
+    @page { size: A4 portrait; }
+  </style>
+</head>
+<body class="portrait">
+  <header class="print-header">
+    <img src="data:image/png;base64,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" alt="" class="header-logo" />
+    <div class="header-text">
+      <span class="header-brand">Nova Ai-Studio</span>
+      <span class="header-doc">English</span>
+    </div>
+  </header>
+  <footer class="print-footer">
+    <span>Nova Ai Studio 2.0 · AI 营销创意生产平台</span>
+    <span class="footer-page"></span>
+  </footer>
+  <main class="doc-main">
+    
+    <article class="doc-body">
+      <h1 class="doc-title">Nova Ai-Studio 2.0 · Product One-Pager (EN)</h1>
+      <h1>Nova Ai-Studio 2.0 · Product One-Pager (EN)</h1>
+<h2>What it is</h2>
+<p><strong>Nova Ai-Studio 2.0</strong> is a conversation-driven <strong>AI marketing creative production platform</strong>.</p>
+<p>Users describe goals in natural language; the platform delivers <strong>reviewable project files</strong>—research briefs, landing pages, decks, video scripts, social packs—not just chat replies.</p>
+<h2>Who it's for</h2>
+<table><thead><tr><th>Segment</th><th>Use cases</th></tr></thead><tbody><tr><td>Brand marketing teams</td><td>Campaigns, GEO monitoring, competitive research</td></tr><tr><td>Agencies &amp; studios</td><td>Pitch decks, comparison landing pages, social content</td></tr><tr><td>Solo creators</td><td>Templates from outline → PPT → video</td></tr><tr><td>B2B growth</td><td>SaaS growth playbooks, lead-gen landing pages</td></tr><tr><td>Education</td><td>K12 and academic writing (dedicated tab)</td></tr><tr><td>Enterprise IT</td><td>Multi-tenant SaaS or private Docker deploy</td></tr></tbody></table>
+<h2>Three core values</h2>
+<ol>
+<li><strong>Conversation → project delivery</strong> — isolated workspaces, continuous memory, in-chat preview/download  </li>
+<li><strong>Marketing flywheel + scale</strong> — 6 stages, 400+ capabilities, ~30 workflow templates  </li>
+<li><strong>Enterprise-ready</strong> — tenant isolation, cloud file hubs, admin usage dashboards  </li>
+</ol>
+<h2>vs general chat AI</h2>
+<p>Chat products <strong>answer</strong>; Nova <strong>delivers whole projects</strong> with organized capabilities, templates, flywheel stages, and file acceptance in the thread.</p>
+<h2>Key metrics</h2>
+<ul>
+<li>400+ ready capabilities  </li>
+<li>~30 workflow templates  </li>
+<li>6-stage marketing flywheel  </li>
+<li>150 Open Design systems  </li>
+<li>Up to ~70% token savings via smart routing  </li>
+</ul>
+<h2>Next reads (ZH)</h2>
+<ul>
+<li><a href="../product/产品总览-one-pager.html" target="_blank" rel="noopener noreferrer">产品总览</a>  </li>
+<li><a href="../product/价值主张与八大亮点.html" target="_blank" rel="noopener noreferrer">价值主张与八大亮点</a></li>
+</ul>
+    </article>
+  </main>
+  <script>
+    mermaid.initialize({ startOnLoad: false, theme: 'neutral', securityLevel: 'loose', fontFamily: 'Inter, Microsoft YaHei, sans-serif' });
+    document.addEventListener('DOMContentLoaded', async () => {
+      const nodes = document.querySelectorAll('.mermaid');
+      if (nodes.length && window.mermaid) {
+        await mermaid.run({ nodes });
+      }
+    });
+  </script>
+</body>
+</html>

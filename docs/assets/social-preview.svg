@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640">
+  <rect width="1280" height="640" fill="#0d1117"/>
+  <text x="80" y="280" fill="#f0f6fc" font-size="64" font-family="Segoe UI, sans-serif">Nova Ai-Studio</text>
+  <text x="80" y="360" fill="#8b949e" font-size="32" font-family="Segoe UI, sans-serif">Self-hosted personal Agent workbench. Login-only admin, Hub with 400+ skills, SQ</text>
+  <text x="80" y="520" fill="#58a6ff" font-size="28" font-family="Segoe UI, sans-serif">AGPL-3.0</text>
+</svg>

@@ -1,0 +1,78 @@
+﻿export type ExportEditablePptxOptions = {
+  skip_text_styles?: boolean;
+  max_workers?: number;
+  max_depth?: number;
+};
+
+/**
+ * 导出为可编辑PPTX（异步任务）
+ * @param projectId 项目ID
+ * @param filename 可选的文件名
+ * @param pageIds 可选的页面ID列表，如果不提供则导出所有页面
+ * @param options 可选：跳过文字样式（加速）、并发与递归深度等
+ */
+export const exportEditablePPTX = async (
+  projectId: string,
+  filename?: string,
+  pageIds?: string[],
+  options?: ExportEditablePptxOptions
+): Promise<ApiResponse<{ task_id: string; filename?: string }>> => {
+  const body: Record<string, unknown> = {
+    filename,
+    page_ids: pageIds,
+  };
+  if (options?.skip_text_styles !== undefined) body.skip_text_styles = options.skip_text_styles;
+  if (options?.max_workers !== undefined) body.max_workers = options.max_workers;
+  if (options?.max_depth !== undefined) body.max_depth = options.max_depth;
+export const exportEditablePPTX = async (
+  projectId: string,
+  filename?: string,
+  pageIds?: string[],
+  options?: ExportEditablePptxOptions
+): Promise<ApiResponse<{ task_id: string; filename?: string }>> => {
+  const body: Record<string, unknown> = {
+    filename,
+    page_ids: pageIds,
+  };
+  if (options?.skip_text_styles !== undefined) body.skip_text_styles = options.skip_text_styles;
+  if (options?.max_workers !== undefined) body.max_workers = options.max_workers;
+  if (options?.max_depth !== undefined) body.max_depth = options.max_depth;
+  const response = await apiClient.post<ApiResponse<{ task_id: string; filename?: string }>>(
+    `/api/projects/${projectId}/export/editable-pptx`,
+    body
+  );
+  return response.data;
+};
+
+// ===== 素材生成 =====
+
+/**
+ * 生成单张素材图片（不绑定具体页面）
+ * 现在返回异步任务ID，需要通过getTaskStatus轮询获取结果
+ */
+  options?: ExportEditablePptxOptions
+): Promise<ApiResponse<{ task_id: string; filename?: string }>> => {
+  const body: Record<string, unknown> = {
+    filename,
+    page_ids: pageIds,
+  };
+  if (options?.skip_text_styles !== undefined) body.skip_text_styles = options.skip_text_styles;
+  if (options?.max_workers !== undefined) body.max_workers = options.max_workers;
+  if (options?.max_depth !== undefined) body.max_depth = options.max_depth;
+  const response = await apiClient.post<ApiResponse<{ task_id: string; filename?: string }>>(
+    `/api/projects/${projectId}/export/editable-pptx`,
+    body
+  );
+  return response.data;
+};
+
+// ===== 素材生成 =====
+
+/**
+ * 生成单张素材图片（不绑定具体页面）
+ * 现在返回异步任务ID，需要通过getTaskStatus轮询获取结果
+ */
+export const generateMaterialImage = async (
+  projectId: string,
+  prompt: string,
+  refImage?: File | null,

@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "builtin": [
+    { "id": "playwright-pdf", "formats": ["pdf"], "integrationLevel": "L2", "priority": 50 },
+    { "id": "playwright-html-pptx", "formats": ["pptx"], "integrationLevel": "L2", "priority": 55 },
+    { "id": "docx-js", "formats": ["docx"], "integrationLevel": "L2", "priority": 50 },
+    { "id": "python-pptx-ir", "formats": ["pptx"], "integrationLevel": "L2", "priority": 40 },
+    { "id": "exceljs", "formats": ["xlsx"], "integrationLevel": "L2", "priority": 50 },
+    { "id": "mineru-ocr-pptx", "formats": ["pptx"], "integrationLevel": "cloud", "priority": 60 }
+  ],
+  "skills": [
+    {
+      "id": "minimax-pdf",
+      "skillSlug": "minimax-pdf",
+      "formats": ["pdf"],
+      "integrationLevel": "L1",
+      "priority": 70,
+      "entry": "skills/minimax-pdf/scripts/make.sh",
+      "qualities": ["fidelity"]
+    },
+    {
+      "id": "nutrient",
+      "skillSlug": "office-nutrient",
+      "formats": ["pdf", "docx"],
+      "integrationLevel": "cloud",
+      "priority": 80,
+      "entry": "skills/vendor/office-ecosystem/office-nutrient/scripts/convert.py",
+      "qualities": ["fidelity"]
+    }
+  ]
+}

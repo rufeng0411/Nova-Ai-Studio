@@ -1,0 +1,15 @@
+{
+  "id": "rog-4a9605af-ppt-intermediate-png",
+  "description": "4a9605af: canonical pptx verified, intermediate PNG removed from broken",
+  "userGoal": "用「原生可编辑 PPT」帮我：【吴裕泰2026新品上市，10页】",
+  "capabilitySlug": "ppt-master",
+  "expectedProfileId": "ppt-master",
+  "verifiedPaths": [
+    "artifacts/slides/wuyutai/wuyutai-2026.pptx"
+  ],
+  "brokenPaths": [
+    "artifacts/slides/wuyutai/slide-01/page-01.png",
+    "artifacts/slides/wuyutai/s0-layout.png"
+  ],
+  "expectBrokenAfterPptFilter": []
+}

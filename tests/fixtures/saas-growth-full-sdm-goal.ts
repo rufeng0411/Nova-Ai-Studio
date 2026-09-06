@@ -1,0 +1,23 @@
+/** ES9 Case1 — saas-growth-full template prompt (from config/process-templates.json). */
+export const SAAS_GROWTH_FULL_SDM_GOAL = [
+  "帮我为【SaaS 产品】做一套增长全案，按阶段一次规划执行，产出存系统分配的任务目录",
+  "1. 市场与竞品调研。",
+  "2. 定位与定价方案。",
+  "3. 官网落地页 HTML。",
+  "4. 程序化 SEO 页模板（给【关键词族】示例）。",
+  "5. AI 搜索基线：read_skill pd-geo，产出 keywords.md + 一篇 AI 搜索友好成稿提纲。",
+  "6. 邮件培育序列 3-5 封。",
+  "7. 付费投放计划（渠道、预算分配、素材方向）。",
+  "8. 复盘模板（指标与归因框架）。",
+  "禁止 read_file skills/；每步 write_file 落盘后再进下一步。",
+  "",
+  "标准成果清单：",
+  "1. market-research.md",
+  "2. positioning-pricing.md",
+  "3. landing.html",
+  "4. programmatic-seo-template.html",
+  "5. geo-keywords.md",
+  "6. email-sequence.md",
+  "7. ads-plan.md",
+  "8. retrospective-template.md",
+].join("\n");

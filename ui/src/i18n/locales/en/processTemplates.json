@@ -1,0 +1,99 @@
+{
+  "title": "Full-case templates",
+  "subtitle": "Finish a whole project in one conversation — click a card to fill the prompt; edit [placeholders] and send",
+  "loading": "Loading full-case templates…",
+  "loadError": "Could not load full-case templates",
+  "searchPlaceholder": "Search flows, scenarios, or outcomes…",
+  "searchHints": {
+    "title": "Try these keywords",
+    "groups": [
+      {
+        "id": "marketing",
+        "label": "Marketing",
+        "keywords": ["Campaign", "competitor", "social", "landing", "launch", "leads", "email", "retrospective", "brand"]
+      },
+      {
+        "id": "geo",
+        "label": "GEO",
+        "keywords": ["AI search", "visibility", "AEO", "monitor", "keywords", "audit", "GEO pack"]
+      },
+      {
+        "id": "content",
+        "label": "Content",
+        "keywords": ["Xiaohongshu", "article", "matrix", "podcast", "IP"]
+      },
+      {
+        "id": "video",
+        "label": "Video",
+        "keywords": ["video", "deck", "storyboard", "promo", "Remotion", "Seedance"]
+      },
+      {
+        "id": "office",
+        "label": "Office",
+        "keywords": ["document", "Word", "report", "meeting", "PDF", "HTML"]
+      },
+      {
+        "id": "sales",
+        "label": "Sales",
+        "keywords": ["Battlecard", "sales", "legal", "contract", "risk"]
+      },
+      {
+        "id": "research",
+        "label": "Research",
+        "keywords": ["research", "report", "data", "industry", "decision"]
+      }
+    ]
+  },
+  "tryIt": "Try it",
+  "tryItNoProject": "Select a project first",
+  "complexity": {
+    "all": "All",
+    "light": "Light",
+    "standard": "Standard",
+    "full": "Full"
+  },
+  "complexityHint": {
+    "all": "All complexity levels",
+    "light": "2-step quick combo",
+    "standard": "3–4 step projects",
+    "full": "5+ step end-to-end"
+  },
+  "categoryFilterLabel": "Category filter",
+  "category": {
+    "all": "All",
+    "marketing": "Marketing",
+    "enterprise": "Enterprise",
+    "geo": "GEO",
+    "office": "Office",
+    "creation": "Creation"
+  },
+  "categoryHint": {
+    "all": "All categories",
+    "marketing": "Acquisition, content, campaigns & growth",
+    "enterprise": "Contracts, labor, tax, bids & subsidies",
+    "geo": "AI search visibility & monitoring",
+    "office": "Docs, meetings & office export",
+    "creation": "Video, decks & multimedia"
+  },
+  "expandDetail": "Show details",
+  "collapseDetail": "Hide details",
+  "outcome": "Outcome",
+  "scenario": "When to use",
+  "flow": "Flow",
+  "outputs": "Results",
+  "relatedSkills": "Related capabilities",
+  "steps": "{{count}} steps",
+  "howItWorksTitle": "How it works",
+  "howItWorks": "Click a card → prompt fills the composer → replace [placeholders] → send. The agent runs all phases in this conversation, saves to artifacts/, and reports paths.",
+  "empty": "No matching templates",
+  "emptyHint": "Searched all process templates — try another keyword or clear search",
+  "hubPinnedBadge": "Essential",
+  "hubExpandMore": "More templates",
+  "hubCollapseMore": "Show less",
+  "hubSecondaryHint": "Additional templates",
+  "hubPinnedCount": "{{pinned}} essential · {{total}} total",
+  "welcomeCta": "Want to finish a whole project at once?",
+  "openGallery": "Browse full-case templates",
+  "composerButton": "Full-case templates",
+  "close": "Close"
+}

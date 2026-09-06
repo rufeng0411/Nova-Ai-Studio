@@ -1,0 +1,10 @@
+{
+  "name": "rog-cfc4ceb2-geo-social-matrix-misprofile",
+  "description": "GEO full case must resolve profileId=geo when goal contains 小红书草稿",
+  "userGoal": "帮【雷蛇灵刃】做品牌 GEO 全案，按阶段一次执行，存 artifacts_geo_【品牌名】_ 每阶段 1. 调研 2. 策略 3. 小红书草稿",
+  "capabilitySlug": "pd-geo",
+  "expectedProfileId": "geo",
+  "verifiedPaths": ["artifacts/geo/雷蛇灵刃/drafts/zhihu.md"],
+  "missingPaths": ["drafts/zhihu.md"],
+  "expectMissingAfterReconcile": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "rog-campaign-phantom-paths",
+  "description": "Campaign repair must not chase phantom bare filenames from assistant prose",
+  "userGoal": "帮 ROG 做 Campaign 全案，直接开始做，做完告诉我路径",
+  "assistantText": "好，campaign-plan.md 还缺 2645858886640783360 与 2026-07-05 23:46:21.362",
+  "phantomPaths": [
+    "好，campaign-plan.md",
+    "2645858886640783360.md",
+    "2026-07-05 23:46:21.362.md",
+    "07-05.md"
+  ],
+  "eligiblePaths": [
+    "artifacts/campaign/rog/campaign-plan.md",
+    "artifacts/campaign/rog/brief.md"
+  ],
+  "expectedRepairEligibleCount": 2
+}

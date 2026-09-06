@@ -1,0 +1,7 @@
+{
+  "id": "rog-aad78932-df-ppt-misroute",
+  "description": "aad78932: Hub PPT生成 with pptx intent must upgrade to ppt-master profile",
+  "userGoal": "用「PPT 生成」做一套演示稿：【雷神笔记本主题 + 6页数 + 产品展示】",
+  "capabilitySlug": "df-ppt-generation",
+  "expectedProfileId": "ppt-master"
+}

@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "themeId": "ngrs-v1",
+  "name": "Nova GEO Report System",
+  "description": "GEO HTML 报告统一设计系统 — Graphite Insight 浅色主盘 + 可选深色",
+  "tokens": {
+    "bg": "#F0F1F4",
+    "bgSubtle": "#E8EAEF",
+    "card": "#FFFFFF",
+    "border": "#E2E5EB",
+    "text": "#1A1F26",
+    "muted": "#647084",
+    "accent": "#0F766E",
+    "accentSoft": "rgba(15,118,110,0.12)",
+    "secondary": "#4F5D75",
+    "indigo": "#4F46E5",
+    "priorityP0": "#B91C1C",
+    "priorityP1": "#B45309",
+    "priorityP2": "#647084",
+    "chartGrid": "#EEF0F3",
+    "radius": "0.625rem",
+    "maxWidth": "1100px"
+  },
+  "categoricalPalette": ["#0F766E", "#4F46E5", "#0E7490", "#6366F1", "#647084"],
+  "animation": {
+    "fadeUpMs": 400,
+    "staggerMs": 60,
+    "chartDurationMs": 900,
+    "chartDelayStepMs": 90,
+    "gaugeStrokeMs": 1200,
+    "countUpMs": 600,
+    "sparklineMs": 500
+  },
+  "darkTokens": {
+    "bg": "#12151A",
+    "card": "#1C2128",
+    "text": "#E8EAED",
+    "muted": "#9CA3AF",
+    "accent": "#2DD4BF",
+    "border": "#2A3038",
+    "chartGrid": "#2A3038"
+  },
+  "catalogRef": "config/geo-chart-catalog.json",
+  "assets": {
+    "css": "skills/geo-dual-report/templates/geo-report-theme.css",
+    "js": "skills/geo-dual-report/templates/geo-chart-theme.js"
+  }
+}

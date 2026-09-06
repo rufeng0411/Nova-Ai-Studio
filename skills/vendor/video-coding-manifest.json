@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-06-19T13:46:20.685Z",
+  "totalSkills": 4,
+  "sources": [
+    {
+      "source": "hyperframes",
+      "repo": "https://github.com/heygen-com/hyperframes.git",
+      "commit": "4e32c5e0fec980a9deac0bf337636d2b1f3b4f5c",
+      "count": 3,
+      "copied": [
+        {
+          "sourcePath": "skills/hyperframes",
+          "vendoredSlug": "hf-hyperframes"
+        },
+        {
+          "sourcePath": "skills/hyperframes-cli",
+          "vendoredSlug": "hf-hyperframes-cli"
+        },
+        {
+          "sourcePath": "skills/hyperframes-media",
+          "vendoredSlug": "hf-hyperframes-media"
+        }
+      ]
+    },
+    {
+      "source": "remotion-skills",
+      "repo": "https://github.com/remotion-dev/skills.git",
+      "commit": "277510e78245ac0fa275d7cb6520d52e0ac2e212",
+      "count": 1,
+      "copied": [
+        {
+          "sourcePath": "skills/remotion",
+          "vendoredSlug": "remotion-video"
+        }
+      ]
+    }
+  ]
+}

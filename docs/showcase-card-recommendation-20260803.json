@@ -1,0 +1,1337 @@
+{
+  "meta": {
+    "version": 1,
+    "created": "2026-08-03",
+    "cardCount": 54,
+    "sections": [
+      "design",
+      "video",
+      "copy",
+      "marketing",
+      "office",
+      "research",
+      "geo",
+      "fullcase",
+      "compliance"
+    ],
+    "wave": "A-spec",
+    "promptGrade": "professional-showcase-v2",
+    "note": "Spec batch only. Live generation requires Wave-B confirmation. Prompts are agency/executive-ready."
+  },
+  "cards": [
+    {
+      "id": "sc-design-jurassic-shop",
+      "section_id": "design",
+      "name_zh": "侏罗纪岛潮玩电商站",
+      "name_en": "Jurassic Island collectible shop",
+      "annotation_zh": "泡泡玛特风潮玩电商：Q 版侏罗纪动物人偶，强绑 AI 生图商品主图。",
+      "annotation_en": "Pop Mart–style collectible shop with Q Jurassic animal dolls + AI product art.",
+      "badge_zh": "电商 · HTML+图",
+      "badge_en": "Shop · HTML+PNG",
+      "hub_binding": "od-saas-landing",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [
+        "image_api"
+      ],
+      "must_deliver": [
+        "index.html",
+        "dino-01.png",
+        "dino-02.png",
+        "dino-03.png",
+        "dino-04.png"
+      ],
+      "primary_deliverable": "index.html",
+      "prompt_zh": "为潮玩品牌「侏罗纪岛」交付类似泡泡玛特的时尚人偶玩具电商官网，高度结合 AI 生图。使用能力「官网落地页」(od-saas-landing)。流程：①先用 generate_image 为 4 只可爱 Q 版侏罗纪动物人偶各生成一张商品主图（圆润潮玩比例、大眼睛、马卡龙×雨林色、影棚柔光、透明底座感）：三角龙「小角」、暴龙「豆豆」、翼龙「呼呼」、腕龙「长长」——分别落盘 dino-01.png～dino-04.png（可再做 1 张英雄主视觉 hero.png）；②再写 index.html，用 <img> 真实引用上述 PNG，禁止占位灰块/SVG 假商品图。页面须含：沉浸英雄区（品牌主张「开盒遇见史前萌物」+主 CTA「探索系列」）、系列 Pill（盲盒/限定/新品）、四格商品墙（名/系列价/稀有度标签）、会员/积分条、底部购买与门店 CTA。视觉：泡泡玛特式潮玩电商——奶白底、圆角大卡片、柔彩点缀、高级而不幼稚。禁廉价贴纸堆砌、禁版权临摹泡泡玛特 IP。须达到品牌上线前可投影验收。全部写入系统分配任务目录。",
+      "prompt_en": "Pop Mart–style collectible doll e-commerce for brand “Jurassic Island”, AI-image heavy. Use od-saas-landing. (1) generate_image four cute Q Jurassic animal dolls (chibi proportions, big eyes, macaron×jungle palette, soft studio light): Triceratops, T-rex, Pterosaur, Brachiosaurus → dino-01.png–dino-04.png (+ optional hero.png). (2) Write index.html binding those PNGs via <img>—no gray/SVG fakes. Include hero+CTA, series pills, 4-card product wall with rarity tags, membership strip, buy/store CTA. Premium toy-commerce look, not childish clutter. No Pop Mart IP cloning. Launch-projection quality. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P0",
+      "sort_order": 10
+    },
+    {
+      "id": "sc-design-lanxi-site",
+      "section_id": "design",
+      "name_zh": "澜析 LANXI 产品官网",
+      "name_en": "LANXI product website",
+      "annotation_zh": "协作分析 SaaS 杂志风官网：定价、产品叙事与分层信息架构。",
+      "annotation_en": "Magazine-style SaaS site for LANXI—pricing, narrative, layered IA.",
+      "badge_zh": "网站 · HTML",
+      "badge_en": "Site · HTML",
+      "hub_binding": "od-saas-landing",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "index.html"
+      ],
+      "primary_deliverable": "index.html",
+      "prompt_zh": "为协作分析 SaaS「澜析 LANXI」交付可投影的产品/定价官网（网站，不是手机 App UI）。使用能力「官网落地页」(od-saas-landing)。须交付：index.html。须含：杂志风信息架构（英雄主张、产品分层/能力叙事、定价或套餐层、客户证言或场景、主 CTA），视觉石墨高级灰×雾紫/雾蓝点缀，桌面与移动可读。禁手机外框多屏套件、禁线框草稿。须达到产品官网评审可投影标准。全部写入系统分配任务目录。",
+      "prompt_en": "Product/pricing website for analytics SaaS “LANXI” (website—not mobile App UI). Use od-saas-landing. Must deliver: index.html with magazine-style IA (hero, product layers, pricing, social proof, CTA). Graphite premium + mist accent. No phone-frame App suite. Projection-ready. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P0",
+      "sort_order": 20
+    },
+    {
+      "id": "sc-design-soccer-app-ui",
+      "section_id": "design",
+      "name_zh": "绿茵场足球分析App",
+      "name_en": "PitchLens football analysis App",
+      "annotation_zh": "对标 Sofascore/FotMob 的足球分析五屏：赛程、比赛中心、阵容评分、球员、积分榜。",
+      "annotation_en": "Sofascore/FotMob-class five screens: fixtures, match center, lineup ratings, player, table.",
+      "badge_zh": "App UI · HTML",
+      "badge_en": "App UI · HTML",
+      "hub_binding": "od-mobile-app",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "index.html",
+        "screen-1.html",
+        "screen-2.html",
+        "screen-3.html"
+      ],
+      "primary_deliverable": "index.html",
+      "prompt_zh": "为足球数据分析 App「绿茵场」（对标 Sofascore / FotMob / WhoScored 的核心体验，非官网落地页）交付可投评审的高保真手机界面套件。先深度对齐行业惯例：即时比分与联赛分组、比赛中心（事件时间线/控球射门/xG 与 momentum）、球场阵型与球员评分（约 0–10）、球员赛季雷达与热区示意、联赛积分榜。使用能力「手机界面示意」(od-mobile-app)。须先 scaffold_mobile_mockup（slug=pitchlens-football，preset=blank），再精修各屏。须交付：index.html（手机外框多屏并排总览）以及 screen-1.html～至少 screen-3.html；目标五屏——①今日/进行中赛程（LIVE 角标、分钟、比分、联赛分区）②比赛中心（比分条+事件时间线+关键数据条：控球/射门/xG；可含 momentum 波形）③阵容球场图（4231 或 433）+ 球员评分气泡④球员详情（综合评分、关键数据条、简化热区/属性）⑤联赛积分榜（排名/场次/净胜球/积分，关注队高亮）。每屏约 390×844；视觉：深空体育数据风（近黑炭灰底×荧光绿/柠檬黄数据强调×白字层级），状态栏与底部 Tab（赛程/比赛/发现/关注/我的）一致；数据密度高但可扫读。禁假球衣侵权队徽写实临摹、禁桌面网页硬塞、禁线框草稿。成果须达到体育产品评审可投影的分析 App UI 标准。全部写入系统分配任务目录。",
+      "prompt_en": "High-fidelity mobile UI suite for football analytics app “PitchLens” (Sofascore/FotMob/WhoScored-class core UX—not a marketing landing). Align with industry patterns: live fixtures by league, match center (events/possession/shots/xG/momentum), formation + 0–10 player ratings, player season radar/heatmap cues, league table. Use od-mobile-app. scaffold_mobile_mockup (slug=pitchlens-football, preset=blank) then refine. Must deliver: index.html (phone-frame gallery) and screen-1.html through ≥screen-3.html; target five screens—(1) today’s/live fixtures (2) match center with timeline + key stats/xG/momentum (3) pitch formation + rating bubbles (4) player detail (5) league table with favorite highlight. ~390×844; dark sports-data UI (charcoal + neon lime accents); consistent tab bar. No real crest copyright clones, no desktop cram, no wireframe drafts. Sports-product review projection quality. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P0",
+      "sort_order": 30
+    },
+    {
+      "id": "sc-design-industrial-set",
+      "section_id": "design",
+      "name_zh": "衡造 Lumen One 工业设计",
+      "name_en": "Hengzao Lumen One industrial design",
+      "annotation_zh": "纯 AI 生图工业设计组图：英雄/三向/材质/正交，展示产品 ID。",
+      "annotation_en": "Pure AI industrial-design set—hero, 3/4, material, ortho.",
+      "badge_zh": "工设 · PNG组",
+      "badge_en": "ID · PNG set",
+      "hub_binding": "od-image-gen",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [
+        "image_api"
+      ],
+      "must_deliver": [
+        "01-hero.png",
+        "02-three-quarter.png",
+        "03-material.png",
+        "04-ortho.png"
+      ],
+      "primary_deliverable": "01-hero.png",
+      "prompt_zh": "为台式氛围灯「衡造 Lumen One」交付一套专业工业设计渲染组图（纯生图，展示产品 ID 能力）。使用能力「图片生成」(od-image-gen)，必须多次调用 generate_image 落盘真实 PNG，禁止线框截图/CSS 假渲染冒充。须交付：01-hero.png（影棚英雄视角：哑光铝+磨砂玻璃灯罩、戏剧性柔光、深灰无缝背景）②02-three-quarter.png（¾ 侧视：比例与 CMF 清晰可读）③03-material.png（材质微距：阳极氧化金属晶粒、玻璃边缘折射、按键/接口细节）④04-ortho.png（正交/三视图或半爆炸结构示意，仍保持照片级真实感而非廉价示意图）。统一产品语言与比例，禁品牌假 Logo 侵权、禁塑料玩具感。可另附 index.html 预览墙。须达到工设评审/提案可投影标准。全部写入系统分配任务目录。",
+      "prompt_en": "Professional industrial-design render set for desk lamp “Hengzao Lumen One” (pure AI images). Use od-image-gen; must generate_image real PNGs—no wireframe/CSS fakes. Must deliver: 01-hero.png (studio hero, matte aluminum + frosted glass), 02-three-quarter.png (¾ view CMF-clear), 03-material.png (macro metal/glass/interface), 04-ortho.png (ortho/three-view or soft explode, still photoreal). Coherent proportions; no toy plastic look. Optional index.html gallery. ID review/projection quality. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P0",
+      "sort_order": 40
+    },
+    {
+      "id": "sc-design-kv-social",
+      "section_id": "design",
+      "name_zh": "澄野 CHENGYE 主KV社媒套",
+      "name_en": "CHENGYE brand KV social set",
+      "annotation_zh": "一套主视觉拆多画幅，适合多端投放验收。",
+      "annotation_en": "One KV adapted to multiple ratios for multi-channel ads.",
+      "badge_zh": "平面 · PNG包",
+      "badge_en": "Visuals · PNG pack",
+      "hub_binding": "od-social-carousel",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [
+        "image_api"
+      ],
+      "must_deliver": [
+        "kv-portrait.png",
+        "card-1x1.png",
+        "card-16x9.png",
+        "card-9x16.png"
+      ],
+      "primary_deliverable": "kv-portrait.png",
+      "prompt_zh": "为生活方式品牌「澄野」春季系列交付主 KV + 四画幅社媒套装。使用 od-social-carousel。须交付：kv-portrait.png、card-1x1.png、card-16x9.png、card-9x16.png。同一视觉体系（自然光、亚麻质感、低饱和高级色），四画幅信息层级一致且适配平台裁切安全区。禁四张风格割裂、禁水印乱入。须达到品牌季度发布物料包水准。全部写入系统分配任务目录。",
+      "prompt_en": "Deliver spring KV + four-ratio social set for fictional lifestyle brand “Chengye”. Use od-social-carousel. Must deliver: kv-portrait.png, card-1x1.png, card-16x9.png, card-9x16.png. One visual system (natural light, linen texture, muted premium palette) with safe crops. No style drift. Seasonal brand-kit quality. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P0",
+      "sort_order": 50
+    },
+    {
+      "id": "sc-design-zhiye-dash",
+      "section_id": "design",
+      "name_zh": "织野.ZHÌYĚ 增长复盘",
+      "name_en": "ZHÌYĚ growth dashboard",
+      "annotation_zh": "DTC 户外服饰「织野」增长复盘 Dashboard：KPI、渠道、异常与下周动作一页纸。",
+      "annotation_en": "ZHÌYĚ DTC outdoor growth review dashboard—KPIs, channels, alerts, next actions.",
+      "badge_zh": "Dashboard · HTML",
+      "badge_en": "Dashboard · HTML",
+      "hub_binding": "od-data-report",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "index.html"
+      ],
+      "primary_deliverable": "index.html",
+      "prompt_zh": "为 DTC 户外服饰品牌「织野.ZHÌYĚ」交付可投影的增长复盘 Dashboard 一页纸（不是电商商品站）。使用能力「数据报告页」(od-data-report)。须交付：index.html。须含：品牌页头、4 个 KPI 卡、主趋势图+渠道贡献、异常点摘要、结论与下周动作。视觉：石墨深色×青绿强调，数据密度高但可扫读。禁空壳假图、禁无解读的裸表。须达到增长周会可投影标准。全部写入系统分配任务目录。",
+      "prompt_en": "Growth-review dashboard one-pager for DTC outdoor brand “ZHÌYĚ” (not a product e-commerce site). Use od-data-report. Must deliver: index.html with brand header, 4 KPIs, trend+channel charts, alerts, conclusions and next actions. Dark graphite + teal accent. No empty charts. Growth-standup projection quality. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P0",
+      "sort_order": 60
+    },
+    {
+      "id": "sc-video-seedance-15s",
+      "section_id": "video",
+      "name_zh": "新品15秒种草短片",
+      "name_en": "15s new-product seed clip",
+      "annotation_zh": "可播真 mp4 种草片，非分镜文案冒充。",
+      "annotation_en": "Playable mp4 seed clip — not a storyboard mock.",
+      "badge_zh": "广告 · MP4",
+      "badge_en": "Ad · MP4",
+      "hub_binding": "tool-generate-video",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [
+        "video_api"
+      ],
+      "must_deliver": [
+        "promo.mp4"
+      ],
+      "primary_deliverable": "promo.mp4",
+      "prompt_zh": "为护肤新品「澄光瓶」产出 15 秒种草成片。使用 tool-generate-video。须交付：可播放 promo.mp4。叙事：0–3s 钩子质感特写→4–10s 使用场景与成分信任→11–15s 利益点字幕+行动号召。画面高级、节奏利落；真视频 API 成片。禁分镜文案冒充、禁 HTML 录屏假视频。须达到信息流完播测试可用素材级。全部写入系统分配任务目录。",
+      "prompt_en": "Produce a 15s seed film for fictional skincare “Chengguang”. Use tool-generate-video. Must deliver: playable promo.mp4. Hook→ritual/trust→CTA. Premium pacing via real video API. No storyboard-only or HTML screen-capture fakes. Feed-test ready. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P1",
+      "sort_order": 10
+    },
+    {
+      "id": "sc-video-hf-launch",
+      "section_id": "video",
+      "name_zh": "官网产品发布宣传片",
+      "name_en": "Site product-launch promo",
+      "annotation_zh": "HyperFrames 工程渲染的官网向宣传片成片。",
+      "annotation_en": "HyperFrames-rendered site promo film.",
+      "badge_zh": "宣传片 · MP4",
+      "badge_en": "Promo · MP4",
+      "hub_binding": "hf-product-launch-video",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [
+        "hf_key"
+      ],
+      "must_deliver": [
+        "promo.mp4"
+      ],
+      "primary_deliverable": "promo.mp4",
+      "prompt_zh": "为智能硬件「衡视」官网首屏发布宣传片。使用 hf-product-launch-video。须交付：promo.mp4。须在任务目录 HyperFrames 工程经 render_hyperframes 渲染成片；镜头含产品揭示、关键卖点字幕、品牌落版。禁用 generate_video 冒充 HF、禁 HTML 录屏。成片须达到官网 Hero 可嵌播的专业质感。全部写入系统分配任务目录。",
+      "prompt_en": "Website launch promo for fictional device “Hengshi”. Use hf-product-launch-video. Must deliver: promo.mp4 via render_hyperframes from task hf-project. Product reveal + benefit titles + endcard. No generate_video substitute or HTML capture. Hero-embed quality. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P1",
+      "sort_order": 20
+    },
+    {
+      "id": "sc-video-saas-remotion",
+      "section_id": "video",
+      "name_zh": "SaaS功能演示动效片",
+      "name_en": "SaaS feature demo motion film",
+      "annotation_zh": "脚本到 Remotion/演示动效的产品功能片。",
+      "annotation_en": "Script-to-motion SaaS feature demo film.",
+      "badge_zh": "演示 · MP4",
+      "badge_en": "Demo · MP4",
+      "hub_binding": "saas-demo-remotion-full",
+      "binding_kind": "template",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "promo.mp4"
+      ],
+      "primary_deliverable": "promo.mp4",
+      "prompt_zh": "为 SaaS「澜析」制作 30–45 秒功能演示动效片。使用流程模板 saas-demo-remotion-full。须交付：promo.mp4。展示：登录后仪表盘→一次分析操作→洞察卡片生成→导出分享；UI 动效干净、字幕专业、无口播亦可懂。禁只交分镜稿。须达到产品发布会 Demo 备用片水准。全部写入系统分配任务目录。",
+      "prompt_en": "30–45s feature demo for fictional SaaS “Lanxi”. Use template saas-demo-remotion-full. Must deliver: promo.mp4 showing dashboard→action→insight→export. Clean UI motion, clear captions. No storyboard-only. Launch-demo backup quality. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P2",
+      "sort_order": 30
+    },
+    {
+      "id": "sc-video-hf-explainer",
+      "section_id": "video",
+      "name_zh": "品牌无脸科普解说",
+      "name_en": "Faceless brand explainer",
+      "annotation_zh": "无出镜口播的科普成片，适合品牌教育。",
+      "annotation_en": "Faceless explainer for brand education.",
+      "badge_zh": "科普 · MP4",
+      "badge_en": "Explainer · MP4",
+      "hub_binding": "hf-faceless-explainer",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [
+        "hf_key"
+      ],
+      "must_deliver": [
+        "promo.mp4"
+      ],
+      "primary_deliverable": "promo.mp4",
+      "prompt_zh": "为保险科技「安澄」制作 45–60 秒无脸科普解说片：理赔三步怎么走。使用 hf-faceless-explainer。须交付：promo.mp4（render_hyperframes）。信息准确、字幕清晰、视觉克制可信；禁夸张恐吓营销、禁 HTML 录屏。须达到官网帮助中心可上架的专业解说级。全部写入系统分配任务目录。",
+      "prompt_en": "45–60s faceless explainer for fictional insurtech “Ancheng”: 3 claim steps. Use hf-faceless-explainer. Must deliver: promo.mp4 via render_hyperframes. Accurate, calm, clear captions. No scare tactics or HTML capture. Help-center publishable. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P2",
+      "sort_order": 40
+    },
+    {
+      "id": "sc-video-data-story",
+      "section_id": "video",
+      "name_zh": "数据故事动态片",
+      "name_en": "Data-story motion film",
+      "annotation_zh": "数据叙事页到动态视频的一条龙样例。",
+      "annotation_en": "Data narrative page into a motion video.",
+      "badge_zh": "数据视频 · MP4",
+      "badge_en": "Data video · MP4",
+      "hub_binding": "data-story-video",
+      "binding_kind": "template",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "promo.mp4"
+      ],
+      "primary_deliverable": "promo.mp4",
+      "prompt_zh": "将「城行指数」城市出行数据故事做成动态短片。使用流程模板 data-story-video。须交付：promo.mp4。要求数据图形运动可读、结论字幕有力、片尾品牌落版；禁止无数据装饰动画。须达到媒体数据专题片开场级质感。全部写入系统分配任务目录。",
+      "prompt_en": "Turn “City Mobility Index” into a data-story film. Use data-story-video. Must deliver: promo.mp4 with readable animated charts and strong takeaway titles. No decorative motion without data. Editorial data-open quality. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P2",
+      "sort_order": 50
+    },
+    {
+      "id": "sc-video-local-9x16",
+      "section_id": "video",
+      "name_zh": "门店本地生活竖版广告",
+      "name_en": "Local-store 9:16 ad",
+      "annotation_zh": "9:16 本地生活信息流广告成片。",
+      "annotation_en": "9:16 local-life feed ad film.",
+      "badge_zh": "竖版广告 · MP4",
+      "badge_en": "Vertical ad · MP4",
+      "hub_binding": "tool-generate-video",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [
+        "video_api"
+      ],
+      "must_deliver": [
+        "promo.mp4"
+      ],
+      "primary_deliverable": "promo.mp4",
+      "prompt_zh": "为社区烘焙「麦香巷」制作周末满减 9:16 本地生活广告成片。使用 tool-generate-video。须交付：promo.mp4。竖版构图安全区合规，前 2 秒强钩子，价格利益清晰，门店信任元素自然；真 API 成片。禁 HTML 假视频。须达到本地推投放素材审核级。全部写入系统分配任务目录。",
+      "prompt_en": "9:16 local-life ad for fictional bakery “Maixiang Lane” weekend deal. Use tool-generate-video. Must deliver: promo.mp4. Safe vertical crop, 2s hook, clear offer, natural trust cues. Real API film—no HTML fake. Local-ads review ready. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P2",
+      "sort_order": 60
+    },
+    {
+      "id": "sc-copy-product-pr",
+      "section_id": "copy",
+      "name_zh": "产品PR特稿",
+      "name_en": "Product PR feature",
+      "annotation_zh": "品牌向产品特稿：故事抓手强，供媒体/合作方转载改写。",
+      "annotation_en": "Brand product feature for media/partner rewrite.",
+      "badge_zh": "PR特稿 · MD",
+      "badge_en": "PR feature · MD",
+      "hub_binding": "viral-article-generator",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "product-pr.md"
+      ],
+      "primary_deliverable": "product-pr.md",
+      "prompt_zh": "写一篇真正出彩的产品 PR 特稿（不是新闻通稿、不是 UP 口播）。对象：科技/商业媒体编辑与生态合作方。目标：被转载改写、建立「澜析」专业心智。使用 viral-article-generator。须交付：product-pr.md（建议 1800–2800 字）。开篇须有具体场景钩子，中段用产品能力解决真实协作痛点，穿插可核事实与克制金句，收束到可行动的价值判断。调性：杂志特稿×品牌叙事，冷静有文采。严禁倒金字塔通稿体、严禁「家人们/绝绝子」、严禁空洞排比。文首用 3 行标注：体裁/读者/目标。全部写入系统分配任务目录。",
+      "prompt_en": "Standout product PR feature (not wire, not creator script) on SaaS “LANXI” for editors/partners. Use viral-article-generator. Deliver product-pr.md (~1800–2800 words). Scene hook, pain→capability, sourced facts, restrained lines. Magazine×brand narrative. No inverted-pyramid, no slang hype. Prefatory 3 lines: genre/audience/goal. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P0",
+      "sort_order": 10
+    },
+    {
+      "id": "sc-copy-up-review",
+      "section_id": "copy",
+      "name_zh": "UP主深度评测",
+      "name_en": "Creator deep review",
+      "annotation_zh": "创作者评测体：实测细节与态度鲜明，服务种草转化。",
+      "annotation_en": "Creator review voice with tests and clear stance.",
+      "badge_zh": "评测 · MD",
+      "badge_en": "Review · MD",
+      "hub_binding": "viral-article-generator",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "up-review.md"
+      ],
+      "primary_deliverable": "up-review.md",
+      "prompt_zh": "写一篇真正好看的科技区 UP 主深度评测成稿（可改口播）。对象：B 站/视频号数码观众（18–35）。目标：完播种草+评论讨论，促成「想试试」。使用 viral-article-generator。须交付：up-review.md。第一人称、有态度；含开箱/佩戴/续航或延迟等可感知实测、明确优缺点与「适合/不适合谁」、结尾购买建议。网感但不油腻，细节扎实。严禁公文通稿腔、严禁全盘吹捧、严禁与 PR 特稿同腔。文首 3 行标注：体裁/读者/目标。产品：「衡视 Pro」智能眼镜。全部写入系统分配任务目录。",
+      "prompt_en": "Sharp tech-UP deep review (script-ready) of “Hengshi Pro” for 18–35 video viewers. Use viral-article-generator. Deliver up-review.md. First-person; unbox/fit/battery or latency tests; pros/cons; who it’s for; buy advice. Online-native not greasy. No press-wire tone, no full hype. Prefatory 3 lines: genre/audience/goal. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P0",
+      "sort_order": 20
+    },
+    {
+      "id": "sc-copy-press-wire",
+      "section_id": "copy",
+      "name_zh": "新闻通稿",
+      "name_en": "News press wire",
+      "annotation_zh": "媒体倒金字塔通稿：事实先行，供编辑台直接改写。",
+      "annotation_en": "Inverted-pyramid wire for news desks.",
+      "badge_zh": "通稿 · MD",
+      "badge_en": "Wire · MD",
+      "hub_binding": "press-release-pack",
+      "binding_kind": "template",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "press-release.md"
+      ],
+      "primary_deliverable": "press-release.md",
+      "prompt_zh": "写一篇可供编辑台直接改写的新闻通稿（不是产品特稿、不是 UP 评测）。对象：科技媒体记者与通讯社编辑。目标：被采用发稿、信息零歧义。使用 press-release-pack。须交付：press-release.md。严格倒金字塔：导语含何人/何事/何时/何地/为何；随后规格与上市信息、可核引语（职务+姓名）、关于公司 boilerplate、媒体联系人。事实密度高、形容词克制。严禁故事开篇、严禁口语弹幕腔。文首 3 行标注：体裁/读者/目标。产品：「衡视 Pro」智能眼镜发布。全部写入系统分配任务目录。",
+      "prompt_en": "Desk-ready news wire (not feature, not creator review) for “Hengshi Pro” launch. Use press-release-pack. Deliver press-release.md. Inverted pyramid: 5W lede, specs/availability, attributed quotes, boilerplate, media contact. Dense facts. No story openers, no slang. Prefatory 3 lines: genre/audience/goal. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P0",
+      "sort_order": 30
+    },
+    {
+      "id": "sc-copy-one-article-matrix",
+      "section_id": "copy",
+      "name_zh": "一稿五平台去AI味矩阵",
+      "name_en": "One-article five-platform matrix",
+      "annotation_zh": "选题→长文→多平台切片清单锁定，含去 AI 味。",
+      "annotation_en": "Topics → longform → multi-platform slices with humanize.",
+      "badge_zh": "矩阵 · MD包",
+      "badge_en": "Matrix · MD pack",
+      "hub_binding": "one-article-matrix",
+      "binding_kind": "template",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "01-topics.md",
+        "02-longform.md",
+        "03-social-slices.md"
+      ],
+      "primary_deliverable": "02-longform.md",
+      "prompt_zh": "为新消费「青盏」跑「一稿五平台」矩阵：选题→支柱长文→多平台切片，并去 AI 味。使用流程模板 one-article-matrix。须交付：01-topics.md、02-longform.md、03-social-slices.md。切片须覆盖公众号/小红书/知乎等差异化语气；清单 basename 锁定，禁飞轮幻影槽扩写。成果须达到内容团队周会可直接认领。全部写入系统分配任务目录。",
+      "prompt_en": "Run one-article five-platform matrix for fictional CPG “Qingzhan” with humanize. Use one-article-matrix. Must deliver: 01-topics.md, 02-longform.md, 03-social-slices.md. Platform-native slices; locked basenames—no flywheel phantom slots. Team-standup assignable. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P1",
+      "sort_order": 40
+    },
+    {
+      "id": "sc-copy-social-matrix",
+      "section_id": "copy",
+      "name_zh": "社媒创意矩阵文图包",
+      "name_en": "Social creative matrix pack",
+      "annotation_zh": "文案加四画幅图与清单，一次验收多平台物料。",
+      "annotation_en": "Copy plus multi-ratio visuals in one pack.",
+      "badge_zh": "矩阵 · MD+图",
+      "badge_en": "Matrix · MD+art",
+      "hub_binding": "social-creative-matrix",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [
+        "image_api"
+      ],
+      "must_deliver": [
+        "copy.md",
+        "slide-manifest.json"
+      ],
+      "primary_deliverable": "copy.md",
+      "prompt_zh": "为运动品牌「跃澄」春季战役交付社媒创意矩阵（文案+多画幅视觉清单）。使用 social-creative-matrix。须交付：copy.md、slide-manifest.json。文案分平台差异化；manifest 标明画幅与文件对应，视觉风格统一燃感且高级。禁文图脱节。须达到代理比稿物料包水准。全部写入系统分配任务目录。",
+      "prompt_en": "Spring social creative matrix for fictional sports brand “Yuecheng”. Use social-creative-matrix. Must deliver: copy.md, slide-manifest.json. Platform-native copy; manifest maps ratios/files; unified premium energy. Agency pitch-pack quality. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P1",
+      "sort_order": 50
+    },
+    {
+      "id": "sc-copy-email-seq",
+      "section_id": "copy",
+      "name_zh": "邮件培育三封序列",
+      "name_en": "Three-email nurture sequence",
+      "annotation_zh": "欢迎→培育→转化三封，可直接进邮件工具。",
+      "annotation_en": "Welcome → nurture → convert sequence.",
+      "badge_zh": "邮件 · MD",
+      "badge_en": "Email · MD",
+      "hub_binding": "mkt-email-sequence",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "email-sequence.md"
+      ],
+      "primary_deliverable": "email-sequence.md",
+      "prompt_zh": "为 SaaS「澜析」试用用户设计三封培育邮件（欢迎→价值深化→转化）。使用 mkt-email-sequence。须交付：email-sequence.md。每封含主题行 A/B、预览文案、正文结构与 CTA；语气专业不骚扰。须达到可导入 ESP 的运营级序列。全部写入系统分配任务目录。",
+      "prompt_en": "Three-email nurture for fictional SaaS “Lanxi” trials. Use mkt-email-sequence. Must deliver: email-sequence.md. Each: subject A/B, preview, body, CTA. Professional, non-spammy. ESP-import ready. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P2",
+      "sort_order": 60
+    },
+    {
+      "id": "sc-mkt-campaign-html",
+      "section_id": "marketing",
+      "name_zh": "季度增长策略HTML提案",
+      "name_en": "Quarterly growth HTML proposal",
+      "annotation_zh": "可立项的增长策略提案页，适合管理层汇报。",
+      "annotation_en": "Approval-ready growth proposal HTML.",
+      "badge_zh": "提案 · HTML",
+      "badge_en": "Proposal · HTML",
+      "hub_binding": "mkt-campaign-plan",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "campaign-plan.html"
+      ],
+      "primary_deliverable": "campaign-plan.html",
+      "prompt_zh": "为「青盏茶语」Q3 城市增长战役输出可立项的 HTML 策略提案。使用 mkt-campaign-plan。须交付：campaign-plan.html。须含：战役目标与 KPI、人群洞察、核心主张、渠道组合与预算逻辑、内容节奏、里程碑风险。版式专业可投影，结论先行。禁空洞口号页。须达到品牌总监周会决策包水准。全部写入系统分配任务目录。",
+      "prompt_en": "Q3 city growth HTML proposal for fictional “Qingzhan Tea”. Use mkt-campaign-plan. Must deliver: campaign-plan.html. Goals/KPIs, audience, message, channels/budget logic, content cadence, milestones/risks. Projection-ready, insight-first. Brand-director decision pack. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P1",
+      "sort_order": 10
+    },
+    {
+      "id": "sc-mkt-pv-gov-bid",
+      "section_id": "marketing",
+      "name_zh": "政府光伏项目投标书",
+      "name_en": "Gov PV project bid proposal",
+      "annotation_zh": "县级分布式光伏招标：长篇正式商务/技术标草案整包。",
+      "annotation_en": "County distributed-PV tender: long formal commercial/tech bid pack.",
+      "badge_zh": "投标 · MD包",
+      "badge_en": "Bid · MD pack",
+      "hub_binding": "cn-bid-response-pack",
+      "binding_kind": "template",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "bid-analysis.md",
+        "commercial-bid.md",
+        "technical-bid.md"
+      ],
+      "primary_deliverable": "technical-bid.md",
+      "prompt_zh": "为县级「屋顶分布式光伏发电」公开招标编制正式投标文件草案（示范）。使用流程模板 cn-bid-response-pack。须交付：bid-analysis.md、commercial-bid.md、technical-bid.md。技术标须长篇正式：工程概况与响应、系统设计与组件/逆变器选型、施工组织与进度、质量安全与并网、运维与质保、业绩与人员配置等分章编号；商务标含报价说明、资格与承诺要点。语气公文体、禁口号短页与营销软文腔。本成果为示范草案，不构成执业意见。须达到可进评标对照的专业篇幅。全部写入系统分配任务目录。",
+      "prompt_en": "Formal bid drafts for a county rooftop distributed-PV public tender (demo). Use cn-bid-response-pack. Must deliver: bid-analysis.md, commercial-bid.md, technical-bid.md. Tech bid must be long-form: overview, system design, construction/schedule, HSE & grid, O&M/warranty, track record/staffing—numbered chapters. Commercial: pricing notes, quals, commitments. Official tone—no slogan pages. Demo draft only, not professional advice. Evaluation-ready length. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P0",
+      "sort_order": 20
+    },
+    {
+      "id": "sc-mkt-budget-xlsx",
+      "section_id": "marketing",
+      "name_zh": "活动预算与里程碑表",
+      "name_en": "Campaign budget and milestones",
+      "annotation_zh": "可进审批的预算与里程碑表。",
+      "annotation_en": "Approval-ready budget workbook.",
+      "badge_zh": "预算 · XLSX",
+      "badge_en": "Budget · XLSX",
+      "hub_binding": "mkt-campaign-budget",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "campaign-budget.xlsx"
+      ],
+      "primary_deliverable": "campaign-budget.xlsx",
+      "prompt_zh": "为「青盏」夏季快闪输出可审批的预算与里程碑表。使用 mkt-campaign-budget。须交付：campaign-budget.xlsx。分项含媒介/场地/物料/人力/应急；含时间节点与负责人列；数字自洽。须达到财务/市场双审可读的专业表。全部写入系统分配任务目录。",
+      "prompt_en": "Approval-ready budget workbook for fictional “Qingzhan” summer pop-up. Use mkt-campaign-budget. Must deliver: campaign-budget.xlsx. Media/venue/assets/labor/contingency, dates, owners; coherent numbers. Finance+marketing reviewable. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P2",
+      "sort_order": 30
+    },
+    {
+      "id": "sc-mkt-battlecard",
+      "section_id": "marketing",
+      "name_zh": "销售作战卡Battlecard",
+      "name_en": "Sales battlecard",
+      "annotation_zh": "一线销售可打开的竞品对照作战卡。",
+      "annotation_en": "Openable competitive battlecard for sales.",
+      "badge_zh": "销售赋能 · HTML",
+      "badge_en": "Enablement · HTML",
+      "hub_binding": "sales-battlecard-full",
+      "binding_kind": "template",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "battlecard.html"
+      ],
+      "primary_deliverable": "battlecard.html",
+      "prompt_zh": "为 SaaS「澜析」制作对两类竞品的销售作战卡 HTML。使用 sales-battlecard-full。须交付：battlecard.html。须含：一句话赢法、对比表、常见异议与话术、落地场景、禁止过度承诺提示。信息密度高但可读，销售外勤可打开。须达到销培可印发水准。全部写入系统分配任务目录。",
+      "prompt_en": "Sales battlecard HTML for fictional SaaS “Lanxi” vs two rivals. Use sales-battlecard-full. Must deliver: battlecard.html. Win theme, matrix, objections/scripts, use cases, overpromise guards. Field-sales openable; enablement printable. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P1",
+      "sort_order": 40
+    },
+    {
+      "id": "sc-mkt-competitor",
+      "section_id": "marketing",
+      "name_zh": "竞品对标",
+      "name_en": "Competitor benchmarking",
+      "annotation_zh": "营销视角竞品对照矩阵，服务定位与战役主张。",
+      "annotation_en": "Marketing-facing competitor matrix for positioning and campaigns.",
+      "badge_zh": "竞品 · MD",
+      "badge_en": "Compete · MD",
+      "hub_binding": "nova-research-competitor",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [
+        "bocha"
+      ],
+      "must_deliver": [
+        "competitor-matrix.md",
+        "data-sources.md"
+      ],
+      "primary_deliverable": "competitor-matrix.md",
+      "prompt_zh": "为新茶饮「青盏」输出营销视角竞品对标决策包。使用能力「Nova-竞品对标」(nova-research-competitor)。须交付：competitor-matrix.md、data-sources.md。对照两家头部竞品：品牌定位、价格带、渠道组合、内容/社媒打法、会员与联名、优劣势与可攻击点；给出本季「赢/避」建议。表格专业、结论锋利、来源可追溯。禁无出处断言。须达到品牌营销周会选型附件级。全部写入系统分配任务目录。",
+      "prompt_en": "Marketing competitor benchmarking pack for “Qingzhan” tea. Use nova-research-competitor. Must deliver: competitor-matrix.md, data-sources.md. Vs two rivals: positioning, price band, channels, content/social, membership/collabs, attack/defend calls. Sourced, sharp. Brand marketing weekly attachment quality. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P1",
+      "sort_order": 50
+    },
+    {
+      "id": "sc-mkt-perf-report",
+      "section_id": "marketing",
+      "name_zh": "投放周复盘效果报告",
+      "name_en": "Weekly ads performance report",
+      "annotation_zh": "投放周复盘 HTML，含结论与下周动作。",
+      "annotation_en": "Weekly ads review HTML with next actions.",
+      "badge_zh": "复盘 · HTML",
+      "badge_en": "Review · HTML",
+      "hub_binding": "mkt-performance-report",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "performance-report.html"
+      ],
+      "primary_deliverable": "performance-report.html",
+      "prompt_zh": "为「曜极」耳机信息流投放输出上周复盘 HTML。使用 mkt-performance-report。须交付：performance-report.html。含花费/效果漏斗、素材与人群洞察、失败归因、下周实验计划。图表清晰、结论可执行。须达到投放周会主文档水准。全部写入系统分配任务目录。",
+      "prompt_en": "Weekly paid-media review HTML for fictional “Yaoji” earbuds. Use mkt-performance-report. Must deliver: performance-report.html. Funnel, creative/audience insights, failure attribution, next experiments. Ops meeting primary doc. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P2",
+      "sort_order": 60
+    },
+    {
+      "id": "sc-pr-crisis-html",
+      "section_id": "office",
+      "name_zh": "危机应对指挥舱",
+      "name_en": "Crisis command HTML",
+      "annotation_zh": "分级研判、Holding、24h 时间线合并为一页 HTML 指挥舱。",
+      "annotation_en": "Severity, holding, 24h timeline in one command HTML.",
+      "badge_zh": "危机 · HTML",
+      "badge_en": "Crisis · HTML",
+      "hub_binding": "comp-pr-crisis-response",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "crisis-command.html"
+      ],
+      "primary_deliverable": "crisis-command.html",
+      "prompt_zh": "为「澄办」突发声誉事件输出危机应对指挥舱（单文件）。使用 comp-pr-crisis-response。须交付：crisis-command.html。合并：严重级别、Holding 草案、干系人口径、24h 时间线（可视化）、升级阈值与复盘清单。专业克制，不代发声明。产出为公关工作底稿，不构成法律意见，对外前须法务审定。全部写入系统分配任务目录。",
+      "prompt_en": "Crisis-command HTML for fictional “Chengban”. Use comp-pr-crisis-response. Deliver crisis-command.html merging severity, holding, stakeholder lines, 24h timeline viz, escalation, after-action. No send claims. PR draft only—not legal advice. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P0",
+      "sort_order": 10
+    },
+    {
+      "id": "sc-pr-media-day-pptx",
+      "section_id": "office",
+      "name_zh": "媒体日发布会PPT",
+      "name_en": "Media-day press PPT",
+      "annotation_zh": "发布会主视觉叙事真 pptx，可直接上投影。",
+      "annotation_en": "Real pptx for media-day stage projection.",
+      "badge_zh": "媒体日 · PPTX",
+      "badge_en": "Media day · PPTX",
+      "hub_binding": "anth-pptx",
+      "binding_kind": "skill",
+      "fallback_binding": "ppt-master",
+      "deps": [],
+      "must_deliver": [
+        "presentation.pptx"
+      ],
+      "primary_deliverable": "presentation.pptx",
+      "prompt_zh": "为「衡视 Pro」媒体日制作发布会主 PPT（真文件）。使用 anth-pptx。须交付：presentation.pptx。建议 10–14 页：开场议程、产品故事、关键规格、使用场景、事实页、媒体 Q&A 提纲、联系人。商务发布级版式与图表，禁空壳/HTML 冒充。全部写入系统分配任务目录。",
+      "prompt_en": "Media-day press PPTX for “Hengshi Pro”. Use anth-pptx. Deliver presentation.pptx (~10–14): agenda, story, specs, scenes, facts, Q&A, contacts. Real file—no HTML/empty shell. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P0",
+      "sort_order": 20
+    },
+    {
+      "id": "sc-pr-thought-md",
+      "section_id": "office",
+      "name_zh": "思想领导力署名稿",
+      "name_en": "Thought-leadership byline",
+      "annotation_zh": "可投行业媒体的观点署名稿，论据可核。",
+      "annotation_en": "Citable byline essay for trade media.",
+      "badge_zh": "观点稿 · MD",
+      "badge_en": "Byline · MD",
+      "hub_binding": "comp-pr-thought-leadership",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "thought-leadership.md"
+      ],
+      "primary_deliverable": "thought-leadership.md",
+      "prompt_zh": "以「澜析」CEO 口吻撰写思想领导力署名稿（单篇 MD）。使用 comp-pr-thought-leadership。须交付：thought-leadership.md。主题：协作分析如何改变中小团队决策；有观点、案例与可核论据，禁空话排比。可投行业媒体的专业文笔。产出为公关底稿，不构成法律意见。全部写入系统分配任务目录。",
+      "prompt_en": "Thought-leadership MD as LANXI CEO. Use comp-pr-thought-leadership. Deliver thought-leadership.md on collaborative analytics for SME teams—thesis, cases, checkable claims. Trade-media quality. PR draft only. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P1",
+      "sort_order": 30
+    },
+    {
+      "id": "sc-pr-digital-html",
+      "section_id": "office",
+      "name_zh": "数字公关战役页",
+      "name_en": "Digital PR campaign HTML",
+      "annotation_zh": "议题—资产—节奏—KPI 合并为可投影 HTML。",
+      "annotation_en": "Topics, assets, cadence, KPIs in one HTML.",
+      "badge_zh": "数字公关 · HTML",
+      "badge_en": "Digital PR · HTML",
+      "hub_binding": "comp-pr-digital-campaign",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "pr-campaign.html"
+      ],
+      "primary_deliverable": "pr-campaign.html",
+      "prompt_zh": "为「青盏茶语」输出一季 earned media 数字公关战役页（单文件）。使用 comp-pr-digital-campaign。须交付：pr-campaign.html。合并议题地图、内容资产、渠道节奏、KPI 与审批节点；可用简洁图表。不含付费投放排期。产出为公关底稿，不构成法律意见。全部写入系统分配任务目录。",
+      "prompt_en": "Seasonal earned-media PR campaign HTML for “Qingzhan Tea”. Use comp-pr-digital-campaign. Deliver pr-campaign.html: issue map, assets, cadence, KPIs, approvals—light charts; no paid schedule. PR draft only. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P1",
+      "sort_order": 40
+    },
+    {
+      "id": "sc-pr-pitch-html",
+      "section_id": "office",
+      "name_zh": "媒体Pitch作战页",
+      "name_en": "Media pitch ops HTML",
+      "annotation_zh": "角度表、媒体分层与 Pitch 信合并单页 HTML。",
+      "annotation_en": "Angles, tiered media, pitch letter in one HTML.",
+      "badge_zh": "Pitch · HTML",
+      "badge_en": "Pitch · HTML",
+      "hub_binding": "comp-pr-media-pitch",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "media-pitch.html"
+      ],
+      "primary_deliverable": "media-pitch.html",
+      "prompt_zh": "为「衡视 Pro」上市准备媒体 Pitch 作战页（单文件，不代发）。使用 comp-pr-media-pitch。须交付：media-pitch.html。合并选题角度表、分层媒体框架、Pitch 信模板与跟进节奏。语气专业克制。产出为公关底稿，不构成法律意见。全部写入系统分配任务目录。",
+      "prompt_en": "Media-pitch ops HTML for “Hengshi Pro” launch (no sending). Use comp-pr-media-pitch. Deliver media-pitch.html: angles, tiered media, pitch templates, follow-up cadence. PR draft only. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P1",
+      "sort_order": 50
+    },
+    {
+      "id": "sc-pr-cyber-deck",
+      "section_id": "office",
+      "name_zh": "公关战略路演PPT",
+      "name_en": "PR strategy cyber deck",
+      "annotation_zh": "Cyber/咨询风公关战略路演真 pptx。",
+      "annotation_en": "Cyber/consulting-style PR strategy pptx.",
+      "badge_zh": "战略路演 · PPTX",
+      "badge_en": "Strategy · PPTX",
+      "hub_binding": "cyber-ppt",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "presentation.pptx"
+      ],
+      "primary_deliverable": "presentation.pptx",
+      "prompt_zh": "为「澄海」集团制作年度公关战略管理层路演（Cyber/咨询风真 PPT）。使用 cyber-ppt。须交付：presentation.pptx。含议题地图、风险与机会、关键战役、KPI、里程碑与资源请求。Dark Tech 严谨栅格，禁空壳。全部写入系统分配任务目录。",
+      "prompt_en": "Annual PR strategy Cyber deck for fictional Chenghai Group. Use cyber-ppt. Deliver presentation.pptx: issue map, risks/opportunities, campaigns, KPIs, milestones, asks. Dark-tech grid—no empty shells. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P2",
+      "sort_order": 60
+    },
+    {
+      "id": "sc-research-industry",
+      "section_id": "research",
+      "name_zh": "细分赛道行业市场报告",
+      "name_en": "Niche industry market report",
+      "annotation_zh": "带来源的行业市场报告，可进周会。",
+      "annotation_en": "Sourced industry market report.",
+      "badge_zh": "行业 · MD",
+      "badge_en": "Industry · MD",
+      "hub_binding": "nova-research-industry-market",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [
+        "bocha"
+      ],
+      "must_deliver": [
+        "report.md",
+        "data-sources.md"
+      ],
+      "primary_deliverable": "report.md",
+      "prompt_zh": "撰写中国新茶饮下沉市场 2026 行业研究报告（公开信息综合，示范级深度）。使用 nova-research-industry-market。须交付：report.md、data-sources.md；可另交 report.html（先 md 后 html，Chart 可读）。须含市场规模逻辑、渠道变迁、竞争格局、机会与风险、可执行建议；来源可追溯。禁搜完偏好问卷停手、禁无出处断言。须达到咨询项目一期交付可读。全部写入系统分配任务目录。",
+      "prompt_en": "2026 China new-tea lower-tier industry report from public sources. Use nova-research-industry-market. Must deliver: report.md, data-sources.md; optional report.html after md. Market logic, channels, competition, risks, actions; cited. No questionnaire stop / unsourced claims. Consulting phase-1 readable. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P0",
+      "sort_order": 10
+    },
+    {
+      "id": "sc-research-customer",
+      "section_id": "research",
+      "name_zh": "客户洞察调研",
+      "name_en": "Customer insight research",
+      "annotation_zh": "客户/人群洞察报告，服务产品与增长决策。",
+      "annotation_en": "Customer/audience insight report for product and growth.",
+      "badge_zh": "客户 · MD",
+      "badge_en": "Customer · MD",
+      "hub_binding": "mkt-customer-research",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [
+        "bocha"
+      ],
+      "must_deliver": [
+        "customer-research.md",
+        "data-sources.md"
+      ],
+      "primary_deliverable": "customer-research.md",
+      "prompt_zh": "为 B2B「澜析」输出目标客户洞察调研。使用能力「客户调研」(mkt-customer-research)。须交付：customer-research.md、data-sources.md。含：ICP 分层、购买决策链、关键场景与痛点、异议与触发条件、内容触达建议。洞察可产品化，禁空泛「用户想要更好体验」。须达到产研/增长双周可读。全部写入系统分配任务目录。",
+      "prompt_en": "Customer insight research for B2B “Lanxi”. Use mkt-customer-research. Must deliver: customer-research.md, data-sources.md. ICP tiers, buying committee, jobs/pains, objections/triggers, content motions. Productizable insights—no vague “users want better UX”. Product/growth biweekly readable. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P1",
+      "sort_order": 20
+    },
+    {
+      "id": "sc-research-user",
+      "section_id": "research",
+      "name_zh": "产品用户研究报告",
+      "name_en": "Product user research report",
+      "annotation_zh": "用户洞察报告，服务产品与增长。",
+      "annotation_en": "User insight report for product and growth.",
+      "badge_zh": "用研 · MD",
+      "badge_en": "UXR · MD",
+      "hub_binding": "nova-research-product-user",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [
+        "bocha"
+      ],
+      "must_deliver": [
+        "user-research.md",
+        "data-sources.md"
+      ],
+      "primary_deliverable": "user-research.md",
+      "prompt_zh": "为「澄办」中小团队项目管理工具输出用户研究报告。使用 nova-research-product-user。须交付：user-research.md、data-sources.md。含方法说明、人物画像、任务流痛点、机会点优先级。洞察可产品化，禁空泛「用户想要更好体验」。须达到产研双周可读。全部写入系统分配任务目录。",
+      "prompt_en": "UXR report for fictional SMB PM tool “Chengban”. Use nova-research-product-user. Must deliver: user-research.md, data-sources.md. Method, personas, job pains, prioritized opportunities—no vague “better UX”. Dual-track squad readable. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P1",
+      "sort_order": 30
+    },
+    {
+      "id": "sc-research-general",
+      "section_id": "research",
+      "name_zh": "综合议题调研简报",
+      "name_en": "General topic research brief",
+      "annotation_zh": "开放议题快速调研成稿，适合周会前置阅读。",
+      "annotation_en": "Open-topic research brief for weekly pre-reads.",
+      "badge_zh": "综研 · MD",
+      "badge_en": "Brief · MD",
+      "hub_binding": "nova-research-general",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [
+        "bocha"
+      ],
+      "must_deliver": [
+        "research-brief.md",
+        "data-sources.md"
+      ],
+      "primary_deliverable": "research-brief.md",
+      "prompt_zh": "就「国内中小企业私有化 AI 部署」输出综合议题调研简报。使用能力「Nova-综合调研」(nova-research-general)。须交付：research-brief.md、data-sources.md。含背景、关键争议点、可行路径对照、风险与下一步建议；来源可追溯。须达到高管会前 15 分钟可读。全部写入系统分配任务目录。",
+      "prompt_en": "General research brief on SME private AI deployment in China. Use nova-research-general. Must deliver: research-brief.md, data-sources.md. Context, contested points, path trade-offs, risks, next steps; sourced. 15-minute exec pre-read. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P1",
+      "sort_order": 40
+    },
+    {
+      "id": "sc-research-consulting",
+      "section_id": "research",
+      "name_zh": "咨询结构问题树分析",
+      "name_en": "Consulting issue-tree analysis",
+      "annotation_zh": "咨询结构问题树与结论，适合立项讨论。",
+      "annotation_en": "Issue tree and conclusions for kickoff.",
+      "badge_zh": "咨询 · MD",
+      "badge_en": "Consulting · MD",
+      "hub_binding": "df-consulting-analysis",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "analysis.md"
+      ],
+      "primary_deliverable": "analysis.md",
+      "prompt_zh": "为零售「织野」增长放缓做咨询问题树分析。使用 df-consulting-analysis。须交付：analysis.md。MECE 问题树、关键假设、验证路径与 90 天动作。结构像麦肯锡一页纸扩展，结论可执行。全部写入系统分配任务目录。",
+      "prompt_en": "Consulting issue-tree for fictional retailer “Zhiye” growth slowdown. Use df-consulting-analysis. Must deliver: analysis.md. MECE tree, hypotheses, validation path, 90-day actions. MBB one-pager extended rigor. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P2",
+      "sort_order": 50
+    },
+    {
+      "id": "sc-research-dash",
+      "section_id": "research",
+      "name_zh": "调研结论一页纸仪表盘",
+      "name_en": "Research one-page dashboard",
+      "annotation_zh": "调研结论一页纸 HTML，方便投影。",
+      "annotation_en": "One-page HTML of research conclusions.",
+      "badge_zh": "决策 · HTML",
+      "badge_en": "Decision · HTML",
+      "hub_binding": "od-data-report",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "index.html"
+      ],
+      "primary_deliverable": "index.html",
+      "prompt_zh": "把「新茶饮下沉市场」调研结论收成一页纸决策仪表盘，供事业部周会投影。使用能力「数据报告」(od-data-report)。须交付：index.html。页面须含：①三大结论（机会/风险/窗口）②支撑图表（份额/渗透/竞品对标）③优先级动作清单（本季 3 项）④假设与数据来源脚注。视觉克制、数字可读、禁花哨仪表盘皮肤。须达到高管 3 分钟读完即可拍板。全部写入系统分配任务目录。",
+      "prompt_en": "Compress “new-tea lower-tier market” research into a one-page decision dashboard for weekly BU projection. Use od-data-report. Must deliver: index.html. Include: (1) three takeaways—opportunity/risk/window (2) supporting charts—share/penetration/competitor (3) prioritized Q-actions (top 3) (4) assumptions + source footnotes. Restrained visuals, readable numbers; no flashy dashboard skins. 3-minute exec decision page. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P2",
+      "sort_order": 60
+    },
+    {
+      "id": "sc-geo-ai-seo",
+      "section_id": "geo",
+      "name_zh": "品牌AI可见度快检",
+      "name_en": "Brand AI visibility quick audit",
+      "annotation_zh": "可见度快检合并为带勾选表的单页 HTML。",
+      "annotation_en": "Quick audit as one checklist HTML.",
+      "badge_zh": "快检 · HTML",
+      "badge_en": "Audit · HTML",
+      "hub_binding": "mkt-ai-seo",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [
+        "bocha"
+      ],
+      "must_deliver": [
+        "audit-checklist.html"
+      ],
+      "primary_deliverable": "audit-checklist.html",
+      "prompt_zh": "对「青盏茶语」做大模型可见度快检，合并为单页 HTML。使用 mkt-ai-seo。须交付：audit-checklist.html（唯一前台文件）。含提问集、可见度判断、缺口、本周 5 条动作；可用表格。轻量 profile，禁绑 GEO 七槽全案。全部写入系统分配任务目录。",
+      "prompt_en": "AI-visibility quick audit as one HTML for “Qingzhan Tea”. Use mkt-ai-seo. Deliver audit-checklist.html only: queries, calls, gaps, 5 actions. No GEO 7-slot case. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P0",
+      "sort_order": 10
+    },
+    {
+      "id": "sc-geo-keywords",
+      "section_id": "geo",
+      "name_zh": "AI关键词意图库",
+      "name_en": "AI keywords intent library",
+      "annotation_zh": "意图分层关键词库合并单页 HTML。",
+      "annotation_en": "Layered intent library as one HTML.",
+      "badge_zh": "关键词 · HTML",
+      "badge_en": "Keywords · HTML",
+      "hub_binding": "geo-keyword-research",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [
+        "bocha"
+      ],
+      "must_deliver": [
+        "keywords.html"
+      ],
+      "primary_deliverable": "keywords.html",
+      "prompt_zh": "为「衡视」构建 AI 关键词与提问意图库，合并单页 HTML。使用 geo-keyword-research。须交付：keywords.html。按认知/比较/决策分层，标注内容形态；禁无效长尾堆砌、禁多文件散落。全部写入系统分配任务目录。",
+      "prompt_en": "AI keyword/intent library as one HTML for “Hengshi”. Use geo-keyword-research. Deliver keywords.html: awareness/compare/decision layers. No junk long-tails; no multi-file scatter. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P1",
+      "sort_order": 20
+    },
+    {
+      "id": "sc-geo-competitor",
+      "section_id": "geo",
+      "name_zh": "竞品可见度对照",
+      "name_en": "Competitor visibility matrix",
+      "annotation_zh": "竞品对照矩阵+缺口建议单页 HTML。",
+      "annotation_en": "Competitor matrix + gaps in one HTML.",
+      "badge_zh": "竞品 · HTML",
+      "badge_en": "Compete · HTML",
+      "hub_binding": "geo-competitor-analysis",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [
+        "bocha"
+      ],
+      "must_deliver": [
+        "competitor-visibility.html"
+      ],
+      "primary_deliverable": "competitor-visibility.html",
+      "prompt_zh": "对照「青盏」与两家竞品大模型可见度，合并单页 HTML。使用 geo-competitor-analysis。须交付：competitor-visibility.html。含矩阵表/简图、缺口与可引用机会。禁绑全案七槽。全部写入系统分配任务目录。",
+      "prompt_en": "Competitor LLM visibility as one HTML for “Qingzhan”. Use geo-competitor-analysis. Deliver competitor-visibility.html with matrix + gaps. No full GEO case. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P1",
+      "sort_order": 30
+    },
+    {
+      "id": "sc-geo-optimize",
+      "section_id": "geo",
+      "name_zh": "可引用内容成稿页",
+      "name_en": "Citable content HTML",
+      "annotation_zh": "可引用成稿排版为阅读级 HTML。",
+      "annotation_en": "Citable draft as reading HTML.",
+      "badge_zh": "成稿 · HTML",
+      "badge_en": "Draft · HTML",
+      "hub_binding": "geo-content-optimizer",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "optimized.html"
+      ],
+      "primary_deliverable": "optimized.html",
+      "prompt_zh": "将「青盏」品牌百科式介绍优化为可被大模型稳定摘录的成稿，并排成阅读级单页 HTML。使用 geo-content-optimizer。须交付：optimized.html（唯一前台文件）。短段落、可核事实、清晰实体关系与小标题节奏；禁多文件散落。须达到「可引用内容」样板级。全部写入系统分配任务目录。",
+      "prompt_en": "Rewrite “Qingzhan” brand copy for LLM citation as one reading HTML. Use geo-content-optimizer. Deliver optimized.html only: short paras, checkable facts, clear entities. Citability exemplar. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P1",
+      "sort_order": 40
+    },
+    {
+      "id": "sc-geo-probe",
+      "section_id": "geo",
+      "name_zh": "十一模型探测矩阵",
+      "name_en": "11-model coverage matrix",
+      "annotation_zh": "必测模型收录矩阵合并仪表盘 HTML。",
+      "annotation_en": "Required-model coverage as dashboard HTML.",
+      "badge_zh": "探测 · HTML",
+      "badge_en": "Probe · HTML",
+      "hub_binding": "geo-visibility-probe",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [
+        "bocha"
+      ],
+      "must_deliver": [
+        "coverage-matrix.html"
+      ],
+      "primary_deliverable": "coverage-matrix.html",
+      "prompt_zh": "探测「青盏茶语」在必测大模型集合中的提及/引用矩阵，合并为仪表盘 HTML。使用 geo-visibility-probe。须交付：coverage-matrix.html。行覆盖必测模型，缺 Key 标 skipped 占位，勿谎称全测。须达到监测基线表。全部写入系统分配任务目录。",
+      "prompt_en": "Required-LLM coverage as dashboard HTML for “Qingzhan Tea”. Use geo-visibility-probe. Deliver coverage-matrix.html; skipped rows without keys—no fake full coverage. Monitor baseline. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P2",
+      "sort_order": 50
+    },
+    {
+      "id": "sc-geo-monitor",
+      "section_id": "geo",
+      "name_zh": "GEO监测周报仪表盘",
+      "name_en": "GEO monitor weekly dashboard",
+      "annotation_zh": "监测周报 HTML 仪表盘，服务迭代。",
+      "annotation_en": "Weekly GEO monitor HTML dashboard.",
+      "badge_zh": "监测 · HTML",
+      "badge_en": "Monitor · HTML",
+      "hub_binding": "geo-monitor-report",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [
+        "bocha"
+      ],
+      "must_deliver": [
+        "geo-monitor-report.html"
+      ],
+      "primary_deliverable": "geo-monitor-report.html",
+      "prompt_zh": "输出「青盏」GEO 监测周报仪表盘（可投影）。使用 geo-monitor-report。须交付：geo-monitor-report.html。含趋势、异常、行动建议与简洁图表；示范数据须醒目标注。禁误绑全案七槽。须达到周报可转发管理层。全部写入系统分配任务目录。",
+      "prompt_en": "GEO weekly monitor dashboard for “Qingzhan”. Use geo-monitor-report. Deliver geo-monitor-report.html with trends, anomalies, actions, light charts; label demo data. No full GEO case. Exec-forwardable. Write every file into the system-assigned task directory.",
+      "star": false,
+      "priority": "P2",
+      "sort_order": 60
+    },
+    {
+      "id": "sc-fullcase-campaign",
+      "section_id": "fullcase",
+      "name_zh": "品牌传播Campaign全案",
+      "name_en": "Brand campaign full case",
+      "annotation_zh": "流程模板锁定清单，从洞察到渠道节奏整包验收。",
+      "annotation_en": "Process-template checklist from insight to channel cadence.",
+      "badge_zh": "全案 · 流程",
+      "badge_en": "Full · process",
+      "hub_binding": "brand-campaign-full",
+      "binding_kind": "template",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "plan.html"
+      ],
+      "primary_deliverable": "plan.html",
+      "prompt_zh": "用 brand-campaign-full 为「青盏茶语」交付品牌传播 Campaign 全案（左右栏多文件验收）。须按模板清单逐项落盘：洞察/人群/主张/渠道/节奏等阶段件 + 主入口 plan.html。版式专业、图表可读、清单锁定。须达到代理比稿/品牌立项可用整包。全部写入系统分配任务目录。",
+      "prompt_en": "Run brand-campaign-full for “Qingzhan Tea” (multi-file left-rail case). Checklist stages + plan.html. Review-grade charts; locked checklist. Agency/brand dual-use pack. Write every file into the system-assigned task directory.",
+      "star": true,
+      "priority": "P0",
+      "sort_order": 10
+    },
+    {
+      "id": "sc-fullcase-flywheel",
+      "section_id": "fullcase",
+      "name_zh": "内容营销飞轮一季样例",
+      "name_en": "Content flywheel season sample",
+      "annotation_zh": "选题→长文→切片一季样例，清单锁定。",
+      "annotation_en": "Topics → longform → slices for one season.",
+      "badge_zh": "全案 · 流程",
+      "badge_en": "Full · process",
+      "hub_binding": "content-flywheel",
+      "binding_kind": "template",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "01-topics.md",
+        "02-longform.md",
+        "03-social-slices.md"
+      ],
+      "primary_deliverable": "02-longform.md",
+      "prompt_zh": "用 content-flywheel 为「澄野」交付一季内容飞轮全案（左右栏多文件）。须交付：01-topics.md、02-longform.md、03-social-slices.md（STDA basename）。选题可执行、长文可发、切片可排期；禁幻影槽。须达到内容中台季度样板。全部写入系统分配任务目录。",
+      "prompt_en": "Run content-flywheel for “Chengye” (multi-file left-rail). Deliver 01-topics.md, 02-longform.md, 03-social-slices.md. No phantom slots. Content-ops quarterly exemplar. Write every file into the system-assigned task directory.",
+      "star": true,
+      "priority": "P1",
+      "sort_order": 20
+    },
+    {
+      "id": "sc-fullcase-geo",
+      "section_id": "fullcase",
+      "name_zh": "品牌GEO可见性全案",
+      "name_en": "Brand GEO visibility full case",
+      "annotation_zh": "GEO 全案：体检、缺口与 HTML 报告。",
+      "annotation_en": "Full GEO case: audit, gaps, HTML report.",
+      "badge_zh": "全案 · 流程",
+      "badge_en": "Full · process",
+      "hub_binding": "geo-brand-full",
+      "binding_kind": "template",
+      "fallback_binding": null,
+      "deps": [
+        "bocha"
+      ],
+      "must_deliver": [
+        "audit-checklist.md",
+        "report.html"
+      ],
+      "primary_deliverable": "report.html",
+      "prompt_zh": "用 geo-brand-full 为「衡视」交付品牌 GEO 可见性全案（左右栏多文件）。须交付：audit-checklist.md、report.html 及清单其余项。竞品对照、可引用缺口与优先动作齐全；仅全案栏用本模板。全部写入系统分配任务目录。",
+      "prompt_en": "Run geo-brand-full for “Hengshi” (multi-file left-rail). Deliver audit-checklist.md, report.html + checklist. Competitor deltas, citability gaps, actions. Write every file into the system-assigned task directory.",
+      "star": true,
+      "priority": "P1",
+      "sort_order": 30
+    },
+    {
+      "id": "sc-fullcase-launch",
+      "section_id": "fullcase",
+      "name_zh": "新品上市0到1物料全案",
+      "name_en": "Product launch 0-to-1 pack",
+      "annotation_zh": "上市物料整包，从定位到发布页。",
+      "annotation_en": "Launch pack from positioning to release page.",
+      "badge_zh": "全案 · 流程",
+      "badge_en": "Full · process",
+      "hub_binding": "product-launch-full",
+      "binding_kind": "template",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "launch-kit.html"
+      ],
+      "primary_deliverable": "launch-kit.html",
+      "prompt_zh": "用流程模板 product-launch-full，为消费电子新品「曜极 Air」交付 0→1 上市物料全案（作战室主入口）。须交付：launch-kit.html（及清单约定阶段件）。须覆盖：定位与一句话卖点、关键信息架构、渠道节奏、核心物料入口与责任人占位；叙事统一、阶段可勾选。禁空壳目录页。须达到上市作战室可投影主入口标准。全部写入系统分配任务目录。",
+      "prompt_en": "Run process template product-launch-full for consumer-electronics launch “Yaoji Air” (0→1 war-room homepage). Must deliver: launch-kit.html (+ staged checklist artifacts). Cover positioning & one-liner, key message architecture, channel cadence, core asset entry points with owner placeholders; unified narrative, checkable stages. No empty TOC shells. Launch war-room projection quality. Write every file into the system-assigned task directory.",
+      "star": true,
+      "priority": "P1",
+      "sort_order": 40
+    },
+    {
+      "id": "sc-fullcase-saas-growth",
+      "section_id": "fullcase",
+      "name_zh": "SaaS增长全案",
+      "name_en": "SaaS growth full case",
+      "annotation_zh": "定位到官网、获客与复盘的 SaaS 增长整包。",
+      "annotation_en": "SaaS growth pack from positioning to review.",
+      "badge_zh": "全案 · 流程",
+      "badge_en": "Full · process",
+      "hub_binding": "saas-growth-full",
+      "binding_kind": "template",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "growth-plan.html"
+      ],
+      "primary_deliverable": "growth-plan.html",
+      "prompt_zh": "用流程模板 saas-growth-full，为 B2B SaaS「澜析」交付季度增长全案（定位→官网/获客→复盘闭环）。须交付：growth-plan.html（及清单约定件）。须含：ICP 与价值主张、获客漏斗与关键指标、官网/内容动作、复盘节奏；阶段闭环、数字可追踪。须达到增长负责人季度蓝图可对齐销售/产品标准。全部写入系统分配任务目录。",
+      "prompt_en": "Run process template saas-growth-full for B2B SaaS “Lanxi” (positioning→site/acquisition→review loop). Must deliver: growth-plan.html (+ checklist items). Include ICP & value prop, funnel + north-star metrics, site/content motions, review cadence; closed-loop stages with trackable numbers. Growth-lead quarterly blueprint alignable with sales/product. Write every file into the system-assigned task directory.",
+      "star": true,
+      "priority": "P2",
+      "sort_order": 50
+    },
+    {
+      "id": "sc-fullcase-outline-video",
+      "section_id": "fullcase",
+      "name_zh": "大纲到PPT到宣传视频",
+      "name_en": "Outline to PPT to promo video",
+      "annotation_zh": "跨办公与视频的一条龙全案。",
+      "annotation_en": "Cross office+video end-to-end case.",
+      "badge_zh": "全案 · 跨模态",
+      "badge_en": "Full · multimodal",
+      "hub_binding": "outline-ppt-video",
+      "binding_kind": "template",
+      "fallback_binding": null,
+      "deps": [
+        "video_api"
+      ],
+      "must_deliver": [
+        "outline.md",
+        "presentation.pptx",
+        "promo.mp4"
+      ],
+      "primary_deliverable": "promo.mp4",
+      "prompt_zh": "用 outline-ppt-video 为「衡知」产品发布跑通大纲→真 PPT→宣传视频。须交付：outline.md、presentation.pptx、promo.mp4。三件同源叙事；真 pptx 与可播 mp4，禁空壳。须达到发布会前夜可替换备用链。全部写入系统分配任务目录。",
+      "prompt_en": "Run outline-ppt-video for “Hengzhi” launch: outline→real PPTX→promo video. Must deliver: outline.md, presentation.pptx, promo.mp4. One storyline; no empty shells. Launch-eve backup chain. Write every file into the system-assigned task directory.",
+      "star": true,
+      "priority": "P2",
+      "sort_order": 60
+    },
+    {
+      "id": "sc-compliance-entity",
+      "section_id": "compliance",
+      "name_zh": "经营主体合规自查清单",
+      "name_en": "Entity compliance self-check",
+      "annotation_zh": "经营主体自查清单草稿，清单清晰可验收。",
+      "annotation_en": "Entity self-check draft checklist.",
+      "badge_zh": "合规 · MD",
+      "badge_en": "Compliance · MD",
+      "hub_binding": "comp-entity-compliance",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "compliance-checklist.md"
+      ],
+      "primary_deliverable": "compliance-checklist.md",
+      "prompt_zh": "为小微「澄野商贸」输出经营主体合规自查清单草稿。使用 comp-entity-compliance。须交付：compliance-checklist.md。分执照/公示/经营范围/广告宣传等可勾选条目，指向公开规范要点，语气审慎。本成果为内部合规草稿，不构成执业意见，须持证专业人士审定后方可使用。全部写入系统分配任务目录。",
+      "prompt_en": "Entity compliance self-check draft for fictional SME “Chengye Trading”. Use comp-entity-compliance. Must deliver: compliance-checklist.md. Checkable items across license/publicity/scope/ads with public-rule themes. Internal compliance draft only—not professional advice; licensed review required before use. Write every file into the system-assigned task directory.",
+      "star": true,
+      "priority": "P1",
+      "sort_order": 10
+    },
+    {
+      "id": "sc-compliance-privacy",
+      "section_id": "compliance",
+      "name_zh": "数据与隐私差距评估草稿",
+      "name_en": "Data/privacy gap assessment draft",
+      "annotation_zh": "隐私差距评估草稿，服务上线前自检。",
+      "annotation_en": "Privacy gap draft for pre-launch self-check.",
+      "badge_zh": "隐私 · MD",
+      "badge_en": "Privacy · MD",
+      "hub_binding": "comp-data-privacy",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "privacy-gap.md"
+      ],
+      "primary_deliverable": "privacy-gap.md",
+      "prompt_zh": "为 App「澄办」输出数据与隐私差距评估草稿。使用 comp-data-privacy。须交付：privacy-gap.md。覆盖采集最小化、告知同意、存储与跨境提示、第三方 SDK 等差距与整改优先级。本成果为内部合规草稿，不构成执业意见，须持证专业人士审定后方可使用。全部写入系统分配任务目录。",
+      "prompt_en": "Privacy gap assessment draft for fictional app “Chengban”. Use comp-data-privacy. Must deliver: privacy-gap.md. Minimization, notice/consent, storage/cross-border notes, SDK gaps with priorities. Internal compliance draft only—not professional advice; licensed review required before use. Write every file into the system-assigned task directory.",
+      "star": true,
+      "priority": "P1",
+      "sort_order": 20
+    },
+    {
+      "id": "sc-compliance-ad",
+      "section_id": "compliance",
+      "name_zh": "广告法违禁用语改写包",
+      "name_en": "Ad-law forbidden-phrase rewrite pack",
+      "annotation_zh": "违禁用语识别与安全改写样例。",
+      "annotation_en": "Forbidden-phrase detection and safe rewrites.",
+      "badge_zh": "广告合规 · MD",
+      "badge_en": "Ad compliance · MD",
+      "hub_binding": "comp-ad-product",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "ad-compliance.md"
+      ],
+      "primary_deliverable": "ad-compliance.md",
+      "prompt_zh": "审查美妆投放文案并输出广告法违禁用语改写包。使用 comp-ad-product。须交付：ad-compliance.md。风险表述与安全改写对照表，说明理由；禁鼓励虚假宣传。本成果为内部合规草稿，不构成执业意见，须持证专业人士审定后方可使用。全部写入系统分配任务目录。",
+      "prompt_en": "Ad-law rewrite pack for fictional beauty ad copy. Use comp-ad-product. Must deliver: ad-compliance.md. Risk→safe rewrite table with rationale; no false-ad coaching. Internal compliance draft only—not professional advice; licensed review required before use. Write every file into the system-assigned task directory.",
+      "star": true,
+      "priority": "P1",
+      "sort_order": 30
+    },
+    {
+      "id": "sc-compliance-contract",
+      "section_id": "compliance",
+      "name_zh": "商事合同红线审查意见书",
+      "name_en": "Commercial contract redline memo",
+      "annotation_zh": "合同红线意见书草稿，便于法务预审。",
+      "annotation_en": "Contract redline memo draft for legal pre-review.",
+      "badge_zh": "合同 · MD",
+      "badge_en": "Contract · MD",
+      "hub_binding": "comp-contract-review",
+      "binding_kind": "skill",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "contract-review.md"
+      ],
+      "primary_deliverable": "contract-review.md",
+      "prompt_zh": "对「澄海」与供应商框架协议（示范条款）输出红线审查意见书草稿。使用 comp-contract-review。须交付：contract-review.md。分条款列出风险等级、问题与修改建议，结构像法务预审备忘。本成果为内部合规草稿，不构成执业意见，须持证专业人士审定后方可使用。全部写入系统分配任务目录。",
+      "prompt_en": "Redline memo draft on fictional “Chenghai” supplier framework (demo clauses). Use comp-contract-review. Must deliver: contract-review.md. Risk levels, issues, suggested edits—legal pre-review memo structure. Internal compliance draft only—not professional advice; licensed review required before use. Write every file into the system-assigned task directory.",
+      "star": true,
+      "priority": "P0",
+      "sort_order": 40
+    },
+    {
+      "id": "sc-compliance-bid",
+      "section_id": "compliance",
+      "name_zh": "招标解析与标书草案包",
+      "name_en": "Bid analysis and proposal draft pack",
+      "annotation_zh": "招标解析与商务/技术标草案整包。",
+      "annotation_en": "Bid analysis plus commercial/tech drafts.",
+      "badge_zh": "招投标 · MD包",
+      "badge_en": "Bidding · MD pack",
+      "hub_binding": "cn-bid-response-pack",
+      "binding_kind": "template",
+      "fallback_binding": null,
+      "deps": [],
+      "must_deliver": [
+        "bid-analysis.md",
+        "tech-proposal.md",
+        "commercial-proposal.md"
+      ],
+      "primary_deliverable": "bid-analysis.md",
+      "prompt_zh": "对政务信息化采购做招标解析与标书草案包。使用 cn-bid-response-pack。须交付：bid-analysis.md、tech-proposal.md、commercial-proposal.md。解析评分点与废标风险，草案结构完整并标注示范场景。本成果为内部合规草稿，不构成执业意见，须持证专业人士审定后方可使用。全部写入系统分配任务目录。",
+      "prompt_en": "Bid analysis + proposal drafts for fictional gov-IT tender. Use cn-bid-response-pack. Must deliver: bid-analysis.md, tech-proposal.md, commercial-proposal.md. Scoring/risks; complete draft structure; label demo scenario. Internal compliance draft only—not professional advice; licensed review required before use. Write every file into the system-assigned task directory.",
+      "star": true,
+      "priority": "P1",
+      "sort_order": 50
+    },
+    {
+      "id": "sc-compliance-policy",
+      "section_id": "compliance",
+      "name_zh": "小微惠企政策检索摘要",
+      "name_en": "SME subsidy policy brief",
+      "annotation_zh": "惠企政策检索摘要，附公开来源提示。",
+      "annotation_en": "SME policy brief with public-source hints.",
+      "badge_zh": "政策 · MD",
+      "badge_en": "Policy · MD",
+      "hub_binding": "cn-policy-subsidy-pack",
+      "binding_kind": "template",
+      "fallback_binding": null,
+      "deps": [
+        "bocha"
+      ],
+      "must_deliver": [
+        "policy-brief.md"
+      ],
+      "primary_deliverable": "policy-brief.md",
+      "prompt_zh": "为科技型小微「衡知」检索并摘要可关注的惠企政策（国家/地方公开信息）。使用 cn-policy-subsidy-pack。须交付：policy-brief.md。条目含适用提示与来源线索，禁编造文号。本成果为内部合规草稿，不构成执业意见，须持证专业人士审定后方可使用。全部写入系统分配任务目录。",
+      "prompt_en": "SME subsidy policy brief for fictional tech SME “Hengzhi” from public sources. Use cn-policy-subsidy-pack. Must deliver: policy-brief.md. Eligibility hints + source clues; no fabricated document numbers. Internal compliance draft only—not professional advice; licensed review required before use. Write every file into the system-assigned task directory.",
+      "star": true,
+      "priority": "P2",
+      "sort_order": 60
+    }
+  ]
+}

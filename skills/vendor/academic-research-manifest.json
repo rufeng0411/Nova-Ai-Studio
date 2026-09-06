@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-06-08T07:43:18.516Z",
+  "totalSkills": 7,
+  "sources": [
+    {
+      "source": "orchestra-research",
+      "commit": "28f2d29236f2bade2eb92cadb2585189589a5828",
+      "count": 6,
+      "copied": [
+        {
+          "sourcePath": "20-ml-paper-writing/ml-paper-writing",
+          "vendoredSlug": "ora-ml-paper-writing"
+        },
+        {
+          "sourcePath": "20-ml-paper-writing/academic-plotting",
+          "vendoredSlug": "ora-academic-plotting"
+        },
+        {
+          "sourcePath": "20-ml-paper-writing/systems-paper-writing",
+          "vendoredSlug": "ora-systems-paper-writing"
+        },
+        {
+          "sourcePath": "21-research-ideation/brainstorming-research-ideas",
+          "vendoredSlug": "ora-brainstorm-research"
+        },
+        {
+          "sourcePath": "22-agent-native-research-artifact/rigor-reviewer",
+          "vendoredSlug": "ora-rigor-reviewer"
+        },
+        {
+          "sourcePath": "22-agent-native-research-artifact/research-manager",
+          "vendoredSlug": "ora-research-manager"
+        }
+      ]
+    },
+    {
+      "source": "anthropics-skills",
+      "commit": "c30d329f5814647c1e2f071020c1e8c1c9893ef1",
+      "count": 1,
+      "copied": [
+        {
+          "sourcePath": "skills/pdf",
+          "vendoredSlug": "anth-pdf"
+        }
+      ]
+    }
+  ]
+}

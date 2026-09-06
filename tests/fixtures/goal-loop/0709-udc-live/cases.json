@@ -1,0 +1,87 @@
+{
+  "project": "0709-Test-2",
+  "suite": "0709-udc-live-r11",
+  "cases": [
+    {
+      "id": "UDC-C4-dc7a63d3",
+      "code": "C4",
+      "baseline": "dc7a63d3：导出 17 行假绿、SDM 槽未绑、strict GT 未收敛",
+      "prompt": "雷蛇 GEO 全案，七步一次做完：\n1. geo-aeo-audit 审计清单\n2. 关键词调研 pd-geo\n3. 平台成稿（知乎/小红书/什么值得买）\n4. 引用优化\n5. schema.jsonld\n6. citability 评分\n7. 可选：小红书草稿\n\n直接开始做，做完告诉我文件在哪。",
+      "capability": { "slug": "pd-geo", "displayName": "AI 搜索全案" },
+      "timeoutMs": 1200000,
+      "expect": {
+        "slotCount": 7,
+        "requiredTotal": 6,
+        "profileId": "geo",
+        "bindBasename": "01-aeo-audit-checklist.md",
+        "bindSlotIndex": 0,
+        "maxExportRows": 7,
+        "forbiddenVerifiedBasenames": ["README.md", "deliverables-index.md"]
+      }
+    },
+    {
+      "id": "UDC-C5-d7890d1d",
+      "code": "C5",
+      "baseline": "d7890d1d：01-aeo-audit-checklist.md 未绑 slot_1（截图 P0）",
+      "prompt": "Razer Pro Click GEO，七步：\n1. geo-aeo-audit 审计清单\n2. 关键词调研\n3. 平台成稿\n4. 引用优化\n5. schema.jsonld\n6. citability 评分\n7. visibility-report.html 可见度报告\n\n直接开始做，做完告诉我文件在哪。",
+      "capability": { "slug": "pd-geo", "displayName": "AI 搜索全案" },
+      "timeoutMs": 1200000,
+      "expect": {
+        "slotCount": 7,
+        "profileId": "geo",
+        "bindBasename": "01-aeo-audit-checklist.md",
+        "bindSlotIndex": 0,
+        "scopeDir": "artifacts/razer-pro-click-geo/"
+      }
+    },
+    {
+      "id": "UDC-C8-e75fe21d",
+      "code": "C8",
+      "baseline": "e75fe21d：profile 误绑 geo；导出空表/行数漂移",
+      "prompt": "增长全案八步：\n1. 市场洞察\n2. 用户画像\n3. 渠道策略\n4. 内容矩阵\n5. 投放计划\n6. 邮件培育\n7. 程序化 SEO\n8. 复盘报告\n\n直接开始做，做完告诉我文件在哪。",
+      "timeoutMs": 1200000,
+      "expect": {
+        "slotCount": 8,
+        "profileIdNot": "geo",
+        "exportRowCount": 8,
+        "minDockRows": 6
+      }
+    },
+    {
+      "id": "UDC-C1-eca4cc5d",
+      "code": "C1",
+      "baseline": "eca4cc5d：battlecard 三步首回合停、Dock 空",
+      "prompt": "销售 battlecard 三步：\n1. artifacts/sales/intel.md 竞品情报\n2. battlecard.md 作战卡\n3. talk-track.md 话术\n\n直接开始做，做完告诉我文件在哪。",
+      "timeoutMs": 900000,
+      "expect": {
+        "slotCount": 3,
+        "firstPathHint": "intel.md",
+        "minDockRows": 2
+      }
+    },
+    {
+      "id": "UDC-C6-d45a0ed0",
+      "code": "C6",
+      "baseline": "d45a0ed0：跨目录 verified、scopeDir 与文件夹不一致",
+      "prompt": "可见度监测三步：\n1. geo-rank-track.csv 排名追踪\n2. brand-mention-report.md 提及报告\n3. monitor-report.html 监测页\n\n直接开始做，做完告诉我文件在哪。",
+      "timeoutMs": 900000,
+      "expect": {
+        "slotCount": 3,
+        "pathHintContains": ["rank", "mention", "monitor"],
+        "minDockRows": 2
+      }
+    },
+    {
+      "id": "UDC-C7-1d1bf62f",
+      "code": "C7",
+      "baseline": "1d1bf62f：视频 API/env；无真 mp4 交付",
+      "prompt": "广告视频一条：\n1. commercial.mp4 成片\n\n直接开始做，做完告诉我文件在哪。",
+      "timeoutMs": 1200000,
+      "expect": {
+        "slotCount": 1,
+        "pathHintContains": ["mp4", "commercial"],
+        "minDelivered": 1
+      }
+    }
+  ]
+}

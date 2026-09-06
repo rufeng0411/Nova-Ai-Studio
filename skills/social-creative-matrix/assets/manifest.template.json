@@ -1,0 +1,41 @@
+{
+  "campaignId": "example-campaign",
+  "createdAt": "2026-06-01T12:00:00.000Z",
+  "status": "ready",
+  "platforms": ["小红书", "抖音", "快手", "新浪微博", "知乎", "头条号", "百家号", "视频号"],
+  "creativeAnchor": {
+    "valueProp": "一句话价值主张",
+    "visualPrompt": "与 visuals/prompt.txt 一致",
+    "tone": "活泼 / 干货",
+    "cta": "行动号召",
+    "avoid": "禁用项"
+  },
+  "visuals": [
+    { "ratio": "3:4", "file": "visuals/image-3x4.png", "width": 1104, "height": 1472 },
+    { "ratio": "9:16", "file": "visuals/image-9x16.png", "width": 928, "height": 1664 },
+    { "ratio": "1:1", "file": "visuals/image-1x1.png", "width": 1328, "height": 1328 },
+    { "ratio": "16:9", "file": "visuals/image-16x9.png", "width": 1664, "height": 928 }
+  ],
+  "skippedRatios": [],
+  "recommendedMapping": {
+    "小红书": "visuals/image-3x4.png",
+    "抖音": "visuals/image-9x16.png",
+    "快手": "visuals/image-9x16.png",
+    "新浪微博": "visuals/image-1x1.png",
+    "知乎": "visuals/image-1x1.png",
+    "头条号": "visuals/image-16x9.png",
+    "百家号": "visuals/image-16x9.png",
+    "视频号": "visuals/image-9x16.png"
+  },
+  "copy": {
+    "小红书": {
+      "title": "标题≤20字",
+      "body": "正文≤1000字",
+      "hashtags": ["话题1", "话题2"],
+      "notes": ""
+    }
+  },
+  "optional": {
+    "carouselHtml": null
+  }
+}

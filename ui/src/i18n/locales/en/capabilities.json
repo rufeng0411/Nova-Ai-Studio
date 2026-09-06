@@ -1,0 +1,149 @@
+{
+  "title": "Capability Hub",
+  "totalCount": "400+ capabilities",
+  "flywheelIntro": "Pick a category, then a sub-stage. Marketing follows the 1–6 flywheel; education is a separate learning toolkit; brainstorming uses persona lenses.",
+  "catalogDocHint": "Full English catalog: docs/capabilities-hub-catalog.en.md",
+  "loopHint": "Insights from measurement flow back to research, closing the loop",
+  "categoryNavLabel": "Capability categories",
+  "categoryMarketing": "Marketing",
+  "categoryMedia": "Media",
+  "categoryMediaHint": "OOH and digital media: brief → plan → creative → launch → optimize → report",
+  "categoryGeo": "GEO",
+  "categoryGeoHint": "Six GEO stages: baseline → strategy → citability → technical → distribution → monitor",
+  "categoryFinance": "Finance",
+  "categoryFinanceHint": "Research modeling, valuation, FP&A and fintech",
+  "categoryEnterpriseCompliance": "Enterprise",
+  "categoryEnterpriseComplianceHint": "Ops regulation, contracts & bids, HR, corporate and SME policy (Mainland China)",
+  "categoryMarketingHint": "Flywheel sub-stages (1–6): research → strategy → create → activate → distribute → measure",
+  "categoryEducation": "Education",
+  "categoryEducationHint": "Browse by school level: preschool, primary, junior high, senior high",
+  "categoryBrainstorming": "Brainstorming",
+  "categoryBrainstormingHint": "Think through problems with distilled celebrity mindsets",
+  "categoryItemCount": "{{count}} items",
+  "allInCategory": "All in category",
+  "educationBands": {
+    "preschool": {
+      "label": "Preschool",
+      "summary": "Phonics, number sense, focus, and pre-school readiness"
+    },
+    "primary": {
+      "label": "Primary school",
+      "summary": "Textbook sync, daily practice, reading and writing"
+    },
+    "junior": {
+      "label": "Junior high",
+      "summary": "Middle-school sync, exam review, and subject drills"
+    },
+    "senior": {
+      "label": "Senior high",
+      "summary": "High-school sync, gaokao sprint, and subject prep"
+    },
+    "general": {
+      "label": "Higher ed & exams",
+      "summary": "College prep, civil service, study abroad, and adult learning"
+    },
+    "academic_research": {
+      "label": "Academic research",
+      "summary": "Paper review, literature surveys, academic writing, and citations"
+    }
+  },
+  "majorCategories": {
+    "geo": "GEO",
+    "finance": "Finance",
+    "enterprise_compliance": "Enterprise",
+    "office": "Office",
+    "creation": "Creation",
+    "development": "Development",
+    "brainstorming": "Brainstorming"
+  },
+  "taskGroupNavHint": "Task sub-groups in this stage",
+  "taskGroupGeneral": "Other",
+  "allInStage": "All in stage",
+  "subtagPrefix": "Subtype",
+  "pathCount": "{{count}} items",
+  "categorySubtagHint": "{{category}} · pick a sub-category",
+  "searchPlaceholder": "Search by name or task description",
+  "searchPlaceholderMobile": "Search capabilities",
+  "hubPinnedBadge": "Essential",
+  "hubExpandMore": "More capabilities",
+  "hubCollapseMore": "Show less",
+  "hubSecondaryHint": "Additional capabilities",
+  "uncategorized": "Uncategorized",
+  "stageHasSkills": "Capabilities in this stage",
+  "stageEmpty": "No capabilities in this stage yet",
+  "stageItemCount": "{{count}} items",
+  "loading": "Loading capabilities…",
+  "refreshing": "Syncing",
+  "status": {
+    "available": "Available",
+    "pending": "Coming soon",
+    "unavailable": "Not installed",
+    "needs_config": "Needs setup"
+  },
+  "tryIt": "Try it",
+  "tryItNoProject": "Select a project in the sidebar before trying a capability.",
+  "comingSoonTitle": "Coming soon",
+  "comingSoonBody": "Capabilities for this stage are being integrated (e.g. social publishing and cross-platform distribution). Use adjacent stages for now.",
+  "comingSoonHint": "Cards will appear here automatically once L2/L3 integrations land",
+  "empty": {
+    "noData": "No capabilities available",
+    "noDataHint": "Check that services are running, or refresh the page",
+    "filtered": "No capabilities match your filters",
+    "stageEmpty": "No capabilities in this stage",
+    "filteredHintSearch": "Searched all capabilities — try another keyword or clear search",
+    "filteredHintStage": "Try another stage or explore the flywheel",
+    "clearFilters": "Clear filters · Back to Research",
+    "loadFailed": "Failed to load. Please try again."
+  },
+  "nav": {
+    "lastStage": "End of flywheel. Return to research to start the next cycle.",
+    "continue": "Continue: {{from}} → {{to}}",
+    "backToStart": "Back to start · Research",
+    "next": "Next · {{stage}}"
+  },
+  "onboarding": {
+    "step": "First-time guide ({{step}}/3)",
+    "roleTitle": "What best describes your role?",
+    "roles": {
+      "brand": "Brand marketing",
+      "ops": "Growth & ops",
+      "content": "Content creation",
+      "analysis": "Research & analysis"
+    },
+    "stageTitle": "Recommended starting stage",
+    "stageHint": "Based on \"{{role}}\", we suggest: {{stage}}",
+    "stageBody": "You'll land on this stage when done. Click \"Try it\" on any card to send a sample prompt to chat.",
+    "startTitle": "Run your first task",
+    "startBody": "The top band is the full flywheel. Follow \"Next\" through the pipeline, or start from the suggested stage.",
+    "prev": "Back",
+    "next": "Next",
+    "finish": "Finish guide"
+  },
+  "geoStages": {
+    "geo_baseline": { "label": "Baseline", "summary": "Query library, competitor visibility, site baseline" },
+    "geo_strategy": { "label": "Strategy", "summary": "Keyword matrix, content gaps, GTM orchestration" },
+    "geo_citability": { "label": "Citability", "summary": "Fact density, citable blocks, platform drafts" },
+    "geo_technical": { "label": "Technical", "summary": "robots/llms.txt/schema/AI crawlability" },
+    "geo_distribution": { "label": "Distribution", "summary": "Programmatic pages, email, domestic drafts" },
+    "geo_monitor": { "label": "Monitor", "summary": "Multi-engine visibility, dual-format reports" }
+  },
+  "mediaLanes": {
+    "media_ooh": { "label": "OOH media", "summary": "Billboards, transit, mall DOOH strategy" },
+    "media_digital": { "label": "Digital media", "summary": "Paid social/search accounts, creative, optimization" }
+  },
+  "mediaSteps": {
+    "ooh_brief": { "label": "Brief & goals" },
+    "ooh_strategy": { "label": "Media strategy & budget" },
+    "ooh_planning": { "label": "Placements & scenes" },
+    "ooh_creative": { "label": "Creative specs" },
+    "ooh_traffic": { "label": "Posting & monitoring" },
+    "ooh_measure": { "label": "Results & wrap-up" },
+    "dig_brief": { "label": "Brief & goals" },
+    "dig_plan": { "label": "Channel plan" },
+    "dig_setup": { "label": "Accounts & tracking" },
+    "dig_creative": { "label": "Creative production" },
+    "dig_launch": { "label": "Launch & budget" },
+    "dig_optimize": { "label": "Optimize & test" },
+    "dig_report": { "label": "Reporting" }
+  }
+}

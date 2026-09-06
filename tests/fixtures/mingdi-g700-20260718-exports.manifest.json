@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "exportDate": "2026-07-18",
+  "expectedCount": 11,
+  "entries": [
+    {
+      "id": "strategy",
+      "basename": "web-s_02c1951f-c042-4824-8eec-358822552f__用「strategy-advisor」帮我：【鸣镝G700】。-2026-07-18.html",
+      "sha256": "462f9da358cddc564f3b3aef39eeee55d4987196500724d22f1316c743b818f4"
+    },
+    {
+      "id": "geo-plan",
+      "basename": "web-s_07d0636c-0668-4aa3-9f2e-1008acd51a__帮【鸣镝G700】做品牌 GEO 全案，按阶段一次执行，存 系统分配的任务目录 每阶段报路径。核心优-2026-07-18.html",
+      "sha256": "d2ed4d47cf8d61df41295eac0fac6c99a53c9cd7f5d1ff4c7466f1776726abc8"
+    },
+    {
+      "id": "geo-keywords",
+      "basename": "web-s_4445346c-be62-442a-9df4-962e1fe1ae__用「GEO挖词」为【鸣镝G700】整理 AI 搜索关键词：20 个核心词与用户常问句式。须交付：ke-2026-07-18.html",
+      "sha256": "42cd6986ab394853d55a8179f79b14ff74d11ff859cb5f912b5b5f6f33ab2a74"
+    },
+    {
+      "id": "last30days",
+      "basename": "web-s_48f8fe77-6038-48a9-bf2e-8a19921494__用「last30days」帮我：【鸣镝G700】。须交付：marketing-deliverable-2026-07-18.html",
+      "sha256": "12dacdd53d711be62d2c8efb0d3b3cc8fe30cb56926c16920f8e0d5e31fddbbc"
+    },
+    {
+      "id": "nova-slides",
+      "basename": "web-s_4f8c2015-0551-42d0-8662-6e5b4c6384__用「Nova-美学幻灯」把【鸣镝G700】做成【6】页【画幅，如 16_9】，图要来官方，配图 PN-2026-07-18.html",
+      "sha256": "ce68b5424be290e566dbad6359fa9247a20b160b48a9ef0b426dddc49c0e231b"
+    },
+    {
+      "id": "product-research",
+      "basename": "web-s_5874e249-e8fd-4329-a33b-02184a4013__用「Nova-产品用研」为【鸣镝G700】写产品用户研究报告，按固定八章展开。须交付：product-2026-07-18.html",
+      "sha256": "abfaffd9f646858503374a7752470232b7d7de7a3a45498eb05bcefa4b1a3a88"
+    },
+    {
+      "id": "gsap",
+      "basename": "web-s_65e12eef-71ba-43e4-8ad4-e29aed8717__用「GSAP 动画模式库」给我的页面或视频加动效：【鸣镝G700】。须交付：视频或分镜 md_mp4-2026-07-18.html",
+      "sha256": "5d4efe22bc2aca3aa38924f1f13b421f0880fe3a879886795057425d01a5296a"
+    },
+    {
+      "id": "campaign",
+      "basename": "web-s_748644ab-b9a0-417f-bc60-20d35466d6__帮我做【鸣镝G700】的品牌传播 campaign 全案，按阶段一次规划执行，产出存系统分配的任务目-2026-07-18.html",
+      "sha256": "f7c7a6cc84f65798c3af3fcf5d3e8e4761ac6867008f713d7ffe0b5ecbc7cf53"
+    },
+    {
+      "id": "html-slides",
+      "basename": "web-s_8d833e67-3cb8-43b8-b3c7-1df6637466__做《鸣镝G700》详细介绍+科学分解图+越野指南风格的HTML 幻灯：图片无比来自顶火和捷途官方或者-2026-07-18.html",
+      "sha256": "33f1c1c6d7e9e0c924e9f4ae620f4cf049d2b2d52befc3a10430f41cf72effa1"
+    },
+    {
+      "id": "remotion",
+      "basename": "web-s_b088d379-9cb6-487d-9209-29a73b2587__用「Remotion 最佳实践」帮我：【鸣镝G700】。-2026-07-18.html",
+      "sha256": "f9eb14828d49c6ccf281d2c51fe2cc8bfc0914fb2ff83c13b57309af9913684f"
+    },
+    {
+      "id": "website",
+      "basename": "web-s_b7b9f02b-5ad6-4b57-b09f-f7a1518196__帮【鸣镝G700】做品牌官网，图片需要来自顶火和捷途官方或者官方小红书（ins）等，技术要使用最新的-2026-07-18.html",
+      "sha256": "bf5de3603b67ea2ca143d1852d36eef9e2df19d5c8ea07ea868fa11c2ef50c09"
+    }
+  ]
+}

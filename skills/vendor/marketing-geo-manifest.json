@@ -1,0 +1,110 @@
+{
+  "generatedAt": "2026-07-13T08:53:08.496Z",
+  "totalSkills": 19,
+  "sources": [
+    {
+      "source": "seo-geo",
+      "commit": "1ae40e6d98dd2626b56cd1bee8700edc9fb71789",
+      "count": 11,
+      "copied": [
+        {
+          "sourcePath": "research/keyword-research",
+          "vendoredSlug": "geo-keyword-research"
+        },
+        {
+          "sourcePath": "research/competitor-analysis",
+          "vendoredSlug": "geo-competitor-analysis"
+        },
+        {
+          "sourcePath": "build/geo-content-optimizer",
+          "vendoredSlug": "geo-content-optimizer"
+        },
+        {
+          "sourcePath": "build/seo-content-writer",
+          "vendoredSlug": "geo-seo-content-writer"
+        },
+        {
+          "sourcePath": "optimize/technical-seo-checker",
+          "vendoredSlug": "geo-technical-seo"
+        },
+        {
+          "sourcePath": "optimize/on-page-seo-auditor",
+          "vendoredSlug": "geo-on-page-audit"
+        },
+        {
+          "sourcePath": "monitor/rank-tracker",
+          "vendoredSlug": "geo-rank-track"
+        },
+        {
+          "sourcePath": "research/content-gap-analysis",
+          "vendoredSlug": "geo-content-gap-analysis"
+        },
+        {
+          "sourcePath": "research/serp-analysis",
+          "vendoredSlug": "geo-serp-analysis"
+        },
+        {
+          "sourcePath": "monitor/backlink-analyzer",
+          "vendoredSlug": "geo-backlink-analyzer"
+        },
+        {
+          "sourcePath": "monitor/performance-reporter",
+          "vendoredSlug": "geo-performance-reporter"
+        }
+      ]
+    },
+    {
+      "source": "best-aeo-skill",
+      "commit": "224600852709a546fdfc90f9005b67dd54988c39",
+      "count": 1,
+      "copied": [
+        {
+          "sourcePath": ".",
+          "vendoredSlug": "geo-aeo-audit"
+        }
+      ]
+    },
+    {
+      "source": "geo-seo-claude",
+      "commit": "9eec32f5f700a1e6c3cb1cb735a56ee5ec49a964",
+      "count": 1,
+      "copied": [
+        {
+          "sourcePath": "skills/geo-citability",
+          "vendoredSlug": "geo-citability"
+        }
+      ]
+    },
+    {
+      "source": "knowledge-work-plugins",
+      "commit": "8cfb8a25dbc7de82390cedff932081e7662d78be",
+      "count": 6,
+      "copied": [
+        {
+          "sourcePath": "marketing/skills/competitive-brief",
+          "vendoredSlug": "mkt-competitive-brief"
+        },
+        {
+          "sourcePath": "sales/skills/competitive-intelligence",
+          "vendoredSlug": "mkt-competitive-intel"
+        },
+        {
+          "sourcePath": "marketing/skills/content-creation",
+          "vendoredSlug": "mkt-content-creation"
+        },
+        {
+          "sourcePath": "marketing/skills/draft-content",
+          "vendoredSlug": "mkt-draft-content"
+        },
+        {
+          "sourcePath": "marketing/skills/email-sequence",
+          "vendoredSlug": "mkt-email-sequence"
+        },
+        {
+          "sourcePath": "marketing/skills/performance-report",
+          "vendoredSlug": "mkt-performance-report"
+        }
+      ]
+    }
+  ]
+}

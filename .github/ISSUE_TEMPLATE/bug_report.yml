@@ -1,0 +1,16 @@
+name: Bug report
+description: Report a problem with the community edition
+about: Report a problem with the community edition
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment (OS, Python)

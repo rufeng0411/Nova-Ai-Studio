@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "roots": [
+    {
+      "id": "zongheng-chery",
+      "rootUrl": "https://zongheng.chery.cn/",
+      "sourceTier": "brand_official",
+      "includeSubdomains": true,
+      "matchHints": ["奇瑞", "纵横", "鸣镝", "G700", "g700"]
+    },
+    {
+      "id": "chery-brand",
+      "rootUrl": "https://www.chery.cn/",
+      "sourceTier": "brand_official",
+      "includeSubdomains": true,
+      "matchHints": ["奇瑞", "鸣镝", "G700", "g700"]
+    },
+    {
+      "id": "autohome",
+      "rootUrl": "https://www.autohome.com.cn/",
+      "sourceTier": "platform_verified_official",
+      "includeSubdomains": true,
+      "matchHints": ["汽车之家"]
+    },
+    {
+      "id": "dongchedi",
+      "rootUrl": "https://www.dongchedi.com/",
+      "sourceTier": "platform_verified_official",
+      "includeSubdomains": true,
+      "matchHints": ["懂车帝"]
+    }
+  ]
+}

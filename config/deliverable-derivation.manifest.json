@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "description": "权威源 → 派生格式全局策略（canonical → derived）",
+  "defaultCanonicalExt": "md",
+  "globalRule": {
+    "zh-CN": "同一报告/分析/方案若要求多种格式：须先 write_file 完成权威源（默认结构化 .md），read_file 确认落盘后再生成派生格式（.html/.pdf/.docx/.pptx 等）；派生须读取权威源内容，禁止未写源文件先交付派生格式。",
+    "en": "When one report needs multiple formats: write the canonical source (default .md) first, read_file to confirm, then derive html/pdf/docx/pptx from that source; never deliver derived-only without the canonical file."
+  },
+  "exceptions": [
+    { "pattern": "index.html", "reason": "原生 HTML 落地页/幻灯，HTML 即权威源" },
+    { "pattern": "presentation.pptx", "reason": "原生 PPT 交付，pptx 即权威源" },
+    { "pattern": "optimized.md", "reason": "GEO 成稿正文，可选摘要页，不强制派生链" },
+    { "pattern": "llms.txt", "reason": "配置文本，非报告派生链" },
+    { "pattern": "schema.jsonld", "reason": "结构化数据，非报告派生链" },
+    { "pattern": "verification-plan.md", "reason": "计划类 md，GEO 不强制 HTML" },
+    { "pattern": "drafts/", "reason": "平台成稿目录" },
+    { "pattern": ".mp4", "reason": "媒体原生交付" },
+    { "pattern": ".png", "reason": "图片原生交付" }
+  ],
+  "derivationSkills": {
+    "html": "geo-dual-report",
+    "html-monitor": "geo-monitor-report",
+    "docx": "anth-docx",
+    "pptx": "anth-pptx",
+    "pdf": "compose_images_to_document"
+  },
+  "domainManifests": {
+    "geo": "config/geo-dual-report.manifest.json"
+  }
+}

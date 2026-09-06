@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1280, initial-scale=1" />
+<title>Dithered</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1280px; height: 800px; overflow: hidden; }
+  body { font-family: Inter, "Segoe UI", system-ui, sans-serif; background: #111827; }
+</style>
+</head>
+<body>
+<div style="min-height:800px;background:#111827;color:#ffffff;display:flex;flex-direction:column;">
+  <header style="display:flex;align-items:center;justify-content:space-between;padding:18px 28px;border-bottom:1px solid #16a34a55;">
+    <div style="display:flex;align-items:center;gap:10px;">
+      <span style="width:22px;height:22px;border-radius:6px;background:#3b82f6;display:inline-block;"></span>
+      <strong style="font-size:15px;letter-spacing:-0.03em;">Dithered</strong>
+    </div>
+    <nav style="display:flex;gap:18px;font-size:11px;color:#8b5cf6;">
+      <span>产品</span><span>定价</span><span>文档</span><span style="color:#ffffff">登录</span>
+    </nav>
+  </header>
+  <div style="flex:1;display:grid;grid-template-columns:220px 1fr;min-height:0;">
+    <aside style="padding:20px 16px;border-right:1px solid #16a34a44;">
+      
+        <div style="padding:8px 10px;margin-bottom:4px;border-radius:8px;font-size:11px;color:#8b5cf6;background:transparent;border:1px solid transparent;">概览</div>
+        <div style="padding:8px 10px;margin-bottom:4px;border-radius:8px;font-size:11px;color:#ffffff;background:#3b82f633;border:1px solid #3b82f666;">项目</div>
+        <div style="padding:8px 10px;margin-bottom:4px;border-radius:8px;font-size:11px;color:#8b5cf6;background:transparent;border:1px solid transparent;">分析</div>
+        <div style="padding:8px 10px;margin-bottom:4px;border-radius:8px;font-size:11px;color:#8b5cf6;background:transparent;border:1px solid transparent;">设置</div>
+    </aside>
+    <main style="padding:28px 32px;display:flex;flex-direction:column;gap:18px;">
+      <div>
+        <div style="font-size:10px;color:#3b82f6;text-transform:uppercase;letter-spacing:0.12em;margin-bottom:8px;">Dot-pattern rendering technique that simulates shades with a limited palette for nostalgic, retro, high-contrast visuals.</div>
+        <h1 style="font-size:34px;line-height:1.08;font-weight:700;letter-spacing:-0.04em;margin-bottom:10px;">更快完成复杂协作</h1>
+        <p style="font-size:13px;line-height:1.55;color:#8b5cf6;max-width:42ch;">Dot-pattern rendering technique that simulates shades with a limited palette for nostalgic, retro, high-contrast visuals.</p>
+      </div>
+      <div style="display:flex;gap:10px;">
+        <span style="background:#3b82f6;color:#fff;padding:10px 18px;border-radius:8px;font-size:12px;font-weight:600;">开始使用</span>
+        <span style="border:1px solid #16a34a88;color:#ffffff;padding:10px 18px;border-radius:8px;font-size:12px;">查看演示</span>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px;">
+        
+          <div style="background:#16a34a;border:1px solid #8b5cf633;border-radius:12px;padding:14px;">
+            <div style="font-size:10px;color:#8b5cf6;margin-bottom:8px;">活跃项目</div>
+            <div style="font-size:22px;font-weight:700;color:#ffffff;">128</div>
+          </div>
+          <div style="background:#16a34a;border:1px solid #8b5cf633;border-radius:12px;padding:14px;">
+            <div style="font-size:10px;color:#8b5cf6;margin-bottom:8px;">本周任务</div>
+            <div style="font-size:22px;font-weight:700;color:#ffffff;">46</div>
+          </div>
+          <div style="background:#16a34a;border:1px solid #8b5cf633;border-radius:12px;padding:14px;">
+            <div style="font-size:10px;color:#8b5cf6;margin-bottom:8px;">完成率</div>
+            <div style="font-size:22px;font-weight:700;color:#3b82f6;">94%</div>
+          </div>
+      </div>
+      <div style="flex:1;background:linear-gradient(180deg,#16a34a 0%,#111827 100%);border:1px solid #8b5cf633;border-radius:14px;padding:16px;display:grid;grid-template-columns:1.2fr 1fr;gap:14px;min-height:180px;">
+        <div style="background:#111827;border-radius:10px;border:1px solid #8b5cf622;padding:12px;">
+          <div style="height:8px;width:55%;background:#3b82f6;border-radius:4px;margin-bottom:10px;"></div>
+          <div style="height:6px;width:88%;background:#8b5cf6;opacity:0.35;border-radius:3px;margin-bottom:6px;"></div>
+          <div style="height:6px;width:72%;background:#8b5cf6;opacity:0.25;border-radius:3px;"></div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+          <div style="background:#111827;border-radius:8px;border:1px solid #8b5cf622;"></div><div style="background:#111827;border-radius:8px;border:1px solid #8b5cf622;"></div><div style="background:#111827;border-radius:8px;border:1px solid #8b5cf622;"></div><div style="background:#111827;border-radius:8px;border:1px solid #8b5cf622;"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div style="display:flex;gap:4px;padding:10px 28px 14px;"><span style="flex:1;height:5px;border-radius:2px;background:#3b82f6"></span><span style="flex:1;height:5px;border-radius:2px;background:#111827"></span><span style="flex:1;height:5px;border-radius:2px;background:#ffffff"></span><span style="flex:1;height:5px;border-radius:2px;background:#8b5cf6"></span><span style="flex:1;height:5px;border-radius:2px;background:#16a34a"></span></div>
+</div></body>
+</html>

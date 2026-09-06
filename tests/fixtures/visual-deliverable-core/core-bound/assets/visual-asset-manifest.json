@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "sessionId": "fixture-session",
+  "taskArtifactDir": "tests/fixtures/visual-deliverable-core/core-bound",
+  "goalVersion": 1,
+  "sourceUrls": [],
+  "updatedAt": "2026-07-19T00:00:00.000Z",
+  "assets": [
+    {
+      "assetId": "hero-1",
+      "source": "official_fetch",
+      "rawPath": "tests/fixtures/visual-deliverable-core/artifacts/sessions/fixture-session/downloads/hero.jpg",
+      "recommendedTier": "none",
+      "role": "product_hero",
+      "provenance": {},
+      "processingStatus": "ok"
+    }
+  ],
+  "slotBindings": {},
+  "phase": "idle",
+  "autoDiscoverTriggered": false,
+  "errors": [],
+  "acquisitionAttempts": []
+}

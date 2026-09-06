@@ -1,0 +1,24 @@
+{
+  "id": "UDC-GEO-WYT",
+  "description": "吴裕泰冷泡茶 GEO — STDA task dir + cross-turn pollution replay",
+  "taskArtifactDir": "artifacts/task-20260709-a1b2c3d4",
+  "taskDirKey": "20260709-a1b2c3d4",
+  "pollutionDir": "artifacts/slides-wuyutai-legacy",
+  "slots": [
+    { "id": "slot_1", "label": "keywords.md", "pathHint": "keywords.md", "required": true },
+    { "id": "slot_2", "label": "aeo-audit.md", "pathHint": "aeo-audit.md", "required": true },
+    { "id": "slot_3", "label": "drafts/zhihu.md", "pathHint": "drafts/zhihu.md", "required": true },
+    { "id": "slot_4", "label": "visibility-report.html", "pathHint": "visibility-report.html", "required": true }
+  ],
+  "verifiedPaths": [
+    "artifacts/task-20260709-a1b2c3d4/keywords.md",
+    "artifacts/task-20260709-a1b2c3d4/aeo-audit.md",
+    "artifacts/task-20260709-a1b2c3d4/drafts/zhihu.md",
+    "artifacts/task-20260709-a1b2c3d4/visibility-report.html"
+  ],
+  "pollutionPaths": [
+    "artifacts/slides-wuyutai-legacy/slide-01.png",
+    "artifacts/slides-wuyutai-legacy/slide-02.png",
+    "artifacts/slides-wuyutai-legacy/slide-03.png"
+  ]
+}

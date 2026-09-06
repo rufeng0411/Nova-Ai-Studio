@@ -1,0 +1,54 @@
+# 产品覆盖配置示例
+# 部署时将此文件合并到目标环境的 ~/.pilotdeck/pilotdeck.yaml
+
+# 记忆系统配置
+memory:
+  enabled: true
+  provider: "edgeclaw"
+  captureStrategy: "full_session"
+  includeAssistant: true
+
+# 模型配置（可覆盖默认模型）
+# agent:
+#   model:
+#     id: "claude-sonnet-4"
+#     provider: "anthropic"
+#     model: "claude-sonnet-4-20250514"
+
+# 内置工具配置（可选）
+# tools:
+#   webSearch:
+#     apiKey: "..."                                 # SerpAPI key（serpapi.com）
+#     # endpoint: https://serpapi.com/search        # 高级：覆盖到 SerpAPI 兼容代理
+#   image:
+#     provider: openai-compatible
+#     apiKey: "${OPENAI_API_KEY}"
+#     baseUrl: https://api.openai.com/v1
+#     model: gpt-image-1
+#   video:
+#     provider: openai-compatible
+#     apiKey: "${OPENAI_API_KEY}"
+#     baseUrl: https://api.openai.com/v1
+#     model: sora
+#
+# 蚁小二国内社媒发布（与模型池凭据独立，勿写入仓库）：
+#   yixiaoer:
+#     apiKey: "..."                                # 或在设置 → 能力接入中心填写
+#     # apiUrl: https://www.yixiaoer.cn/api
+#   见 docs/yixiaoer-admin-guide.md
+#
+# AI 搜索可见度（GEO，可选 dataDir；验证用 web_search + 博查，勿配 Perplexity）：
+#   geo:
+#     # dataDir: ~/.pilotdeck/geo-data
+#   webSearch:
+#     provider: bocha
+#     apiKey: "..."   # 或 BOCHA_API_KEY
+#   见 docs/aigeo-admin-guide.md
+
+# 品牌配置（待贡献点就绪后生效）
+# brand:
+#   name: "MyProduct"
+#   logo: "./brand/logo.svg"
+#   theme:
+#     brand: "rgb(0,120,212)"
+#     brandAccent: "rgb(0,150,255)"

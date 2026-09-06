@@ -1,0 +1,147 @@
+{
+  "catalogCount": 877,
+  "diskSkillDirs": 864,
+  "hubVisible": 413,
+  "hubHidden": 464,
+  "byMajor": {
+    "marketing": 306,
+    "office": 16,
+    "development": 24,
+    "brainstorming": 131,
+    "creation": 55,
+    "education": 345
+  },
+  "topPrefixes": [
+    [
+      "mkt",
+      220
+    ],
+    [
+      "edu",
+      146
+    ],
+    [
+      "pms",
+      68
+    ],
+    [
+      "pmd",
+      49
+    ],
+    [
+      "junior",
+      41
+    ],
+    [
+      "senior",
+      39
+    ],
+    [
+      "teacher",
+      32
+    ],
+    [
+      "od",
+      30
+    ],
+    [
+      "df",
+      22
+    ],
+    [
+      "preschool",
+      22
+    ],
+    [
+      "ala",
+      20
+    ],
+    [
+      "create",
+      20
+    ],
+    [
+      "fal",
+      17
+    ],
+    [
+      "agent",
+      16
+    ],
+    [
+      "primary",
+      16
+    ],
+    [
+      "persona",
+      11
+    ],
+    [
+      "mcp",
+      10
+    ],
+    [
+      "geo",
+      9
+    ],
+    [
+      "nova",
+      8
+    ],
+    [
+      "tool",
+      8
+    ],
+    [
+      "college",
+      8
+    ],
+    [
+      "hub",
+      7
+    ],
+    [
+      "anth",
+      6
+    ],
+    [
+      "ora",
+      6
+    ],
+    [
+      "family",
+      6
+    ]
+  ],
+  "vendorPackages": [
+    "academic-research",
+    "aigeotools",
+    "anthropics-skills",
+    "awesome-llm-apps",
+    "creation-ecosystem",
+    "deer-flow",
+    "dev-ecosystem",
+    "education-ecosystem",
+    "hermes-edu-skills",
+    "html-ppt",
+    "hyperframes",
+    "marketing-ecosystem",
+    "marketing-hub",
+    "marketingskills",
+    "nova-1",
+    "office-ecosystem",
+    "persona-skills",
+    "pm-skills",
+    "remotion",
+    "seo-geo",
+    "writing-polish"
+  ],
+  "mcpVirtualCards": 10,
+  "launchRegistry": [
+    {
+      "slug": "html-ppt",
+      "mode": "visual"
+    }
+  ],
+  "zhEntries": 130
+}

@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "exportedAt": "2026-07-21",
+  "defaultTenant": "tenant-admin",
+  "defaultUser": "admin",
+  "htmlGlobHint": "web-s_*2026-07-21*.html",
+  "sessions": [
+    {
+      "id": "web-s_1e766a51-cad3-4299-ae66-ce806c4598f4",
+      "shortId": "1e766a51",
+      "title": "PS5巴西促销·电商助手",
+      "projectName": "PS5pro",
+      "archetype": "D",
+      "messageCount": 203,
+      "expectedDockMaxVisibleSlots": 4
+    },
+    {
+      "id": "web-s_658b3150-e7d6-4741-ab65-c691bf0e64fd",
+      "shortId": "658b3150",
+      "title": "PS5pro UI/UX 审查",
+      "projectName": "PS5pro",
+      "archetype": "C",
+      "messageCount": 38,
+      "expectManualContinue": false
+    },
+    {
+      "id": "web-s_4e3acadc-f40f-4ae7-88af-20e4ab546bb4",
+      "shortId": "4e3acadc",
+      "title": "PS5 pro App onboarding 线稿",
+      "projectName": "PS5pro",
+      "archetype": "A",
+      "messageCount": 45
+    },
+    {
+      "id": "web-s_49280983-f187-44f8-a920-c477ade04dfb",
+      "shortId": "49280983",
+      "title": "PS5 周末市集海报",
+      "projectName": "PS5pro",
+      "archetype": "E",
+      "messageCount": 55
+    },
+    {
+      "id": "web-s_bea3205a-415d-44d2-aae8-b3d30290eb9c",
+      "shortId": "bea3205a",
+      "title": "Nike 世界杯调研 Word",
+      "projectName": "Nike",
+      "archetype": "B",
+      "messageCount": 70,
+      "pendingSlotBasename": "document.docx"
+    },
+    {
+      "id": "web-s_ac8f7470-837e-49a9-b596-5a2be8c9ab86",
+      "shortId": "ac8f7470",
+      "title": "Nike campaign 全案",
+      "projectName": "Nike",
+      "archetype": "E",
+      "messageCount": 56
+    },
+    {
+      "id": "web-s_fdb48220-29d3-4c8f-b0aa-c31a9d71275a",
+      "shortId": "fdb48220",
+      "title": "Nike 八段式用户研究",
+      "projectName": "Nike",
+      "archetype": "E",
+      "messageCount": 32
+    },
+    {
+      "id": "web-s_6e266035-e93a-4667-ab29-90ef43008f79",
+      "shortId": "6e266035",
+      "title": "AI 笔记工具竞品",
+      "projectName": "Nike",
+      "archetype": "A",
+      "messageCount": 23
+    }
+  ]
+}

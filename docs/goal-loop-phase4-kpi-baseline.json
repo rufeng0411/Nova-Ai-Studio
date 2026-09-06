@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-07-05",
+  "phase": "goal-loop-phase4",
+  "fixtures": [
+    "tests/fixtures/deliverable-summary/modric-partial-1-of-5.json",
+    "tests/fixtures/deliverable-summary/modric-zero-verified-turn-end.json"
+  ],
+  "kpiTargets": {
+    "zeroUserContinueRate": 0.35,
+    "falseCompleteRate": 0.05,
+    "fourLineDiff": 0
+  },
+  "notes": "Baseline captured before Phase 4 engine/UI merge; compare via npm run analyze:task-completion --gate"
+}

@@ -1,0 +1,137 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GEO Monitor Data",
+  "type": "object",
+  "required": ["brand", "generated_at", "overall_score", "engines", "queries"],
+  "properties": {
+    "brand": { "type": "string" },
+    "site": { "type": "string" },
+    "subject": {
+      "type": "object",
+      "description": "被查询主体：品牌 / 产品 / 事件（监测对象单一事实源）",
+      "properties": {
+        "type": { "type": "string", "enum": ["brand", "product", "event"] },
+        "name": { "type": "string" },
+        "aliases": { "type": "array", "items": { "type": "string" } },
+        "keywords": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "overall_score": { "type": "number", "minimum": 0, "maximum": 100 },
+    "mention_rate": { "type": "number" },
+    "top_pick_rate": { "type": "number" },
+    "engines": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "sov": { "type": "number" },
+          "score": { "type": "number" },
+          "status": { "type": "string", "enum": ["ok", "skipped", "partial"] }
+        }
+      }
+    },
+    "llm_coverage": {
+      "type": "object",
+      "description": "主流大模型收录矩阵；models 须含 config/geo-llm-coverage-required-models.json 全部必测 id（11 行，缺 Key 可 skipped）",
+      "properties": {
+        "coverage_score": { "type": "number", "minimum": 0, "maximum": 100 },
+        "summary": { "type": "string" },
+        "models": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": { "type": "string" },
+              "name": { "type": "string" },
+              "region": { "type": "string", "enum": ["cn", "global", "both"] },
+              "indexing_status": {
+                "type": "string",
+                "enum": ["indexed", "partial", "absent", "unknown"]
+              },
+              "indexing_score": { "type": "number", "minimum": 0, "maximum": 100 },
+              "mention_rate": { "type": "number" },
+              "top_pick_rate": { "type": "number" },
+              "citation_sources": { "type": "array", "items": { "type": "string" } },
+              "evidence_summary": { "type": "string" },
+              "status": { "type": "string", "enum": ["ok", "skipped", "partial"] }
+            }
+          }
+        },
+        "gaps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "model_id": { "type": "string" },
+              "gap": { "type": "string" },
+              "severity": { "type": "string", "enum": ["high", "medium", "low"] }
+            }
+          }
+        },
+        "optimization": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "priority": { "type": "string", "enum": ["P0", "P1", "P2"] },
+              "target_models": { "type": "array", "items": { "type": "string" } },
+              "action": { "type": "string" },
+              "rationale": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "competitors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "score": { "type": "number" }
+        }
+      }
+    },
+    "queries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": { "type": "string" },
+          "mentioned": { "type": "boolean" },
+          "rank": { "type": "number" }
+        }
+      }
+    },
+    "dimensions": {
+      "type": "object",
+      "properties": {
+        "technical": { "type": "number" },
+        "citability": { "type": "number" },
+        "schema": { "type": "number" },
+        "entity": { "type": "number" }
+      }
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "priority": { "type": "string" },
+          "text": { "type": "string" }
+        }
+      }
+    },
+    "trend": {
+      "type": ["object", "null"],
+      "properties": {
+        "previous_run_at": { "type": "string" },
+        "score_delta": { "type": "number" },
+        "coverage_score_delta": { "type": "number" }
+      }
+    }
+  }
+}

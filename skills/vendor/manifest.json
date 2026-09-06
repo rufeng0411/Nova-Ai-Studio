@@ -1,0 +1,557 @@
+{
+  "generatedAt": "2026-06-01T08:17:14.396Z",
+  "totalSources": 4,
+  "totalSkills": 87,
+  "sources": [
+    {
+      "source": "marketingskills",
+      "commit": "7f4af1ea8e7809e0142c55bf19243a706f539c25",
+      "count": 43,
+      "copied": [
+        {
+          "sourceSlug": "ab-testing",
+          "vendoredSlug": "mkt-ab-testing",
+          "name": "ab-testing",
+          "description": "When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions \"A/B test,\" \"split test,\" \"experiment,\" \"test this change,\" \"variant copy,\" \"multivariate test,\" \"hypothesis,\" \"should I test this,\" \"which version is better,\" \"test two versions,\" \"statistical significance,\" \"how long should I run this test,\" \"growth experiments,\" \"experiment velocity,\" \"experiment backlog,\" \"ICE score,\" \"experimentation program,\" or \"experiment playbook.\" Use this whenever someone is comparing two approaches and wants to measure which performs better, or when they want to build a systematic experimentation practice. For tracking implementation, see analytics. For page-level conversion optimization, see cro."
+        },
+        {
+          "sourceSlug": "ad-creative",
+          "vendoredSlug": "mkt-ad-creative",
+          "name": "ad-creative",
+          "description": "When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platform. Also use when the user mentions 'ad copy variations,' 'ad creative,' 'generate headlines,' 'RSA headlines,' 'bulk ad copy,' 'ad iterations,' 'creative testing,' 'ad performance optimization,' 'write me some ads,' 'Facebook ad copy,' 'Google ad headlines,' 'LinkedIn ad text,' or 'I need more ad variations.' Use this whenever someone needs to produce ad copy at scale or iterate on existing ads. For campaign strategy and targeting, see ads. For landing page copy, see copywriting."
+        },
+        {
+          "sourceSlug": "ads",
+          "vendoredSlug": "mkt-ads",
+          "name": "ads",
+          "description": "When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user mentions 'PPC,' 'paid media,' 'ROAS,' 'CPA,' 'ad campaign,' 'retargeting,' 'audience targeting,' 'Google Ads,' 'Facebook ads,' 'LinkedIn ads,' 'ad budget,' 'cost per click,' 'ad spend,' or 'should I run ads.' Use this for campaign strategy, audience targeting, bidding, and optimization. For bulk ad creative generation and iteration, see ad-creative. For landing page optimization, see cro."
+        },
+        {
+          "sourceSlug": "ai-seo",
+          "vendoredSlug": "mkt-ai-seo",
+          "name": "ai-seo",
+          "description": "When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,' 'GEO,' 'LLMO,' 'answer engine optimization,' 'generative engine optimization,' 'LLM optimization,' 'AI Overviews,' 'optimize for ChatGPT,' 'optimize for Perplexity,' 'AI citations,' 'AI visibility,' 'zero-click search,' 'how do I show up in AI answers,' 'LLM mentions,' or 'optimize for Claude/Gemini.' Use this whenever someone wants their content to be cited or surfaced by AI assistants and AI search engines. For traditional technical and on-page SEO audits, see seo-audit. For structured data implementation, see schema."
+        },
+        {
+          "sourceSlug": "analytics",
+          "vendoredSlug": "mkt-analytics",
+          "name": "analytics",
+          "description": "When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions \"set up tracking,\" \"GA4,\" \"Google Analytics,\" \"conversion tracking,\" \"event tracking,\" \"UTM parameters,\" \"tag manager,\" \"GTM,\" \"analytics implementation,\" \"tracking plan,\" \"how do I measure this,\" \"track conversions,\" \"attribution,\" \"Mixpanel,\" \"Segment,\" \"are my events firing,\" or \"analytics isn't working.\" Use this whenever someone asks how to know if something is working or wants to measure marketing results. For A/B test measurement, see ab-testing."
+        },
+        {
+          "sourceSlug": "aso",
+          "vendoredSlug": "mkt-aso",
+          "name": "aso",
+          "description": "When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my app listing,' 'improve app visibility,' 'app store ranking,' 'audit my listing,' 'why aren't people downloading my app,' 'improve my app conversion,' 'keyword optimization for app,' or 'compare my app to competitors.' Use when the user shares an App Store or Google Play URL and wants to improve it."
+        },
+        {
+          "sourceSlug": "churn-prevention",
+          "vendoredSlug": "mkt-churn-prevention",
+          "name": "churn-prevention",
+          "description": "When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use when the user mentions 'churn,' 'cancel flow,' 'offboarding,' 'save offer,' 'dunning,' 'failed payment recovery,' 'win-back,' 'retention,' 'exit survey,' 'pause subscription,' 'involuntary churn,' 'people keep canceling,' 'churn rate is too high,' 'how do I keep users,' or 'customers are leaving.' Use this whenever someone is losing subscribers or wants to build systems to prevent it. For post-cancel win-back email sequences, see emails. For in-app upgrade paywalls, see paywalls."
+        },
+        {
+          "sourceSlug": "co-marketing",
+          "vendoredSlug": "mkt-co-marketing",
+          "name": "co-marketing",
+          "description": "When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'partner marketing,' 'joint campaign,' 'who should we partner with,' 'integration marketing,' 'cross-promotion,' 'collaborate with another company,' 'partnership ideas,' or 'co-brand.' For customer referral programs, see referrals. For launch-specific partnerships, see launch."
+        },
+        {
+          "sourceSlug": "cold-email",
+          "vendoredSlug": "mkt-cold-email",
+          "name": "cold-email",
+          "description": "Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails, prospecting emails, cold email campaigns, sales development emails, or SDR emails. Also use when the user mentions \"cold outreach,\" \"prospecting email,\" \"outbound email,\" \"email to leads,\" \"reach out to prospects,\" \"sales email,\" \"follow-up email sequence,\" \"nobody's replying to my emails,\" or \"how do I write a cold email.\" Covers subject lines, opening lines, body copy, CTAs, personalization, and multi-touch follow-up sequences. For warm/lifecycle email sequences, see emails. For sales collateral beyond emails, see sales-enablement."
+        },
+        {
+          "sourceSlug": "community-marketing",
+          "vendoredSlug": "mkt-community-marketing",
+          "name": "community-marketing",
+          "description": "Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord or Slack community, manage a forum or subreddit, build brand advocates, increase word-of-mouth, drive community-led growth, engage users post-signup, or turn customers into evangelists. Trigger phrases: \\\"build a community,\\\" \\\"community strategy,\\\" \\\"Discord community,\\\" \\\"Slack community,\\\" \\\"community-led growth,\\\" \\\"brand advocates,\\\" \\\"user community,\\\" \\\"forum strategy,\\\" \\\"community engagement,\\\" \\\"grow our community,\\\" \\\"ambassador program,\\\" \\\"community flywheel.\\\""
+        },
+        {
+          "sourceSlug": "competitor-profiling",
+          "vendoredSlug": "mkt-competitor-profiling",
+          "name": "competitor-profiling",
+          "description": "When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor research,' 'competitor analysis,' 'profile this competitor,' 'analyze competitor,' 'competitive intelligence,' 'competitor deep dive,' 'who are my competitors,' 'competitor landscape,' 'competitor dossier,' 'competitive audit,' or 'research these competitors.' Input is a list of competitor URLs. Output is structured competitor profile markdown files. For creating comparison/alternative pages from profiles, see competitors. For sales-specific battle cards, see sales-enablement."
+        },
+        {
+          "sourceSlug": "competitors",
+          "vendoredSlug": "mkt-competitors",
+          "name": "competitors",
+          "description": "When the user wants to create competitor comparison or alternative pages for SEO and sales enablement. Also use when the user mentions 'alternative page,' 'vs page,' 'competitor comparison,' 'comparison page,' '[Product] vs [Product],' '[Product] alternative,' 'competitive landing pages,' 'how do we compare to X,' 'battle card,' or 'competitor teardown.' Use this for any content that positions your product against competitors. Covers four formats: singular alternative, plural alternatives, you vs competitor, and competitor vs competitor. For sales-specific competitor docs, see sales-enablement."
+        },
+        {
+          "sourceSlug": "content-strategy",
+          "vendoredSlug": "mkt-content-strategy",
+          "name": "content-strategy",
+          "description": "When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also use when the user mentions \"content strategy,\" \"what should I write about,\" \"content ideas,\" \"blog strategy,\" \"topic clusters,\" \"content planning,\" \"editorial calendar,\" \"content marketing,\" \"content roadmap,\" \"what content should I create,\" \"blog topics,\" \"content pillars,\" or \"I don't know what to write.\" Use this whenever someone needs help deciding what content to produce, not just writing it. For writing individual pieces, see copywriting. For SEO-specific audits, see seo-audit. For social media content specifically, see social."
+        },
+        {
+          "sourceSlug": "copy-editing",
+          "vendoredSlug": "mkt-copy-editing",
+          "name": "copy-editing",
+          "description": "When the user wants to edit, review, or improve existing marketing copy, or refresh outdated content. Also use when the user mentions 'edit this copy,' 'review my copy,' 'copy feedback,' 'proofread,' 'polish this,' 'make this better,' 'copy sweep,' 'tighten this up,' 'this reads awkwardly,' 'clean up this text,' 'too wordy,' 'sharpen the messaging,' 'refresh this content,' 'update this page,' 'this content is outdated,' or 'content audit.' Use this when the user already has copy and wants it improved or refreshed rather than rewritten from scratch. For writing new copy, see copywriting."
+        },
+        {
+          "sourceSlug": "copywriting",
+          "vendoredSlug": "mkt-copywriting",
+          "name": "copywriting",
+          "description": "When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, or product pages. Also use when the user says \"write copy for,\" \"improve this copy,\" \"rewrite this page,\" \"marketing copy,\" \"headline help,\" \"CTA copy,\" \"value proposition,\" \"tagline,\" \"subheadline,\" \"hero section copy,\" \"above the fold,\" \"this copy is weak,\" \"make this more compelling,\" or \"help me describe my product.\" Use this whenever someone is working on website text that needs to persuade or convert. For email copy, see emails. For popup copy, see popups. For editing existing copy, see copy-editing."
+        },
+        {
+          "sourceSlug": "cro",
+          "vendoredSlug": "mkt-cro",
+          "name": "cro",
+          "description": "When the user wants to optimize, improve, or increase conversions on any marketing page or form — including homepage, landing pages, pricing pages, feature pages, lead capture forms, or contact forms. Also use when the user says 'CRO,' 'conversion rate optimization,' 'this page isn't converting,' 'improve conversions,' 'why isn't this page working,' 'my landing page sucks,' 'form abandonment,' 'nobody's converting,' 'low conversion rate,' or 'this page needs work.' Use this even if the user just shares a URL and asks for feedback. For signup/registration flows, see signup. For post-signup activation, see onboarding. For popups/modals, see popups."
+        },
+        {
+          "sourceSlug": "customer-research",
+          "vendoredSlug": "mkt-customer-research",
+          "name": "customer-research",
+          "description": "When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions \"customer research,\" \"ICP research,\" \"talk to customers,\" \"analyze transcripts,\" \"customer interviews,\" \"survey analysis,\" \"support ticket analysis,\" \"voice of customer,\" \"VOC,\" \"build personas,\" \"customer personas,\" \"jobs to be done,\" \"JTBD,\" \"what do customers say,\" \"what are customers struggling with,\" \"Reddit mining,\" \"G2 reviews,\" \"review mining,\" \"digital watering holes,\" \"community research,\" \"forum research,\" \"competitor reviews,\" \"customer sentiment,\" or \"find out why customers churn/convert/buy.\" Use for both analyzing existing research assets AND gathering new research from online sources. For writing copy informed by research, see copywriting. For acting on research to improve pages, see cro."
+        },
+        {
+          "sourceSlug": "directory-submissions",
+          "vendoredSlug": "mkt-directory-submissions",
+          "name": "directory-submissions",
+          "description": "When the user wants to submit their product to startup, SaaS, AI, agent, MCP, no-code, or review directories for backlinks, domain rating, and discovery. Also use when the user mentions \"directory submissions,\" \"submit to directories,\" \"backlinks from directories,\" \"list my product,\" \"submit to Product Hunt,\" \"BetaList,\" \"TAAFT,\" \"Futurepedia,\" \"G2 listing,\" \"Capterra listing,\" \"AlternativeTo,\" \"SaaSHub,\" \"AI directories,\" \"MCP registry,\" \"agent directory,\" \"dofollow backlinks,\" \"launch directories,\" or \"directory tracker.\" Use this whenever someone is planning the directory layer of a product launch or an ongoing backlink campaign. For the broader launch moment, see launch. For programmatic SEO pages that should live behind these backlinks, see programmatic-seo. For AI citation optimization, see ai-seo."
+        },
+        {
+          "sourceSlug": "emails",
+          "vendoredSlug": "mkt-emails",
+          "name": "emails",
+          "description": "When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program. Also use when the user mentions \"email sequence,\" \"drip campaign,\" \"nurture sequence,\" \"onboarding emails,\" \"welcome sequence,\" \"re-engagement emails,\" \"email automation,\" \"lifecycle emails,\" \"trigger-based emails,\" \"email funnel,\" \"email workflow,\" \"what emails should I send,\" \"welcome series,\" or \"email cadence.\" Use this for any multi-email automated flow. For cold outreach emails, see cold-email. For in-app onboarding, see onboarding."
+        },
+        {
+          "sourceSlug": "free-tools",
+          "vendoredSlug": "mkt-free-tools",
+          "name": "free-tools",
+          "description": "When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user mentions \"engineering as marketing,\" \"free tool,\" \"marketing tool,\" \"calculator,\" \"generator,\" \"interactive tool,\" \"lead gen tool,\" \"build a tool for leads,\" \"free resource,\" \"ROI calculator,\" \"grader tool,\" \"audit tool,\" \"should I build a free tool,\" or \"tools for lead gen.\" Use this whenever someone wants to build something useful and give it away to attract leads or earn links. For downloadable content lead magnets (ebooks, checklists, templates), see lead-magnets."
+        },
+        {
+          "sourceSlug": "image",
+          "vendoredSlug": "mkt-image",
+          "name": "image",
+          "description": "When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, listing visuals, or brand assets. Also use when the user mentions 'AI image generation,' 'generate an image,' 'create a graphic,' 'product mockup,' 'hero image,' 'social media graphic,' 'banner image,' 'cover photo,' 'profile banner,' 'listing screenshot,' 'Flux,' 'Flux Kontext,' 'Midjourney,' 'DALL-E,' 'GPT Image,' 'ChatGPT Images,' 'Ideogram,' 'Gemini image,' 'Nano Banana,' 'Recraft,' 'Stable Diffusion,' 'Canva,' 'Figma,' 'image optimization,' 'compress images,' 'WebP,' or 'OG image.' Use this for general-purpose marketing image creation and optimization. For paid ad image creative and platform-specific ad specs, see ad-creative. For video production, see video."
+        },
+        {
+          "sourceSlug": "launch",
+          "vendoredSlug": "mkt-launch",
+          "name": "launch",
+          "description": "When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,' 'announcement,' 'go-to-market,' 'beta launch,' 'early access,' 'waitlist,' 'product update,' 'how do I launch this,' 'launch checklist,' 'GTM plan,' or 'we're about to ship.' Use this whenever someone is preparing to release something publicly. For ongoing marketing after launch, see marketing-ideas."
+        },
+        {
+          "sourceSlug": "lead-magnets",
+          "vendoredSlug": "mkt-lead-magnets",
+          "name": "lead-magnets",
+          "description": "When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions \"lead magnet,\" \"gated content,\" \"content upgrade,\" \"downloadable,\" \"ebook,\" \"cheat sheet,\" \"checklist,\" \"template download,\" \"opt-in,\" \"freebie,\" \"PDF download,\" \"resource library,\" \"content offer,\" \"email capture content,\" \"Notion template,\" \"spreadsheet template,\" or \"what should I give away for emails.\" Use this for planning what to create and how to distribute it. For interactive tools as lead magnets, see free-tools. For writing the actual content, see copywriting. For the email sequence after capture, see emails."
+        },
+        {
+          "sourceSlug": "marketing-ideas",
+          "vendoredSlug": "mkt-marketing-ideas",
+          "name": "marketing-ideas",
+          "description": "When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'growth ideas,' 'how to market,' 'marketing strategies,' 'marketing tactics,' 'ways to promote,' 'ideas to grow,' 'what else can I try,' 'I don't know how to market this,' 'brainstorm marketing,' or 'what marketing should I do.' Use this as a starting point whenever someone is stuck or looking for inspiration on how to grow. For specific channel execution, see the relevant skill (ads, social, emails, etc.)."
+        },
+        {
+          "sourceSlug": "marketing-plan",
+          "vendoredSlug": "mkt-marketing-plan",
+          "name": "marketing-plan",
+          "description": "When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use when the user mentions \"marketing plan,\" \"growth plan,\" \"GTM plan,\" \"go-to-market plan,\" \"AARRR plan,\" \"90-day marketing plan,\" \"12-month marketing roadmap,\" \"fractional CMO plan,\" or \"fCMO plan.\" Generates an exhaustive 13-section plan structured by AARRR (Acquisition, Activation, Retention, Referral, Revenue), customized to the client's current budget, team, and stage, mapped to future funding milestones, cross-referenced with the 139-idea marketing-ideas library and an embedded 17-section current-state audit rubric, with a full marketing operations stack showing which skills and MCP/API integrations execute each part. Outputs a Notion-paste-ready markdown document. For positioning and ICP context before planning, see product-marketing. For stage-specific deep work, see onboarding, signup, emails, referrals, pricing."
+        },
+        {
+          "sourceSlug": "marketing-psychology",
+          "vendoredSlug": "mkt-marketing-psychology",
+          "name": "marketing-psychology",
+          "description": "When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychology,' 'mental models,' 'cognitive bias,' 'persuasion,' 'behavioral science,' 'why people buy,' 'decision-making,' 'consumer behavior,' 'anchoring,' 'social proof,' 'scarcity,' 'loss aversion,' 'framing,' or 'nudge.' Use this whenever someone wants to understand or leverage how people think and make decisions in a marketing context. For applying psychology to specific pages, see cro; for pricing tactics, see pricing; for copy framing, see copywriting."
+        },
+        {
+          "sourceSlug": "onboarding",
+          "vendoredSlug": "mkt-onboarding",
+          "name": "onboarding",
+          "description": "When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions \"onboarding flow,\" \"activation rate,\" \"user activation,\" \"first-run experience,\" \"empty states,\" \"onboarding checklist,\" \"aha moment,\" \"new user experience,\" \"users aren't activating,\" \"nobody completes setup,\" \"low activation rate,\" \"users sign up but don't use the product,\" \"time to value,\" or \"first session experience.\" Use this whenever users are signing up but not sticking around. For signup/registration optimization, see signup. For ongoing email sequences, see emails."
+        },
+        {
+          "sourceSlug": "paywalls",
+          "vendoredSlug": "mkt-paywalls",
+          "name": "paywalls",
+          "description": "When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use when the user mentions \"paywall,\" \"upgrade screen,\" \"upgrade modal,\" \"upsell,\" \"feature gate,\" \"convert free to paid,\" \"freemium conversion,\" \"trial expiration screen,\" \"limit reached screen,\" \"plan upgrade prompt,\" \"in-app pricing,\" \"free users won't upgrade,\" \"trial to paid conversion,\" or \"how do I get users to pay.\" Use this for any in-product moment where you're asking users to upgrade. Distinct from public pricing pages (see cro) — this focuses on in-product upgrade moments where the user has already experienced value. For pricing decisions, see pricing."
+        },
+        {
+          "sourceSlug": "popups",
+          "vendoredSlug": "mkt-popups",
+          "name": "popups",
+          "description": "When the user wants to create or optimize popups, modals, overlays, slide-ins, or banners for conversion purposes. Also use when the user mentions \"exit intent,\" \"popup conversions,\" \"modal optimization,\" \"lead capture popup,\" \"email popup,\" \"announcement banner,\" \"overlay,\" \"collect emails with a popup,\" \"exit popup,\" \"scroll trigger,\" \"sticky bar,\" or \"notification bar.\" Use this for any overlay or interrupt-style conversion element. For forms outside of popups, see cro. For general page conversion optimization, see cro."
+        },
+        {
+          "sourceSlug": "pricing",
+          "vendoredSlug": "mkt-pricing",
+          "name": "pricing",
+          "description": "When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free trial,' 'packaging,' 'price increase,' 'value metric,' 'Van Westendorp,' 'willingness to pay,' 'monetization,' 'how much should I charge,' 'my pricing is wrong,' 'pricing page,' 'annual vs monthly,' 'per seat pricing,' or 'should I offer a free plan.' Use this whenever someone is figuring out what to charge or how to structure their plans. For in-app upgrade screens, see paywalls."
+        },
+        {
+          "sourceSlug": "product-marketing",
+          "vendoredSlug": "mkt-product-marketing",
+          "name": "product-marketing",
+          "description": "When the user wants to create or update their product marketing context document. Also use when the user mentions 'product context,' 'marketing context,' 'set up context,' 'positioning,' 'who is my target audience,' 'describe my product,' 'ICP,' 'ideal customer profile,' or wants to avoid repeating foundational information across marketing tasks. Use this at the start of any new project before using other marketing skills — it creates `.agents/product-marketing.md` that all other skills reference for product, audience, and positioning context."
+        },
+        {
+          "sourceSlug": "programmatic-seo",
+          "vendoredSlug": "mkt-programmatic-seo",
+          "name": "programmatic-seo",
+          "description": "When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions \"programmatic SEO,\" \"template pages,\" \"pages at scale,\" \"directory pages,\" \"location pages,\" \"[keyword] + [city] pages,\" \"comparison pages,\" \"integration pages,\" \"building many pages for SEO,\" \"pSEO,\" \"generate 100 pages,\" \"data-driven pages,\" or \"templated landing pages.\" Use this whenever someone wants to create many similar pages targeting different keywords or locations. For auditing existing SEO issues, see seo-audit. For content strategy planning, see content-strategy."
+        },
+        {
+          "sourceSlug": "prospecting",
+          "vendoredSlug": "mkt-prospecting",
+          "name": "prospecting",
+          "description": "When the user wants to find, qualify, and build a list of prospects to reach out to — across B2B SaaS, general B2B, or local small businesses. Also use when the user mentions \"prospecting,\" \"build a prospect list,\" \"find prospects,\" \"find leads,\" \"lead gen list,\" \"find SaaS companies that,\" \"find B2B companies,\" \"find local businesses,\" \"ICP-fit accounts,\" \"who should we go after,\" \"outbound list,\" \"target account list,\" \"find clients near me,\" \"businesses without websites,\" \"prospect research,\" or \"qualified leads.\" Use this for the list-building and qualification phase. For writing the outbound copy after the list is built, see cold-email. For deep competitive research on specific accounts, see competitor-profiling."
+        },
+        {
+          "sourceSlug": "referrals",
+          "vendoredSlug": "mkt-referrals",
+          "name": "referrals",
+          "description": "When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referral,' 'affiliate,' 'ambassador,' 'word of mouth,' 'viral loop,' 'refer a friend,' 'partner program,' 'referral incentive,' 'how to get referrals,' 'customers referring customers,' or 'affiliate payout.' Use this whenever someone wants existing users or partners to bring in new customers. For launch-specific virality, see launch."
+        },
+        {
+          "sourceSlug": "revops",
+          "vendoredSlug": "mkt-revops",
+          "name": "revops",
+          "description": "When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'revenue operations,' 'lead scoring,' 'lead routing,' 'MQL,' 'SQL,' 'pipeline stages,' 'deal desk,' 'CRM automation,' 'marketing-to-sales handoff,' 'data hygiene,' 'leads aren't getting to sales,' 'pipeline management,' 'lead qualification,' or 'when should marketing hand off to sales.' Use this for anything involving the systems and processes that connect marketing to revenue. For cold outreach emails, see cold-email. For email drip campaigns, see emails. For pricing decisions, see pricing."
+        },
+        {
+          "sourceSlug": "sales-enablement",
+          "vendoredSlug": "mkt-sales-enablement",
+          "name": "sales-enablement",
+          "description": "When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales deck,' 'pitch deck,' 'one-pager,' 'leave-behind,' 'objection handling,' 'deal-specific ROI analysis,' 'demo script,' 'talk track,' 'sales playbook,' 'proposal template,' 'buyer persona card,' 'help my sales team,' 'sales materials,' or 'what should I give my sales reps.' Use this for any document or asset that helps a sales team close deals. For competitor comparison pages and battle cards, see competitors. For marketing website copy, see copywriting. For cold outreach emails, see cold-email."
+        },
+        {
+          "sourceSlug": "schema",
+          "vendoredSlug": "mkt-schema",
+          "name": "schema",
+          "description": "When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions \"schema markup,\" \"structured data,\" \"JSON-LD,\" \"rich snippets,\" \"schema.org,\" \"FAQ schema,\" \"product schema,\" \"review schema,\" \"breadcrumb schema,\" \"Google rich results,\" \"knowledge panel,\" \"star ratings in search,\" or \"add structured data.\" Use this whenever someone wants their pages to show enhanced results in Google. For broader SEO issues, see seo-audit. For AI search optimization, see ai-seo."
+        },
+        {
+          "sourceSlug": "seo-audit",
+          "vendoredSlug": "mkt-seo-audit",
+          "name": "seo-audit",
+          "description": "When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions \"SEO audit,\" \"technical SEO,\" \"why am I not ranking,\" \"SEO issues,\" \"on-page SEO,\" \"meta tags review,\" \"SEO health check,\" \"my traffic dropped,\" \"lost rankings,\" \"not showing up in Google,\" \"site isn't ranking,\" \"Google update hit me,\" \"page speed,\" \"core web vitals,\" \"crawl errors,\" or \"indexing issues.\" Use this even if the user just says something vague like \"my SEO is bad\" or \"help with SEO\" — start with an audit. For building pages at scale to target keywords, see programmatic-seo. For adding structured data, see schema. For AI search optimization, see ai-seo."
+        },
+        {
+          "sourceSlug": "signup",
+          "vendoredSlug": "mkt-signup",
+          "name": "signup",
+          "description": "When the user wants to optimize signup, registration, account creation, or trial activation flows. Also use when the user mentions \"signup conversions,\" \"registration friction,\" \"signup form optimization,\" \"free trial signup,\" \"reduce signup dropoff,\" \"account creation flow,\" \"people aren't signing up,\" \"signup abandonment,\" \"trial conversion rate,\" \"nobody completes registration,\" \"too many steps to sign up,\" or \"simplify our signup.\" Use this whenever the user has a signup or registration flow that isn't performing. For post-signup onboarding, see onboarding. For lead capture forms (not account creation), see cro."
+        },
+        {
+          "sourceSlug": "site-architecture",
+          "vendoredSlug": "mkt-site-architecture",
+          "name": "site-architecture",
+          "description": "When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking. Also use when the user mentions \"sitemap,\" \"site map,\" \"visual sitemap,\" \"site structure,\" \"page hierarchy,\" \"information architecture,\" \"IA,\" \"navigation design,\" \"URL structure,\" \"breadcrumbs,\" \"internal linking strategy,\" \"website planning,\" \"what pages do I need,\" \"how should I organize my site,\" or \"site navigation.\" Use this whenever someone is planning what pages a website should have and how they connect. NOT for XML sitemaps (that's technical SEO — see seo-audit). For SEO audits, see seo-audit. For structured data, see schema."
+        },
+        {
+          "sourceSlug": "sms",
+          "vendoredSlug": "mkt-sms",
+          "name": "sms",
+          "description": "When the user wants to plan, build, or optimize SMS or MMS marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, promotional sends, or transactional/auth SMS. Also use when the user mentions \"SMS marketing,\" \"text message campaigns,\" \"SMS sequence,\" \"SMS automation,\" \"abandoned cart text,\" \"post-purchase SMS,\" \"Klaviyo SMS,\" \"Postscript,\" \"Attentive,\" \"Twilio,\" \"A2P 10DLC,\" \"TCPA,\" \"SMS compliance,\" \"short code,\" \"toll-free SMS,\" \"MMS campaign,\" \"should I do SMS,\" or \"SMS vs email.\" For email sequences, see emails. For SMS copy framing, see copywriting. For opt-in popups that capture phone numbers, see popups."
+        },
+        {
+          "sourceSlug": "social",
+          "vendoredSlug": "mkt-social",
+          "name": "social",
+          "description": "When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use when the user mentions 'LinkedIn post,' 'Twitter thread,' 'social media,' 'content calendar,' 'social scheduling,' 'engagement,' 'viral content,' 'what should I post,' 'repurpose this content,' 'tweet ideas,' 'LinkedIn carousel,' 'social media strategy,' 'grow my following,' 'TikTok video,' 'Reels,' 'Shorts,' 'video script,' 'video hook,' 'short-form video,' or 'create a reel.' Use this for social media content creation, repurposing, scheduling, and short-form video scripting. For broader content strategy, see content-strategy. For paid video ads, see ad-creative."
+        },
+        {
+          "sourceSlug": "video",
+          "vendoredSlug": "mkt-video",
+          "name": "video",
+          "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
+        }
+      ]
+    },
+    {
+      "source": "deer-flow",
+      "commit": "019bd16a063a220822338f9c330c37a6793df8f5",
+      "count": 22,
+      "copied": [
+        {
+          "sourceSlug": "smoke-test",
+          "vendoredSlug": "df-smoke-test",
+          "name": "smoke-test",
+          "description": "End-to-end smoke test skill for DeerFlow. Guides through: 1) Pulling latest code, 2) Docker OR Local installation and deployment (user preference, default to Local if Docker network issues), 3) Service availability verification, 4) Health check, 5) Final test report. Use when the user says \"run smoke test\", \"smoke test deployment\", \"verify installation\", \"test service availability\", \"end-to-end test\", or similar."
+        },
+        {
+          "sourceSlug": "academic-paper-review",
+          "vendoredSlug": "df-academic-paper-review",
+          "name": "academic-paper-review",
+          "description": "Use this skill when the user requests to review, analyze, critique, or summarize academic papers, research articles, preprints, or scientific publications. Supports comprehensive structured reviews covering methodology assessment, contribution evaluation, literature positioning, and constructive feedback generation. Trigger on queries involving paper URLs, uploaded PDFs, arXiv links, or requests like \"review this paper\", \"analyze this research\", \"summarize this study\", or \"write a peer review\"."
+        },
+        {
+          "sourceSlug": "bootstrap",
+          "vendoredSlug": "df-bootstrap",
+          "name": "bootstrap",
+          "description": ">-"
+        },
+        {
+          "sourceSlug": "chart-visualization",
+          "vendoredSlug": "df-chart-visualization",
+          "name": "chart-visualization",
+          "description": "This skill should be used when the user wants to visualize data. It intelligently selects the most suitable chart type from 26 available options, extracts parameters based on detailed specifications, and generates a chart image using a JavaScript script."
+        },
+        {
+          "sourceSlug": "claude-to-deerflow",
+          "vendoredSlug": "df-claude-to-deerflow",
+          "name": "claude-to-deerflow",
+          "description": "Interact with DeerFlow AI agent platform via its HTTP API. Use this skill when the user wants to send messages or questions to DeerFlow for research/analysis, start a DeerFlow conversation thread, check DeerFlow status or health, list available models/skills/agents in DeerFlow, manage DeerFlow memory, upload files to DeerFlow threads, or delegate complex research tasks to DeerFlow. Also use when the user mentions deerflow, deer flow, or wants to run a deep research task that DeerFlow can handle."
+        },
+        {
+          "sourceSlug": "code-documentation",
+          "vendoredSlug": "df-code-documentation",
+          "name": "code-documentation",
+          "description": "Use this skill when the user requests to generate, create, or improve documentation for code, APIs, libraries, repositories, or software projects. Supports README generation, API reference documentation, inline code comments, architecture documentation, changelog generation, and developer guides. Trigger on requests like \"document this code\", \"create a README\", \"generate API docs\", \"write developer guide\", or when analyzing codebases for documentation purposes."
+        },
+        {
+          "sourceSlug": "consulting-analysis",
+          "vendoredSlug": "df-consulting-analysis",
+          "name": "consulting-analysis",
+          "description": "Use this skill when the user requests to generate, create, or write professional research reports including but not limited to market analysis, consumer insights, brand analysis, financial analysis, industry research, competitive intelligence, investment due diligence, or any consulting-grade analytical report. This skill operates in two phases — (1) generating a structured analysis framework with chapter skeleton, data query requirements, and analysis logic, and (2) after data collection by other skills, producing the final consulting-grade report with structured narratives, embedded charts, and strategic insights."
+        },
+        {
+          "sourceSlug": "data-analysis",
+          "vendoredSlug": "df-data-analysis",
+          "name": "data-analysis",
+          "description": "Use this skill when the user uploads Excel (.xlsx/.xls) or CSV files and wants to perform data analysis, generate statistics, create summaries, pivot tables, SQL queries, or any form of structured data exploration. Supports multi-sheet Excel workbooks, aggregation, filtering, joins, and exporting results to CSV/JSON/Markdown."
+        },
+        {
+          "sourceSlug": "deep-research",
+          "vendoredSlug": "df-deep-research",
+          "name": "deep-research",
+          "description": "Use this skill instead of WebSearch for ANY question requiring web research. Trigger on queries like \"what is X\", \"explain X\", \"compare X and Y\", \"research X\", or before content generation tasks. Provides systematic multi-angle research methodology instead of single superficial searches. Use this proactively when the user's question needs online information."
+        },
+        {
+          "sourceSlug": "find-skills",
+          "vendoredSlug": "df-find-skills",
+          "name": "find-skills",
+          "description": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill."
+        },
+        {
+          "sourceSlug": "frontend-design",
+          "vendoredSlug": "df-frontend-design",
+          "name": "frontend-design",
+          "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics."
+        },
+        {
+          "sourceSlug": "github-deep-research",
+          "vendoredSlug": "df-github-deep-research",
+          "name": "github-deep-research",
+          "description": "Conduct multi-round deep research on any GitHub Repo. Use when users request comprehensive analysis, timeline reconstruction, competitive analysis, or in-depth investigation of GitHub. Produces structured markdown reports with executive summaries, chronological timelines, metrics analysis, and Mermaid diagrams. Triggers on Github repository URL or open source projects."
+        },
+        {
+          "sourceSlug": "image-generation",
+          "vendoredSlug": "df-image-generation",
+          "name": "image-generation",
+          "description": "Use this skill when the user requests to generate, create, imagine, or visualize images including characters, scenes, products, or any visual content. Supports structured prompts and reference images for guided generation."
+        },
+        {
+          "sourceSlug": "newsletter-generation",
+          "vendoredSlug": "df-newsletter-generation",
+          "name": "newsletter-generation",
+          "description": "Use this skill when the user requests to generate, create, write, or draft a newsletter, email digest, weekly roundup, industry briefing, or curated content summary. Supports topic-based research, content curation from multiple sources, and professional formatting for email or web distribution. Trigger on requests like \"create a newsletter about X\", \"write a weekly digest\", \"generate a tech roundup\", or \"curate news about Y\"."
+        },
+        {
+          "sourceSlug": "podcast-generation",
+          "vendoredSlug": "df-podcast-generation",
+          "name": "podcast-generation",
+          "description": "Use this skill when the user requests to generate, create, or produce podcasts from text content. Converts written content into a two-host conversational podcast audio format with natural dialogue."
+        },
+        {
+          "sourceSlug": "ppt-generation",
+          "vendoredSlug": "df-ppt-generation",
+          "name": "ppt-generation",
+          "description": "Use this skill when the user requests to generate, create, or make presentations (PPT/PPTX). Creates visually rich slides by generating images for each slide and composing them into a PowerPoint file."
+        },
+        {
+          "sourceSlug": "skill-creator",
+          "vendoredSlug": "df-skill-creator",
+          "name": "skill-creator",
+          "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy."
+        },
+        {
+          "sourceSlug": "surprise-me",
+          "vendoredSlug": "df-surprise-me",
+          "name": "surprise-me",
+          "description": "Create a delightful, unexpected \"wow\" experience for the user by dynamically discovering and creatively combining other enabled skills. Triggers when the user says \"surprise me\" or any request expressing a desire for an unexpected creative showcase. Also triggers when the user is bored, wants inspiration, or asks for \"something interesting\"."
+        },
+        {
+          "sourceSlug": "systematic-literature-review",
+          "vendoredSlug": "df-systematic-literature-review",
+          "name": "systematic-literature-review",
+          "description": "Use this skill when the user wants a systematic literature review, survey, or synthesis across multiple academic papers on a topic. Also covers annotated bibliographies and cross-paper comparisons. Searches arXiv and outputs reports in APA, IEEE, or BibTeX format. Not for single-paper tasks — use academic-paper-review for reviewing one paper."
+        },
+        {
+          "sourceSlug": "vercel-deploy-claimable",
+          "vendoredSlug": "df-vercel-deploy-claimable",
+          "name": "vercel-deploy",
+          "description": "Deploy applications and websites to Vercel. Use this skill when the user requests deployment actions such as \"Deploy my app\", \"Deploy this to production\", \"Create a preview deployment\", \"Deploy and give me the link\", or \"Push this live\". No authentication required - returns preview URL and claimable deployment link."
+        },
+        {
+          "sourceSlug": "video-generation",
+          "vendoredSlug": "df-video-generation",
+          "name": "video-generation",
+          "description": "Use this skill when the user requests to generate, create, or imagine videos. Supports structured prompts and reference image for guided generation."
+        },
+        {
+          "sourceSlug": "web-design-guidelines",
+          "vendoredSlug": "df-web-design-guidelines",
+          "name": "web-design-guidelines",
+          "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\"."
+        }
+      ]
+    },
+    {
+      "source": "awesome-llm-apps",
+      "commit": "3bc667c91ca9b31f17293b10392ee9f22043175e",
+      "count": 21,
+      "copied": [
+        {
+          "sourceSlug": "academic-researcher",
+          "vendoredSlug": "ala-academic-researcher",
+          "name": "academic-researcher",
+          "description": "|"
+        },
+        {
+          "sourceSlug": "code-reviewer",
+          "vendoredSlug": "ala-code-reviewer",
+          "name": "code-reviewer",
+          "description": "|"
+        },
+        {
+          "sourceSlug": "content-creator",
+          "vendoredSlug": "ala-content-creator",
+          "name": "content-creator",
+          "description": "|"
+        },
+        {
+          "sourceSlug": "data-analyst",
+          "vendoredSlug": "ala-data-analyst",
+          "name": "data-analyst",
+          "description": "|"
+        },
+        {
+          "sourceSlug": "debugger",
+          "vendoredSlug": "ala-debugger",
+          "name": "debugger",
+          "description": "|"
+        },
+        {
+          "sourceSlug": "decision-helper",
+          "vendoredSlug": "ala-decision-helper",
+          "name": "decision-helper",
+          "description": "|"
+        },
+        {
+          "sourceSlug": "deep-research",
+          "vendoredSlug": "ala-deep-research",
+          "name": "deep-research",
+          "description": "|"
+        },
+        {
+          "sourceSlug": "editor",
+          "vendoredSlug": "ala-editor",
+          "name": "editor",
+          "description": "|"
+        },
+        {
+          "sourceSlug": "email-drafter",
+          "vendoredSlug": "ala-email-drafter",
+          "name": "email-drafter",
+          "description": "|"
+        },
+        {
+          "sourceSlug": "fact-checker",
+          "vendoredSlug": "ala-fact-checker",
+          "name": "fact-checker",
+          "description": "|"
+        },
+        {
+          "sourceSlug": "fullstack-developer",
+          "vendoredSlug": "ala-fullstack-developer",
+          "name": "fullstack-developer",
+          "description": "|"
+        },
+        {
+          "sourceSlug": "meeting-notes",
+          "vendoredSlug": "ala-meeting-notes",
+          "name": "meeting-notes",
+          "description": "|"
+        },
+        {
+          "sourceSlug": "project-planner",
+          "vendoredSlug": "ala-project-planner",
+          "name": "project-planner",
+          "description": "|"
+        },
+        {
+          "sourceSlug": "python-expert",
+          "vendoredSlug": "ala-python-expert",
+          "name": "python-expert",
+          "description": "|"
+        },
+        {
+          "sourceSlug": "code-reviewer",
+          "vendoredSlug": "ala-code-reviewer",
+          "name": "code-reviewer",
+          "description": "Reviews code for security vulnerabilities, performance issues, and best practices. Use when reviewing code, performing security audits, checking for code quality, reviewing pull requests."
+        },
+        {
+          "sourceSlug": "content-writer",
+          "vendoredSlug": "ala-content-writer",
+          "name": "content-writer",
+          "description": "Writes marketing copy for landing pages, emails, and social media posts. Use when creating promotional content, sales copy, or brand messaging."
+        },
+        {
+          "sourceSlug": "sprint-planner",
+          "vendoredSlug": "ala-sprint-planner",
+          "name": "sprint-planner",
+          "description": "|"
+        },
+        {
+          "sourceSlug": "strategy-advisor",
+          "vendoredSlug": "ala-strategy-advisor",
+          "name": "strategy-advisor",
+          "description": "|"
+        },
+        {
+          "sourceSlug": "technical-writer",
+          "vendoredSlug": "ala-technical-writer",
+          "name": "technical-writer",
+          "description": "|"
+        },
+        {
+          "sourceSlug": "ux-designer",
+          "vendoredSlug": "ala-ux-designer",
+          "name": "ux-designer",
+          "description": "|"
+        },
+        {
+          "sourceSlug": "visualization-expert",
+          "vendoredSlug": "ala-visualization-expert",
+          "name": "visualization-expert",
+          "description": "|"
+        }
+      ]
+    },
+    {
+      "source": "pm-skills",
+      "commit": "f9eaa51000a65e04494aeaf90355d30f2080ebf2",
+      "count": 1,
+      "copied": [
+        {
+          "sourceSlug": "swot-analysis",
+          "vendoredSlug": "pms-swot-analysis",
+          "name": "swot-analysis",
+          "description": "Perform a detailed SWOT analysis — strengths, weaknesses, opportunities, and threats with actionable recommendations. Use when doing strategic assessment, competitive analysis, or evaluating a product or business position."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "project": "0710-T1",
+  "user": "admin",
+  "suite": "0710-T1-stda-live",
+  "source": "0709-retest 12 条典型失败中选 10 条 + STDA 口径 prompt 清理",
+  "groups": [
+    {
+      "id": "G1-SDM",
+      "label": "SDM/投放/Campaign 槽位",
+      "cases": ["0710-10", "0710-02", "0710-07"]
+    },
+    {
+      "id": "G2-PPT",
+      "label": "PPT 三线 repair 风暴",
+      "cases": ["0710-PPT-01", "0710-PPT-02", "0710-SLD-03"]
+    },
+    {
+      "id": "G3-BATTLE",
+      "label": "Battlecard 首回合停",
+      "cases": ["0710-BC-03"]
+    },
+    {
+      "id": "G4-GEO-UDC",
+      "label": "GEO/增长 UDC 四线",
+      "cases": ["0710-GEO-C4", "0710-G8-C8"]
+    },
+    {
+      "id": "G5-MISC",
+      "label": "调研/串台",
+      "cases": ["0710-RES-01"]
+    }
+  ],
+  "cases": [
+    {
+      "id": "0710-10",
+      "code": "T1-01",
+      "group": "G1-SDM",
+      "baseline": "0708-10 d26c105d needs_repair; 模板槽占 mkt-ads; 足球串台",
+      "prompt": "用「付费投放」帮我：为【Nova Ai Studio】制定 Google/Meta 付费投放计划，必须交付 ads-plan.md 与 channel-matrix.md，禁止足球世界杯话题，直接开始做，做完告诉我路径。",
+      "capability": { "slug": "mkt-ads", "displayName": "付费投放" },
+      "timeoutMs": 420000,
+      "expect": { "minDockRows": 2, "forbiddenTerms": ["足球", "世界杯", "ad-copy-templates.md"], "requireStda": true }
+    },
+    {
+      "id": "0710-02",
+      "code": "T1-02",
+      "group": "G1-SDM",
+      "baseline": "0708-02 6d40823c campaign 全案 repair; build-brief.mjs 过程文件",
+      "prompt": "帮【Nova Ai Studio 2026】做品牌传播 campaign 全案，按阶段一次规划执行，含调研、brief、主视觉与发布监测，直接开始做，做完告诉我各文件路径。",
+      "timeoutMs": 600000,
+      "expect": { "minDockRows": 2, "forbiddenBasenames": ["build-brief.mjs"], "requireStda": true }
+    },
+    {
+      "id": "0710-PPT-01",
+      "code": "T1-03",
+      "group": "G2-PPT",
+      "baseline": "ET-PPT-01 aad78932 needs_repair×146; df-ppt 误路由",
+      "prompt": "用「PPT 生成」做一套演示稿：【雷神笔记本主题 + 6页 + 产品展示】，16:9，直接开始做，必须交付真实 .pptx。",
+      "capability": { "slug": "df-ppt-generation", "displayName": "PPT 生成" },
+      "timeoutMs": 600000,
+      "expect": { "profileHint": "ppt-master", "requiresPptx": true, "requireStda": true }
+    },
+    {
+      "id": "0710-PPT-02",
+      "code": "T1-04",
+      "group": "G2-PPT",
+      "baseline": "ET-PPT-02 b2721bdd needs_repair×232; false_incomplete",
+      "prompt": "用「原生可编辑 PPT」帮我：【雷神笔记本主题 + 6页 + 产品展示】，16:9，直接开始做，必须交付可编辑 .pptx。",
+      "capability": { "slug": "anth-pptx", "displayName": "原生可编辑 PPT" },
+      "timeoutMs": 600000,
+      "expect": { "requiresPptx": true, "requireStda": true }
+    },
+    {
+      "id": "0710-BC-03",
+      "code": "T1-05",
+      "group": "G3-BATTLE",
+      "baseline": "T0707-2-P0-03 c5ce7d65 battlecard 三步首回合停",
+      "prompt": "为【小罐茶 vs 竞品】做销售 Battlecard 全链路，三步一次做完：\n1. intel.md 竞品情报\n2. battlecard.md 作战卡\n3. talk-track.md 话术\n直接开始做，做完告诉我各文件路径。",
+      "timeoutMs": 420000,
+      "expect": { "slotCount": 3, "minDockRows": 2, "requireStda": true }
+    },
+    {
+      "id": "0710-RES-01",
+      "code": "T1-06",
+      "group": "G5-MISC",
+      "baseline": "ET-RES-01 0ffbb6a3 Nova-竞品对标 turn4+ repair",
+      "prompt": "用「Nova-竞品对标」对【新茶饮品类】做竞品全量对标：竞品清单、维度对比与突围策略，直接开始做，做完告诉我报告路径。",
+      "capability": { "slug": "nova-research-competitor", "displayName": "Nova-竞品对标" },
+      "timeoutMs": 420000,
+      "expect": { "minDockRows": 1, "requireStda": true }
+    },
+    {
+      "id": "0710-07",
+      "code": "T1-07",
+      "group": "G1-SDM",
+      "baseline": "0708-07 350cb55e 内容营销三步 contract 行数漂移",
+      "prompt": "帮我做内容营销三步，一次做完：\n1. 01-topics.md 主题清单\n2. 02-calendar.md 内容日历\n3. 03-distribution.md 分发计划\n直接开始做，做完告诉我路径。",
+      "timeoutMs": 420000,
+      "expect": { "contractRowCount": 3, "slotCount": 3, "requireStda": true }
+    },
+    {
+      "id": "0710-GEO-C4",
+      "code": "T1-08",
+      "group": "G4-GEO-UDC",
+      "baseline": "UDC-C4 dc7a63d3 导出 17 行假绿、SDM 槽未绑、strict GT 未收敛",
+      "prompt": "雷蛇 GEO 全案，七步一次做完：\n1. geo-aeo-audit 审计清单\n2. 关键词调研 pd-geo\n3. 平台成稿（知乎/小红书/什么值得买）\n4. 引用优化\n5. schema.jsonld\n6. citability 评分\n7. 可选：小红书草稿\n\n直接开始做，做完告诉我文件在哪。",
+      "capability": { "slug": "pd-geo", "displayName": "AI 搜索全案" },
+      "timeoutMs": 1200000,
+      "expect": {
+        "slotCount": 7,
+        "requiredTotal": 6,
+        "profileId": "geo",
+        "bindBasename": "01-aeo-audit-checklist.md",
+        "bindSlotIndex": 0,
+        "maxExportRows": 7,
+        "forbiddenVerifiedBasenames": ["README.md", "deliverables-index.md"],
+        "requireStda": true
+      }
+    },
+    {
+      "id": "0710-G8-C8",
+      "code": "T1-09",
+      "group": "G4-GEO-UDC",
+      "baseline": "UDC-C8 e75fe21d profile 误绑 geo；导出空表/行数漂移",
+      "prompt": "增长全案八步：\n1. 市场洞察\n2. 用户画像\n3. 渠道策略\n4. 内容矩阵\n5. 投放计划\n6. 邮件培育\n7. 程序化 SEO\n8. 复盘报告\n\n直接开始做，做完告诉我文件在哪。",
+      "timeoutMs": 1200000,
+      "expect": {
+        "slotCount": 8,
+        "profileIdNot": "geo",
+        "exportRowCount": 8,
+        "minDockRows": 6,
+        "requireStda": true
+      }
+    },
+    {
+      "id": "0710-SLD-03",
+      "code": "T1-10",
+      "group": "G2-PPT",
+      "baseline": "ET-PPT-03 517c6c7e needs_repair×118; verified∩broken 重叠",
+      "prompt": "用「Nova-美学幻灯」把【雷神笔记本主题 + 6页 + 产品展示】做成 PNG 图集 + slide-manifest.json，16:9，直接开始做，做完告诉我 manifest 路径。",
+      "capability": { "slug": "nova-ppt-aesthetic-slides", "displayName": "Nova-美学幻灯" },
+      "timeoutMs": 600000,
+      "expect": { "requiresManifest": true, "requireStda": true }
+    }
+  ]
+}

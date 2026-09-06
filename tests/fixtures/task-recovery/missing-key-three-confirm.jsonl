@@ -1,0 +1,5 @@
+{"type":"metadata","id":"missing-key-three-confirm","expectedStatus":"user_action_required"}
+{"role":"user","content":"请把内容保存到外部平台草稿，不公开发布。"}
+{"role":"assistant","content":"需要先完成外部平台授权，系统才能写入草稿。"}
+{"type":"blocker","kind":"required","reason":"authentication_required"}
+{"type":"deliverable_validation","verified":[],"missing":["external:draft"],"broken":[]}

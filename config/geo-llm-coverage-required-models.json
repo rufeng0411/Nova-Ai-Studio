@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "description": "GEO 主流大模型收录探测 — 必测模型清单（硬约束）",
+  "policy": "geo-visibility-probe 与 geo-monitor-hub 产出的 llm_coverage.models 必须包含下列全部 id（缺 Key 时 status=skipped、indexing_status=unknown，仍须占位一行）",
+  "cn": {
+    "region": "cn",
+    "required": true,
+    "models": [
+      { "id": "doubao", "name": "豆包", "vendor": "字节跳动" },
+      { "id": "deepseek", "name": "DeepSeek", "vendor": "深度求索" },
+      { "id": "qwen", "name": "通义千问", "nameAliases": ["千问"], "vendor": "阿里云" },
+      { "id": "baidu", "name": "百度文心", "nameAliases": ["文心一言", "百度"], "vendor": "百度" },
+      { "id": "kimi", "name": "Kimi", "vendor": "月之暗面" },
+      { "id": "yuanbao", "name": "腾讯元宝", "nameAliases": ["元宝"], "vendor": "腾讯" }
+    ]
+  },
+  "global": {
+    "region": "global",
+    "required": true,
+    "models": [
+      { "id": "openai", "name": "OpenAI", "nameAliases": ["ChatGPT", "GPT"], "vendor": "OpenAI" },
+      { "id": "gemini", "name": "Gemini", "vendor": "Google" },
+      { "id": "claude", "name": "Claude", "vendor": "Anthropic" },
+      { "id": "grok", "name": "Grok", "vendor": "xAI" },
+      { "id": "meta", "name": "Meta AI", "nameAliases": ["Llama", "Meta"], "vendor": "Meta" }
+    ]
+  },
+  "optionalModels": [
+    { "id": "zhipu", "name": "智谱 GLM", "region": "cn" },
+    { "id": "perplexity", "name": "Perplexity", "region": "global" }
+  ],
+  "idAliases": {
+    "ernie": "baidu",
+    "wenxin": "baidu",
+    "chatgpt": "openai",
+    "gpt": "openai"
+  },
+  "minimumModelRows": 11
+}

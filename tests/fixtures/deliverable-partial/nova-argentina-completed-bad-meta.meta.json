@@ -1,0 +1,18 @@
+{
+  "turnArtifactDir": "artifacts/slides-argentina",
+  "expectedManifest": [],
+  "verifiedPaths": [],
+  "missingPaths": ["*.png", "南美之心 · PNG"],
+  "brokenPaths": [],
+  "hiddenByPolicyPaths": [],
+  "resolvedPathMap": {},
+  "acceptanceStatus": "needs_repair",
+  "knownDiskPaths": [
+    "artifacts/slides-argentina/slide-01.png",
+    "artifacts/slides-argentina/slide-02.png",
+    "artifacts/slides-argentina/slide-03.png",
+    "artifacts/slides-argentina/slide-04.png",
+    "artifacts/slides-argentina/slide-05.png",
+    "artifacts/slides-argentina/slide-06.png"
+  ]
+}

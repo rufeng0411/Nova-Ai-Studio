@@ -1,0 +1,262 @@
+{
+  "version": 1,
+  "description": "Authoritative deliverable checklists — SDM/profile/engine/UI 五处对齐权威源",
+  "profiles": {
+    "geo": {
+      "slotCount": 7,
+      "checklistZh": [
+        "geo-aeo-audit-checklist.md",
+        "keywords-research.md",
+        "平台成稿×3（zhihu-article.md、xiaohongshu-article.md、wechat-article.md）",
+        "optimized.md",
+        "schema.jsonld",
+        "citability-report.md",
+        "visibility-report.html"
+      ],
+      "checklistEn": [
+        "geo-aeo-audit-checklist.md",
+        "keywords-research.md",
+        "3 platform drafts (zhihu-article.md, xiaohongshu-article.md, wechat-article.md)",
+        "optimized.md",
+        "schema.jsonld",
+        "citability-report.md",
+        "visibility-report.html"
+      ]
+    },
+    "campaign": {
+      "slotCount": 6,
+      "checklistZh": [
+        "research-report.md",
+        "campaign-brief.docx",
+        "key-visual-poster.png",
+        "03-social-slices.md",
+        "draft-status.md",
+        "monitoring-template.md"
+      ]
+    }
+  },
+  "templates": {
+    "geo-brand-full": { "profileId": "geo", "syncChecklist": true },
+    "geo-visibility-standard": {
+      "checklistZh": [
+        "geo-aeo-audit-checklist.md",
+        "keywords-research.md",
+        "optimized.md",
+        "score-report.md",
+        "visibility-report.html"
+      ],
+      "checklistEn": [
+        "geo-aeo-audit-checklist.md",
+        "keywords-research.md",
+        "optimized.md",
+        "score-report.md",
+        "visibility-report.html"
+      ],
+      "outputsZh": "5 项 geo 标准包（含 visibility-report.html）",
+      "syncChecklist": true
+    },
+    "geo-visibility-quick": {
+      "checklistZh": [
+        "aeo-audit.md",
+        "keywords.md",
+        "verification-plan.md"
+      ],
+      "syncChecklist": true
+    },
+    "geo-monitor-loop": {
+      "checklistZh": [
+        "rank-track.md",
+        "mention-report.md",
+        "monitor-report.html"
+      ],
+      "syncChecklist": true
+    },
+    "geo-fast-check-hub": {
+      "checklistZh": [
+        "audit-checklist.md",
+        "keywords.md",
+        "optimized.md",
+        "report.html"
+      ],
+      "syncChecklist": true
+    },
+    "brand-campaign-full": { "profileId": "campaign", "syncChecklist": true },
+    "product-launch-full": {
+      "profileId": "campaign",
+      "checklistZh": [
+        "research.md",
+        "gtm-strategy.md",
+        "press-release.docx",
+        "landing.html",
+        "03-social-slices.md",
+        "go-live-checklist.md",
+        "draft-status.md"
+      ],
+      "syncChecklist": true
+    },
+    "saas-growth-full": {
+      "checklistZh": [
+        "market-research.md",
+        "positioning-pricing.md",
+        "landing.html",
+        "programmatic-seo-template.html",
+        "geo-keywords.md",
+        "email-sequence.md",
+        "ads-plan.md",
+        "retrospective-template.md"
+      ],
+      "outputsZh": "8 项增长全案文件（含 geo 基线与复盘模板）",
+      "syncChecklist": true
+    },
+    "content-ip-launch": {
+      "checklistZh": [
+        "content-strategy.md",
+        "pillar-article-1.md",
+        "pillar-article-2.md",
+        "social-matrix/",
+        "newsletter.md",
+        "retrospective.md"
+      ],
+      "syncChecklist": true
+    },
+    "social-matrix-pack": {
+      "checklistZh": [
+        "brief.md",
+        "creative-anchors.md",
+        "visuals/",
+        "copy-matrix.md",
+        "draft-status.md"
+      ],
+      "syncChecklist": true
+    },
+    "social-matrix-pipeline": {
+      "profileId": "social_matrix",
+      "checklistZh": [
+        "brief.md",
+        "creative-anchors.md",
+        "copywriting.md",
+        "visuals/image-9x16.png",
+        "visuals/image-3x4.png",
+        "visuals/image-1x1.png",
+        "visuals/image-16x9.png",
+        "manifest.json"
+      ],
+      "checklistEn": [
+        "brief.md",
+        "creative-anchors.md",
+        "copywriting.md",
+        "visuals/image-9x16.png",
+        "visuals/image-3x4.png",
+        "visuals/image-1x1.png",
+        "visuals/image-16x9.png",
+        "manifest.json"
+      ],
+      "outputsZh": "brief + 四套配图(visuals/) + copywriting + manifest",
+      "syncChecklist": true
+    },
+    "one-article-matrix": {
+      "profileId": "one-article-matrix",
+      "checklistZh": [
+        "article.md",
+        "zhihu.md",
+        "xiaohongshu.md",
+        "wechat.md",
+        "douyin.md",
+        "bilibili.md",
+        "data-sources.md"
+      ],
+      "checklistEn": [
+        "article.md",
+        "zhihu.md",
+        "xiaohongshu.md",
+        "wechat.md",
+        "douyin.md",
+        "bilibili.md",
+        "data-sources.md"
+      ],
+      "outputsZh": "深度长文 + 五平台 humanize 成稿",
+      "syncChecklist": true
+    },
+    "content-flywheel": {
+      "profileId": "content_flywheel",
+      "checklistZh": [
+        "01-topics.md",
+        "02-longform.md",
+        "03-social-slices.md"
+      ],
+      "checklistEn": [
+        "01-topics.md",
+        "02-longform.md",
+        "03-social-slices.md"
+      ],
+      "outputsZh": "选题 + 长文 + 社媒切片",
+      "syncChecklist": true
+    },
+    "ai-citable-content": {
+      "checklistZh": [
+        "optimized.md",
+        "citability-report.md"
+      ],
+      "syncChecklist": true
+    },
+    "campaign-plan-pack": {
+      "checklistZh": [
+        "competitive-brief.md",
+        "campaign-plan.md",
+        "strategy-deck.html",
+        "summary.docx"
+      ],
+      "syncChecklist": true
+    },
+    "sales-battlecard-full": {
+      "checklistZh": [
+        "intel.md",
+        "battlecard.md",
+        "talk-track.md"
+      ],
+      "syncChecklist": true
+    },
+    "research-report": {
+      "profileId": "research",
+      "checklistZh": [
+        "01-sources-and-synthesis.md 调研综述",
+        "03-report-body.md 报告正文与图表",
+        "report.docx Word 正式版"
+      ],
+      "checklistEn": [
+        "01-sources-and-synthesis.md research synthesis",
+        "03-report-body.md report body and charts",
+        "report.docx Word export"
+      ],
+      "outputsZh": "调研 .md + 图表 + export_document Word",
+      "syncChecklist": true
+    },
+    "writing-style-distill": {
+      "checklistZh": [
+        "writing-style-distill.md 深度蒸馏成稿"
+      ],
+      "checklistEn": [
+        "writing-style-distill.md style distill notes"
+      ],
+      "outputsZh": "深度蒸馏 .md（禁 01/03/docx 三件套）",
+      "syncChecklist": true
+    },
+    "viral-article-pack": {
+      "profileId": "viral_article_pack",
+      "checklistZh": [
+        "article-brief.md 选题简报与选风",
+        "article.md 爆款母稿",
+        "quotes.md 金句",
+        "channel-plan.md 渠道建议"
+      ],
+      "checklistEn": [
+        "article-brief.md topic brief and style pick",
+        "article.md longform draft",
+        "quotes.md shareable quotes",
+        "channel-plan.md channel plan"
+      ],
+      "outputsZh": "选风简报 + 母稿 + 金句 + 渠道（禁 matrix/flywheel）",
+      "syncChecklist": true
+    }
+  }
+}

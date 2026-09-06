@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Storyboard"
+  short_description: "Build SceneDance-ready storyboard packages with shot handoffs."
+  default_prompt: "Use $create-storyboard to turn my script into a SceneDance-ready production package with shot cards, handoff design, reference images, prompts, and edit notes."

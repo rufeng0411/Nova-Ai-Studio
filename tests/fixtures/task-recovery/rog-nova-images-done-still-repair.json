@@ -1,0 +1,12 @@
+{
+  "id": "rog-nova-images-done-still-repair",
+  "description": "Nova images on disk + manifest complete must pass without repair",
+  "userGoal": "用「Nova-美学幻灯」把【雷神笔记本主题 + 6页数 + 产品展示】",
+  "capabilitySlug": "nova-ppt-aesthetic-slides",
+  "expectedProfileId": "nova-slide-deck",
+  "expectedAcceptance": "passed",
+  "deckFixture": {
+    "deckDir": "artifacts/slides-nova-test",
+    "pageCount": 6
+  }
+}

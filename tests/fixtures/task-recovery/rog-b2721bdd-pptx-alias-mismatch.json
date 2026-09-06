@@ -1,0 +1,15 @@
+{
+  "id": "rog-b2721bdd-pptx-alias-mismatch",
+  "description": "b2721bdd: thunderobot-laptop.pptx verified but presentation.pptx still missing",
+  "userGoal": "用「原生可编辑 PPT」帮我：【雷神笔记本主题 + 6页数 + 产品展示】",
+  "capabilitySlug": "ppt-master",
+  "expectedProfileId": "ppt-master",
+  "verifiedPaths": [
+    "artifacts/slides/thunderobot-laptop/thunderobot-laptop.pptx"
+  ],
+  "missingPaths": [
+    "artifacts/slides/thunderobot-laptop/presentation.pptx"
+  ],
+  "expectMissingAfterReconcile": [],
+  "expectPptxAliasSatisfied": true
+}

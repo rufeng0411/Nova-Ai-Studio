@@ -1,0 +1,139 @@
+{
+  "project": "0709-TEST",
+  "user": "admin",
+  "source": "0708 golden + Phase7 ET + Phase8-2 P0 + live-matrix 代表失败",
+  "groups": [
+    {
+      "id": "G1-SDM",
+      "label": "SDM/投放/Campaign 槽位",
+      "cases": ["0708-10", "0708-02", "0708-07"]
+    },
+    {
+      "id": "G2-PPT",
+      "label": "PPT 三线 repair 风暴",
+      "cases": ["ET-PPT-01", "ET-PPT-02", "ET-PPT-03"]
+    },
+    {
+      "id": "G3-0707-2",
+      "label": "0707-2 小罐茶 L4 三线",
+      "cases": ["T0707-2-P0-01", "T0707-2-P0-02", "T0707-2-P0-03"]
+    },
+    {
+      "id": "G4-MISC",
+      "label": "HTML/调研/落地页",
+      "cases": ["0708-01", "ET-RES-01", "v1-copy-to-html-delay"]
+    }
+  ],
+  "cases": [
+    {
+      "id": "0708-10",
+      "group": "G1-SDM",
+      "baseline": "d26c105d needs_repair; 模板槽占 mkt-ads; 足球串台",
+      "prompt": "用「付费投放」帮我：为【Nova Ai Studio】制定 Google/Meta 付费投放计划，必须交付 artifacts/ads-plan.md 与 artifacts/channel-matrix.md，禁止足球世界杯话题，直接开始做，做完告诉我路径。",
+      "capability": { "slug": "mkt-ads", "displayName": "付费投放" },
+      "timeoutMs": 420000,
+      "expect": { "minDockRows": 2, "forbiddenTerms": ["足球", "世界杯", "ad-copy-templates.md"] }
+    },
+    {
+      "id": "0708-02",
+      "group": "G1-SDM",
+      "baseline": "6d40823c campaign 全案 repair; build-brief.mjs 过程文件",
+      "prompt": "帮【Nova Ai Studio 2026】做品牌传播 campaign 全案，按阶段一次规划执行，产出存 artifacts/campaign/，含调研、brief、主视觉与发布监测，直接开始做，做完告诉我各文件路径。",
+      "timeoutMs": 600000,
+      "expect": { "minDockRows": 2, "forbiddenBasenames": ["build-brief.mjs"] }
+    },
+    {
+      "id": "0708-07",
+      "group": "G1-SDM",
+      "baseline": "350cb55e 内容营销三步 contract 行数漂移",
+      "prompt": "帮我做内容营销三步，一次做完：\n1. artifacts/01-topics.md 主题清单\n2. artifacts/02-calendar.md 内容日历\n3. artifacts/03-distribution.md 分发计划\n直接开始做，做完告诉我路径。",
+      "timeoutMs": 420000,
+      "expect": { "contractRowCount": 3 }
+    },
+    {
+      "id": "ET-PPT-01",
+      "group": "G2-PPT",
+      "baseline": "aad78932 needs_repair×146; df-ppt 误路由",
+      "prompt": "用「PPT 生成」做一套演示稿：【雷神笔记本主题 + 6页 + 产品展示】，16:9，直接开始做，必须交付真实 .pptx。",
+      "capability": { "slug": "df-ppt-generation", "displayName": "PPT 生成" },
+      "timeoutMs": 600000,
+      "expect": { "profileHint": "ppt-master", "requiresPptx": true }
+    },
+    {
+      "id": "ET-PPT-02",
+      "group": "G2-PPT",
+      "baseline": "b2721bdd needs_repair×232; false_incomplete",
+      "prompt": "用「原生可编辑 PPT」帮我：【雷神笔记本主题 + 6页 + 产品展示】，16:9，直接开始做，必须交付可编辑 .pptx。",
+      "capability": { "slug": "anth-pptx", "displayName": "原生可编辑 PPT" },
+      "timeoutMs": 600000,
+      "expect": { "requiresPptx": true }
+    },
+    {
+      "id": "ET-PPT-03",
+      "group": "G2-PPT",
+      "baseline": "517c6c7e needs_repair×118; verified∩broken 重叠",
+      "prompt": "用「Nova-美学幻灯」把【雷神笔记本主题 + 6页 + 产品展示】做成 PNG 图集 + slide-manifest.json，16:9，直接开始做，做完告诉我 manifest 路径。",
+      "capability": { "slug": "nova-ppt-aesthetic-slides", "displayName": "Nova-美学幻灯" },
+      "timeoutMs": 600000,
+      "expect": { "requiresManifest": true }
+    },
+    {
+      "id": "T0707-2-P0-01",
+      "group": "G3-0707-2",
+      "baseline": "188fa4a3 campaign SDM repair 风暴",
+      "prompt": "帮【小罐茶冷泡茶 2026 新品】做品牌传播 campaign 全案，按阶段一次规划执行，产出存 artifacts/campaign/，直接开始做，做完告诉我各文件路径。",
+      "timeoutMs": 600000,
+      "expect": { "minDockRows": 5 }
+    },
+    {
+      "id": "T0707-2-P0-02",
+      "group": "G3-0707-2",
+      "baseline": "c2ff6893 视频 API/env; 无真 mp4",
+      "prompt": "为小罐茶冷泡茶品牌制作 10 秒广告视频，用 happyhorse 或 Seedance 模型，必须输出真 mp4 成片到 artifacts/，直接开始做，做完告诉我路径。",
+      "timeoutMs": 600000,
+      "expect": { "requiresMp4": true }
+    },
+    {
+      "id": "T0707-2-P0-03",
+      "group": "G3-0707-2",
+      "baseline": "c5ce7d65 battlecard 三步首回合停",
+      "prompt": "为【小罐茶 vs 竞品】做销售 Battlecard 全链路，三步一次做完：\n1. artifacts/sales/intel.md\n2. artifacts/sales/battlecard.md\n3. artifacts/sales/talk-track.md\n直接开始做，做完告诉我各文件路径。",
+      "timeoutMs": 420000,
+      "expect": { "minDockRows": 3 }
+    },
+    {
+      "id": "0708-01",
+      "group": "G4-MISC",
+      "baseline": "a7023e53 杂志风 index.html 槽位",
+      "prompt": "做一份杂志风长文专题，交付可点击预览的 index.html 到 artifacts/，直接开始做，做完告诉我路径。",
+      "timeoutMs": 420000,
+      "expect": { "requiresHtml": true }
+    },
+    {
+      "id": "ET-RES-01",
+      "group": "G4-MISC",
+      "baseline": "0ffbb6a3 Nova-竞品对标 turn4+ repair",
+      "prompt": "用「Nova-竞品对标」对【新茶饮品类】做竞品全量对标：竞品清单、维度对比与突围策略，直接开始做，做完告诉我报告路径。",
+      "capability": { "slug": "nova-research-competitor", "displayName": "Nova-竞品对标" },
+      "timeoutMs": 420000,
+      "expect": { "minDockRows": 1 }
+    },
+    {
+      "id": "ET-RES-02",
+      "group": "G4-MISC",
+      "baseline": "Hub试一下 nova-research-industry-market 无 directStart 须自动写报告",
+      "prompt": "用「Nova-行业市场」写【冷泡茶】市场研究报告：规模、产业链、PEST/SWOT 与进入建议。",
+      "capability": { "slug": "nova-research-industry-market", "displayName": "Nova-行业市场" },
+      "timeoutMs": 420000,
+      "expect": { "minDockRows": 1 }
+    },
+    {
+      "id": "v1-copy-to-html-delay",
+      "group": "G4-MISC",
+      "baseline": "终验0702 广告文案→HTML 落地页延迟/缺失",
+      "prompt": "把以下广告文案做成可点击预览的 index.html 落地页，存 artifacts/campaign/landing/index.html：「Nova Ai Studio — 智能体协作，让创作更高效」。直接开始做，做完告诉我路径。",
+      "timeoutMs": 420000,
+      "expect": { "pathHint": "index.html" }
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Self-hosted personal Agent workbench (Nova Ai-Studio). Login-only admin, Hub with 400+ skills, SQLite control plane.

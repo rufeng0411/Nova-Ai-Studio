@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bento Slides (Nova minimal shell)</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #101418; color: #f2f0ea; font-family: system-ui, sans-serif; }
+    #toolbar { display: flex; gap: 8px; align-items: center; padding: 8px 12px; background: #1a1f26; border-bottom: 1px solid #2a3140; font-size: 13px; }
+    #toolbar button { background: #2a3140; color: inherit; border: 0; border-radius: 6px; padding: 6px 10px; cursor: pointer; }
+    #toolbar button.primary { background: #7aa2f7; color: #0b0e14; font-weight: 600; }
+    #stage-wrap { position: relative; height: calc(100% - 49px); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    #stage { position: relative; box-shadow: 0 20px 60px rgba(0,0,0,.45); transform-origin: center center; }
+    .el { position: absolute; box-sizing: border-box; overflow: hidden; }
+    .el-text { white-space: pre-wrap; word-break: break-word; }
+    .el-shape { border-radius: 0; }
+    .el-table table { width: 100%; height: 100%; border-collapse: collapse; font-size: 16px; }
+    .el-table td, .el-table th { border: 1px solid rgba(255,255,255,.15); padding: 8px 12px; }
+    .notes { position: absolute; left: 12px; bottom: 12px; max-width: 40%; font-size: 11px; opacity: .55; pointer-events: none; }
+    body.present #toolbar, body.present .notes { display: none; }
+    body.present #stage-wrap { height: 100%; }
+    [contenteditable="true"]:focus { outline: 2px solid #7aa2f7; outline-offset: 2px; }
+  </style>
+</head>
+<body>
+<script type="application/bento+json" id="bento-doc">
+{"format":"bento/slides","version":1,"docId":"00000000-0000-4000-8000-000000000001","title":"Empty deck","size":{"width":1280,"height":720},"theme":{"background":"#101418","color":"#F2F0EA","accent":"#FF9E8A","fontFamily":"system-ui, sans-serif"},"slides":[{"id":"s1","background":"#101418","transition":"none","notes":"speaker notes","elements":[{"id":"t1","type":"text","x":96,"y":260,"w":1088,"h":160,"rotation":0,"opacity":1,"html":"Hello from Bento.","fontSize":88,"fontFamily":"system-ui, sans-serif","fontWeight":800,"color":"#F2F0EA","align":"left","valign":"top","lineHeight":1.1}]}]}
+</script>
+<div id="toolbar">
+  <button type="button" id="btn-prev">←</button>
+  <button type="button" id="btn-next">→</button>
+  <span id="page-label">1 / 1</span>
+  <button type="button" id="btn-present">Present</button>
+  <button type="button" class="primary" id="btn-edit" hidden>Edit</button>
+</div>
+<div id="stage-wrap"><div id="stage"></div></div>
+<script>
+(function () {
+  const docEl = document.getElementById('bento-doc');
+  let doc = JSON.parse(docEl.textContent.trim());
+  let index = 0;
+  let mode = 'edit';
+
+  function cloneDoc() { return JSON.parse(JSON.stringify(doc)); }
+
+  window.bento = {
+    get doc() { return cloneDoc(); },
+    loadDoc(next) {
+      doc = JSON.parse(JSON.stringify(next));
+      syncBlock();
+      render();
+      return true;
+    },
+  };
+
+  function syncBlock() {
+    docEl.textContent = JSON.stringify(doc);
+  }
+
+  function scaleStage() {
+    const wrap = document.getElementById('stage-wrap');
+    const stage = document.getElementById('stage');
+    const w = doc.size?.width || 1280;
+    const h = doc.size?.height || 720;
+    stage.style.width = w + 'px';
+    stage.style.height = h + 'px';
+    const sx = (wrap.clientWidth - 24) / w;
+    const sy = (wrap.clientHeight - 24) / h;
+    const s = Math.min(1, sx, sy);
+    stage.style.transform = 'scale(' + s + ')';
+  }
+
+  function renderElement(el, slide) {
+    const node = document.createElement('div');
+    node.className = 'el el-' + (el.type || 'shape');
+    node.style.left = el.x + 'px';
+    node.style.top = el.y + 'px';
+    node.style.width = el.w + 'px';
+    node.style.height = el.h + 'px';
+    node.style.opacity = el.opacity ?? 1;
+    node.style.transform = 'rotate(' + (el.rotation || 0) + 'deg)';
+    node.dataset.elementId = el.id || '';
+
+    if (el.type === 'text') {
+      node.className += ' el-text';
+      node.style.fontSize = (el.fontSize || 32) + 'px';
+      node.style.fontWeight = String(el.fontWeight || 400);
+      node.style.color = el.color || doc.theme?.color || '#fff';
+      node.style.fontFamily = el.fontFamily || doc.theme?.fontFamily || 'system-ui,sans-serif';
+      node.style.textAlign = el.align || 'left';
+      node.innerHTML = el.html || '';
+      if (mode === 'edit') {
+        node.contentEditable = 'true';
+        node.addEventListener('input', () => { el.html = node.innerHTML; syncBlock(); });
+      }
+    } else if (el.type === 'shape') {
+      node.style.background = el.fill || doc.theme?.accent || '#888';
+      node.style.borderRadius = (el.radius || 0) + 'px';
+      if (el.stroke && el.stroke !== 'none') node.style.border = (el.strokeWidth || 1) + 'px solid ' + el.stroke;
+    } else if (el.type === 'chart') {
+      node.style.display = 'flex';
+      node.style.alignItems = 'center';
+      node.style.justifyContent = 'center';
+      node.style.background = 'rgba(255,255,255,.06)';
+      node.textContent = (el.preset || 'chart') + ' chart';
+    } else if (el.type === 'table') {
+      node.className += ' el-table';
+      const table = document.createElement('table');
+      for (const row of el.rows || []) {
+        const tr = document.createElement('tr');
+        for (const cell of row.cells || []) {
+          const td = document.createElement(el.header && row === el.rows[0] ? 'th' : 'td');
+          td.innerHTML = cell.html || '';
+          tr.appendChild(td);
+        }
+        table.appendChild(tr);
+      }
+      node.appendChild(table);
+    } else {
+      node.textContent = el.type || 'element';
+    }
+    return node;
+  }
+
+  function render() {
+    const stage = document.getElementById('stage');
+    stage.innerHTML = '';
+    const slides = doc.slides || [];
+    const slide = slides[index] || slides[0];
+    if (!slide) return;
+    stage.style.background = slide.background || doc.theme?.background || '#101418';
+    for (const el of slide.elements || []) stage.appendChild(renderElement(el, slide));
+    const notes = document.createElement('div');
+    notes.className = 'notes';
+    notes.textContent = slide.notes ? 'Notes: ' + slide.notes : '';
+    stage.appendChild(notes);
+    document.getElementById('page-label').textContent = (index + 1) + ' / ' + slides.length;
+    scaleStage();
+  }
+
+  function post(type, payload) {
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({ source: 'bento-slides-shell', type, ...payload }, '*');
+    }
+  }
+
+  window.addEventListener('message', (event) => {
+    const data = event.data || {};
+    if (data.type === 'bento-request-doc') {
+      post('bento-doc', { doc: window.bento.doc });
+    }
+    if (data.type === 'bento-load-doc' && data.doc) {
+      window.bento.loadDoc(data.doc);
+    }
+    if (data.type === 'bento-set-mode') {
+      mode = data.mode === 'view' ? 'view' : 'edit';
+      document.body.classList.toggle('present', mode === 'view');
+      render();
+    }
+  });
+
+  document.getElementById('btn-prev').onclick = () => { index = Math.max(0, index - 1); render(); };
+  document.getElementById('btn-next').onclick = () => { index = Math.min((doc.slides||[]).length - 1, index + 1); render(); };
+  document.getElementById('btn-present').onclick = () => {
+    mode = mode === 'view' ? 'edit' : 'view';
+    document.body.classList.toggle('present', mode === 'view');
+    render();
+  };
+
+  window.addEventListener('resize', scaleStage);
+  render();
+  post('bento-ready', { docId: doc.docId });
+})();
+</script>
+</body>
+</html>

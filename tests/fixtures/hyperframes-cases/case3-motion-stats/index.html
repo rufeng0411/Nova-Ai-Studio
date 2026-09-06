@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>Case3 Motion Stats</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #020617; overflow: hidden; }
+    #stage {
+      width: 1280px; height: 720px; position: relative;
+      background: #0f172a; display: grid; grid-template-columns: 1fr 1fr; gap: 32px;
+      padding: 48px; box-sizing: border-box;
+    }
+    .card {
+      background: rgba(30,41,59,0.9); border-radius: 20px; padding: 32px;
+      border: 1px solid rgba(148,163,184,0.2);
+      transform: translateY(40px);
+    }
+    .label { font: 500 20px system-ui; color: #94a3b8; margin-bottom: 12px; }
+    .value { font: 800 56px/1 system-ui; color: #38bdf8; }
+    #headline {
+      position: absolute; top: 32px; left: 48px;
+      font: 700 36px system-ui; color: #f1f5f9;
+    }
+  </style>
+</head>
+<body>
+  <div id="stage" data-composition-id="case3-motion" data-start="0" data-duration="5" data-width="1280" data-height="720">
+    <h2 id="headline" class="clip" data-start="0.2" data-duration="4.5">Q2 增长数据一览</h2>
+    <div id="c1" class="card clip" data-start="0.6" data-duration="4" style="margin-top:72px">
+      <div class="label">转化率</div>
+      <div class="value">+38%</div>
+    </div>
+    <div id="c2" class="card clip" data-start="1.0" data-duration="3.6" style="margin-top:72px">
+      <div class="label">获客成本</div>
+      <div class="value">-22%</div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    tl.from("#headline", { opacity: 0, y: -16, duration: 0.5 }, 0.2);
+    tl.from("#c1", { y: 40, opacity: 0, duration: 0.7, ease: "power2.out" }, 0.6);
+    tl.from("#c2", { y: 40, opacity: 0, duration: 0.7, ease: "power2.out" }, 1.0);
+    window.__timelines["case3-motion"] = tl;
+  </script>
+</body>
+</html>

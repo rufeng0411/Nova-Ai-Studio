@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "phase": 0,
+  "chosen": "v1-native-slate",
+  "description": "Nova Ai-Studio SaaS Phase 0 static HTML design sketches",
+  "required": [
+    "artifacts/saas-design/README.md",
+    "artifacts/saas-design/v1-native-slate/login.html",
+    "artifacts/saas-design/v1-native-slate/admin-users.html",
+    "artifacts/saas-design/v2-linear-product/login.html",
+    "artifacts/saas-design/v2-linear-product/admin-users.html",
+    "artifacts/saas-design/v3-cloud-admin/login.html",
+    "artifacts/saas-design/v3-cloud-admin/admin-users.html",
+    "artifacts/saas-design/chosen/tokens.css",
+    "artifacts/saas-design/chosen/login.html",
+    "artifacts/saas-design/chosen/admin-users.html"
+  ],
+  "contentChecks": {
+    "brandMustInclude": "Nova Ai-Studio",
+    "brandMustNotInclude": "PilotDeck"
+  }
+}

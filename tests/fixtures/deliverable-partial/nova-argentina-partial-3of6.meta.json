@@ -1,0 +1,20 @@
+{
+  "turnArtifactDir": "artifacts/slides-argentina",
+  "expectedManifest": [
+    { "id": "required_png", "kind": "png", "count": 6, "required": true }
+  ],
+  "verifiedPaths": [
+    "artifacts/slides-argentina/slide-01.png",
+    "artifacts/slides-argentina/slide-02.png",
+    "artifacts/slides-argentina/slide-03.png"
+  ],
+  "missingPaths": [
+    "artifacts/slides-argentina/slide-04.png",
+    "artifacts/slides-argentina/slide-05.png",
+    "artifacts/slides-argentina/slide-06.png"
+  ],
+  "brokenPaths": [],
+  "hiddenByPolicyPaths": [],
+  "resolvedPathMap": {},
+  "acceptanceStatus": "needs_repair"
+}

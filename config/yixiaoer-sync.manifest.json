@@ -1,0 +1,7 @@
+{
+  "version": "1.6.4",
+  "commit": "local-import",
+  "upstream": "https://github.com/yixiaoer888/yixiaoer-skill.git",
+  "syncedAt": "2026-06-01T13:34:31.687Z",
+  "target": "skills/yixiaoer"
+}

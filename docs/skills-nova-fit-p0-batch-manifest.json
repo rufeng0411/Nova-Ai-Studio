@@ -1,0 +1,42 @@
+{
+  "version": "20260727233726",
+  "batches": {
+    "G1": {
+      "skills": ["social-creative-matrix", "cyber-ppt"],
+      "templates": ["one-article-matrix", "content-flywheel"],
+      "config": [
+        "scripts/lib/promptTemplateStrategy.mjs",
+        "config/deliverable-checklist-authority.json",
+        "src/saas/capabilityBindingPrompt.ts",
+        "src/saas/deliverableCapabilityProfiles.ts"
+      ]
+    },
+    "G2": {
+      "skills": [
+        "geo-keyword-research",
+        "geo-aeo-audit",
+        "geo-serp-analysis",
+        "geo-competitor-analysis",
+        "mkt-ai-seo",
+        "pd-geo"
+      ],
+      "templates": ["geo-visibility-quick"],
+      "config": ["src/saas/deliverables/deliverableFilenamePolicy.ts"]
+    },
+    "G3": {
+      "skills": ["anth-pptx", "ppt-gorden-consulting", "nova-ppt-aesthetic-slides", "html-ppt"],
+      "config": ["src/saas/deliverables/pptExportDefaultPolicy.ts"]
+    },
+    "G4": {
+      "templates": ["brand-campaign-full", "research-report", "geo-brand-full"],
+      "config": [
+        "src/saas/processTemplateExecutionPrompt.ts",
+        "src/saas/deliverables/campaignDeliverableCompleteness.ts"
+      ]
+    },
+    "G5": {
+      "skills": ["anth-docx", "nova-research-general", "create-taste-skill"],
+      "overlays": true
+    }
+  }
+}

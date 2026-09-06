@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-06-15T04:53:58.887Z",
+  "logPath": "F:\\Ai-pilotdeck\\.saas-dev-data\\telemetry\\recovery-events.jsonl",
+  "sampleCount": 13,
+  "byReason": {
+    "model_error": {
+      "count": 6,
+      "avgBudgetRemaining": 7
+    },
+    "tool_recovery": {
+      "count": 7,
+      "avgBudgetRemaining": 9
+    }
+  }
+}

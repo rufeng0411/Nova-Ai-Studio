@@ -1,0 +1,5238 @@
+{
+  "generatedAt": "2026-06-19T13:59:56.893Z",
+  "totalSkills": 742,
+  "totalFailures": 5,
+  "skills": [
+    {
+      "vendoredSlug": "anth-pptx",
+      "sourcePath": "skills/pptx",
+      "pack": "anthropics-skills",
+      "needsConfig": false,
+      "commit": "57546260929473d4e0d1c1bb75297be2fdfa1949"
+    },
+    {
+      "vendoredSlug": "anth-xlsx",
+      "sourcePath": "skills/xlsx",
+      "pack": "anthropics-skills",
+      "needsConfig": false,
+      "commit": "57546260929473d4e0d1c1bb75297be2fdfa1949"
+    },
+    {
+      "vendoredSlug": "anth-mcp-builder",
+      "sourcePath": "skills/mcp-builder",
+      "pack": "anthropics-skills",
+      "needsConfig": false,
+      "commit": "57546260929473d4e0d1c1bb75297be2fdfa1949"
+    },
+    {
+      "vendoredSlug": "anth-canvas-design",
+      "sourcePath": "skills/canvas-design",
+      "pack": "anthropics-skills",
+      "needsConfig": false,
+      "commit": "57546260929473d4e0d1c1bb75297be2fdfa1949"
+    },
+    {
+      "vendoredSlug": "humanizer",
+      "sourcePath": ".",
+      "pack": "writing-polish-humanizer",
+      "needsConfig": false,
+      "commit": "9600f2b7241cb4eed6ad803abee5ea01d67fe8e4"
+    },
+    {
+      "vendoredSlug": "unslop",
+      "sourcePath": "skills/unslop",
+      "pack": "writing-polish-unslop",
+      "needsConfig": false,
+      "commit": "5af59d9fcdbd0df7b1a0762be958f78c7805fc09"
+    },
+    {
+      "vendoredSlug": "pms-intended-vs-implemented",
+      "sourcePath": "pm-ai-shipping/skills/intended-vs-implemented",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-shipping-artifacts",
+      "sourcePath": "pm-ai-shipping/skills/shipping-artifacts",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-ab-test-analysis",
+      "sourcePath": "pm-data-analytics/skills/ab-test-analysis",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-cohort-analysis",
+      "sourcePath": "pm-data-analytics/skills/cohort-analysis",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-sql-queries",
+      "sourcePath": "pm-data-analytics/skills/sql-queries",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-brainstorm-okrs",
+      "sourcePath": "pm-execution/skills/brainstorm-okrs",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-create-prd",
+      "sourcePath": "pm-execution/skills/create-prd",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-dummy-dataset",
+      "sourcePath": "pm-execution/skills/dummy-dataset",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-job-stories",
+      "sourcePath": "pm-execution/skills/job-stories",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-outcome-roadmap",
+      "sourcePath": "pm-execution/skills/outcome-roadmap",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-pre-mortem",
+      "sourcePath": "pm-execution/skills/pre-mortem",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-prioritization-frameworks",
+      "sourcePath": "pm-execution/skills/prioritization-frameworks",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-release-notes",
+      "sourcePath": "pm-execution/skills/release-notes",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-retro",
+      "sourcePath": "pm-execution/skills/retro",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-sprint-plan",
+      "sourcePath": "pm-execution/skills/sprint-plan",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-stakeholder-map",
+      "sourcePath": "pm-execution/skills/stakeholder-map",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-strategy-red-team",
+      "sourcePath": "pm-execution/skills/strategy-red-team",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-summarize-meeting",
+      "sourcePath": "pm-execution/skills/summarize-meeting",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-test-scenarios",
+      "sourcePath": "pm-execution/skills/test-scenarios",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-user-stories",
+      "sourcePath": "pm-execution/skills/user-stories",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-wwas",
+      "sourcePath": "pm-execution/skills/wwas",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-beachhead-segment",
+      "sourcePath": "pm-go-to-market/skills/beachhead-segment",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-competitive-battlecard",
+      "sourcePath": "pm-go-to-market/skills/competitive-battlecard",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-growth-loops",
+      "sourcePath": "pm-go-to-market/skills/growth-loops",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-gtm-motions",
+      "sourcePath": "pm-go-to-market/skills/gtm-motions",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-gtm-strategy",
+      "sourcePath": "pm-go-to-market/skills/gtm-strategy",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-ideal-customer-profile",
+      "sourcePath": "pm-go-to-market/skills/ideal-customer-profile",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-competitor-analysis",
+      "sourcePath": "pm-market-research/skills/competitor-analysis",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-customer-journey-map",
+      "sourcePath": "pm-market-research/skills/customer-journey-map",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-market-segments",
+      "sourcePath": "pm-market-research/skills/market-segments",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-market-sizing",
+      "sourcePath": "pm-market-research/skills/market-sizing",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-sentiment-analysis",
+      "sourcePath": "pm-market-research/skills/sentiment-analysis",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-user-personas",
+      "sourcePath": "pm-market-research/skills/user-personas",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-user-segmentation",
+      "sourcePath": "pm-market-research/skills/user-segmentation",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-marketing-ideas",
+      "sourcePath": "pm-marketing-growth/skills/marketing-ideas",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-north-star-metric",
+      "sourcePath": "pm-marketing-growth/skills/north-star-metric",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-positioning-ideas",
+      "sourcePath": "pm-marketing-growth/skills/positioning-ideas",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-product-name",
+      "sourcePath": "pm-marketing-growth/skills/product-name",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-value-prop-statements",
+      "sourcePath": "pm-marketing-growth/skills/value-prop-statements",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-analyze-feature-requests",
+      "sourcePath": "pm-product-discovery/skills/analyze-feature-requests",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-brainstorm-experiments-existing",
+      "sourcePath": "pm-product-discovery/skills/brainstorm-experiments-existing",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-brainstorm-experiments-new",
+      "sourcePath": "pm-product-discovery/skills/brainstorm-experiments-new",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-brainstorm-ideas-existing",
+      "sourcePath": "pm-product-discovery/skills/brainstorm-ideas-existing",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-brainstorm-ideas-new",
+      "sourcePath": "pm-product-discovery/skills/brainstorm-ideas-new",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-identify-assumptions-existing",
+      "sourcePath": "pm-product-discovery/skills/identify-assumptions-existing",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-identify-assumptions-new",
+      "sourcePath": "pm-product-discovery/skills/identify-assumptions-new",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-interview-script",
+      "sourcePath": "pm-product-discovery/skills/interview-script",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-metrics-dashboard",
+      "sourcePath": "pm-product-discovery/skills/metrics-dashboard",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-opportunity-solution-tree",
+      "sourcePath": "pm-product-discovery/skills/opportunity-solution-tree",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-prioritize-assumptions",
+      "sourcePath": "pm-product-discovery/skills/prioritize-assumptions",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-prioritize-features",
+      "sourcePath": "pm-product-discovery/skills/prioritize-features",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-summarize-interview",
+      "sourcePath": "pm-product-discovery/skills/summarize-interview",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-ansoff-matrix",
+      "sourcePath": "pm-product-strategy/skills/ansoff-matrix",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-business-model",
+      "sourcePath": "pm-product-strategy/skills/business-model",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-lean-canvas",
+      "sourcePath": "pm-product-strategy/skills/lean-canvas",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-monetization-strategy",
+      "sourcePath": "pm-product-strategy/skills/monetization-strategy",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-pestle-analysis",
+      "sourcePath": "pm-product-strategy/skills/pestle-analysis",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-porters-five-forces",
+      "sourcePath": "pm-product-strategy/skills/porters-five-forces",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-pricing-strategy",
+      "sourcePath": "pm-product-strategy/skills/pricing-strategy",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-product-strategy",
+      "sourcePath": "pm-product-strategy/skills/product-strategy",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-product-vision",
+      "sourcePath": "pm-product-strategy/skills/product-vision",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-startup-canvas",
+      "sourcePath": "pm-product-strategy/skills/startup-canvas",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-swot-analysis",
+      "sourcePath": "pm-product-strategy/skills/swot-analysis",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-value-proposition",
+      "sourcePath": "pm-product-strategy/skills/value-proposition",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-draft-nda",
+      "sourcePath": "pm-toolkit/skills/draft-nda",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-grammar-check",
+      "sourcePath": "pm-toolkit/skills/grammar-check",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-privacy-policy",
+      "sourcePath": "pm-toolkit/skills/privacy-policy",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pms-review-resume",
+      "sourcePath": "pm-toolkit/skills/review-resume",
+      "pack": "pm-skills-phuryn",
+      "needsConfig": false,
+      "commit": "d384f0c9eb81fe74656a4f6da168587836939edb"
+    },
+    {
+      "vendoredSlug": "pmd-acquisition-channel-advisor",
+      "sourcePath": "skills/acquisition-channel-advisor",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-ai-shaped-readiness-advisor",
+      "sourcePath": "skills/ai-shaped-readiness-advisor",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-altitude-horizon-framework",
+      "sourcePath": "skills/altitude-horizon-framework",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-business-health-diagnostic",
+      "sourcePath": "skills/business-health-diagnostic",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-company-research",
+      "sourcePath": "skills/company-research",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-context-engineering-advisor",
+      "sourcePath": "skills/context-engineering-advisor",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-customer-journey-map",
+      "sourcePath": "skills/customer-journey-map",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-customer-journey-mapping-workshop",
+      "sourcePath": "skills/customer-journey-mapping-workshop",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-director-readiness-advisor",
+      "sourcePath": "skills/director-readiness-advisor",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-discovery-interview-prep",
+      "sourcePath": "skills/discovery-interview-prep",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-discovery-process",
+      "sourcePath": "skills/discovery-process",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-eol-message",
+      "sourcePath": "skills/eol-message",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-epic-breakdown-advisor",
+      "sourcePath": "skills/epic-breakdown-advisor",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-epic-hypothesis",
+      "sourcePath": "skills/epic-hypothesis",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-executive-onboarding-playbook",
+      "sourcePath": "skills/executive-onboarding-playbook",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-feature-investment-advisor",
+      "sourcePath": "skills/feature-investment-advisor",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-finance-based-pricing-advisor",
+      "sourcePath": "skills/finance-based-pricing-advisor",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-finance-metrics-quickref",
+      "sourcePath": "skills/finance-metrics-quickref",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-jobs-to-be-done",
+      "sourcePath": "skills/jobs-to-be-done",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-lean-ux-canvas",
+      "sourcePath": "skills/lean-ux-canvas",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-opportunity-solution-tree",
+      "sourcePath": "skills/opportunity-solution-tree",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-organic-growth-advisor",
+      "sourcePath": "skills/organic-growth-advisor",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-pestel-analysis",
+      "sourcePath": "skills/pestel-analysis",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-pm-skill-creator",
+      "sourcePath": "skills/pm-skill-creator",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-pol-probe",
+      "sourcePath": "skills/pol-probe",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-pol-probe-advisor",
+      "sourcePath": "skills/pol-probe-advisor",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-positioning-statement",
+      "sourcePath": "skills/positioning-statement",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-positioning-workshop",
+      "sourcePath": "skills/positioning-workshop",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-prd-development",
+      "sourcePath": "skills/prd-development",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-press-release",
+      "sourcePath": "skills/press-release",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-prioritization-advisor",
+      "sourcePath": "skills/prioritization-advisor",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-problem-framing-canvas",
+      "sourcePath": "skills/problem-framing-canvas",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-problem-statement",
+      "sourcePath": "skills/problem-statement",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-product-sense-interview-answer",
+      "sourcePath": "skills/product-sense-interview-answer",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-product-strategy-session",
+      "sourcePath": "skills/product-strategy-session",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-proto-persona",
+      "sourcePath": "skills/proto-persona",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-recommendation-canvas",
+      "sourcePath": "skills/recommendation-canvas",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-roadmap-planning",
+      "sourcePath": "skills/roadmap-planning",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-saas-economics-efficiency-metrics",
+      "sourcePath": "skills/saas-economics-efficiency-metrics",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-saas-revenue-growth-metrics",
+      "sourcePath": "skills/saas-revenue-growth-metrics",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-skill-authoring-workflow",
+      "sourcePath": "skills/skill-authoring-workflow",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-stakeholder-engagement-advisor",
+      "sourcePath": "skills/stakeholder-engagement-advisor",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-stakeholder-identification",
+      "sourcePath": "skills/stakeholder-identification",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-stakeholder-mapping",
+      "sourcePath": "skills/stakeholder-mapping",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-storyboard",
+      "sourcePath": "skills/storyboard",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-tam-sam-som-calculator",
+      "sourcePath": "skills/tam-sam-som-calculator",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-user-story",
+      "sourcePath": "skills/user-story",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-user-story-mapping",
+      "sourcePath": "skills/user-story-mapping",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-user-story-mapping-workshop",
+      "sourcePath": "skills/user-story-mapping-workshop",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-user-story-splitting",
+      "sourcePath": "skills/user-story-splitting",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-vp-cpo-readiness-advisor",
+      "sourcePath": "skills/vp-cpo-readiness-advisor",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "pmd-workshop-facilitation",
+      "sourcePath": "skills/workshop-facilitation",
+      "pack": "pm-methodology-deanpeters",
+      "needsConfig": false,
+      "commit": "e4759da9e5f64e0e378f1d94719d6cda141b8e4f"
+    },
+    {
+      "vendoredSlug": "mkt-claude-seo",
+      "sourcePath": "skills/seo",
+      "pack": "mkt-claude-seo",
+      "needsConfig": false,
+      "commit": "d830cdb2ad339bb7f062339fe82228b072e98061"
+    },
+    {
+      "vendoredSlug": "mkt-last30days",
+      "sourcePath": "skills/last30days",
+      "pack": "mkt-last30days",
+      "needsConfig": false,
+      "commit": "3fa91fce9009731ed68e2e8a14ce9683253720e8"
+    },
+    {
+      "vendoredSlug": "mkt-x-article-publisher",
+      "sourcePath": "skills/x-article-publisher",
+      "pack": "mkt-x-article-publisher",
+      "needsConfig": false,
+      "commit": "eb3197d1d8579556aea5018d5c0b141d55fc2df6"
+    },
+    {
+      "vendoredSlug": "mkt-email-bible",
+      "sourcePath": ".",
+      "pack": "mkt-email-bible",
+      "needsConfig": false,
+      "commit": "64e6630d94664b6fbe9e92c19cb00f5d98fcac22"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-ab-test-plan",
+      "sourcePath": "skills/ab-test-plan",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-ad-creative",
+      "sourcePath": "skills/ad-creative",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-add-integration",
+      "sourcePath": "skills/add-integration",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-aeo-audit",
+      "sourcePath": "skills/aeo-audit",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-aeo-geo",
+      "sourcePath": "skills/aeo-geo",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-agency-dashboard",
+      "sourcePath": "skills/agency-dashboard",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-analytics-insights",
+      "sourcePath": "skills/analytics-insights",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-anomaly-scan",
+      "sourcePath": "skills/anomaly-scan",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-attribution-model",
+      "sourcePath": "skills/attribution-model",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-attribution-report",
+      "sourcePath": "skills/attribution-report",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-audience-intelligence",
+      "sourcePath": "skills/audience-intelligence",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-audience-profile",
+      "sourcePath": "skills/audience-profile",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-autopilot-status",
+      "sourcePath": "skills/autopilot-status",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-backlink-gap",
+      "sourcePath": "skills/backlink-gap",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-brand-setup",
+      "sourcePath": "skills/brand-setup",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-budget-optimizer",
+      "sourcePath": "skills/budget-optimizer",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-budget-tracker",
+      "sourcePath": "skills/budget-tracker",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-c2pa-metadata",
+      "sourcePath": "skills/c2pa-metadata",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-campaign-audit",
+      "sourcePath": "skills/campaign-audit",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-campaign-orchestrator",
+      "sourcePath": "skills/campaign-orchestrator",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-campaign-plan",
+      "sourcePath": "skills/campaign-plan",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-campaign-status",
+      "sourcePath": "skills/campaign-status",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-case-study-plan",
+      "sourcePath": "skills/case-study-plan",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-check",
+      "sourcePath": "skills/check",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-churn-risk",
+      "sourcePath": "skills/churn-risk",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-client-onboarding",
+      "sourcePath": "skills/client-onboarding",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-client-proposal",
+      "sourcePath": "skills/client-proposal",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-client-report",
+      "sourcePath": "skills/client-report",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-client-validation-document",
+      "sourcePath": "skills/client-validation-document",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-cohort-analysis",
+      "sourcePath": "skills/cohort-analysis",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-competitor-alerts",
+      "sourcePath": "skills/competitor-alerts",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-competitor-analysis",
+      "sourcePath": "skills/competitor-analysis",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-competitor-monitor",
+      "sourcePath": "skills/competitor-monitor",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-competitor-pages",
+      "sourcePath": "skills/competitor-pages",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-connect",
+      "sourcePath": "skills/connect",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-content-brief",
+      "sourcePath": "skills/content-brief",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-content-calendar",
+      "sourcePath": "skills/content-calendar",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-content-decay-scan",
+      "sourcePath": "skills/content-decay-scan",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-content-engine",
+      "sourcePath": "skills/content-engine",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-content-repurpose",
+      "sourcePath": "skills/content-repurpose",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-context-engine",
+      "sourcePath": "skills/context-engine",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-continuous-improvement-loop",
+      "sourcePath": "skills/continuous-improvement-loop",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-counter-narrative",
+      "sourcePath": "skills/counter-narrative",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-cowork-setup",
+      "sourcePath": "skills/cowork-setup",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-creative-health",
+      "sourcePath": "skills/creative-health",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-creative-testing-framework",
+      "sourcePath": "skills/creative-testing-framework",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-credential-switch",
+      "sourcePath": "skills/credential-switch",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-crisis-response",
+      "sourcePath": "skills/crisis-response",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-crm-sync",
+      "sourcePath": "skills/crm-sync",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-cro",
+      "sourcePath": "skills/cro",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-dark-funnel",
+      "sourcePath": "skills/dark-funnel",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-data-export",
+      "sourcePath": "skills/data-export",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-data-import",
+      "sourcePath": "skills/data-import",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-digital-pr",
+      "sourcePath": "skills/digital-pr",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-email-sequence",
+      "sourcePath": "skills/email-sequence",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-emerging-channels",
+      "sourcePath": "skills/emerging-channels",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-engagement-workflow",
+      "sourcePath": "skills/engagement-workflow",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-entity-audit",
+      "sourcePath": "skills/entity-audit",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-eval-config",
+      "sourcePath": "skills/eval-config",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-eval-content",
+      "sourcePath": "skills/eval-content",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-eval-suite",
+      "sourcePath": "skills/eval-suite",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-exec-summary",
+      "sourcePath": "skills/exec-summary",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-executive-dashboard",
+      "sourcePath": "skills/executive-dashboard",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-focus-group",
+      "sourcePath": "skills/focus-group",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-four-core-documents",
+      "sourcePath": "skills/four-core-documents",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-funnel-architect",
+      "sourcePath": "skills/funnel-architect",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-funnel-audit",
+      "sourcePath": "skills/funnel-audit",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-geo-monitor",
+      "sourcePath": "skills/geo-monitor",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-growth-engineering",
+      "sourcePath": "skills/growth-engineering",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-growth-plan",
+      "sourcePath": "skills/growth-plan",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-gsc-ai-performance",
+      "sourcePath": "skills/gsc-ai-performance",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-help",
+      "sourcePath": "skills/help",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-hreflang-check",
+      "sourcePath": "skills/hreflang-check",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-image-seo-audit",
+      "sourcePath": "skills/image-seo-audit",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-import-guidelines",
+      "sourcePath": "skills/import-guidelines",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-import-sop",
+      "sourcePath": "skills/import-sop",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-import-template",
+      "sourcePath": "skills/import-template",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-influencer-brief",
+      "sourcePath": "skills/influencer-brief",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-influencer-creator",
+      "sourcePath": "skills/influencer-creator",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-integrations",
+      "sourcePath": "skills/integrations",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-intelligence-report",
+      "sourcePath": "skills/intelligence-report",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-journey-design",
+      "sourcePath": "skills/journey-design",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-keyword-cluster",
+      "sourcePath": "skills/keyword-cluster",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-keyword-research",
+      "sourcePath": "skills/keyword-research",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-landing-page-audit",
+      "sourcePath": "skills/landing-page-audit",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-language-audit",
+      "sourcePath": "skills/language-audit",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-language-config",
+      "sourcePath": "skills/language-config",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-launch-ad-campaign",
+      "sourcePath": "skills/launch-ad-campaign",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-launch-campaign",
+      "sourcePath": "skills/launch-campaign",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-launch-plan",
+      "sourcePath": "skills/launch-plan",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-lead-import",
+      "sourcePath": "skills/lead-import",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-learn",
+      "sourcePath": "skills/learn",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-live-dashboard",
+      "sourcePath": "skills/live-dashboard",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-local-seo",
+      "sourcePath": "skills/local-seo",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-local-seo-audit",
+      "sourcePath": "skills/local-seo-audit",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-localize-campaign",
+      "sourcePath": "skills/localize-campaign",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-loop-detect",
+      "sourcePath": "skills/loop-detect",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-market-weather",
+      "sourcePath": "skills/market-weather",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-marketing-automation",
+      "sourcePath": "skills/marketing-automation",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-martech-audit",
+      "sourcePath": "skills/martech-audit",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-media-plan",
+      "sourcePath": "skills/media-plan",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-message-test",
+      "sourcePath": "skills/message-test",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-multilingual-score",
+      "sourcePath": "skills/multilingual-score",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-narrative-landscape",
+      "sourcePath": "skills/narrative-landscape",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-narrative-tracker",
+      "sourcePath": "skills/narrative-tracker",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-page-seo-analysis",
+      "sourcePath": "skills/page-seo-analysis",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-paid-advertising",
+      "sourcePath": "skills/paid-advertising",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-pdf-report",
+      "sourcePath": "skills/pdf-report",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-performance-check",
+      "sourcePath": "skills/performance-check",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-performance-report",
+      "sourcePath": "skills/performance-report",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-pipeline-update",
+      "sourcePath": "skills/pipeline-update",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-pr-pitch",
+      "sourcePath": "skills/pr-pitch",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-pricing-test",
+      "sourcePath": "skills/pricing-test",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-programmatic-seo",
+      "sourcePath": "skills/programmatic-seo",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-prompt-test",
+      "sourcePath": "skills/prompt-test",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-publish-blog",
+      "sourcePath": "skills/publish-blog",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-qbr-plan",
+      "sourcePath": "skills/qbr-plan",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-quality-report",
+      "sourcePath": "skills/quality-report",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-rank-monitor",
+      "sourcePath": "skills/rank-monitor",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-recall",
+      "sourcePath": "skills/recall",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-redirect-manager",
+      "sourcePath": "skills/redirect-manager",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-region-config",
+      "sourcePath": "skills/region-config",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-reputation-management",
+      "sourcePath": "skills/reputation-management",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-retargeting-strategy",
+      "sourcePath": "skills/retargeting-strategy",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-review-response",
+      "sourcePath": "skills/review-response",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-roi-calculator",
+      "sourcePath": "skills/roi-calculator",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-save-knowledge",
+      "sourcePath": "skills/save-knowledge",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-schedule-social",
+      "sourcePath": "skills/schedule-social",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-search-knowledge",
+      "sourcePath": "skills/search-knowledge",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-segment-audience",
+      "sourcePath": "skills/segment-audience",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-send-email-campaign",
+      "sourcePath": "skills/send-email-campaign",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-send-notification",
+      "sourcePath": "skills/send-notification",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-send-report",
+      "sourcePath": "skills/send-report",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-send-sms",
+      "sourcePath": "skills/send-sms",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-seo-audit",
+      "sourcePath": "skills/seo-audit",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-seo-drift",
+      "sourcePath": "skills/seo-drift",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-seo-implement",
+      "sourcePath": "skills/seo-implement",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-seo-plan",
+      "sourcePath": "skills/seo-plan",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-serp-tracker",
+      "sourcePath": "skills/serp-tracker",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-share-of-voice",
+      "sourcePath": "skills/share-of-voice",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-simulate",
+      "sourcePath": "skills/simulate",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-sitemap-manager",
+      "sourcePath": "skills/sitemap-manager",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-social-strategy",
+      "sourcePath": "skills/social-strategy",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-sop-library",
+      "sourcePath": "skills/sop-library",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-status",
+      "sourcePath": "skills/status",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-switch-brand",
+      "sourcePath": "skills/switch-brand",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-sync-memory",
+      "sourcePath": "skills/sync-memory",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-team-assign",
+      "sourcePath": "skills/team-assign",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-tech-seo-audit",
+      "sourcePath": "skills/tech-seo-audit",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-technical-seo",
+      "sourcePath": "skills/technical-seo",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-translate-content",
+      "sourcePath": "skills/translate-content",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-validate-output",
+      "sourcePath": "skills/validate-output",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-validate-profile",
+      "sourcePath": "skills/validate-profile",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-verify-claims",
+      "sourcePath": "skills/verify-claims",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-video-script",
+      "sourcePath": "skills/video-script",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-webinar-plan",
+      "sourcePath": "skills/webinar-plan",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-what-if",
+      "sourcePath": "skills/what-if",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-dmp-yearly-planner",
+      "sourcePath": "skills/yearly-planner",
+      "pack": "digital-marketing-pro",
+      "needsConfig": false,
+      "commit": "17bab0b94603442ac7b653dfc37fef699978e956"
+    },
+    {
+      "vendoredSlug": "mkt-adv-headline-matrix",
+      "sourcePath": "skills/copy-chief/headline-matrix",
+      "pack": "advertising-skills",
+      "needsConfig": false,
+      "commit": "45f4a4a1dabe24113193369b55b929b1de4ff04a"
+    },
+    {
+      "vendoredSlug": "mkt-adv-mechanism-builder",
+      "sourcePath": "skills/copy-chief/mechanism-builder",
+      "pack": "advertising-skills",
+      "needsConfig": false,
+      "commit": "45f4a4a1dabe24113193369b55b929b1de4ff04a"
+    },
+    {
+      "vendoredSlug": "mkt-adv-objection-crusher",
+      "sourcePath": "skills/copy-chief/objection-crusher",
+      "pack": "advertising-skills",
+      "needsConfig": false,
+      "commit": "45f4a4a1dabe24113193369b55b929b1de4ff04a"
+    },
+    {
+      "vendoredSlug": "mkt-adv-schwartz-awareness-mapper",
+      "sourcePath": "skills/copy-chief/schwartz-awareness-mapper",
+      "pack": "advertising-skills",
+      "needsConfig": false,
+      "commit": "45f4a4a1dabe24113193369b55b929b1de4ff04a"
+    },
+    {
+      "vendoredSlug": "mkt-adv-avatar-extraction",
+      "sourcePath": "skills/foundations/avatar-extraction",
+      "pack": "advertising-skills",
+      "needsConfig": false,
+      "commit": "45f4a4a1dabe24113193369b55b929b1de4ff04a"
+    },
+    {
+      "vendoredSlug": "mkt-adv-offer-extraction",
+      "sourcePath": "skills/foundations/offer-extraction",
+      "pack": "advertising-skills",
+      "needsConfig": false,
+      "commit": "45f4a4a1dabe24113193369b55b929b1de4ff04a"
+    },
+    {
+      "vendoredSlug": "mkt-adv-ad-angle-multiplier",
+      "sourcePath": "skills/operator-os/ad-angle-multiplier",
+      "pack": "advertising-skills",
+      "needsConfig": false,
+      "commit": "45f4a4a1dabe24113193369b55b929b1de4ff04a"
+    },
+    {
+      "vendoredSlug": "mkt-adv-conversion-path-builder",
+      "sourcePath": "skills/operator-os/conversion-path-builder",
+      "pack": "advertising-skills",
+      "needsConfig": false,
+      "commit": "45f4a4a1dabe24113193369b55b929b1de4ff04a"
+    },
+    {
+      "vendoredSlug": "mkt-adv-performance-diagnosis",
+      "sourcePath": "skills/operator-os/performance-diagnosis",
+      "pack": "advertising-skills",
+      "needsConfig": false,
+      "commit": "45f4a4a1dabe24113193369b55b929b1de4ff04a"
+    },
+    {
+      "vendoredSlug": "mkt-adv-scroll-stopping-creative",
+      "sourcePath": "skills/operator-os/scroll-stopping-creative",
+      "pack": "advertising-skills",
+      "needsConfig": false,
+      "commit": "45f4a4a1dabe24113193369b55b929b1de4ff04a"
+    },
+    {
+      "vendoredSlug": "mkt-adv-full-funnel-campaign-orchestrator",
+      "sourcePath": "skills/orchestrators/full-funnel-campaign-orchestrator",
+      "pack": "advertising-skills",
+      "needsConfig": false,
+      "commit": "45f4a4a1dabe24113193369b55b929b1de4ff04a"
+    },
+    {
+      "vendoredSlug": "mkt-adv-generic-language-killer",
+      "sourcePath": "skills/qa/generic-language-killer",
+      "pack": "advertising-skills",
+      "needsConfig": false,
+      "commit": "45f4a4a1dabe24113193369b55b929b1de4ff04a"
+    },
+    {
+      "vendoredSlug": "mkt-aso-ab-test-store-listing",
+      "sourcePath": "skills/ab-test-store-listing",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-android-aso",
+      "sourcePath": "skills/android-aso",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-app-analytics",
+      "sourcePath": "skills/app-analytics",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-app-clips",
+      "sourcePath": "skills/app-clips",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-app-icon-optimization",
+      "sourcePath": "skills/app-icon-optimization",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-app-launch",
+      "sourcePath": "skills/app-launch",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-app-marketing-context",
+      "sourcePath": "skills/app-marketing-context",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-app-preview-video",
+      "sourcePath": "skills/app-preview-video",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-app-rejection-recovery",
+      "sourcePath": "skills/app-rejection-recovery",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-app-store-featured",
+      "sourcePath": "skills/app-store-featured",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-apple-search-ads",
+      "sourcePath": "skills/apple-search-ads",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-asc-metrics",
+      "sourcePath": "skills/asc-metrics",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-aso-audit",
+      "sourcePath": "skills/aso-audit",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-aso-router",
+      "sourcePath": "skills/aso-router",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-attribution-setup",
+      "sourcePath": "skills/attribution-setup",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-category-positioning",
+      "sourcePath": "skills/category-positioning",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-competitor-analysis",
+      "sourcePath": "skills/competitor-analysis",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-competitor-tracking",
+      "sourcePath": "skills/competitor-tracking",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-crash-analytics",
+      "sourcePath": "skills/crash-analytics",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-creator-ugc-marketing",
+      "sourcePath": "skills/creator-ugc-marketing",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-custom-product-pages",
+      "sourcePath": "skills/custom-product-pages",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-in-app-events",
+      "sourcePath": "skills/in-app-events",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-keyword-research",
+      "sourcePath": "skills/keyword-research",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-localization",
+      "sourcePath": "skills/localization",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-market-movers",
+      "sourcePath": "skills/market-movers",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-market-pulse",
+      "sourcePath": "skills/market-pulse",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-metadata-optimization",
+      "sourcePath": "skills/metadata-optimization",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-monetization-strategy",
+      "sourcePath": "skills/monetization-strategy",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-onboarding-optimization",
+      "sourcePath": "skills/onboarding-optimization",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-paywall-optimization",
+      "sourcePath": "skills/paywall-optimization",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-press-and-pr",
+      "sourcePath": "skills/press-and-pr",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-rating-prompt-strategy",
+      "sourcePath": "skills/rating-prompt-strategy",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-referral-program",
+      "sourcePath": "skills/referral-program",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-retention-optimization",
+      "sourcePath": "skills/retention-optimization",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-review-management",
+      "sourcePath": "skills/review-management",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-screenshot-optimization",
+      "sourcePath": "skills/screenshot-optimization",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-seasonal-aso",
+      "sourcePath": "skills/seasonal-aso",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-subscription-lifecycle",
+      "sourcePath": "skills/subscription-lifecycle",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-ua-campaign",
+      "sourcePath": "skills/ua-campaign",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-aso-web-to-app-funnel",
+      "sourcePath": "skills/web-to-app-funnel",
+      "pack": "aso-skills",
+      "needsConfig": false,
+      "commit": "dbb99d2298ed0aa8bac7421073ea214a4556c6de"
+    },
+    {
+      "vendoredSlug": "mkt-brand-accessibility-audit",
+      "sourcePath": "dist/pi/.agents/skills/accessibility-audit",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-ads-creative-development",
+      "sourcePath": "dist/pi/.agents/skills/ads-creative-development",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-ads-performance-analytics",
+      "sourcePath": "dist/pi/.agents/skills/ads-performance-analytics",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-after-action-report",
+      "sourcePath": "dist/pi/.agents/skills/after-action-report",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-ai-content-collaboration",
+      "sourcePath": "dist/pi/.agents/skills/ai-content-collaboration",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-analytics-strategy",
+      "sourcePath": "dist/pi/.agents/skills/analytics-strategy",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-art-direction",
+      "sourcePath": "dist/pi/.agents/skills/art-direction",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-backup-and-disaster-recovery",
+      "sourcePath": "dist/pi/.agents/skills/backup-and-disaster-recovery",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-beta-program-management",
+      "sourcePath": "dist/pi/.agents/skills/beta-program-management",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-brand-archetype-system",
+      "sourcePath": "dist/pi/.agents/skills/brand-archetype-system",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-brand-discovery",
+      "sourcePath": "dist/pi/.agents/skills/brand-discovery",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-brand-ideation",
+      "sourcePath": "dist/pi/.agents/skills/brand-ideation",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-brand-identity",
+      "sourcePath": "dist/pi/.agents/skills/brand-identity",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-brand-style-guide",
+      "sourcePath": "dist/pi/.agents/skills/brand-style-guide",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-brand-voice",
+      "sourcePath": "dist/pi/.agents/skills/brand-voice",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-calculator-design",
+      "sourcePath": "dist/pi/.agents/skills/calculator-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-chatbot-flow-design",
+      "sourcePath": "dist/pi/.agents/skills/chatbot-flow-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-code-review-web",
+      "sourcePath": "dist/pi/.agents/skills/code-review-web",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-comparison-tool-design",
+      "sourcePath": "dist/pi/.agents/skills/comparison-tool-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-competitor-experience-audit",
+      "sourcePath": "dist/pi/.agents/skills/competitor-experience-audit",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-content-and-copy",
+      "sourcePath": "dist/pi/.agents/skills/content-and-copy",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-content-brief-authoring",
+      "sourcePath": "dist/pi/.agents/skills/content-brief-authoring",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-content-distribution",
+      "sourcePath": "dist/pi/.agents/skills/content-distribution",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-content-migration",
+      "sourcePath": "dist/pi/.agents/skills/content-migration",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-content-refresh-system",
+      "sourcePath": "dist/pi/.agents/skills/content-refresh-system",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-content-repurposing",
+      "sourcePath": "dist/pi/.agents/skills/content-repurposing",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-content-strategy",
+      "sourcePath": "dist/pi/.agents/skills/content-strategy",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-cost-optimization",
+      "sourcePath": "dist/pi/.agents/skills/cost-optimization",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-creative-brief",
+      "sourcePath": "dist/pi/.agents/skills/creative-brief",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-creative-brief-selector",
+      "sourcePath": "dist/pi/.agents/skills/creative-brief-selector",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-creative-direction",
+      "sourcePath": "dist/pi/.agents/skills/creative-direction",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-cro-optimization",
+      "sourcePath": "dist/pi/.agents/skills/cro-optimization",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-data-warehouse-experimentation",
+      "sourcePath": "dist/pi/.agents/skills/data-warehouse-experimentation",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-dependency-management",
+      "sourcePath": "dist/pi/.agents/skills/dependency-management",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-design-standards",
+      "sourcePath": "dist/pi/.agents/skills/design-standards",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-design-system",
+      "sourcePath": "dist/pi/.agents/skills/design-system",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-discovery-research-synthesis",
+      "sourcePath": "dist/pi/.agents/skills/discovery-research-synthesis",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-documentation-strategy",
+      "sourcePath": "dist/pi/.agents/skills/documentation-strategy",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-domain-strategy",
+      "sourcePath": "dist/pi/.agents/skills/domain-strategy",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-editorial-qa",
+      "sourcePath": "dist/pi/.agents/skills/editorial-qa",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-email-deliverability",
+      "sourcePath": "dist/pi/.agents/skills/email-deliverability",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-email-sequences",
+      "sourcePath": "dist/pi/.agents/skills/email-sequences",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-experiment-design",
+      "sourcePath": "dist/pi/.agents/skills/experiment-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-experimentation-analytics",
+      "sourcePath": "dist/pi/.agents/skills/experimentation-analytics",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-experimentation-platform-orchestrator",
+      "sourcePath": "dist/pi/.agents/skills/experimentation-platform-orchestrator",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-feature-flagging",
+      "sourcePath": "dist/pi/.agents/skills/feature-flagging",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-feature-launch-playbook",
+      "sourcePath": "dist/pi/.agents/skills/feature-launch-playbook",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-form-strategy",
+      "sourcePath": "dist/pi/.agents/skills/form-strategy",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-frontend-component-build",
+      "sourcePath": "dist/pi/.agents/skills/frontend-component-build",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-funnel-flow-architecture",
+      "sourcePath": "dist/pi/.agents/skills/funnel-flow-architecture",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-incident-response",
+      "sourcePath": "dist/pi/.agents/skills/incident-response",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-information-architecture",
+      "sourcePath": "dist/pi/.agents/skills/information-architecture",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-integration-orchestrator",
+      "sourcePath": "dist/pi/.agents/skills/integration-orchestrator",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-interactive-product-tour",
+      "sourcePath": "dist/pi/.agents/skills/interactive-product-tour",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-internationalization",
+      "sourcePath": "dist/pi/.agents/skills/internationalization",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-journey-mapping",
+      "sourcePath": "dist/pi/.agents/skills/journey-mapping",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-jtbd-framing",
+      "sourcePath": "dist/pi/.agents/skills/jtbd-framing",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-landing-page-copy",
+      "sourcePath": "dist/pi/.agents/skills/landing-page-copy",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-launch-runbook",
+      "sourcePath": "dist/pi/.agents/skills/launch-runbook",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-lead-magnet-design",
+      "sourcePath": "dist/pi/.agents/skills/lead-magnet-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-logo-design",
+      "sourcePath": "dist/pi/.agents/skills/logo-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-long-form-content-frameworks",
+      "sourcePath": "dist/pi/.agents/skills/long-form-content-frameworks",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-media-asset-management",
+      "sourcePath": "dist/pi/.agents/skills/media-asset-management",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-monitoring-and-alerting",
+      "sourcePath": "dist/pi/.agents/skills/monitoring-and-alerting",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-multi-step-form-design",
+      "sourcePath": "dist/pi/.agents/skills/multi-step-form-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-okr-design",
+      "sourcePath": "dist/pi/.agents/skills/okr-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-onboarding-wizard-design",
+      "sourcePath": "dist/pi/.agents/skills/onboarding-wizard-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-paid-media-strategy",
+      "sourcePath": "dist/pi/.agents/skills/paid-media-strategy",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-performance-optimization",
+      "sourcePath": "dist/pi/.agents/skills/performance-optimization",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-pillar-content-architecture",
+      "sourcePath": "dist/pi/.agents/skills/pillar-content-architecture",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-pm-spec-writing",
+      "sourcePath": "dist/pi/.agents/skills/pm-spec-writing",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-product-analytics-setup",
+      "sourcePath": "dist/pi/.agents/skills/product-analytics-setup",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-product-configurator-design",
+      "sourcePath": "dist/pi/.agents/skills/product-configurator-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-programmatic-seo",
+      "sourcePath": "dist/pi/.agents/skills/programmatic-seo",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-qa-testing",
+      "sourcePath": "dist/pi/.agents/skills/qa-testing",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-quiz-and-assessment-design",
+      "sourcePath": "dist/pi/.agents/skills/quiz-and-assessment-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-roadmap-planning",
+      "sourcePath": "dist/pi/.agents/skills/roadmap-planning",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-scheduler-and-booking-design",
+      "sourcePath": "dist/pi/.agents/skills/scheduler-and-booking-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-security-baseline",
+      "sourcePath": "dist/pi/.agents/skills/security-baseline",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-seo-aeo-geo",
+      "sourcePath": "dist/pi/.agents/skills/seo-aeo-geo",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-seo-audit-orchestration",
+      "sourcePath": "dist/pi/.agents/skills/seo-audit-orchestration",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-seo-backlink-audit",
+      "sourcePath": "dist/pi/.agents/skills/seo-backlink-audit",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-seo-competitor",
+      "sourcePath": "dist/pi/.agents/skills/seo-competitor",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-seo-content-audit",
+      "sourcePath": "dist/pi/.agents/skills/seo-content-audit",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-seo-content-gap-audit",
+      "sourcePath": "dist/pi/.agents/skills/seo-content-gap-audit",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-seo-keyword",
+      "sourcePath": "dist/pi/.agents/skills/seo-keyword",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-seo-keyword-gap-audit",
+      "sourcePath": "dist/pi/.agents/skills/seo-keyword-gap-audit",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-seo-offpage",
+      "sourcePath": "dist/pi/.agents/skills/seo-offpage",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-seo-onpage",
+      "sourcePath": "dist/pi/.agents/skills/seo-onpage",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-seo-rank-tracking",
+      "sourcePath": "dist/pi/.agents/skills/seo-rank-tracking",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-seo-site-health-audit",
+      "sourcePath": "dist/pi/.agents/skills/seo-site-health-audit",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-seo-technical",
+      "sourcePath": "dist/pi/.agents/skills/seo-technical",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-seo-traffic-diagnosis",
+      "sourcePath": "dist/pi/.agents/skills/seo-traffic-diagnosis",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skill-creation-walkthrough",
+      "sourcePath": "dist/pi/.agents/skills/skill-creation-walkthrough",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-stakeholder-communication",
+      "sourcePath": "dist/pi/.agents/skills/stakeholder-communication",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-team-onboarding-playbook",
+      "sourcePath": "dist/pi/.agents/skills/team-onboarding-playbook",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-upgrade-flow-design",
+      "sourcePath": "dist/pi/.agents/skills/upgrade-flow-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-usability-testing",
+      "sourcePath": "dist/pi/.agents/skills/usability-testing",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-user-feedback-aggregation",
+      "sourcePath": "dist/pi/.agents/skills/user-feedback-aggregation",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-ux-research",
+      "sourcePath": "dist/pi/.agents/skills/ux-research",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-vendor-evaluation",
+      "sourcePath": "dist/pi/.agents/skills/vendor-evaluation",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-vertical-site-conventions",
+      "sourcePath": "dist/pi/.agents/skills/vertical-site-conventions",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-accessibility-audit",
+      "sourcePath": "skills/accessibility-audit",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-ads-creative-development",
+      "sourcePath": "skills/ads-creative-development",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-ads-performance-analytics",
+      "sourcePath": "skills/ads-performance-analytics",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-after-action-report",
+      "sourcePath": "skills/after-action-report",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-ai-content-collaboration",
+      "sourcePath": "skills/ai-content-collaboration",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-analytics-strategy",
+      "sourcePath": "skills/analytics-strategy",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-art-direction",
+      "sourcePath": "skills/art-direction",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-backup-and-disaster-recovery",
+      "sourcePath": "skills/backup-and-disaster-recovery",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-beta-program-management",
+      "sourcePath": "skills/beta-program-management",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-brand-archetype-system",
+      "sourcePath": "skills/brand-archetype-system",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-brand-discovery",
+      "sourcePath": "skills/brand-discovery",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-brand-ideation",
+      "sourcePath": "skills/brand-ideation",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-brand-identity",
+      "sourcePath": "skills/brand-identity",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-brand-style-guide",
+      "sourcePath": "skills/brand-style-guide",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-brand-voice",
+      "sourcePath": "skills/brand-voice",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-calculator-design",
+      "sourcePath": "skills/calculator-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-chatbot-flow-design",
+      "sourcePath": "skills/chatbot-flow-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-code-review-web",
+      "sourcePath": "skills/code-review-web",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-comparison-tool-design",
+      "sourcePath": "skills/comparison-tool-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-competitor-experience-audit",
+      "sourcePath": "skills/competitor-experience-audit",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-content-and-copy",
+      "sourcePath": "skills/content-and-copy",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-content-brief-authoring",
+      "sourcePath": "skills/content-brief-authoring",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-content-distribution",
+      "sourcePath": "skills/content-distribution",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-content-migration",
+      "sourcePath": "skills/content-migration",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-content-refresh-system",
+      "sourcePath": "skills/content-refresh-system",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-content-repurposing",
+      "sourcePath": "skills/content-repurposing",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-content-strategy",
+      "sourcePath": "skills/content-strategy",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-cost-optimization",
+      "sourcePath": "skills/cost-optimization",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-creative-brief",
+      "sourcePath": "skills/creative-brief",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-creative-brief-selector",
+      "sourcePath": "skills/creative-brief-selector",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-creative-direction",
+      "sourcePath": "skills/creative-direction",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-cro-optimization",
+      "sourcePath": "skills/cro-optimization",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-data-warehouse-experimentation",
+      "sourcePath": "skills/data-warehouse-experimentation",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-dependency-management",
+      "sourcePath": "skills/dependency-management",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-design-standards",
+      "sourcePath": "skills/design-standards",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-design-system",
+      "sourcePath": "skills/design-system",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-discovery-research-synthesis",
+      "sourcePath": "skills/discovery-research-synthesis",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-documentation-strategy",
+      "sourcePath": "skills/documentation-strategy",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-domain-strategy",
+      "sourcePath": "skills/domain-strategy",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-editorial-qa",
+      "sourcePath": "skills/editorial-qa",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-email-deliverability",
+      "sourcePath": "skills/email-deliverability",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-email-sequences",
+      "sourcePath": "skills/email-sequences",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-evidence-based-reviews",
+      "sourcePath": "skills/evidence-based-reviews",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-experiment-design",
+      "sourcePath": "skills/experiment-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-experimentation-analytics",
+      "sourcePath": "skills/experimentation-analytics",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-experimentation-platform-orchestrator",
+      "sourcePath": "skills/experimentation-platform-orchestrator",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-feature-flagging",
+      "sourcePath": "skills/feature-flagging",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-feature-launch-playbook",
+      "sourcePath": "skills/feature-launch-playbook",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-form-strategy",
+      "sourcePath": "skills/form-strategy",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-frontend-component-build",
+      "sourcePath": "skills/frontend-component-build",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-funnel-flow-architecture",
+      "sourcePath": "skills/funnel-flow-architecture",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-incident-response",
+      "sourcePath": "skills/incident-response",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-information-architecture",
+      "sourcePath": "skills/information-architecture",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-integration-orchestrator",
+      "sourcePath": "skills/integration-orchestrator",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-interactive-product-tour",
+      "sourcePath": "skills/interactive-product-tour",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-internationalization",
+      "sourcePath": "skills/internationalization",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-journey-mapping",
+      "sourcePath": "skills/journey-mapping",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-jtbd-framing",
+      "sourcePath": "skills/jtbd-framing",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-landing-page-copy",
+      "sourcePath": "skills/landing-page-copy",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-launch-runbook",
+      "sourcePath": "skills/launch-runbook",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-lead-magnet-design",
+      "sourcePath": "skills/lead-magnet-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-logo-design",
+      "sourcePath": "skills/logo-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-long-form-content-frameworks",
+      "sourcePath": "skills/long-form-content-frameworks",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-media-asset-management",
+      "sourcePath": "skills/media-asset-management",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-monitoring-and-alerting",
+      "sourcePath": "skills/monitoring-and-alerting",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-multi-step-form-design",
+      "sourcePath": "skills/multi-step-form-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-okr-design",
+      "sourcePath": "skills/okr-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-onboarding-wizard-design",
+      "sourcePath": "skills/onboarding-wizard-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-paid-media-strategy",
+      "sourcePath": "skills/paid-media-strategy",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-performance-optimization",
+      "sourcePath": "skills/performance-optimization",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-pillar-content-architecture",
+      "sourcePath": "skills/pillar-content-architecture",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-pm-spec-writing",
+      "sourcePath": "skills/pm-spec-writing",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-product-analytics-setup",
+      "sourcePath": "skills/product-analytics-setup",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-product-configurator-design",
+      "sourcePath": "skills/product-configurator-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-programmatic-seo",
+      "sourcePath": "skills/programmatic-seo",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-qa-testing",
+      "sourcePath": "skills/qa-testing",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-quiz-and-assessment-design",
+      "sourcePath": "skills/quiz-and-assessment-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-roadmap-planning",
+      "sourcePath": "skills/roadmap-planning",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-scheduler-and-booking-design",
+      "sourcePath": "skills/scheduler-and-booking-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-security-baseline",
+      "sourcePath": "skills/security-baseline",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-seo-aeo-geo",
+      "sourcePath": "skills/seo-aeo-geo",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-seo-audit-orchestration",
+      "sourcePath": "skills/seo-audit-orchestration",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-seo-backlink-audit",
+      "sourcePath": "skills/seo-backlink-audit",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-seo-competitor",
+      "sourcePath": "skills/seo-competitor",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-seo-content-audit",
+      "sourcePath": "skills/seo-content-audit",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-seo-content-gap-audit",
+      "sourcePath": "skills/seo-content-gap-audit",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-seo-keyword",
+      "sourcePath": "skills/seo-keyword",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-seo-keyword-gap-audit",
+      "sourcePath": "skills/seo-keyword-gap-audit",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-seo-offpage",
+      "sourcePath": "skills/seo-offpage",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-seo-onpage",
+      "sourcePath": "skills/seo-onpage",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-seo-rank-tracking",
+      "sourcePath": "skills/seo-rank-tracking",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-seo-site-health-audit",
+      "sourcePath": "skills/seo-site-health-audit",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-seo-technical",
+      "sourcePath": "skills/seo-technical",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-seo-traffic-diagnosis",
+      "sourcePath": "skills/seo-traffic-diagnosis",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-skill-creation-walkthrough",
+      "sourcePath": "skills/skill-creation-walkthrough",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-stakeholder-communication",
+      "sourcePath": "skills/stakeholder-communication",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-team-onboarding-playbook",
+      "sourcePath": "skills/team-onboarding-playbook",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-upgrade-flow-design",
+      "sourcePath": "skills/upgrade-flow-design",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-usability-testing",
+      "sourcePath": "skills/usability-testing",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-user-feedback-aggregation",
+      "sourcePath": "skills/user-feedback-aggregation",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-ux-research",
+      "sourcePath": "skills/ux-research",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-vendor-evaluation",
+      "sourcePath": "skills/vendor-evaluation",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-brand-skills-vertical-site-conventions",
+      "sourcePath": "skills/vertical-site-conventions",
+      "pack": "brand-build-skills",
+      "needsConfig": false,
+      "commit": "c0b6ba8004ec12985d0a336197b1800adfb5a9dd"
+    },
+    {
+      "vendoredSlug": "mkt-screenshots",
+      "sourcePath": "(stub)",
+      "pack": "mkt-screenshots",
+      "needsConfig": true,
+      "commit": "stub"
+    },
+    {
+      "vendoredSlug": "create-ui-baseline-ui",
+      "sourcePath": "skills/baseline-ui",
+      "pack": "ui-skills",
+      "needsConfig": false,
+      "commit": "ec9ea2bbb53a0ddc7f8356c9030e2a3e4fe21149"
+    },
+    {
+      "vendoredSlug": "create-ui-fixing-accessibility",
+      "sourcePath": "skills/fixing-accessibility",
+      "pack": "ui-skills",
+      "needsConfig": false,
+      "commit": "ec9ea2bbb53a0ddc7f8356c9030e2a3e4fe21149"
+    },
+    {
+      "vendoredSlug": "create-ui-fixing-metadata",
+      "sourcePath": "skills/fixing-metadata",
+      "pack": "ui-skills",
+      "needsConfig": false,
+      "commit": "ec9ea2bbb53a0ddc7f8356c9030e2a3e4fe21149"
+    },
+    {
+      "vendoredSlug": "create-ui-fixing-motion-performance",
+      "sourcePath": "skills/fixing-motion-performance",
+      "pack": "ui-skills",
+      "needsConfig": false,
+      "commit": "ec9ea2bbb53a0ddc7f8356c9030e2a3e4fe21149"
+    },
+    {
+      "vendoredSlug": "create-ui-ui-skills-root",
+      "sourcePath": "skills/ui-skills-root",
+      "pack": "ui-skills",
+      "needsConfig": false,
+      "commit": "ec9ea2bbb53a0ddc7f8356c9030e2a3e4fe21149"
+    },
+    {
+      "vendoredSlug": "create-threejs-threejs-animation",
+      "sourcePath": "skills/threejs-animation",
+      "pack": "threejs-skills",
+      "needsConfig": false,
+      "commit": "b1c623076c661fc9b03dac19292e825a5d106823"
+    },
+    {
+      "vendoredSlug": "create-threejs-threejs-fundamentals",
+      "sourcePath": "skills/threejs-fundamentals",
+      "pack": "threejs-skills",
+      "needsConfig": false,
+      "commit": "b1c623076c661fc9b03dac19292e825a5d106823"
+    },
+    {
+      "vendoredSlug": "create-threejs-threejs-geometry",
+      "sourcePath": "skills/threejs-geometry",
+      "pack": "threejs-skills",
+      "needsConfig": false,
+      "commit": "b1c623076c661fc9b03dac19292e825a5d106823"
+    },
+    {
+      "vendoredSlug": "create-threejs-threejs-interaction",
+      "sourcePath": "skills/threejs-interaction",
+      "pack": "threejs-skills",
+      "needsConfig": false,
+      "commit": "b1c623076c661fc9b03dac19292e825a5d106823"
+    },
+    {
+      "vendoredSlug": "create-threejs-threejs-lighting",
+      "sourcePath": "skills/threejs-lighting",
+      "pack": "threejs-skills",
+      "needsConfig": false,
+      "commit": "b1c623076c661fc9b03dac19292e825a5d106823"
+    },
+    {
+      "vendoredSlug": "create-threejs-threejs-loaders",
+      "sourcePath": "skills/threejs-loaders",
+      "pack": "threejs-skills",
+      "needsConfig": false,
+      "commit": "b1c623076c661fc9b03dac19292e825a5d106823"
+    },
+    {
+      "vendoredSlug": "create-threejs-threejs-materials",
+      "sourcePath": "skills/threejs-materials",
+      "pack": "threejs-skills",
+      "needsConfig": false,
+      "commit": "b1c623076c661fc9b03dac19292e825a5d106823"
+    },
+    {
+      "vendoredSlug": "create-threejs-threejs-postprocessing",
+      "sourcePath": "skills/threejs-postprocessing",
+      "pack": "threejs-skills",
+      "needsConfig": false,
+      "commit": "b1c623076c661fc9b03dac19292e825a5d106823"
+    },
+    {
+      "vendoredSlug": "create-threejs-threejs-shaders",
+      "sourcePath": "skills/threejs-shaders",
+      "pack": "threejs-skills",
+      "needsConfig": false,
+      "commit": "b1c623076c661fc9b03dac19292e825a5d106823"
+    },
+    {
+      "vendoredSlug": "create-threejs-threejs-textures",
+      "sourcePath": "skills/threejs-textures",
+      "pack": "threejs-skills",
+      "needsConfig": false,
+      "commit": "b1c623076c661fc9b03dac19292e825a5d106823"
+    },
+    {
+      "vendoredSlug": "create-color-expert",
+      "sourcePath": ".",
+      "pack": "create-color-expert",
+      "needsConfig": false,
+      "commit": "2e8e847e5856c170337b729c426c0af14dde1f11"
+    },
+    {
+      "vendoredSlug": "create-taste-skill",
+      "sourcePath": "skills/taste-skill",
+      "pack": "create-taste-skill",
+      "needsConfig": false,
+      "commit": "5285855df6719b6efb95d5268359e752d3d79045"
+    },
+    {
+      "vendoredSlug": "create-youtube-clipper",
+      "sourcePath": ".",
+      "pack": "create-youtube-clipper",
+      "needsConfig": false,
+      "commit": "f31f077ee0905c95a510a6f34bbd0c3c85b15129"
+    },
+    {
+      "vendoredSlug": "office-epub",
+      "sourcePath": "markdown-to-epub",
+      "pack": "office-epub",
+      "needsConfig": false,
+      "commit": "7c0723087b9f6ec2352b42b73f61d224b542e059"
+    },
+    {
+      "vendoredSlug": "dev-playwright",
+      "sourcePath": ".",
+      "pack": "dev-playwright",
+      "needsConfig": false,
+      "commit": "3409463d460fd6b0f0b381c64a309c1245b522d3"
+    },
+    {
+      "vendoredSlug": "dev-next-best-practices",
+      "sourcePath": "skills/react-best-practices",
+      "pack": "dev-next-best-practices",
+      "needsConfig": false,
+      "commit": "f8a72b9603728bb92a217a879b7e62e43ad76c81"
+    },
+    {
+      "vendoredSlug": "brainstorm-structured",
+      "sourcePath": "skills/brainstorming",
+      "pack": "brainstorm-structured",
+      "needsConfig": false,
+      "commit": "896224c4b1879920ab573417e68fd51d2ccc9072"
+    },
+    {
+      "vendoredSlug": "edu-recursive-research",
+      "sourcePath": "plugins/recursive-research/skills/recursive-research",
+      "pack": "edu-recursive-research",
+      "needsConfig": false,
+      "commit": "15ed326ae7162c674d7a1e477724148fa4435528"
+    },
+    {
+      "vendoredSlug": "edu-tutor-skills",
+      "sourcePath": "skills/tutor",
+      "pack": "edu-tutor-skills",
+      "needsConfig": false,
+      "commit": "397110c9fefbc6bd5444277686600aec28063c05"
+    },
+    {
+      "vendoredSlug": "edu-sci-adaptyv",
+      "sourcePath": "skills/adaptyv",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-aeon",
+      "sourcePath": "skills/aeon",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-anndata",
+      "sourcePath": "skills/anndata",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-arbor",
+      "sourcePath": "skills/arbor",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-arboreto",
+      "sourcePath": "skills/arboreto",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-astropy",
+      "sourcePath": "skills/astropy",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-autoskill",
+      "sourcePath": "skills/autoskill",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-benchling-integration",
+      "sourcePath": "skills/benchling-integration",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-bgpt-paper-search",
+      "sourcePath": "skills/bgpt-paper-search",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-bids",
+      "sourcePath": "skills/bids",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-biopython",
+      "sourcePath": "skills/biopython",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-bioservices",
+      "sourcePath": "skills/bioservices",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-bulk-rnaseq",
+      "sourcePath": "skills/bulk-rnaseq",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-cellxgene-census",
+      "sourcePath": "skills/cellxgene-census",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-cirq",
+      "sourcePath": "skills/cirq",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-citation-management",
+      "sourcePath": "skills/citation-management",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-clinical-decision-support",
+      "sourcePath": "skills/clinical-decision-support",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-clinical-reports",
+      "sourcePath": "skills/clinical-reports",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-cobrapy",
+      "sourcePath": "skills/cobrapy",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-consciousness-council",
+      "sourcePath": "skills/consciousness-council",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-dask",
+      "sourcePath": "skills/dask",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-database-lookup",
+      "sourcePath": "skills/database-lookup",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-datamol",
+      "sourcePath": "skills/datamol",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-deepchem",
+      "sourcePath": "skills/deepchem",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-deeptools",
+      "sourcePath": "skills/deeptools",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-depmap",
+      "sourcePath": "skills/depmap",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-dhdna-profiler",
+      "sourcePath": "skills/dhdna-profiler",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-diffdock",
+      "sourcePath": "skills/diffdock",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-dnanexus-integration",
+      "sourcePath": "skills/dnanexus-integration",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-docx",
+      "sourcePath": "skills/docx",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-esm",
+      "sourcePath": "skills/esm",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-etetoolkit",
+      "sourcePath": "skills/etetoolkit",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-exa-search",
+      "sourcePath": "skills/exa-search",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-experimental-design",
+      "sourcePath": "skills/experimental-design",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-exploratory-data-analysis",
+      "sourcePath": "skills/exploratory-data-analysis",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-flowio",
+      "sourcePath": "skills/flowio",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-fluidsim",
+      "sourcePath": "skills/fluidsim",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-generate-image",
+      "sourcePath": "skills/generate-image",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-geniml",
+      "sourcePath": "skills/geniml",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-geomaster",
+      "sourcePath": "skills/geomaster",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-geopandas",
+      "sourcePath": "skills/geopandas",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-get-available-resources",
+      "sourcePath": "skills/get-available-resources",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-gget",
+      "sourcePath": "skills/gget",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-ginkgo-cloud-lab",
+      "sourcePath": "skills/ginkgo-cloud-lab",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-glycoengineering",
+      "sourcePath": "skills/glycoengineering",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-gtars",
+      "sourcePath": "skills/gtars",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-histolab",
+      "sourcePath": "skills/histolab",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-hugging-science",
+      "sourcePath": "skills/hugging-science",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-hypogenic",
+      "sourcePath": "skills/hypogenic",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-hypothesis-generation",
+      "sourcePath": "skills/hypothesis-generation",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-imaging-data-commons",
+      "sourcePath": "skills/imaging-data-commons",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-infographics",
+      "sourcePath": "skills/infographics",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-iso-13485-certification",
+      "sourcePath": "skills/iso-13485-certification",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-labarchive-integration",
+      "sourcePath": "skills/labarchive-integration",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-lamindb",
+      "sourcePath": "skills/lamindb",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-latchbio-integration",
+      "sourcePath": "skills/latchbio-integration",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-latex-posters",
+      "sourcePath": "skills/latex-posters",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-liteparse",
+      "sourcePath": "skills/liteparse",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-literature-review",
+      "sourcePath": "skills/literature-review",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-markdown-mermaid-writing",
+      "sourcePath": "skills/markdown-mermaid-writing",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-market-research-reports",
+      "sourcePath": "skills/market-research-reports",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-markitdown",
+      "sourcePath": "skills/markitdown",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-matchms",
+      "sourcePath": "skills/matchms",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-matlab",
+      "sourcePath": "skills/matlab",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-matplotlib",
+      "sourcePath": "skills/matplotlib",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-medchem",
+      "sourcePath": "skills/medchem",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-modal",
+      "sourcePath": "skills/modal",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-molecular-dynamics",
+      "sourcePath": "skills/molecular-dynamics",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-molfeat",
+      "sourcePath": "skills/molfeat",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-networkx",
+      "sourcePath": "skills/networkx",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-neurokit2",
+      "sourcePath": "skills/neurokit2",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-neuropixels-analysis",
+      "sourcePath": "skills/neuropixels-analysis",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-nextflow",
+      "sourcePath": "skills/nextflow",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-omero-integration",
+      "sourcePath": "skills/omero-integration",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-open-notebook",
+      "sourcePath": "skills/open-notebook",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-opentrons-integration",
+      "sourcePath": "skills/opentrons-integration",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-optimize-for-gpu",
+      "sourcePath": "skills/optimize-for-gpu",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-pacsomatic",
+      "sourcePath": "skills/pacsomatic",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-paper-lookup",
+      "sourcePath": "skills/paper-lookup",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-paperzilla",
+      "sourcePath": "skills/paperzilla",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-parallel-web",
+      "sourcePath": "skills/parallel-web",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-pathml",
+      "sourcePath": "skills/pathml",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-pathway-enrichment",
+      "sourcePath": "skills/pathway-enrichment",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-pdf",
+      "sourcePath": "skills/pdf",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-peer-review",
+      "sourcePath": "skills/peer-review",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-pennylane",
+      "sourcePath": "skills/pennylane",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-phylogenetics",
+      "sourcePath": "skills/phylogenetics",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-pi-agent",
+      "sourcePath": "skills/pi-agent",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-polars",
+      "sourcePath": "skills/polars",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-polars-bio",
+      "sourcePath": "skills/polars-bio",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-pptx",
+      "sourcePath": "skills/pptx",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-pptx-posters",
+      "sourcePath": "skills/pptx-posters",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-primekg",
+      "sourcePath": "skills/primekg",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-protocolsio-integration",
+      "sourcePath": "skills/protocolsio-integration",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-pufferlib",
+      "sourcePath": "skills/pufferlib",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-pydeseq2",
+      "sourcePath": "skills/pydeseq2",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-pydicom",
+      "sourcePath": "skills/pydicom",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-pyhealth",
+      "sourcePath": "skills/pyhealth",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-pylabrobot",
+      "sourcePath": "skills/pylabrobot",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-pymatgen",
+      "sourcePath": "skills/pymatgen",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-pymc",
+      "sourcePath": "skills/pymc",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-pymoo",
+      "sourcePath": "skills/pymoo",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-pyopenms",
+      "sourcePath": "skills/pyopenms",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-pysam",
+      "sourcePath": "skills/pysam",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-pytdc",
+      "sourcePath": "skills/pytdc",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-pytorch-lightning",
+      "sourcePath": "skills/pytorch-lightning",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-pyzotero",
+      "sourcePath": "skills/pyzotero",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-qiskit",
+      "sourcePath": "skills/qiskit",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-qutip",
+      "sourcePath": "skills/qutip",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-rdkit",
+      "sourcePath": "skills/rdkit",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-research-grants",
+      "sourcePath": "skills/research-grants",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-research-lookup",
+      "sourcePath": "skills/research-lookup",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-rowan",
+      "sourcePath": "skills/rowan",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-scanpy",
+      "sourcePath": "skills/scanpy",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-scholar-evaluation",
+      "sourcePath": "skills/scholar-evaluation",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-scientific-brainstorming",
+      "sourcePath": "skills/scientific-brainstorming",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-scientific-critical-thinking",
+      "sourcePath": "skills/scientific-critical-thinking",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-scientific-schematics",
+      "sourcePath": "skills/scientific-schematics",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-scientific-slides",
+      "sourcePath": "skills/scientific-slides",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-scientific-visualization",
+      "sourcePath": "skills/scientific-visualization",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-scientific-writing",
+      "sourcePath": "skills/scientific-writing",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-scikit-bio",
+      "sourcePath": "skills/scikit-bio",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-scikit-learn",
+      "sourcePath": "skills/scikit-learn",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-scikit-survival",
+      "sourcePath": "skills/scikit-survival",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-scvelo",
+      "sourcePath": "skills/scvelo",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-scvi-tools",
+      "sourcePath": "skills/scvi-tools",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-seaborn",
+      "sourcePath": "skills/seaborn",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-shap",
+      "sourcePath": "skills/shap",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-simpy",
+      "sourcePath": "skills/simpy",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-stable-baselines3",
+      "sourcePath": "skills/stable-baselines3",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-statistical-analysis",
+      "sourcePath": "skills/statistical-analysis",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-statistical-power",
+      "sourcePath": "skills/statistical-power",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-statsmodels",
+      "sourcePath": "skills/statsmodels",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-sympy",
+      "sourcePath": "skills/sympy",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-tiledbvcf",
+      "sourcePath": "skills/tiledbvcf",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-timesfm-forecasting",
+      "sourcePath": "skills/timesfm-forecasting",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-torch-geometric",
+      "sourcePath": "skills/torch-geometric",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-torchdrug",
+      "sourcePath": "skills/torchdrug",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-transformers",
+      "sourcePath": "skills/transformers",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-treatment-plans",
+      "sourcePath": "skills/treatment-plans",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-umap-learn",
+      "sourcePath": "skills/umap-learn",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-usfiscaldata",
+      "sourcePath": "skills/usfiscaldata",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-vaex",
+      "sourcePath": "skills/vaex",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-venue-templates",
+      "sourcePath": "skills/venue-templates",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-what-if-oracle",
+      "sourcePath": "skills/what-if-oracle",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-xlsx",
+      "sourcePath": "skills/xlsx",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "edu-sci-zarr-python",
+      "sourcePath": "skills/zarr-python",
+      "pack": "claude-scientific-skills",
+      "needsConfig": false,
+      "commit": "209390194c85b3466259853417eeac81ea4f0976"
+    },
+    {
+      "vendoredSlug": "office-ecom",
+      "sourcePath": "skills/ecom",
+      "pack": "office-ecom",
+      "needsConfig": false,
+      "commit": "7ddf7ffb823fd7ab6015e699d01cdc436739eb2b"
+    },
+    {
+      "vendoredSlug": "create-nanobanana-ppt",
+      "sourcePath": ".",
+      "pack": "create-nanobanana-ppt",
+      "needsConfig": true,
+      "commit": "0c18b9abde04ad42f4f62c7e9ead346b7bb39260"
+    },
+    {
+      "vendoredSlug": "create-ai-music",
+      "sourcePath": "skills/session-start",
+      "pack": "create-ai-music",
+      "needsConfig": true,
+      "commit": "2799438df88d37c35da1f94d2f8499a4ed2ceffa"
+    },
+    {
+      "vendoredSlug": "create-wonda",
+      "sourcePath": "skills/wonda-cli",
+      "pack": "create-wonda",
+      "needsConfig": true,
+      "commit": "9e7e1a2cd63849354ab5802371c81f7b65ea9f57"
+    },
+    {
+      "vendoredSlug": "office-nutrient",
+      "sourcePath": "nutrient-document-processing",
+      "pack": "office-nutrient",
+      "needsConfig": true,
+      "commit": "4d150575a5bb852306a9b72c78a97a62557651ed"
+    },
+    {
+      "vendoredSlug": "video-db-python",
+      "sourcePath": "python",
+      "pack": "video-db",
+      "needsConfig": true,
+      "commit": "cba377bb92fe151c37a4bb2f29c29325aba6156f"
+    },
+    {
+      "vendoredSlug": "mkt-typefully-typefully",
+      "sourcePath": "skills/typefully",
+      "pack": "typefully",
+      "needsConfig": true,
+      "commit": "e05cb7bb5b020fa8f96daed62b2f7252ada8ee36"
+    },
+    {
+      "vendoredSlug": "fal-character-design",
+      "sourcePath": "skills/character-design",
+      "pack": "fal-ai",
+      "needsConfig": true,
+      "commit": "9ca850412943251fc9a466c4c29fdaf7a303a3d8"
+    },
+    {
+      "vendoredSlug": "fal-cinematography",
+      "sourcePath": "skills/cinematography",
+      "pack": "fal-ai",
+      "needsConfig": true,
+      "commit": "9ca850412943251fc9a466c4c29fdaf7a303a3d8"
+    },
+    {
+      "vendoredSlug": "fal-commercial",
+      "sourcePath": "skills/commercial",
+      "pack": "fal-ai",
+      "needsConfig": true,
+      "commit": "9ca850412943251fc9a466c4c29fdaf7a303a3d8"
+    },
+    {
+      "vendoredSlug": "fal-gamedev",
+      "sourcePath": "skills/fal-gamedev",
+      "pack": "fal-ai",
+      "needsConfig": true,
+      "commit": "9ca850412943251fc9a466c4c29fdaf7a303a3d8"
+    },
+    {
+      "vendoredSlug": "fal-models-catalog",
+      "sourcePath": "skills/fal-models-catalog",
+      "pack": "fal-ai",
+      "needsConfig": true,
+      "commit": "9ca850412943251fc9a466c4c29fdaf7a303a3d8"
+    },
+    {
+      "vendoredSlug": "fal-prompting",
+      "sourcePath": "skills/fal-prompting",
+      "pack": "fal-ai",
+      "needsConfig": true,
+      "commit": "9ca850412943251fc9a466c4c29fdaf7a303a3d8"
+    },
+    {
+      "vendoredSlug": "fal-recipes",
+      "sourcePath": "skills/fal-recipes",
+      "pack": "fal-ai",
+      "needsConfig": true,
+      "commit": "9ca850412943251fc9a466c4c29fdaf7a303a3d8"
+    },
+    {
+      "vendoredSlug": "fal-redesign",
+      "sourcePath": "skills/fal-redesign",
+      "pack": "fal-ai",
+      "needsConfig": true,
+      "commit": "9ca850412943251fc9a466c4c29fdaf7a303a3d8"
+    },
+    {
+      "vendoredSlug": "fal-regenerate-3d",
+      "sourcePath": "skills/fal-regenerate-3d",
+      "pack": "fal-ai",
+      "needsConfig": true,
+      "commit": "9ca850412943251fc9a466c4c29fdaf7a303a3d8"
+    },
+    {
+      "vendoredSlug": "fal-workflow",
+      "sourcePath": "skills/fal-workflow",
+      "pack": "fal-ai",
+      "needsConfig": true,
+      "commit": "9ca850412943251fc9a466c4c29fdaf7a303a3d8"
+    },
+    {
+      "vendoredSlug": "fal-fan-cam",
+      "sourcePath": "skills/fan-cam",
+      "pack": "fal-ai",
+      "needsConfig": true,
+      "commit": "9ca850412943251fc9a466c4c29fdaf7a303a3d8"
+    },
+    {
+      "vendoredSlug": "fal-genmedia",
+      "sourcePath": "skills/genmedia",
+      "pack": "fal-ai",
+      "needsConfig": true,
+      "commit": "9ca850412943251fc9a466c4c29fdaf7a303a3d8"
+    },
+    {
+      "vendoredSlug": "fal-genmedia-workflow",
+      "sourcePath": "skills/genmedia-workflow",
+      "pack": "fal-ai",
+      "needsConfig": true,
+      "commit": "9ca850412943251fc9a466c4c29fdaf7a303a3d8"
+    },
+    {
+      "vendoredSlug": "fal-marketing",
+      "sourcePath": "skills/marketing",
+      "pack": "fal-ai",
+      "needsConfig": true,
+      "commit": "9ca850412943251fc9a466c4c29fdaf7a303a3d8"
+    },
+    {
+      "vendoredSlug": "fal-model-routing",
+      "sourcePath": "skills/model-routing",
+      "pack": "fal-ai",
+      "needsConfig": true,
+      "commit": "9ca850412943251fc9a466c4c29fdaf7a303a3d8"
+    },
+    {
+      "vendoredSlug": "fal-storytelling",
+      "sourcePath": "skills/storytelling",
+      "pack": "fal-ai",
+      "needsConfig": true,
+      "commit": "9ca850412943251fc9a466c4c29fdaf7a303a3d8"
+    },
+    {
+      "vendoredSlug": "fal-ugc",
+      "sourcePath": "skills/ugc",
+      "pack": "fal-ai",
+      "needsConfig": true,
+      "commit": "9ca850412943251fc9a466c4c29fdaf7a303a3d8"
+    },
+    {
+      "vendoredSlug": "dev-sentry-sdk-setup",
+      "sourcePath": "(stub)",
+      "pack": "sentry",
+      "needsConfig": true,
+      "commit": "stub"
+    }
+  ],
+  "failures": [
+    {
+      "vendoredSlug": "mkt-screenshots",
+      "reason": "git clone --depth 1 --branch main https://github.com/Shpigford/skills.git C:\\Users\\rufen\\AppData\\Local\\Temp\\pilotdeck-vendor-eco-1781877438778-n7gr8i\\repo failed: Cloning into 'C:\\Users\\rufen\\AppData\\Local\\Temp\\pilotdeck-vendor-eco-1781877438778-n7gr8i\\repo'...\nremote: Repository not found.\nfatal: repository 'https://github.com/Shpigford/skills.git/' not found",
+      "pack": "mkt-screenshots"
+    },
+    {
+      "vendoredSlug": "hamelsmu-evals",
+      "reason": "git clone --depth 1 --branch main https://github.com/hamelsmu/prompts.git C:\\Users\\rufen\\AppData\\Local\\Temp\\pilotdeck-vendor-eco-1781877471631-fduzi1\\repo failed: Cloning into 'C:\\Users\\rufen\\AppData\\Local\\Temp\\pilotdeck-vendor-eco-1781877471631-fduzi1\\repo'...\nremote: Repository not found.\nfatal: repository 'https://github.com/hamelsmu/prompts.git/' not found",
+      "pack": "hamelsmu-evals"
+    },
+    {
+      "vendoredSlug": "office-minimax-docx",
+      "reason": "git clone --depth 1 --branch main https://github.com/MiniMax-AI/agent-skills.git C:\\Users\\rufen\\AppData\\Local\\Temp\\pilotdeck-vendor-eco-1781877473140-9h5e1i\\repo failed: Cloning into 'C:\\Users\\rufen\\AppData\\Local\\Temp\\pilotdeck-vendor-eco-1781877473140-9h5e1i\\repo'...\nremote: Repository not found.\nfatal: repository 'https://github.com/MiniMax-AI/agent-skills.git/' not found",
+      "pack": "office-minimax-docx"
+    },
+    {
+      "vendoredSlug": "office-minimax-xlsx",
+      "reason": "git clone --depth 1 --branch main https://github.com/MiniMax-AI/agent-skills.git C:\\Users\\rufen\\AppData\\Local\\Temp\\pilotdeck-vendor-eco-1781877475050-5a1ge9\\repo failed: Cloning into 'C:\\Users\\rufen\\AppData\\Local\\Temp\\pilotdeck-vendor-eco-1781877475050-5a1ge9\\repo'...\nremote: Repository not found.\nfatal: repository 'https://github.com/MiniMax-AI/agent-skills.git/' not found",
+      "pack": "office-minimax-xlsx"
+    },
+    {
+      "vendoredSlug": "office-minimax-pptx",
+      "reason": "git clone --depth 1 --branch main https://github.com/MiniMax-AI/agent-skills.git C:\\Users\\rufen\\AppData\\Local\\Temp\\pilotdeck-vendor-eco-1781877476519-cn1m78\\repo failed: Cloning into 'C:\\Users\\rufen\\AppData\\Local\\Temp\\pilotdeck-vendor-eco-1781877476519-cn1m78\\repo'...\nremote: Repository not found.\nfatal: repository 'https://github.com/MiniMax-AI/agent-skills.git/' not found",
+      "pack": "office-minimax-pptx"
+    }
+  ],
+  "packPaths": [
+    "skills\\vendor\\anthropics-skills",
+    "skills\\vendor\\writing-polish",
+    "skills\\vendor\\pm-skills",
+    "skills\\vendor\\marketing-ecosystem",
+    "skills\\vendor\\creation-ecosystem",
+    "skills\\vendor\\dev-ecosystem",
+    "skills\\vendor\\education-ecosystem",
+    "skills\\vendor\\office-ecosystem"
+  ]
+}

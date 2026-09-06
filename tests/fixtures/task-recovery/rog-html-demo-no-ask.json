@@ -1,0 +1,10 @@
+{
+  "id": "rog-html-demo-no-ask",
+  "description": "HTML 演示 direct-start goal must skip page-count clarification",
+  "userGoal": "为 ROG2026 做页动画 HTML 演示，【页数】10，直接开始做，做完告诉我 artifacts 路径",
+  "capabilitySlug": "html-ppt-skill",
+  "missingPageCount": true,
+  "missingTopic": false,
+  "hasAttachments": false,
+  "expectedClarificationNeeded": false
+}

@@ -1,0 +1,99 @@
+{
+  "title": "全案模板",
+  "subtitle": "一次对话完成整个项目 — 点击卡片填入提示词，改【占位符】后发送即可",
+  "loading": "加载全案模板…",
+  "loadError": "无法加载全案模板",
+  "searchPlaceholder": "搜索流程、场景或成果…",
+  "searchHints": {
+    "title": "试试这些关键词",
+    "groups": [
+      {
+        "id": "marketing",
+        "label": "营销",
+        "keywords": ["Campaign", "竞品", "社媒", "落地页", "新品发布", "获客", "邮件", "复盘", "品牌"]
+      },
+      {
+        "id": "geo",
+        "label": "GEO",
+        "keywords": ["AI搜索", "可见度", "AEO", "监测", "关键词", "审计", "GEO全案"]
+      },
+      {
+        "id": "content",
+        "label": "内容",
+        "keywords": ["小红书", "长文", "矩阵", "播客", "文章", "IP"]
+      },
+      {
+        "id": "video",
+        "label": "视频",
+        "keywords": ["视频", "PPT", "分镜", "宣传片", "Remotion", "Seedance"]
+      },
+      {
+        "id": "office",
+        "label": "办公",
+        "keywords": ["文档", "Word", "汇报", "会议", "PDF", "HTML"]
+      },
+      {
+        "id": "sales",
+        "label": "销售",
+        "keywords": ["Battlecard", "销售", "法务", "合同", "风险"]
+      },
+      {
+        "id": "research",
+        "label": "调研",
+        "keywords": ["调研", "报告", "数据", "行业", "决策"]
+      }
+    ]
+  },
+  "tryIt": "试一下",
+  "tryItNoProject": "请先选择项目",
+  "complexity": {
+    "all": "全部",
+    "light": "轻量",
+    "standard": "标准",
+    "full": "全案"
+  },
+  "complexityHint": {
+    "all": "覆盖全部复杂度",
+    "light": "2 步快速组合",
+    "standard": "3–4 步常见项目",
+    "full": "5+ 步端到端"
+  },
+  "categoryFilterLabel": "类别筛选",
+  "category": {
+    "all": "全部",
+    "marketing": "营销",
+    "enterprise": "企业",
+    "geo": "GEO",
+    "office": "办公",
+    "creation": "创作"
+  },
+  "categoryHint": {
+    "all": "覆盖全部类别",
+    "marketing": "获客、内容、Campaign 与增长",
+    "enterprise": "合同、用工、财税、招采与惠企",
+    "geo": "AI 搜索可见度与监测",
+    "office": "文档、会议与办公导出",
+    "creation": "视频、演示与多媒体创作"
+  },
+  "expandDetail": "展开详情",
+  "collapseDetail": "收起详情",
+  "outcome": "会产出什么",
+  "scenario": "适用场景",
+  "flow": "流程链路",
+  "outputs": "预计成果",
+  "relatedSkills": "关联能力",
+  "steps": "{{count}} 步",
+  "howItWorksTitle": "怎么用",
+  "howItWorks": "点击卡片 → 提示词填入输入框 → 把【占位符】改成你的信息 → 发送。Agent 会在这一次对话里按阶段逐步执行，产出存到 artifacts/ 并告诉你路径。",
+  "empty": "没有匹配的全案模板",
+  "emptyHint": "已在全部全案中搜索，可换个关键词或清空搜索",
+  "hubPinnedBadge": "必留",
+  "hubExpandMore": "更多模板",
+  "hubCollapseMore": "收起",
+  "hubSecondaryHint": "补充模板",
+  "hubPinnedCount": "推荐 {{pinned}} / 共 {{total}} 条",
+  "welcomeCta": "想一次完成整个项目？",
+  "openGallery": "浏览全案模板",
+  "composerButton": "全案模板",
+  "close": "关闭"
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GEO 监测报告 — {{BRAND}}</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="geo-report-theme.css" />
+</head>
+<body>
+  <div class="ngrs-wrap">
+    <header class="ngrs-header">
+      <div class="ngrs-header-row">
+        <div>
+          <span class="ngrs-badge" data-ngrs-badge>监测报告</span>
+          <h1 class="ngrs-title" data-ngrs-title>GEO 监测 · {{BRAND}}</h1>
+          <p class="ngrs-sub" data-ngrs-subtitle>{{SITE}} · 综合分 {{OVERALL_SCORE}} / 100</p>
+        </div>
+        <div data-ngrs-header-gauge></div>
+      </div>
+    </header>
+    <div class="ngrs-kpi-grid" data-ngrs-kpi-grid></div>
+    <div class="ngrs-chart-grid" data-ngrs-chart-grid></div>
+    <div class="ngrs-actions">
+      <h3>建议下一步</h3>
+      <ul data-ngrs-action-list></ul>
+    </div>
+    <footer class="ngrs-footer">Nova GEO Report · <span data-ngrs-footer-time></span></footer>
+  </div>
+  <script id="monitor-data" type="application/json">{{MONITOR_DATA_JSON}}</script>
+  <script src="geo-chart-theme.js"></script>
+  <script>
+    (function () {
+      var el = document.getElementById('monitor-data');
+      var data = {};
+      try { data = JSON.parse(el.textContent || '{}'); } catch (_) {}
+      var score = data.overall_score ?? 0;
+      var sub = document.querySelector('[data-ngrs-subtitle]');
+      if (sub) sub.textContent = (data.site || '') + ' · 综合分 ' + score + ' / 100';
+
+      var report = {
+        title: 'GEO 监测 · ' + (data.brand || '{{BRAND}}'),
+        subtitle: (data.site || '') + ' · 综合分 ' + score + ' / 100',
+        reportType: '监测报告',
+        score: score,
+        generatedAt: data.generated_at || new Date().toISOString().slice(0, 10),
+        kpis: [
+          { label: '综合分', value: score },
+          { label: '提及率', value: (data.mention_rate ?? 0) + '%' },
+          { label: '首位推荐', value: (data.top_pick_rate ?? 0) + '%' },
+          { label: '引擎数', value: (data.engines || []).length },
+        ],
+        charts: typeof NGRS !== 'undefined' ? NGRS.monitorDataToCharts(data) : [],
+        actions: data.actions || [
+          { priority: 'P0', text: '补齐 llms.txt 与 schema' },
+          { priority: 'P1', text: '优化高意图问句对应落地页' },
+        ],
+      };
+
+      if (typeof NGRS !== 'undefined') {
+        NGRS.renderReport(report, { lazyCharts: true });
+      }
+    })();
+  </script>
+</body>
+</html>

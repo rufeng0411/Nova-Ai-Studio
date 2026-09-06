@@ -1,0 +1,29 @@
+{
+  "id": "rog-0dd9097f-campaign-png-degrade",
+  "description": "Campaign full case: HTML poster satisfies main visual when PNG missing",
+  "userGoal": "帮【雷蛇】做品牌传播 campaign 全案，含调研、策划 brief、主视觉、官网、多平台内容与监测复盘，直接开始做。",
+  "sessionManifest": {
+    "manifestVersion": 1,
+    "goalVersion": 1,
+    "sessionGoalAnchor": "雷蛇 campaign 全案",
+    "profileId": "campaign_full_case",
+    "slots": []
+  },
+  "validationResult": {
+    "verified": [
+      "artifacts/campaign/01-research.md",
+      "artifacts/campaign/02-plan.html",
+      "artifacts/campaign/brief.docx",
+      "artifacts/campaign/04-key-visual-poster.html",
+      "artifacts/campaign/index.html",
+      "artifacts/campaign/platform-content.md",
+      "artifacts/campaign/draft-manifest.json",
+      "artifacts/campaign/07-monitoring-review-template.md"
+    ],
+    "missing": [],
+    "broken": []
+  },
+  "expectedAcceptance": "passed",
+  "expectedContinuationAction": "none",
+  "expectedRepairCountMax": 20
+}

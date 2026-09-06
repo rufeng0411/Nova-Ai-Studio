@@ -1,0 +1,8 @@
+{
+  "id": "rog-3f1fe8e2-video-no-html-first",
+  "description": "3f1fe8e2: AI video goal resolves video-mp4 profile",
+  "userGoal": "吴裕泰2026新品上市做一个ai视频，10秒，用happyhorse模型生成",
+  "capabilitySlug": "tool-generate-video",
+  "expectedProfileId": "video-mp4",
+  "expectMediaStrategy": "generate_video"
+}

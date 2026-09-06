@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://novapage.local/skills/customer-acquisition-leads/schemas/query-expansion.json",
+  "title": "Customer Acquisition Query Expansion",
+  "type": "object",
+  "required": ["main_query", "alternate_queries", "negative_terms"],
+  "properties": {
+    "main_query": { "type": "string", "minLength": 1 },
+    "alternate_queries": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 6,
+      "maxItems": 12
+    },
+    "negative_terms": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 3,
+      "maxItems": 8
+    }
+  },
+  "additionalProperties": false
+}

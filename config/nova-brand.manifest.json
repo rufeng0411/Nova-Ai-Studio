@@ -1,0 +1,352 @@
+{
+  "version": 1,
+  "updatedAt": "2026-06-06T20:00:00+08:00",
+  "brand": {
+    "name": "Nova Ai-Studio",
+    "previousName": "PilotDeck",
+    "logoSource": "logo-3.png",
+    "regenerateAssets": "node scripts/generate-nova-brand-assets.mjs",
+    "regenerateCapabilities": "node scripts/generate-capabilities-catalog.mjs && node scripts/generate-capabilities-i18n.mjs",
+    "verify": "node scripts/check-nova-brand.mjs"
+  },
+  "_note": "After ANY upstream/core merge, run `npm run brand:check`. If it fails, re-run the regenerate commands above and re-apply the textGuards below. NEVER accept the upstream PilotDeck branding for these brand surfaces. Code identifiers / slugs / config paths (~/.pilotdeck) / regex / JSON keys are REDLINE and must stay unchanged.",
+  "assets": [
+    "ui/public/favicon.svg",
+    "ui/public/favicon.png",
+    "ui/public/logo-128.png",
+    "ui/public/logo-256.png",
+    "ui/public/icons/icon-72x72.png",
+    "ui/public/icons/icon-96x96.png",
+    "ui/public/icons/icon-128x128.png",
+    "ui/public/icons/icon-144x144.png",
+    "ui/public/icons/icon-152x152.png",
+    "ui/public/icons/icon-192x192.png",
+    "ui/public/icons/icon-384x384.png",
+    "ui/public/icons/icon-512x512.png",
+    "ui/src/assets/pilotdeck-wordmark-light.png",
+    "ui/src/assets/pilotdeck-wordmark-dark.png",
+    "ui/src/assets/nova-logo-mark.png",
+    "assets/banner.png",
+    "ui/public/splash/splash-750x1334.png",
+    "ui/public/splash/splash-828x1792.png",
+    "ui/public/splash/splash-1125x2436.png",
+    "ui/public/splash/splash-1170x2532.png",
+    "ui/public/splash/splash-1179x2556.png",
+    "ui/public/splash/splash-1242x2688.png",
+    "ui/public/splash/splash-1284x2778.png",
+    "ui/public/splash/splash-1290x2796.png"
+  ],
+  "textGuards": [
+    {
+      "path": "ui/index.html",
+      "expect": [
+        "<title>Nova Ai-Studio</title>",
+        "content=\"Nova Ai-Studio\"",
+        "?v=nova2"
+      ],
+      "forbid": [
+        "<title>PilotDeck</title>"
+      ]
+    },
+    {
+      "path": "ui/public/manifest.json",
+      "expect": [
+        "\"name\": \"Nova Ai-Studio\"",
+        "\"short_name\": \"Nova Ai-Studio\""
+      ],
+      "forbid": [
+        "\"name\": \"PilotDeck\""
+      ]
+    },
+    {
+      "path": "ui/public/sw.js",
+      "expect": [
+        "'Nova Ai-Studio'"
+      ],
+      "forbid": [
+        "title: 'PilotDeck'",
+        "|| 'PilotDeck'"
+      ]
+    },
+    {
+      "path": "ui/src/components/auth/view/AuthLoadingScreen.tsx",
+      "expect": [
+        "novaLogoMark"
+      ],
+      "forbid": [
+        "MessageSquare",
+        ">PilotDeck<",
+        ">Nova Ai-Studio<"
+      ]
+    },
+    {
+      "path": "ui/src/components/auth/view/SetupForm.tsx",
+      "expect": [
+        "Welcome to Nova Ai-Studio",
+        "alt=\"Nova Ai-Studio\""
+      ],
+      "forbid": [
+        "Welcome to PilotDeck"
+      ]
+    },
+    {
+      "path": "ui/src/components/auth/view/LoginForm.tsx",
+      "expect": [
+        "access Nova Ai-Studio",
+        "novaLogoMark"
+      ],
+      "forbid": [
+        "access PilotDeck"
+      ]
+    },
+    {
+      "path": "ui/src/saas/auth/AuthShell.tsx",
+      "expect": [
+        "NovaBrandLockup",
+        "NOVA_PRODUCT_NAME"
+      ],
+      "forbid": [
+        ">NA<",
+        "pilotdeck-wordmark-dark"
+      ]
+    },
+    {
+      "path": "ui/src/saas/brand/NovaBrandLockup.tsx",
+      "expect": [
+        "NOVA_BRAND_CAPTION_ZH",
+        "novaLogoMark"
+      ],
+      "forbid": [
+        "pilotdeck-wordmark",
+        "智能体协作平台"
+      ]
+    },
+    {
+      "path": "ui/src/saas/auth/SaasAuthPage.tsx",
+      "expect": [
+        "novaLogoMark",
+        "NOVA_BRAND_CAPTION_ZH"
+      ],
+      "forbid": [
+        "pilotdeck-wordmark-light",
+        "智能体协作平台"
+      ]
+    },
+    {
+      "path": "ui/src/saas/brand/productInfo.ts",
+      "expect": [
+        "企业级智能体平台",
+        "NOVA_BRAND_CAPTION_ZH"
+      ],
+      "forbid": [
+        "智能体协作平台",
+        "智能体创作平台"
+      ]
+    },
+    {
+      "path": "ui/src/components/app-shell/SidebarV2.tsx",
+      "expect": [
+        "alt=\"Nova Ai-Studio\"",
+        "novaLogoMark"
+      ],
+      "forbid": [
+        "aria-label=\"PilotDeck\"",
+        "alt=\"PilotDeck\""
+      ]
+    },
+    {
+      "path": "ui/src/components/auth/view/AuthScreenLayout.tsx",
+      "expect": [
+        "alt=\"Nova Ai-Studio\""
+      ],
+      "forbid": [
+        "PilotDeck is open source",
+        "OpenBMB/PilotDeck",
+        "github.com/OpenBMB"
+      ]
+    },
+    {
+      "path": "ui/src/components/provider-auth/view/ProviderLoginModal.tsx",
+      "expect": [
+        "Nova Ai-Studio API Login"
+      ],
+      "forbid": [
+        "OpenBMB PilotDeck API Login"
+      ]
+    },
+    {
+      "path": "ui/src/components/onboarding/view/subcomponents/AgentConnectionsStep.tsx",
+      "expect": [
+        "title: 'Nova Ai-Studio'"
+      ],
+      "forbid": [
+        "title: 'OpenBMB PilotDeck'"
+      ]
+    },
+    {
+      "path": "ui/src/components/chat-v2/ChatInterfaceV2.tsx",
+      "expect": [
+        "Tell Nova Ai-Studio what you want"
+      ],
+      "forbid": [
+        "Tell PilotDeck what you want"
+      ]
+    },
+    {
+      "path": "ui/src/components/settings/view/sections/PlatformOpsSections.tsx",
+      "expect": [
+        "Restarting Nova Ai-Studio"
+      ],
+      "forbid": [
+        "Restarting PilotDeck"
+      ]
+    },
+    {
+      "path": "ui/src/components/app-shell/VersionBadge.tsx",
+      "expect": [
+        "Restarting Nova Ai-Studio"
+      ],
+      "forbid": [
+        "Restarting PilotDeck"
+      ]
+    },
+    {
+      "path": "ui/src/components/app-shell/AppShellV2.tsx",
+      "expect": [
+        "将从 Nova Ai-Studio 中永久删除此项目",
+        "删除此项目下的全部对话、文件与云端内容"
+      ],
+      "forbid": [
+        "removes the project from PilotDeck",
+        "从 PilotDeck 中移除此项目",
+        "仅移除 Nova 中的引用"
+      ]
+    },
+    {
+      "path": "ui/src/components/chat/hooks/useChatComposerState.ts",
+      "expect": [
+        "to make Nova Ai-Studio see it"
+      ],
+      "forbid": [
+        "to make PilotDeck see it"
+      ]
+    },
+    {
+      "path": "ui/server/services/notification-orchestrator.js",
+      "expect": [
+        "pilotdeck: 'Nova Ai-Studio'"
+      ],
+      "forbid": [
+        "pilotdeck: 'PilotDeck'"
+      ]
+    },
+    {
+      "path": "ui/server/index.js",
+      "expect": [
+        "'pilotdeck' ? 'Nova Ai-Studio'",
+        "Nova Ai-Studio Server - Ready"
+      ],
+      "forbid": [
+        "'pilotdeck' ? 'PilotDeck'",
+        "PilotDeck Server - Ready"
+      ]
+    },
+    {
+      "path": "ui/server/cli.js",
+      "expect": [
+        "Start the Nova Ai-Studio web UI",
+        "Nova Ai-Studio reads ~/.pilotdeck"
+      ],
+      "forbid": [
+        "Start the PilotDeck web UI"
+      ]
+    },
+    {
+      "path": "ui/server/routes/agent.js",
+      "expect": [
+        "created by Nova Ai-Studio Agent"
+      ],
+      "forbid": [
+        "created by PilotDeck Agent"
+      ]
+    },
+    {
+      "path": "ui/server/routes/commands.js",
+      "expect": [
+        "# Nova Ai-Studio Commands",
+        "every Nova Ai-Studio project"
+      ],
+      "forbid": [
+        "# PilotDeck Commands"
+      ]
+    },
+    {
+      "path": "src/adapters/channel/tui/app/PilotDeckLogo.tsx",
+      "expect": [
+        "Ai-Studio",
+        "Nova"
+      ],
+      "forbid": [
+        "Pilot Deck"
+      ]
+    },
+    {
+      "path": "src/adapters/channel/tui/app/PromptInput.tsx",
+      "expect": [
+        "Ask Nova Ai-Studio"
+      ],
+      "forbid": [
+        "Ask PilotDeck"
+      ]
+    },
+    {
+      "path": "src/adapters/channel/tui/app/HelpDialog.tsx",
+      "expect": [
+        "Quit Nova Ai-Studio",
+        ">Nova Ai-Studio<"
+      ],
+      "forbid": [
+        "Quit PilotDeck"
+      ]
+    },
+    {
+      "path": "src/adapters/channel/protocol/ChannelCommandRegistry.ts",
+      "expect": [
+        "restart Nova Ai-Studio",
+        "Nova Ai-Studio Status"
+      ],
+      "forbid": [
+        "restart PilotDeck",
+        "PilotDeck Status"
+      ]
+    },
+    {
+      "path": "skills/pilotdeck-skills-migration/SKILL.md",
+      "expect": [
+        "Nova Ai-Studio's global skills"
+      ],
+      "forbid": [
+        "PilotDeck's global skills"
+      ]
+    },
+    {
+      "path": "ui/src/i18n/locales/zh-CN/common.json",
+      "expect": [
+        "\"brandCaption\": \"Nova Ai Studio 2.0 · 企业级智能体平台\""
+      ],
+      "forbid": [
+        "智能体协作平台",
+        "智能体创作平台"
+      ]
+    }
+  ],
+  "i18nLocalesGlob": "ui/src/i18n/locales",
+  "i18nForbidInValues": [
+    "PilotDeck",
+    "OpenBMB"
+  ],
+  "i18nValueAllow": [
+    ".pilotdeck",
+    "pilotdeck.yaml"
+  ]
+}

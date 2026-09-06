@@ -1,0 +1,2949 @@
+{
+  "version": 1,
+  "updatedAt": "2026-08-02T15:04:41.805Z",
+  "complexityLevels": [
+    {
+      "id": "light",
+      "label": {
+        "zh-CN": "轻量",
+        "en": "Light"
+      },
+      "description": {
+        "zh-CN": "2 步快速组合",
+        "en": "2-step quick combo"
+      },
+      "order": 1
+    },
+    {
+      "id": "standard",
+      "label": {
+        "zh-CN": "标准",
+        "en": "Standard"
+      },
+      "description": {
+        "zh-CN": "3–4 步常见项目",
+        "en": "3–4 step common projects"
+      },
+      "order": 2
+    },
+    {
+      "id": "full",
+      "label": {
+        "zh-CN": "全案",
+        "en": "Full"
+      },
+      "description": {
+        "zh-CN": "5+ 步端到端",
+        "en": "5+ step end-to-end"
+      },
+      "order": 3
+    }
+  ],
+  "templates": [
+    {
+      "id": "press-release-pack",
+      "complexity": "light",
+      "title": {
+        "zh-CN": "正式通稿包",
+        "en": "Press release pack"
+      },
+      "outcome": {
+        "zh-CN": "一篇正式新闻通稿 + 一张配套头图",
+        "en": "A formal press release Word doc plus a matching hero image"
+      },
+      "scenario": {
+        "zh-CN": "要对外发稿，需要 Word 通稿配主图",
+        "en": "External PR needs a Word release with a hero image"
+      },
+      "stageBadges": [
+        "create"
+      ],
+      "relatedSkills": [
+        "anth-docx",
+        "od-image-gen"
+      ],
+      "outputs": {
+        "zh-CN": "1 个 .docx + 1 张 .png",
+        "en": "1 .docx + 1 .png"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "写新闻通稿(Word)",
+            "en": "Write press release (Word)"
+          },
+          "skill": "anth-docx"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "生成主题一致的头图",
+            "en": "Generate matching hero image"
+          },
+          "skill": "od-image-gen"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "帮我做一篇【主题/事件】的正式新闻通稿并配一张头图，两步一次做完，每步写入系统分配的任务目录 并告诉我路径：\n1. 通稿：标题居中、导语、3 段正文、文末媒体联系人，输出 Word(.docx)。\n2. 头图：与通稿主题一致的横版宣传图，现代专业风，png。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我两个文件路径。\n\n标准成果清单：\n1. 1 个 .docx\n2. 1 张 .png",
+        "en": "Create a formal press release for [topic/event] plus a hero image in two steps. Save each deliverable under the assigned task directory and report paths:\n1. Release: centered title, lead, 3 body paragraphs, media contact footer as Word (.docx).\n2. Hero image: landscape promo image matching the release theme, modern professional style, png.\nStart working directly and tell me both file paths when done.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. 1 .docx\n2. 1 .png"
+      },
+      "category": "marketing"
+    },
+    {
+      "id": "competitor-landing",
+      "complexity": "light",
+      "title": {
+        "zh-CN": "竞品对比落地页",
+        "en": "Competitor comparison landing"
+      },
+      "outcome": {
+        "zh-CN": "竞品调研结论 + 一页对比落地页",
+        "en": "Competitor research plus a one-page comparison landing"
+      },
+      "scenario": {
+        "zh-CN": "比稿/销售场景，要「我们 vs 竞品」页面",
+        "en": "Sales or pitch: us vs competitors page"
+      },
+      "stageBadges": [
+        "research",
+        "create"
+      ],
+      "relatedSkills": [
+        "mkt-competitive-brief",
+        "od-pricing-page"
+      ],
+      "outputs": {
+        "zh-CN": "调研 .md + 对比页 .html",
+        "en": "Research .md + comparison .html"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "竞品调研简报",
+            "en": "Competitive intel brief"
+          },
+          "skill": "mkt-competitive-brief"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "对比落地页(HTML)",
+            "en": "Comparison landing (HTML)"
+          },
+          "skill": "od-pricing-page"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "围绕【我的产品】对比【竞品A、竞品B】做一个竞品对比落地页，两步一次做完，产出存系统分配的任务目录\n1. 竞品调研：对比定位、定价、核心功能与优劣势，列成结构化对照。\n2. 对比落地页：把结论做成一页 HTML，含我方优势高亮和 CTA。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我文件路径。\n\n标准成果清单：\n1. 调研 .md\n2. 对比页 .html",
+        "en": "Build a competitor comparison landing for [my product] vs [Competitor A, B] in two steps. save under the assigned task directory and report paths:\n1. Research: positioning, pricing, features, pros/cons in a structured comparison.\n2. Landing: one HTML page with our advantages highlighted and a CTA.\nStart working directly and tell me file paths when done.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. Research .md\n2. comparison .html"
+      },
+      "category": "marketing"
+    },
+    {
+      "id": "single-social-post",
+      "complexity": "light",
+      "title": {
+        "zh-CN": "单条爆款社媒",
+        "en": "Single viral social post"
+      },
+      "outcome": {
+        "zh-CN": "一条平台风格图文 + 存入草稿",
+        "en": "One platform-style post saved as draft"
+      },
+      "scenario": {
+        "zh-CN": "日常单条种草/发帖（需已配置蚁小二）",
+        "en": "Daily single post (requires YiXiaoEr configured)"
+      },
+      "stageBadges": [
+        "create",
+        "distribute"
+      ],
+      "relatedSkills": [
+        "mkt-social",
+        "yixiaoer"
+      ],
+      "outputs": {
+        "zh-CN": "文案 .md + 草稿任务编号",
+        "en": "Copy .md + draft task id"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "文案+配图建议",
+            "en": "Copy + image brief"
+          },
+          "skill": "mkt-social"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "存平台草稿（不公开）",
+            "en": "Save platform draft (not public)"
+          },
+          "skill": "yixiaoer"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "帮我为【主题/产品】出一条小红书图文并存到草稿，两步一次做完：\n1. 文案：小红书风格标题+正文+话题标签，并给出配图建议。\n2. 存草稿：把图文存到小红书草稿箱（不要公开发布），回报任务编号。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我结果。\n\n标准成果清单：\n1. 文案 .md\n2. 草稿任务编号",
+        "en": "Create one Xiaohongshu post for [topic/product] and save as draft in two steps:\n1. Copy: Xiaohongshu-style title, body, hashtags, plus image suggestions.\n2. Draft: save to Xiaohongshu draft box (do not publish), report task id.\nStart working directly and tell me the result when done.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. Copy .md\n2. draft task id"
+      },
+      "category": "marketing"
+    },
+    {
+      "id": "content-flywheel",
+      "complexity": "standard",
+      "title": {
+        "zh-CN": "内容营销飞轮",
+        "en": "Content marketing flywheel"
+      },
+      "outcome": {
+        "zh-CN": "选题 + 一篇长文 + 多条社媒切片",
+        "en": "Topics + long-form article + social slices"
+      },
+      "scenario": {
+        "zh-CN": "用一个主题持续产内容",
+        "en": "Sustain content from one theme"
+      },
+      "stageBadges": [
+        "strategy",
+        "create",
+        "activate"
+      ],
+      "relatedSkills": [
+        "mkt-content-strategy",
+        "mkt-copywriting",
+        "mkt-social"
+      ],
+      "outputs": {
+        "zh-CN": "选题 .md + 长文 .md + 社媒切片 .md",
+        "en": "Topics .md + article .md + social slices .md"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "选题（主+子）",
+            "en": "Topic cluster"
+          },
+          "skill": "mkt-content-strategy"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "长文",
+            "en": "Long-form article"
+          },
+          "skill": "mkt-copywriting"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "拆成 3–5 条社媒短内容",
+            "en": "3–5 social short posts"
+          },
+          "skill": "mkt-social"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "帮我围绕【主题/产品】做一轮内容营销，3 步一次做完，产出存 系统分配的任务目录/ 并报路径：\n1. 选题：write_file 01-topics.md（1 主话题 + 3 子选题）。\n2. 长文：write_file 02-longform.md（小标题、要点、结论）。\n3. 社媒切片：write_file 03-social-slices.md（3–5 条短文/脚本，适配【平台，如小红书/抖音】）。\n禁止 read_file skills/；每步写完文件再下一步。直接开始做，做完告诉我各文件路径。\n\n标准成果清单：\n1. 选题 .md\n2. 长文 .md\n3. 社媒切片 .md",
+        "en": "Content marketing for [topic/product] in 3 steps under 系统分配的任务目录/: 01-topics.md → 02-longform.md → 03-social-slices.md. No read_file skills/. Report all paths when done.\n\nStandard deliverables:\n1. Topics .md\n2. article .md\n3. social slices .md"
+      },
+      "category": "marketing"
+    },
+    {
+      "id": "research-report",
+      "complexity": "standard",
+      "title": {
+        "zh-CN": "调研报告交付",
+        "en": "Research report delivery"
+      },
+      "outcome": {
+        "zh-CN": "深度调研 + 图表 + 正式 Word 报告",
+        "en": "Deep research + charts + formal Word report"
+      },
+      "scenario": {
+        "zh-CN": "要给客户/上级一份像样的调研报告",
+        "en": "Formal research report for client or leadership"
+      },
+      "stageBadges": [
+        "research",
+        "measure",
+        "create"
+      ],
+      "relatedSkills": [
+        "df-deep-research",
+        "pd-document-export"
+      ],
+      "outputs": {
+        "zh-CN": "调研 .md + 图表（Mermaid/表格）+ export_document 导出 .docx",
+        "en": "Research .md + charts (Mermaid/tables) + export_document .docx"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "深度调研综述",
+            "en": "Deep research synthesis"
+          },
+          "skill": "df-deep-research"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "关键数据图表",
+            "en": "Key data charts"
+          },
+          "skill": "df-chart-visualization"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "整合并导出 Word",
+            "en": "Assemble and export Word"
+          },
+          "skill": "pd-document-export"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "帮我就【研究主题】做一份正式调研报告，3 步一次做完，存 系统分配的任务目录 并报路径：\n1. 深度调研：web_search 后 write_file 保存 01-sources-and-synthesis.md（信息源 + 结论综述）。\n2. 图表：在同目录用 Markdown 表格 + Mermaid 表达关键数据（必要时 chart PNG）。\n3. Word：write_file 03-report-body.md 后调用 export_document 导出正式 .docx（摘要、正文、图表位、结论建议）。\n禁止 read_file skills/；export 失败时至少交付两个 md。直接开始做，做完告诉我文件路径。\n\n标准成果清单：\n1. 调研 .md\n2. 图表（Mermaid/表格）\n3. export_document 导出 .docx",
+        "en": "Deliver a formal research report on [research topic] in 3 steps under 系统分配的任务目录\n1. Deep research: web_search → write_file 01-sources-and-synthesis.md.\n2. Charts: Markdown tables + Mermaid in the same folder.\n3. Word: write_file 03-report-body.md → export_document to .docx.\nNo read_file skills/; deliver md files if export fails. Start directly and report paths when done.\n\nStandard deliverables:\n1. Research .md\n2. charts (Mermaid/tables)\n3. export_document .docx"
+      },
+      "category": "marketing"
+    },
+    {
+      "id": "landing-acquisition-kit",
+      "complexity": "standard",
+      "title": {
+        "zh-CN": "落地页获客套件",
+        "en": "Landing acquisition kit"
+      },
+      "outcome": {
+        "zh-CN": "落地页 + 引流磁铁 + 邮件序列",
+        "en": "Landing page + lead magnet + email sequence"
+      },
+      "scenario": {
+        "zh-CN": "新功能/产品获客上线",
+        "en": "New feature or product go-to-market"
+      },
+      "stageBadges": [
+        "create",
+        "activate"
+      ],
+      "relatedSkills": [
+        "od-saas-landing",
+        "mkt-lead-magnets",
+        "mkt-emails"
+      ],
+      "outputs": {
+        "zh-CN": "landing .html + 磁铁 .md + 邮件序列 .md",
+        "en": "landing .html + magnet .md + email sequence .md"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "落地页(HTML)",
+            "en": "Landing page (HTML)"
+          },
+          "skill": "od-saas-landing"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "引流磁铁资源",
+            "en": "Lead magnet"
+          },
+          "skill": "mkt-lead-magnets"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "3–5 封培育邮件",
+            "en": "3–5 nurture emails"
+          },
+          "skill": "mkt-emails"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "帮我为【产品】搭一套获客套件，3 步一次做完，存系统分配的任务目录\n1. 落地页：含标题、3 个卖点、价格、免费试用 CTA 的 HTML。\n2. 引流磁铁：设计一个换邮箱的资源（清单/白皮书提纲）。\n3. 邮件序列：写 3-5 封欢迎培育邮件文案。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我各文件路径。\n\n标准成果清单：\n1. landing .html\n2. 磁铁 .md\n3. 邮件序列 .md",
+        "en": "Build an acquisition kit for [product] in 3 steps. save under the assigned task directory and report paths:\n1. Landing: HTML with headline, 3 benefits, pricing, free trial CTA.\n2. Lead magnet: email-gated resource (checklist/whitepaper outline).\n3. Email sequence: 3–5 welcome nurture emails.\nStart working directly and tell me all file paths when done.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. landing .html\n2. magnet .md\n3. email sequence .md"
+      },
+      "category": "marketing"
+    },
+    {
+      "id": "social-matrix-pipeline",
+      "complexity": "standard",
+      "title": {
+        "zh-CN": "社媒矩阵一条龙",
+        "en": "Social matrix pipeline"
+      },
+      "outcome": {
+        "zh-CN": "一条创意 → 多平台文案 + visuals/ 四套配图 + manifest",
+        "en": "One idea → multi-platform copy + four aspect images + manifest"
+      },
+      "scenario": {
+        "zh-CN": "一个主题全平台同步发图文（默认只落盘，不推草稿）",
+        "en": "One theme across platforms (files only by default)"
+      },
+      "stageBadges": [
+        "create",
+        "distribute"
+      ],
+      "relatedSkills": [
+        "social-creative-matrix"
+      ],
+      "outputs": {
+        "zh-CN": "brief + 四套配图(visuals/) + copywriting + manifest",
+        "en": "brief + visuals/ + copywriting + manifest"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "brief + 创意锚点",
+            "en": "Brief + creative anchor"
+          },
+          "skill": "social-creative-matrix"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "四套配图(9:16/3:4/1:1/16:9)",
+            "en": "Four aspect images"
+          },
+          "skill": "social-creative-matrix"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "多平台文案",
+            "en": "Multi-platform copy"
+          },
+          "skill": "social-creative-matrix"
+        },
+        {
+          "step": 4,
+          "title": {
+            "zh-CN": "manifest 打包交付",
+            "en": "Manifest bundle"
+          },
+          "skill": "social-creative-matrix"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "帮我把【一条创意/主题】做成国内社媒矩阵，一次做完并存 系统分配的任务目录\n1. 写 brief.md 与 creative-anchors.md。\n2. 四套配图写入 visuals/image-9x16.png、visuals/image-3x4.png、visuals/image-1x1.png、visuals/image-16x9.png（各 generate_image 最多 1 次，禁止 VAP 搜图）。\n3. 写 copywriting.md（8 平台文案）。\n4. 写 manifest.json。\n禁止 read_file skills/；禁止 Task/subagent；每步 write_file 落盘后再进下一步。\n若生图 Key 不可用：visuals/ 下 SVG 占位 + manifest placeholder=true，仍须交付文案三件套。\n直接开始做，做完告诉我目录路径。\n\n标准成果清单：\n1. brief.md\n2. creative-anchors.md\n3. visuals/image-9x16.png\n4. visuals/image-3x4.png\n5. visuals/image-1x1.png\n6. visuals/image-16x9.png\n7. copywriting.md\n8. manifest.json",
+        "en": "Turn [creative idea/theme] into a domestic social matrix under the assigned task directory:\n1. brief.md + creative-anchors.md\n2. Four images under visuals/image-*.png\n3. copywriting.md\n4. manifest.json\nNo read_file skills/; no Task/subagent. Start directly and report paths.\n\nStandard deliverables:\n1. brief.md\n2. creative-anchors.md\n3–6. visuals/image-*.png\n7. copywriting.md\n8. manifest.json"
+      },
+      "category": "marketing"
+    },
+    {
+      "id": "campaign-retrospective",
+      "complexity": "standard",
+      "title": {
+        "zh-CN": "活动复盘闭环",
+        "en": "Campaign retrospective loop"
+      },
+      "outcome": {
+        "zh-CN": "数据分析 + Word 复盘报告 + 下一轮策略",
+        "en": "Data analysis + Word retrospective + next-round strategy"
+      },
+      "scenario": {
+        "zh-CN": "一场活动/投放结束后复盘",
+        "en": "Post-campaign or post-ad review"
+      },
+      "stageBadges": [
+        "measure",
+        "strategy"
+      ],
+      "relatedSkills": [
+        "mkt-performance-report",
+        "anth-docx",
+        "mkt-marketing-plan"
+      ],
+      "outputs": {
+        "zh-CN": "分析 .md + 复盘 .docx + 策略 .md",
+        "en": "Analysis .md + retrospective .docx + strategy .md"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "投放效果分析",
+            "en": "Performance analysis"
+          },
+          "skill": "mkt-performance-report"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "Word 复盘报告",
+            "en": "Word retrospective report"
+          },
+          "skill": "anth-docx"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "下一轮优化动作",
+            "en": "Next-round actions"
+          },
+          "skill": "mkt-marketing-plan"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "帮我做【活动名称】的复盘，3 步一次做完，存系统分配的任务目录\n1. 效果分析：基于我提供/粘贴的数据，read_skill mkt-performance-report，提炼关键指标、渠道表现与问题。\n2. 复盘报告：整理成 Word(.docx)，含指标、归因、问题点。\n3. 下一轮策略：给出下一轮可执行优化动作清单。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我文件路径。\n\n标准成果清单：\n1. 分析 .md\n2. 复盘 .docx\n3. 策略 .md",
+        "en": "Retrospective for [campaign name] in 3 steps. save under the assigned task directory and report paths:\n1. Performance: read_skill mkt-performance-report; key metrics, channel performance, issues from provided/pasted data.\n2. Report: Word (.docx) with metrics, attribution, issues.\n3. Next strategy: actionable optimization list for next round.\nStart working directly and tell me file paths when done.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. Analysis .md\n2. retrospective .docx\n3. strategy .md"
+      },
+      "category": "marketing"
+    },
+    {
+      "id": "product-launch-full",
+      "complexity": "full",
+      "title": {
+        "zh-CN": "新品上市全案",
+        "en": "Product launch full case"
+      },
+      "outcome": {
+        "zh-CN": "调研→策略→通稿→落地页→社媒矩阵→上线检查→发布草稿",
+        "en": "Research → strategy → release → landing → social matrix → go-live check → draft"
+      },
+      "scenario": {
+        "zh-CN": "一个新品从 0 到对外发布的整套物料（需蚁小二）",
+        "en": "Full new product launch kit (YiXiaoEr for draft)"
+      },
+      "stageBadges": [
+        "research",
+        "strategy",
+        "create",
+        "distribute"
+      ],
+      "relatedSkills": [
+        "mkt-competitive-brief",
+        "mkt-marketing-plan",
+        "mkt-go-live-checklist",
+        "anth-docx",
+        "open-design",
+        "social-creative-matrix",
+        "yixiaoer"
+      ],
+      "outputs": {
+        "zh-CN": "调研/策略 .md + 通稿 .docx + landing .html + 社媒矩阵包 + 草稿编号",
+        "en": "Research/strategy .md + release .docx + landing .html + social bundle + draft id"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "竞品&人群调研",
+            "en": "Competitor & audience research"
+          },
+          "skill": "mkt-competitive-brief"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "GTM 策略",
+            "en": "GTM strategy"
+          },
+          "skill": "mkt-marketing-plan"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "Word 通稿",
+            "en": "Word press release"
+          },
+          "skill": "anth-docx"
+        },
+        {
+          "step": 4,
+          "title": {
+            "zh-CN": "落地页",
+            "en": "Landing page"
+          },
+          "skill": "open-design"
+        },
+        {
+          "step": 5,
+          "title": {
+            "zh-CN": "社媒矩阵",
+            "en": "Social matrix"
+          },
+          "skill": "social-creative-matrix"
+        },
+        {
+          "step": 6,
+          "title": {
+            "zh-CN": "上线检查清单",
+            "en": "Go-live checklist"
+          },
+          "skill": "mkt-go-live-checklist"
+        },
+        {
+          "step": 7,
+          "title": {
+            "zh-CN": "发布草稿",
+            "en": "Publish draft"
+          },
+          "skill": "yixiaoer"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "帮我为【新品名称】做一套上市全案，按以下阶段一次性规划并执行，每阶段产出存系统分配的任务目录\n1. 调研：竞品与目标人群速览。\n2. 策略：GTM 要点（人群、差异化、节奏）。\n3. 通稿：新品新闻通稿 Word(.docx)。\n4. 落地页：新品介绍 HTML 落地页。\n5. 社媒矩阵：多平台文案 + 四套配图。\n6. 上线检查：read_skill mkt-go-live-checklist，输出发布前检查清单。\n7. 发布草稿：把社媒内容存到【小红书】草稿（不公开发布）。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，每完成一个阶段告诉我该阶段文件路径。\n\n标准成果清单：\n1. research.md\n2. gtm-strategy.md\n3. press-release.docx\n4. landing.html\n5. 03-social-slices.md\n6. go-live-checklist.md\n7. draft-status.md",
+        "en": "Full launch case for [new product name]. Plan and execute all phases in one conversation; save each under the assigned task directory and report paths:\n1. Research: competitor and audience snapshot.\n2. Strategy: GTM (audience, differentiation, timeline).\n3. Release: Word (.docx) press release.\n4. Landing: HTML product landing page.\n5. Social matrix: multi-platform copy + four aspect images.\n6. Go-live: read_skill mkt-go-live-checklist → pre-launch checklist.\n7. Draft: save social content to [Xiaohongshu] draft (not public).\nStart working directly; report path after each phase.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. research.md\n2. gtm-strategy.md\n3. press-release.docx\n4. landing.html\n5. 03-social-slices.md\n6. go-live-checklist.md\n7. draft-status.md"
+      },
+      "category": "marketing"
+    },
+    {
+      "id": "saas-growth-full",
+      "complexity": "full",
+      "title": {
+        "zh-CN": "SaaS 增长全案",
+        "en": "SaaS growth full case"
+      },
+      "outcome": {
+        "zh-CN": "调研→定位定价→官网→SEO 页→邮件→投放→复盘",
+        "en": "Research → positioning/pricing → site → SEO → email → ads → review"
+      },
+      "scenario": {
+        "zh-CN": "SaaS 产品系统性获客增长",
+        "en": "Systematic SaaS acquisition growth"
+      },
+      "stageBadges": [
+        "research",
+        "strategy",
+        "create",
+        "activate",
+        "measure"
+      ],
+      "relatedSkills": [
+        "mkt-customer-research",
+        "mkt-pricing",
+        "od-saas-landing",
+        "mkt-programmatic-seo",
+        "pd-geo",
+        "mkt-emails",
+        "mkt-ads",
+        "ala-data-analyst"
+      ],
+      "outputs": {
+        "zh-CN": "8 项增长全案文件（含 geo 基线与复盘模板）",
+        "en": "Multiple .md/.html assets + AI search baseline + review template"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "市场&竞品调研",
+            "en": "Market & competitor research"
+          },
+          "skill": "mkt-customer-research"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "定位定价",
+            "en": "Positioning & pricing"
+          },
+          "skill": "mkt-pricing"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "官网落地页",
+            "en": "Marketing site landing"
+          },
+          "skill": "od-saas-landing"
+        },
+        {
+          "step": 4,
+          "title": {
+            "zh-CN": "程序化 SEO 页模板",
+            "en": "Programmatic SEO template"
+          },
+          "skill": "mkt-programmatic-seo"
+        },
+        {
+          "step": 5,
+          "title": {
+            "zh-CN": "AI 搜索可见度基线",
+            "en": "AI search visibility baseline"
+          },
+          "skill": "pd-geo"
+        },
+        {
+          "step": 6,
+          "title": {
+            "zh-CN": "邮件培育",
+            "en": "Email nurture"
+          },
+          "skill": "mkt-emails"
+        },
+        {
+          "step": 7,
+          "title": {
+            "zh-CN": "投放计划",
+            "en": "Paid media plan"
+          },
+          "skill": "mkt-ads"
+        },
+        {
+          "step": 8,
+          "title": {
+            "zh-CN": "复盘模板",
+            "en": "Review template"
+          },
+          "skill": "ala-data-analyst"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "帮我为【SaaS 产品】做一套增长全案，按阶段一次规划执行，产出存系统分配的任务目录\n1. 市场与竞品调研。\n2. 定位与定价方案。\n3. 官网落地页 HTML。\n4. 程序化 SEO 页模板（给【关键词族】示例）。\n5. AI 搜索基线：read_skill pd-geo，产出 keywords.md + 一篇 AI 搜索友好成稿提纲。\n6. 邮件培育序列 3-5 封。\n7. 付费投放计划（渠道、预算分配、素材方向）。\n8. 复盘模板（指标与归因框架）。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，每阶段完成告诉我文件路径。\n\n标准成果清单：\n1. market-research.md\n2. positioning-pricing.md\n3. landing.html\n4. programmatic-seo-template.html\n5. geo-keywords.md\n6. email-sequence.md\n7. ads-plan.md\n8. retrospective-template.md",
+        "en": "SaaS growth full case for [SaaS product]. Execute all phases in one conversation; save under the assigned task directory and report paths:\n1. Market and competitor research.\n2. Positioning and pricing.\n3. Marketing landing HTML.\n4. Programmatic SEO page template ([keyword cluster] example).\n5. AI search baseline: read_skill pd-geo → keywords.md + one AI-search-friendly draft outline.\n6. Email nurture sequence (3–5 emails).\n7. Paid media plan (channels, budget, creative direction).\n8. Review template (metrics and attribution framework).\nStart working directly; report path after each phase.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. Multiple .md/.html assets\n2. AI search baseline\n3. review template"
+      },
+      "category": "marketing"
+    },
+    {
+      "id": "content-ip-full",
+      "complexity": "full",
+      "title": {
+        "zh-CN": "内容 IP 启动全案",
+        "en": "Content IP launch full case"
+      },
+      "outcome": {
+        "zh-CN": "内容策略→系列长文→社媒矩阵→Newsletter→复盘",
+        "en": "Content strategy → pillar articles → social matrix → newsletter → review"
+      },
+      "scenario": {
+        "zh-CN": "从零做一个内容账号/IP",
+        "en": "Launch a content account or IP from scratch"
+      },
+      "stageBadges": [
+        "strategy",
+        "create",
+        "activate",
+        "measure"
+      ],
+      "relatedSkills": [
+        "mkt-content-strategy",
+        "mkt-copywriting",
+        "social-creative-matrix",
+        "df-newsletter-generation",
+        "ala-data-analyst"
+      ],
+      "outputs": {
+        "zh-CN": "策略 .md + 长文×2 + 社媒包 + newsletter .md + 复盘 .md",
+        "en": "Strategy .md + 2 articles + social bundle + newsletter .md + review .md"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "内容策略",
+            "en": "Content strategy"
+          },
+          "skill": "mkt-content-strategy"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "2 篇支柱长文",
+            "en": "2 pillar articles"
+          },
+          "skill": "mkt-copywriting"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "社媒矩阵切片+配图",
+            "en": "Social matrix slices + images"
+          },
+          "skill": "social-creative-matrix"
+        },
+        {
+          "step": 4,
+          "title": {
+            "zh-CN": "Newsletter",
+            "en": "Newsletter"
+          },
+          "skill": "df-newsletter-generation"
+        },
+        {
+          "step": 5,
+          "title": {
+            "zh-CN": "复盘与下期选题",
+            "en": "Review & next topics"
+          },
+          "skill": "ala-data-analyst"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "帮我为【账号/IP 主题】做一套内容 IP 启动全案，按阶段一次执行，存系统分配的任务目录\n1. 内容策略：定位、话题簇、内容日历方向。\n2. 系列长文：写 2 篇支柱长文。\n3. 社媒矩阵：把长文拆成多平台短内容 + 配图。\n4. Newsletter：写一封电子报整合本期内容。\n5. 复盘：给出衡量指标与下一期选题建议。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，每阶段完成告诉我文件路径。\n\n标准成果清单：\n1. 策略 .md\n2. 长文×2\n3. 社媒包\n4. newsletter .md\n5. 复盘 .md",
+        "en": "Content IP launch for [account/IP theme]. Execute all phases in one conversation; save under the assigned task directory and report paths:\n1. Content strategy: positioning, topic clusters, calendar direction.\n2. Pillar articles: 2 long-form pieces.\n3. Social matrix: multi-platform shorts + images from articles.\n4. Newsletter: one issue summarizing this cycle.\n5. Review: metrics and next-topic suggestions.\nStart working directly; report path after each phase.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. Strategy .md\n2. 2 articles\n3. social bundle\n4. newsletter .md\n5. review .md"
+      },
+      "category": "marketing"
+    },
+    {
+      "id": "brand-campaign-full",
+      "complexity": "full",
+      "title": {
+        "zh-CN": "品牌传播 Campaign 全案",
+        "en": "Brand campaign full case"
+      },
+      "outcome": {
+        "zh-CN": "调研→Campaign 策划→brief→主视觉→多平台内容→发布→监测",
+        "en": "Research → campaign plan → brief → hero → multi-platform → publish → monitor"
+      },
+      "scenario": {
+        "zh-CN": "一场品牌/活动传播战役（需蚁小二）",
+        "en": "Brand or campaign comms (YiXiaoEr for draft)"
+      },
+      "stageBadges": [
+        "research",
+        "strategy",
+        "create",
+        "distribute",
+        "measure"
+      ],
+      "relatedSkills": [
+        "mkt-customer-research",
+        "mkt-campaign-plan",
+        "anth-docx",
+        "od-poster-hero",
+        "social-creative-matrix",
+        "yixiaoer",
+        "mkt-campaign-report"
+      ],
+      "outputs": {
+        "zh-CN": "调研 .md + brief .docx + 海报 + 社媒包 + 草稿编号 + 监测模板",
+        "en": "Research .md + brief .docx + poster + social bundle + draft id + monitoring template"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "受众&环境调研",
+            "en": "Audience & context research"
+          },
+          "skill": "mkt-customer-research"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "Campaign 策划",
+            "en": "Campaign planning"
+          },
+          "skill": "mkt-campaign-plan"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "传播 brief(Word)",
+            "en": "Comms brief (Word)"
+          },
+          "skill": "anth-docx"
+        },
+        {
+          "step": 4,
+          "title": {
+            "zh-CN": "主视觉海报",
+            "en": "Hero visual poster"
+          },
+          "skill": "od-poster-hero"
+        },
+        {
+          "step": 5,
+          "title": {
+            "zh-CN": "多平台文案+配图",
+            "en": "Multi-platform copy + images"
+          },
+          "skill": "social-creative-matrix"
+        },
+        {
+          "step": 6,
+          "title": {
+            "zh-CN": "发布草稿",
+            "en": "Publish draft"
+          },
+          "skill": "yixiaoer"
+        },
+        {
+          "step": 7,
+          "title": {
+            "zh-CN": "监测复盘模板",
+            "en": "Monitoring template"
+          },
+          "skill": "mkt-campaign-report"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "帮我做【活动主题】的品牌传播 campaign 全案，按阶段一次规划执行，产出存系统分配的任务目录\n1. 调研：受众与传播环境速览。\n2. Campaign 策划：read_skill mkt-campaign-plan，明确目标、渠道与节奏。\n3. 传播 brief：输出 Word(.docx)，含目标、人群、核心信息、渠道节奏、交付清单。\n4. 主视觉：一张竖版主视觉海报。\n5. 多平台内容：各平台文案 + 四套比例配图。\n6. 发布：把内容存到【平台】草稿（不公开发布）。\n7. 监测：read_skill mkt-campaign-report，给出监测指标与复盘模板。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，每阶段完成告诉我文件路径。\n\n标准成果清单：\n1. research-report.md\n2. campaign-brief.docx\n3. key-visual-poster.png\n4. 03-social-slices.md\n5. draft-status.md\n6. monitoring-template.md",
+        "en": "Brand campaign full case for [campaign theme]. Execute all phases in one conversation; save under the assigned task directory and report paths:\n1. Research: audience and comms context.\n2. Campaign plan: read_skill mkt-campaign-plan → goals, channels, timeline.\n3. Brief: Word (.docx) with goals, audience, key messages, channel timeline, deliverables.\n4. Hero: one vertical key visual poster.\n5. Multi-platform: copy + four aspect images per platform.\n6. Publish: save to [platform] draft (not public).\n7. Monitoring: read_skill mkt-campaign-report → metrics and retrospective template.\nStart working directly; report path after each phase.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. research-report.md\n2. campaign-brief.docx\n3. key-visual-poster.png\n4. 03-social-slices.md\n5. draft-status.md\n6. monitoring-template.md"
+      },
+      "category": "marketing"
+    },
+    {
+      "id": "geo-visibility-quick",
+      "complexity": "light",
+      "title": {
+        "zh-CN": "AI 可见度快检",
+        "en": "AI visibility quick check"
+      },
+      "outcome": {
+        "zh-CN": "审计清单 + 关键词与验证问句",
+        "en": "Audit checklist + keywords and verification queries"
+      },
+      "scenario": {
+        "zh-CN": "先摸清品牌在 AI 搜索里的可见度缺口",
+        "en": "Quick gap check for AI search visibility"
+      },
+      "stageBadges": [
+        "research",
+        "measure"
+      ],
+      "relatedSkills": [
+        "geo-aeo-audit",
+        "mkt-ai-seo",
+        "pd-geo"
+      ],
+      "outputs": {
+        "zh-CN": "aeo-audit-checklist.md + geo-aeo-audit-checklist.md + aeo-audit.html + keywords.md + keywords.html + verification-plan.md",
+        "en": "geo-aeo-audit-checklist + keywords md/html pairs + verification-plan.md"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "AEO/GEO 审计",
+            "en": "AEO/GEO audit"
+          },
+          "skill": "geo-aeo-audit"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "关键词与验证问句",
+            "en": "Keywords & verify queries"
+          },
+          "skill": "pd-geo"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "帮【品牌名】做 AI 可见度快检，2 步一次做完，全部存 系统分配的任务目录 并报路径：\n1. read_skill geo-aeo-audit，输出 geo-aeo-audit-checklist.md（alias: aeo-audit.md）；read_skill geo-dual-report 同步 geo-aeo-audit-checklist.html。\n2. read_skill pd-geo，产出 keywords.md + keywords.html 与 verification-plan.md（含 10 条验证问句）。\n若评分或联网验证不可用请按 resilience 降级，不要中断。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我文件路径。\n\n标准成果清单：\n1. geo-aeo-audit-checklist.md + .html\n2. keywords.md + keywords.html\n3. verification-plan.md",
+        "en": "AI visibility quick check for [brand]. Two steps, save under 系统分配的任务目录 and report paths:\n1. read_skill geo-aeo-audit → geo-aeo-audit-checklist.md/html via geo-dual-report.\n2. read_skill pd-geo → keywords.md/html + verification-plan.md.\nIf scoring/verify unavailable, degrade per pd-geo resilience; do not stop. Start working directly and report file paths when done.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. geo-aeo-audit-checklist.md + .html\n2. keywords.md + keywords.html\n3. verification-plan.md"
+      },
+      "category": "geo"
+    },
+    {
+      "id": "geo-visibility-standard",
+      "complexity": "standard",
+      "title": {
+        "zh-CN": "AI 搜索可见度标准包",
+        "en": "AI search visibility standard pack"
+      },
+      "outcome": {
+        "zh-CN": "审计+关键词+双平台成稿+评分验证+HTML 周报",
+        "en": "Audit, keywords, 2 platform drafts, score/verify, HTML report"
+      },
+      "scenario": {
+        "zh-CN": "系统化提升品牌在 AI 回答中的提及与引用",
+        "en": "Improve brand mentions in AI-generated answers"
+      },
+      "stageBadges": [
+        "research",
+        "strategy",
+        "create",
+        "measure"
+      ],
+      "relatedSkills": [
+        "geo-aeo-audit",
+        "pd-geo",
+        "geo-content-optimizer",
+        "od-data-report"
+      ],
+      "outputs": {
+        "zh-CN": "5 项 geo 标准包（含 visibility-report.html）",
+        "en": "md/json under geo/ + optimized.md + visibility-report.html"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "AEO/GEO 审计",
+            "en": "AEO/GEO audit"
+          },
+          "skill": "geo-aeo-audit"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "关键词与双平台成稿",
+            "en": "Keywords & 2 platform drafts"
+          },
+          "skill": "pd-geo"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "AI 可引用内容优化",
+            "en": "AI-citable content optimization"
+          },
+          "skill": "geo-content-optimizer"
+        },
+        {
+          "step": 4,
+          "title": {
+            "zh-CN": "评分与提及验证",
+            "en": "Score & mention verify"
+          },
+          "skill": "pd-geo"
+        },
+        {
+          "step": 5,
+          "title": {
+            "zh-CN": "HTML 可见度周报",
+            "en": "HTML visibility report"
+          },
+          "skill": "od-data-report"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "帮【品牌名】做 AI 搜索可见度标准包，5 步一次做完，存 系统分配的任务目录 每步报路径：\n1. read_skill geo-aeo-audit → aeo-audit.md。\n2. read_skill pd-geo → keywords.md + 知乎与小红书各一篇成稿（drafts/）。\n3. read_skill geo-content-optimizer → 对 optimized.md 做 AI 可引用性优化。\n4. 用 geo_api 对 optimized.md 规则评分（quick + CORE-EEAT 自检）；对验证问句先 web_search、失败自动试博查，产出 score.json、verify-report.json、report.md。\n5. read_skill od-data-report → visibility-report.html 周报。\n若评分或联网验证暂时不可用，请按 pd-geo resilience 降级仍交付清单和成稿，不要中断。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我各文件路径。\n\n标准成果清单：\n1. geo-aeo-audit-checklist.md\n2. keywords-research.md\n3. optimized.md\n4. score-report.md\n5. visibility-report.html",
+        "en": "AI search visibility standard pack for [brand]. Five steps, save under 系统分配的任务目录 and report each path:\n1. geo-aeo-audit → aeo-audit.md.\n2. pd-geo → keywords.md + Zhihu and Xiaohongshu drafts.\n3. geo-content-optimizer → optimize optimized.md for AI citability.\n4. geo_api score + verify queries via web_search then Bocha → score.json, verify-report.json, report.md.\n5. od-data-report → visibility-report.html.\nIf score/verify unavailable, degrade per pd-geo resilience. Start working directly and report all paths when done.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. geo-aeo-audit-checklist.md\n2. keywords-research.md\n3. optimized.md\n4. score-report.md\n5. visibility-report.html"
+      },
+      "category": "geo"
+    },
+    {
+      "id": "competitive-intel-quick",
+      "complexity": "light",
+      "title": {
+        "zh-CN": "竞品与口碑快览",
+        "en": "Competitive & sentiment snapshot"
+      },
+      "outcome": {
+        "zh-CN": "竞品简报 + 品牌提及/口碑要点",
+        "en": "Competitive brief plus brand mention/sentiment highlights"
+      },
+      "scenario": {
+        "zh-CN": "立项或比稿前快速摸清竞品与舆论环境",
+        "en": "Quick competitive and sentiment scan before a pitch or launch"
+      },
+      "stageBadges": [
+        "research"
+      ],
+      "relatedSkills": [
+        "mkt-competitive-brief",
+        "mkt-review-mining"
+      ],
+      "outputs": {
+        "zh-CN": "competitive-brief.md + sentiment-notes.md",
+        "en": "competitive-brief.md + sentiment-notes.md"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "竞品对照简报",
+            "en": "Competitive brief"
+          },
+          "skill": "mkt-competitive-brief"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "口碑与提及挖掘",
+            "en": "Review & mention mining"
+          },
+          "skill": "mkt-review-mining"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "围绕【我的产品】对比【竞品A、竞品B】做竞品与口碑快览，2 步一次做完，存 系统分配的任务目录 并报路径：\n1. 竞品简报：定位、定价、功能差异、我方机会点，输出 competitive-brief.md。\n2. 口碑挖掘：汇总用户评价/社媒提及中的正负面要点与引用线索，输出 sentiment-notes.md。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我两个文件路径。\n\n标准成果清单：\n1. competitive-brief.md\n2. sentiment-notes.md",
+        "en": "Competitive and sentiment snapshot for [my product] vs [Competitor A, B]. Two steps; save under 系统分配的任务目录 and report paths:\n1. Competitive brief: positioning, pricing, feature gaps, our opportunities → competitive-brief.md.\n2. Sentiment mining: positive/negative themes and quote leads from reviews/mentions → sentiment-notes.md.\nStart working directly and tell me both file paths when done.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. competitive-brief.md\n2. sentiment-notes.md"
+      },
+      "category": "marketing"
+    },
+    {
+      "id": "geo-brand-full",
+      "complexity": "full",
+      "title": {
+        "zh-CN": "品牌 GEO 全案",
+        "en": "Brand GEO full case"
+      },
+      "outcome": {
+        "zh-CN": "标准包 + JSON-LD + 可选社媒草稿",
+        "en": "Standard pack + JSON-LD + optional social draft"
+      },
+      "scenario": {
+        "zh-CN": "品牌要在 AI 搜索与多平台内容同时布局（可选蚁小二草稿）",
+        "en": "Full GEO with schema and optional YiXiaoEr draft"
+      },
+      "stageBadges": [
+        "research",
+        "strategy",
+        "create",
+        "distribute",
+        "measure"
+      ],
+      "relatedSkills": [
+        "geo-aeo-audit",
+        "pd-geo",
+        "geo-content-optimizer",
+        "mkt-schema",
+        "geo-citability",
+        "od-data-report",
+        "yixiaoer"
+      ],
+      "outputs": {
+        "zh-CN": "geo 全套文件 + schema.jsonld + 可选草稿编号",
+        "en": "Full geo artifacts + schema.jsonld + optional draft id"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "AEO/GEO 审计",
+            "en": "AEO/GEO audit"
+          },
+          "skill": "geo-aeo-audit"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "关键词与多平台成稿",
+            "en": "Keywords & multi-platform drafts"
+          },
+          "skill": "pd-geo"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "AI 可引用内容优化",
+            "en": "AI-citable optimization"
+          },
+          "skill": "geo-content-optimizer"
+        },
+        {
+          "step": 4,
+          "title": {
+            "zh-CN": "JSON-LD 结构化数据",
+            "en": "JSON-LD schema"
+          },
+          "skill": "mkt-schema"
+        },
+        {
+          "step": 5,
+          "title": {
+            "zh-CN": "引用评分与验证",
+            "en": "Citability score & verify"
+          },
+          "skill": "geo-citability"
+        },
+        {
+          "step": 6,
+          "title": {
+            "zh-CN": "HTML 周报",
+            "en": "HTML weekly report"
+          },
+          "skill": "od-data-report"
+        },
+        {
+          "step": 7,
+          "title": {
+            "zh-CN": "存平台草稿（不公开）",
+            "en": "Save draft (not public)"
+          },
+          "skill": "yixiaoer"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "帮【品牌名】做品牌 GEO 全案，按阶段一次执行，存 系统分配的任务目录 每阶段报路径。核心优势【…】，竞品【…】。\n1. geo-aeo-audit 审计清单。\n2. pd-geo：关键词 + 至少 3 个平台成稿 + optimized.md。\n3. geo-content-optimizer：优化 optimized.md 可引用性。\n4. mkt-schema：schema.jsonld。\n5. geo-citability：引用评分报告 + web_search/博查验证（勿用 Perplexity API）。\n6. od-data-report：visibility-report.html。\n7. 可选：将一篇图文存【小红书】草稿（不公开发布），回报任务编号。\n若评分或联网验证不可用请降级仍交付，不要中断。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我路径。\n\n标准成果清单：\n1. geo-aeo-audit-checklist.md\n2. keywords-research.md\n3. 平台成稿×3（zhihu-article.md、xiaohongshu-article.md、wechat-article.md）\n4. optimized.md\n5. schema.jsonld\n6. citability-report.md\n7. visibility-report.html",
+        "en": "Brand GEO full case for [brand]. Save under 系统分配的任务目录 report path after each phase. Advantages […], competitors […].\n1. geo-aeo-audit audit.\n2. pd-geo: keywords, 3+ platform drafts, optimized.md.\n3. geo-content-optimizer: citability optimization.\n4. mkt-schema: schema.jsonld.\n5. geo-citability: citability score + web_search/Bocha verify (no Perplexity API).\n6. od-data-report: visibility-report.html.\n7. Optional: save one post to [Xiaohongshu] draft (not public), report task id.\nDegrade if score/verify unavailable. Start working directly and report paths when done.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. geo-aeo-audit-checklist.md\n2. keywords-research.md\n3. 3 platform drafts (zhihu-article.md, xiaohongshu-article.md, wechat-article.md)\n4. optimized.md\n5. schema.jsonld\n6. citability-report.md\n7. visibility-report.html"
+      },
+      "category": "geo"
+    },
+    {
+      "id": "ai-citable-content",
+      "complexity": "light",
+      "title": {
+        "zh-CN": "AI 可引用内容优化",
+        "en": "AI-citable content polish"
+      },
+      "outcome": {
+        "zh-CN": "成稿优化 + 引用评分报告",
+        "en": "Optimized draft plus citability score report"
+      },
+      "scenario": {
+        "zh-CN": "已有文章/落地页，想提升被 AI 引用概率",
+        "en": "Existing article or page needs better AI citation odds"
+      },
+      "stageBadges": [
+        "create",
+        "measure"
+      ],
+      "relatedSkills": [
+        "geo-content-optimizer",
+        "geo-citability"
+      ],
+      "outputs": {
+        "zh-CN": "optimization-report.md + optimization-report.html + optimized.md + citability-report.md + citability-report.html",
+        "en": "optimization + citability md/html pairs + optimized.md"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "可引用性改写",
+            "en": "Citability rewrite"
+          },
+          "skill": "geo-content-optimizer"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "引用评分报告",
+            "en": "Citability score report"
+          },
+          "skill": "geo-citability"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "帮我把【文章/页面主题】的现有成稿优化为 AI 更易引用的版本，2 步一次做完，存 系统分配的任务目录 并报路径：\n1. read_skill geo-content-optimizer：基于我提供的正文或路径，输出 optimized.md 与 optimization-report.md；read_skill geo-dual-report 同步 optimization-report.html。\n2. read_skill geo-citability：对 optimized.md 做引用评分并输出 citability-report.md + citability-report.html（geo-dual-report）。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我文件路径。\n\n标准成果清单：\n1. optimized.md\n2. optimization-report.md + optimization-report.html\n3. citability-report.md + citability-report.html",
+        "en": "Optimize existing copy for [topic/page] for AI citation. Two steps; save under 系统分配的任务目录 and report paths:\n1. geo-content-optimizer: optimized.md + optimization-report.md/html via geo-dual-report.\n2. geo-citability: citability-report.md/html via geo-dual-report.\nStart working directly and tell me file paths when done.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. optimized.md\n2. optimization-report.md + optimization-report.html\n3. citability-report.md + citability-report.html"
+      },
+      "category": "geo"
+    },
+    {
+      "id": "campaign-strategy-pack",
+      "complexity": "standard",
+      "title": {
+        "zh-CN": "Campaign 策划交付包",
+        "en": "Campaign strategy delivery pack"
+      },
+      "outcome": {
+        "zh-CN": "Campaign 计划 + 策略演示稿 + Word 摘要",
+        "en": "Campaign plan + strategy deck + Word summary"
+      },
+      "scenario": {
+        "zh-CN": "比稿或内部立项，需要完整策划物料",
+        "en": "Pitch or internal kickoff needing full strategy deliverables"
+      },
+      "stageBadges": [
+        "research",
+        "strategy"
+      ],
+      "relatedSkills": [
+        "mkt-competitive-brief",
+        "mkt-campaign-plan",
+        "mkt-strategy-deck",
+        "anth-docx"
+      ],
+      "outputs": {
+        "zh-CN": "competitive-brief.md + campaign-plan.md + strategy-deck.html + summary.docx",
+        "en": "competitive-brief.md + campaign-plan.md + strategy-deck.html + summary.docx"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "竞品与市场速览",
+            "en": "Competitive & market snapshot"
+          },
+          "skill": "mkt-competitive-brief"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "Campaign 计划",
+            "en": "Campaign plan"
+          },
+          "skill": "mkt-campaign-plan"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "策略演示稿",
+            "en": "Strategy deck"
+          },
+          "skill": "mkt-strategy-deck"
+        },
+        {
+          "step": 4,
+          "title": {
+            "zh-CN": "Word 策划摘要",
+            "en": "Word strategy summary"
+          },
+          "skill": "anth-docx"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "帮我为【活动/产品主题】做 Campaign 策划交付包，4 步一次做完，存 系统分配的任务目录 每步报路径：\n1. 竞品简报：read_skill mkt-competitive-brief → competitive-brief.md。\n2. Campaign 计划：read_skill mkt-campaign-plan → campaign-plan.md（目标、人群、渠道、节奏、预算框架）。\n3. 策略演示稿：read_skill mkt-strategy-deck → strategy-deck.html（10-12 页结构）。\n4. Word 摘要：整合成 2-3 页 .docx 策划摘要。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我各文件路径。\n\n标准成果清单：\n1. competitive-brief.md\n2. campaign-plan.md\n3. strategy-deck.html\n4. summary.docx",
+        "en": "Campaign strategy pack for [campaign/product theme]. Four steps; save under 系统分配的任务目录 and report each path:\n1. mkt-competitive-brief → competitive-brief.md.\n2. mkt-campaign-plan → campaign-plan.md (goals, audience, channels, timeline, budget frame).\n3. mkt-strategy-deck → strategy-deck.html (10–12 slide structure).\n4. anth-docx → 2–3 page strategy summary .docx.\nStart working directly and report all file paths when done.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. competitive-brief.md\n2. campaign-plan.md\n3. strategy-deck.html\n4. summary.docx"
+      },
+      "category": "marketing"
+    },
+    {
+      "id": "geo-monitor-loop",
+      "complexity": "standard",
+      "title": {
+        "zh-CN": "AI 可见度监测闭环",
+        "en": "AI visibility monitoring loop"
+      },
+      "outcome": {
+        "zh-CN": "主流大模型收录矩阵 + 优化建议 + HTML 监测报告",
+        "en": "LLM indexing matrix + optimization advice + HTML monitor report"
+      },
+      "scenario": {
+        "zh-CN": "持续监测品牌/产品/事件在各主流大模型中的收录与可见度",
+        "en": "Ongoing LLM indexing and visibility monitoring"
+      },
+      "stageBadges": [
+        "geo_monitor"
+      ],
+      "geoFlywheel": true,
+      "geoStages": [
+        "geo_monitor"
+      ],
+      "relatedSkills": [
+        "geo-visibility-probe",
+        "mkt-brand-mention",
+        "geo-monitor-hub",
+        "geo-monitor-report"
+      ],
+      "outputs": {
+        "zh-CN": "monitor-report.md + geo-monitor-report.html + monitor-data.json",
+        "en": "monitor-report.md + geo-monitor-report.html + monitor-data.json"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "大模型收录探测",
+            "en": "LLM indexing probe"
+          },
+          "skill": "geo-visibility-probe"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "品牌提及监测",
+            "en": "Brand mention monitoring"
+          },
+          "skill": "mkt-brand-mention"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "监测数据聚合",
+            "en": "Monitor data aggregation"
+          },
+          "skill": "geo-monitor-hub"
+        },
+        {
+          "step": 4,
+          "title": {
+            "zh-CN": "双格式监测报告",
+            "en": "Dual-format monitor report"
+          },
+          "skill": "geo-monitor-report"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "帮【品牌/产品/事件】做 GEO 监测闭环，4 步一次做完，写入系统分配任务目录并报路径：\n1. read_skill geo-visibility-probe：十一模型收录矩阵（国内豆包/DeepSeek/千问/百度/Kimi/腾讯元宝 + 国外 OpenAI/Gemini/Claude/Grok/Meta）→ probe-results.json。\n2. read_skill mkt-brand-mention：公开渠道提及摘要 → mention-report.md（不重复收录矩阵）。\n3. read_skill geo-monitor-hub：合并为 monitor-data.json（llm_coverage.models 须 11 行齐全）。\n4. read_skill geo-monitor-report：monitor-report.md（收录分析+优化建议）+ geo-monitor-report.html。\n若 AgentAEO/联网 Key 不可用，国外模型标 skipped 仍须占位。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n直接开始做，做完告诉我各文件路径。\n\n标准成果清单：\n1. monitor-data.json（含 llm_coverage 十一模型）\n2. monitor-report.md\n3. geo-monitor-report.html",
+        "en": "GEO monitoring loop for [brand/product/event]. Four steps:\n1. geo-visibility-probe → llm_coverage matrix.\n2. mkt-brand-mention → public mention summary (no duplicate matrix).\n3. geo-monitor-hub → monitor-data.json with llm_coverage.\n4. geo-monitor-report → md + html with indexing analysis and optimization.\n\nStandard deliverables:\n1. monitor-data.json\n2. monitor-report.md\n3. geo-monitor-report.html"
+      },
+      "category": "geo"
+    },
+    {
+      "id": "geo-baseline-pack",
+      "complexity": "light",
+      "title": {
+        "zh-CN": "GEO 基线调研包",
+        "en": "GEO baseline pack"
+      },
+      "outcome": {
+        "zh-CN": "关键词 + 竞品 + AI 可见度清单",
+        "en": "Keywords + competitors + AI visibility checklist"
+      },
+      "scenario": {
+        "zh-CN": "品牌首次进入 GEO Tab 基线阶段",
+        "en": "First GEO baseline for a brand"
+      },
+      "geoFlywheel": true,
+      "geoStages": [
+        "geo_baseline"
+      ],
+      "stageBadges": [
+        "geo_baseline"
+      ],
+      "relatedSkills": [
+        "geo-keyword-research",
+        "geo-competitor-analysis",
+        "mkt-ai-seo"
+      ],
+      "outputs": {
+        "zh-CN": "keywords.md + keywords.html + competitor-visibility.md + competitor-visibility.html + audit-checklist.md + audit-checklist.html",
+        "en": "keywords + competitor + audit md/html pairs"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "关键词与问句",
+            "en": "Keywords and queries"
+          },
+          "skill": "geo-keyword-research"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "竞品可见度",
+            "en": "Competitor visibility"
+          },
+          "skill": "geo-competitor-analysis"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "AI 可见度清单",
+            "en": "AI visibility checklist"
+          },
+          "skill": "mkt-ai-seo"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "为【品牌】做 GEO 基线调研包，3 步一次做完，写入系统分配任务目录：\n1. geo-keyword-research → keywords.md + keywords.html。\n2. geo-competitor-analysis → competitor-visibility.md + competitor-visibility.html。\n3. mkt-ai-seo → audit-checklist.md + audit-checklist.html。\n每步 MD 完成后 read_skill geo-dual-report 同步 HTML。\n直接开始做，做完告诉我文件路径。\n\n标准成果清单：\n1. keywords.md + keywords.html\n2. competitor-visibility.md + competitor-visibility.html\n3. audit-checklist.md + audit-checklist.html",
+        "en": "GEO baseline pack for [brand]. Three steps; each MD paired with HTML via geo-dual-report.\n\nStandard deliverables:\n1. keywords.md + keywords.html\n2. competitor-visibility.md + competitor-visibility.html\n3. audit-checklist.md + audit-checklist.html"
+      },
+      "category": "geo"
+    },
+    {
+      "id": "geo-technical-pack",
+      "complexity": "standard",
+      "title": {
+        "zh-CN": "GEO 技术结构包",
+        "en": "GEO technical pack"
+      },
+      "outcome": {
+        "zh-CN": "AEO 审计 + 技术 SEO + schema + 国内爬虫",
+        "en": "AEO audit + technical SEO + schema + CN crawlers"
+      },
+      "scenario": {
+        "zh-CN": "站点 AI 可达与技术基线一次性检查",
+        "en": "One-shot technical GEO baseline"
+      },
+      "geoFlywheel": true,
+      "geoStages": [
+        "geo_technical"
+      ],
+      "stageBadges": [
+        "geo_technical"
+      ],
+      "relatedSkills": [
+        "geo-aeo-audit",
+        "geo-technical-seo",
+        "mkt-schema",
+        "geo-cn-crawlers"
+      ],
+      "outputs": {
+        "zh-CN": "aeo-audit.md + aeo-audit.html + technical-seo-audit.md + technical-seo-audit.html + schema.jsonld + llms.txt",
+        "en": "audit md/html pairs + schema + llms.txt"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "AEO 快检",
+            "en": "AEO audit"
+          },
+          "skill": "geo-aeo-audit"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "技术 SEO",
+            "en": "Technical SEO"
+          },
+          "skill": "geo-technical-seo"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "结构化数据",
+            "en": "Schema"
+          },
+          "skill": "mkt-schema"
+        },
+        {
+          "step": 4,
+          "title": {
+            "zh-CN": "国内 AI 爬虫",
+            "en": "CN AI crawlers"
+          },
+          "skill": "geo-cn-crawlers"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "对【域名】做 GEO 技术结构包，4 步写入系统分配任务目录：\n1. geo-aeo-audit → aeo-audit.md + aeo-audit.html\n2. geo-technical-seo → technical-seo-audit.md + technical-seo-audit.html\n3. mkt-schema → schema.jsonld\n4. geo-cn-crawlers → llms.txt 建议\n每份分析 MD 完成后 read_skill geo-dual-report 同步 HTML。\n直接开始做，做完告诉我路径。\n\n标准成果清单：\n1. aeo-audit.md + aeo-audit.html\n2. technical-seo-audit.md + technical-seo-audit.html\n3. schema.jsonld\n4. llms.txt",
+        "en": "GEO technical pack for [domain]. Four steps; sync HTML via geo-dual-report after each audit MD.\n\nStandard deliverables:\n1. aeo-audit.md + aeo-audit.html\n2. technical-seo-audit.md + technical-seo-audit.html\n3. schema.jsonld\n4. llms.txt"
+      },
+      "category": "geo"
+    },
+    {
+      "id": "geo-monitor-dashboard",
+      "complexity": "standard",
+      "title": {
+        "zh-CN": "GEO 监测仪表盘",
+        "en": "GEO monitor dashboard"
+      },
+      "outcome": {
+        "zh-CN": "主流大模型收录矩阵 + 优化建议 + HTML 仪表盘",
+        "en": "LLM indexing matrix + optimization + HTML dashboard"
+      },
+      "scenario": {
+        "zh-CN": "geo_monitor 主入口：品牌/产品/事件的大模型收录分析",
+        "en": "Primary geo_monitor LLM indexing workflow"
+      },
+      "geoFlywheel": true,
+      "geoStages": [
+        "geo_monitor"
+      ],
+      "stageBadges": [
+        "geo_monitor"
+      ],
+      "relatedSkills": [
+        "geo-monitor-hub",
+        "geo-monitor-report",
+        "geo-visibility-probe",
+        "mcp-agent-aeo"
+      ],
+      "outputs": {
+        "zh-CN": "monitor-data.json + monitor-report.md + geo-monitor-report.html",
+        "en": "monitor-data.json + monitor-report.md + geo-monitor-report.html"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "大模型收录采集",
+            "en": "LLM indexing probe"
+          },
+          "skill": "geo-visibility-probe"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "监测编排",
+            "en": "Monitor hub"
+          },
+          "skill": "geo-monitor-hub"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "可视化报告",
+            "en": "Visual report"
+          },
+          "skill": "geo-monitor-report"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "对【品牌/产品/事件】跑 GEO 监测仪表盘：\n1. geo-visibility-probe（十一模型必测，可选 mcp-agent-aeo 补 citation）→ llm_coverage。\n2. geo-monitor-hub → monitor-data.json（11 个必测 id 齐全）。\n3. geo-monitor-report → 收录分析 + 优化建议 + geo-monitor-report.html。\n写入系统分配任务目录。缺 Key 仍须 skipped 占位。\n\n标准成果清单：\n1. monitor-data.json（含 llm_coverage 十一模型）\n2. monitor-report.md\n3. geo-monitor-report.html",
+        "en": "GEO monitor dashboard for [brand/product/event]:\n1. geo-visibility-probe (+ optional mcp-agent-aeo) → llm_coverage\n2. geo-monitor-hub → monitor-data.json\n3. geo-monitor-report → indexing analysis + html\n\nStandard deliverables:\n1. monitor-data.json\n2. monitor-report.md\n3. geo-monitor-report.html"
+      },
+      "category": "geo"
+    },
+    {
+      "id": "geo-monitor-weekly",
+      "complexity": "light",
+      "title": {
+        "zh-CN": "GEO 监测周报对比",
+        "en": "GEO weekly monitor compare"
+      },
+      "outcome": {
+        "zh-CN": "收录得分趋势对比 + 优化建议更新",
+        "en": "Indexing score trend + updated optimization advice"
+      },
+      "scenario": {
+        "zh-CN": "周期复跑监测",
+        "en": "Periodic monitor rerun"
+      },
+      "geoFlywheel": true,
+      "geoStages": [
+        "geo_monitor"
+      ],
+      "stageBadges": [
+        "geo_monitor"
+      ],
+      "relatedSkills": [
+        "geo-monitor-hub",
+        "geo-monitor-report"
+      ],
+      "outputs": {
+        "zh-CN": "monitor-data.json（含 trend）+ 双格式报告",
+        "en": "monitor-data.json with trend + dual report"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "复跑采集与对比",
+            "en": "Rerun and compare"
+          },
+          "skill": "geo-monitor-hub"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "趋势报告",
+            "en": "Trend report"
+          },
+          "skill": "geo-monitor-report"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "为【品牌/产品/事件】做 GEO 监测周报：读取上次 monitor-data.json，复跑 geo-visibility-probe + geo-monitor-hub，写入 trend.coverage_score_delta，再 geo-monitor-report 产出三件套（须对比各模型 indexing_score 变化）。\n\n标准成果清单：\n1. monitor-data.json（含 llm_coverage + trend）\n2. monitor-report.md\n3. geo-monitor-report.html",
+        "en": "GEO weekly monitor for [brand]: compare with previous monitor-data.json, update trend, deliver md+html+json.\n\nStandard deliverables:\n1. monitor-data.json\n2. monitor-report.md\n3. geo-monitor-report.html"
+      },
+      "category": "geo"
+    },
+    {
+      "id": "outline-ppt-video",
+      "complexity": "full",
+      "rating": 4.8,
+      "title": {
+        "zh-CN": "大纲→PPT→炫酷视频",
+        "en": "Outline to deck to motion video"
+      },
+      "outcome": {
+        "zh-CN": "一份大纲 + 一套动效演示页 + 一支可直接发布的成片",
+        "en": "Outline + animated HTML deck + a publish-ready video"
+      },
+      "scenario": {
+        "zh-CN": "要做发布会/课程/提案，想从一句话直接拿到能放映的演示和能发的视频",
+        "en": "Turn one topic into a presentable deck and a shareable video"
+      },
+      "stageBadges": [
+        "research",
+        "create"
+      ],
+      "relatedSkills": [
+        "nova-research-general",
+        "frontend-slides",
+        "hf-hyperframes"
+      ],
+      "outputs": {
+        "zh-CN": "1 个 .md 大纲 + 1 个 .html 演示 + 1 个 .mp4 视频",
+        "en": "1 .md + 1 .html + 1 .mp4"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "调研并写结构化大纲",
+            "en": "Research and outline"
+          },
+          "skill": "nova-research-general"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "大纲生成动效演示页",
+            "en": "Outline to animated deck"
+          },
+          "skill": "frontend-slides"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "演示页渲染成片",
+            "en": "Render deck to video"
+          },
+          "skill": "hf-hyperframes"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "帮我把【主题】做成一支能直接发的演示视频，三步连着做，每步写入系统分配的任务目录 并告诉我路径：\n1. 先查清楚这个主题的要点，写一份 8-12 节的结构化大纲（每节一句核心观点+2-3 个支撑点）。\n2. 按大纲做一套深色现代风的动效网页演示，每节一屏，标题大、要点少、有进场动画。\n3. 把演示页按每屏 4-6 秒渲染成横版 1080p 视频。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我三个文件路径。\n\n标准成果清单：\n1. 1 个 .md 大纲\n2. 1 个 .html 演示\n3. 1 个 .mp4 视频",
+        "en": "Turn [topic] into a publish-ready presentation video in three chained steps, saving each deliverable under the assigned task directory 1) research the topic and write an 8-12 section outline; 2) build a dark modern animated HTML deck, one screen per section; 3) render the deck to a 1080p landscape video at 4-6s per screen. Start directly and report all three file paths.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. 1 .md\n2. 1 .html\n3. 1 .mp4"
+      },
+      "category": "creation"
+    },
+    {
+      "id": "website-promo-video",
+      "complexity": "standard",
+      "rating": 4.6,
+      "title": {
+        "zh-CN": "官网→品牌宣传视频",
+        "en": "Website to promo video"
+      },
+      "outcome": {
+        "zh-CN": "分镜脚本 + 30-60 秒品牌宣传片（含字幕）",
+        "en": "Storyboard + 30-60s brand promo with subtitles"
+      },
+      "scenario": {
+        "zh-CN": "已有官网，要快速产出能投放的品牌短片",
+        "en": "Turn an existing site into a promo video"
+      },
+      "stageBadges": [
+        "research",
+        "create"
+      ],
+      "relatedSkills": [
+        "mkt-brand-video",
+        "hf-product-launch-video"
+      ],
+      "outputs": {
+        "zh-CN": "storyboard.md + promo.mp4",
+        "en": "storyboard.md + promo.mp4"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "抓取官网真图与卖点",
+            "en": "Fetch site images and USPs"
+          },
+          "skill": "mkt-brand-video"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "写分镜与旁白",
+            "en": "Storyboard and voiceover"
+          },
+          "skill": "mkt-brand-video"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "网站转宣传视频",
+            "en": "Site to promo video"
+          },
+          "skill": "hf-product-launch-video"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "为【官网 URL】做一支 30-60 秒品牌宣传视频，三步一次做完，存 系统分配的任务目录 并报路径：\n1. 用 fetch_page_images 抓取官网实际大图与核心卖点，禁止 AI 生成产品图。\n2. 写 6-8 镜头分镜（每镜头文案+画面来源）。\n3. 按分镜生成横版宣传片并加字幕，输出 mp4。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我文件路径。\n\n标准成果清单：\n1. storyboard.md\n2. promo.mp4",
+        "en": "Create a 30-60s brand promo for [website URL] in three steps; save under 系统分配的任务目录 and report paths:\n1. Use fetch_page_images for real site images and USPs—no AI product shots.\n2. Write a 6-8 shot storyboard with copy and image sources.\n3. Produce a landscape promo mp4 with subtitles.\nStart directly and report file paths.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. storyboard.md\n2. promo.mp4"
+      },
+      "category": "creation"
+    },
+    {
+      "id": "research-podcast",
+      "complexity": "standard",
+      "rating": 4.5,
+      "title": {
+        "zh-CN": "深度调研→双人播客",
+        "en": "Deep research to duo podcast"
+      },
+      "outcome": {
+        "zh-CN": "调研报告 + 对谈脚本 + 播客音频",
+        "en": "Research report + dialogue script + podcast audio"
+      },
+      "scenario": {
+        "zh-CN": "把资料调研变成可听的播客节目",
+        "en": "Turn research into a listenable podcast"
+      },
+      "stageBadges": [
+        "research",
+        "create"
+      ],
+      "relatedSkills": [
+        "df-deep-research",
+        "ala-content-writer",
+        "df-podcast-generation"
+      ],
+      "outputs": {
+        "zh-CN": "research.md + script.md + podcast.mp3",
+        "en": "research.md + script.md + podcast.mp3"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "深度调研",
+            "en": "Deep research"
+          },
+          "skill": "df-deep-research"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "双主播对谈脚本",
+            "en": "Duo host script"
+          },
+          "skill": "ala-content-writer"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "生成播客音频",
+            "en": "Generate podcast audio"
+          },
+          "skill": "df-podcast-generation"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "围绕【主题】做一期双人播客，三步一次做完，存 系统分配的任务目录 并报路径：\n1. 深度调研：多源信息、结论与争议点 → research.md。\n2. 写 A/B 两位主播口语化对谈脚本（有追问有反驳，每段不超 3 句）→ script.md。\n3. 按脚本生成双音色播客音频 → podcast.mp3。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我各文件路径。\n\n标准成果清单：\n1. research.md\n2. script.md\n3. podcast.mp3",
+        "en": "Produce a duo podcast on [topic] in three steps; save under 系统分配的任务目录 and report paths:\n1. Deep research → research.md.\n2. Conversational A/B host script with pushback → script.md.\n3. Dual-voice podcast audio → podcast.mp3.\nStart directly and report all paths.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. research.md\n2. script.md\n3. podcast.mp3"
+      },
+      "category": "creation"
+    },
+    {
+      "id": "one-article-matrix",
+      "complexity": "standard",
+      "rating": 4.4,
+      "title": {
+        "zh-CN": "一文多发内容矩阵",
+        "en": "One article, multi-platform matrix"
+      },
+      "outcome": {
+        "zh-CN": "五平台改写稿 + 每平台配图（人味化润色）",
+        "en": "Five platform variants + images per platform"
+      },
+      "scenario": {
+        "zh-CN": "一篇长文拆成多平台可发版本",
+        "en": "Repurpose one long article across platforms"
+      },
+      "stageBadges": [
+        "create",
+        "activate"
+      ],
+      "relatedSkills": [
+        "ala-content-writer",
+        "social-creative-matrix",
+        "humanizer",
+        "od-image-gen"
+      ],
+      "outputs": {
+        "zh-CN": "5 份稿件 + 5 张配图",
+        "en": "5 posts + 5 images"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "长文定稿",
+            "en": "Finalize long article"
+          },
+          "skill": "ala-content-writer"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "五平台改写",
+            "en": "Five-platform rewrite"
+          },
+          "skill": "social-creative-matrix"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "人味化润色+配图",
+            "en": "Humanize and images"
+          },
+          "skill": "humanizer"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "把下面这篇长文做成五平台内容矩阵，三步一次做完，存 系统分配的任务目录 并报路径：\n【在此粘贴长文或主题】\n1. 整理成一篇结构清晰的长文定稿 article.md。\n2. 改写为小红书（emoji+话题）、公众号（小标题）、知乎（论证）、抖音、B站五版。\n3. 用 humanizer 逐版润色去 AI 味，并 write_file data-sources.md 汇总引用来源。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我各文件路径。\n\n标准成果清单：\n1. article.md\n2. zhihu.md / xiaohongshu.md / wechat.md / douyin.md / bilibili.md\n3. data-sources.md",
+        "en": "Turn the following into a five-platform content matrix in three steps; save under 系统分配的任务目录 and report paths:\n[Paste article or topic]\n1. article.md long-form draft.\n2. Variants: Xiaohongshu, WeChat, Zhihu, Douyin, Bilibili.\n3. Humanize each with humanizer and write data-sources.md.\nStart directly and report all paths.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. article.md\n2. five platform md files\n3. data-sources.md"
+      },
+      "category": "marketing"
+    },
+    {
+      "id": "data-story-video",
+      "complexity": "full",
+      "rating": 4.7,
+      "title": {
+        "zh-CN": "数据→动态网页→数据视频",
+        "en": "Data to scroll story to video"
+      },
+      "outcome": {
+        "zh-CN": "分析结论 + 滚动叙事页 + 数据动画视频",
+        "en": "Analysis + scroll narrative page + data video"
+      },
+      "scenario": {
+        "zh-CN": "用数据讲故事并导出可分享视频",
+        "en": "Tell a data story and export shareable video"
+      },
+      "stageBadges": [
+        "research",
+        "create"
+      ],
+      "relatedSkills": [
+        "df-data-analysis",
+        "od-data-report",
+        "tool-render-html-video"
+      ],
+      "outputs": {
+        "zh-CN": "analysis.md + story.html + video.mp4",
+        "en": "analysis.md + story.html + video.mp4"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "读数分析",
+            "en": "Data analysis"
+          },
+          "skill": "df-data-analysis"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "滚动叙事数据页",
+            "en": "Scroll narrative page"
+          },
+          "skill": "od-data-report"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "录成数据视频",
+            "en": "Render to video"
+          },
+          "skill": "tool-render-html-video"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "用【数据/表格说明或文件路径】做一支数据故事视频，三步一次做完，存 系统分配的任务目录 并报路径：\n1. 先给出 3 个关键结论 → analysis.md。\n2. 做滚动叙事 HTML 页（数字滚动/柱图生长动效）→ story.html。\n3. 按结论分章把页面渲染成 1080p mp4。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我三个文件路径。\n\n标准成果清单：\n1. analysis.md\n2. story.html\n3. video.mp4",
+        "en": "Build a data story video from [data description or file path] in three steps; save under 系统分配的任务目录 and report paths:\n1. Three key conclusions → analysis.md.\n2. Scroll narrative HTML with animated charts → story.html.\n3. Render chaptered 1080p mp4.\nStart directly and report all three paths.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. analysis.md\n2. story.html\n3. video.mp4"
+      },
+      "category": "creation"
+    },
+    {
+      "id": "xhs-hit-factory",
+      "complexity": "standard",
+      "rating": 4.5,
+      "title": {
+        "zh-CN": "小红书爆款工厂",
+        "en": "Xiaohongshu hit factory"
+      },
+      "outcome": {
+        "zh-CN": "选题表 + 3 组图文笔记与封面",
+        "en": "Topic sheet + 3 note sets with covers"
+      },
+      "scenario": {
+        "zh-CN": "批量产出小红书风格图文笔记",
+        "en": "Batch Xiaohongshu-style notes"
+      },
+      "stageBadges": [
+        "research",
+        "create"
+      ],
+      "relatedSkills": [
+        "nova-research-user-general",
+        "yixiaoer",
+        "humanizer",
+        "od-image-gen"
+      ],
+      "outputs": {
+        "zh-CN": "topics.md + 3 组笔记+封面",
+        "en": "topics.md + 3 note sets"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "热点与对标调研",
+            "en": "Trend and benchmark research"
+          },
+          "skill": "nova-research-user-general"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "5 选题+3 篇笔记",
+            "en": "Topics and 3 notes"
+          },
+          "skill": "yixiaoer"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "润色+竖版封面",
+            "en": "Polish and covers"
+          },
+          "skill": "humanizer"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "为【品类/账号定位】做一轮小红书爆款内容，三步一次做完，存 系统分配的任务目录 并报路径：\n1. 调研热点与对标，输出选题表（热度依据+切入角度+预估人群）→ topics.md。\n2. 选 3 个选题写笔记（标题 2 案、正文、5 标签）。\n3. humanizer 润色三篇，并为每篇做 3:4 竖版封面 png。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我各文件路径。\n\n标准成果清单：\n1. topics.md\n2. 3 组笔记\n3. 封面",
+        "en": "Xiaohongshu content batch for [niche/positioning] in three steps; save under 系统分配的任务目录 and report paths:\n1. Trend research → topics.md with heat, angle, audience.\n2. Three notes with dual titles, body, five tags.\n3. Humanize and add 3:4 cover png each.\nStart directly and report all paths.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. topics.md\n2. 3 note sets"
+      },
+      "category": "marketing"
+    },
+    {
+      "id": "meeting-to-deck",
+      "complexity": "light",
+      "rating": 4.3,
+      "title": {
+        "zh-CN": "会议记录→复盘 PPT+待办",
+        "en": "Meeting notes to recap deck"
+      },
+      "outcome": {
+        "zh-CN": "结构化纪要 + 复盘幻灯 + 待办清单",
+        "en": "Structured notes + recap deck + todos"
+      },
+      "scenario": {
+        "zh-CN": "会后快速产出复盘与跟进行动",
+        "en": "Post-meeting recap and follow-ups"
+      },
+      "stageBadges": [
+        "office",
+        "create"
+      ],
+      "relatedSkills": [
+        "ala-meeting-notes",
+        "frontend-slides"
+      ],
+      "outputs": {
+        "zh-CN": "minutes.md + recap.html + todos.md",
+        "en": "minutes.md + recap.html + todos.md"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "纪要结构化",
+            "en": "Structure minutes"
+          },
+          "skill": "ala-meeting-notes"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "复盘幻灯",
+            "en": "Recap deck"
+          },
+          "skill": "frontend-slides"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "根据下面会议内容做复盘包，两步一次做完，存系统分配的任务目录\n【粘贴会议记录或要点】\n1. 纪要按「决议/分歧/数据」三栏整理，并列出待办（负责人+期限占位）→ minutes.md + todos.md。\n2. 做 6-8 页复盘 HTML 幻灯 → recap.html。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我文件路径。\n\n标准成果清单：\n1. minutes.md\n2. recap.html\n3. todos.md",
+        "en": "Meeting recap pack from the notes below in two steps; save under the assigned task directory and report paths:\n[Paste meeting notes]\n1. Minutes with decisions/disagreements/data + todos.md.\n2. 6-8 slide recap.html.\nStart directly and report paths.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. minutes.md\n2. recap.html\n3. todos.md"
+      },
+      "category": "office"
+    },
+    {
+      "id": "doc-to-course",
+      "complexity": "standard",
+      "rating": 4.4,
+      "title": {
+        "zh-CN": "资料→课件→随堂测验",
+        "en": "Docs to course and quiz"
+      },
+      "outcome": {
+        "zh-CN": "知识点提纲 + 教学课件 + 测验卷",
+        "en": "Knowledge outline + course deck + quiz"
+      },
+      "scenario": {
+        "zh-CN": "把 PDF/文档变成可教可测的学习包",
+        "en": "Turn PDFs into teachable course materials"
+      },
+      "stageBadges": [
+        "education",
+        "office"
+      ],
+      "relatedSkills": [
+        "anth-pdf",
+        "teacher-lesson-planning",
+        "teacher-homework-generation"
+      ],
+      "outputs": {
+        "zh-CN": "knowledge.md + course slides + quiz.md",
+        "en": "knowledge.md + course + quiz"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "拆知识点",
+            "en": "Extract knowledge points"
+          },
+          "skill": "anth-pdf"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "教学课件",
+            "en": "Lesson deck"
+          },
+          "skill": "teacher-lesson-planning"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "随堂测验",
+            "en": "Quiz"
+          },
+          "skill": "teacher-homework-generation"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "把【PDF/文档路径或粘贴内容】做成教学包，三步一次做完，存系统分配的任务目录\n1. 拆知识点（概念-例题-易错点）→ knowledge.md。\n2. 做教学课件（幻灯或讲义结构）。\n3. 配套 10 题测验含答案与解析，难度梯度 → quiz.md。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我各文件路径。\n\n标准成果清单：\n1. knowledge.md\n2. course slides\n3. quiz.md",
+        "en": "Turn [PDF path or pasted content] into a teaching pack in three steps; save under the assigned task directory and report paths:\n1. Knowledge points (concept-example-pitfalls) → knowledge.md.\n2. Lesson materials.\n3. 10-question quiz with answers → quiz.md.\nStart directly and report all paths.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. knowledge.md\n2. course\n3. quiz"
+      },
+      "category": "office"
+    },
+    {
+      "id": "md-html-office-pack",
+      "complexity": "light",
+      "rating": 4.7,
+      "title": {
+        "zh-CN": "报告→四格式交付包",
+        "en": "Report to office deliverable pack"
+      },
+      "outcome": {
+        "zh-CN": "一份 Markdown 报告 + PDF + Word + 可编辑 PPT",
+        "en": "Markdown report plus PDF, Word, and editable PPT"
+      },
+      "scenario": {
+        "zh-CN": "写完调研/结案 Markdown 后一键导出多种办公格式",
+        "en": "Export a finished Markdown report to multiple office formats"
+      },
+      "stageBadges": [
+        "office",
+        "create"
+      ],
+      "relatedSkills": [
+        "pd-document-export"
+      ],
+      "outputs": {
+        "zh-CN": "report.md + report.pdf + report.docx + report.pptx",
+        "en": "report.md + pdf + docx + pptx"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "撰写报告",
+            "en": "Write report"
+          },
+          "skill": "pd-document-export"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "一键导出",
+            "en": "Export pack"
+          },
+          "skill": "pd-document-export"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "根据【主题/粘贴素材】做四格式交付包，两步一次做完，存系统分配的任务目录\n1. 写中文调研报告 → report.md。\n2. 用 export_document 依次导出 PDF、Word、可编辑 PPT 到同目录。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我各文件路径。\n\n标准成果清单：\n1. report.md\n2. report.pdf\n3. report.docx\n4. report.pptx",
+        "en": "Write a research report markdown from [topic/pasted material] to artifacts/reports/[topic]/report.md; then use export_document for PDF, DOCX, and editable PPTX in the same folder. Start directly and report all paths.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. report.md\n2. pdf\n3. docx\n4. pptx"
+      },
+      "category": "office"
+    },
+    {
+      "id": "persona-debate-article",
+      "complexity": "light",
+      "rating": 4.6,
+      "title": {
+        "zh-CN": "名人脑爆→观点长文",
+        "en": "Persona debate to long article"
+      },
+      "outcome": {
+        "zh-CN": "辩论纪要 + 观点长文 + 金句卡片",
+        "en": "Debate notes + article + quote cards"
+      },
+      "scenario": {
+        "zh-CN": "用多位大师视角碰撞后写成深度长文",
+        "en": "Debate personas then synthesize an article"
+      },
+      "stageBadges": [
+        "brainstorming",
+        "create"
+      ],
+      "relatedSkills": [
+        "persona-munger",
+        "persona-elon-musk",
+        "persona-steve-jobs",
+        "ala-content-writer",
+        "od-image-gen"
+      ],
+      "outputs": {
+        "zh-CN": "debate.md + article.md + 3 张金句卡片",
+        "en": "debate.md + article.md + quote cards"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "三位大师辩论",
+            "en": "Three-persona debate"
+          },
+          "skill": "persona-munger"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "观点合成长文",
+            "en": "Synthesize article"
+          },
+          "skill": "ala-content-writer"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "金句配图卡片",
+            "en": "Quote cards"
+          },
+          "skill": "od-image-gen"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "围绕【议题】做名人脑爆长文，三步一次做完，存 系统分配的任务目录 并报路径：\n1. 分别用 persona-munger、persona-elon-musk、persona-steve-jobs 各输出 300 字立场，再互相反驳一轮 → debate.md。\n2. 吸收冲突点写成 1500 字观点长文 → article.md。\n3. 提炼 3 条金句，各做一张竖版卡片图 png。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我各文件路径。\n\n标准成果清单：\n1. debate.md\n2. article.md\n3. 3 张金句卡片",
+        "en": "Persona debate article on [topic] in three steps; save under 系统分配的任务目录 and report paths:\n1. persona-munger, persona-elon-musk, persona-steve-jobs: 300-word stances + rebuttal round → debate.md.\n2. 1500-word synthesis → article.md.\n3. Three vertical quote card pngs.\nStart directly and report all paths.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. debate.md\n2. article.md\n3. quote cards"
+      },
+      "category": "marketing"
+    },
+    {
+      "id": "sales-battlecard-full",
+      "complexity": "standard",
+      "title": {
+        "zh-CN": "销售 Battlecard 全链路",
+        "en": "Sales battlecard pack"
+      },
+      "outcome": {
+        "zh-CN": "竞品情报 + Battlecard + 销售话术",
+        "en": "Intel + battlecard + talk track"
+      },
+      "scenario": {
+        "zh-CN": "销售比稿前需要一页纸+异议回应",
+        "en": "Sales needs battlecard before a pitch"
+      },
+      "stageBadges": [
+        "research",
+        "strategy",
+        "activate"
+      ],
+      "relatedSkills": [
+        "mkt-competitive-intel",
+        "pms-competitive-battlecard",
+        "mkt-sales-enablement"
+      ],
+      "outputs": {
+        "zh-CN": "intel.md + battlecard.md + talk-track.md",
+        "en": "intel.md + battlecard.md + talk-track.md"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "竞争情报",
+            "en": "Competitive intel"
+          },
+          "skill": "mkt-competitive-intel"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "Battlecard",
+            "en": "Battlecard"
+          },
+          "skill": "pms-competitive-battlecard"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "销售话术",
+            "en": "Talk track"
+          },
+          "skill": "mkt-sales-enablement"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "为【我方产品 vs 竞品】做销售 Battlecard 全链路，三步一次做完，存 系统分配的任务目录 并报路径：\n1. read_skill mkt-competitive-intel → intel.md。\n2. read_skill pms-competitive-battlecard → battlecard.md。\n3. read_skill mkt-sales-enablement → talk-track.md（含 5 条常见异议回应）。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我各文件路径。\n\n标准成果清单：\n1. intel.md\n2. battlecard.md\n3. talk-track.md",
+        "en": "Sales battlecard pack for [us vs competitors] in three steps under 系统分配的任务目录\n1. mkt-competitive-intel → intel.md.\n2. pms-competitive-battlecard → battlecard.md.\n3. mkt-sales-enablement → talk-track.md with 5 objection handlers.\nStart directly and report all paths.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. intel.md\n2. battlecard.md\n3. talk-track.md"
+      },
+      "category": "marketing"
+    },
+    {
+      "id": "legal-risk-quick",
+      "complexity": "light",
+      "title": {
+        "zh-CN": "法务风险快检",
+        "en": "Legal risk quick check"
+      },
+      "outcome": {
+        "zh-CN": "风险评估 + 回应草稿（非律师意见）",
+        "en": "Risk assessment + response draft (not legal advice)"
+      },
+      "scenario": {
+        "zh-CN": "收到合同/函件需快速分级与草稿",
+        "en": "Quick triage on contract or letter"
+      },
+      "stageBadges": [
+        "office"
+      ],
+      "relatedSkills": [
+        "legal-risk-assessment",
+        "legal-response"
+      ],
+      "outputs": {
+        "zh-CN": "risk-assessment.md + response-draft.md",
+        "en": "risk-assessment.md + response-draft.md"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "风险评估",
+            "en": "Risk assessment"
+          },
+          "skill": "legal-risk-assessment"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "回应草稿",
+            "en": "Response draft"
+          },
+          "skill": "legal-response"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "对下面【合同/函件摘要】做法务快检，两步一次做完，存 系统分配的任务目录 并报路径；全程注明「非律师意见，须法务复核」：\n1. read_skill legal-risk-assessment → risk-assessment.md（严重度×可能性）。\n2. read_skill legal-response → response-draft.md。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我文件路径。\n\n标准成果清单：\n1. risk-assessment.md\n2. response-draft.md",
+        "en": "Legal quick check on [contract/letter summary] in two steps under 系统分配的任务目录 label as not legal advice:\n1. legal-risk-assessment → risk-assessment.md.\n2. legal-response → response-draft.md.\nStart directly and report paths.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. risk-assessment.md\n2. response-draft.md"
+      },
+      "category": "enterprise"
+    },
+    {
+      "id": "ad-storyboard-seedance",
+      "complexity": "standard",
+      "rating": 4.7,
+      "title": {
+        "zh-CN": "品牌广告·分镜到即梦",
+        "en": "Brand ad storyboard to Seedance"
+      },
+      "outcome": {
+        "zh-CN": "镜头卡 + 导演分镜 + 即梦 prompt 包（可选试渲染样片）",
+        "en": "Shot cards + director board + Seedance prompts (optional preview clips)"
+      },
+      "scenario": {
+        "zh-CN": "TVC/信息流广告，要先专业分镜再 AI 出片或交接即梦",
+        "en": "TVC or feed ads needing pro storyboards before AI generation"
+      },
+      "stageBadges": [
+        "strategy",
+        "create"
+      ],
+      "relatedSkills": [
+        "create-vid-visual-prompt",
+        "create-vid-director",
+        "create-vid-seedance-prompt",
+        "tool-generate-video"
+      ],
+      "outputs": {
+        "zh-CN": "01-shot-cards.md + 02-director-board.md + 03-seedance-prompts.md（+ 可选 preview.mp4）",
+        "en": "01-shot-cards.md + 02-director-board.md + 03-seedance-prompts.md (+ optional preview.mp4)"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "影视镜头策划卡",
+            "en": "Cinematic shot cards"
+          },
+          "skill": "create-vid-visual-prompt"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "AI 导演分镜",
+            "en": "AI director storyboard"
+          },
+          "skill": "create-vid-director"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "即梦分镜提示词",
+            "en": "Seedance storyboard prompts"
+          },
+          "skill": "create-vid-seedance-prompt"
+        },
+        {
+          "step": 4,
+          "title": {
+            "zh-CN": "试渲染关键镜头（可选）",
+            "en": "Preview key shots (optional)"
+          },
+          "skill": "tool-generate-video"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "帮【产品/品牌】做一支品牌广告的分镜与即梦提示词包，4 步一次做完，存 系统分配的任务目录 并报路径；每步先 read_skill 对应能力，再 write_file，写完再下一步：\n1. read_skill create-vid-visual-prompt：根据【卖点/受众/时长 15-30s】输出 6-8 镜 14 字段镜头卡 → 01-shot-cards.md。\n2. read_skill create-vid-director：读取 01-shot-cards.md，补导演风格 lens、Keyframe 说明与镜头连续性 → 02-director-board.md。\n3. read_skill create-vid-seedance-prompt：读取前两步，生成可粘贴即梦的 @引用分镜 prompt → 03-seedance-prompts.md。\n4. 若模型池已配置视频生成：读取 03-seedance-prompts.md，用 generate_video 试渲染 1-2 个关键镜头 → clips/preview.mp4；若无 Key 或工具不可用，写 README.md 说明「交付止于分镜包」并跳过本步。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我各文件路径。\n\n标准成果清单：\n1. 01-shot-cards.md\n2. 02-director-board.md\n3. 03-seedance-prompts.md（\n4. 可选 preview.mp4）",
+        "en": "Brand ad storyboard and Seedance prompt pack for [product/brand] in four steps under 系统分配的任务目录 read_skill each step, write_file, then continue:\n1. create-vid-visual-prompt → 01-shot-cards.md (6-8 shots, 14 fields, 15-30s, [USP/audience]).\n2. create-vid-director → 02-director-board.md from step 1 (style lens, keyframes, continuity).\n3. create-vid-seedance-prompt → 03-seedance-prompts.md (@-reference prompts for Seedance).\n4. If video generation is configured: generate_video 1-2 key shots → clips/preview.mp4; otherwise README.md noting delivery stops at storyboard pack.\nStart directly and report all paths.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. 01-shot-cards.md\n2. 02-director-board.md\n3. 03-seedance-prompts.md (\n4. optional preview.mp4)"
+      },
+      "category": "marketing"
+    },
+    {
+      "id": "viral-talking-script",
+      "complexity": "light",
+      "rating": 4.5,
+      "title": {
+        "zh-CN": "口播爆款·脚本包",
+        "en": "Viral talking-head script pack"
+      },
+      "outcome": {
+        "zh-CN": "3 条 hook 候选 + 带时间轴的完整口播脚本",
+        "en": "Three hook options plus a timed talking-head script"
+      },
+      "scenario": {
+        "zh-CN": "抖音/小红书/Reels 口播，先写稿再拍或 TTS",
+        "en": "Short-form talking video: script first, then film or TTS"
+      },
+      "stageBadges": [
+        "create",
+        "activate"
+      ],
+      "relatedSkills": [
+        "create-vid-viral-copy",
+        "mkt-dmp-video-script",
+        "tool-generate-video"
+      ],
+      "outputs": {
+        "zh-CN": "01-hooks.md + 02-script-timed.md（+ 可选 preview-8s.mp4）",
+        "en": "01-hooks.md + 02-script-timed.md (+ optional preview-8s.mp4)"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "爆款结构与 hook",
+            "en": "Viral structure and hooks"
+          },
+          "skill": "create-vid-viral-copy"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "营销口播脚本精修",
+            "en": "Polished marketing script"
+          },
+          "skill": "mkt-dmp-video-script"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "为【主题/产品】写一条【抖音/小红书/Reels，任选】口播短视频脚本，2 步一次做完，存 系统分配的任务目录 并报路径：\n1. read_skill create-vid-viral-copy：产出 3 条 hook 候选 + 口播结构骨架 → 01-hooks.md（无对标链接时纯创作，勿依赖 yt-dlp）。\n2. read_skill mkt-dmp-video-script：读取 01-hooks.md 选定最佳 hook，写带时间轴、画面提示与 CTA 的完整口播脚本 → 02-script-timed.md。\n可选：若需 8 秒动态样片且视频 Key 可用，用 generate_video 生成 preview-8s.mp4；否则交付止于 02-script-timed.md。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我文件路径。\n\n标准成果清单：\n1. 01-hooks.md\n2. 02-script-timed.md（\n3. 可选 preview-8s.mp4）",
+        "en": "Talking-head short video script for [topic/product] on [Douyin/Xiaohongshu/Reels] in two steps under the assigned task directory\n1. create-vid-viral-copy → 01-hooks.md (3 hooks + structure; pure creative, no yt-dlp unless user gives a reference URL).\n2. mkt-dmp-video-script → 02-script-timed.md from best hook (timeline, visuals, CTA).\nOptional: generate_video 8s preview if video key available; otherwise stop at script.\nStart directly and report paths.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. 01-hooks.md\n2. 02-script-timed.md (\n3. optional preview-8s.mp4)"
+      },
+      "category": "marketing"
+    },
+    {
+      "id": "short-drama-seedance-pack",
+      "complexity": "full",
+      "rating": 4.8,
+      "title": {
+        "zh-CN": "AI 短剧·四幕分镜包",
+        "en": "AI short drama four-act pack"
+      },
+      "outcome": {
+        "zh-CN": "四幕剧本 + 连续性分镜包 + 即梦分段时间线（可选试出片）",
+        "en": "Four-act script + continuity storyboard pack + Seedance timeline (optional clips)"
+      },
+      "scenario": {
+        "zh-CN": "小说/梗概变系列短剧，给即梦或剪辑交接完整前期",
+        "en": "Turn a synopsis into a series pre-production pack for Seedance or edit"
+      },
+      "stageBadges": [
+        "strategy",
+        "create"
+      ],
+      "relatedSkills": [
+        "create-vid-seedance-series",
+        "create-vid-storyboard-pack",
+        "create-vid-seedance-codec",
+        "tool-generate-video"
+      ],
+      "outputs": {
+        "zh-CN": "01-script-acts.md + 03-bible/ + 04-shot-cards.md + 05-seedance-timeline.md（+ 可选 ep01-clips/）",
+        "en": "01-script-acts.md + bible + shot cards + timeline (+ optional ep01-clips/)"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "四幕剧本与素材清单",
+            "en": "Four-act script and asset list"
+          },
+          "skill": "create-vid-seedance-series"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "连续性分镜交付包",
+            "en": "Continuity storyboard pack"
+          },
+          "skill": "create-vid-storyboard-pack"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "即梦相机分镜与分段",
+            "en": "Seedance codec and segments"
+          },
+          "skill": "create-vid-seedance-codec"
+        },
+        {
+          "step": 4,
+          "title": {
+            "zh-CN": "试渲染首集镜头（可选）",
+            "en": "Preview episode 1 shots (optional)"
+          },
+          "skill": "tool-generate-video"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "把【梗概/小说片段/题材】做成 AI 短剧前期分镜包，4 步一次做完，存 系统分配的任务目录 并报路径；每步 read_skill 后 write_file：\n1. read_skill create-vid-seedance-series：四幕剧本 + 角色/场景素材清单 → 01-script-acts.md、02-asset-list.md。\n2. read_skill create-vid-storyboard-pack：读取第 1 步，产出 bible、SHOT 卡与交接矩阵 → 03-bible/、04-shot-cards.md。\n3. read_skill create-vid-seedance-codec：读取分镜包，输出 25 格流水线与集间延长分段策略 → 05-seedance-timeline.md。\n4. 若视频 Key 可用：按 05-seedance-timeline.md 试 generate_video 首集 2-3 镜 → ep01-clips/；否则 README.md 说明交付止于分镜包。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我各文件路径。\n\n标准成果清单：\n1. 01-script-acts.md\n2. 03-bible/\n3. 04-shot-cards.md\n4. 05-seedance-timeline.md（\n5. 可选 ep01-clips/）",
+        "en": "AI short-drama pre-production pack from [synopsis/genre] in four steps under the assigned task directory\n1. create-vid-seedance-series → 01-script-acts.md + 02-asset-list.md.\n2. create-vid-storyboard-pack → 03-bible/ + 04-shot-cards.md from step 1.\n3. create-vid-seedance-codec → 05-seedance-timeline.md (25-grid pipeline, segment strategy).\n4. If video key available: generate_video 2-3 ep1 shots → ep01-clips/; else README.md noting pack-only delivery.\nStart directly and report all paths.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. 01-script-acts.md\n2. bible\n3. shot cards\n4. timeline (\n5. optional ep01-clips/)"
+      },
+      "category": "creation"
+    },
+    {
+      "id": "saas-demo-remotion-full",
+      "complexity": "full",
+      "rating": 4.7,
+      "title": {
+        "zh-CN": "SaaS 演示·脚本到 Remotion 成片",
+        "en": "SaaS demo script to Remotion video"
+      },
+      "outcome": {
+        "zh-CN": "UI 逐镜分镜 + Remotion YAML 脚本 + 可发布 mp4",
+        "en": "UI storyboard + Remotion YAML + publishable mp4"
+      },
+      "scenario": {
+        "zh-CN": "B 端产品 Demo / 功能发布片，要 UI 保真程序化成片",
+        "en": "B2B product demo or feature launch with faithful UI motion video"
+      },
+      "stageBadges": [
+        "create"
+      ],
+      "relatedSkills": [
+        "create-vid-saas-demo-script",
+        "create-vid-scriptwriting",
+        "remotion-video"
+      ],
+      "outputs": {
+        "zh-CN": "01-demo-storyboard.md + 02-script.yaml + 03/out.mp4",
+        "en": "01-demo-storyboard.md + 02-script.yaml + 03/out.mp4"
+      },
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "SaaS 演示分镜",
+            "en": "SaaS demo storyboard"
+          },
+          "skill": "create-vid-saas-demo-script"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "程序化 YAML 脚本",
+            "en": "Programmatic YAML script"
+          },
+          "skill": "create-vid-scriptwriting"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "Remotion 渲染成片",
+            "en": "Remotion render to mp4"
+          },
+          "skill": "remotion-video"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "为【产品名/核心功能】做一支 SaaS 产品演示视频，3 步一次做完，存 系统分配的任务目录 并报路径：\n1. read_skill create-vid-saas-demo-script：根据【功能点/用户痛点/时长 60-90s】写 UI 逐镜分镜（含运镜与旁白）→ 01-demo-storyboard.md。\n2. read_skill create-vid-scriptwriting：读取 01-demo-storyboard.md，落成 Remotion 可消费的 script.yaml（场景/帧数/旁白/字幕）→ 02-script.yaml。\n3. read_skill remotion-video：按 02-script.yaml 搭建 Remotion 工程并渲染横版 1080p mp4 → 03/out.mp4（保留工程目录便于二改）。\n若仅有官网 URL 无 UI 稿，第 1 步可注明参考页面结构但仍以产品功能叙事为主。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我各文件路径。\n\n标准成果清单：\n1. 01-demo-storyboard.md\n2. 02-script.yaml\n3. 03/out.mp4",
+        "en": "SaaS product demo video for [product/feature] in three steps under the assigned task directory\n1. create-vid-saas-demo-script → 01-demo-storyboard.md ([features/pain points, 60-90s]).\n2. create-vid-scriptwriting → 02-script.yaml from storyboard (scenes, frames, VO, captions).\n3. remotion-video → Remotion project + 1080p landscape 03/out.mp4.\nIf only a website URL exists, note page structure in step 1 but keep feature narrative focus. Start directly and report all paths.\nDo not read_file skills/; write_file after each step.\nIf scoring, web, image/video, or external keys are unavailable, degrade per skill resilience and still deliver the checklist files; do not stop.\n\nStandard deliverables:\n1. 01-demo-storyboard.md\n2. 02-script.yaml\n3. 03/out.mp4"
+      },
+      "category": "creation"
+    },
+    {
+      "id": "cn-entity-privacy-pack",
+      "complexity": "light",
+      "category": "enterprise",
+      "title": {
+        "zh-CN": "主体与隐私合规入门",
+        "en": "Entity & privacy starter pack"
+      },
+      "outcome": {
+        "zh-CN": "经营主体检查清单 + 个人信息保护评估草稿",
+        "en": "Entity checklist + privacy assessment draft"
+      },
+      "scenario": {
+        "zh-CN": "新设或自查公司主体与收集个人信息是否合规",
+        "en": "New company or self-check on entity & personal data"
+      },
+      "outputs": {
+        "zh-CN": "经营主体合规检查清单.md + 个人信息保护合规评估.md",
+        "en": "entity checklist.md + privacy assessment.md"
+      },
+      "relatedSkills": [
+        "zh-entity-compliance",
+        "zh-pia-generation"
+      ],
+      "stageBadges": [
+        "office"
+      ],
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "主体合规速查",
+            "en": "Entity compliance check"
+          },
+          "skill": "zh-entity-compliance"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "隐私合规评估",
+            "en": "Privacy assessment"
+          },
+          "skill": "zh-pia-generation"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "为【公司名/行业/城市】做主体与隐私合规入门，2 步一次做完，写入系统分配任务目录：\n1. read_skill zh-entity-compliance，输出 经营主体合规检查清单.md。\n2. read_skill zh-pia-generation（或按产品数据场景），输出 个人信息保护合规评估.md。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若联网或外部 Key 不可用，按技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我各文件路径。\n\n标准成果清单：\n1. 经营主体合规检查清单.md\n2. 个人信息保护合规评估.md\n\n产出为草稿工作底稿，不构成法律/税务/会计/劳动人事执业意见；落地前须专业审定。中国大陆法域。",
+        "en": "For [company/industry/city], run entity+privacy starter in 2 steps into the task dir:\n1. Entity checklist.\n2. Privacy assessment.\nDo not read_file skills/; write_file after each step.\nIf web/keys unavailable, degrade per skill resilience and still deliver checklist files.\nStart directly and report file paths when done.\n\nStandard deliverables:\n1. entity-compliance-checklist.md\n2. privacy-assessment.md\n\nDraft workpapers only; not legal/tax/HR advice. Mainland China jurisdiction."
+      }
+    },
+    {
+      "id": "cn-contract-review-pack",
+      "complexity": "standard",
+      "category": "enterprise",
+      "title": {
+        "zh-CN": "商事合同审查包",
+        "en": "Commercial contract review pack"
+      },
+      "outcome": {
+        "zh-CN": "合同审查意见书 + 红线改法清单",
+        "en": "Contract review memo + redline checklist"
+      },
+      "scenario": {
+        "zh-CN": "上传或粘贴合同，需要风险意见与改法方向",
+        "en": "Need risk opinion and rewrite directions on a contract"
+      },
+      "outputs": {
+        "zh-CN": "合同审查意见书.md + 合同红线改法清单.md",
+        "en": "contract-review-memo.md + redline-checklist.md"
+      },
+      "relatedSkills": [
+        "zh-contract-review",
+        "zhxx-contract-review"
+      ],
+      "stageBadges": [
+        "office"
+      ],
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "通读合同",
+            "en": "Read contract"
+          },
+          "skill": "zh-contract-review"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "审查意见",
+            "en": "Review memo"
+          },
+          "skill": "zh-contract-review"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "红线改法清单",
+            "en": "Redline checklist"
+          },
+          "skill": "zhxx-contract-review"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "审查【我方角色】的合同（见附件或粘贴），3 步一次做完：\n1. 通读并标出付款/违约/责任/知产/解约要点。\n2. write_file 合同审查意见书.md。\n3. write_file 合同红线改法清单.md（逐条改法）。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若联网或外部 Key 不可用，按技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我各文件路径。\n\n标准成果清单：\n1. 合同审查意见书.md\n2. 合同红线改法清单.md\n\n产出为草稿工作底稿，不构成法律/税务/会计/劳动人事执业意见；落地前须专业审定。中国大陆法域。",
+        "en": "Review the contract for [our role] in 3 steps; deliver review memo + redline checklist.\nDo not read_file skills/; write_file after each step.\nIf web/keys unavailable, degrade per skill resilience and still deliver checklist files.\nStart directly and report file paths when done.\n\nStandard deliverables:\n1. contract-review-memo.md\n2. redline-checklist.md\n\nDraft workpapers only; not legal/tax/HR advice. Mainland China jurisdiction."
+      }
+    },
+    {
+      "id": "cn-labor-hire-exit-pack",
+      "complexity": "standard",
+      "category": "enterprise",
+      "title": {
+        "zh-CN": "用工录用与解除包",
+        "en": "Hire & termination pack"
+      },
+      "outcome": {
+        "zh-CN": "录用审查意见 + 解除终止风险意见",
+        "en": "Hiring review + termination risk memo"
+      },
+      "scenario": {
+        "zh-CN": "招人入职或协商/解除离职需要程序与风险提示",
+        "en": "Hiring or termination needs process & risk notes"
+      },
+      "outputs": {
+        "zh-CN": "录用审查意见.md + 解除终止风险意见.md",
+        "en": "hiring-review.md + termination-review.md"
+      },
+      "relatedSkills": [
+        "zh-hiring-review",
+        "zh-termination-review"
+      ],
+      "stageBadges": [
+        "office"
+      ],
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "录用审查",
+            "en": "Hiring review"
+          },
+          "skill": "zh-hiring-review"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "解除风险",
+            "en": "Termination risk"
+          },
+          "skill": "zh-termination-review"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "城市【】。先做录用/劳动合同审查（有草案则审，无则给要点），再评估【解除/协商一致】风险。\n1. write_file 录用审查意见.md\n2. write_file 解除终止风险意见.md\n禁止代发解除通知。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若联网或外部 Key 不可用，按技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我各文件路径。\n\n标准成果清单：\n1. 录用审查意见.md\n2. 解除终止风险意见.md\n\n产出为草稿工作底稿，不构成法律/税务/会计/劳动人事执业意见；落地前须专业审定。中国大陆法域。",
+        "en": "City []. Hiring review then termination risk memo. Do not send termination notices.\nDo not read_file skills/; write_file after each step.\nIf web/keys unavailable, degrade per skill resilience and still deliver checklist files.\nStart directly and report file paths when done.\n\nStandard deliverables:\n1. hiring-review.md\n2. termination-review.md\n\nDraft workpapers only; not legal/tax/HR advice. Mainland China jurisdiction."
+      }
+    },
+    {
+      "id": "cn-cashier-month-pack",
+      "complexity": "light",
+      "category": "enterprise",
+      "title": {
+        "zh-CN": "出纳月结核对包",
+        "en": "Cashier monthly reconcile pack"
+      },
+      "outcome": {
+        "zh-CN": "出纳日常核对清单 + 发票增值税要点",
+        "en": "Cashier checklist + invoice/VAT notes"
+      },
+      "scenario": {
+        "zh-CN": "月末核对开票/进项与税额",
+        "en": "Month-end invoice & VAT reconcile"
+      },
+      "outputs": {
+        "zh-CN": "出纳日常核对清单.md + 发票与增值税合规要点.md",
+        "en": "cashier-checklist.md + invoice-vat-notes.md"
+      },
+      "relatedSkills": [
+        "tax-invoice-compliance-checker",
+        "tax-input-tax-credit-checker"
+      ],
+      "stageBadges": [
+        "office"
+      ],
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "发票进项核对",
+            "en": "Invoice input check"
+          },
+          "skill": "tax-invoice-compliance-checker"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "出纳清单",
+            "en": "Cashier checklist"
+          },
+          "skill": "tax-input-tax-credit-checker"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "公司【】，纳税身份【一般/小规模】。整理本月出纳核对：\n1. write_file 发票与增值税合规要点.md\n2. write_file 出纳日常核对清单.md\n禁止逃税/虚开指引。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若联网或外部 Key 不可用，按技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我各文件路径。\n\n标准成果清单：\n1. 发票与增值税合规要点.md\n2. 出纳日常核对清单.md\n\n产出为草稿工作底稿，不构成法律/税务/会计/劳动人事执业意见；落地前须专业审定。中国大陆法域。",
+        "en": "Company []; taxpayer type []. Deliver VAT notes + cashier checklist. No tax evasion guidance.\nDo not read_file skills/; write_file after each step.\nIf web/keys unavailable, degrade per skill resilience and still deliver checklist files.\nStart directly and report file paths when done.\n\nStandard deliverables:\n1. invoice-vat-notes.md\n2. cashier-checklist.md\n\nDraft workpapers only; not legal/tax/HR advice. Mainland China jurisdiction."
+      }
+    },
+    {
+      "id": "cn-bid-response-pack",
+      "complexity": "full",
+      "category": "enterprise",
+      "title": {
+        "zh-CN": "招标解析与标书草案",
+        "en": "Bid analysis & proposal drafts"
+      },
+      "outcome": {
+        "zh-CN": "招标解析报告 + 商务标草案 + 技术标草案",
+        "en": "Bid analysis + commercial & technical drafts"
+      },
+      "scenario": {
+        "zh-CN": "有招标文件，需要解析并起草商务/技术标骨架",
+        "en": "Have tender docs; need analysis and bid drafts"
+      },
+      "outputs": {
+        "zh-CN": "招标文件解析报告.md + 商务标草案.md + 技术标草案.md",
+        "en": "bid-analysis.md + commercial-bid.md + technical-bid.md"
+      },
+      "relatedSkills": [
+        "bid-analysis",
+        "bid-commercial-proposal",
+        "bid-tech-proposal"
+      ],
+      "stageBadges": [
+        "office"
+      ],
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "解析招标",
+            "en": "Analyze tender"
+          },
+          "skill": "bid-analysis"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "商务标草案",
+            "en": "Commercial draft"
+          },
+          "skill": "bid-commercial-proposal"
+        },
+        {
+          "step": 3,
+          "title": {
+            "zh-CN": "技术标草案",
+            "en": "Technical draft"
+          },
+          "skill": "bid-tech-proposal"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "根据附件招标文件（项目【】）：\n1. write_file 招标文件解析报告.md（资格/评分/废标/澄清点）\n2. write_file 商务标草案.md\n3. write_file 技术标草案.md\n对话只给路径与要点，禁止贴整本招标 PDF。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若联网或外部 Key 不可用，按技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我各文件路径。\n\n标准成果清单：\n1. 招标文件解析报告.md\n2. 商务标草案.md\n3. 技术标草案.md\n\n产出为草稿工作底稿，不构成法律/税务/会计/劳动人事执业意见；落地前须专业审定。中国大陆法域。",
+        "en": "From tender attachment: analysis report + commercial + technical drafts. Do not paste full PDF in chat.\nDo not read_file skills/; write_file after each step.\nIf web/keys unavailable, degrade per skill resilience and still deliver checklist files.\nStart directly and report file paths when done.\n\nStandard deliverables:\n1. bid-analysis.md\n2. commercial-bid.md\n3. technical-bid.md\n\nDraft workpapers only; not legal/tax/HR advice. Mainland China jurisdiction."
+      }
+    },
+    {
+      "id": "cn-policy-subsidy-pack",
+      "complexity": "standard",
+      "category": "enterprise",
+      "title": {
+        "zh-CN": "惠企政策与申报清单",
+        "en": "Policy search & subsidy checklist"
+      },
+      "outcome": {
+        "zh-CN": "政策检索摘要 + 补贴申报材料清单",
+        "en": "Policy summary + subsidy document checklist"
+      },
+      "scenario": {
+        "zh-CN": "想找惠企/资质政策并弄清要准备哪些材料",
+        "en": "Find subsidy/qualification policies and required docs"
+      },
+      "outputs": {
+        "zh-CN": "政策检索摘要.md + 补贴申报材料清单.md",
+        "en": "policy-search-summary.md + subsidy-doc-checklist.md"
+      },
+      "relatedSkills": [
+        "comp-policy-search"
+      ],
+      "stageBadges": [
+        "office"
+      ],
+      "flow": [
+        {
+          "step": 1,
+          "title": {
+            "zh-CN": "政策检索",
+            "en": "Policy search"
+          },
+          "skill": "comp-policy-search"
+        },
+        {
+          "step": 2,
+          "title": {
+            "zh-CN": "申报材料清单",
+            "en": "Doc checklist"
+          },
+          "skill": "comp-policy-search"
+        }
+      ],
+      "prompt": {
+        "zh-CN": "省市【】，企业情况【】，关心【专精特新/稳岗/研发补贴等】：\n1. 联网检索权威来源，write_file 政策检索摘要.md（含链接）\n2. write_file 补贴申报材料清单.md（禁伪造盖章件）\n不承诺一定能申报成功。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若联网或外部 Key 不可用，按技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我各文件路径。\n\n标准成果清单：\n1. 政策检索摘要.md\n2. 补贴申报材料清单.md\n\n产出为草稿工作底稿，不构成法律/税务/会计/劳动人事执业意见；落地前须专业审定。中国大陆法域。",
+        "en": "Province/city []; company []; focus []. Policy summary + subsidy checklist. No forged stamps. No guarantee of approval.\nDo not read_file skills/; write_file after each step.\nIf web/keys unavailable, degrade per skill resilience and still deliver checklist files.\nStart directly and report file paths when done.\n\nStandard deliverables:\n1. policy-search-summary.md\n2. subsidy-doc-checklist.md\n\nDraft workpapers only; not legal/tax/HR advice. Mainland China jurisdiction."
+      }
+    }
+  ],
+  "categoryLevels": [
+    {
+      "id": "marketing",
+      "order": 1,
+      "label": {
+        "zh-CN": "营销",
+        "en": "Marketing"
+      },
+      "description": {
+        "zh-CN": "获客、内容、Campaign 与增长",
+        "en": "Acquisition, content, campaigns & growth"
+      }
+    },
+    {
+      "id": "enterprise",
+      "order": 2,
+      "label": {
+        "zh-CN": "企业",
+        "en": "Enterprise"
+      },
+      "description": {
+        "zh-CN": "合同、用工、财税、招采与惠企",
+        "en": "Contracts, labor, tax, bids & subsidies"
+      }
+    },
+    {
+      "id": "geo",
+      "order": 3,
+      "label": {
+        "zh-CN": "GEO",
+        "en": "GEO"
+      },
+      "description": {
+        "zh-CN": "AI 搜索可见度与监测",
+        "en": "AI search visibility & monitoring"
+      }
+    },
+    {
+      "id": "office",
+      "order": 4,
+      "label": {
+        "zh-CN": "办公",
+        "en": "Office"
+      },
+      "description": {
+        "zh-CN": "文档、会议与办公导出",
+        "en": "Docs, meetings & office export"
+      }
+    },
+    {
+      "id": "creation",
+      "order": 5,
+      "label": {
+        "zh-CN": "创作",
+        "en": "Creation"
+      },
+      "description": {
+        "zh-CN": "视频、演示与多媒体创作",
+        "en": "Video, decks & multimedia"
+      }
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "skill_version": "1.0.0",
+  "keyword": "北京地区户外广告 招标采购",
+  "search_keyword": "北京 户外广告 招标 采购",
+  "data_sources": ["gov_bidding", "gov_ggzy", "supply_chain"],
+  "max_results": 30,
+  "pages_discovered": 12,
+  "pages_classified_kept": 8,
+  "leads_count": 5,
+  "generated_at": "2026-06-01T00:00:00Z",
+  "discovery_tools": ["acceptance-fixture"],
+  "query_expansion": {
+    "main_query": "北京 户外广告 招标 采购",
+    "alternate_queries": [
+      "北京 户外广告 招标公告",
+      "北京 地铁广告 采购 询价",
+      "北京 车身广告 政府采购",
+      "北京 户外媒体 招标",
+      "北京 广告位 采购需求",
+      "北京 公交广告 外包",
+      "北京 户外大牌 求购",
+      "北京 媒体投放 招标"
+    ],
+    "negative_terms": ["种草", "加盟", "优惠券", "测评软文", "供应广告"]
+  },
+  "leads": [
+    {
+      "company_name": "北京市某区城市管理委员会",
+      "need_type": "招标",
+      "title": "2026年度户外公益宣传投放服务招标公告",
+      "description": "采购户外大牌及公交候车亭广告资源，服务期一年。",
+      "procurement_unit": "北京市某区城市管理委员会",
+      "contact_info": "010-12345678 张先生",
+      "contact_candidates": ["010-12345678"],
+      "source_url": "https://example.gov.cn/procurement/ooh/2026-001",
+      "bid_deadline": "2026-07-15",
+      "intent_label": "procurement_tender",
+      "match_score": 0.92,
+      "audience_type": "b2g",
+      "extraction_confidence": 0.88,
+      "field_provenance": {
+        "contact_info": { "source": "page_body", "confidence": 0.9 },
+        "description": { "source": "page_body", "confidence": 0.85 }
+      },
+      "content_evidence": "现对2026年度户外公益宣传投放服务进行公开招标",
+      "confidence_score": 4,
+      "track_level": "High",
+      "track_reason": "建议5个工作日内获取招标文件并确认投放点位清单"
+    },
+    {
+      "company_name": "北京某轨道交通运营公司",
+      "need_type": "采购",
+      "title": "地铁车厢及站厅广告媒体资源采购项目",
+      "description": "采购地铁线路车厢贴、站厅灯箱广告位，含设计制作安装。",
+      "procurement_unit": "北京某轨道交通运营公司",
+      "contact_info": "采购中心 010-87654321",
+      "source_url": "https://example.com/metro/ad-procurement-2026",
+      "intent_label": "procurement_tender",
+      "match_score": 0.89,
+      "audience_type": "b2b",
+      "extraction_confidence": 0.82,
+      "confidence_score": 4,
+      "track_level": "High",
+      "track_reason": "建议联系采购中心确认媒体清单与报价截止时间"
+    },
+    {
+      "company_name": "某市级公共资源交易中心",
+      "need_type": "招标",
+      "title": "城市户外LED大屏运营服务招标",
+      "description": "择优选取户外LED大屏运营及广告发布服务供应商。",
+      "contact_info": "李老师 li.procure@example.gov.cn",
+      "source_url": "https://example.ggzy.gov.cn/notice/led-2026",
+      "intent_label": "procurement_tender",
+      "match_score": 0.86,
+      "audience_type": "b2g",
+      "extraction_confidence": 0.8,
+      "confidence_score": 3,
+      "track_level": "Medium",
+      "track_reason": "可先邮件索取标书并核实LED点位数量"
+    },
+    {
+      "company_name": "北京某开发区管委会",
+      "need_type": "采购",
+      "title": "园区道旗及户外导视系统采购",
+      "description": "采购园区户外导视标识及道旗制作安装。",
+      "contact_info": "13800138000",
+      "source_url": "https://example.gov.cn/dev-zone/signage",
+      "intent_label": "purchase_inquiry",
+      "match_score": 0.78,
+      "audience_type": "b2g",
+      "extraction_confidence": 0.75,
+      "confidence_score": 3,
+      "track_level": "Medium",
+      "track_reason": "电话确认是否接受联合体投标"
+    },
+    {
+      "company_name": "某国企传媒公司",
+      "need_type": "招标",
+      "title": "2026年公交车身广告经营权招标",
+      "description": "公开招选公交车身广告经营权合作方。",
+      "contact_info": "招标代理 010-11112222",
+      "source_url": "https://example.com/soe/bus-wrap-tender",
+      "intent_label": "procurement_tender",
+      "match_score": 0.84,
+      "audience_type": "b2b",
+      "extraction_confidence": 0.79,
+      "confidence_score": 3,
+      "track_level": "Medium",
+      "track_reason": "关注代理公告中的资格预审条件"
+    }
+  ]
+}

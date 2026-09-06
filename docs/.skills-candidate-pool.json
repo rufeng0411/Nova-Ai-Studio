@@ -1,0 +1,27 @@
+{
+  "generated": "2026-06-17",
+  "sources": ["skills.sh leaderboard", "npx skills find (temp dir)", "openai/skills .curated API", "skills-system-inventory"],
+  "pool_count": 42,
+  "candidates": [
+    {"id": "find-skills", "repo": "vercel-labs/skills", "installs": "2.1M", "tier": "P0", "vertical": "meta"},
+    {"id": "frontend-design", "repo": "anthropics/skills", "installs": "561K", "tier": "P0", "vertical": "creation"},
+    {"id": "vercel-react-best-practices", "repo": "vercel-labs/agent-skills", "installs": "485K", "tier": "P0", "vertical": "dev"},
+    {"id": "agent-browser", "repo": "vercel-labs/agent-browser", "installs": "461K", "tier": "P0", "vertical": "dev"},
+    {"id": "firecrawl", "repo": "firecrawl/cli", "installs": "76K", "tier": "P0", "vertical": "crawl"},
+    {"id": "firecrawl-scrape", "repo": "firecrawl/cli", "installs": "60K", "tier": "P0", "vertical": "crawl"},
+    {"id": "just-scrape", "repo": "scrapegraphai/just-scrape", "installs": "196K", "tier": "P0", "vertical": "crawl"},
+    {"id": "obra-brainstorming", "repo": "obra/superpowers", "installs": "230K", "tier": "P0", "vertical": "brainstorm"},
+    {"id": "supabase-postgres", "repo": "supabase/agent-skills", "installs": "239K", "tier": "P1", "vertical": "dev"},
+    {"id": "shadcn", "repo": "shadcn/ui", "installs": "196K", "tier": "P1", "vertical": "creation"},
+    {"id": "ui-ux-pro-max", "repo": "nextlevelbuilder/ui-ux-pro-max-skill", "installs": "223K", "tier": "P1", "vertical": "creation"},
+    {"id": "remotion-best-practices", "repo": "remotion-dev/skills", "installs": "378K", "tier": "P1", "vertical": "creation"},
+    {"id": "context7", "repo": "intellectronica/agent-skills", "installs": "7.9K", "tier": "P1", "vertical": "dev"},
+    {"id": "playwright-cli", "repo": "microsoft/playwright-cli", "installs": "60K", "tier": "P1", "vertical": "dev"},
+    {"id": "legal-risk-assessment", "repo": "anthropics/knowledge-work-plugins", "installs": "2.9K", "tier": "P1", "vertical": "legal"},
+    {"id": "codex-playwright", "repo": "openai/skills", "installs": "curated", "tier": "P0", "vertical": "dev"},
+    {"id": "codex-figma", "repo": "openai/skills", "installs": "curated", "tier": "P0", "vertical": "creation"},
+    {"id": "codex-notion-research", "repo": "openai/skills", "installs": "curated", "tier": "P1", "vertical": "office"},
+    {"id": "hyperframes-upstream", "repo": "heygen-com/hyperframes", "installs": "103K", "tier": "P1", "vertical": "creation"},
+    {"id": "html-ppt-bump", "repo": "lewislulu/html-ppt-skill", "installs": "vendor", "tier": "P1", "vertical": "creation"}
+  ]
+}

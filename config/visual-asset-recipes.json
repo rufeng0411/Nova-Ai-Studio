@@ -1,0 +1,106 @@
+{
+  "$comment": "PD-SAAS-FORK VAP: capability-aware visual asset processing recipes",
+  "version": 1,
+  "recipes": [
+    {
+      "id": "report_inline",
+      "processingTier": "resize_only",
+      "steps": [
+        { "op": "resize", "maxLongEdge": 1200 },
+        { "op": "export", "format": "png", "suffix": "-prepared" }
+      ]
+    },
+    {
+      "id": "landing_hero_wide",
+      "processingTier": "crop_fit",
+      "steps": [
+        { "op": "fit", "aspect": "21:9", "mode": "cover" },
+        { "op": "export", "format": "jpg", "quality": 85 }
+      ]
+    },
+    {
+      "id": "slide_scene_cover",
+      "processingTier": "crop_fit",
+      "steps": [
+        { "op": "fit", "aspect": "16:9", "mode": "cover" },
+        { "op": "export", "format": "png", "suffix": "-prepared" }
+      ]
+    },
+    {
+      "id": "slide_hero_16x9",
+      "processingTier": "matting_compose",
+      "requiresSubjectMatch": "high",
+      "steps": [
+        { "op": "matting", "provider": "auto", "fallback": "bbox_crop" },
+        { "op": "fit", "aspect": "16:9", "mode": "contain", "minShortEdge": 1080 },
+        { "op": "export", "format": "png", "suffix": "-prepared" }
+      ]
+    },
+    {
+      "id": "poster_portrait_9x16",
+      "processingTier": "matting_compose",
+      "requiresSubjectMatch": "high",
+      "steps": [
+        { "op": "matting", "provider": "auto", "fallback": "bbox_crop" },
+        { "op": "fit", "aspect": "9:16", "mode": "contain", "minShortEdge": 1080 },
+        { "op": "export", "format": "png", "suffix": "-prepared" }
+      ]
+    },
+    {
+      "id": "social_square_safe",
+      "processingTier": "matting_compose",
+      "steps": [
+        { "op": "matting", "provider": "auto", "fallback": "bbox_crop" },
+        { "op": "fit", "aspect": "1:1", "mode": "contain" },
+        { "op": "export", "format": "png", "suffix": "-prepared" }
+      ]
+    },
+    {
+      "id": "social_wide",
+      "processingTier": "matting_compose",
+      "steps": [
+        { "op": "matting", "provider": "auto", "fallback": "bbox_crop" },
+        { "op": "fit", "aspect": "16:9", "mode": "contain" },
+        { "op": "export", "format": "png", "suffix": "-prepared" }
+      ]
+    },
+    {
+      "id": "social_portrait",
+      "processingTier": "matting_compose",
+      "steps": [
+        { "op": "matting", "provider": "auto", "fallback": "bbox_crop" },
+        { "op": "fit", "aspect": "3:4", "mode": "contain" },
+        { "op": "export", "format": "png", "suffix": "-prepared" }
+      ]
+    },
+    {
+      "id": "parallax_product_layer",
+      "processingTier": "matting_compose",
+      "requiresSubjectMatch": "high",
+      "steps": [
+        { "op": "matting", "provider": "auto", "fallback": "bbox_crop" },
+        { "op": "export", "format": "png", "suffix": "-prepared" }
+      ]
+    },
+    {
+      "id": "passthrough",
+      "processingTier": "none",
+      "steps": []
+    }
+  ],
+  "capabilityDefaults": {
+    "nova-ppt-aesthetic-slides": {
+      "product": "slide_hero_16x9",
+      "scene": "slide_scene_cover"
+    },
+    "brand-campaign-full": {
+      "key-visual": "poster_portrait_9x16",
+      "social-1x1": "social_square_safe",
+      "social-16x9": "social_wide",
+      "social-3x4": "social_portrait"
+    },
+    "geo": {
+      "inline": "report_inline"
+    }
+  }
+}

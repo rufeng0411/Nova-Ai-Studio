@@ -1,0 +1,10 @@
+/* PD-SAAS-FORK: design canvas chrome — show custom grid beneath tldraw */
+[data-testid='design-canvas-tldraw-root'] .tl-background,
+[data-testid='design-canvas-tldraw-root'] .tl-canvas,
+[data-testid='design-canvas-tldraw-root'] .tl-shapes {
+  background: transparent !important;
+}
+
+[data-testid='design-canvas-tldraw-root'] .tl-container {
+  background: transparent !important;
+}

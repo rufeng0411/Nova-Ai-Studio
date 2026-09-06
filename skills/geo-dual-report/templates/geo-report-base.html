@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{TITLE}}</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <!-- NGRS: 交付到任务目录时须内联 geo-report-theme.css + geo-chart-theme.js -->
+  <link rel="stylesheet" href="geo-report-theme.css" />
+</head>
+<body>
+  <div class="ngrs-wrap">
+    <header class="ngrs-header">
+      <div class="ngrs-header-row">
+        <div>
+          <span class="ngrs-badge" data-ngrs-badge data-nova-block-id="ngrs-badge">{{REPORT_TYPE}}</span>
+          <h1 class="ngrs-title" data-ngrs-title data-nova-block-id="ngrs-title">{{TITLE}}</h1>
+          <p class="ngrs-sub" data-ngrs-subtitle data-nova-block-id="ngrs-subtitle">{{SUBTITLE}}</p>
+        </div>
+        <div data-ngrs-header-gauge></div>
+      </div>
+    </header>
+    <div class="ngrs-kpi-grid" data-ngrs-kpi-grid></div>
+    <div class="ngrs-chart-grid" data-ngrs-chart-grid></div>
+    <div data-ngrs-sections data-nova-block-id="ngrs-sections"></div>
+    <div class="ngrs-actions">
+      <h3>建议下一步</h3>
+      <ul data-ngrs-action-list data-nova-block-id="ngrs-actions"></ul>
+    </div>
+    <footer class="ngrs-footer">Nova GEO Report · <span data-ngrs-footer-time></span></footer>
+  </div>
+  <script id="report-data" type="application/json">{{REPORT_DATA_JSON}}</script>
+  <script src="geo-chart-theme.js"></script>
+  <script>
+    (function () {
+      var el = document.getElementById('report-data');
+      var data = {};
+      try { data = JSON.parse(el.textContent || '{}'); } catch (_) {}
+      if (typeof NGRS !== 'undefined') {
+        NGRS.renderReport(data, { lazyCharts: true });
+      }
+    })();
+  </script>
+</body>
+</html>

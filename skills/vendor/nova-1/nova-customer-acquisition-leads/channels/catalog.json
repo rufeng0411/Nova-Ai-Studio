@@ -1,0 +1,130 @@
+{
+  "channels": [
+    {
+      "channel_id": "gov_bidding",
+      "label_zh": "政府采购",
+      "description_zh": "中国政府采购网、各省政采、公共资源交易平台等",
+      "default_weight": 5
+    },
+    {
+      "channel_id": "gov_ggzy",
+      "label_zh": "公共资源交易(省市级)",
+      "description_zh": "全国及各省市公共资源交易平台",
+      "default_weight": 5
+    },
+    {
+      "channel_id": "gov_ggzy_city",
+      "label_zh": "公共资源交易(地市级)",
+      "description_zh": "广州、深圳、杭州、成都等主要地市平台",
+      "default_weight": 5
+    },
+    {
+      "channel_id": "gov_ggzy_county",
+      "label_zh": "公共资源交易(县级)",
+      "description_zh": "义乌、昆山、江阴等县级平台",
+      "default_weight": 5
+    },
+    {
+      "channel_id": "gov_overseas",
+      "label_zh": "海外政府采购",
+      "description_zh": "美国 SAM、欧盟 TED、英国 Contracts Finder、日本/韩国等",
+      "default_weight": 5
+    },
+    {
+      "channel_id": "state_owned",
+      "label_zh": "国企/央企招标",
+      "description_zh": "国家电网、三大运营商、中石油中石化、建筑央企等",
+      "default_weight": 5
+    },
+    {
+      "channel_id": "private_bidding",
+      "label_zh": "民企招标",
+      "description_zh": "华为、腾讯、阿里、京东、比亚迪等企业采购平台",
+      "default_weight": 5
+    },
+    {
+      "channel_id": "supply_chain",
+      "label_zh": "供应链/B2B",
+      "description_zh": "1688、慧聪、中国制造网、震坤行、京东企业购等",
+      "default_weight": 4
+    },
+    {
+      "channel_id": "cross_border_supply",
+      "label_zh": "跨境供应链",
+      "description_zh": "阿里巴巴跨境、敦煌网、递四方、连连支付等",
+      "default_weight": 4
+    },
+    {
+      "channel_id": "outsourcing",
+      "label_zh": "外包/众包",
+      "description_zh": "猪八戒、一品威客、程序员客栈、码市、58 同城等",
+      "default_weight": 4
+    },
+    {
+      "channel_id": "local_life",
+      "label_zh": "同城/本地生活",
+      "description_zh": "58 同城、赶集、百姓网、列表网、口碑网等全国性同城",
+      "default_weight": 3
+    },
+    {
+      "channel_id": "local_city_forum",
+      "label_zh": "地方性同城论坛",
+      "description_zh": "北京论坛、水木、篱笆、19楼、西祠胡同等",
+      "default_weight": 3
+    },
+    {
+      "channel_id": "overseas_local",
+      "label_zh": "海外同城分类信息",
+      "description_zh": "Craigslist、Gumtree、Kijiji、Mercari 等",
+      "default_weight": 3
+    },
+    {
+      "channel_id": "social",
+      "label_zh": "国内社交媒体",
+      "description_zh": "小红书、抖音、微博、知乎、豆瓣、大众点评、B 站等；侧重 C 端发帖与评论中的需求信号",
+      "default_weight": 2
+    },
+    {
+      "channel_id": "overseas_social",
+      "label_zh": "海外社交媒体",
+      "description_zh": "X、Instagram、Facebook、TikTok 等；二期深化评论抓取",
+      "default_weight": 2
+    },
+    {
+      "channel_id": "forum_bbs",
+      "label_zh": "国内论坛/BBS",
+      "description_zh": "福步、天涯、豆瓣小组、虎扑、汽车之家等",
+      "default_weight": 2
+    },
+    {
+      "channel_id": "tech_cn",
+      "label_zh": "国内技术",
+      "description_zh": "CSDN、掘金、知乎、V2EX、开源中国等",
+      "default_weight": 1
+    },
+    {
+      "channel_id": "recruitment",
+      "label_zh": "招聘",
+      "description_zh": "BOSS 直聘、智联、前程无忧、拉勾等",
+      "default_weight": 5
+    },
+    {
+      "channel_id": "overseas_b2b",
+      "label_zh": "海外 B2B/采购",
+      "description_zh": "Alibaba.com、Global Sources、Thomasnet、Europages 等",
+      "default_weight": 4
+    },
+    {
+      "channel_id": "overseas_freelance",
+      "label_zh": "海外自由职业/招聘",
+      "description_zh": "Upwork、Fiverr、LinkedIn、Indeed 等",
+      "default_weight": 4
+    },
+    {
+      "channel_id": "tech_overseas",
+      "label_zh": "海外技术",
+      "description_zh": "GitHub、Stack Overflow、Medium、Hacker News 等",
+      "default_weight": 1
+    }
+  ]
+}

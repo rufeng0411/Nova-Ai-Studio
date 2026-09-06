@@ -1,0 +1,38 @@
+{
+  "geo": {
+    "slotKeywords": [
+      ["audit", "aeo", "审计"],
+      ["keyword", "关键词", "pd-geo"],
+      ["platform", "成稿", "platform-drafts"],
+      ["optim", "引用", "optimizer"],
+      ["schema", "jsonld"],
+      ["citability", "评分", "引用"],
+      ["visibility", "report", "od-data", "html"]
+    ],
+    "numberedPrefixAliases": [
+      "01-aeo-audit-checklist.md",
+      "02-keyword-research.md",
+      "03-optimized.md",
+      "04-platform-zhihu.md",
+      "05-platform-xiaohongshu.md",
+      "06-platform-smzdm.md",
+      "07-schema.jsonld",
+      "08-citability-report.md",
+      "visibility-report.html"
+    ]
+  },
+  "sales_battlecard": {
+    "slotKeywords": [
+      ["intel"],
+      ["battlecard"],
+      ["talk-track", "talktrack", "话术"]
+    ]
+  },
+  "monitor_3step": {
+    "slotKeywords": [
+      ["rank-track", "rank track", "geo-rank"],
+      ["mention-report", "mention report", "brand-mention"],
+      ["monitor-report", "monitor report", "od-data-report"]
+    ]
+  }
+}

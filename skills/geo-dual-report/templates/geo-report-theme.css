@@ -1,0 +1,358 @@
+/* Nova GEO Report System (NGRS) v1 — geo-report-theme.css */
+:root {
+  --ngrs-bg: #F0F1F4;
+  --ngrs-bg-subtle: #E8EAEF;
+  --ngrs-card: #FFFFFF;
+  --ngrs-border: #E2E5EB;
+  --ngrs-text: #1A1F26;
+  --ngrs-muted: #647084;
+  --ngrs-accent: #0F766E;
+  --ngrs-accent-soft: rgba(15, 118, 110, 0.12);
+  --ngrs-secondary: #4F5D75;
+  --ngrs-indigo: #4F46E5;
+  --ngrs-priority-p0: #B91C1C;
+  --ngrs-priority-p1: #B45309;
+  --ngrs-priority-p2: #647084;
+  --ngrs-chart-grid: #EEF0F3;
+  --ngrs-radius: 0.625rem;
+  --ngrs-shadow: 0 1px 2px rgba(26, 31, 38, 0.04), 0 8px 24px rgba(26, 31, 38, 0.06);
+  --ngrs-shadow-hover: 0 4px 16px rgba(26, 31, 38, 0.1);
+  --ngrs-font: "Segoe UI Variable", "Segoe UI", system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ngrs-bg: #12151A;
+    --ngrs-bg-subtle: #1C2128;
+    --ngrs-card: #1C2128;
+    --ngrs-border: #2A3038;
+    --ngrs-text: #E8EAED;
+    --ngrs-muted: #9CA3AF;
+    --ngrs-accent: #2DD4BF;
+    --ngrs-accent-soft: rgba(45, 212, 191, 0.15);
+    --ngrs-chart-grid: #2A3038;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--ngrs-font);
+  background: var(--ngrs-bg);
+  color: var(--ngrs-text);
+  line-height: 1.55;
+  font-size: 14px;
+}
+
+.ngrs-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.ngrs-header {
+  margin-bottom: 1.5rem;
+  animation: ngrsFadeUp 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.ngrs-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ngrs-accent);
+  background: var(--ngrs-accent-soft);
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  margin-bottom: 0.5rem;
+}
+
+.ngrs-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  letter-spacing: -0.02em;
+}
+
+.ngrs-sub {
+  color: var(--ngrs-muted);
+  font-size: 13px;
+  margin: 0;
+}
+
+.ngrs-header-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.ngrs-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.ngrs-kpi {
+  background: var(--ngrs-card);
+  border: 1px solid var(--ngrs-border);
+  border-radius: var(--ngrs-radius);
+  padding: 1rem;
+  box-shadow: var(--ngrs-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: ngrsFadeUp 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.ngrs-kpi:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--ngrs-shadow-hover);
+}
+
+.ngrs-kpi-label {
+  font-size: 11px;
+  color: var(--ngrs-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.ngrs-kpi-value {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--ngrs-accent);
+  margin-top: 0.25rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.ngrs-kpi-spark {
+  height: 32px;
+  margin-top: 0.5rem;
+}
+
+.ngrs-chart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ngrs-chart-card {
+  background: var(--ngrs-card);
+  border: 1px solid var(--ngrs-border);
+  border-radius: var(--ngrs-radius);
+  padding: 1rem;
+  min-height: 280px;
+  box-shadow: var(--ngrs-shadow);
+  animation: ngrsFadeUp 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.ngrs-chart-card h3 {
+  margin: 0 0 0.75rem;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ngrs-chart-body {
+  position: relative;
+  min-height: 220px;
+}
+
+.ngrs-chart-body canvas {
+  max-height: 260px;
+}
+
+.ngrs-section {
+  background: var(--ngrs-card);
+  border: 1px solid var(--ngrs-border);
+  border-radius: var(--ngrs-radius);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--ngrs-shadow);
+  animation: ngrsFadeUp 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.ngrs-section h2 {
+  margin: 0 0 0.75rem;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.ngrs-actions {
+  padding: 1rem 1.25rem;
+  background: var(--ngrs-card);
+  border-radius: var(--ngrs-radius);
+  border: 1px solid var(--ngrs-border);
+  box-shadow: var(--ngrs-shadow);
+  animation: ngrsFadeUp 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.ngrs-actions h3 {
+  margin: 0 0 0.75rem;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.ngrs-actions li {
+  margin: 0.35rem 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+.ngrs-actions ul {
+  margin: 0;
+  padding: 0;
+}
+
+.ngrs-priority {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  margin-right: 0.35rem;
+}
+
+.ngrs-priority-p0 { color: var(--ngrs-priority-p0); background: rgba(185, 28, 28, 0.1); }
+.ngrs-priority-p1 { color: var(--ngrs-priority-p1); background: rgba(180, 83, 9, 0.1); }
+.ngrs-priority-p2 { color: var(--ngrs-priority-p2); background: rgba(100, 112, 132, 0.12); }
+
+.ngrs-footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 12px;
+  color: var(--ngrs-muted);
+  animation: ngrsFadeUp 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Score gauge (SVG ring) */
+.ngrs-gauge {
+  width: 88px;
+  height: 88px;
+  flex-shrink: 0;
+}
+
+.ngrs-gauge svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.ngrs-gauge-track {
+  fill: none;
+  stroke: var(--ngrs-border);
+  stroke-width: 8;
+}
+
+.ngrs-gauge-fill {
+  fill: none;
+  stroke: var(--ngrs-accent);
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-dasharray: 251.2;
+  stroke-dashoffset: 251.2;
+  transition: stroke-dashoffset 1.2s ease-out;
+}
+
+.ngrs-gauge-fill.ngrs-animate {
+  stroke-dashoffset: var(--ngrs-gauge-offset, 251.2);
+}
+
+.ngrs-gauge-fill.ngrs-gauge-warn {
+  stroke: var(--ngrs-priority-p1);
+}
+
+.ngrs-gauge-center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: rotate(0deg);
+}
+
+.ngrs-gauge-wrap {
+  position: relative;
+  width: 88px;
+  height: 88px;
+}
+
+.ngrs-gauge-num {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--ngrs-accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.ngrs-gauge-max {
+  font-size: 10px;
+  color: var(--ngrs-muted);
+}
+
+/* Checklist progress bar */
+.ngrs-progress {
+  display: flex;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--ngrs-border);
+  margin-top: 0.5rem;
+}
+
+.ngrs-progress-seg {
+  height: 100%;
+  transition: width 0.8s ease-out;
+}
+
+.ngrs-progress-pass { background: var(--ngrs-accent); }
+.ngrs-progress-warn { background: var(--ngrs-priority-p1); }
+.ngrs-progress-fail { background: var(--ngrs-priority-p0); }
+
+.ngrs-progress-legend {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.75rem;
+  font-size: 12px;
+  color: var(--ngrs-muted);
+}
+
+.ngrs-progress-legend span::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  margin-right: 0.35rem;
+  vertical-align: middle;
+}
+
+.ngrs-progress-legend .pass::before { background: var(--ngrs-accent); }
+.ngrs-progress-legend .warn::before { background: var(--ngrs-priority-p1); }
+.ngrs-progress-legend .fail::before { background: var(--ngrs-priority-p0); }
+
+.ngrs-dim-skipped { opacity: 0.45; }
+
+@keyframes ngrsFadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ngrs-kpi,
+  .ngrs-chart-card,
+  .ngrs-section,
+  .ngrs-actions,
+  .ngrs-header,
+  .ngrs-footer {
+    animation: none;
+  }
+  .ngrs-gauge-fill {
+    transition: none;
+  }
+  .ngrs-progress-seg {
+    transition: none;
+  }
+}

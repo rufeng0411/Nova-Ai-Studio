@@ -1,0 +1,55 @@
+{
+  "format": "bento/slides",
+  "version": 1,
+  "title": "Skeleton Deck",
+  "size": { "width": 1280, "height": 720 },
+  "theme": {
+    "background": "#101418",
+    "color": "#F2F0EA",
+    "accent": "#FF9E8A",
+    "fontFamily": "system-ui, sans-serif"
+  },
+  "slides": [
+    {
+      "id": "s1",
+      "background": "#101418",
+      "transition": "none",
+      "notes": "开场：介绍主题与听众预期，预留 30 秒建立场景。",
+      "elements": [
+        {
+          "id": "headline",
+          "type": "text",
+          "x": 96,
+          "y": 260,
+          "w": 1088,
+          "h": 160,
+          "rotation": 0,
+          "opacity": 1,
+          "html": "Hello from Nova Bento",
+          "fontSize": 72,
+          "fontFamily": "system-ui, sans-serif",
+          "fontWeight": 800,
+          "color": "#F2F0EA",
+          "align": "left",
+          "valign": "top",
+          "lineHeight": 1.1
+        },
+        {
+          "id": "bar",
+          "type": "shape",
+          "shape": "rect",
+          "x": 96,
+          "y": 440,
+          "w": 320,
+          "h": 12,
+          "fill": "#FF9E8A",
+          "stroke": "none",
+          "strokeWidth": 0,
+          "radius": 0,
+          "rotation": 0,
+          "opacity": 1
+        }
+      ]
+    }
+  ]
+}

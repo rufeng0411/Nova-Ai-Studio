@@ -1,0 +1,42 @@
+{
+  "$comment": "PD-SAAS-FORK VAP: authority site URL templates for discovery fallback",
+  "version": 1,
+  "sources": [
+    {
+      "id": "autohome",
+      "label": "汽车之家",
+      "buildUrl": "https://www.autohome.com.cn/search?q={subject}",
+      "sourceTier": "platform_verified_official"
+    },
+    {
+      "id": "dongchedi",
+      "label": "懂车帝",
+      "buildUrl": "https://www.dongchedi.com/search?keyword={subject}",
+      "sourceTier": "platform_verified_official"
+    },
+    {
+      "id": "pcauto",
+      "label": "太平洋汽车",
+      "buildUrl": "https://price.pcauto.com.cn/search/?q={subject}",
+      "sourceTier": "platform_verified_official"
+    },
+    {
+      "id": "bitauto",
+      "label": "易车",
+      "buildUrl": "https://search.yiche.com/all?keyword={subject}",
+      "sourceTier": "platform_verified_official"
+    },
+    {
+      "id": "che168",
+      "label": "二手车之家",
+      "buildUrl": "https://www.che168.com/search/{subject}/",
+      "sourceTier": "platform_verified_official"
+    },
+    {
+      "id": "ifeng-auto",
+      "label": "凤凰网汽车",
+      "buildUrl": "https://search.ifeng.com/sofeng/search?q={subject}&c=1",
+      "sourceTier": "authority_editorial"
+    }
+  ]
+}

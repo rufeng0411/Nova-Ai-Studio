@@ -1,0 +1,5 @@
+{"type":"metadata","id":"preference-skip-default","expectedStatus":"preference_elicitation"}
+{"role":"user","content":"做一个夏季新品主视觉和多平台文案，可以先按推荐方案开始。"}
+{"role":"assistant","content":"为提高质量，先确认视觉风格与渠道优先级；也可以采用默认方案继续。"}
+{"type":"elicitation","kind":"preference","hasDefaultOption":true}
+{"type":"deliverable_validation","verified":[],"missing":[],"broken":[]}

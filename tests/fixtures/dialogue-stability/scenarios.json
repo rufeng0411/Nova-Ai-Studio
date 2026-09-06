@@ -1,0 +1,722 @@
+[
+  {
+    "id": "wuyutai-campaign-ledger-tail",
+    "title": "吴裕泰 Campaign 全案累计成果丢失",
+    "suites": ["historical", "capabilities", "process-templates"],
+    "source": "capability",
+    "entrypoint": "content-flywheel",
+    "historicalFailure": "第一轮六文件已生成，第二轮只检查不写新文件时，尾页分页只显示过程 HTML 或空弱提示。",
+    "userGoal": "生成吴裕泰夏季 Campaign 全案六文件，第二轮只检查并告诉我成果在哪。",
+    "turns": [
+      { "role": "user", "text": "生成吴裕泰夏季 Campaign 全案六文件。" },
+      { "role": "user", "text": "检查一下，不要重做，告诉我文件在哪。" }
+    ],
+    "expectedGoalContract": { "kinds": ["markdown", "html"], "requiredFiles": ["strategy.md", "creative.md", "media-plan.md", "landing-page.html", "monitoring.md", "summary.md"], "minCount": 6 },
+    "expectedDeliverables": ["artifacts/campaign/wuyutai-2026summer/strategy.md", "artifacts/campaign/wuyutai-2026summer/landing-page.html"],
+    "forbiddenDeliverables": ["artifacts/campaign/wuyutai-2026summer/process-reference.html", "index.html"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true, "repairOnlyMissing": true },
+    "fiveEntryAssertions": { "sameResolvedPath": true, "requiresLedgerOrHintDir": true },
+    "telemetryAssertions": { "owner": "deliverable_repair", "emptySpin": false },
+    "coverage": { "historical": true, "capabilityCategory": "marketing", "marketingStage": "planning", "processTemplate": "content-flywheel", "skillKind": "multi_file" },
+    "commands": [
+      { "cmd": "npx", "args": ["vitest", "run", "src/saas/taskState/taskDeliverableLedger.test.ts", "src/session/transcript/JsonlTranscriptWriter.ledger.test.ts"] },
+      { "cmd": "npx", "args": ["tsx", "--test", "tests/web/server/readSessionMessages.pagination.test.ts"] }
+    ]
+  },
+  {
+    "id": "razer-geo-bare-name-collision",
+    "title": "雷蛇 GEO/AEO 多目录和裸名碰撞",
+    "suites": ["historical", "capabilities", "process-templates"],
+    "source": "capability",
+    "entrypoint": "pd-geo",
+    "historicalFailure": "content、xiaohongshu-draft、monitor 目录混杂，裸 report.md 被解析到旧目录或缺盘文件。",
+    "userGoal": "为雷蛇产品做 GEO/AEO 审计、优化稿、schema 和监测报告。",
+    "turns": [
+      { "role": "user", "text": "做雷蛇 GEO/AEO 审计。" },
+      { "role": "user", "text": "继续补 schema 和监测报告。" }
+    ],
+    "expectedGoalContract": { "kinds": ["markdown", "file"], "requiredFiles": ["audit.md", "optimized.md", "schema.jsonld", "visibility-report.md"], "minCount": 4 },
+    "expectedDeliverables": ["artifacts/geo/razer/audit.md", "artifacts/geo/razer/schema.jsonld"],
+    "forbiddenDeliverables": ["report.md", "missing_on_disk.md"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true },
+    "fiveEntryAssertions": { "sameResolvedPath": true, "noBareNameGuessWithoutHintDir": true },
+    "telemetryAssertions": { "owner": "deliverable_repair", "emptySpin": false },
+    "coverage": { "historical": true, "capabilityCategory": "marketing", "marketingStage": "research", "processTemplate": "geo-aeo-audit", "skillKind": "local_no_key" },
+    "commands": [
+      { "cmd": "npm", "args": ["run", "test:display-engine-alignment"] }
+    ]
+  },
+  {
+    "id": "ppt-real-pptx-contract",
+    "title": "PPT 能力只交 HTML 或脚本",
+    "suites": ["historical", "capabilities", "skills"],
+    "source": "skill",
+    "entrypoint": "anth-pptx",
+    "historicalFailure": "用户要求可编辑 PPT，却只产 presentation.html、create_ppt.py 或空壳 pptx 后宣称完成。",
+    "userGoal": "根据资料生成一份 12 页真实可编辑 PPTX。",
+    "turns": [
+      { "role": "user", "text": "生成真实可编辑 PPTX。" },
+      { "role": "assistant", "text": "先产出 HTML 预览。" }
+    ],
+    "expectedGoalContract": { "kinds": ["pptx"], "requiredFiles": ["presentation.pptx"], "minCount": 12 },
+    "expectedDeliverables": ["artifacts/ppt/presentation.pptx"],
+    "forbiddenDeliverables": ["presentation.html", "create_ppt.py"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true, "userActionRequiredWhenMissingKey": true },
+    "fiveEntryAssertions": { "sameResolvedPath": true },
+    "telemetryAssertions": { "owner": "deliverable_repair", "emptySpin": false },
+    "coverage": { "historical": true, "capabilityCategory": "creative", "marketingStage": "creative", "skillKind": "binary" },
+    "commands": [
+      { "cmd": "npx", "args": ["vitest", "run", "src/saas/taskState/taskGoalContract.test.ts", "tests/saas/final-acceptance.test.ts"] },
+      { "cmd": "node", "args": ["--import", "tsx", "--test", "tests/agent/validate-deliverables-engine.test.ts"] }
+    ]
+  },
+  {
+    "id": "nova-slides-cross-deck",
+    "title": "Nova 幻灯图集跨 deck 串台",
+    "suites": ["historical", "capabilities"],
+    "source": "capability",
+    "entrypoint": "nova-ppt-aesthetic-slides",
+    "historicalFailure": "裸 slide-manifest.json 或 slide-NN.png 被 mtime 解析到旧 slides-* 目录。",
+    "userGoal": "连续生成两个主题幻灯图集，并导出第二个 PPT。",
+    "turns": [
+      { "role": "user", "text": "生成主题 A 幻灯图集。" },
+      { "role": "user", "text": "再生成主题 B，并导出 B 的 PPT。" }
+    ],
+    "expectedGoalContract": { "kinds": ["file", "pptx"], "requiredFiles": ["slide-manifest.json", "presentation.pptx"] },
+    "expectedDeliverables": ["artifacts/slides-theme-b/slide-manifest.json", "artifacts/slides-theme-b/presentation.pptx"],
+    "forbiddenDeliverables": ["artifacts/slides-theme-a/slide-manifest.json", "slide-01.png"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true },
+    "fiveEntryAssertions": { "sameResolvedPath": true, "singleDeckOnly": true },
+    "telemetryAssertions": { "owner": "deliverable_repair", "emptySpin": false },
+    "coverage": { "historical": true, "capabilityCategory": "creative", "marketingStage": "creative", "skillKind": "binary" },
+    "commands": [
+      { "cmd": "node", "args": ["--test", "ui/shared/deliverableLinkContract.test.mjs"] }
+    ]
+  },
+  {
+    "id": "beijing-ai-report-recovery",
+    "title": "北京 AI 调研报告长任务 recovery",
+    "suites": ["historical", "process-templates"],
+    "source": "processTemplate",
+    "entrypoint": "research-report",
+    "historicalFailure": "联网失败后只留下 sources/charts 过程文件，最终 docx/pdf 不展示并要求用户继续。",
+    "userGoal": "调研北京 AI 转型并交付正式报告 DOCX/PDF。",
+    "turns": [
+      { "role": "user", "text": "生成北京 AI 转型调研报告。" },
+      { "role": "assistant", "text": "部分搜索失败，改用备用来源继续。" }
+    ],
+    "expectedGoalContract": { "kinds": ["docx", "pdf", "markdown"], "requiredFiles": ["report-body.md", "report.docx"] },
+    "expectedDeliverables": ["artifacts/research-beijing-ai/report-body.md", "artifacts/research-beijing-ai/report.docx"],
+    "forbiddenDeliverables": ["01-sources-and-synthesis.md"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true },
+    "fiveEntryAssertions": { "sameResolvedPath": true },
+    "telemetryAssertions": { "owner": "engine_auto_continue", "emptySpin": false },
+    "coverage": { "historical": true, "capabilityCategory": "office", "marketingStage": "monitoring", "processTemplate": "research-report", "skillKind": "binary" },
+    "commands": [
+      { "cmd": "npx", "args": ["vitest", "run", "tests/saas/task-continuation-policy.test.ts", "tests/saas/final-acceptance.test.ts"] }
+    ]
+  },
+  {
+    "id": "storyboard-pack-three-files",
+    "title": "视频分镜包缺三件套或 response 不收敛",
+    "suites": ["historical", "capabilities", "process-templates"],
+    "source": "processTemplate",
+    "entrypoint": "ad-storyboard-seedance",
+    "historicalFailure": "只交概述或单脚本，缺 bible、镜头卡、交接矩阵；文件齐了但 harness 超时。",
+    "userGoal": "生成连续性分镜包，包含 bible、镜头卡、交接矩阵。",
+    "turns": [
+      { "role": "user", "text": "生成连续性分镜包三件套。" }
+    ],
+    "expectedGoalContract": { "kinds": ["markdown"], "requiredFiles": ["continuity_bible.md", "shot_cards.md", "handoff_design_matrix.md"], "minCount": 3 },
+    "expectedDeliverables": ["continuity_bible.md", "shot_cards.md", "handoff_design_matrix.md"],
+    "forbiddenDeliverables": ["outline-only.md"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true, "repairOnlyMissing": true },
+    "fiveEntryAssertions": { "sameResolvedPath": true },
+    "telemetryAssertions": { "owner": "deliverable_repair", "eventFinalRequired": true },
+    "coverage": { "historical": true, "capabilityCategory": "creative", "marketingStage": "creative", "processTemplate": "ad-storyboard-seedance", "skillKind": "multi_file" },
+    "commands": [
+      { "cmd": "npx", "args": ["vitest", "run", "src/saas/taskState/taskGoalContract.test.ts"] }
+    ]
+  },
+  {
+    "id": "react-video-process-scripts",
+    "title": "React/Remotion 视频模板把过程脚本当成果",
+    "suites": ["historical", "capabilities", "process-templates"],
+    "source": "processTemplate",
+    "entrypoint": "saas-demo-remotion-full",
+    "historicalFailure": ".mjs/.tsx 过程脚本污染成果区，最终 HTML/视频/说明文件未被策展。",
+    "userGoal": "生成可运行视频模板或 HTML 视频交付包。",
+    "turns": [
+      { "role": "user", "text": "生成 AI 用途 React 程序化视频模板。" }
+    ],
+    "expectedGoalContract": { "kinds": ["html", "markdown"], "requiredFiles": ["demo-preview.html", "README.md"] },
+    "expectedDeliverables": ["ai-video-template/demo-preview.html"],
+    "forbiddenDeliverables": ["ai-video-template/src/AiVideoTemplate.tsx", "render.mjs"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true },
+    "fiveEntryAssertions": { "sameResolvedPath": true },
+    "telemetryAssertions": { "owner": "engine_auto_continue", "emptySpin": false },
+    "coverage": { "historical": true, "capabilityCategory": "development", "marketingStage": "publishing", "processTemplate": "saas-demo-remotion-full", "skillKind": "process_script" },
+    "commands": [
+      { "cmd": "npm", "args": ["--workspace", "ui", "run", "test", "--", "src/shared/validateDeliverables.test.ts", "src/shared/deliverableDisplayPolicy.test.ts"] }
+    ]
+  },
+  {
+    "id": "open-design-multi-page-html",
+    "title": "Open Design / 设计 HTML 多页面成果",
+    "suites": ["historical", "skills", "capabilities"],
+    "source": "skill",
+    "entrypoint": "open-design",
+    "historicalFailure": "只显示某个过程 index.html，多屏 screen-N 和 assets 入口不一致。",
+    "userGoal": "生成多屏产品设计 HTML，并保留 index 与 screen 页面。",
+    "turns": [
+      { "role": "user", "text": "生成三屏产品设计 HTML。" }
+    ],
+    "expectedGoalContract": { "kinds": ["html"], "requiredFiles": ["index.html", "screen-1.html", "screen-2.html", "screen-3.html"], "minCount": 4 },
+    "expectedDeliverables": ["artifacts/design/product/index.html", "artifacts/design/product/screen-1.html"],
+    "forbiddenDeliverables": ["assets/logo.png", "static/index.html"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true },
+    "fiveEntryAssertions": { "sameResolvedPath": true, "noGeoExpansionForAssets": true },
+    "telemetryAssertions": { "owner": "deliverable_repair", "emptySpin": false },
+    "coverage": { "historical": true, "capabilityCategory": "creative", "marketingStage": "creative", "skillKind": "local_no_key" },
+    "commands": [
+      { "cmd": "npm", "args": ["--workspace", "ui", "run", "test", "--", "src/shared/collectFinalDeliverables.test.ts"] }
+    ]
+  },
+  {
+    "id": "document-import-ocr-export",
+    "title": "文档导入、OCR、导出链路中断",
+    "suites": ["historical", "skills", "capabilities"],
+    "source": "skill",
+    "entrypoint": "document-import",
+    "historicalFailure": "缺 MinerU Key 或附件时空转；导出完成后预览入口不一致。",
+    "userGoal": "上传 PDF/DOCX/图片，转 DOCX/PPTX/PDF。",
+    "turns": [
+      { "role": "user", "text": "把上传 PDF 转成可编辑 DOCX。" }
+    ],
+    "expectedGoalContract": { "kinds": ["docx", "pptx", "pdf"], "requiredFiles": ["converted.docx"] },
+    "expectedDeliverables": ["artifacts/document-export/converted.docx"],
+    "forbiddenDeliverables": ["ocr-temp.json", "extract.py"],
+    "interruptionAssertions": { "canAskUser": true, "askOnceOnly": true, "fallbackBeforeUserActionRequired": true },
+    "fiveEntryAssertions": { "sameResolvedPath": true },
+    "telemetryAssertions": { "owner": "none", "blockedState": "blocked_user_action" },
+    "coverage": { "historical": true, "capabilityCategory": "office", "marketingStage": "monitoring", "skillKind": "attachment_required" },
+    "commands": [
+      { "cmd": "npx", "args": ["vitest", "run", "tests/saas/task-continuation-policy.test.ts"] }
+    ]
+  },
+  {
+    "id": "capability-try-history-reference",
+    "title": "能力中心试一下错误引用历史成果",
+    "suites": ["historical", "capabilities"],
+    "source": "capability",
+    "entrypoint": "capability-try",
+    "historicalFailure": "试一下自动 @ 无关历史 index.html、旧 slides、README，或覆盖用户草稿。",
+    "userGoal": "点击 PPT/GEO/调研/设计能力试一下。",
+    "turns": [
+      { "role": "user", "text": "输入框已有自定义草稿时点击能力试一下。" }
+    ],
+    "expectedGoalContract": { "kinds": ["file"], "requiredFiles": [] },
+    "expectedDeliverables": ["composer-prefill"],
+    "forbiddenDeliverables": ["artifacts/slides-old/slide-manifest.json", "README.md", "unrelated/index.html"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": false },
+    "fiveEntryAssertions": { "sameResolvedPath": true, "doesNotOverrideDraft": true },
+    "telemetryAssertions": { "owner": "none", "emptySpin": false },
+    "coverage": { "historical": true, "capabilityCategory": "marketing", "marketingStage": "outreach", "skillKind": "local_no_key" },
+    "commands": [
+      { "cmd": "npm", "args": ["--workspace", "ui", "run", "test", "--", "src/shared/capabilityTryReferences.test.ts", "src/shared/capabilityTryBridge.test.ts", "src/shared/capabilityTryPrompt.test.ts"] }
+    ]
+  },
+  {
+    "id": "process-template-write-file-contract",
+    "title": "流程模板分阶段 write_file 约束失效",
+    "suites": ["historical", "process-templates"],
+    "source": "processTemplate",
+    "entrypoint": "sales-battlecard-full",
+    "historicalFailure": "流程模板只规划不落盘，或阶段文件散落、最终成果不在成果区。",
+    "userGoal": "从模板启动 sales battlecard / legal risk / GEO 等阶段任务。",
+    "turns": [
+      { "role": "user", "text": "使用流程模板生成销售战卡全案。" }
+    ],
+    "expectedGoalContract": { "kinds": ["markdown", "docx"], "requiredFiles": ["battlecard.md"] },
+    "expectedDeliverables": ["artifacts/process/sales-battlecard-full/battlecard.md"],
+    "forbiddenDeliverables": ["plan-only.md", "scratch.sh"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true },
+    "fiveEntryAssertions": { "sameResolvedPath": true },
+    "telemetryAssertions": { "owner": "deliverable_repair", "emptySpin": false },
+    "coverage": { "historical": true, "capabilityCategory": "office", "marketingStage": "outreach", "processTemplate": "sales-battlecard-full", "skillKind": "multi_file" },
+    "commands": [
+      { "cmd": "npm", "args": ["run", "smoke:templates"] }
+    ]
+  },
+  {
+    "id": "third-party-skill-missing-config",
+    "title": "第三方 skill 缺配置",
+    "suites": ["historical", "skills"],
+    "source": "skill",
+    "entrypoint": "fal-video",
+    "historicalFailure": "缺 Key 时 recovery 空转或输出英文技术错误。",
+    "userGoal": "调用需要外部 Key 的 Fal/Typefully/VideoDB/Nutrient/Sentry 能力。",
+    "turns": [
+      { "role": "user", "text": "用外部视频能力生成素材。" },
+      { "role": "assistant", "text": "检测到缺配置，进入用户操作阻断。" }
+    ],
+    "expectedGoalContract": { "kinds": ["file"], "requiredFiles": ["configured-output"] },
+    "expectedDeliverables": ["user-action-required-card"],
+    "forbiddenDeliverables": ["Several tools failed", "Failed tools:"],
+    "interruptionAssertions": { "canAskUser": true, "askOnceOnly": true, "noRecoverableLaneConsumption": true },
+    "fiveEntryAssertions": { "sameResolvedPath": true },
+    "telemetryAssertions": { "owner": "none", "blockedState": "blocked_user_action" },
+    "coverage": { "historical": true, "capabilityCategory": "creative", "marketingStage": "publishing", "skillKind": "external_key" },
+    "commands": [
+      { "cmd": "npx", "args": ["vitest", "run", "tests/saas/task-continuation-policy.test.ts", "src/saas/taskState/taskExecutionStateMachine.test.ts"] }
+    ]
+  },
+  {
+    "id": "education-template-no-marketing-gate",
+    "title": "教育学习入口不被营销/办公门控误伤",
+    "suites": ["capabilities", "skills"],
+    "source": "capability",
+    "entrypoint": "hermes-edu",
+    "historicalFailure": "教育学习能力被营销或办公门控误判，成果展示或提问策略错位。",
+    "userGoal": "用教育学习能力生成一个高中学习讲义。",
+    "turns": [
+      { "role": "user", "text": "生成高中学习讲义，直接开始做。" }
+    ],
+    "expectedGoalContract": { "kinds": ["markdown"], "requiredFiles": ["lesson.md"] },
+    "expectedDeliverables": ["artifacts/edu/lesson.md"],
+    "forbiddenDeliverables": ["marketing-plan.md", "office-template.docx"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true },
+    "fiveEntryAssertions": { "sameResolvedPath": true },
+    "telemetryAssertions": { "owner": "deliverable_repair", "emptySpin": false },
+    "coverage": { "historical": true, "capabilityCategory": "education", "marketingStage": "monitoring", "skillKind": "local_no_key" },
+    "commands": [
+      { "cmd": "node", "args": ["--test", "scripts/lib/dialogueStabilityScenarioRunner.test.mjs"] }
+    ]
+  },
+  {
+    "id": "process-template-legal-risk-quick",
+    "title": "法务合规模板成果合同",
+    "suites": ["process-templates"],
+    "source": "processTemplate",
+    "entrypoint": "legal-risk-quick",
+    "historicalFailure": "法务合规模板只输出聊天建议，缺少可交付风险清单文件。",
+    "userGoal": "用法务合规模板快速生成合同风险清单。",
+    "turns": [
+      { "role": "user", "text": "生成合同风险清单，输出文件。" }
+    ],
+    "expectedGoalContract": { "kinds": ["markdown", "docx"], "requiredFiles": ["legal-risk-checklist.md"] },
+    "expectedDeliverables": ["artifacts/process/legal-risk-quick/legal-risk-checklist.md"],
+    "forbiddenDeliverables": ["chat-only-answer"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true },
+    "fiveEntryAssertions": { "sameResolvedPath": true },
+    "telemetryAssertions": { "owner": "deliverable_repair", "emptySpin": false },
+    "coverage": { "historical": true, "capabilityCategory": "office", "marketingStage": "planning", "processTemplate": "legal-risk-quick", "skillKind": "local_no_key" },
+    "commands": [
+      { "cmd": "npm", "args": ["run", "smoke:templates"] }
+    ]
+  },
+  {
+    "id": "process-template-geo-content-optimizer",
+    "title": "GEO 内容优化模板成果合同",
+    "suites": ["process-templates", "capabilities"],
+    "source": "processTemplate",
+    "entrypoint": "geo-content-optimizer",
+    "historicalFailure": "优化模板只给建议，不落盘 optimized.md 和 citability 证据。",
+    "userGoal": "用 GEO 内容优化模板生成优化稿和引用证据。",
+    "turns": [
+      { "role": "user", "text": "生成 GEO 优化稿和 citability 证据。" }
+    ],
+    "expectedGoalContract": { "kinds": ["markdown"], "requiredFiles": ["optimized.md", "citability.md"] },
+    "expectedDeliverables": ["artifacts/geo/content/optimized.md", "artifacts/geo/content/citability.md"],
+    "forbiddenDeliverables": ["draft-only.md"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true },
+    "fiveEntryAssertions": { "sameResolvedPath": true },
+    "telemetryAssertions": { "owner": "deliverable_repair", "emptySpin": false },
+    "coverage": { "historical": true, "capabilityCategory": "marketing", "marketingStage": "research", "processTemplate": "geo-content-optimizer", "skillKind": "local_no_key" },
+    "commands": [
+      { "cmd": "npm", "args": ["run", "test:display-engine-alignment"] }
+    ]
+  },
+  {
+    "id": "process-template-short-drama-pack",
+    "title": "短剧分镜流程模板多文件交付",
+    "suites": ["process-templates", "capabilities"],
+    "source": "processTemplate",
+    "entrypoint": "short-drama-seedance-pack",
+    "historicalFailure": "短剧流程只产故事梗概，缺场景表、镜头表和交付矩阵。",
+    "userGoal": "生成短剧分镜包，包含场景表、镜头表和交付矩阵。",
+    "turns": [
+      { "role": "user", "text": "生成短剧分镜包三件套。" }
+    ],
+    "expectedGoalContract": { "kinds": ["markdown"], "requiredFiles": ["scene-table.md", "shot-list.md", "handoff-matrix.md"], "minCount": 3 },
+    "expectedDeliverables": ["scene-table.md", "shot-list.md", "handoff-matrix.md"],
+    "forbiddenDeliverables": ["synopsis-only.md"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true, "repairOnlyMissing": true },
+    "fiveEntryAssertions": { "sameResolvedPath": true },
+    "telemetryAssertions": { "owner": "deliverable_repair", "emptySpin": false },
+    "coverage": { "historical": true, "capabilityCategory": "creative", "marketingStage": "creative", "processTemplate": "short-drama-seedance-pack", "skillKind": "multi_file" },
+    "commands": [
+      { "cmd": "npx", "args": ["vitest", "run", "src/saas/taskState/taskGoalContract.test.ts"] }
+    ]
+  },
+  {
+    "id": "cross-turn-hard-failure-fast-stop",
+    "title": "跨 turn 同类硬失败连续 3 次快停",
+    "suites": ["historical", "capabilities", "skills"],
+    "source": "skill",
+    "entrypoint": "anth-pptx",
+    "historicalFailure": "缺外部 OCR/服务 Key 时，每个 auto-continue turn 都重置 blocker streak，硬失败被无限重试而非连续 3 次快停并提示用户介入。",
+    "userGoal": "把附件 PDF 转成可编辑 PPTX（需要外部 OCR Key）。",
+    "turns": [
+      { "role": "user", "text": "把这个 PDF 转成可编辑 PPT。" },
+      { "role": "assistant", "text": "缺少 OCR 服务 Key，暂时无法继续。" },
+      { "role": "user", "text": "继续" },
+      { "role": "user", "text": "继续" }
+    ],
+    "expectedGoalContract": { "kinds": ["pptx"], "requiredFiles": ["presentation.pptx"], "minCount": 1 },
+    "expectedDeliverables": ["user-action-required-card"],
+    "forbiddenDeliverables": ["presentation.html", "create_ppt.py"],
+    "interruptionAssertions": { "canAskUser": true, "autoResume": false, "userActionRequiredWhenMissingKey": true, "hardFailFastStopAfter": 3, "streakAnchoredOnGoalNotTurn": true },
+    "fiveEntryAssertions": { "sameResolvedPath": true },
+    "telemetryAssertions": { "owner": "user_action_required", "emptySpin": false, "noInfiniteRetry": true },
+    "coverage": { "historical": true, "capabilityCategory": "creative", "marketingStage": "creative", "skillKind": "external_key" },
+    "commands": [
+      { "cmd": "npx", "args": ["vitest", "run", "tests/saas/user-action-blocker-streak.test.ts", "tests/saas/clarification-gate.test.ts"] }
+    ]
+  },
+  {
+    "id": "tool-write-body-omits-path",
+    "title": "工具写盘成功但正文未报路径",
+    "suites": ["historical", "capabilities"],
+    "source": "capability",
+    "entrypoint": "content-flywheel",
+    "historicalFailure": "write_file 已落盘成果，但助手正文没写出路径；候选发现若只信正文，成果会丢失或被判未交付，引擎应从工具写入索引补回。",
+    "userGoal": "写一份产品 FAQ 文档并存到 artifacts/，最后告诉我文件在哪。",
+    "turns": [
+      { "role": "user", "text": "写一份产品 FAQ，存到 artifacts/ 并报路径。" },
+      { "role": "assistant", "text": "已完成。" }
+    ],
+    "expectedGoalContract": { "kinds": ["markdown"], "requiredFiles": ["faq.md"], "minCount": 1 },
+    "expectedDeliverables": ["artifacts/content-faq/faq.md"],
+    "forbiddenDeliverables": ["index.html"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true, "repairOnlyMissing": true },
+    "fiveEntryAssertions": { "sameResolvedPath": true, "discoversToolWriteWithoutBodyPath": true },
+    "telemetryAssertions": { "owner": "deliverable_repair", "emptySpin": false },
+    "coverage": { "historical": true, "capabilityCategory": "office", "marketingStage": "planning", "skillKind": "multi_file" },
+    "commands": [
+      { "cmd": "npx", "args": ["vitest", "run", "ui/src/shared/reconcileTurnDeliverables.test.ts"] }
+    ]
+  },
+  {
+    "id": "multi-kind-count-shortfall",
+    "title": "多 kind 任务单一 kind 数量不足",
+    "suites": ["historical", "capabilities"],
+    "source": "capability",
+    "entrypoint": "nova-ppt-aesthetic-slides",
+    "historicalFailure": "要求 6 张图 + 1 个 manifest，只产出 3 张图却因全局 minCount 被判通过，单 kind 数量不足未被 finalAcceptance 发现。",
+    "userGoal": "生成 6 页幻灯图集（6 张 PNG + 1 个 slide-manifest.json）。",
+    "turns": [
+      { "role": "user", "text": "生成 6 页幻灯图集。" },
+      { "role": "assistant", "text": "先产出 3 张。" }
+    ],
+    "expectedGoalContract": { "kinds": ["image", "file"], "requiredFiles": ["slide-manifest.json"], "minCount": 7, "kindCounts": [{ "kind": "image", "min": 6 }, { "kind": "file", "min": 1 }] },
+    "expectedDeliverables": ["artifacts/slides-theme/slide-manifest.json"],
+    "forbiddenDeliverables": ["slide-01.png"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true, "repairOnlyMissing": true, "perKindCountEnforced": true },
+    "fiveEntryAssertions": { "sameResolvedPath": true, "singleDeckOnly": true },
+    "telemetryAssertions": { "owner": "deliverable_repair", "emptySpin": false },
+    "coverage": { "historical": true, "capabilityCategory": "creative", "marketingStage": "creative", "skillKind": "binary" },
+    "commands": [
+      { "cmd": "npx", "args": ["vitest", "run", "src/saas/taskState/taskGoalContract.test.ts", "tests/saas/final-acceptance.test.ts"] }
+    ]
+  },
+  {
+    "id": "fetch-failed-invisible-autocontinue",
+    "title": "P0-1 fetch failed 对用户隐形并自动续跑",
+    "suites": ["safety", "resilience"],
+    "source": "resilience",
+    "entrypoint": "transient-network",
+    "historicalFailure": "模型调用出现 fetch failed / socket hang up 时，红色英文技术错误气泡直接弹给用户并要求其换网络或重试，任务中断不自动续跑。",
+    "userGoal": "联网抓取资料并写一份分析报告，过程中出现瞬态网络抖动。",
+    "turns": [
+      { "role": "user", "text": "联网查一下资料，写份分析报告。" },
+      { "role": "assistant", "text": "fetch failed" }
+    ],
+    "expectedGoalContract": { "kinds": ["markdown"], "requiredFiles": ["report.md"], "minCount": 1 },
+    "expectedDeliverables": ["artifacts/report.md"],
+    "forbiddenDeliverables": ["fetch failed", "Several tools failed"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true, "transientInvisible": true },
+    "fiveEntryAssertions": { "noRawErrorBubble": true },
+    "telemetryAssertions": { "owner": "auto_continue_engine", "emptySpin": false },
+    "coverage": { "historical": false, "capabilityCategory": "office", "skillKind": "local_no_key" },
+    "commands": [
+      { "cmd": "npx", "args": ["vitest", "run", "src/saas/userActionBlocker.test.ts", "src/saas/resilience/stabilityFlags.test.ts"] }
+    ]
+  },
+  {
+    "id": "cold-resume-idempotent-guard",
+    "title": "P0-2 冷重连幂等/崩溃循环不无限续/旧会话不自动跑",
+    "suites": ["safety", "resilience"],
+    "source": "resilience",
+    "entrypoint": "cold-resume",
+    "historicalFailure": "整栈停服后冷重连，纯 UI 触发导致打开旧废弃会话被自动跑、跨刷新/多标签重复跑、崩溃循环无限续。",
+    "userGoal": "整栈重启后自动续跑唯一一个真正被掐断的未完成 turn，且仅一次。",
+    "turns": [
+      { "role": "user", "text": "生成一份多文件交付，过程中服务被重启。" }
+    ],
+    "expectedGoalContract": { "kinds": ["markdown"], "requiredFiles": ["summary.md"], "minCount": 1 },
+    "expectedDeliverables": ["artifacts/summary.md"],
+    "forbiddenDeliverables": ["duplicate-resume.md"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true, "idempotent": true, "crashLoopBudgetCapped": true, "staleSessionSkipped": true },
+    "fiveEntryAssertions": { "serverAnchoredGuard": true },
+    "telemetryAssertions": { "owner": "cold_resume", "emptySpin": false },
+    "coverage": { "historical": false, "capabilityCategory": "development", "skillKind": "multi_file" },
+    "commands": [
+      { "cmd": "npx", "args": ["vitest", "run", "src/session/resume/coldResumeGuard.test.ts", "src/session/resume/buildTaskResumeContext.test.ts"] },
+      { "cmd": "npm", "args": ["--workspace", "ui", "run", "test", "--", "src/components/chat-v2/hooks/useColdResumeInitiator.test.ts", "src/components/chat-v2/hooks/taskResumeCoordinator.test.ts"] }
+    ]
+  },
+  {
+    "id": "degeneration-repeat-circuit-breaker",
+    "title": "P0-4 生成退化熔断（表格/段落复读）",
+    "suites": ["safety", "resilience"],
+    "source": "resilience",
+    "entrypoint": "degeneration-guard",
+    "historicalFailure": "终验只查路径存在，模型把表格行/段落复读成百上千次仍判通过，交付退化内容。",
+    "userGoal": "生成一份带表格的对比报告，避免无意义复读。",
+    "turns": [
+      { "role": "user", "text": "做一份产品对比报告，含表格。" }
+    ],
+    "expectedGoalContract": { "kinds": ["markdown"], "requiredFiles": ["compare.md"], "minCount": 1 },
+    "expectedDeliverables": ["artifacts/compare.md"],
+    "forbiddenDeliverables": ["degenerate.md"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true, "repairOnlyMissing": true },
+    "fiveEntryAssertions": { "highThresholdNoFalsePositive": true },
+    "telemetryAssertions": { "owner": "deliverable_repair", "emptySpin": false },
+    "coverage": { "historical": false, "capabilityCategory": "office", "skillKind": "local_no_key" },
+    "commands": [
+      { "cmd": "npx", "args": ["vitest", "run", "src/saas/final-acceptance/degenerationGuard.test.ts"] }
+    ]
+  },
+  {
+    "id": "write-loop-progress-budget",
+    "title": "P0-5 写循环空转预算（内容指纹判进展）",
+    "suites": ["safety", "resilience"],
+    "source": "resilience",
+    "entrypoint": "progress-ledger",
+    "historicalFailure": "空转熔断只覆盖只读工具，模型反复写同一文件同样内容或重复同段思考，烧 token 不收尾。",
+    "userGoal": "迭代精修一个文件直到达标，但不要原地打转写同样内容。",
+    "turns": [
+      { "role": "user", "text": "把这份文档迭代修订到达标。" }
+    ],
+    "expectedGoalContract": { "kinds": ["markdown"], "requiredFiles": ["doc.md"], "minCount": 1 },
+    "expectedDeliverables": ["artifacts/doc.md"],
+    "forbiddenDeliverables": ["loop-stub.md"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true, "iterativeEditNotPenalized": true },
+    "fiveEntryAssertions": { "contentFingerprintProgress": true },
+    "telemetryAssertions": { "owner": "no_progress_nudge", "emptySpin": false },
+    "coverage": { "historical": false, "capabilityCategory": "development", "skillKind": "local_no_key" },
+    "commands": [
+      { "cmd": "npx", "args": ["vitest", "run", "src/agent/loop/progressLedger.test.ts"] }
+    ]
+  },
+  {
+    "id": "completion-gate-flag-off-and-triple-cap",
+    "title": "P0-6 完成门 profile+goal 双命中、三重封顶、flag 关闭回旧行为",
+    "suites": ["safety", "resilience"],
+    "source": "resilience",
+    "entrypoint": "completion-gate",
+    "historicalFailure": "模型欲停时不比对契约/计划，未达标即结束；或完成门泛化到闲聊逼着普通对话产交付物，或无封顶导致重写风暴。",
+    "userGoal": "交付类任务模型欲停时先比对契约，未达标且可修才由引擎接管，闲聊不触发。",
+    "turns": [
+      { "role": "user", "text": "生成一份必交付的 PPTX，并在缺页时继续补齐。" }
+    ],
+    "expectedGoalContract": { "kinds": ["pptx"], "requiredFiles": ["deck.pptx"], "minCount": 1 },
+    "expectedDeliverables": ["artifacts/deck.pptx"],
+    "forbiddenDeliverables": ["chat-only.txt"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true, "profileGoalDoubleMatch": true, "tripleCap": true, "flagOffRevertsOldBehavior": true },
+    "fiveEntryAssertions": { "noChitchatDeliverableForced": true },
+    "telemetryAssertions": { "owner": "deliverable_repair", "emptySpin": false },
+    "coverage": { "historical": false, "capabilityCategory": "creative", "skillKind": "binary" },
+    "commands": [
+      { "cmd": "npx", "args": ["vitest", "run", "src/agent/loop/completionGate.test.ts", "src/telemetry/stabilityEvents.test.ts"] }
+    ]
+  },
+  {
+    "id": "plan-ledger-ordered-steps",
+    "title": "P1-A 计划账本（按契约派生有序步骤）",
+    "suites": ["safety", "resilience"],
+    "source": "resilience",
+    "entrypoint": "plan-ledger",
+    "historicalFailure": "修复多文件交付时每轮重新推断缺失项，提示语笼统，模型不知该补哪一个，重复打转。",
+    "userGoal": "六文件全案缺一两个时，修复提示要点名下一步该产出的具体文件。",
+    "turns": [
+      { "role": "user", "text": "生成六文件全案，缺的补齐。" }
+    ],
+    "expectedGoalContract": { "kinds": ["markdown", "html"], "requiredFiles": ["strategy.md", "creative.md", "media-plan.md", "landing-page.html", "monitoring.md", "summary.md"], "minCount": 6 },
+    "expectedDeliverables": ["artifacts/campaign/strategy.md"],
+    "forbiddenDeliverables": ["index.html"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true, "repairOnlyMissing": true, "flagOffRevertsOldBehavior": true },
+    "fiveEntryAssertions": { "nextStepHintAnchored": true },
+    "telemetryAssertions": { "owner": "deliverable_repair", "emptySpin": false, "event": "plan_ledger_step" },
+    "coverage": { "historical": false, "capabilityCategory": "marketing", "skillKind": "multi_file" },
+    "commands": [
+      { "cmd": "npx", "args": ["vitest", "run", "src/agent/loop/planLedger.test.ts"] }
+    ]
+  },
+  {
+    "id": "quality-accept-table-and-empty",
+    "title": "P1-D 质量验收（表列一致 + 结构空壳，软展示）",
+    "suites": ["safety", "resilience"],
+    "source": "resilience",
+    "entrypoint": "quality-checks",
+    "historicalFailure": "结构合法但表格列数错乱或正文几乎为空的报告被判通过；或质量校验过严硬隐藏可解析文件。",
+    "userGoal": "带表格的报告要列数一致、正文非空，但不得硬隐藏可解析文件。",
+    "turns": [
+      { "role": "user", "text": "做一份带对比表格的报告。" }
+    ],
+    "expectedGoalContract": { "kinds": ["markdown"], "requiredFiles": ["report.md"], "minCount": 1 },
+    "expectedDeliverables": ["artifacts/report.md"],
+    "forbiddenDeliverables": ["empty-skeleton.md"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true, "softDisplayNotHardHide": true },
+    "fiveEntryAssertions": { "highThresholdNoFalsePositive": true },
+    "telemetryAssertions": { "owner": "deliverable_repair", "emptySpin": false, "event": "quality_defect_detected" },
+    "coverage": { "historical": false, "capabilityCategory": "office", "skillKind": "local_no_key" },
+    "commands": [
+      { "cmd": "npx", "args": ["vitest", "run", "src/saas/final-acceptance/qualityChecks.test.ts"] }
+    ]
+  },
+  {
+    "id": "tool-watchdog-deadline",
+    "title": "P1-F 单工具超时看门狗（按工具 deadline，非破坏性）",
+    "suites": ["safety", "resilience"],
+    "source": "resilience",
+    "entrypoint": "tool-watchdog",
+    "historicalFailure": "单个工具长时间挂起拖死整轮，无超时观测，用户长时间看不到进展又不报错。",
+    "userGoal": "单个工具超出其类别 deadline 时要产出超时信号，但不可粗暴打断半写交付物。",
+    "turns": [
+      { "role": "user", "text": "联网抓取并生成报告。" }
+    ],
+    "expectedGoalContract": { "kinds": ["markdown"], "requiredFiles": ["report.md"], "minCount": 1 },
+    "expectedDeliverables": ["artifacts/report.md"],
+    "forbiddenDeliverables": ["partial-corrupted.md"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true, "nonDestructiveNoKillInflight": true },
+    "fiveEntryAssertions": { "perToolDeadlineRespected": true },
+    "telemetryAssertions": { "owner": "none", "emptySpin": false, "event": "tool_watchdog_timeout" },
+    "coverage": { "historical": false, "capabilityCategory": "development", "skillKind": "external_key" },
+    "commands": [
+      { "cmd": "npx", "args": ["vitest", "run", "src/agent/loop/toolWatchdog.test.ts"] }
+    ]
+  },
+  {
+    "id": "stream-degeneration-truncate",
+    "title": "P1-C2 流式退化截断（高风险，默认 OFF）",
+    "suites": ["safety", "resilience"],
+    "source": "resilience",
+    "entrypoint": "stream-degeneration",
+    "historicalFailure": "模型流式输出陷入复读（同一行/短语循环），烧 token 到底才收尾，无早停。",
+    "userGoal": "流式陷入极端复读时可早停截断，但高阈值不得误伤正常长文。",
+    "turns": [
+      { "role": "user", "text": "写一篇长文。" }
+    ],
+    "expectedGoalContract": { "kinds": ["markdown"], "requiredFiles": ["article.md"], "minCount": 1 },
+    "expectedDeliverables": ["artifacts/article.md"],
+    "forbiddenDeliverables": ["repeated-garbage.md"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true, "flagDefaultOffNoBehaviorChange": true },
+    "fiveEntryAssertions": { "highThresholdNoFalsePositive": true },
+    "telemetryAssertions": { "owner": "none", "emptySpin": false, "event": "stream_degeneration_truncated" },
+    "coverage": { "historical": false, "capabilityCategory": "creative", "skillKind": "local_no_key" },
+    "commands": [
+      { "cmd": "npx", "args": ["vitest", "run", "src/model/streaming/streamDegenerationGuard.test.ts"] }
+    ]
+  },
+  {
+    "id": "context-compaction-fold-old",
+    "title": "P2-E in-turn 上下文压缩（折叠旧大 tool_result，可重读）",
+    "suites": ["safety", "resilience"],
+    "source": "resilience",
+    "entrypoint": "context-compaction",
+    "historicalFailure": "长任务里旧的大体积 tool_result 占满上下文，token 飙升，近期内容被挤出。",
+    "userGoal": "长任务中折叠旧大结果省 token，保留路径与开头并可按需重读，近期消息不动。",
+    "turns": [
+      { "role": "user", "text": "持续迭代一个长任务。" }
+    ],
+    "expectedGoalContract": { "kinds": ["markdown"], "requiredFiles": ["doc.md"], "minCount": 1 },
+    "expectedDeliverables": ["artifacts/doc.md"],
+    "forbiddenDeliverables": ["dropped-recent.md"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true, "recentWindowUntouched": true, "rereadable": true },
+    "fiveEntryAssertions": { "headAndPathPreserved": true },
+    "telemetryAssertions": { "owner": "none", "emptySpin": false, "event": "tool_result_compacted" },
+    "coverage": { "historical": false, "capabilityCategory": "development", "skillKind": "process_script" },
+    "commands": [
+      { "cmd": "npx", "args": ["vitest", "run", "src/agent/loop/toolResultCompaction.test.ts"] }
+    ]
+  },
+  {
+    "id": "verification-pass-decision",
+    "title": "P2 校验子代理决策（仅通过时独立复核，预算内）",
+    "suites": ["safety", "resilience"],
+    "source": "resilience",
+    "entrypoint": "verification-pass",
+    "historicalFailure": "终验判通过即收尾，缺少独立第二眼复核，假阳性完成混过；或泛化到闲聊触发无意义复核。",
+    "userGoal": "交付类任务终验通过且有可核对契约和预算时，才决策一次独立校验，闲聊不触发。",
+    "turns": [
+      { "role": "user", "text": "生成必交付的 PPTX 并核对页数。" }
+    ],
+    "expectedGoalContract": { "kinds": ["pptx"], "requiredFiles": ["deck.pptx"], "minCount": 1 },
+    "expectedDeliverables": ["artifacts/deck.pptx"],
+    "forbiddenDeliverables": ["chit-chat.txt"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true, "onlyOnAcceptancePassed": true, "budgetBounded": true },
+    "fiveEntryAssertions": { "noChitchatVerificationForced": true },
+    "telemetryAssertions": { "owner": "none", "emptySpin": false, "event": "verification_pass_run" },
+    "coverage": { "historical": false, "capabilityCategory": "education", "skillKind": "binary" },
+    "commands": [
+      { "cmd": "npx", "args": ["vitest", "run", "src/agent/loop/verificationPass.test.ts"] }
+    ]
+  },
+  {
+    "id": "goal-stop-conditions-turn-budget",
+    "title": "/goal Feature 2 自然语言完成条件入 TaskGoalContract（N 轮内停 + 完成条件）",
+    "suites": ["safety", "resilience"],
+    "source": "resilience",
+    "entrypoint": "goal-stop-conditions",
+    "historicalFailure": "用户说“3 轮内完成 / 完成条件：必须含三家竞品对比”，引擎不解析也不夹逼回合预算，任务可能超出用户明示上限继续打转，或验证器对仅有自然语言条件的目标不触发。",
+    "userGoal": "3 轮内完成竞品报告；完成条件：必须包含三家竞品对比。",
+    "turns": [
+      { "role": "user", "text": "3 轮内完成竞品报告。完成条件：必须包含三家竞品对比。" }
+    ],
+    "expectedGoalContract": { "kinds": ["markdown"], "requiredFiles": ["competitor-report.md"], "minCount": 1, "maxTurnsHint": 3, "completionAssertions": ["必须包含三家竞品对比"] },
+    "expectedDeliverables": ["artifacts/competitor-report.md"],
+    "forbiddenDeliverables": ["loop-forever.md"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true, "maxTurnsHintClamped": true, "deterministicEndsSoonerOnly": true, "flagOffRevertsOldBehavior": true },
+    "fiveEntryAssertions": { "noChitchatDeliverableForced": true },
+    "telemetryAssertions": { "owner": "none", "emptySpin": false, "event": "goal_stop_condition_applied" },
+    "coverage": { "historical": false, "capabilityCategory": "marketing", "marketingStage": "research", "skillKind": "local_no_key" },
+    "commands": [
+      { "cmd": "npx", "args": ["vitest", "run", "src/saas/taskState/taskGoalContract.test.ts", "src/saas/resilience/stabilityFlags.test.ts"] }
+    ]
+  },
+  {
+    "id": "verification-llm-observe-only",
+    "title": "/goal Feature 1 观测态 LLM 二次复核（fail-open、不触发修复、不弹气泡、无路径遥测）",
+    "suites": ["safety", "resilience"],
+    "source": "resilience",
+    "entrypoint": "verification-llm",
+    "historicalFailure": "缺少独立第二眼复核时假阳性完成混过；若贸然接入又可能阻断已交付任务、把英文原文/文件路径泄漏给用户或写进遥测。观测态须只记 verdict/reasonCount/checks，出错/超时/解析失败一律 fail-open 为 pass。",
+    "userGoal": "生成必交付的 PPTX 并核对页数；完成条件：每页须有标题。",
+    "turns": [
+      { "role": "user", "text": "生成 8 页必交付 PPTX。完成条件：每页须有标题。" },
+      { "role": "assistant", "text": "已完成 8 页 PPTX。" }
+    ],
+    "expectedGoalContract": { "kinds": ["pptx"], "requiredFiles": ["deck.pptx"], "minCount": 1, "completionAssertions": ["每页须有标题"] },
+    "expectedDeliverables": ["artifacts/deck.pptx"],
+    "forbiddenDeliverables": ["校验通过", "needs_repair", "Failed tools:"],
+    "interruptionAssertions": { "canAskUser": false, "autoResume": true, "observeOnlyNoRepair": true, "failOpenOnErrorOrTimeout": true, "flagDefaultOffNoBehaviorChange": true },
+    "fiveEntryAssertions": { "noRawErrorBubble": true, "noPathInTelemetry": true },
+    "telemetryAssertions": { "owner": "none", "emptySpin": false, "event": "verification_llm_verdict" },
+    "coverage": { "historical": false, "capabilityCategory": "creative", "marketingStage": "creative", "skillKind": "binary" },
+    "commands": [
+      { "cmd": "npx", "args": ["vitest", "run", "src/agent/loop/verificationReviewer.test.ts", "src/agent/loop/verificationPass.test.ts"] }
+    ]
+  }
+]

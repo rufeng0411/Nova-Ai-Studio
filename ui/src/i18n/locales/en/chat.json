@@ -1,0 +1,958 @@
+{
+  "codeBlock": {
+    "copy": "Copy",
+    "copied": "Copied",
+    "copyCode": "Copy code"
+  },
+  "deliverables": {
+    "panelTitle": "Results this turn",
+    "panelCount": "{{count}} items",
+    "moreHidden": "{{count}} more not shown — click paths above to open",
+    "openFile": "Open file",
+    "openFolder": "Open folder",
+    "openingFolder": "Opening…",
+    "openLink": "Open link",
+    "previewTab": "Preview in new tab",
+    "previewVideo": "Play video",
+    "needProject": "Select a project to reveal in folder",
+    "invalidPath": "Could not resolve file path",
+    "revealFailed": "Could not open folder",
+    "imagePreviewFailed": "Preview failed — use Open folder to locate the file.",
+    "openInPanel": "Open in side panel",
+    "newTab": "New tab",
+    "shareMarkdown": "Share",
+    "shareMarkdownInvalid": "This share link is invalid or expired. Share again from the preview.",
+    "shareMarkdownCopied": "Link copied",
+    "shareMarkdownHtmlHint": "Share as a standalone web page — no login required; save as PDF/Word",
+    "shareMarkdownDisabled": "Public sharing is currently unavailable",
+    "shareMarkdownShadow": "Share recorded (shadow mode); the public page is not open yet",
+    "shareMarkdownFailed": "Could not share. Please try again.",
+    "shareMarkdownLegacy": "This legacy share link is retired. Share again from the preview to get a public page link.",
+    "shareMarkdownOpening": "Opening shared page…",
+    "enlargePreview": "Enlarge",
+    "prev": "Previous",
+    "next": "Next",
+    "closePreview": "Close preview",
+    "imagePreview": "Image preview",
+    "previewUnavailable": "This file can't be previewed inline — use Open in side panel or Open folder.",
+    "folderBadge": "Folder",
+    "folderFiles": "{{count}} files",
+    "openFolderSystem": "Open in system",
+    "loadingFolder": "Loading folder…",
+    "emptyFolder": "No previewable files in this folder",
+    "showMore": "Show {{count}} more",
+    "openTaskFolder": "Go to task folder",
+    "processFile": "Process file",
+    "viewAll": "View all results ({{count}})",
+    "openDeliverables": "Open results",
+    "moreCount": "+{{count}} more",
+    "moreCountShort": "+{{count}}",
+    "moreCountAria": "{{count}} more results",
+    "totalAndRemaining": "{{total}} items · {{remaining}} more",
+    "totalAndRemainingAria": "{{total}} results, {{remaining}} not shown",
+    "filteredAllNotice": "Some files could not be matched for inline preview. Use “Go to task folder” below, or ask the agent to finish them in chat.",
+    "summaryTitle": "Results summary",
+    "summaryColName": "Result name",
+    "summaryColType": "File type",
+    "summaryColLink": "Link",
+    "summaryColStatus": "Status",
+    "statusDelivered": "Delivered",
+    "statusMissing": "Incomplete",
+    "statusNeedContinue": "Continue needed",
+    "statusChecking": "Checking…",
+    "statusRepairing": "Completing…",
+    "statusBroken": "Needs repair",
+    "statusHidden": "Hidden",
+    "statusInProgress": "In progress",
+    "turnPointerToSessionBar": "View session results list",
+    "historicalSummarySnapshot": "Not current list",
+    "historicalTurnFootnote": "This turn delivered {{count}} item(s) · see results list below",
+    "historicalTurnFootnoteEmpty": "This turn had deliverables · see results list below",
+    "completionPulseAria": "Another deliverable completed",
+    "sessionSummaryLabel": "Results",
+    "sessionSummaryProgress": "{{done}}/{{total}} results",
+    "sessionSummaryEmpty": "Aligning results list…",
+    "sessionSummaryCollapsed": "Results {{done}}/{{total}}",
+    "sessionSummaryAligning": "Aligning results list…",
+    "sessionSummaryInProgress": " · {{label}}",
+    "sessionSummaryTaskEnded": " · Task ended",
+    "sessionSummaryLiveUpdate": "Results list {{done}}/{{total}}, in progress: {{label}}",
+    "sessionSummaryLiveUpdateDone": "Results list {{done}}/{{total}}",
+    "dockTitle": "Results",
+    "dockEmpty": "No results yet",
+    "dockClose": "Close",
+    "dockBackToList": "Back to results list",
+    "dockTabDeliverables": "Results",
+    "dockTabPreview": "Preview",
+    "qualityHintOfficeOpen": "The file is ready. If preview fails, download and open it in Office or WPS.",
+    "qualityHintPreviewLimited": "PDF is ready. Download and open it in your local reader.",
+    "summaryPreviewExpand": "Expand preview for {{name}}",
+    "qualityStatus": {
+      "complete": "Quality checks passed",
+      "officialMediaDegraded": "Partial results accepted · official media degraded",
+      "userAcknowledged": "Accepted per your confirmation",
+      "blocked": "Quality checks blocked",
+      "needsRepair": "Quality still needs work",
+      "contentPassedAligning": "Content passed · aligning results list",
+      "notApplicable": "Quality checks not applicable"
+    }
+  },
+  "copyMessage": {
+    "copy": "Copy message",
+    "copied": "Message copied",
+    "selectFormat": "Select copy format",
+    "copyAsMarkdown": "Copy as markdown",
+    "copyAsText": "Copy as text"
+  },
+  "messageTypes": {
+    "user": "U",
+    "error": "Error",
+    "tool": "Tool",
+    "claude": "Claude",
+    "pilotdeck": "Nova Ai-Studio",
+    "cursor": "Cursor",
+    "codex": "Codex",
+    "gemini": "Gemini"
+  },
+  "toolUseError": {
+    "title": "Tool error",
+    "recoverableTitle": "Handling issue",
+    "recoverableSummary": "This may take a moment — please wait",
+    "networkTransient": "Connection interrupted — you can continue",
+    "inlineRetry": "This may take a moment — please wait",
+    "inlineNetwork": "Connection interrupted — you can continue",
+    "inlinePause": "This may take a moment — please wait",
+    "inlineExhausted": "Could not finish automatically — you can continue",
+    "inlinePermission": "Permission needed",
+    "expandDetails": "Details",
+    "technicalDetail": "Technical details",
+    "description": ""
+  },
+  "userActionRequired": {
+    "confirmedAfterThree": "The same issue was confirmed 3 times. Follow the steps below, then continue.",
+    "openSettings": "Open settings",
+    "hfMissingKey": {
+      "title": "HyperFrames render requires configuration",
+      "steps": "Open Settings → Providers → HyperFrames; enter API key; reply \"configured, continue\"."
+    },
+    "hfDegradedNotice": "HyperFrames credentials missing — continuing on degraded path (video output may be unavailable)."
+  },
+  "toolDisplay": {
+    "parameters": "Parameters",
+    "details": "Details",
+    "success": "Success",
+    "diff": "Diff",
+    "editBadge": "Edit",
+    "newBadge": "New",
+    "patchBadge": "Patch",
+    "updatingTodoList": "Updating todo list",
+    "todoListUpdated": "Todo list updated",
+    "readingTodoList": "Reading todo list",
+    "taskListTitle": "Task list",
+    "taskDetails": "Task details",
+    "subagentResult": "Subagent result",
+    "implementationPlan": "Implementation Plan",
+    "questionPayload": "Question payload",
+    "noResponseText": "No response text",
+    "noResponse": "No response",
+    "creatingTask": "Creating task",
+    "listingTasks": "Listing tasks",
+    "fetchingTask": "Fetching task",
+    "updatingTask": "Updating",
+    "scheduleJob": "Schedule job",
+    "cancelScheduledJob": "Cancel scheduled job",
+    "listingScheduledJobs": "Listing scheduled jobs",
+    "scheduledJob": "Scheduled job",
+    "cancelledScheduledJob": "Cancelled scheduled job",
+    "runningTask": "Running task",
+    "agent": "Agent",
+    "question": "Question",
+    "foundFiles": "Found {{count}} files",
+    "inPath": "in {{path}}",
+    "subagentTitle": "Subagent / {{type}}: {{description}}",
+    "scheduledJobId": "Scheduled {{id}}",
+    "cancelledJobId": "Cancelled {{id}}",
+    "scheduledJobCount": "{{count}} scheduled jobs",
+    "questionAnswered": "{{header}} — answered",
+    "questionsAnswered": "{{count}} questions — answered",
+    "questionCount": "{{count}} questions",
+    "questionSkipped": "Skipped",
+    "questionNoAnswer": "No answer provided",
+    "todoListHeader": "Todo list ({{count}} items)",
+    "taskProgress": "{{completed}}/{{total}} completed",
+    "rawParams": "Raw parameters",
+    "renderFailed": "Tool output could not be rendered",
+    "cadence": {
+      "one-shot": "one-shot",
+      "recurring": "recurring"
+    },
+    "storage": {
+      "durable": "durable",
+      "session": "session"
+    },
+    "todoStatus": {
+      "completed": "completed",
+      "inProgress": "in progress",
+      "pending": "pending"
+    }
+  },
+  "errors": {
+    "sessionRecoverable": "This may take a moment — please wait",
+    "sessionFatal": "Could not finish automatically — you can continue"
+  },
+  "recovery": {
+    "handling": "This may take a moment — please wait",
+    "pause": "This may take a moment — please wait",
+    "guidance": {
+      "title": "Could not finish automatically",
+      "network": "Tap \"Continue this step\" and I will try another approach.",
+      "model": "Tap \"Continue this step\" and I will try another approach.",
+      "tool": "Rephrase your request or tap \"Try another way\".",
+      "stuck": "Tap \"Try another way\" and I will use a different approach.",
+      "generic": "Tap \"Continue this step\" and I will try another approach.",
+      "retry": "Continue this step",
+      "alternate": "Try another way"
+    },
+    "hints": {
+      "network": "",
+      "model": "",
+      "permission": "Grant permission above so I can continue",
+      "continue": "Tap continue and I will try another approach",
+      "stuck": "Tap continue and I will try another approach"
+    },
+    "formalStop": {
+      "title": "Could not finish automatically",
+      "hint": "The system tried several approaches but could not complete this step.",
+      "retry": "Try another way"
+    }
+  },
+  "setupRequired": {
+    "title": "Configuration needed",
+    "openSettings": "Open Settings"
+  },
+  "interrupted": {
+    "label": "Interrupted by user"
+  },
+  "compact": {
+    "label": "Context compacted",
+    "level": "Level {{level}}",
+    "tokens": "{{tokens}} tokens before compact",
+    "stages": {
+      "context_collapse": "Context collapse",
+      "session_memory": "Session memory compaction",
+      "summary": "Summary compaction",
+      "reactive": "Reactive compaction",
+      "overflow_recovery": "Overflow recovery retry"
+    }
+  },
+  "taskAcknowledgment": {
+    "message": "OK, one moment."
+  },
+  "working": {
+    "default": "Working",
+    "processing": "Processing",
+    "thinking": "Thinking",
+    "generating": "Generating response",
+    "making": "Working",
+    "compacting": "Compacting context...",
+    "compactingLevel": "Triggering level {{level}} compaction: {{label}}",
+    "waitingForPermission": "Waiting for permission",
+    "needsYourInput": "Please answer a few questions",
+    "elicitationHint": "Answer the questions in the form below, then submit.",
+    "recoveryHandling": "This may take a moment — please wait",
+    "recoveryHandlingGeneric": "This may take a moment — please wait",
+    "recoveryPause": "This may take a moment — please wait",
+    "recoveryExhausted": "Could not finish automatically",
+    "autoContinuing": "Resuming from last step…",
+    "deliverableAligning": "Aligning results list…",
+    "networkInterrupt": "Connection interrupted — you can continue",
+    "networkInterruptAutoContinue": "Connection interrupted — continuing automatically"
+  },
+  "elicitation": {
+    "yourChoices": "Your choices",
+    "customOption": "Custom",
+    "skippedAll": "Skipped"
+  },
+  "process": {
+    "summary": {
+      "inProgress": "In progress {{duration}}",
+      "processed": "Processed {{duration}}",
+      "completed": "Process completed",
+      "failed": "Process failed",
+      "cancelled": "Process stopped"
+    },
+    "informal": {
+      "collapsed": "Done · {{duration}}",
+      "running": "Working…"
+    },
+    "waitingForModel": "Waiting for model",
+    "sdmProgress": "Results progress {{done}}/{{total}}",
+    "phase": {
+      "railLabel": "Task phases",
+      "understand": "Understand",
+      "gather": "Gather sources",
+      "analyze": "Analyze",
+      "produce": "Create results",
+      "deliver": "Review results"
+    },
+    "templateStage": {
+      "progress": "Stage {{done}}/{{total}}",
+      "research": "Research",
+      "plan": "Planning",
+      "brief": "Brief",
+      "visual": "Visual",
+      "website": "Website",
+      "platform": "Platforms",
+      "draft": "Draft",
+      "monitoring": "Monitoring"
+    },
+    "clue": {
+      "search": "Search",
+      "fetch": "Read page",
+      "read": "Read",
+      "milestone": "Created",
+      "milestoneWithFile": "Created {{file}}",
+      "localSearch": "Search project",
+      "recovery": "Adjusting",
+      "continue": "Continuing"
+    },
+    "thinking": {
+      "placeholder": "Organizing the approach…",
+      "activeTitle": "Thinking through the task",
+      "planningTitle": "Organizing the execution plan",
+      "repairTitle": "Checking result {{done}}/{{total}}"
+    },
+    "deliverable": {
+      "activeWrite": "Writing {{basename}} ({{index}}/{{total}})",
+      "activePrep": "Preparing {{basename}} ({{index}}/{{total}})",
+      "activeExport": "Exporting {{basename}} ({{index}}/{{total}})"
+    },
+    "tool": {
+      "read": "Read",
+      "readFile": "Read file",
+      "write": "Write",
+      "writeFile": "Write file",
+      "edit": "Edit",
+      "editFile": "Edit file",
+      "webSearch": "Web search",
+      "webFetch": "Fetch page",
+      "fetchPageImages": "Fetch page images",
+      "grep": "Search code",
+      "glob": "Find files",
+      "bash": "Run command",
+      "task": "Subtask",
+      "generateImage": "Generate image",
+      "generateVideo": "Generate video",
+      "renderHtmlVideo": "Render HTML video",
+      "todoWrite": "Update todos",
+      "todoRead": "Read todos",
+      "readSkill": "Read skill",
+      "applyPatch": "Apply patch",
+      "taskCreate": "Create task",
+      "taskUpdate": "Update task",
+      "taskList": "Task list",
+      "taskGet": "Task details",
+      "tasks": "Tasks",
+      "cronCreate": "Create schedule",
+      "cronDelete": "Delete schedule",
+      "cronList": "List schedules",
+      "askUserQuestion": "Ask user",
+      "exitPlanMode": "Exit plan mode",
+      "exportDocument": "Export document",
+      "composeImages": "Compose document",
+      "ocrPptx": "OCR to PPT",
+      "multiEdit": "Multi edit",
+      "thinking": "Thinking",
+      "tool": "Tool",
+      "generic": "Using {{tool}}",
+      "externalService": "Calling external service",
+      "canvasCreate": "Create canvas",
+      "canvasUpdate": "Update canvas",
+      "humanize": {
+        "processData": "Processing data",
+        "organizeContent": "Organizing content",
+        "editContent": "Editing content",
+        "searchProject": "Searching materials"
+      }
+    },
+    "codeFold": {
+      "hiddenForAudience": "Technical details hidden — expand the process summary for progress"
+    },
+    "references": {
+      "title": "Reference sources",
+      "empty": "No web sources recorded this turn",
+      "sourceCount": "{{count}} sources"
+    },
+    "replay": {
+      "title": "Reasoning & process replay",
+      "empty": "No process steps recorded",
+      "stepCount": "{{count}} steps",
+      "thinkingHint": "Expand to review reasoning summaries"
+    },
+    "completed": {
+      "withSteps": "Process completed · {{duration}}"
+    },
+    "timeline": {
+      "showAll": "Show all steps",
+      "showLess": "Show less",
+      "expandedTitle": "All steps"
+    },
+    "stage": {
+      "sessionPrepare": "Preparing conversation",
+      "pluginRefresh": "Loading capabilities",
+      "mcpReady": "Connecting tool services",
+      "memoryRetrieve": "Reading relevant memory",
+      "routerJudge": "Choosing task approach",
+      "compact": "Compacting context"
+    },
+    "status": {
+      "recoveryPause": "This may take a little while",
+      "recoveryHandling": "Adjusting automatically",
+      "infraInterrupt": "Development service disconnected; resuming automatically",
+      "deliverableRepair": "Repairing deliverables",
+      "acceptanceStarted": "Checking deliverables",
+      "acceptanceCompleted": "Self-check passed",
+      "acceptanceFailed": "Completing deliverables",
+      "elicitation": "Waiting for preferences",
+      "permission": "Waiting for permission"
+    },
+    "recovery": {
+      "retrying": "Hit a snag — trying another approach…",
+      "adjusting": "Adjusting",
+      "nextTurn": "Continuing next step",
+      "modelError": "Reworking response",
+      "maxTurns": "Continuing task",
+      "abortedStreaming": "Recovering output",
+      "abortedTools": "Recovering tool execution",
+      "autoCompact": "Compacting context",
+      "toolRecovery": "Adjusting automatically",
+      "autoContinue": "Continuing",
+      "softFetchRecovery": "Trying another route",
+      "deliverableValidateFailed": "Adjusting",
+      "retryAlternate": "Trying an alternate approach",
+      "stageHint": "Making progress"
+    },
+    "toolPrefix": "Using tool: {{title}}",
+    "step": "Step",
+    "metrics": {
+      "toolCalls": "{{count}} tool calls",
+      "searches": "{{count}} searches",
+      "errors": "{{count}} errors",
+      "adjusting": "Adjusting ({{count}})"
+    },
+    "live": {
+      "editedFiles": "Edited {{count}} files",
+      "editedFiles_one": "Edited {{count}} file",
+      "editedFiles_other": "Edited {{count}} files",
+      "exploredFiles": "Explored {{count}} files",
+      "exploredFiles_one": "Explored {{count}} file",
+      "exploredFiles_other": "Explored {{count}} files",
+      "searches": "Searched {{count}} times",
+      "searches_one": "Searched {{count}} time",
+      "searches_other": "Searched {{count}} times",
+      "commands": "Ran {{count}} commands",
+      "commands_one": "Ran {{count}} command",
+      "commands_other": "Ran {{count}} commands",
+      "toolCalls": "Used {{count}} tools",
+      "toolCalls_one": "Used {{count}} tool",
+      "toolCalls_other": "Used {{count}} tools",
+      "errors": "{{count}} errors",
+      "errors_one": "{{count}} error",
+      "errors_other": "{{count}} errors",
+      "adjusting": "Adjusting approach ({{count}})",
+      "adjusting_one": "Adjusting approach",
+      "adjusting_other": "Adjusting approach ({{count}})",
+      "recovered": "Switched approach and continued",
+      "subagentCompleted": "Subagent finished",
+      "compactCompleted": "Compacted context",
+      "thoughtCompleted": "Thought through next step",
+      "runningEdit": "Editing file",
+      "runningEditTarget": "Editing {{target}}",
+      "runningRead": "Reading file",
+      "runningReadTarget": "Reading {{target}}",
+      "runningSearch": "Searching",
+      "runningSearchTarget": "Searching {{target}}",
+      "runningCommand": "Running command",
+      "runningCommandTarget": "Running {{target}}",
+      "runningSubagent": "Running subagent"
+    },
+    "noSteps": "No detailed steps recorded."
+  },
+  "tools": {
+    "settings": "Tool Settings",
+    "error": "Tool Error",
+    "result": "Tool Result",
+    "viewParams": "View input parameters",
+    "viewRawParams": "View raw parameters",
+    "viewDiff": "View edit diff for",
+    "creatingFile": "Creating new file:",
+    "updatingTodo": "Updating Todo List",
+    "read": "Read",
+    "readFile": "Read file",
+    "updateTodo": "Update todo list",
+    "readTodo": "Read todo list",
+    "searchResults": "results"
+  },
+  "search": {
+    "found": "Found {{count}} {{type}}",
+    "file": "file",
+    "files": "files",
+    "pattern": "pattern:",
+    "in": "in:"
+  },
+  "fileOperations": {
+    "updated": "File updated successfully",
+    "created": "File created successfully",
+    "written": "File written successfully",
+    "diff": "Diff",
+    "newFile": "New File",
+    "viewContent": "View file content",
+    "viewFullOutput": "View full output ({{count}} chars)",
+    "contentDisplayed": "The file content is displayed in the diff view above"
+  },
+  "interactive": {
+    "title": "Interactive Prompt",
+    "waiting": "Waiting for your response in the CLI",
+    "instruction": "Please select an option in your terminal where Nova Ai-Studio is running.",
+    "selectedOption": "✓ Nova Ai-Studio selected option {{number}}",
+    "instructionDetail": "In the CLI, you would select this option interactively using arrow keys or by typing the number."
+  },
+  "thinking": {
+    "title": "Thinking...",
+    "emoji": "💭 Thinking..."
+  },
+  "json": {
+    "response": "JSON Response"
+  },
+  "permissions": {
+    "grant": "Grant {{tool}} for this chat",
+    "added": "Granted for this chat",
+    "addTo": "Temporarily allows {{entry}} in this chat only.",
+    "retry": "Retry in this chat to use the tool.",
+    "error": "Unable to grant this chat permission. Please try again.",
+    "openSettings": "Open settings"
+  },
+  "todo": {
+    "updated": "Todo list has been updated successfully",
+    "current": "Current Todo List"
+  },
+  "plan": {
+    "viewPlan": "📋 View implementation plan",
+    "title": "Implementation Plan",
+    "exitMode": {
+      "header": "Plan is ready",
+      "subtitle": "Confirming will exit Plan mode and let the model execute the plan.",
+      "syncingPlan": "Plan content is syncing, please confirm whether to execute.",
+      "feedbackLabel": "Optional notes for continued discussion",
+      "feedbackPlaceholder": "e.g. Add a test plan, or do not modify the database yet.",
+      "continueButton": "Continue Discussion",
+      "executeButton": "Execute Plan"
+    },
+    "approvedCard": {
+      "viewPlan": "View Plan"
+    }
+  },
+  "usageLimit": {
+    "resetAt": "Usage limit reached. Your limit will reset at **{{time}} {{timezone}}** - {{date}}"
+  },
+  "codex": {
+    "permissionMode": "Permission Mode",
+    "modes": {
+      "default": "Default Mode",
+      "acceptEdits": "Accept Edits",
+      "bypassPermissions": "Bypass Permissions",
+      "plan": "Plan Mode"
+    },
+    "descriptions": {
+      "default": "Only trusted commands (ls, cat, grep, git status, etc.) run automatically. Other commands are skipped. Can write to workspace.",
+      "acceptEdits": "All commands run automatically within the workspace. Full auto mode with sandboxed execution.",
+      "bypassPermissions": "Full system access with no restrictions. All commands run automatically with full disk and network access. Use with caution.",
+      "plan": "Planning mode - no commands are executed"
+    },
+    "technicalDetails": "Technical details"
+  },
+  "gemini": {
+    "permissionMode": "Gemini Permission Mode",
+    "description": "Control how Gemini CLI handles operation approvals.",
+    "modes": {
+      "default": {
+        "title": "Standard (Ask for Approval)",
+        "description": "Gemini will prompt for approval before executing commands, writing files, and fetching web resources."
+      },
+      "autoEdit": {
+        "title": "Auto Edit (Skip File Approvals)",
+        "description": "Gemini will automatically approve file edits and web fetches, but will still prompt for shell commands."
+      },
+      "yolo": {
+        "title": "YOLO (Bypass All Permissions)",
+        "description": "Gemini will execute all operations without asking for approval. Exercise caution."
+      }
+    }
+  },
+  "input": {
+    "placeholder": "Type / for commands, @ for files, or ask {{provider}} anything...",
+    "placeholderDefault": "Type your message...",
+    "disabled": "Input disabled",
+    "removeAttachment": "Remove attachment",
+    "attachFiles": "Attach files",
+    "attachImages": "Attach images",
+    "mentionFile": "Mention a file",
+    "fileReference": {
+      "remove": "Remove reference {{name}}"
+    },
+    "slashCommand": "Run a slash command",
+    "send": "Send",
+    "stop": "Stop",
+    "hintText": {
+      "ctrlEnter": "Ctrl+Enter to send • Shift+Enter for new line • Tab to change modes • / for slash commands",
+      "enter": "Enter to send • Shift+Enter for new line • Tab to change modes • / for slash commands"
+    },
+    "clickToChangeMode": "Click to change permission mode (or press Tab in input)",
+    "showAllCommands": "Show all commands",
+    "clearInput": "Clear input",
+    "scrollToBottom": "Scroll to bottom",
+    "permissions": {
+      "default": "Default Permissions",
+      "defaultDescription": "Ask before risky operations",
+      "bypassPermissions": "Full Access",
+      "bypassPermissionsDescription": "Skip confirmations and allow full access",
+      "change": "Select permission mode"
+    },
+    "runModes": {
+      "agent": "Agent",
+      "plan": "Plan",
+      "change": "Select run mode",
+      "agentDescription": "Directly process and execute the task",
+      "planDescription": "Generate a plan first, then execute after confirmation",
+      "planUnavailable": "Plan mode is only available for Anthropic models."
+    },
+    "sending": "Sending…",
+    "stopping": "Stopping…",
+    "contextStatus": "{{percent}}% used. {{used}} tokens used out of {{total}}. Auto compact runs near the limit.",
+    "contextStatusUnknown": "Context usage unknown. It will appear after the next model response.",
+    "contextStatusTitle": "Context window",
+    "contextStatusUsed": "{{used}} tokens used out of {{total}}.",
+    "contextStatusAutoCompact": "Auto compact runs when the conversation approaches the configured limit.",
+    "contextStatusUnknownBody": "No token budget has been reported yet. It will appear after the next model response."
+  },
+  "loading": "Loading conversation",
+  "emptyChat": {
+    "title": "What do you want to get done today?",
+    "noProject": "Pick a project from the sidebar",
+    "prompts": {
+      "plan": "Plan a refactor for this project",
+      "summary": "Summarize recent changes",
+      "review": "Review the most recent file I touched"
+    },
+    "readonlyBackgroundTitle": "No displayable messages in this task transcript",
+    "emptySessionTitle": "No displayable messages in this conversation",
+    "readonlyBackgroundDescription": "This read-only background task transcript only contains records the chat view cannot display.",
+    "emptySessionDescription": "This conversation exists, but it does not contain messages that can be rendered here."
+  },
+  "commandMenu": {
+    "listLabel": "Available commands",
+    "empty": "No commands available",
+    "groups": {
+      "pinned": "Pinned",
+      "frequent": "Frequently used",
+      "builtin": "Built-in",
+      "project": "Project",
+      "user": "User",
+      "other": "Other"
+    }
+  },
+  "thinkingMode": {
+    "selector": {
+      "title": "Thinking Mode",
+      "description": "Extended thinking gives Nova Ai-Studio more time to evaluate alternatives",
+      "active": "Active",
+      "tip": "Higher thinking modes take more time but provide more thorough analysis"
+    },
+    "modes": {
+      "none": {
+        "name": "Standard",
+        "description": "Regular Nova Ai-Studio response",
+        "prefix": ""
+      },
+      "think": {
+        "name": "Think",
+        "description": "Basic extended thinking",
+        "prefix": "think"
+      },
+      "thinkHard": {
+        "name": "Think Hard",
+        "description": "More thorough evaluation",
+        "prefix": "think hard"
+      },
+      "thinkHarder": {
+        "name": "Think Harder",
+        "description": "Deep analysis with alternatives",
+        "prefix": "think harder"
+      },
+      "ultrathink": {
+        "name": "Ultrathink",
+        "description": "Maximum thinking budget",
+        "prefix": "ultrathink"
+      }
+    },
+    "buttonTitle": "Thinking mode: {{mode}}"
+  },
+  "providerSelection": {
+    "title": "Choose Your AI Assistant",
+    "description": "Select a provider to start a new conversation",
+    "selectModel": "Select Model",
+    "providerInfo": {
+      "anthropic": "by Anthropic",
+      "openai": "by OpenAI",
+      "cursorEditor": "AI Code Editor",
+      "google": "by Google"
+    },
+    "readyPrompt": {
+      "pilotdeck": "Ready to use Nova Ai-Studio with {{model}}. Start typing your message below.",
+      "cursor": "Ready to use Cursor with {{model}}. Start typing your message below.",
+      "codex": "Ready to use Codex with {{model}}. Start typing your message below.",
+      "gemini": "Ready to use Gemini with {{model}}. Start typing your message below.",
+      "default": "Select a provider above to begin"
+    }
+  },
+  "session": {
+    "loadFailedTitle": "Could not load this conversation",
+    "orphanTitle": "This conversation is no longer available",
+    "orphanBody": "No conversation record was found. It may never have started successfully or was already cleaned up. Remove it from the sidebar with Delete.",
+    "readonlyBackground": "This background task transcript is read-only.",
+    "readonlyLocked": "This conversation is locked. Unlock it from the sidebar context menu to send messages.",
+    "retryLoad": "Retry",
+    "revalidating": "Syncing latest messages…",
+    "loadingConversation": "Loading conversation…",
+    "continue": {
+      "title": "Continue your conversation",
+      "description": "Ask questions about your code, request changes, or get help with development tasks"
+    },
+    "loading": {
+      "olderMessages": "Loading older messages...",
+      "sessionMessages": "Loading session messages..."
+    },
+    "messages": {
+      "showingOf": "Showing {{shown}} of {{total}} messages",
+      "scrollToLoad": "Scroll up to load more",
+      "showingLast": "Showing last {{count}} messages ({{total}} total)",
+      "loadEarlier": "Load earlier messages",
+      "loadAll": "Load all messages",
+      "loadingAll": "Loading all messages...",
+      "allLoaded": "All messages loaded",
+      "perfWarning": "All messages loaded — scrolling may be slower. Click \"Scroll to bottom\" to restore performance."
+    }
+  },
+  "shell": {
+    "selectProject": {
+      "title": "Select a Project",
+      "description": "Choose a project to open an interactive shell in that directory"
+    },
+    "status": {
+      "newSession": "New Session",
+      "initializing": "Initializing...",
+      "restarting": "Restarting..."
+    },
+    "actions": {
+      "disconnect": "Disconnect",
+      "disconnectTitle": "Disconnect from shell",
+      "restart": "Restart",
+      "restartTitle": "Restart Shell (disconnect first)",
+      "connect": "Continue in Shell",
+      "connectTitle": "Connect to shell"
+    },
+    "loading": "Loading terminal...",
+    "connecting": "Connecting to shell...",
+    "startSession": "Start a new Nova Ai-Studio session",
+    "resumeSession": "Resume session: {{displayName}}...",
+    "runCommand": "Run {{command}} in {{projectName}}",
+    "startCli": "Starting Nova Ai-Studio CLI in {{projectName}}",
+    "defaultCommand": "command"
+  },
+  "pilotdeckStatus": {
+    "actions": {
+      "thinking": "Thinking",
+      "processing": "Processing",
+      "analyzing": "Analyzing",
+      "working": "Working",
+      "computing": "Computing",
+      "reasoning": "Reasoning"
+    },
+    "state": {
+      "live": "Live",
+      "paused": "Paused"
+    },
+    "elapsed": {
+      "seconds": "{{count}}s",
+      "minutesSeconds": "{{minutes}}m {{seconds}}s",
+      "label": "{{time}} elapsed",
+      "startingNow": "Starting now",
+      "longWait": "Still working on this step — thanks for waiting",
+      "running": "{{seconds}}s elapsed"
+    },
+    "controls": {
+      "stopGeneration": "Stop Generation",
+      "pressEscToStop": "Press Esc anytime to stop"
+    },
+    "providers": {
+      "assistant": "Assistant"
+    }
+  },
+  "projectSelection": {
+    "startChatWithProvider": "Select a project to start chatting with {{provider}}"
+  },
+  "tasks": {
+    "nextTaskPrompt": "Start the next task"
+  },
+  "composer": {
+    "placeholder": "Tell Nova Ai-Studio what you want to get done…",
+    "welcomePlaceholder": "Tell Nova Ai-Studio what you want to get done…",
+    "deliverablesOpen": "View results",
+    "deliverablesOpenList": "Open results list",
+    "deliverablesListLabel": "Results list",
+    "deliverablesFolder": "Open task folder",
+    "deliverablesFolderShort": "Task folder",
+    "deliverablesOpenShort": "Results",
+    "deliverablesInProgress": "Results in progress",
+    "deliverableIncompletePlaceholder": "Results are still being completed… Reply \"done\" if you want to confirm completion.",
+    "deliverableAligningPlaceholder": "Aligning results list ({{done}}/{{total}}) — please wait…",
+    "taskInFlightPlaceholder": "Working — please wait…",
+    "deliverableQueuedPlaceholder": "Queued (position {{position}}) — please wait…",
+    "deliverableIncompleteManualPlaceholder": "{{remaining}} results remaining — tap Continue or send a message",
+    "parallelLimitHint": "The platform is busy — please try again shortly.",
+    "taskQueuedHint": "Your task is queued and will start automatically.",
+    "taskPausedHint": "Task paused. Send a message to continue.",
+    "taskMarkedCompletePlaceholder": "Task marked complete. To continue or start something new, choose Unmark task complete in the sidebar first.",
+    "taskMarkedCompleteSendBlocked": "This task is marked complete. Unmark it in the sidebar before sending a new message.",
+    "taskMarkedCompleteBanner": "Task ended — review results below. To continue or add new requests, unmark task complete in the sidebar first.",
+    "unmarkCompletePlaceholder": "What would you like to do next? Type and send to continue…",
+    "unmarkCompleteHint": "Task unmarked. What would you like to do next?",
+    "continueTask": "Continue",
+    "manualContinueHint": "Your last task isn't finished. Tap Continue to pick up where you left off.",
+    "manualContinueCold": "An unfinished task was detected. Tap Continue to resume.",
+    "manualContinueDeliverable": "Results aren't complete yet. Tap Continue to finish delivery.",
+    "manualContinueAfterDisconnect": "You're back online. Tap Continue to resume.",
+    "manualContinueStale": "This step is taking a while. Tap Continue to try again.",
+    "manualContinueFailed": "Could not continue right now. Please try again in a moment.",
+    "manualContinueNotConnected": "Not connected yet. Please try again shortly.",
+    "manualContinuePaused": "This chat is paused. Send a new message to continue."
+  },
+  "workspaceRail": {
+    "tabDeliverables": "Results",
+    "tabFolder": "Folder",
+    "slideOut": "Expand panel",
+    "slideIn": "Collapse panel"
+  },
+  "export": {
+    "actions": {
+      "pdf": "Export PDF",
+      "docx": "Export Word",
+      "pptx": "Export PPT",
+      "xlsx": "Export Excel",
+      "deckPdf": "Export deck PDF",
+      "deckPptx": "Export PPT",
+      "deckPptxImages": "Image PPT",
+      "deckPptxOcr": "Editable PPT",
+      "albumPdf": "Album PDF",
+      "albumPptx": "Export PPT"
+    },
+    "hint": {
+      "reportToPdf": "Export report as PDF",
+      "reportToDocx": "Export report as Word",
+      "reportToPptx": "Export report as briefing PPT",
+      "reportToXlsx": "Export tables to Excel",
+      "htmlToPdf": "Export HTML as PDF",
+      "htmlToPptx": "Export HTML as PPT",
+      "htmlEditablePptx": "MinerU reads each HTML page and exports layered editable PPT",
+      "htmlToPptxImages": "Screenshot each page into image-only PPT (text not editable)",
+      "slidesHtmlToPdf": "Export slide HTML as PDF",
+      "slidesHtmlToPptx": "Export slide HTML as PPT",
+      "slidesHtmlEditablePptx": "MinerU reads slide HTML pages into editable PPT",
+      "slidesHtmlToPptxImages": "Screenshot slide HTML into image-only PPT",
+      "geoToPdf": "Export current document as PDF",
+      "geoToDocx": "Export current document as Word",
+      "slideDeckPdf": "Compose all {{count}} slides into PDF",
+      "slideDeckPptx": "Compose all {{count}} slides into PPT (images)",
+      "slideDeckEditablePptx": "MinerU locates text; exports layered editable PPT (clean background + text layer, {{count}} slides)",
+      "albumPdf": "Compose folder images into PDF",
+      "albumEditablePptx": "Export folder images as layered editable PPT",
+      "pptxOcr": "Layered editable PPT (text removed from background)",
+      "scanToEditablePptx": "MinerU text layers → editable PPT with clean background",
+      "spreadsheetXlsx": "Export as Excel",
+      "spreadsheetPdf": "Export as PDF"
+    },
+    "failedBadImage": "Unrecognized image format",
+    "failedPath": "Source file not found",
+    "reason": {
+      "checking": "Checking export availability…",
+      "needsOcrConfig": "Configure document OCR in Settings → Document tools",
+      "unsupported": "This export format is not available for this file"
+    },
+    "openResult": "Open exported file",
+    "exportLabel": "Export",
+    "moreFormats": "More export formats",
+    "running": "Exporting…",
+    "downloading": "Downloading…",
+    "done": "Export complete",
+    "doneDownloaded": "Downloaded",
+    "retryDownload": "Auto-download did not start — tap to retry",
+    "retryDownloadShort": "Download",
+    "failed": "Export failed, please try again"
+  },
+  "bentoDeck": {
+    "fallbackNotice": "This file cannot be edited as Bento — opened as web preview.",
+    "validatingEdit": "Checking edit availability…",
+    "regenerate": "Regenerate",
+    "save": "Save",
+    "saved": "Saved",
+    "saveFailed": "Could not save — try again later",
+    "unsavedConfirm": "You have unsaved changes. Discard them?",
+    "iframeTitle": "Bento deck",
+    "toolbar": "Bento edit"
+  },
+  "htmlStudio": {
+    "loading": "Loading…",
+    "loadingVisual": "Loading visual editor…",
+    "saved": "Saved",
+    "saveFailed": "Could not save — try again or edit via chat",
+    "save": "Save",
+    "undo": "Undo",
+    "redo": "Redo",
+    "aiAssist": "Ask AI to adjust layout",
+    "aiAssistDefault": "Please refine this HTML report layout and copy; keep chart scripts unchanged.",
+    "unsavedConfirm": "You have unsaved changes. Discard them?",
+    "mobileReadonly": "Edit in the desktop sidebar, or send changes via chat",
+    "narrowBanner": "Sidebar is narrow — use the floating menu after selecting text",
+    "toolbar": {
+      "editActions": "Edit actions"
+    }
+  },
+  "hfStudio": {
+    "loading": "Loading HyperFrames editor…",
+    "saved": "Saved",
+    "saveFailed": "Could not save",
+    "save": "Save",
+    "renderDraft": "Draft render",
+    "renderHigh": "High quality render",
+    "rendering": "Rendering video…",
+    "renderDone": "Video updated",
+    "renderFailed": "Render did not complete",
+    "renderNeedsSave": "Save before rendering",
+    "aiAssist": "Ask AI",
+    "unsavedConfirm": "You have unsaved changes. Discard them?",
+    "mobileReadonly": "Edit the project in the desktop sidebar",
+    "view": {
+      "projectPreview": "Project preview",
+      "promoPreview": "Rendered video"
+    },
+    "toolbar": {
+      "editActions": "Edit actions"
+    },
+    "export": {
+      "draftRender": "Draft render",
+      "draftRenderHint": "Quick render promo.mp4",
+      "highRender": "High quality render",
+      "highRenderHint": "High quality render promo.mp4"
+    }
+  }
+}

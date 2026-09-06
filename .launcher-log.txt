@@ -1,0 +1,24 @@
+
+[42872:0616/155724.553:INFO:CONSOLE(2)] "%cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged.", source: node:electron/js2c/renderer_init (2)
+[nova-launcher] 渲染进程退出: killed 1073807364
+Renderer process killed - see https://www.electronjs.org/docs/tutorial/application-debugging for potential debugging information.
+Error sending from webFrameMain:  Error: Render frame was disposed before WebFrameMain could be accessed
+    at s.send (node:electron/js2c/browser_init:2:92689)
+    at _.send (node:electron/js2c/browser_init:2:76113)
+    at broadcast (file:///F:/Ai-pilotdeck/tools/nova-launcher/dist-main/main/ipc.js:19:22)
+    at file:///F:/Ai-pilotdeck/tools/nova-launcher/dist-main/main/ipc.js:25:32
+    at ProcessSupervisor.flushNotify (file:///F:/Ai-pilotdeck/tools/nova-launcher/dist-main/main/supervisor.js:260:13)
+    at Timeout._onTimeout (file:///F:/Ai-pilotdeck/tools/nova-launcher/dist-main/main/supervisor.js:254:18)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[nova-launcher] 子进程退出: Utility killed
+[42872:0616/204123.529:ERROR:network_service_instance_impl.cc(613)] Network service crashed, restarting service.
+[nova-launcher] 子进程退出: Utility crashed
+[42872:0616/204123.569:ERROR:network_service_instance_impl.cc(613)] Network service crashed, restarting service.

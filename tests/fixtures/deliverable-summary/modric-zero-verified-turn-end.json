@@ -1,0 +1,15 @@
+{
+  "scenario": "modric-zero-verified-turn-end",
+  "description": "MOD-08 — 5 SDM slots 0 verified at turn end (table shell must mount)",
+  "expectedManifest": [
+    { "id": "slot_1", "label": "交付物 1", "kind": "markdown", "path": "artifacts/campaign/item-1.md" },
+    { "id": "slot_2", "label": "交付物 2", "kind": "markdown", "path": "artifacts/campaign/item-2.md" },
+    { "id": "slot_3", "label": "交付物 3", "kind": "markdown", "path": "artifacts/campaign/item-3.md" },
+    { "id": "slot_4", "label": "交付物 4", "kind": "markdown", "path": "artifacts/campaign/item-4.md" },
+    { "id": "slot_5", "label": "交付物 5", "kind": "markdown", "path": "artifacts/campaign/item-5.md" }
+  ],
+  "items": [],
+  "verifiedPaths": [],
+  "expectDeliveredCount": 0,
+  "expectMissingCount": 5
+}

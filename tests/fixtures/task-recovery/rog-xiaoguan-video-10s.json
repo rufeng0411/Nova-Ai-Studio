@@ -1,0 +1,12 @@
+{
+  "label": "0707-2 c4a8d2d1 10s ad video",
+  "userGoal": "为冷泡茶品牌制作10秒广告视频，输出真mp4成片",
+  "capabilitySlug": "tool-generate-video",
+  "expectedProfileId": "video-mp4",
+  "expectMediaStrategy": "generate_video",
+  "env": {
+    "PILOTDECK_MEDIA_STRATEGY_RESOLVER": "1",
+    "DASHSCOPE_API_KEY": "sk-test",
+    "PILOTDECK_VIDEO_MODEL": "wanx-v1"
+  }
+}

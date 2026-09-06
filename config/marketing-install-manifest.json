@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "description": "本轮营销 SaaS 补全须跑测的 skills 与 MCP",
+  "skills": [
+    "geo-keyword-research",
+    "geo-competitor-analysis",
+    "geo-content-optimizer",
+    "geo-seo-content-writer",
+    "geo-citability",
+    "geo-technical-seo",
+    "geo-on-page-audit",
+    "geo-rank-track",
+    "geo-aeo-audit",
+    "mkt-competitive-brief",
+    "mkt-competitive-intel",
+    "mkt-content-creation",
+    "mkt-draft-content",
+    "mkt-email-sequence",
+    "mkt-performance-report",
+    "mkt-brand-mention",
+    "mkt-review-mining",
+    "pd-geo"
+  ],
+  "mcp_virtual": [
+    "mcp-similarweb",
+    "mcp-google-workspace",
+    "mcp-notion-collab"
+  ]
+}

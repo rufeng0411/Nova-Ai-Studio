@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1280, initial-scale=1" />
+<title>MongoDB</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1280px; height: 800px; overflow: hidden; }
+  body { font-family: Inter, "Segoe UI", system-ui, sans-serif; background: #001e2b; }
+</style>
+</head>
+<body>
+<div style="min-height:800px;background:#001e2b;color:#e8edeb;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;">
+  <div style="padding:14px 18px;border-bottom:1px solid #b8c4c2;display:flex;justify-content:space-between;align-items:center;">
+    <strong style="font-size:13px;font-family:Inter,sans-serif;">MongoDB</strong>
+    <span style="font-size:10px;color:#00ed64;">dev tools</span>
+  </div>
+  <div style="display:grid;grid-template-columns:260px 1fr;min-height:740px;">
+    <aside style="border-right:1px solid #b8c4c2;padding:14px;font-size:10px;color:#006cfa;">
+      <div style="color:#00ed64;margin-bottom:10px;">$ deploy --prod</div>
+      <div style="margin-bottom:6px;">✓ build completed</div>
+      <div style="margin-bottom:6px;">✓ tests passed</div>
+      <div style="margin-bottom:6px;color:#e8edeb;">→ release v2.4.0</div>
+    </aside>
+    <main style="padding:16px;">
+      <div style="background:#000;border:1px solid #b8c4c2;border-radius:10px;padding:14px;font-size:11px;line-height:1.6;">
+        <div style="color:#00ed64;">import</div> <span style="color:#e8edeb;">{ createClient }</span> <span style="color:#006cfa;">from</span> <span style="color:#a5d6ff;">'@sdk/core'</span><br/><br/>
+        <span style="color:#006cfa;">// Document database. Green leaf branding, developer documentation focus.</span><br/>
+        <span style="color:#c586c0;">const</span> client = <span style="color:#dcdcaa;">createClient</span>({ apiKey: <span style="color:#ce9178;">'…'</span> })
+      </div>
+      <div style="margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:10px;font-family:Inter,sans-serif;">
+        <div style="background:#b8c4c2;border-radius:10px;padding:12px;font-size:10px;">API 参考</div>
+        <div style="background:#b8c4c2;border-radius:10px;padding:12px;font-size:10px;">CLI 指南</div>
+      </div>
+    </main>
+  </div>
+  <div style="display:flex;gap:4px;padding:10px 18px;font-family:Inter,sans-serif;"><span style="flex:1;height:5px;border-radius:2px;background:#00ed64"></span><span style="flex:1;height:5px;border-radius:2px;background:#001e2b"></span><span style="flex:1;height:5px;border-radius:2px;background:#e8edeb"></span><span style="flex:1;height:5px;border-radius:2px;background:#006cfa"></span><span style="flex:1;height:5px;border-radius:2px;background:#b8c4c2"></span></div>
+</div></body>
+</html>

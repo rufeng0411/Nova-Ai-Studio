@@ -1,0 +1,10 @@
+{
+  "description": "SDM WC-07: GEO 多轮追加 HTML + 平台取消 + preserve primary task dir",
+  "caseId": "WC-07",
+  "userGoal": "GEO 行业深度调查：输出调研 md、图表 md、平台成稿（小红书/知乎/公众号）",
+  "primaryTaskDir": "artifacts/task-20260710-f4424421",
+  "userTurns": [
+    "小红书、知乎、公众号不用做了，增加 GEO 操作手册白皮书",
+    "把三个报告都做成专业图表 HTML：深度洞察、行业全景、操作手册"
+  ]
+}

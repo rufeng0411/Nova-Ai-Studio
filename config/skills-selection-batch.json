@@ -1,0 +1,55 @@
+{
+  "version": 2,
+  "generated": "2026-06-17",
+  "batchId": "skills-mcp-user-pick-2026-06-17",
+  "summary": {
+    "newInstall": 14,
+    "mcpConnect": 2,
+    "upgrade": 7,
+    "taxonomyOnly": 3,
+    "reclassifyExisting": 1
+  },
+  "phases": [
+    { "id": "p1", "name": "升级 bump", "tasks": ["C1", "C2", "C3", "C4", "C5", "C6", "C7"] },
+    { "id": "p2", "name": "MCP + Firecrawl", "tasks": ["B1", "B2", "A3", "A4"] },
+    { "id": "p3", "name": "法律/趣味/视频 + taxonomy", "tasks": ["A10", "A11", "A12", "A13", "A2", "A7", "A14", "A15", "D1", "D2", "E1"] },
+    { "id": "p4", "name": "开发向新装", "tasks": ["A1", "A5", "A6", "A8", "A9"] },
+    { "id": "p5", "name": "模板", "tasks": ["D3"] }
+  ],
+  "newTaxonomyPills": [
+    { "id": "sales_enablement", "tab": "marketing", "zh": "销售赋能", "seedSlugs": ["mkt-sales-enablement", "pms-competitive-battlecard", "mkt-competitive-intel"] },
+    { "id": "legal_compliance", "tab": "office", "zh": "法务合规", "hiddenDefault": true, "hubVisibleSlugs": ["legal-risk-assessment", "legal-response"] },
+    { "id": "edu_fun", "tab": "education", "zh": "趣味学习", "seedSlugs": ["edu-fun-caveman"] },
+    { "id": "create_play", "tab": "creation", "zh": "趣味创作", "optional": true, "seedSlugs": ["create-ai-video-gen"] }
+  ],
+  "selections": [
+    { "id": "A1", "action": "install", "name": "vercel-react-best-practices", "slug": "dev-react-best-practices", "upstream": "vercel-labs/agent-skills@skills/react-best-practices", "level": "L1", "hub": "development.dev_frontend", "api": [] },
+    { "id": "A2", "action": "install", "name": "frontend-design", "slug": "create-frontend-design", "upstream": "anthropics/skills@skills/frontend-design", "level": "L1", "hub": "creation.create_ui", "api": [] },
+    { "id": "A3", "action": "install", "name": "firecrawl-cli-bundle", "slugs": ["fc-firecrawl", "fc-firecrawl-search"], "upstream": "firecrawl/cli", "level": "L2", "hub": "marketing.web_fetch", "api": ["FIRECRAWL_API_KEY"] },
+    { "id": "A4", "action": "install", "name": "just-scrape", "slug": "web-just-scrape", "upstream": "scrapegraphai/just-scrape", "level": "L2", "hub": "marketing.web_fetch", "api": [] },
+    { "id": "A5", "action": "install", "name": "obra-writing-plans", "slug": "method-writing-plans", "upstream": "obra/superpowers@skills/writing-plans", "level": "L1", "hub": "brainstorm.methodology", "api": [] },
+    { "id": "A6", "action": "install", "name": "supabase-postgres-best-practices", "slug": "dev-postgres-best-practices", "upstream": "supabase/agent-skills", "level": "L2", "hub": "development.dev_backend", "api": [] },
+    { "id": "A7", "action": "install", "name": "ui-ux-pro-max", "slug": "create-ui-ux-pro-max", "upstream": "nextlevelbuilder/ui-ux-pro-max-skill", "level": "L1", "hub": "creation.create_ui", "api": [] },
+    { "id": "A8", "action": "install", "name": "remotion-best-practices", "slug": "remotion-best-practices", "upstream": "remotion-dev/skills@skills/remotion-best-practices", "level": "L1", "hub": "creation.create_video", "api": [], "pairedUpgrade": "C7" },
+    { "id": "A9", "action": "install", "name": "microsoft-playwright-cli", "slug": "dev-playwright-cli", "upstream": "microsoft/playwright-cli", "level": "L2", "hub": "development.dev_testing", "api": [] },
+    { "id": "A10", "action": "install", "name": "legal-risk-assessment", "slug": "legal-risk-assessment", "upstream": "anthropics/knowledge-work-plugins", "level": "L1", "hub": "office.legal_compliance", "api": [] },
+    { "id": "A11", "action": "install", "name": "legal-response", "slug": "legal-response", "upstream": "anthropics/knowledge-work-plugins", "level": "L1", "hub": "office.legal_compliance", "api": [] },
+    { "id": "A12", "action": "install", "name": "lawvable-agent-skills", "slugPrefix": "legal-", "upstream": "lawvable/agent-skills", "level": "L3", "hub": "office.legal_compliance", "hiddenInHub": true, "api": [] },
+    { "id": "A13", "action": "install", "name": "lpm-skills", "slugPrefix": "lpm-", "upstream": "legalopsconsulting/lpm-skills", "level": "L2", "hub": "office.legal_compliance", "api": [] },
+    { "id": "A14", "action": "install", "name": "caveman-grill", "slug": "edu-fun-caveman", "upstream": "juliusbrussee/caveman", "level": "L1", "hub": "education.edu_fun", "api": [] },
+    { "id": "A15", "action": "install", "name": "ai-video-generation", "slug": "create-ai-video-gen", "upstream": "qu-skills/skills/ai-video-generation", "level": "L2", "hub": "creation.create_video", "api": ["model_pool_video"] },
+    { "id": "B1", "action": "mcp_connect", "name": "Firecrawl MCP", "catalogSlug": "mcp-firecrawl", "api": ["FIRECRAWL_API_KEY"] },
+    { "id": "B2", "action": "mcp_connect", "name": "Playwright MCP", "catalogSlug": "dev-playwright-mcp", "api": [] },
+    { "id": "C1", "action": "upgrade", "name": "html-ppt", "slug": "html-ppt", "command": "npm run vendor:html-ppt" },
+    { "id": "C2", "action": "upgrade", "name": "hyperframes", "slugPrefix": "hf-", "command": "npm run vendor:video-coding" },
+    { "id": "C3", "action": "upgrade", "name": "marketingskills", "slugPrefix": "mkt-", "command": "npm run vendor:marketing" },
+    { "id": "C4", "action": "upgrade", "name": "seo-geo", "slugPrefix": "geo-", "command": "npm run vendor:marketing" },
+    { "id": "C5", "action": "upgrade", "name": "phuryn-pm", "slugPrefix": "pms-", "command": "npm run vendor:skills-ecosystem" },
+    { "id": "C6", "action": "upgrade", "name": "anthropics-skills", "slugPrefix": "anth-", "command": "npm run vendor:skills-ecosystem" },
+    { "id": "C7", "action": "upgrade", "name": "remotion", "slug": "remotion-video", "command": "npm run vendor:video-coding", "pairedInstall": "A8" },
+    { "id": "D1", "action": "taxonomy_template", "name": "sales-battlecard", "pill": "sales_enablement", "existingSlugs": ["mkt-sales-enablement", "mkt-competitive-intel", "pms-competitive-battlecard"] },
+    { "id": "D2", "action": "taxonomy_strategy", "name": "legal-hub-strategy", "pill": "legal_compliance", "relatedInstalls": ["A10", "A11", "A12", "A13"] },
+    { "id": "D3", "action": "templates", "name": "pd-geo-nova-templates", "command": "npm run templates:gen", "relatedSlugs": ["pd-geo", "geo-aeo-audit", "geo-content-optimizer"] },
+    { "id": "E1", "action": "reclassify", "name": "obra-brainstorming", "existingSlug": "brainstorm-structured", "hub": "brainstorm.methodology", "note": "already vendored from obra/superpowers/brainstorming" }
+  ]
+}

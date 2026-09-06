@@ -1,0 +1,21 @@
+{
+  "project": "终验0702",
+  "user": "admin",
+  "cases": [
+    { "id": "h0-competitor-benchmark", "prompt": "用「Nova-竞品对标」对【南美旅游品类】做竞品全量对标：竞品清单、维度对比与突围策略。", "capability": { "slug": "nova-research-competitor", "displayName": "Nova-竞品对标" }, "timeoutMs": 300000, "sourceSession": "web-s_a6d46ad4" },
+    { "id": "h0-geo-full-short", "prompt": "帮【南美旅游】做品牌 GEO 全案，按阶段一次执行，存 artifacts/geo/【品牌名】/ 每阶段报路径。", "capability": { "slug": "pd-geo", "displayName": "AI 搜索全案" }, "timeoutMs": 300000, "sourceSession": "web-s_ea380742" },
+    { "id": "v1-pivot-pptx-8p", "prompt": "基于上文分析，做 8 页 16:9 官方图 PPTX，直接开始。", "timeoutMs": 600000 },
+    { "id": "v1-ad-creative-resume-leak", "prompt": "用投放创意能力做南美旅游落地页 HTML，要官方摄影风。", "timeoutMs": 300000 },
+    { "id": "v1-pdf-key-blocker", "prompt": "把报告导出为高视觉 PDF，路径 artifacts/report.pdf。", "timeoutMs": 300000 },
+    { "id": "v1-magazine-empty-table", "prompt": "写一份杂志风长文并交付 article.md。", "timeoutMs": 300000 },
+    { "id": "v1-copy-to-html-delay", "prompt": "把广告文案做成可点击预览的 index.html 落地页。", "timeoutMs": 300000 },
+    { "id": "audit-travel-report-missing", "prompt": "做冰岛极光旅游调研报告 markdown，路径写进正文。", "timeoutMs": 300000 },
+    { "id": "audit-magazine-missing", "prompt": "做杂志专题长文，交付 longform.md。", "timeoutMs": 300000 },
+    { "id": "h0-empty-assistant-reload", "prompt": "用竞品对标分析冰岛极光品类。", "capability": { "slug": "nova-research-competitor", "displayName": "Nova-竞品对标" }, "timeoutMs": 300000 },
+    { "id": "variant-iceland-geo", "prompt": "帮【冰岛极光】做品牌 GEO 全案，存 artifacts/geo/冰岛极光/。", "capability": { "slug": "pd-geo", "displayName": "AI 搜索全案" }, "timeoutMs": 300000, "variantOf": "h0-geo-full-short" },
+    { "id": "variant-pptx-6p-43", "prompt": "做 6 页 4:3 PPTX 演示文稿，主题南美咖啡。", "timeoutMs": 600000, "variantOf": "v1-pivot-pptx-8p" },
+    { "id": "variant-competitor-tea", "prompt": "用「Nova-竞品对标」对【新茶饮品类】做竞品全量对标。", "capability": { "slug": "nova-research-competitor", "displayName": "Nova-竞品对标" }, "timeoutMs": 300000, "variantOf": "h0-competitor-benchmark" },
+    { "id": "variant-key-deepseek", "prompt": "换 DeepSeek 再试，导出 PDF report.pdf。", "timeoutMs": 300000, "variantOf": "v1-pdf-key-blocker" },
+    { "id": "variant-landing-html-path", "prompt": "做 HTML 落地页，明确写入 artifacts/campaign/landing/index.html。", "timeoutMs": 300000, "variantOf": "v1-copy-to-html-delay" }
+  ]
+}

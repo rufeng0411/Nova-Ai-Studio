@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://novapage.local/skills/ppt-aesthetic-slides/schemas/outline-page.json",
+  "title": "PPT Outline Page",
+  "description": "Single page in Phase B outline output. Style belongs in template_style, not in points.",
+  "type": "object",
+  "required": ["page_index", "title", "points"],
+  "properties": {
+    "page_index": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "1-based slide order"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Slide title; content only, no visual style prose"
+    },
+    "points": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "description": "Bullet talking points for this slide"
+    }
+  },
+  "additionalProperties": false
+}

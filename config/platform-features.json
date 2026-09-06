@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "updatedAt": "2026-08-20T09:00:50.886Z",
+  "preflightStudio": "off",
+  "bentoDeckEditor": false,
+  "mdBrowserTool": true,
+  "n2Bot": true,
+  "mcpFeatures": {
+    "cnErp": "off",
+    "kingdee": "off",
+    "yonyouFin": "off",
+    "taxInvoice": "off",
+    "notionCollab": "off",
+    "postgresReadonly": "off"
+  }
+}

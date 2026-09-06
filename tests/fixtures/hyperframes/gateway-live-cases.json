@@ -1,0 +1,31 @@
+{
+  "project": "HF-Gateway-Test",
+  "cases": [
+    {
+      "id": "hf-slamdunk-15s",
+      "title": "灌篮高手 30 周年 · 15s HyperFrames",
+      "timeoutMs": 720000,
+      "minDurationSec": 14,
+      "minBytes": 200000,
+      "capability": {
+        "slug": "hf-hyperframes",
+        "displayName": "HTML 代码做视频",
+        "majorCategory": "marketing"
+      },
+      "prompt": "用「HTML 代码做视频」做一支 15 秒「灌篮高手 30 周年」纪念短片（16:9，1920×1080）。\n\n【硬性约束 — 必须遵守】\n1. HTML 工程只写在当前会话系统分配任务目录下的 hf-project/（禁止 artifacts/nova-launch 等自造目录）\n2. 成片必须调用工具 render_hyperframes(project_dir=…/hf-project, output_path=…/promo.mp4, quality=draft)\n3. 禁止 generate_video / 文生视频 API / render_html_video；不要问视频模型 API Key\n4. 不要派 sub-agent 做渲染；主 Agent 自己 write_file 建工程后 render_hyperframes\n5. 须交付：promo.mp4（真实 MP4，不要只交 HTML/分镜/Studio 链接）\n\n【分镜 — 3 幕】\n0–5s：球场橙红背景，中线圆环放大，数字 0 滚到 30，「周年特辑」\n5–11s：「灌篮高手」大字 skew 飞入，篮球旋转，粒子爆发\n11–15s：白闪转场，光环内「30 · 灌篮高手 · 传奇不息」\n\n风格：热血体育动画感；纯 CSS+GSAP，无外链素材。"
+    },
+    {
+      "id": "hf-deepseek4-30s",
+      "title": "DeepSeek V4 · 30s 产品发布 HyperFrames",
+      "timeoutMs": 900000,
+      "minDurationSec": 28,
+      "minBytes": 400000,
+      "capability": {
+        "slug": "hf-hyperframes",
+        "displayName": "HTML 代码做视频",
+        "majorCategory": "marketing"
+      },
+      "prompt": "用「HTML 代码做视频」为 DeepSeek V4 做一支 30 秒产品发布宣传片（16:9，1920×1080）。\n\n【硬性约束 — 必须遵守】\n1. HTML 工程只写在当前会话系统分配任务目录下的 hf-project/（禁止自造 slug 目录）\n2. 成片必须调用工具 render_hyperframes(project_dir=…/hf-project, output_path=…/promo.mp4, quality=draft)\n3. 禁止 generate_video / 文生视频 API；不要派 sub-agent 渲染\n4. 须交付：promo.mp4（真实 MP4）\n\n【分镜 — 4 幕】\n0–6s：深空蓝背景，「DeepSeek V4」kinetic 标题弹入 + 副标题「下一代推理模型」\n6–14s：三列能力卡「深度推理 · 代码生成 · 多模态理解」依次飞入\n14–22s：全屏 KPI 动效「更快 · 更准 · 更长上下文」\n22–30s：CTA「探索 DeepSeek V4」按钮 pulse + Logo 定帧\n\n风格：深空蓝 + 电光青，科技发布会感，GSAP 转场，无外链素材。"
+    }
+  ]
+}

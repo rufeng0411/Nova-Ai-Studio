@@ -1,0 +1,50 @@
+{
+  "$comment": "PD-SAAS-FORK VAP: generic-first search templates; auto pack only for automotive subjects",
+  "version": 2,
+  "pack": "generic",
+  "webQueries": [
+    "{subject} 官网",
+    "{subject} 官方 高清图",
+    "{subject} 产品图",
+    "{subject} official site images"
+  ],
+  "imageQueries": [
+    "{subject} 官方",
+    "{subject} 高清",
+    "{subject} product official",
+    "{subject} site photos"
+  ],
+  "trustedHosts": [
+    "gov.cn",
+    "wikipedia.org",
+    "wikimedia.org",
+    "sohu.com",
+    "sina.com.cn",
+    "163.com",
+    "ifeng.com",
+    "qq.com"
+  ],
+  "autoPack": {
+    "webQueries": [
+      "{subject} site:chery.cn",
+      "{subject} 官网 高清图",
+      "{subject} 汽车之家",
+      "{subject} 懂车帝 图"
+    ],
+    "imageQueries": [
+      "{subject} 官方 外观",
+      "{subject} 内饰 高清",
+      "{subject} site:autohome.com.cn",
+      "{subject} site:dongchedi.com"
+    ],
+    "trustedHosts": [
+      "chery.cn",
+      "autohome.com.cn",
+      "dongchedi.com",
+      "pcauto.com.cn",
+      "bitauto.com"
+    ]
+  },
+  "bingWebSearchUrl": "https://www.bing.com/search?q={query}&count=10",
+  "bingImageSearchUrl": "https://www.bing.com/images/search?q={query}&form=HDRSC2&first=1"
+}

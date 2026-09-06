@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nova-ai-studio.local/schemas/visual-asset-manifest.schema.json",
+  "$comment": "PD-SAAS-FORK VAP: session visual asset manifest.",
+  "title": "Visual asset manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "sessionId", "taskArtifactDir", "goalVersion", "assets"],
+  "properties": {
+    "version": { "const": 1 },
+    "sessionId": { "type": "string" },
+    "taskArtifactDir": { "type": "string" },
+    "goalVersion": { "type": "integer", "minimum": 1 },
+    "subject": { "type": "string" },
+    "sourceUrls": { "type": "array", "items": { "type": "string" } },
+    "updatedAt": { "type": "string" },
+    "assets": { "type": "array" },
+    "slotBindings": { "type": "object" },
+    "phase": { "enum": ["phase_a", "phase_b", "idle"] },
+    "autoDiscoverTriggered": { "type": "boolean" },
+    "errors": { "type": "array", "items": { "type": "string" } },
+    "acquisitionAttempts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["tier", "method", "target", "ok", "at"],
+        "properties": {
+          "tier": { "type": "string" },
+          "method": { "type": "string" },
+          "target": { "type": "string" },
+          "ok": { "type": "boolean" },
+          "detail": { "type": "string" },
+          "at": { "type": "string" }
+        }
+      }
+    }
+  }
+}

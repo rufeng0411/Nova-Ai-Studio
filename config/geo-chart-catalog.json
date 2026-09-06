@@ -1,0 +1,172 @@
+{
+  "version": 1,
+  "description": "NGRS ChartCatalog — kind 注册表与 kebab alias",
+  "defaultKind": "summaryBar",
+  "kinds": {
+    "scoreGauge": {
+      "engine": "svg",
+      "label": "综合分环",
+      "reportTypes": ["audit"]
+    },
+    "dimensionRadar": {
+      "engine": "chartjs",
+      "chartType": "radar",
+      "label": "维度雷达",
+      "reportTypes": ["audit", "technical", "monitor"]
+    },
+    "severityStackedBar": {
+      "engine": "chartjs",
+      "chartType": "bar",
+      "stacked": true,
+      "label": "严重度堆叠条",
+      "reportTypes": ["audit"]
+    },
+    "keywordHorizontalBar": {
+      "engine": "chartjs",
+      "chartType": "bar",
+      "indexAxis": "y",
+      "label": "关键词 TopN 横条",
+      "reportTypes": ["research"]
+    },
+    "topicPolarArea": {
+      "engine": "chartjs",
+      "chartType": "polarArea",
+      "label": "主题分布",
+      "reportTypes": ["research"]
+    },
+    "intentDoughnut": {
+      "engine": "chartjs",
+      "chartType": "doughnut",
+      "label": "意图占比环",
+      "reportTypes": ["research"]
+    },
+    "competitorGroupedBar": {
+      "engine": "chartjs",
+      "chartType": "bar",
+      "grouped": true,
+      "label": "竞品分组对比",
+      "reportTypes": ["competitor"]
+    },
+    "sovDoughnut": {
+      "engine": "chartjs",
+      "chartType": "doughnut",
+      "label": "SOV 环图",
+      "reportTypes": ["competitor"]
+    },
+    "gapWaterfallBar": {
+      "engine": "chartjs",
+      "chartType": "bar",
+      "floating": true,
+      "label": "差距瀑布条",
+      "reportTypes": ["competitor"]
+    },
+    "sectionRadar": {
+      "engine": "chartjs",
+      "chartType": "radar",
+      "label": "段落雷达",
+      "reportTypes": ["citability"]
+    },
+    "paragraphHorizontalBar": {
+      "engine": "chartjs",
+      "chartType": "bar",
+      "indexAxis": "y",
+      "label": "段落得分横条",
+      "reportTypes": ["citability"]
+    },
+    "beforeAfterBar": {
+      "engine": "chartjs",
+      "chartType": "bar",
+      "grouped": true,
+      "seriesCount": 2,
+      "label": "优化前后对比",
+      "reportTypes": ["citability"]
+    },
+    "checklistProgressBar": {
+      "engine": "css",
+      "label": "检查项通过率",
+      "reportTypes": ["technical"]
+    },
+    "severityDonut": {
+      "engine": "chartjs",
+      "chartType": "doughnut",
+      "label": "严重度环图",
+      "reportTypes": ["technical"]
+    },
+    "engineSovBar": {
+      "engine": "chartjs",
+      "chartType": "bar",
+      "label": "引擎 SOV",
+      "reportTypes": ["monitor"]
+    },
+    "llmIndexingBar": {
+      "engine": "chartjs",
+      "chartType": "bar",
+      "label": "主流大模型收录得分",
+      "reportTypes": ["monitor"]
+    },
+    "competitorBar": {
+      "engine": "chartjs",
+      "chartType": "bar",
+      "label": "竞品对比",
+      "reportTypes": ["monitor", "competitor"]
+    },
+    "queryHitDonut": {
+      "engine": "chartjs",
+      "chartType": "doughnut",
+      "label": "问句命中环",
+      "reportTypes": ["monitor"]
+    },
+    "trendLineArea": {
+      "engine": "chartjs",
+      "chartType": "line",
+      "fill": true,
+      "label": "趋势面积线",
+      "reportTypes": ["performance"]
+    },
+    "kpiSparkGrid": {
+      "engine": "sparkline",
+      "label": "KPI 内嵌 sparkline",
+      "reportTypes": ["performance"]
+    },
+    "channelGroupedBar": {
+      "engine": "chartjs",
+      "chartType": "bar",
+      "grouped": true,
+      "label": "渠道对比",
+      "reportTypes": ["performance"]
+    },
+    "summaryBar": {
+      "engine": "chartjs",
+      "chartType": "bar",
+      "label": "摘要条形图",
+      "reportTypes": ["generic"]
+    },
+    "distributionDoughnut": {
+      "engine": "chartjs",
+      "chartType": "doughnut",
+      "label": "分布环图",
+      "reportTypes": ["generic"]
+    }
+  },
+  "aliases": {
+    "score-bar": "scoreGauge",
+    "dimension-radar": "dimensionRadar",
+    "keyword-bar": "keywordHorizontalBar",
+    "topic-distribution": "topicPolarArea",
+    "competitor-bar": "competitorGroupedBar",
+    "sov-doughnut": "sovDoughnut",
+    "citability-radar": "sectionRadar",
+    "section-scores": "paragraphHorizontalBar",
+    "checklist-bar": "checklistProgressBar",
+    "severity-donut": "severityDonut",
+    "engine-sov": "engineSovBar",
+    "llm-indexing": "llmIndexingBar",
+    "radar": "dimensionRadar",
+    "competitor": "competitorBar",
+    "query-hit": "queryHitDonut",
+    "trend-line": "trendLineArea",
+    "kpi-grid": "kpiSparkGrid",
+    "summary-bar": "summaryBar"
+  },
+  "nonChartIds": ["priority-list", "actions-list"]
+}

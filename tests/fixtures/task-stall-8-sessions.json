@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "source": "config/sessions/task-stall-8.json",
+  "description": "8-case task-stall RCA replay fixture for four-line audit and goal-loop",
+  "tenant": "tenant-admin",
+  "sessions": [
+    { "id": "web-s_1e766a51-cad3-4299-ae66-ce806c4598f4", "archetype": "D", "note": "巴西电商 .py 槽膨胀" },
+    { "id": "web-s_658b3150-e7d6-4741-ab65-c691bf0e64fd", "archetype": "C", "note": "UX 审查误报完成" },
+    { "id": "web-s_4e3acadc-f40f-4ae7-88af-20e4ab546bb4", "archetype": "A", "note": "写盘失败" },
+    { "id": "web-s_49280983-f187-44f8-a920-c477ade04dfb", "archetype": "E", "note": "passed 仍干预" },
+    { "id": "web-s_bea3205a-415d-44d2-aae8-b3d30290eb9c", "archetype": "B", "note": "Nike 世界杯 pathHint 分裂", "pendingSlotBasename": "document.docx" },
+    { "id": "web-s_ac8f7470-837e-49a9-b596-5a2be8c9ab86", "archetype": "E", "note": "campaign 全案" },
+    { "id": "web-s_fdb48220-29d3-4c8f-b0aa-c31a9d71275a", "archetype": "E", "note": "八段式用户研究" },
+    { "id": "web-s_6e266035-e93a-4667-ab29-90ef43008f79", "archetype": "A", "note": "竞品笔记写盘" }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "skill_version": "1.0.0",
+  "deck_title": "2026 企业 AI 培训",
+  "idea_prompt": "面向中高层管理者的 2026 年企业生成式 AI 应用培训：战略价值、落地场景、风险合规、组织变革与 90 天行动路线图。",
+  "preset_id": "tech-modern",
+  "template_style": "见 presets/tech-modern.md Visual description (zh) 全文；验收运行须加载该文件注入 extra_requirements。",
+  "aspect_ratio": "16:9",
+  "language": "zh",
+  "detail_level": "default",
+  "page_count": 8,
+  "generated_at": "2026-06-01T00:00:00Z",
+  "image_model": "acceptance-placeholder",
+  "pages": [
+    {
+      "page_index": 1,
+      "title": "2026 企业 AI 培训",
+      "points": ["面向中高层管理者", "从战略到落地的系统认知"],
+      "page_description": "封面：超大主标题「2026 企业 AI 培训」，副标题一行。无列表。",
+      "image_path": "slide-01.png",
+      "status": "completed"
+    },
+    {
+      "page_index": 2,
+      "title": "为什么现在是 AI 拐点",
+      "points": ["生成式 AI 成本曲线与能力跃迁", "竞品与行业采纳速度对比", "培训目标：建立共同语言"],
+      "page_description": "左栏标题「为什么现在是 AI 拐点」。右侧三行要点纵向排列，每行前配小图标：成本曲线、行业对比、共同语言。中部可用简化的上升折线示意能力跃迁。",
+      "image_path": "slide-02.png",
+      "status": "completed"
+    },
+    {
+      "page_index": 3,
+      "title": "企业价值地图",
+      "points": ["增收", "降本", "风控"],
+      "page_description": "标题置顶。画面分为三列卡片：增收、降本、风控，每列 2–3 个关键词。三列等宽对齐，卡片内文字简短。",
+      "image_path": "slide-03.png",
+      "status": "completed"
+    },
+    {
+      "page_index": 4,
+      "title": "高 ROI 场景优先级",
+      "points": ["客服与内部知识助手", "文档与代码辅助", "数据分析与自然语言 BI"],
+      "page_description": "标题左对齐。右侧横向优先级条或 1-2-3 编号列表展示三个场景，每场景一行说明。可用简单矩阵背景暗示优先级。",
+      "image_path": "slide-04.png",
+      "status": "completed"
+    },
+    {
+      "page_index": 5,
+      "title": "落地方法论",
+      "points": ["试点 → 扩面 → 平台化", "人机协同流程 redesign", "效果度量"],
+      "page_description": "中央流程图三阶段：试点、扩面、平台化，箭头连接。下方两栏并列：人机协同、效果度量各 2 行文字。",
+      "image_path": "slide-05.png",
+      "status": "completed"
+    },
+    {
+      "page_index": 6,
+      "title": "风险与合规要点",
+      "points": ["数据分级与脱敏", "提示注入与输出审核", "知识产权与劳动政策"],
+      "page_description": "标题下盾牌或合规图标。三行要点带勾选符号，左对齐。右侧可选简化 checklist 图形。",
+      "image_path": "slide-06.png",
+      "status": "completed"
+    },
+    {
+      "page_index": 7,
+      "title": "组织与人才",
+      "points": ["AI Champion", "技能矩阵", "变革沟通"],
+      "page_description": "组织架构示意：中心「AI Champion」，周围三个节点对应技能矩阵、培训路径、变革沟通。每节点一行标签。",
+      "image_path": "slide-07.png",
+      "status": "completed"
+    },
+    {
+      "page_index": 8,
+      "title": "90 天行动路线图",
+      "points": ["第 1–30 天", "第 31–60 天", "第 61–90 天"],
+      "page_description": "底部时间轴分三段，每段标题与 2 行行动项。标题「90 天行动路线图」置顶居中。",
+      "image_path": "slide-08.png",
+      "status": "completed"
+    }
+  ]
+}

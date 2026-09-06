@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "slug": "ppt-master",
+  "display_name": "PPT Master",
+  "skill_root": "skills/vendor/ppt-master",
+  "launch_tier": "office_form",
+  "preflight_catalog_ref": "config/preflight-catalog-ppt.json",
+  "steps": [
+    {
+      "id": "canvas",
+      "type": "visual_grid",
+      "title": "选择画幅",
+      "required": true,
+      "source": "preflight-ppt-canvas"
+    },
+    {
+      "id": "mode",
+      "type": "choice",
+      "title": "选择叙事模式",
+      "required": true,
+      "source": "preflight-ppt-modes"
+    },
+    {
+      "id": "style",
+      "type": "visual_grid",
+      "title": "选择视觉风格",
+      "required": true,
+      "source": "preflight-ppt-styles"
+    }
+  ],
+  "compile": {
+    "prompt_template": "使用 ppt-master 制作 {page_count} 页 16:9 汇报 PPT：{brief}。画幅 `{canvas}`，模式 `{mode}`，风格 `{style}`。必须先 read_skill ppt-master，写入系统分配任务目录。SKILL_DIR 固定为本仓 skills/vendor/ppt-master 绝对路径，禁止向用户要路径。Web/SaaS 路径跳过 Flask 确认页与八确认问卷。"
+  }
+}

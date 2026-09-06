@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>三屏手机界面示意</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      padding: 48px 32px 64px;
+      background: radial-gradient(1200px 600px at 50% 0%, #1a2a5e 0%, #0a0a1a 55%, #050508 100%);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;
+      color: #fff;
+    }
+    .phone-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      flex: 0 0 auto;
+    }
+    .phone-label {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: rgba(255, 255, 255, 0.72);
+      text-align: center;
+      max-width: 280px;
+      line-height: 1.4;
+    }
+    .phone-shell {
+      width: 390px;
+      height: 844px;
+      padding: 12px;
+      border-radius: 52px;
+      background: linear-gradient(155deg, #3a3a3e, #121214 48%, #08080a);
+      box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.06) inset,
+        0 28px 64px rgba(0, 0, 0, 0.55),
+        0 0 80px rgba(0, 75, 141, 0.12);
+      position: relative;
+    }
+    .phone-shell::before {
+      content: '';
+      position: absolute;
+      top: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 118px;
+      height: 34px;
+      background: #000;
+      border-radius: 20px;
+      z-index: 2;
+      pointer-events: none;
+    }
+    .phone-screen {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 42px;
+      background: #0a1020;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <!-- 只改 label 文案与 iframe src；每屏内容写在独立 screen-N.html，禁止把三屏 CSS 全堆进本文件 -->
+  <div class="phone-col">
+    <div class="phone-shell">
+      <iframe class="phone-screen" src="screen-1.html" title="屏 1"></iframe>
+    </div>
+    <p class="phone-label">屏 1：首页 / 总览</p>
+  </div>
+  <div class="phone-col">
+    <div class="phone-shell">
+      <iframe class="phone-screen" src="screen-2.html" title="屏 2"></iframe>
+    </div>
+    <p class="phone-label">屏 2：赛程 / 列表</p>
+  </div>
+  <div class="phone-col">
+    <div class="phone-shell">
+      <iframe class="phone-screen" src="screen-3.html" title="屏 3"></iframe>
+    </div>
+    <p class="phone-label">屏 3：详情 / 指南</p>
+  </div>
+</body>
+</html>

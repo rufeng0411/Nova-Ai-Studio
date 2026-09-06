@@ -1,0 +1,7 @@
+opensource
+self-hosted
+agpl
+ai-agent
+saas
+nodejs
+

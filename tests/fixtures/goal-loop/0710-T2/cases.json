@@ -1,0 +1,109 @@
+{
+  "project": "0710-T2",
+  "user": "admin",
+  "suite": "0710-T2-prompt-v2-live",
+  "source": "提示词 v2 升级后随机 10 项抽检（5 能力 + 5 流程模板）",
+  "groups": [
+    { "id": "G1-CAP-RESEARCH", "label": "调研类能力", "cases": ["0710-T2-01", "0710-T2-05"] },
+    { "id": "G2-CAP-CREATE", "label": "创作类能力", "cases": ["0710-T2-02", "0710-T2-03", "0710-T2-04"] },
+    { "id": "G3-TPL-MKT", "label": "营销流程模板", "cases": ["0710-T2-06", "0710-T2-07", "0710-T2-08"] },
+    { "id": "G4-TPL-VIDEO", "label": "视频流程模板", "cases": ["0710-T2-09", "0710-T2-10"] }
+  ],
+  "cases": [
+    {
+      "id": "0710-T2-01",
+      "code": "T2-01",
+      "group": "G1-CAP-RESEARCH",
+      "baseline": "Hub v2：Nova-行业市场 + 须交付 industry-market-report.md",
+      "prompt": "用「Nova-行业市场」写【2026 中国 AI 创作助手】市场研究报告：规模、产业链、PEST/SWOT 与进入建议。须交付：industry-market-report.md（规模、产业链、PEST/SWOT、进入建议）。写入系统分配任务目录。",
+      "capability": { "slug": "nova-research-industry-market", "displayName": "Nova-行业市场" },
+      "timeoutMs": 420000,
+      "expect": { "minDockRows": 1, "requireStda": true, "bindBasename": "industry-market-report" }
+    },
+    {
+      "id": "0710-T2-02",
+      "code": "T2-02",
+      "group": "G2-CAP-CREATE",
+      "baseline": "Hub v2：官网落地页 + index.html 成果清单",
+      "prompt": "用「官网落地页」做【Nova Ai-Studio】介绍页：醒目标题、三个核心功能、价格或试用按钮、页脚联系方式，风格石墨高级灰、极简专业。须交付：index.html（含标题、功能、CTA、页脚）。写入系统分配任务目录。",
+      "capability": { "slug": "od-saas-landing", "displayName": "官网落地页" },
+      "timeoutMs": 480000,
+      "expect": { "minDockRows": 1, "requireStda": true, "bindBasename": "index.html" }
+    },
+    {
+      "id": "0710-T2-03",
+      "code": "T2-03",
+      "group": "G2-CAP-CREATE",
+      "baseline": "Hub v2：社媒矩阵包四文件清单",
+      "prompt": "用「社媒矩阵包」把一条创意扩成国内 8 平台图文矩阵：【Nova Ai-Studio 春季上新】，含 brief、创意锚点、全平台文案、manifest 与四套比例配图，先不发布。须交付：brief.md、creative-anchors.md、copywriting.md、manifest.json。写入系统分配任务目录。",
+      "capability": { "slug": "social-creative-matrix", "displayName": "社媒矩阵包" },
+      "timeoutMs": 600000,
+      "expect": { "minDockRows": 2, "requireStda": true, "bindBasename": "brief.md" }
+    },
+    {
+      "id": "0710-T2-04",
+      "code": "T2-04",
+      "group": "G2-CAP-CREATE",
+      "baseline": "Hub v2：即梦分镜提示 03-seedance-prompts.md",
+      "prompt": "用「即梦分镜提示」为【智能降噪耳机 Pro】写 15 秒 Seedance 2.0 分镜提示词（含 @引用说明）。须交付：03-seedance-prompts.md（含 @引用说明）。写入系统分配任务目录。",
+      "capability": { "slug": "create-vid-seedance-prompt", "displayName": "即梦分镜提示" },
+      "timeoutMs": 360000,
+      "expect": { "minDockRows": 1, "requireStda": true, "pathHintContains": ["seedance", "03-"] }
+    },
+    {
+      "id": "0710-T2-05",
+      "code": "T2-05",
+      "group": "G1-CAP-RESEARCH",
+      "baseline": "Hub v2：Nova-竞品对标报告",
+      "prompt": "用「Nova-竞品对标」对【AI 创作助手品类】做竞品全量对标：竞品清单、维度对比与突围策略。须交付：competitor-benchmark-report.md（竞品清单、维度对比、突围策略）。写入系统分配任务目录。",
+      "capability": { "slug": "nova-research-competitor", "displayName": "Nova-竞品对标" },
+      "timeoutMs": 420000,
+      "expect": { "minDockRows": 1, "requireStda": true }
+    },
+    {
+      "id": "0710-T2-06",
+      "code": "T2-06",
+      "group": "G3-TPL-MKT",
+      "baseline": "流程模板 v2：AI 可见度快检 + 标准成果清单",
+      "prompt": "帮【Nova Ai-Studio】做 AI 可见度快检，2 步一次做完，全部存 系统分配的任务目录 并报路径：\n1. read_skill geo-aeo-audit，输出 AEO/GEO 审计 aeo-audit.md（可结合 mkt-ai-seo 清单要点）。\n2. read_skill pd-geo，产出 keywords.md 与 verification-plan.md（含 10 条验证问句）。\n若评分或联网验证不可用请按 resilience 降级，不要中断。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我文件路径。\n\n标准成果清单：\n1. aeo-audit.md\n2. keywords.md\n3. verification-plan.md",
+      "timeoutMs": 600000,
+      "expect": { "minDockRows": 2, "requireStda": true, "slotCount": 3 }
+    },
+    {
+      "id": "0710-T2-07",
+      "code": "T2-07",
+      "group": "G3-TPL-MKT",
+      "baseline": "流程模板 v2：内容营销飞轮三步 md",
+      "prompt": "帮我围绕【Nova Ai-Studio 能力中心】做一轮内容营销，3 步一次做完，产出存 系统分配的任务目录 并报路径：\n1. 选题：write_file 01-topics.md（1 主话题 + 3 子选题）。\n2. 长文：write_file 02-longform.md（小标题、要点、结论）。\n3. 社媒切片：write_file 03-social-slices.md（3–5 条短文/脚本，适配小红书/抖音）。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我各文件路径。\n\n标准成果清单：\n1. 选题 .md\n2. 长文 .md\n3. 社媒切片 .md",
+      "timeoutMs": 480000,
+      "expect": { "minDockRows": 2, "requireStda": true, "contractRowCount": 3 }
+    },
+    {
+      "id": "0710-T2-08",
+      "code": "T2-08",
+      "group": "G3-TPL-MKT",
+      "baseline": "流程模板 v2：Battlecard 三文件 + SDM 槽位",
+      "prompt": "为【Nova Ai-Studio vs 通用 AI 助手】做销售 Battlecard 全链路，三步一次做完，存 系统分配的任务目录 并报路径：\n1. read_skill mkt-competitive-intel → intel.md。\n2. read_skill pms-competitive-battlecard → battlecard.md。\n3. read_skill mkt-sales-enablement → talk-track.md（含 5 条常见异议回应）。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我各文件路径。\n\n标准成果清单：\n1. intel.md\n2. battlecard.md\n3. talk-track.md",
+      "timeoutMs": 480000,
+      "expect": { "slotCount": 3, "minDockRows": 2, "requireStda": true }
+    },
+    {
+      "id": "0710-T2-09",
+      "code": "T2-09",
+      "group": "G4-TPL-VIDEO",
+      "baseline": "流程模板 v2：品牌广告分镜到即梦四步",
+      "prompt": "帮【Nova Ai-Studio】做一支品牌广告的分镜与即梦提示词包，4 步一次做完，存 系统分配的任务目录 并报路径；每步先 read_skill 对应能力，再 write_file，写完再下一步：\n1. read_skill create-vid-visual-prompt：根据【AI 创作平台/开发者受众/时长 15-30s】输出 6-8 镜 14 字段镜头卡 → 01-shot-cards.md。\n2. read_skill create-vid-director：读取 01-shot-cards.md，补导演风格 lens、Keyframe 说明与镜头连续性 → 02-director-board.md。\n3. read_skill create-vid-seedance-prompt：读取前两步，生成可粘贴即梦的 @引用分镜 prompt → 03-seedance-prompts.md。\n4. 若模型池已配置视频生成：试渲染 1-2 关键镜头 → clips/preview.mp4；若无 Key，写 README.md 说明「交付止于分镜包」并跳过本步。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我各文件路径。\n\n标准成果清单：\n1. 01-shot-cards.md\n2. 02-director-board.md\n3. 03-seedance-prompts.md（+ 可选 preview.mp4）",
+      "timeoutMs": 600000,
+      "expect": { "minDockRows": 2, "requireStda": true, "pathHintContains": ["01-shot", "03-seedance"] }
+    },
+    {
+      "id": "0710-T2-10",
+      "code": "T2-10",
+      "group": "G4-TPL-VIDEO",
+      "baseline": "流程模板 v2：口播爆款脚本包轻量两步",
+      "prompt": "为【Nova Ai-Studio 能力中心】写一条【抖音】口播短视频脚本，2 步一次做完，存 系统分配的任务目录 并报路径：\n1. read_skill create-vid-viral-copy：产出 3 条 hook 候选 + 口播结构骨架 → 01-hooks.md（纯创作，勿依赖 yt-dlp）。\n2. read_skill mkt-dmp-video-script：读取 01-hooks.md 选定最佳 hook，写带时间轴、画面提示与 CTA 的完整口播脚本 → 02-script-timed.md。\n可选：若需 8 秒动态样片且视频 Key 可用，用 generate_video 生成 preview-8s.mp4；否则交付止于 02-script-timed.md。\n禁止 read_file skills/；每步 write_file 落盘后再进下一步。\n若评分、联网、生图/生视频或外部 Key 不可用，按对应技能 resilience 降级仍交付清单文件，不要中断。\n直接开始做，做完告诉我文件路径。\n\n标准成果清单：\n1. 01-hooks.md\n2. 02-script-timed.md（+ 可选 preview-8s.mp4）",
+      "timeoutMs": 360000,
+      "expect": { "minDockRows": 1, "requireStda": true, "bindBasename": "01-hooks" }
+    }
+  ]
+}

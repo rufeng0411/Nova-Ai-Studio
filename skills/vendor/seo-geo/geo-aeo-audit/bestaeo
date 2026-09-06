@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+# bestaeo — CLI wrapper for best-aeo-skill
+# Dispatches to scripts/audit.py and friends.
+
+set -euo pipefail
+
+SKILL_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SCRIPTS="${SKILL_DIR}/scripts"
+
+if [[ $# -lt 1 ]]; then
+  cat <<EOF
+best-aeo-skill v1.0.0 — the best AEO/GEO skill for Claude
+
+Usage:
+  bestaeo <command> [options]
+
+Commands:
+  audit         Full GEO audit, returns 0–100 score + findings
+  fix           Apply auto-fixes (content, schema, llms.txt, robots.txt)
+  fix-content   Rewrite content for citability
+  fix-schema    Generate JSON-LD blocks
+  fix-llmstxt   Generate /llms.txt
+  fix-robotstxt Patch /robots.txt for AI bot allowance
+  compare       Head-to-head GEO comparison vs competitors
+  monitor       Track score over time + regression alerts
+  --version     Print version
+  --help        Print this help
+
+Documentation: https://bestaeoskill.com
+Source: https://github.com/bestaeoskill/best-aeo-skill
+EOF
+  exit 0
+fi
+
+cmd="$1"
+shift
+
+case "${cmd}" in
+  audit)
+    exec python3 "${SCRIPTS}/audit.py" "$@"
+    ;;
+  fix|fix-content|fix-schema|fix-llmstxt|fix-robotstxt|compare|monitor)
+    echo "bestaeo: '${cmd}' is implemented in scripts/${cmd//-/_}.py" >&2
+    echo "Run: python3 ${SCRIPTS}/${cmd//-/_}.py $@" >&2
+    exit 0
+    ;;
+  --version|-v)
+    echo "best-aeo-skill v1.0.0"
+    ;;
+  --help|-h|help)
+    exec "$0"
+    ;;
+  *)
+    echo "bestaeo: unknown command '${cmd}'" >&2
+    echo "Run 'bestaeo --help' for usage." >&2
+    exit 2
+    ;;
+esac

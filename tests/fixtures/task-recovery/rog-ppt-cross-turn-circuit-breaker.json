@@ -1,0 +1,10 @@
+{
+  "id": "rog-ppt-cross-turn-circuit-breaker",
+  "description": "Same gap 3 turns trips session repair circuit",
+  "userGoal": "用「PPT 生成」做演示稿",
+  "missingPaths": ["artifacts/deck/presentation.pptx"],
+  "brokenPaths": [],
+  "expectedGapRecordsBeforeTrip": 3,
+  "expectedAcceptance": "passed",
+  "expectedContinuationAction": "none"
+}

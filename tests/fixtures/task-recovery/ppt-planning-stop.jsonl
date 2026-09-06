@@ -1,0 +1,4 @@
+{"type":"metadata","id":"ppt-planning-stop","expectedStatus":"repairable"}
+{"role":"user","content":"基于附件做一份可编辑 PPT，直接生成真实 .pptx 文件。"}
+{"role":"assistant","content":"已整理出 10 页大纲，但尚未导出 PPTX。"}
+{"type":"deliverable_validation","verified":[],"missing":["artifacts/slides/final.pptx"],"broken":[],"processOnly":["artifacts/slides/outline.md"]}

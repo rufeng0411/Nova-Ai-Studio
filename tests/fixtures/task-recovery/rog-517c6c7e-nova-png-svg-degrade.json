@@ -1,0 +1,17 @@
+{
+  "id": "rog-517c6c7e-nova-png-svg-degrade",
+  "description": "517c6c7e: verified PNG overlap with broken must reconcile to empty broken",
+  "userGoal": "用「Nova-美学幻灯」把【雷神笔记本主题 + 6页数 + 产品展示】",
+  "capabilitySlug": "nova-ppt-aesthetic-slides",
+  "expectedProfileId": "nova-slide-deck",
+  "verifiedPaths": [
+    "artifacts/slides-thunder/slide-manifest.json",
+    "artifacts/slides-thunder/slide-01.png",
+    "artifacts/slides-thunder/slide-02.png"
+  ],
+  "brokenPaths": [
+    "artifacts/slides-thunder/slide-01.png",
+    "artifacts/slides-thunder/slide-02.png"
+  ],
+  "expectBrokenAfterDedupeOnDisk": true
+}

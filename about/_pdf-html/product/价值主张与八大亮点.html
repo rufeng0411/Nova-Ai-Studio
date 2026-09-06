@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>价值主张与八大亮点</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <style>
+    
+  :root {
+    --nova-ink: #1a202c;
+    --nova-primary: #2d3748;
+    --nova-muted: #4a5568;
+    --nova-border: #e2e8f0;
+    --nova-bg: #f8fafc;
+    --nova-accent: #edf2f7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Inter', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.55;
+    color: var(--nova-ink);
+    margin: 0;
+    background: #fff;
+  }
+  .print-header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 14mm;
+    padding: 2mm 12mm;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--nova-border);
+    background: #fff;
+    z-index: 100;
+  }
+  .header-logo { height: 9mm; width: auto; }
+  .header-text { display: flex; flex-direction: column; line-height: 1.2; }
+  .header-brand { font-weight: 700; font-size: 9pt; color: var(--nova-primary); }
+  .header-doc { font-size: 7.5pt; color: var(--nova-muted); }
+  .print-footer {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    height: 10mm;
+    padding: 2mm 12mm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 7pt;
+    color: #718096;
+    border-top: 1px solid var(--nova-border);
+    background: #fff;
+  }
+  .doc-main {
+    padding: 18mm 14mm 14mm 14mm;
+  }
+  .doc-title {
+    font-size: 20pt;
+    font-weight: 700;
+    color: var(--nova-primary);
+    margin: 0 0 6mm;
+    padding-bottom: 3mm;
+    border-bottom: 2px solid var(--nova-primary);
+  }
+  .cover-page + .page-break + .doc-body .doc-title { display: none; }
+  .cover-page {
+    min-height: 240mm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(180deg, #fff 0%, var(--nova-bg) 100%);
+    margin: -18mm -14mm 0;
+    padding: 20mm;
+  }
+  .cover-logo {
+    display: block;
+    height: 28mm;
+    width: auto;
+    max-width: 75%;
+    object-fit: contain;
+    object-position: center;
+    margin: 0 auto 16px;
+  }
+  .cover-title { font-size: 26pt; color: var(--nova-primary); margin: 0 0 8px; border: none; }
+  .cover-sub { font-size: 12pt; color: var(--nova-muted); margin: 0 0 24px; }
+  .cover-tag { font-size: 9pt; color: #718096; letter-spacing: 0.08em; text-transform: uppercase; }
+  .page-break { page-break-after: always; }
+  h1 { font-size: 16pt; color: var(--nova-primary); margin: 5mm 0 3mm; }
+  h2 { font-size: 13pt; color: var(--nova-primary); margin: 4mm 0 2mm; border-left: 3px solid var(--nova-primary); padding-left: 8px; }
+  h3 { font-size: 11pt; margin: 3mm 0 2mm; }
+  h4 { font-size: 10pt; margin: 2mm 0 1mm; }
+  p { margin: 0 0 2.5mm; }
+  blockquote {
+    margin: 3mm 0;
+    padding: 3mm 4mm;
+    background: var(--nova-accent);
+    border-left: 3px solid var(--nova-muted);
+    font-size: 9.5pt;
+    color: var(--nova-muted);
+  }
+  hr.section-rule { border: none; border-top: 1px solid var(--nova-border); margin: 4mm 0; }
+  ul, ol { margin: 0 0 3mm; padding-left: 5mm; }
+  li { margin-bottom: 1mm; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 3mm 0 4mm;
+    font-size: 9pt;
+  }
+  th {
+    background: var(--nova-primary);
+    color: #fff;
+    font-weight: 600;
+    text-align: left;
+    padding: 2.5mm 3mm;
+  }
+  td {
+    border: 1px solid var(--nova-border);
+    padding: 2mm 3mm;
+    vertical-align: top;
+  }
+  tr:nth-child(even) td { background: var(--nova-bg); }
+  code {
+    font-family: Consolas, monospace;
+    font-size: 8.5pt;
+    background: var(--nova-accent);
+    padding: 0 3px;
+    border-radius: 2px;
+  }
+  pre {
+    background: #1a202c;
+    color: #e2e8f0;
+    padding: 3mm;
+    border-radius: 4px;
+    font-size: 8pt;
+    overflow-x: auto;
+  }
+  a { color: var(--nova-primary); }
+  .stats-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 5mm;
+    padding: 4mm;
+    background: var(--nova-accent);
+    border-radius: 6px;
+  }
+  .stat { flex: 1; min-width: 80px; text-align: center; }
+  .stat-val { display: block; font-size: 14pt; font-weight: 700; color: var(--nova-primary); }
+  .stat-lbl { font-size: 7.5pt; color: var(--nova-muted); }
+  .highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    margin-bottom: 5mm;
+  }
+  .hcard {
+    background: var(--nova-bg);
+    border: 1px solid var(--nova-border);
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 8.5pt;
+  }
+  .hcard .num { display: block; font-size: 7pt; color: #718096; margin-bottom: 2px; }
+  .color-palette { display: flex; gap: 6px; margin-bottom: 5mm; }
+  .swatch {
+    flex: 1; height: 36px; border-radius: 4px;
+    display: flex; align-items: flex-end; padding: 4px;
+  }
+  .swatch span { font-size: 6.5pt; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,.4); }
+  .dual-track { display: flex; gap: 10px; margin-bottom: 5mm; }
+  .track {
+    flex: 1; padding: 10px; border-radius: 6px;
+    background: var(--nova-bg); border: 1px solid var(--nova-border);
+  }
+  .track.saas { background: var(--nova-primary); color: #fff; }
+  .track.saas h4 { color: #fff; }
+  .pricing-tiers { display: flex; gap: 6px; margin-bottom: 5mm; }
+  .tier {
+    flex: 1; text-align: center; padding: 8px 4px;
+    border: 1px solid var(--nova-border); border-radius: 4px; font-size: 8.5pt;
+  }
+  .tier.featured { background: var(--nova-primary); color: #fff; border-color: var(--nova-primary); }
+  .tier.featured h4 { color: #fff; }
+  .tier h4 { margin: 0 0 4px; font-size: 9pt; }
+  .tier p { margin: 0; font-size: 7.5pt; }
+  .mermaid { margin: 4mm 0; text-align: center; }
+  .risk-high { background: #fed7d7; color: #c53030; padding: 2px 6px; border-radius: 3px; font-size: 8pt; margin-right: 6px; }
+  .risk-mid { background: #feebc8; color: #c05621; padding: 2px 6px; border-radius: 3px; font-size: 8pt; margin-right: 6px; }
+  .landscape table { font-size: 8pt; }
+  .landscape th, .landscape td { padding: 1.5mm 2mm; }
+
+    @page { size: A4 portrait; }
+  </style>
+</head>
+<body class="portrait">
+  <header class="print-header">
+    <img src="data:image/png;base64,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" alt="" class="header-logo" />
+    <div class="header-text">
+      <span class="header-brand">Nova Ai-Studio</span>
+      <span class="header-doc">产品</span>
+    </div>
+  </header>
+  <footer class="print-footer">
+    <span>Nova Ai Studio 2.0 · AI 营销创意生产平台</span>
+    <span class="footer-page"></span>
+  </footer>
+  <main class="doc-main">
+    
+    <article class="doc-body">
+      <h1 class="doc-title">价值主张与八大亮点</h1>
+      
+<div class="highlight-grid">
+  <div class="hcard"><span class="num">01</span><strong>对话交付项目</strong></div>
+  <div class="hcard"><span class="num">02</span><strong>智能路由省 Token</strong></div>
+  <div class="hcard"><span class="num">03</span><strong>营销飞轮六阶段</strong></div>
+  <div class="hcard"><span class="num">04</span><strong>调研与获客</strong></div>
+  <div class="hcard"><span class="num">05</span><strong>400+ 能力</strong></div>
+  <div class="hcard"><span class="num">06</span><strong>模型一池统管</strong></div>
+  <div class="hcard"><span class="num">07</span><strong>近 30 条模板</strong></div>
+  <div class="hcard"><span class="num">08</span><strong>企业级安全</strong></div>
+</div><h1>价值主张与八大亮点</h1>
+<blockquote>Executive Summary (EN): Eight proof points—conversation delivery, token routing, marketing flywheel, research+growth, 400+ capabilities, unified model pool, workflow templates, enterprise security—grouped as workflow, platform, and trust.</blockquote>
+<hr class="section-rule" />
+<h2>分组总览</h2>
+<table><thead><tr><th>分组</th><th>亮点</th></tr></thead><tbody><tr><td><strong>对话与效率</strong></td><td>① 一句话交付项目 · ② 智能路由省 Token</td></tr><tr><td><strong>能力与流程</strong></td><td>③ 营销飞轮 · ④ 调研获客 · ⑤ 400+ 能力 · ⑥ 模型一池 · ⑦ 流程模板</td></tr><tr><td><strong>企业安全</strong></td><td>⑧ 多层防护</td></tr></tbody></table>
+<hr class="section-rule" />
+<h2>① 一句话，交付一整个项目</h2>
+<p><strong>价值</strong>：自然语言指令直达完整项目成果。</p>
+<p><strong>用户感知</strong>：从指令到成果，对话就是工作流。调研报告、设计稿、视频脚本，说完即得。</p>
+<p><strong>典型成果</strong>：<code>artifacts/</code> 下 Markdown、HTML 落地页、PPTX、图片、视频；对话内点击预览。</p>
+<p><strong>销售话术</strong>：「不是多轮追问凑答案，而是一个项目空间持续产出，最后给你能发给客户/老板的文件。」</p>
+<hr class="section-rule" />
+<h2>② 智能路由，大幅节省 Token</h2>
+<p><strong>价值</strong>：难任务走旗舰、轻任务走轻量，最高约省 70%。</p>
+<p><strong>用户感知</strong>：复杂环节自动用强模型，润色排版用轻量模型；硬核任务成本可降至单模型约 1/6，质量不降。</p>
+<p><strong>证据口径</strong>：官方实测「最高约七成」——对外统一用此表述，勿夸大至保证值。</p>
+<p><strong>销售话术</strong>：「同样做一份 Campaign 全案，路由后 Token 账单 often 只有裸奔旗舰模型的一小部分。」</p>
+<hr class="section-rule" />
+<h2>③ 营销飞轮，六阶段闭环</h2>
+<p><strong>价值</strong>：调研到监测，营销全链路一站贯通。</p>
+<p><strong>阶段</strong>：调研洞察 → 策略策划 → 创意内容 → 营销触达 → 发布分发 → 监测复盘。</p>
+<p><strong>差异化</strong>：每阶段含 <strong>AI 搜索</strong> 子导航；GEO/AEO 能力可双归属多阶段。</p>
+<p><strong>销售话术</strong>：「从行业调研到 GEO 监测，不用在五个工具之间拷文件。」</p>
+<hr class="section-rule" />
+<h2>④ 深度调研，智能获客</h2>
+<p><strong>价值</strong>：强大调研分析与智能获客一体贯通。</p>
+<p><strong>能力面</strong>：多源查询、竞品与市场洞察、线索画像、口碑挖掘。</p>
+<p><strong>典型模板</strong>：竞品快览、调研报告标准包、品牌 Campaign 全案（含调研步）。</p>
+<p><strong>销售话术</strong>：「先搞清楚市场和谁该触达，再在同一平台里做创意和发布。」</p>
+<hr class="section-rule" />
+<h2>⑤ 400+ 项能力，开箱即用</h2>
+<p><strong>价值</strong>：五大领域能力中心，即点即用。</p>
+<p><strong>五 Tab</strong>：营销飞轮 · 办公 · 创作 · 开发 · 教育学习。</p>
+<p><strong>交互</strong>：卡片一行四列；点击即「试一下」——在当前项目新建对话并预填标准化提示词。</p>
+<p><strong>销售话术</strong>：「400 多项能力不是目录列表，是按你工作场景排好的，点一下就能跑。」</p>
+<hr class="section-rule" />
+<h2>⑥ 全球顶尖模型，一池统管</h2>
+<p><strong>价值</strong>：顶尖大模型统一接入，按任务自动调度。</p>
+<p><strong>覆盖</strong>：GPT、Claude、Gemini、通义（含生图/语音）、火山 Seedream/Seedance、Google Imagen/Veo 等。</p>
+<p><strong>企业叙事</strong>：SaaS 下由平台配置模型池，租户无需各自填 Key。</p>
+<p><strong>销售话术</strong>：「一个池子管所有供应商，任务来了自动挑最合适的引擎。」</p>
+<hr class="section-rule" />
+<h2>⑦ 流程模板，一键全链路</h2>
+<p><strong>价值</strong>：近 30 条成熟模板，从大纲到视频一键开跑。</p>
+<p><strong>复杂度</strong>：轻量 9 · 标准 13 · 全案 7。</p>
+<p><strong>代表模板</strong>：品牌 Campaign 全案、小红书爆款、GEO 标准包、大纲→PPT→炫酷 HTML 视频、SaaS 增长全案。</p>
+<p><strong>销售话术</strong>：「新人最怕空白页。选一条模板，等于资深同事帮你写好第一步。」</p>
+<hr class="section-rule" />
+<h2>⑧ 企业级安全，多层防护</h2>
+<p><strong>价值</strong>：租户隔离、权限沙箱与用量审计，部署更安心。</p>
+<p><strong>层次</strong>：</p>
+<ul>
+<li>多租户项目与记忆隔离</li>
+<li>JWT 登录 + 工具权限白名单</li>
+<li>Always-On 工作区沙箱</li>
+<li>用量归属审计</li>
+<li>全云端文件枢纽（SaaS Phase 2）</li>
+</ul>
+<p><strong>销售话术</strong>：「企业关心的不是模型有多炫，而是数据和执行能不能关进自己的院子。」</p>
+<hr class="section-rule" />
+<h2>统计条（与 UI 一致）</h2>
+<p>400+ 即用能力 · 6 阶段飞轮 · 双引擎调研·获客 · 近 30 条模板 · ≈70% Token 节省 · 多层企业安全</p>
+    </article>
+  </main>
+  <script>
+    mermaid.initialize({ startOnLoad: false, theme: 'neutral', securityLevel: 'loose', fontFamily: 'Inter, Microsoft YaHei, sans-serif' });
+    document.addEventListener('DOMContentLoaded', async () => {
+      const nodes = document.querySelectorAll('.mermaid');
+      if (nodes.length && window.mermaid) {
+        await mermaid.run({ nodes });
+      }
+    });
+  </script>
+</body>
+</html>

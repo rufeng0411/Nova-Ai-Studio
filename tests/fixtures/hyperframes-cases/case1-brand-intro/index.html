@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>Case1 Brand Intro</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0b1220; overflow: hidden; }
+    #stage {
+      width: 1280px; height: 720px; position: relative;
+      background: radial-gradient(circle at 30% 20%, #312e81 0%, #0f172a 55%, #020617 100%);
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px;
+    }
+    #logo { font: 700 72px/1 system-ui; color: #e0e7ff; transform: scale(0.92); }
+    #tagline { font: 400 28px/1.4 system-ui; color: #94a3b8; letter-spacing: 0.08em; }
+  </style>
+</head>
+<body>
+  <div id="stage" data-composition-id="case1-brand" data-start="0" data-duration="5" data-width="1280" data-height="720">
+    <div id="logo" class="clip" data-start="0.4" data-duration="4">Nova Ai Studio</div>
+    <div id="tagline" class="clip" data-start="1.2" data-duration="3.2">智能体协作 · HTML 成片</div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    tl.from("#logo", { scale: 0.92, opacity: 0, duration: 0.9, ease: "power3.out" }, 0.4);
+    tl.from("#tagline", { y: 24, opacity: 0, duration: 0.7, ease: "power2.out" }, 1.2);
+    window.__timelines["case1-brand"] = tl;
+  </script>
+</body>
+</html>

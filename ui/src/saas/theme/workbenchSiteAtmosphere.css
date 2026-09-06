@@ -1,0 +1,88 @@
+/**
+ * PD-SAAS-FORK: marketing homepage hero-glow + hero-grid on Agent workbench.
+ * Dark canvas (#0a0a0a) + glass chrome (no blur — blur kills the grid).
+ * Gated by .workbench-site-atmosphere-on.
+ */
+
+.ui-v2.workbench-site-atmosphere-on {
+  background-color: transparent !important;
+}
+
+.workbench-site-atmosphere {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+}
+
+.workbench-site-atmosphere__base {
+  position: absolute;
+  inset: 0;
+  background: #0a0a0a !important;
+}
+
+.workbench-site-atmosphere__glow {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 0%, rgba(16, 163, 127, 0.28) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 50% at 85% 18%, rgba(99, 102, 241, 0.18) 0%, transparent 50%) !important;
+  animation: workbench-site-glow-drift 14s cubic-bezier(0.22, 1, 0.36, 1) infinite alternate;
+}
+
+.workbench-site-atmosphere__grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px) !important;
+  background-size: 48px 48px !important;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.45) 75%, transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.45) 75%, transparent 100%);
+}
+
+@keyframes workbench-site-glow-drift {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(1.5%, -1%, 0) scale(1.03);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .workbench-site-atmosphere__glow {
+    animation: none;
+  }
+}
+
+.ui-v2.workbench-site-atmosphere-on > main {
+  position: relative;
+  z-index: 1;
+  background: transparent !important;
+}
+
+.ui-v2.workbench-site-atmosphere-on [data-sidebar-v2-root] {
+  position: relative;
+  z-index: 1;
+  background: hsl(var(--sidebar) / 0.55) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Main chat / welcome surfaces — keep mostly clear so dark grid shows */
+.ui-v2.workbench-site-atmosphere-on main .bg-background {
+  background-color: hsl(var(--background) / 0.22) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.ui-v2.workbench-site-atmosphere-on main .bg-sidebar {
+  background-color: hsl(var(--sidebar) / 0.4) !important;
+}
+
+/* Composer / cards stay readable */
+.ui-v2.workbench-site-atmosphere-on main .bg-card {
+  background-color: hsl(var(--card) / 0.88) !important;
+}

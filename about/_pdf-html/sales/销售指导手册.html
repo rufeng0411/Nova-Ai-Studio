@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nova Ai-Studio 销售指导手册</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <style>
+    
+  :root {
+    --nova-ink: #1a202c;
+    --nova-primary: #2d3748;
+    --nova-muted: #4a5568;
+    --nova-border: #e2e8f0;
+    --nova-bg: #f8fafc;
+    --nova-accent: #edf2f7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Inter', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.55;
+    color: var(--nova-ink);
+    margin: 0;
+    background: #fff;
+  }
+  .print-header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 14mm;
+    padding: 2mm 12mm;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--nova-border);
+    background: #fff;
+    z-index: 100;
+  }
+  .header-logo { height: 9mm; width: auto; }
+  .header-text { display: flex; flex-direction: column; line-height: 1.2; }
+  .header-brand { font-weight: 700; font-size: 9pt; color: var(--nova-primary); }
+  .header-doc { font-size: 7.5pt; color: var(--nova-muted); }
+  .print-footer {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    height: 10mm;
+    padding: 2mm 12mm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 7pt;
+    color: #718096;
+    border-top: 1px solid var(--nova-border);
+    background: #fff;
+  }
+  .doc-main {
+    padding: 18mm 14mm 14mm 14mm;
+  }
+  .doc-title {
+    font-size: 20pt;
+    font-weight: 700;
+    color: var(--nova-primary);
+    margin: 0 0 6mm;
+    padding-bottom: 3mm;
+    border-bottom: 2px solid var(--nova-primary);
+  }
+  .cover-page + .page-break + .doc-body .doc-title { display: none; }
+  .cover-page {
+    min-height: 240mm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(180deg, #fff 0%, var(--nova-bg) 100%);
+    margin: -18mm -14mm 0;
+    padding: 20mm;
+  }
+  .cover-logo {
+    display: block;
+    height: 28mm;
+    width: auto;
+    max-width: 75%;
+    object-fit: contain;
+    object-position: center;
+    margin: 0 auto 16px;
+  }
+  .cover-title { font-size: 26pt; color: var(--nova-primary); margin: 0 0 8px; border: none; }
+  .cover-sub { font-size: 12pt; color: var(--nova-muted); margin: 0 0 24px; }
+  .cover-tag { font-size: 9pt; color: #718096; letter-spacing: 0.08em; text-transform: uppercase; }
+  .page-break { page-break-after: always; }
+  h1 { font-size: 16pt; color: var(--nova-primary); margin: 5mm 0 3mm; }
+  h2 { font-size: 13pt; color: var(--nova-primary); margin: 4mm 0 2mm; border-left: 3px solid var(--nova-primary); padding-left: 8px; }
+  h3 { font-size: 11pt; margin: 3mm 0 2mm; }
+  h4 { font-size: 10pt; margin: 2mm 0 1mm; }
+  p { margin: 0 0 2.5mm; }
+  blockquote {
+    margin: 3mm 0;
+    padding: 3mm 4mm;
+    background: var(--nova-accent);
+    border-left: 3px solid var(--nova-muted);
+    font-size: 9.5pt;
+    color: var(--nova-muted);
+  }
+  hr.section-rule { border: none; border-top: 1px solid var(--nova-border); margin: 4mm 0; }
+  ul, ol { margin: 0 0 3mm; padding-left: 5mm; }
+  li { margin-bottom: 1mm; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 3mm 0 4mm;
+    font-size: 9pt;
+  }
+  th {
+    background: var(--nova-primary);
+    color: #fff;
+    font-weight: 600;
+    text-align: left;
+    padding: 2.5mm 3mm;
+  }
+  td {
+    border: 1px solid var(--nova-border);
+    padding: 2mm 3mm;
+    vertical-align: top;
+  }
+  tr:nth-child(even) td { background: var(--nova-bg); }
+  code {
+    font-family: Consolas, monospace;
+    font-size: 8.5pt;
+    background: var(--nova-accent);
+    padding: 0 3px;
+    border-radius: 2px;
+  }
+  pre {
+    background: #1a202c;
+    color: #e2e8f0;
+    padding: 3mm;
+    border-radius: 4px;
+    font-size: 8pt;
+    overflow-x: auto;
+  }
+  a { color: var(--nova-primary); }
+  .stats-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 5mm;
+    padding: 4mm;
+    background: var(--nova-accent);
+    border-radius: 6px;
+  }
+  .stat { flex: 1; min-width: 80px; text-align: center; }
+  .stat-val { display: block; font-size: 14pt; font-weight: 700; color: var(--nova-primary); }
+  .stat-lbl { font-size: 7.5pt; color: var(--nova-muted); }
+  .highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    margin-bottom: 5mm;
+  }
+  .hcard {
+    background: var(--nova-bg);
+    border: 1px solid var(--nova-border);
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 8.5pt;
+  }
+  .hcard .num { display: block; font-size: 7pt; color: #718096; margin-bottom: 2px; }
+  .color-palette { display: flex; gap: 6px; margin-bottom: 5mm; }
+  .swatch {
+    flex: 1; height: 36px; border-radius: 4px;
+    display: flex; align-items: flex-end; padding: 4px;
+  }
+  .swatch span { font-size: 6.5pt; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,.4); }
+  .dual-track { display: flex; gap: 10px; margin-bottom: 5mm; }
+  .track {
+    flex: 1; padding: 10px; border-radius: 6px;
+    background: var(--nova-bg); border: 1px solid var(--nova-border);
+  }
+  .track.saas { background: var(--nova-primary); color: #fff; }
+  .track.saas h4 { color: #fff; }
+  .pricing-tiers { display: flex; gap: 6px; margin-bottom: 5mm; }
+  .tier {
+    flex: 1; text-align: center; padding: 8px 4px;
+    border: 1px solid var(--nova-border); border-radius: 4px; font-size: 8.5pt;
+  }
+  .tier.featured { background: var(--nova-primary); color: #fff; border-color: var(--nova-primary); }
+  .tier.featured h4 { color: #fff; }
+  .tier h4 { margin: 0 0 4px; font-size: 9pt; }
+  .tier p { margin: 0; font-size: 7.5pt; }
+  .mermaid { margin: 4mm 0; text-align: center; }
+  .risk-high { background: #fed7d7; color: #c53030; padding: 2px 6px; border-radius: 3px; font-size: 8pt; margin-right: 6px; }
+  .risk-mid { background: #feebc8; color: #c05621; padding: 2px 6px; border-radius: 3px; font-size: 8pt; margin-right: 6px; }
+  .landscape table { font-size: 8pt; }
+  .landscape th, .landscape td { padding: 1.5mm 2mm; }
+
+    @page { size: A4 portrait; }
+  </style>
+</head>
+<body class="portrait">
+  <header class="print-header">
+    <img src="data:image/png;base64,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" alt="" class="header-logo" />
+    <div class="header-text">
+      <span class="header-brand">Nova Ai-Studio</span>
+      <span class="header-doc">销售</span>
+    </div>
+  </header>
+  <footer class="print-footer">
+    <span>Nova Ai Studio 2.0 · AI 营销创意生产平台</span>
+    <span class="footer-page"></span>
+  </footer>
+  <main class="doc-main">
+    
+<section class="cover-page">
+  <img class="cover-logo" src="data:image/png;base64,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" alt="Nova" />
+  <h1 class="cover-title">Nova Ai-Studio 销售指导手册</h1>
+  <p class="cover-sub">Nova Ai Studio 2.0 · 智能体创作平台</p>
+  <p class="cover-tag">官方品牌与市场资料</p>
+</section>
+<div class="page-break"></div>
+    <article class="doc-body">
+      <h1 class="doc-title">Nova Ai-Studio 销售指导手册</h1>
+      
+<div class="mermaid">
+flowchart TB
+  subgraph 获客
+    CH1[转介绍] --> CH2[活动/内容]
+    CH2 --> CH3[Outbound]
+  end
+  subgraph 转化
+    L[线索分级] --> B[破冰]
+    B --> D[分层演示]
+    D --> P[POC]
+    P --> C[签约]
+  end
+  获客 --> 转化
+</div>
+<div class="highlight-grid">
+  <div class="hcard"><span class="num">L0</span><strong>未觉醒</strong><br/>成果预览</div>
+  <div class="hcard"><span class="num">L1</span><strong>工具试用</strong><br/>项目文件夹</div>
+  <div class="hcard"><span class="num">L2</span><strong>流程意识</strong><br/>飞轮+模板</div>
+  <div class="hcard"><span class="num">L3</span><strong>采购评估</strong><br/>POC+差异化</div>
+</div><h1>Nova Ai-Studio 销售指导手册</h1>
+<blockquote><strong>适用对象</strong>：销售、渠道、售前、客户成功（对外口径）  </blockquote>
+<blockquote><strong>版本</strong>：2026-06 · 与 <a href="../00-口径与更新.html" target="_blank" rel="noopener noreferrer">00-口径与更新</a> 数字一致  </blockquote>
+<blockquote><strong>快速版</strong>：日常随身查阅见 <a href="销售手册-enablement.html" target="_blank" rel="noopener noreferrer">销售手册（速查）</a></blockquote>
+<hr class="section-rule" />
+<h2>本手册怎么用</h2>
+<table><thead><tr><th>场景</th><th>建议阅读</th></tr></thead><tbody><tr><td>新人 onboarding</td><td>第一～三章全文 + 第五章流程</td></tr><tr><td>找线索没方向</td><td>第一章 + 附录话术卡</td></tr><tr><td>客户刚加上微信</td><td>第二章破冰 + 第三章认知识别</td></tr><tr><td>准备见总监/CMO</td><td>第三章决策链 + 第六章报价</td></tr><tr><td>比稿/POC 前</td><td>第四章行业包 + 第八章 POC 标准</td></tr><tr><td><strong>政企 / 私有部署</strong></td><td><strong><a href="私有化与企业政务销售手册.html" target="_blank" rel="noopener noreferrer">私有化与企业政务销售手册</a></strong> 全文</td></tr></tbody></table>
+<p>演示现场操作步骤见 <a href="演示脚本-demo-script.html" target="_blank" rel="noopener noreferrer">演示脚本</a>；常见反驳见 <a href="异议处理-faq-sales.html" target="_blank" rel="noopener noreferrer">异议处理 FAQ</a>。</p>
+<hr class="section-rule" />
+<h2>第一章：如何寻找客户</h2>
+<h3>1.1 理想客户画像（ICP）</h3>
+<p>优先跟进<strong>同时满足</strong>以下 3 条以上的线索：</p>
+<table><thead><tr><th>维度</th><th>理想信号</th><th>弱信号（可培育）</th></tr></thead><tbody><tr><td>规模</td><td>市场部 5–50 人；或 10 人内工作室有稳定客户</td><td>仅 1–2 人兼职运营</td></tr><tr><td>流程</td><td>有固定 Campaign、比稿、周更内容节奏</td><td>「偶尔用一下 AI 写文案」</td></tr><tr><td>痛点</td><td>交付物散（微信/网盘/邮件）；GEO 新课题无人牵头</td><td>只把 AI 当聊天</td></tr><tr><td>预算</td><td>已有 AI/设计/投放工具订阅</td><td>完全零预算</td></tr><tr><td>部署</td><td>接受 SaaS；或明确要私有云</td><td>强合规但未立项</td></tr></tbody></table>
+<p>详细画像见 <a href="../product/用户画像与场景.html" target="_blank" rel="noopener noreferrer">用户画像与场景</a>；市场分层见 <a href="../market/目标市场与细分.html" target="_blank" rel="noopener noreferrer">目标市场与细分</a>。</p>
+<h3>1.2 线索从哪里来（8 条主渠道）</h3>
+<table><thead><tr><th>渠道</th><th>具体动作</th><th>每周建议量</th></tr></thead><tbody><tr><td><strong>老客户转介绍</strong></td><td>POC 成功后请总监引荐兄弟部门/子公司</td><td>2 条有效介绍</td></tr><tr><td><strong>行业活动</strong></td><td>营销峰会、GEO/AIGC 沙龙；扫码后 24h 内跟进</td><td>活动期集中跟进</td></tr><tr><td><strong>内容获客</strong></td><td>发「飞轮案例拆解」「模板试跑短视频」留资</td><td>1 篇 + 私信回复</td></tr><tr><td><strong>企微/社群</strong></td><td>品牌市场、增长、MCN 群主；先贡献再私聊</td><td>5 个高质量互动</td></tr><tr><td><strong>招聘信号</strong></td><td>招「AIGC 运营」「GEO 专员」「内容中台」的公司</td><td>筛选 10 家触达</td></tr><tr><td><strong>比稿季</strong></td><td>广告节前后工作室密集比稿；推 48h 比稿包话术</td><td>旺季加频</td></tr><tr><td><strong>合作伙伴</strong></td><td>云厂商、4A 下游、培训机构的联合 demo</td><td>按合作节奏</td></tr><tr><td><strong>Outbound 名单</strong></td><td>消费品、互联网、B2B SaaS 名单；按行业场景包分组</td><td>20 封个性化触达</td></tr></tbody></table>
+<p><strong>原则</strong>：每条触达带<strong>一个具体场景</strong>（如「新品 GEO 快检」「比稿落地页草稿」），不要只发产品介绍链接。</p>
+<h3>1.3 线索分级（跟进优先级）</h3>
+<table><thead><tr><th>级别</th><th>条件</th><th>下一步</th></tr></thead><tbody><tr><td><strong>A</strong></td><td>有明确项目 + 时间窗（如本月 Campaign）+ 决策人可约</td><td>48h 内约 30min 演示</td></tr><tr><td><strong>B</strong></td><td>痛点清晰但时间未定；使用者愿意试</td><td>发模板试跑链接 + 3 天后回访</td></tr><tr><td><strong>C</strong></td><td>仅好奇 AI；无项目</td><td>nurture：案例 + 免费版引导</td></tr><tr><td><strong>D</strong></td><td>无预算 / 纯比价 / 要无限 Token</td><td>礼貌搁置或降级免费版</td></tr></tbody></table>
+<h3>1.4 周度销售动作清单（可复制）</h3>
+<pre><code>周一：整理 A/B 线索，确认本周演示 2–3 场
+周二：Outbound + 社群互动；更新行业场景包话术
+周三：演示日（按脚本）；当场约 POC 标准
+周四：POC 跟进 + 总监层纪要（ROI 一句 + 成果截图）
+周五：输单/赢单复盘；转介绍请求；下周名单 20 条</code></pre>
+<hr class="section-rule" />
+<h2>第二章：怎样破冰</h2>
+<h3>2.1 破冰四条原则</h3>
+<ol>
+<li><strong>先场景后产品</strong>：从对方正在做的项目说起，不要开场「我们是 AI 平台」。</li>
+<li><strong>先给价值再邀约</strong>：愿意先发「竞品快览」模板示例路径，再约 demo。</li>
+<li><strong>对齐一个人称</strong>：对使用者用「你本周简报」；对总监用「你们团队产能」。</li>
+<li><strong>轻承诺</strong>：只说「15 分钟看一个项目怎么从一句话到可下载文件」，不承诺「替代全团队」。</li>
+</ol>
+<h3>2.2 五种场景破冰话术</h3>
+<h4>场景 A：微信加好友后（使用者）</h4>
+<blockquote>林姐你好，看到你们最近在推 [品类/活动]。我们帮市场团队用<strong>一条流程模板</strong>把调研简报、落地页草稿放在<strong>同一个项目文件夹</strong>里，对话里就能点开验收。方便的话我发你一个「竞品快览」示例路径，你 3 分钟能感受是不是省整理时间？</blockquote>
+<h4>场景 B：冷邮件（总监 / 市场负责人）</h4>
+<blockquote>主题：[品牌名] Q3 内容产能 + GEO 可见度  </blockquote>
+<blockquote> </blockquote>
+<blockquote>[姓名] 您好。注意到 [品牌] 在 [渠道] 持续投放。不少 10–50 人市场团队现在的瓶颈不是「写不出文案」，而是<strong>交付物散、GEO 缺系统方法</strong>。  </blockquote>
+<blockquote>Nova Ai-Studio 用营销飞轮六阶段 + 近 30 条模板，把简报、页面、监测报告收进<strong>一个项目空间</strong>。智能路由可节省约 70% Token 成本。  </blockquote>
+<blockquote>是否方便 <strong>15 分钟</strong> 看一次从模板到成果预览的流程？我可按您当前 Campaign 选演示路径。</blockquote>
+<h4>场景 C：活动展台 / 直播弹幕</h4>
+<blockquote>您刚问的「不知道从哪步开始」——建议直接在输入框点 <strong>「模板」</strong>，选「GEO 快检」或「小红书爆款」，会预填一整条工作流，跑完在对话里点文件就能验收，不用自己拼提示词。</blockquote>
+<h4>场景 D：转介绍</h4>
+<blockquote>感谢 [介绍人] 推荐。我们给 [公司] 同事做 POC 时，重点是 <strong>[具体成果，如 2 份可预览 md + 1 份落地页 html]</strong>。想和您对齐一下：你们这边更关心 <strong>比稿速度</strong> 还是 <strong>GEO/监测闭环</strong>？我按优先级准备 15 分钟演示。</blockquote>
+<h4>场景 E：对方说「先发资料」</h4>
+<blockquote>可以。先发您三样：① <a href="../product/产品总览-one-pager.html" target="_blank" rel="noopener noreferrer">产品总览一页纸</a> ② 与您行业接近的 <strong><a href="../market/行业场景包.html" target="_blank" rel="noopener noreferrer">行业场景包</a></strong> 节选 ③ 一个 <strong>7 分钟录屏</strong>（模板→成果预览）。资料后我 <strong>周三</strong> 再和您确认是否有兴趣看 live demo，避免您先被长 PDF 淹没。</blockquote>
+<h3>2.3 邀约演示的标准句式</h3>
+<table><thead><tr><th>对象</th><th>邀约句</th></tr></thead><tbody><tr><td>使用者</td><td>「下周二 15 分钟，我带您从模板点一下到产出文件，您判断省不省您整理时间。」</td></tr><tr><td>总监</td><td>「30 分钟：飞轮怎么覆盖调研到监测 + 团队用量怎么看，您带一位实际执行的同事一起。」</td></tr><tr><td>IT</td><td>「20 分钟技术向：租户隔离、云端文件枢纽、私有部署选项，不讲营销话术。」</td></tr></tbody></table>
+<h3>2.4 破冰后 24 小时内必做</h3>
+<ul>
+<li>发送会议纪要（3 行：痛点、约定演示时间、准备材料）</li>
+<li>若未约演示：发<strong>一个</strong>模板名称 + 预期产出物类型（md/html/pdf）</li>
+<li>日历邀请写明：演示环境（SaaS 试用账号 / 屏幕共享）</li>
+</ul>
+<hr class="section-rule" />
+<h2>第三章：客户认知分层与应对策略</h2>
+<p>用 <strong>L0–L4</strong> 判断客户阶段，<strong>同一场会议也可能混层</strong>——对决策者 L2，对执行人 L0。</p>
+<h3>3.1 认知分层总表</h3>
+<table><thead><tr><th>层级</th><th>客户状态</th><th>识别信号</th><th>沟通重点</th><th>避免</th></tr></thead><tbody><tr><td><strong>L0 未觉醒</strong></td><td>不知道 AI 能交付项目</td><td>「AI 不是聊天吗？」</td><td>成果预览、模板一键</td><td>讲模型名、讲架构</td></tr><tr><td><strong>L1 工具试用</strong></td><td>用过 ChatGPT/豆包写稿</td><td>「我们也在用 XX」</td><td>补<strong>项目文件夹 + 飞轮</strong></td><td>贬低现有工具</td></tr><tr><td><strong>L2 流程意识</strong></td><td>有 SOP，但靠人串联</td><td>「同事之间传文件很累」</td><td>飞轮六阶段 + 模板</td><td>一次讲 400+ 能力</td></tr><tr><td><strong>L3 采购评估</strong></td><td>比价、要 POC</td><td>「和 Coze/Dify 区别？」</td><td>差异化矩阵 + POC 标准</td><td>口头承诺 SLA</td></tr><tr><td><strong>L4 企业扩展</strong></td><td>多部门、私有化</td><td>「安全、审计、席位」</td><td>安全白皮书 + 套餐</td><td>过度技术恐吓</td></tr></tbody></table>
+<h3>3.2 分类型客户：怎么说</h3>
+<h4>类型 1：品牌市场团队（消费品 / 互联网）</h4>
+<table><thead><tr><th>层级</th><th>推荐话术</th></tr></thead><tbody><tr><td>L0–L1</td><td>「一次 Campaign 从简报到监测报告，可以在<strong>同一个 Nova 项目</strong>里完成，不用微信传文件。」</td></tr><tr><td>L2–L3</td><td>「飞轮 1 调研 → 6 监测，GEO 能力贯穿；模板『品牌 Campaign 全案』可 POC。」</td></tr><tr><td>L4</td><td>「团队版积分池 + 用量报表；敏感 Campaign 可私有部署。」</td></tr></tbody></table>
+<p>行业包：<a href="../market/行业场景包.html#包-1品牌市场消费品--互联网" target="_blank" rel="noopener noreferrer">行业场景包 §1</a></p>
+<h4>类型 2：B2B 增长团队</h4>
+<table><thead><tr><th>层级</th><th>推荐话术</th></tr></thead><tbody><tr><td>L0–L1</td><td>「增长要落地页和邮件草稿快，不用等设计排期——模板出 html/md 可 A/B。」</td></tr><tr><td>L2–L3</td><td>「ICP 调研 → 落地页 → 触达，一条增长全案模板；对比 Coze 是我们<strong>营销垂直 + 成果验收</strong>。」</td></tr><tr><td>L4</td><td>「线索内容进统一项目，方便总监看 MQL 素材产出节奏。」</td></tr></tbody></table>
+<h4>类型 3：广告 / MCN 工作室</h4>
+<table><thead><tr><th>层级</th><th>推荐话术</th></tr></thead><tbody><tr><td>L0–L1</td><td>「比稿要<strong>看得见的东西</strong>：策略 md + 对比页 html，48 小时包。」</td></tr><tr><td>L2–L3</td><td>「轻量模板先抢时间，标准模板补深度；150 套设计系统辅助起稿。」</td></tr><tr><td>L4</td><td>「多客户项目用文件夹隔离；按席计费控成本。」</td></tr></tbody></table>
+<h4>类型 4：教育教研</h4>
+<table><thead><tr><th>层级</th><th>推荐话术</th></tr></thead><tbody><tr><td>L0–L1</td><td>「教育学习 Tab 与营销飞轮分开，按学段找能力，不混在通用聊天里。」</td></tr><tr><td>L2–L3</td><td>「备课、学术写作模板；演示走教育子类 Pill。」</td></tr></tbody></table>
+<h4>类型 5：政企 / 强合规</h4>
+<table><thead><tr><th>层级</th><th>推荐话术</th></tr></thead><tbody><tr><td>L0–L2</td><td>先 IT：租户隔离、JWT、路径校验；再业务：模板效率</td></tr><tr><td>L3–L4</td><td>私有 Docker 部署、数据不出边界；温和安全叙事，见 <a href="../trust/安全与信任白皮书-简版.html" target="_blank" rel="noopener noreferrer">安全白皮书</a></td></tr></tbody></table>
+<h3>3.3 决策链角色：同一场景不同说法</h3>
+<pre><code>使用者（策划/运营）→ 影响者（市场总监）→ 决策（CMO/CEO）→ 技术把关（IT/安全）</code></pre>
+<table><thead><tr><th>角色</th><th>他最关心</th><th>你用哪句话</th><th>带什么材料</th></tr></thead><tbody><tr><td><strong>使用者</strong></td><td>好不好用、少加班</td><td>「模板点一下，文件在对话里能点开」</td><td>演示脚本、模板名</td></tr><tr><td><strong>总监</strong></td><td>ROI、产能、GEO</td><td>「飞轮闭环 + Token 路由省成本」</td><td>行业场景包、竞品矩阵</td></tr><tr><td><strong>CMO</strong></td><td>差异化、品牌安全</td><td>「营销垂直平台，不是通用聊天」</td><td>信息屋、四列对照</td></tr><tr><td><strong>IT</strong></td><td>隔离、部署、审计</td><td>「租户云端枢纽、可私有部署」</td><td>安全白皮书、双轨对照</td></tr></tbody></table>
+<p><strong>技巧</strong>：演示会请<strong>使用者操作</strong>，你对总监<strong>同步解释业务价值</strong>；IT 专场<strong>单独 20 分钟</strong>，不复用营销话术。</p>
+<h3>3.4 高频问题 → 认知层映射</h3>
+<table><thead><tr><th>客户问题</th><th>多半处于</th><th>应答方向</th></tr></thead><tbody><tr><td>「和 ChatGPT 有什么区别？」</td><td>L1</td><td>项目交付层、成果预览、飞轮</td></tr><tr><td>「我们已经有 Coze 了」</td><td>L2–L3</td><td>市场模板深度、GEO、少搭建</td></tr><tr><td>「多少钱？贵不贵？」</td><td>L3</td><td>订阅+积分、路由省钱、POC 积分包</td></tr><tr><td>「数据安全吗？」</td><td>L3–L4</td><td>租户隔离、私有部署、白皮书</td></tr><tr><td>「能不能替代设计师？」</td><td>L1–L2</td><td>降门槛加速草案，终审在人</td></tr><tr><td>「就一个人试试」</td><td>L1</td><td>个人 Pro → 再扩席</td></tr></tbody></table>
+<p>详细应答见 <a href="异议处理-faq-sales.html" target="_blank" rel="noopener noreferrer">异议处理 FAQ</a>。</p>
+<hr class="section-rule" />
+<h2>第四章：标准销售流程（七步）</h2>
+<pre><code>flowchart LR
+  A[线索] --&gt; B[破冰]
+  B --&gt; C[需求确认]
+  C --&gt; D[分层演示]
+  D --&gt; E[POC]
+  E --&gt; F[商务]
+  F --&gt; G[签约/扩展]</code></pre>
+<table><thead><tr><th>步骤</th><th>目标</th><th>产出物</th></tr></thead><tbody><tr><td>1 线索</td><td>判断 ICP + 分级</td><td>CRM 备注行业与层级</td></tr><tr><td>2 破冰</td><td>约到演示</td><td>场景一句话 + 时间</td></tr><tr><td>3 需求确认</td><td>选对模板与飞轮阶段</td><td>纪要：痛点 + 成功标准</td></tr><tr><td>4 分层演示</td><td>对口角色</td><td>按 <a href="演示脚本-demo-script.html" target="_blank" rel="noopener noreferrer">演示脚本</a></td></tr><tr><td>5 POC</td><td>可验收成果</td><td>≥2 个可预览文件（见第八章）</td></tr><tr><td>6 商务</td><td>套餐与合同附件</td><td>报价单 + POC 纪要</td></tr><tr><td>7 签约/扩展</td><td>增席、私有、续费</td><td>转介绍 + 案例授权（若允许）</td></tr></tbody></table>
+<hr class="section-rule" />
+<h2>第五章：卖点与演示要点（浓缩）</h2>
+<h3>5.1 卖点顺序（任何介绍都按此顺序）</h3>
+<ol>
+<li><strong>一句话交付项目</strong>（不是聊天）</li>
+<li><strong>营销飞轮六阶段</strong>（垂直深度）</li>
+<li><strong>400+ 能力 + 近 30 模板</strong>（低门槛）</li>
+<li><strong>智能路由省 Token ~70%</strong>（成本）</li>
+<li><strong>企业 SaaS 可部署</strong>（信任）</li>
+</ol>
+<h3>5.2 十五分钟演示缩略</h3>
+<table><thead><tr><th>分钟</th><th>动作</th></tr></thead><tbody><tr><td>0–2</td><td>登录 + 产品弹窗八大亮点</td></tr><tr><td>2–5</td><td>选「竞品快览」或「GEO 快检」模板 → 试一下</td></tr><tr><td>5–9</td><td>能力中心飞轮 Tab → 点一张卡片试一下</td></tr><tr><td>9–12</td><td>展示对话内成果预览 + 下载</td></tr><tr><td>12–15</td><td>SaaS 后台用量 / 安全一句 + 套餐</td></tr></tbody></table>
+<hr class="section-rule" />
+<h2>第六章：报价与商务谈判</h2>
+<h3>6.1 报价开场</h3>
+<p>「Nova 按 <strong>订阅 + 积分</strong> 收：订阅解锁团队和模板，积分按实际 AI 消耗扣，我们内置路由帮您省 Token。」</p>
+<h3>6.2 套餐怎么推</h3>
+<table><thead><tr><th>客户形态</th><th>首推</th><th>升级路径</th></tr></thead><tbody><tr><td>个人创作者</td><td>个人 Pro</td><td>加席变团队</td></tr><tr><td>5–20 人市场部</td><td>团队版 + 积分池</td><td>企业私有</td></tr><tr><td>比稿工作室</td><td>2–5 席 + 轻量模板包</td><td>标准/全案模板培训</td></tr><tr><td>强合规企业</td><td>私有部署年费</td><td>维保 + 代采算力</td></tr></tbody></table>
+<p>详见 <a href="../business/商业模式与套餐.html" target="_blank" rel="noopener noreferrer">商业模式与套餐</a>。</p>
+<h3>6.3 谈判底线（对外统一）</h3>
+<ul>
+<li>不承诺「无限 Token」</li>
+<li>不贬低客户现有 ChatGPT 投资（说「补项目交付层」）</li>
+<li>未上线认证不写进合同（如 ISO，标待补充）</li>
+<li>POC 成功标准写进附件，避免「感觉不好用」争议</li>
+</ul>
+<hr class="section-rule" />
+<h2>第七章：竞品与行业速查</h2>
+<table><thead><tr><th>客户类型</th><th>打开</th></tr></thead><tbody><tr><td>品牌市场</td><td><a href="../market/行业场景包.html#包-1品牌市场消费品--互联网" target="_blank" rel="noopener noreferrer">行业场景包 §1</a></td></tr><tr><td>B2B 增长</td><td><a href="../market/行业场景包.html#包-2增长团队b2b-saas" target="_blank" rel="noopener noreferrer">§2</a></td></tr><tr><td>广告工作室</td><td><a href="../market/行业场景包.html#包-3广告--mcn-工作室" target="_blank" rel="noopener noreferrer">§3</a></td></tr><tr><td>教育</td><td><a href="../market/行业场景包.html#包-4教育教研" target="_blank" rel="noopener noreferrer">§4</a></td></tr><tr><td>政企</td><td><a href="../market/行业场景包.html#包-5政企宣传--大型国企市场" target="_blank" rel="noopener noreferrer">§5</a></td></tr></tbody></table>
+<p>竞品反击句见 <a href="../market/竞品与差异化矩阵.html" target="_blank" rel="noopener noreferrer">竞品矩阵</a>。</p>
+<hr class="section-rule" />
+<h2>第八章：POC 与交付材料</h2>
+<h3>8.1 POC 成功标准（建议写入合同附件）</h3>
+<ul>
+<li>指定模板跑通 1 次，产出 <strong>≥2 个可预览文件</strong></li>
+<li>飞轮至少覆盖 <strong>3 个阶段</strong>能力</li>
+<li>SaaS：租户内多用户不串项目</li>
+<li>用量报表可导出（若已开通）</li>
+</ul>
+<h3>8.2 给客户的标准材料包</h3>
+<table><thead><tr><th>材料</th><th>说明</th></tr></thead><tbody><tr><td>产品总览</td><td><a href="../product/产品总览-one-pager.html" target="_blank" rel="noopener noreferrer">产品总览-one-pager</a></td></tr><tr><td>四列对照</td><td><code>npm run brand:product-brief-pdf</code></td></tr><tr><td>安全简版</td><td><a href="../trust/安全与信任白皮书-简版.html" target="_blank" rel="noopener noreferrer">安全白皮书</a></td></tr><tr><td>套餐</td><td><a href="../business/商业模式与套餐.html" target="_blank" rel="noopener noreferrer">商业模式与套餐</a></td></tr><tr><td>本手册 PDF</td><td><code>about/pdf/sales/销售指导手册.pdf</code></td></tr></tbody></table>
+<hr class="section-rule" />
+<h2>附录 A：话术卡片（打印用）</h2>
+<h3>卡片 1 — 30 秒电梯演讲</h3>
+<blockquote>Nova Ai-Studio 是 <strong>AI 营销创意生产平台</strong>：用对话驱动项目，从调研到监测一条飞轮，<strong>400+ 能力、近 30 条模板</strong>开箱即用，成果在对话里可预览验收；企业版多租户可部署，智能路由最高约省 <strong>70% Token</strong>。</blockquote>
+<h3>卡片 2 — 对比 ChatGPT 一句</h3>
+<blockquote>ChatGPT 擅长回答；Nova 擅长<strong>把一整档项目交付到文件夹里</strong>——简报、落地页、监测报告能点开验收。</blockquote>
+<h3>卡片 3 — 对比 Coze/Dify 一句</h3>
+<blockquote>编排平台要工程师搭节点；Nova 给市场同事<strong>点模板就跑</strong>，飞轮和 GEO 已分好类。</blockquote>
+<h3>卡片 4 — 约演示一句</h3>
+<blockquote>15 分钟：从模板到可下载文件，您判断省不省整理时间。</blockquote>
+<h3>卡片 5 — 约 POC 一句</h3>
+<blockquote>2 周 POC：指定模板跑通，验收 <strong>2 个可预览成果 + 飞轮 3 阶段</strong>，我们再谈席位。</blockquote>
+<hr class="section-rule" />
+<h2>附录 B：相关文档索引</h2>
+<ul>
+<li><a href="私有化与企业政务销售手册.html" target="_blank" rel="noopener noreferrer">私有化与企业政务销售手册</a>（政企 / 私有 / 定制专册）</li>
+<li><a href="销售手册-enablement.html" target="_blank" rel="noopener noreferrer">销售手册（速查）</a></li>
+<li><a href="演示脚本-demo-script.html" target="_blank" rel="noopener noreferrer">演示脚本</a></li>
+<li><a href="异议处理-faq-sales.html" target="_blank" rel="noopener noreferrer">异议处理 FAQ</a></li>
+<li><a href="../brand/信息屋-messaging-house.html" target="_blank" rel="noopener noreferrer">信息屋</a></li>
+<li><a href="四列产品对照表.html" target="_blank" rel="noopener noreferrer">四列产品对照表</a></li>
+</ul>
+    </article>
+  </main>
+  <script>
+    mermaid.initialize({ startOnLoad: false, theme: 'neutral', securityLevel: 'loose', fontFamily: 'Inter, Microsoft YaHei, sans-serif' });
+    document.addEventListener('DOMContentLoaded', async () => {
+      const nodes = document.querySelectorAll('.mermaid');
+      if (nodes.length && window.mermaid) {
+        await mermaid.run({ nodes });
+      }
+    });
+  </script>
+</body>
+</html>

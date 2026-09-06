@@ -1,0 +1,61 @@
+{
+  "id": "geo-multi-turn-html",
+  "description": "GEO multi-turn: platform removed → missingPaths must not include zhihu/xiaohongshu/wechat",
+  "userGoal": "GEO 行业深度调查：输出调研 md、图表 md、平台成稿（小红书/知乎/公众号）",
+  "sessionManifest": {
+    "manifestVersion": 2,
+    "goalVersion": 2,
+    "profileId": "profile_geo",
+    "taskArtifactDir": "artifacts/task-20260710-f4424421",
+    "sessionGoalAnchor": "GEO 行业深度调查",
+    "slots": [
+      {
+        "id": "profile_geo_research",
+        "label": "调研 md",
+        "kind": "markdown",
+        "pathHint": "research.md",
+        "required": true,
+        "status": "done"
+      },
+      {
+        "id": "profile_geo_charts",
+        "label": "图表 md",
+        "kind": "markdown",
+        "pathHint": "charts.md",
+        "required": true,
+        "status": "done"
+      },
+      {
+        "id": "profile_geo_platform",
+        "label": "平台成稿",
+        "kind": "markdown",
+        "required": true,
+        "status": "removed",
+        "count": 3
+      },
+      {
+        "id": "mutation_manual",
+        "label": "GEO 操作手册白皮书",
+        "kind": "markdown",
+        "pathHint": "geo-operation-manual.md",
+        "required": true,
+        "status": "done"
+      }
+    ]
+  },
+  "validationResult": {
+    "verified": [
+      "artifacts/task-20260710-f4424421/research.md",
+      "artifacts/task-20260710-f4424421/charts.md",
+      "artifacts/task-20260710-f4424421/geo-operation-manual.md"
+    ],
+    "missing": [
+      "artifacts/task-20260710-f4424421/zhihu-draft.md",
+      "artifacts/task-20260710-f4424421/xiaohongshu-draft.md"
+    ],
+    "broken": []
+  },
+  "expectedAcceptance": "passed",
+  "expectedContinuationAction": "none",
+  "invariants": ["INV-GEO-REMOVED-PLATFORM"]
+}

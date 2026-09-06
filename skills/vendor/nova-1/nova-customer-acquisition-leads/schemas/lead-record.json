@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://novapage.local/skills/customer-acquisition-leads/schemas/lead-record.json",
+  "title": "Customer Acquisition Lead Record",
+  "description": "Normalized lead after Phase E extraction and validation.",
+  "type": "object",
+  "required": ["company_name", "need_type", "title", "description", "source_url"],
+  "properties": {
+    "company_name": { "type": "string" },
+    "industry": { "type": "string" },
+    "need_type": { "type": "string" },
+    "title": { "type": "string" },
+    "description": { "type": "string" },
+    "procurement_unit": { "type": "string" },
+    "contact_info": { "type": "string" },
+    "project_unit": { "type": "string" },
+    "supervision_unit": { "type": "string" },
+    "amount": { "type": "string" },
+    "budget": { "type": "string" },
+    "deadline": { "type": "string" },
+    "bid_deadline": { "type": "string" },
+    "project_id": { "type": "string" },
+    "source_url": { "type": "string", "format": "uri" },
+    "contact_candidates": {
+      "type": "array",
+      "items": { "type": "string" },
+      "maxItems": 12
+    },
+    "extraction_confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "field_provenance": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "source": { "type": "string" },
+          "confidence": { "type": "number" }
+        }
+      }
+    },
+    "intent_label": {
+      "type": "string",
+      "enum": [
+        "procurement_tender",
+        "purchase_inquiry",
+        "outsourcing",
+        "b2b_lead",
+        "social_c_end",
+        "noise_irrelevant"
+      ]
+    },
+    "intent_reason": { "type": "string" },
+    "noise_flags": { "type": "array", "items": { "type": "string" } },
+    "match_score": { "type": "number", "minimum": 0, "maximum": 1 },
+    "audience_type": { "type": "string", "enum": ["b2b", "b2g", "c_end", "unknown"] },
+    "content_evidence": { "type": "string", "maxLength": 400 },
+    "social_signal": { "type": "string", "enum": ["post", "comment", "both"] },
+    "demand_snippet": { "type": "string", "maxLength": 200 },
+    "intent_summary": { "type": "string" },
+    "lead_overview": { "type": "string", "maxLength": 320 },
+    "intent_tags": { "type": "array", "items": { "type": "string" } },
+    "confidence_score": { "type": "integer", "minimum": 1, "maximum": 5 },
+    "track_level": { "type": "string", "enum": ["High", "Medium", "Low"] },
+    "track_reason": { "type": "string" },
+    "contact_flags": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

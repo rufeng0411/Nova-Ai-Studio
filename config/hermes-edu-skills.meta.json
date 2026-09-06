@@ -1,0 +1,2841 @@
+{
+  "generated_at": "2026-06-04T13:14:35.817Z",
+  "source_repo": "https://github.com/zhongweiv/hermes-edu-skills.git",
+  "source_ref": "main",
+  "source_commit": "3646be2df00e89540617fac6393475e7716cc10b",
+  "catalog_version": "0.18.6",
+  "skill_count": 188,
+  "skipped": 0,
+  "categories": [
+    "teacher-tools",
+    "learning-assistant",
+    "textbook-sync",
+    "exam-prep",
+    "daily-practice",
+    "reading-writing",
+    "family-education",
+    "preschool"
+  ],
+  "skills": {
+    "adult-language-learning": {
+      "slug": "adult-language-learning",
+      "category": "learning-assistant",
+      "hub_sort": 100,
+      "title": "成人语言学习",
+      "description": "把成人语言学习从收藏资料变成真实场景输入、主动输出、纠错和复现。核心不是再推荐一堆资料，而是让用户今天能完成一个可检查的小成果。",
+      "task_summary": "成人语言学习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "adult-vocational-certificate": {
+      "slug": "adult-vocational-certificate",
+      "category": "exam-prep",
+      "hub_sort": 300,
+      "title": "职业证书备考",
+      "description": "把职业证书备考从买课和刷题变成考纲拆解、知识框架、练习、错题和复测计划。核心不是再推荐一堆资料，而是让用户今天能完成一个可检查的小成果。",
+      "task_summary": "职业证书备考",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "adult-workplace-writing": {
+      "slug": "adult-workplace-writing",
+      "category": "reading-writing",
+      "hub_sort": 500,
+      "title": "职场写作",
+      "description": "把职场写作从漂亮话变成目标明确、对象清楚、行动可落地的沟通文本。核心不是再推荐一堆资料，而是让用户今天能完成一个可检查的小成果。",
+      "task_summary": "职场写作",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "civil-service-aptitude": {
+      "slug": "civil-service-aptitude",
+      "category": "exam-prep",
+      "hub_sort": 301,
+      "title": "公务员行测",
+      "description": "把公务员行测备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "公务员行测",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "civil-service-essay": {
+      "slug": "civil-service-essay",
+      "category": "exam-prep",
+      "hub_sort": 302,
+      "title": "公务员申论",
+      "description": "把公务员申论备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "公务员申论",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-certification-sprint": {
+      "slug": "teacher-certification-sprint",
+      "category": "exam-prep",
+      "hub_sort": 303,
+      "title": "教师资格证备考",
+      "description": "把教师资格证备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "教师资格证备考",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "college-academic-writing": {
+      "slug": "college-academic-writing",
+      "category": "reading-writing",
+      "hub_sort": 501,
+      "title": "学术写作",
+      "description": "学术写作帮助成人学习者把学术写作从零散资料堆砌变成问题、论点、证据、结构和引用意识清晰的写作过程，输出结构更清楚、证据更扎实、符合学术诚信的写作修改方案，而不是替用户一次性完成任务。",
+      "task_summary": "学术写作",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "college-cet4-sprint": {
+      "slug": "college-cet4-sprint",
+      "category": "exam-prep",
+      "hub_sort": 304,
+      "title": "大学英语四级备考",
+      "description": "把大学英语四级备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "大学英语四级备考",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "college-cet6-sprint": {
+      "slug": "college-cet6-sprint",
+      "category": "exam-prep",
+      "hub_sort": 305,
+      "title": "大学英语六级备考",
+      "description": "把大学英语六级备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "大学英语六级备考",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "college-cs-data-structure": {
+      "slug": "college-cs-data-structure",
+      "category": "learning-assistant",
+      "hub_sort": 101,
+      "title": "数据结构",
+      "description": "把数据结构从抽象概念变成图示理解、手写过程、代码实现和题目迁移。核心不是再推荐一堆资料，而是让用户今天能完成一个可检查的小成果。",
+      "task_summary": "数据结构",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "college-ai-foundation": {
+      "slug": "college-ai-foundation",
+      "category": "learning-assistant",
+      "hub_sort": 102,
+      "title": "AI 基础",
+      "description": "把 AI 基础学习从热词堆砌变成概念地图、可运行小实验、产品场景和伦理边界。核心不是再推荐一堆资料，而是让用户今天能完成一个可检查的小成果。",
+      "task_summary": "AI 基础",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "college-cs-algorithm-interview": {
+      "slug": "college-cs-algorithm-interview",
+      "category": "learning-assistant",
+      "hub_sort": 103,
+      "title": "算法面试",
+      "description": "把算法面试准备从盲目刷题变成题型识别、思路表达、复杂度分析和复盘沉淀。核心不是再推荐一堆资料，而是让用户今天能完成一个可检查的小成果。",
+      "task_summary": "算法面试",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "college-cs-python": {
+      "slug": "college-cs-python",
+      "category": "learning-assistant",
+      "hub_sort": 104,
+      "title": "Python 学习",
+      "description": "把 Python 学习从“看完教程就忘”变成语法理解、小项目、调试反馈和作品沉淀。核心不是再推荐一堆资料，而是让用户今天能完成一个可检查的小成果。",
+      "task_summary": "Python 学习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "college-data-analysis": {
+      "slug": "college-data-analysis",
+      "category": "learning-assistant",
+      "hub_sort": 105,
+      "title": "数据分析",
+      "description": "把数据分析学习从工具教程变成业务问题、数据清洗、可视化、结论和报告表达。核心不是再推荐一堆资料，而是让用户今天能完成一个可检查的小成果。",
+      "task_summary": "数据分析",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "ielts-prep": {
+      "slug": "ielts-prep",
+      "category": "exam-prep",
+      "hub_sort": 306,
+      "title": "雅思备考",
+      "description": "把雅思备考从背资料变成听说读写诊断、分项训练、输出反馈和复测节奏。核心不是再推荐一堆资料，而是让用户今天能完成一个可检查的小成果。",
+      "task_summary": "雅思备考",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "postgraduate-english-sprint": {
+      "slug": "postgraduate-english-sprint",
+      "category": "exam-prep",
+      "hub_sort": 307,
+      "title": "考研英语备考",
+      "description": "把考研英语备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "考研英语备考",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "toefl-prep": {
+      "slug": "toefl-prep",
+      "category": "exam-prep",
+      "hub_sort": 308,
+      "title": "托福备考",
+      "description": "把托福备考从材料堆积变成听说读写任务链、学术场景输入和可复测的输出反馈。核心不是再推荐一堆资料，而是让用户今天能完成一个可检查的小成果。",
+      "task_summary": "托福备考",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-biology-bs-textbook-sync": {
+      "slug": "junior-biology-bs-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 200,
+      "title": "北师大版初中生物同步",
+      "description": "把北师大版初中生物的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。把生物教材同步做成能看图、会解释、能用证据表达的学习过程。",
+      "task_summary": "北师大版初中生物同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-biology-exam-review": {
+      "slug": "junior-biology-exam-review",
+      "category": "exam-prep",
+      "hub_sort": 309,
+      "title": "初中生物考试复习",
+      "description": "把初中生物考试备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "初中生物考试复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-biology-quick-practice": {
+      "slug": "junior-biology-quick-practice",
+      "category": "daily-practice",
+      "hub_sort": 400,
+      "title": "初中生物快速巩固",
+      "description": "把初中生物每日打卡做成 10-15 分钟可坚持、可反馈、可复现的短训练。重点不是多刷题，而是围绕结构功能、生命过程、图表信息和实验变量形成当天闭环。",
+      "task_summary": "初中生物快速巩固",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-biology-rj-textbook-sync": {
+      "slug": "junior-biology-rj-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 201,
+      "title": "人教版初中生物同步",
+      "description": "把人教版初中生物的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。把生物教材同步做成能看图、会解释、能用证据表达的学习过程。",
+      "task_summary": "人教版初中生物同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-chemistry-exam-review": {
+      "slug": "junior-chemistry-exam-review",
+      "category": "exam-prep",
+      "hub_sort": 310,
+      "title": "初中化学考试复习",
+      "description": "把初中化学考试备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "初中化学考试复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-chemistry-lk-textbook-sync": {
+      "slug": "junior-chemistry-lk-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 202,
+      "title": "鲁科版初中化学同步",
+      "description": "把鲁科版初中化学的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。让化学同步学习不止记结论，而是能解释现象、写对符号、看懂实验。",
+      "task_summary": "鲁科版初中化学同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-chemistry-quick-practice": {
+      "slug": "junior-chemistry-quick-practice",
+      "category": "daily-practice",
+      "hub_sort": 401,
+      "title": "初中化学快速巩固",
+      "description": "把初中化学每日打卡做成 10-15 分钟可坚持、可反馈、可复现的短训练。重点不是多刷题，而是围绕概念辨析、实验现象、化学用语和反应规律形成当天闭环。",
+      "task_summary": "初中化学快速巩固",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-chemistry-rj-textbook-sync": {
+      "slug": "junior-chemistry-rj-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 203,
+      "title": "人教版初中化学同步",
+      "description": "把人教版初中化学的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。让化学同步学习不止记结论，而是能解释现象、写对符号、看懂实验。",
+      "task_summary": "人教版初中化学同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-chinese-composition": {
+      "slug": "junior-chinese-composition",
+      "category": "reading-writing",
+      "hub_sort": 502,
+      "title": "初中作文提升",
+      "description": "初中作文提升帮助学生把作文辅导从“代写一篇”变成审题、立意、选材、结构、语言和修改的全过程指导，输出可修改、可复盘、可继续练的阅读/写作任务，而不是替用户一次性完成任务。",
+      "task_summary": "初中作文提升",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-chinese-exam-review": {
+      "slug": "junior-chinese-exam-review",
+      "category": "exam-prep",
+      "hub_sort": 311,
+      "title": "初中语文考试复习",
+      "description": "把初中语文考试备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "初中语文考试复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-chinese-modern-reading": {
+      "slug": "junior-chinese-modern-reading",
+      "category": "reading-writing",
+      "hub_sort": 503,
+      "title": "初中现代文阅读",
+      "description": "初中现代文阅读帮助学生把阅读训练从“做题对答案”升级为读懂文本、找到依据、组织表达和迁移方法，输出可修改、可复盘、可继续练的阅读/写作任务，而不是替用户一次性完成任务。",
+      "task_summary": "初中现代文阅读",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-chinese-quick-practice": {
+      "slug": "junior-chinese-quick-practice",
+      "category": "daily-practice",
+      "hub_sort": 402,
+      "title": "初中语文快速巩固",
+      "description": "把初中语文每日打卡做成 10-15 分钟可坚持、可反馈、可复现的短训练。重点不是多刷题，而是围绕字词积累、阅读依据、表达完整度和错字订正形成当天闭环。",
+      "task_summary": "初中语文快速巩固",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-chinese-tongbian-textbook-sync": {
+      "slug": "junior-chinese-tongbian-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 204,
+      "title": "统编版初中语文同步",
+      "description": "把统编版初中语文的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。让家长和学生知道今天这篇课文到底要学会什么、怎么练才不空泛。",
+      "task_summary": "统编版初中语文同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-english-exam-review": {
+      "slug": "junior-english-exam-review",
+      "category": "exam-prep",
+      "hub_sort": 312,
+      "title": "初中英语考试复习",
+      "description": "把初中英语考试备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "初中英语考试复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-english-quick-practice": {
+      "slug": "junior-english-quick-practice",
+      "category": "daily-practice",
+      "hub_sort": 403,
+      "title": "初中英语快速巩固",
+      "description": "把初中英语每日打卡做成 10-15 分钟可坚持、可反馈、可复现的短训练。重点不是多刷题，而是围绕词汇复现、语境理解、拼写准确和句子输出形成当天闭环。",
+      "task_summary": "初中英语快速巩固",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-english-rj-textbook-sync": {
+      "slug": "junior-english-rj-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 205,
+      "title": "人教版初中英语同步",
+      "description": "把人教版初中英语的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。让英语同步学习从背单词变成会听、会读、会说、会写的短任务。",
+      "task_summary": "人教版初中英语同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-english-vocabulary-daily": {
+      "slug": "junior-english-vocabulary-daily",
+      "category": "daily-practice",
+      "hub_sort": 404,
+      "title": "初中英语词汇每日练",
+      "description": "把初中英语每日打卡做成 10-15 分钟可坚持、可反馈、可复现的短训练。重点不是多刷题，而是围绕词汇复现、语境理解、拼写准确和句子输出形成当天闭环。",
+      "task_summary": "初中英语词汇每日练",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-english-writing": {
+      "slug": "junior-english-writing",
+      "category": "reading-writing",
+      "hub_sort": 504,
+      "title": "初中英语写作",
+      "description": "初中英语写作帮助英语学习者把英语写作从套模板变成任务回应、结构清楚、句子准确和表达有亮点，输出可修改、可复盘、可继续练的阅读/写作任务，而不是替用户一次性完成任务。",
+      "task_summary": "初中英语写作",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-english-wy-textbook-sync": {
+      "slug": "junior-english-wy-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 206,
+      "title": "外研版初中英语同步",
+      "description": "把外研版初中英语的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。让英语同步学习从背单词变成会听、会读、会说、会写的短任务。",
+      "task_summary": "外研版初中英语同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-english-yl-textbook-sync": {
+      "slug": "junior-english-yl-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 207,
+      "title": "译林版初中英语同步",
+      "description": "把译林版初中英语的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。让英语同步学习从背单词变成会听、会读、会说、会写的短任务。",
+      "task_summary": "译林版初中英语同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-geography-exam-review": {
+      "slug": "junior-geography-exam-review",
+      "category": "exam-prep",
+      "hub_sort": 313,
+      "title": "初中地理考试复习",
+      "description": "把初中地理考试备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "初中地理考试复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-geography-quick-practice": {
+      "slug": "junior-geography-quick-practice",
+      "category": "daily-practice",
+      "hub_sort": 405,
+      "title": "初中地理快速巩固",
+      "description": "把初中地理每日打卡做成 10-15 分钟可坚持、可反馈、可复现的短训练。重点不是多刷题，而是围绕地图判读、区域特征、成因解释和图表信息形成当天闭环。",
+      "task_summary": "初中地理快速巩固",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-geography-rj-textbook-sync": {
+      "slug": "junior-geography-rj-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 208,
+      "title": "人教版初中地理同步",
+      "description": "把人教版初中地理的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。让地理同步学习从背区域结论变成会读图、找证据、解释为什么。",
+      "task_summary": "人教版初中地理同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-geography-xj-textbook-sync": {
+      "slug": "junior-geography-xj-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 209,
+      "title": "湘教版初中地理同步",
+      "description": "把湘教版初中地理的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。让地理同步学习从背区域结论变成会读图、找证据、解释为什么。",
+      "task_summary": "湘教版初中地理同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-history-exam-review": {
+      "slug": "junior-history-exam-review",
+      "category": "exam-prep",
+      "hub_sort": 314,
+      "title": "初中历史考试复习",
+      "description": "把初中历史考试备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "初中历史考试复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-history-quick-practice": {
+      "slug": "junior-history-quick-practice",
+      "category": "daily-practice",
+      "hub_sort": 406,
+      "title": "初中历史快速巩固",
+      "description": "把初中历史每日打卡做成 10-15 分钟可坚持、可反馈、可复现的短训练。重点不是多刷题，而是围绕时间线、事件因果、材料信息和观点表达形成当天闭环。",
+      "task_summary": "初中历史快速巩固",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-history-tongbian-textbook-sync": {
+      "slug": "junior-history-tongbian-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 210,
+      "title": "统编版初中历史同步",
+      "description": "把统编版初中历史的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。让历史同步学习从背年代结论变成会用材料说明因果和观点。",
+      "task_summary": "统编版初中历史同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-math-bs-textbook-sync": {
+      "slug": "junior-math-bs-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 211,
+      "title": "北师大版初中数学同步",
+      "description": "把北师大版初中数学的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。把教材单元变成今天能做、明天能复盘、错了能追练的学习闭环。",
+      "task_summary": "北师大版初中数学同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-math-daily-practice": {
+      "slug": "junior-math-daily-practice",
+      "category": "daily-practice",
+      "hub_sort": 407,
+      "title": "初中数学每日练",
+      "description": "把初中数学每日打卡做成 10-15 分钟可坚持、可反馈、可复现的短训练。重点不是多刷题，而是围绕计算准确率、方法选择、解题步骤和错因复盘形成当天闭环。",
+      "task_summary": "初中数学每日练",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-math-exam-review": {
+      "slug": "junior-math-exam-review",
+      "category": "exam-prep",
+      "hub_sort": 315,
+      "title": "初中数学考试复习",
+      "description": "把初中数学考试备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "初中数学考试复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-math-quick-practice": {
+      "slug": "junior-math-quick-practice",
+      "category": "daily-practice",
+      "hub_sort": 408,
+      "title": "初中数学快速巩固",
+      "description": "把初中数学每日打卡做成 10-15 分钟可坚持、可反馈、可复现的短训练。重点不是多刷题，而是围绕计算准确率、方法选择、解题步骤和错因复盘形成当天闭环。",
+      "task_summary": "初中数学快速巩固",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-math-rj-textbook-sync": {
+      "slug": "junior-math-rj-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 212,
+      "title": "人教版初中数学同步",
+      "description": "把人教版初中数学的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。把教材单元变成今天能做、明天能复盘、错了能追练的学习闭环。",
+      "task_summary": "人教版初中数学同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-math-sj-textbook-sync": {
+      "slug": "junior-math-sj-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 213,
+      "title": "苏教版初中数学同步",
+      "description": "把苏教版初中数学的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。把教材单元变成今天能做、明天能复盘、错了能追练的学习闭环。",
+      "task_summary": "苏教版初中数学同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-physics-exam-review": {
+      "slug": "junior-physics-exam-review",
+      "category": "exam-prep",
+      "hub_sort": 316,
+      "title": "初中物理考试复习",
+      "description": "把初中物理考试备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "初中物理考试复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-physics-lk-textbook-sync": {
+      "slug": "junior-physics-lk-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 214,
+      "title": "鲁科版初中物理同步",
+      "description": "把鲁科版初中物理的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。把物理教材同步变成现象-模型-证据-应用的清晰学习路径。",
+      "task_summary": "鲁科版初中物理同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-physics-quick-practice": {
+      "slug": "junior-physics-quick-practice",
+      "category": "daily-practice",
+      "hub_sort": 409,
+      "title": "初中物理快速巩固",
+      "description": "把初中物理每日打卡做成 10-15 分钟可坚持、可反馈、可复现的短训练。重点不是多刷题，而是围绕概念辨析、模型条件、图像/实验信息和推理步骤形成当天闭环。",
+      "task_summary": "初中物理快速巩固",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-physics-rj-textbook-sync": {
+      "slug": "junior-physics-rj-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 215,
+      "title": "人教版初中物理同步",
+      "description": "把人教版初中物理的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。把物理教材同步变成现象-模型-证据-应用的清晰学习路径。",
+      "task_summary": "人教版初中物理同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-politics-exam-review": {
+      "slug": "junior-politics-exam-review",
+      "category": "exam-prep",
+      "hub_sort": 317,
+      "title": "初中政治考试复习",
+      "description": "把初中政治考试备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "初中政治考试复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-politics-quick-practice": {
+      "slug": "junior-politics-quick-practice",
+      "category": "daily-practice",
+      "hub_sort": 410,
+      "title": "初中政治快速巩固",
+      "description": "把初中政治每日打卡做成 10-15 分钟可坚持、可反馈、可复现的短训练。重点不是多刷题，而是围绕概念理解、材料提取、观点组织和规范表达形成当天闭环。",
+      "task_summary": "初中政治快速巩固",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-politics-tongbian-textbook-sync": {
+      "slug": "junior-politics-tongbian-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 216,
+      "title": "统编版初中政治同步",
+      "description": "把统编版初中政治的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。让道法/政治同步学习从背模板变成会读材料、会表达观点。",
+      "task_summary": "统编版初中政治同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "junior-zhongkao-sprint": {
+      "slug": "junior-zhongkao-sprint",
+      "category": "exam-prep",
+      "hub_sort": 318,
+      "title": "中考冲刺",
+      "description": "把中考备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "中考冲刺",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "preschool-attention-training": {
+      "slug": "preschool-attention-training",
+      "category": "preschool",
+      "hub_sort": 700,
+      "title": "学前专注力训练",
+      "description": "学前专注力训练 Skill把专注力做成孩子愿意参与、家长能照着做、过程可观察的专注游戏任务。重点不是提前小学化，而是在真实生活、绘本、游戏和表达里建立安全感、兴趣和基础能力。",
+      "task_summary": "学前专注力训练",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "preschool-classroom-rules": {
+      "slug": "preschool-classroom-rules",
+      "category": "preschool",
+      "hub_sort": 701,
+      "title": "学前课堂规则准备",
+      "description": "学前课堂规则准备 Skill把规则感做成孩子愿意参与、家长能照着做、过程可观察的入学准备任务。重点不是提前小学化，而是在真实生活、绘本、游戏和表达里建立安全感、兴趣和基础能力。",
+      "task_summary": "学前课堂规则准备",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "preschool-color-shape": {
+      "slug": "preschool-color-shape",
+      "category": "preschool",
+      "hub_sort": 702,
+      "title": "学前颜色形状",
+      "description": "学前颜色形状 Skill把颜色形状做成孩子愿意参与、家长能照着做、过程可观察的每日启蒙任务。重点不是提前小学化，而是在真实生活、绘本、游戏和表达里建立安全感、兴趣和基础能力。",
+      "task_summary": "学前颜色形状",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "preschool-emotion-expression": {
+      "slug": "preschool-emotion-expression",
+      "category": "preschool",
+      "hub_sort": 703,
+      "title": "学前情绪表达",
+      "description": "学前情绪表达 Skill把情绪表达做成孩子愿意参与、家长能照着做、过程可观察的亲子沟通任务。重点不是提前小学化，而是在真实生活、绘本、游戏和表达里建立安全感、兴趣和基础能力。",
+      "task_summary": "学前情绪表达",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "preschool-family-readiness": {
+      "slug": "preschool-family-readiness",
+      "category": "preschool",
+      "hub_sort": 704,
+      "title": "幼小衔接家庭准备",
+      "description": "幼小衔接家庭准备 Skill把陪学建议做成孩子愿意参与、家长能照着做、过程可观察的入学准备任务。重点不是提前小学化，而是在真实生活、绘本、游戏和表达里建立安全感、兴趣和基础能力。",
+      "task_summary": "幼小衔接家庭准备",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "preschool-fine-motor-writing": {
+      "slug": "preschool-fine-motor-writing",
+      "category": "preschool",
+      "hub_sort": 705,
+      "title": "学前控笔与书写准备",
+      "description": "学前控笔与书写准备 Skill把控笔做成孩子愿意参与、家长能照着做、过程可观察的入学准备任务。重点不是提前小学化，而是在真实生活、绘本、游戏和表达里建立安全感、兴趣和基础能力。",
+      "task_summary": "学前控笔与书写准备",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "preschool-growth-report": {
+      "slug": "preschool-growth-report",
+      "category": "preschool",
+      "hub_sort": 706,
+      "title": "学前成长观察报告",
+      "description": "学前成长观察报告 Skill把成长观察做成孩子愿意参与、家长能照着做、过程可观察的成长报告任务。重点不是提前小学化，而是在真实生活、绘本、游戏和表达里建立安全感、兴趣和基础能力。",
+      "task_summary": "学前成长观察报告",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "preschool-language-expression": {
+      "slug": "preschool-language-expression",
+      "category": "preschool",
+      "hub_sort": 707,
+      "title": "学前语言表达",
+      "description": "学前语言表达 Skill把语言表达做成孩子愿意参与、家长能照着做、过程可观察的表达训练任务。重点不是提前小学化，而是在真实生活、绘本、游戏和表达里建立安全感、兴趣和基础能力。",
+      "task_summary": "学前语言表达",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "preschool-life-habits": {
+      "slug": "preschool-life-habits",
+      "category": "preschool",
+      "hub_sort": 708,
+      "title": "学前生活习惯",
+      "description": "学前生活习惯 Skill把生活习惯做成孩子愿意参与、家长能照着做、过程可观察的家庭陪伴任务。重点不是提前小学化，而是在真实生活、绘本、游戏和表达里建立安全感、兴趣和基础能力。",
+      "task_summary": "学前生活习惯",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "preschool-literacy-foundation": {
+      "slug": "preschool-literacy-foundation",
+      "category": "preschool",
+      "hub_sort": 709,
+      "title": "学前识字启蒙",
+      "description": "学前识字启蒙 Skill把识字启蒙做成孩子愿意参与、家长能照着做、过程可观察的每日启蒙任务。重点不是提前小学化，而是在真实生活、绘本、游戏和表达里建立安全感、兴趣和基础能力。",
+      "task_summary": "学前识字启蒙",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "preschool-logic-thinking": {
+      "slug": "preschool-logic-thinking",
+      "category": "preschool",
+      "hub_sort": 710,
+      "title": "学前逻辑规律",
+      "description": "学前逻辑规律 Skill把分类排序做成孩子愿意参与、家长能照着做、过程可观察的逻辑游戏任务。重点不是提前小学化，而是在真实生活、绘本、游戏和表达里建立安全感、兴趣和基础能力。",
+      "task_summary": "学前逻辑规律",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "preschool-memory-observation": {
+      "slug": "preschool-memory-observation",
+      "category": "preschool",
+      "hub_sort": 711,
+      "title": "学前观察记忆",
+      "description": "学前观察记忆 Skill把观察力做成孩子愿意参与、家长能照着做、过程可观察的观察游戏任务。重点不是提前小学化，而是在真实生活、绘本、游戏和表达里建立安全感、兴趣和基础能力。",
+      "task_summary": "学前观察记忆",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "preschool-number-sense-foundation": {
+      "slug": "preschool-number-sense-foundation",
+      "category": "preschool",
+      "hub_sort": 712,
+      "title": "学前数感启蒙",
+      "description": "学前数感启蒙 Skill把数感启蒙做成孩子愿意参与、家长能照着做、过程可观察的数感游戏任务。重点不是提前小学化，而是在真实生活、绘本、游戏和表达里建立安全感、兴趣和基础能力。",
+      "task_summary": "学前数感启蒙",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "preschool-parent-daily-play": {
+      "slug": "preschool-parent-daily-play",
+      "category": "preschool",
+      "hub_sort": 713,
+      "title": "亲子每日启蒙",
+      "description": "亲子每日启蒙 Skill把亲子陪伴做成孩子愿意参与、家长能照着做、过程可观察的每日启蒙任务。重点不是提前小学化，而是在真实生活、绘本、游戏和表达里建立安全感、兴趣和基础能力。",
+      "task_summary": "亲子每日启蒙",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "preschool-picture-book-reading": {
+      "slug": "preschool-picture-book-reading",
+      "category": "preschool",
+      "hub_sort": 714,
+      "title": "学前绘本共读",
+      "description": "学前绘本共读 Skill把绘本阅读做成孩子愿意参与、家长能照着做、过程可观察的亲子共读任务。重点不是提前小学化，而是在真实生活、绘本、游戏和表达里建立安全感、兴趣和基础能力。",
+      "task_summary": "学前绘本共读",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "preschool-pinyin-foundation": {
+      "slug": "preschool-pinyin-foundation",
+      "category": "preschool",
+      "hub_sort": 715,
+      "title": "学前拼音启蒙",
+      "description": "学前拼音启蒙 Skill把拼音启蒙做成孩子愿意参与、家长能照着做、过程可观察的入学准备任务。重点不是提前小学化，而是在真实生活、绘本、游戏和表达里建立安全感、兴趣和基础能力。",
+      "task_summary": "学前拼音启蒙",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "preschool-school-readiness": {
+      "slug": "preschool-school-readiness",
+      "category": "preschool",
+      "hub_sort": 716,
+      "title": "幼小衔接综合",
+      "description": "幼小衔接综合 Skill把入学准备做成孩子愿意参与、家长能照着做、过程可观察的入学准备任务。重点不是提前小学化，而是在真实生活、绘本、游戏和表达里建立安全感、兴趣和基础能力。",
+      "task_summary": "幼小衔接综合",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "preschool-self-care": {
+      "slug": "preschool-self-care",
+      "category": "preschool",
+      "hub_sort": 717,
+      "title": "学前自理能力",
+      "description": "学前自理能力 Skill把自理能力做成孩子愿意参与、家长能照着做、过程可观察的家庭陪伴任务。重点不是提前小学化，而是在真实生活、绘本、游戏和表达里建立安全感、兴趣和基础能力。",
+      "task_summary": "学前自理能力",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "preschool-shape-space": {
+      "slug": "preschool-shape-space",
+      "category": "preschool",
+      "hub_sort": 718,
+      "title": "学前图形空间",
+      "description": "学前图形空间 Skill把图形空间做成孩子愿意参与、家长能照着做、过程可观察的图形游戏任务。重点不是提前小学化，而是在真实生活、绘本、游戏和表达里建立安全感、兴趣和基础能力。",
+      "task_summary": "学前图形空间",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "preschool-social-skills": {
+      "slug": "preschool-social-skills",
+      "category": "preschool",
+      "hub_sort": 719,
+      "title": "学前社交规则",
+      "description": "学前社交规则 Skill把同伴交往做成孩子愿意参与、家长能照着做、过程可观察的社交练习任务。重点不是提前小学化，而是在真实生活、绘本、游戏和表达里建立安全感、兴趣和基础能力。",
+      "task_summary": "学前社交规则",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "preschool-story-retelling": {
+      "slug": "preschool-story-retelling",
+      "category": "preschool",
+      "hub_sort": 720,
+      "title": "学前故事复述",
+      "description": "学前故事复述 Skill把故事复述做成孩子愿意参与、家长能照着做、过程可观察的绘本复述任务。重点不是提前小学化，而是在真实生活、绘本、游戏和表达里建立安全感、兴趣和基础能力。",
+      "task_summary": "学前故事复述",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "preschool-task-awareness": {
+      "slug": "preschool-task-awareness",
+      "category": "preschool",
+      "hub_sort": 721,
+      "title": "学前任务意识",
+      "description": "学前任务意识 Skill把任务意识做成孩子愿意参与、家长能照着做、过程可观察的习惯培养任务。重点不是提前小学化，而是在真实生活、绘本、游戏和表达里建立安全感、兴趣和基础能力。",
+      "task_summary": "学前任务意识",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "agent-parent-companion": {
+      "slug": "agent-parent-companion",
+      "category": "family-education",
+      "hub_sort": 600,
+      "title": "家长陪学",
+      "description": "家长陪学把家长的“我该怎么陪”变成少催促、可执行、能复盘的陪学脚本。重点不是替家长管孩子，而是把家庭学习场景拆成可沟通、可执行、可复盘的小步骤。",
+      "task_summary": "家长陪学",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "family-emotion-support": {
+      "slug": "family-emotion-support",
+      "category": "family-education",
+      "hub_sort": 601,
+      "title": "学习情绪支持",
+      "description": "学习情绪支持在学习受挫、厌学、亲子冲突时，给家长可说出口的安抚话术和下一步学习动作。重点不是替家长管孩子，而是把家庭学习场景拆成可沟通、可执行、可复盘的小步骤。",
+      "task_summary": "学习情绪支持",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "family-holiday-learning": {
+      "slug": "family-holiday-learning",
+      "category": "family-education",
+      "hub_sort": 602,
+      "title": "假期家庭学习",
+      "description": "假期家庭学习把寒暑假从“报很多课/放任玩”改成学习、阅读、运动和休息平衡的家庭节奏。重点不是替家长管孩子，而是把家庭学习场景拆成可沟通、可执行、可复盘的小步骤。",
+      "task_summary": "假期家庭学习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "family-homework-routine": {
+      "slug": "family-homework-routine",
+      "category": "family-education",
+      "hub_sort": 603,
+      "title": "家庭作业习惯",
+      "description": "家庭作业习惯帮家庭建立固定、轻量、可坚持的作业流程，让孩子知道先做什么、做到什么算完成。重点不是替家长管孩子，而是把家庭学习场景拆成可沟通、可执行、可复盘的小步骤。",
+      "task_summary": "家庭作业习惯",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "family-reading-companion": {
+      "slug": "family-reading-companion",
+      "category": "family-education",
+      "hub_sort": 604,
+      "title": "亲子阅读陪伴",
+      "description": "亲子阅读陪伴让亲子阅读从“读完了吗”变成有互动、有表达、有下一本书方向的陪读过程。重点不是替家长管孩子，而是把家庭学习场景拆成可沟通、可执行、可复盘的小步骤。",
+      "task_summary": "亲子阅读陪伴",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "family-school-communication": {
+      "slug": "family-school-communication",
+      "category": "family-education",
+      "hub_sort": 605,
+      "title": "家校沟通准备",
+      "description": "家校沟通准备帮家长把问题说清楚、语气放稳、目标对齐，提升和老师沟通的效率。重点不是替家长管孩子，而是把家庭学习场景拆成可沟通、可执行、可复盘的小步骤。",
+      "task_summary": "家校沟通准备",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "family-screen-time-balance": {
+      "slug": "family-screen-time-balance",
+      "category": "family-education",
+      "hub_sort": 606,
+      "title": "屏幕时间管理",
+      "description": "屏幕时间管理把屏幕时间管理从对抗变成规则共创：什么时候用、用多久、用来做什么、超时怎么办。重点不是替家长管孩子，而是把家庭学习场景拆成可沟通、可执行、可复盘的小步骤。",
+      "task_summary": "屏幕时间管理",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "agent-study-plan": {
+      "slug": "agent-study-plan",
+      "category": "learning-assistant",
+      "hub_sort": 106,
+      "title": "学习计划",
+      "description": "把模糊目标拆成今天、这一周和下一轮可执行的学习安排。",
+      "task_summary": "学习计划",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "primary-chinese-dictation-daily": {
+      "slug": "primary-chinese-dictation-daily",
+      "category": "daily-practice",
+      "hub_sort": 411,
+      "title": "小学语文字词听写",
+      "description": "把生字词听写做成“会读、会写、会用、会订正”的每日小闭环。",
+      "task_summary": "小学语文字词听写",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "primary-chinese-reading": {
+      "slug": "primary-chinese-reading",
+      "category": "reading-writing",
+      "hub_sort": 505,
+      "title": "小学语文阅读理解",
+      "description": "小学语文阅读理解帮助学生把阅读训练从“做题对答案”升级为读懂文本、找到依据、组织表达和迁移方法，输出可修改、可复盘、可继续练的阅读/写作任务，而不是替用户一次性完成任务。",
+      "task_summary": "小学语文阅读理解",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "primary-chinese-recitation-daily": {
+      "slug": "primary-chinese-recitation-daily",
+      "category": "daily-practice",
+      "hub_sort": 412,
+      "title": "小学课文古诗背诵",
+      "description": "把课文和古诗背诵拆成理解、分段、提取线索和复背检查，减少死记硬背。",
+      "task_summary": "小学课文古诗背诵",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "primary-chinese-tongbian-textbook-sync": {
+      "slug": "primary-chinese-tongbian-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 217,
+      "title": "统编版小学语文同步",
+      "description": "把统编版小学语文的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。让家长和学生知道今天这篇课文到底要学会什么、怎么练才不空泛。",
+      "task_summary": "统编版小学语文同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "primary-chinese-writing": {
+      "slug": "primary-chinese-writing",
+      "category": "reading-writing",
+      "hub_sort": 506,
+      "title": "小学作文提升",
+      "description": "小学作文提升帮助学生把作文辅导从“代写一篇”变成审题、立意、选材、结构、语言和修改的全过程指导，输出可修改、可复盘、可继续练的阅读/写作任务，而不是替用户一次性完成任务。",
+      "task_summary": "小学作文提升",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "primary-english-pep-textbook-sync": {
+      "slug": "primary-english-pep-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 218,
+      "title": "人教PEP版小学英语同步",
+      "description": "把人教PEP版小学英语的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。让英语同步学习从背单词变成会听、会读、会说、会写的短任务。",
+      "task_summary": "人教PEP版小学英语同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "primary-english-reading": {
+      "slug": "primary-english-reading",
+      "category": "reading-writing",
+      "hub_sort": 507,
+      "title": "小学英语阅读",
+      "description": "小学英语阅读帮助英语学习者把阅读训练从“做题对答案”升级为读懂文本、找到依据、组织表达和迁移方法，输出可修改、可复盘、可继续练的阅读/写作任务，而不是替用户一次性完成任务。",
+      "task_summary": "小学英语阅读",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "primary-english-vocabulary-daily": {
+      "slug": "primary-english-vocabulary-daily",
+      "category": "daily-practice",
+      "hub_sort": 413,
+      "title": "小学英语单词每日练",
+      "description": "让小学英语单词练习从“背拼写”升级为音、形、义、句一起掌握。",
+      "task_summary": "小学英语单词每日练",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "primary-english-wy-textbook-sync": {
+      "slug": "primary-english-wy-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 219,
+      "title": "外研版小学英语同步",
+      "description": "把外研版小学英语的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。让英语同步学习从背单词变成会听、会读、会说、会写的短任务。",
+      "task_summary": "外研版小学英语同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "primary-english-yl-textbook-sync": {
+      "slug": "primary-english-yl-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 220,
+      "title": "译林版小学英语同步",
+      "description": "把译林版小学英语的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。让英语同步学习从背单词变成会听、会读、会说、会写的短任务。",
+      "task_summary": "译林版小学英语同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "primary-final-review": {
+      "slug": "primary-final-review",
+      "category": "exam-prep",
+      "hub_sort": 319,
+      "title": "小学期末复习",
+      "description": "把小学期末备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "小学期末复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "primary-math-bs-textbook-sync": {
+      "slug": "primary-math-bs-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 221,
+      "title": "北师大版小学数学同步",
+      "description": "把北师大版小学数学的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。把教材单元变成今天能做、明天能复盘、错了能追练的学习闭环。",
+      "task_summary": "北师大版小学数学同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "primary-math-mental-arithmetic": {
+      "slug": "primary-math-mental-arithmetic",
+      "category": "daily-practice",
+      "hub_sort": 414,
+      "title": "小学口算速练",
+      "description": "为小学生生成短、准、可批改的口算训练，让每天 5-10 分钟练出速度、准确率和数感。",
+      "task_summary": "小学口算速练",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "primary-math-rj-textbook-sync": {
+      "slug": "primary-math-rj-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 222,
+      "title": "人教版小学数学同步",
+      "description": "围绕人教版小学数学教材，把年级、册别、单元和学习目标变成可执行的预习、练习、复习和错题巩固任务。",
+      "task_summary": "人教版小学数学同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "primary-math-sj-textbook-sync": {
+      "slug": "primary-math-sj-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 223,
+      "title": "苏教版小学数学同步",
+      "description": "把苏教版小学数学的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。把教材单元变成今天能做、明天能复盘、错了能追练的学习闭环。",
+      "task_summary": "苏教版小学数学同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "primary-reading-daily": {
+      "slug": "primary-reading-daily",
+      "category": "daily-practice",
+      "hub_sort": 415,
+      "title": "小学阅读每日练",
+      "description": "把小学阅读练成“读懂、找依据、会表达”的短训练，而不是泛泛问读后感。",
+      "task_summary": "小学阅读每日练",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "agent-focus-training": {
+      "slug": "agent-focus-training",
+      "category": "learning-assistant",
+      "hub_sort": 107,
+      "title": "专注力训练",
+      "description": "把“孩子不专心”拆成可观察的学习环境、任务长度和反馈节奏，生成能立刻执行的专注训练方案。",
+      "task_summary": "专注力训练",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "agent-holiday-plan": {
+      "slug": "agent-holiday-plan",
+      "category": "learning-assistant",
+      "hub_sort": 108,
+      "title": "寒暑假提升",
+      "description": "把寒暑假从“报复性补课”改成有节奏的巩固、预习、阅读和休息计划。",
+      "task_summary": "寒暑假提升",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "agent-homework-companion": {
+      "slug": "agent-homework-companion",
+      "category": "learning-assistant",
+      "hub_sort": 109,
+      "title": "作业陪伴",
+      "description": "陪学生完成作业全过程：先规划顺序，再在卡住时提示，不替写，最后做自查和订正。",
+      "task_summary": "作业陪伴",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "agent-learning-habit": {
+      "slug": "agent-learning-habit",
+      "category": "learning-assistant",
+      "hub_sort": 110,
+      "title": "学习习惯",
+      "description": "把抽象的“养成学习习惯”落到固定触发、最小动作、即时反馈和家庭协作上。",
+      "task_summary": "学习习惯",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "agent-learning-report": {
+      "slug": "agent-learning-report",
+      "category": "learning-assistant",
+      "hub_sort": 111,
+      "title": "学情报告",
+      "description": "把零散练习记录整理成家长、老师和学生都能看懂的学情判断。",
+      "task_summary": "学情报告",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "agent-memory-method": {
+      "slug": "agent-memory-method",
+      "category": "learning-assistant",
+      "hub_sort": 112,
+      "title": "记忆方法",
+      "description": "把需要背的内容变成可提取、可复述、可间隔复习的记忆任务，而不是反复机械朗读。",
+      "task_summary": "记忆方法",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "agent-mistake-review": {
+      "slug": "agent-mistake-review",
+      "category": "learning-assistant",
+      "hub_sort": 113,
+      "title": "错题复盘",
+      "description": "把错题从改正答案升级为找到错误模式并安排复习。",
+      "task_summary": "错题复盘",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "agent-photo-question": {
+      "slug": "agent-photo-question",
+      "category": "learning-assistant",
+      "hub_sort": 114,
+      "title": "拍照答疑",
+      "description": "把拍照题目转成先识题、再讲思路、最后追问确认的学习过程，而不是只给答案。",
+      "task_summary": "拍照答疑",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "agent-preview-assistant": {
+      "slug": "agent-preview-assistant",
+      "category": "learning-assistant",
+      "hub_sort": 115,
+      "title": "课前预习",
+      "description": "把预习从“提前看一遍”变成带问题进入课堂：先扫知识、再标疑问、最后准备课堂关注点。",
+      "task_summary": "课前预习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "agent-review-assistant": {
+      "slug": "agent-review-assistant",
+      "category": "learning-assistant",
+      "hub_sort": 116,
+      "title": "复习助手",
+      "description": "把复习从重新看笔记变成检索、纠错、归纳和再练习的闭环。",
+      "task_summary": "复习助手",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "agent-socratic-tutor": {
+      "slug": "agent-socratic-tutor",
+      "category": "learning-assistant",
+      "hub_sort": 117,
+      "title": "启发式讲解",
+      "description": "用启发式追问帮助学生自己走到答案，而不是把标准答案一次性倒出来。",
+      "task_summary": "启发式讲解",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "agent-weakness-boost": {
+      "slug": "agent-weakness-boost",
+      "category": "learning-assistant",
+      "hub_sort": 118,
+      "title": "薄弱项提升",
+      "description": "把“薄弱项”从模糊标签变成一个可诊断、可练习、可复测的小专题提升闭环。",
+      "task_summary": "薄弱项提升",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "agent-weekly-review": {
+      "slug": "agent-weekly-review",
+      "category": "learning-assistant",
+      "hub_sort": 119,
+      "title": "每周复盘",
+      "description": "把一周学习从流水账整理成进步、问题、下周行动三件事，让学生和家长都知道下一步做什么。",
+      "task_summary": "每周复盘",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-biology-homework-generation": {
+      "slug": "teacher-biology-homework-generation",
+      "category": "teacher-tools",
+      "hub_sort": 0,
+      "title": "生物作业生成",
+      "description": "帮助生物老师生成少而准、可批改、能反映真实掌握情况的分层作业，避免把作业变成题量堆叠。",
+      "task_summary": "生物作业生成",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-biology-lesson-planning": {
+      "slug": "teacher-biology-lesson-planning",
+      "category": "teacher-tools",
+      "hub_sort": 1,
+      "title": "生物备课",
+      "description": "帮助生物老师把“这节课讲什么”升级为目标、活动、提问、练习和评价一致的课堂设计，重点围绕生命现象、结构功能、实验探究和图表信息提取。",
+      "task_summary": "生物备课",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-biology-unit-review": {
+      "slug": "teacher-biology-unit-review",
+      "category": "teacher-tools",
+      "hub_sort": 2,
+      "title": "生物单元复习",
+      "description": "帮助生物老师把一个单元复习成知识结构、典型错因、主动回忆和再练习的闭环，而不是重新讲一遍。",
+      "task_summary": "生物单元复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-chemistry-homework-generation": {
+      "slug": "teacher-chemistry-homework-generation",
+      "category": "teacher-tools",
+      "hub_sort": 3,
+      "title": "化学作业生成",
+      "description": "帮助化学老师生成少而准、可批改、能反映真实掌握情况的分层作业，避免把作业变成题量堆叠。",
+      "task_summary": "化学作业生成",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-chemistry-lesson-planning": {
+      "slug": "teacher-chemistry-lesson-planning",
+      "category": "teacher-tools",
+      "hub_sort": 4,
+      "title": "化学备课",
+      "description": "帮助化学老师把“这节课讲什么”升级为目标、活动、提问、练习和评价一致的课堂设计，重点围绕微观解释、实验现象、化学用语和反应规律。",
+      "task_summary": "化学备课",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-chemistry-unit-review": {
+      "slug": "teacher-chemistry-unit-review",
+      "category": "teacher-tools",
+      "hub_sort": 5,
+      "title": "化学单元复习",
+      "description": "帮助化学老师把一个单元复习成知识结构、典型错因、主动回忆和再练习的闭环，而不是重新讲一遍。",
+      "task_summary": "化学单元复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-chinese-homework-generation": {
+      "slug": "teacher-chinese-homework-generation",
+      "category": "teacher-tools",
+      "hub_sort": 6,
+      "title": "语文作业生成",
+      "description": "帮助语文老师生成少而准、可批改、能反映真实掌握情况的分层作业，避免把作业变成题量堆叠。",
+      "task_summary": "语文作业生成",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-chinese-lesson-planning": {
+      "slug": "teacher-chinese-lesson-planning",
+      "category": "teacher-tools",
+      "hub_sort": 7,
+      "title": "语文备课",
+      "description": "帮助语文老师把“这节课讲什么”升级为目标、活动、提问、练习和评价一致的课堂设计，重点围绕阅读、表达、积累和思维品质。",
+      "task_summary": "语文备课",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-chinese-unit-review": {
+      "slug": "teacher-chinese-unit-review",
+      "category": "teacher-tools",
+      "hub_sort": 8,
+      "title": "语文单元复习",
+      "description": "帮助语文老师把一个单元复习成知识结构、典型错因、主动回忆和再练习的闭环，而不是重新讲一遍。",
+      "task_summary": "语文单元复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-class-analysis-lite": {
+      "slug": "teacher-class-analysis-lite",
+      "category": "teacher-tools",
+      "hub_sort": 9,
+      "title": "班级学情分析 Lite",
+      "description": "把班级练习、错题和课堂观察整理成老师能立刻调整教学的学情判断，而不是只给平均分。",
+      "task_summary": "班级学情分析 Lite",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-english-homework-generation": {
+      "slug": "teacher-english-homework-generation",
+      "category": "teacher-tools",
+      "hub_sort": 10,
+      "title": "英语作业生成",
+      "description": "帮助英语老师生成少而准、可批改、能反映真实掌握情况的分层作业，避免把作业变成题量堆叠。",
+      "task_summary": "英语作业生成",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-english-lesson-planning": {
+      "slug": "teacher-english-lesson-planning",
+      "category": "teacher-tools",
+      "hub_sort": 11,
+      "title": "英语备课",
+      "description": "帮助英语老师把“这节课讲什么”升级为目标、活动、提问、练习和评价一致的课堂设计，重点围绕词汇、语篇、听说读写和真实语境使用。",
+      "task_summary": "英语备课",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-english-unit-review": {
+      "slug": "teacher-english-unit-review",
+      "category": "teacher-tools",
+      "hub_sort": 12,
+      "title": "英语单元复习",
+      "description": "帮助英语老师把一个单元复习成知识结构、典型错因、主动回忆和再练习的闭环，而不是重新讲一遍。",
+      "task_summary": "英语单元复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-geography-homework-generation": {
+      "slug": "teacher-geography-homework-generation",
+      "category": "teacher-tools",
+      "hub_sort": 13,
+      "title": "地理作业生成",
+      "description": "帮助地理老师生成少而准、可批改、能反映真实掌握情况的分层作业，避免把作业变成题量堆叠。",
+      "task_summary": "地理作业生成",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-geography-lesson-planning": {
+      "slug": "teacher-geography-lesson-planning",
+      "category": "teacher-tools",
+      "hub_sort": 14,
+      "title": "地理备课",
+      "description": "帮助地理老师把“这节课讲什么”升级为目标、活动、提问、练习和评价一致的课堂设计，重点围绕区域认知、地图判读、综合思维、地理实践力和人地协调观。",
+      "task_summary": "地理备课",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-geography-unit-review": {
+      "slug": "teacher-geography-unit-review",
+      "category": "teacher-tools",
+      "hub_sort": 15,
+      "title": "地理单元复习",
+      "description": "帮助地理老师把一个单元复习成知识结构、典型错因、主动回忆和再练习的闭环，而不是重新讲一遍。",
+      "task_summary": "地理单元复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-history-homework-generation": {
+      "slug": "teacher-history-homework-generation",
+      "category": "teacher-tools",
+      "hub_sort": 16,
+      "title": "历史作业生成",
+      "description": "帮助历史老师生成少而准、可批改、能反映真实掌握情况的分层作业，避免把作业变成题量堆叠。",
+      "task_summary": "历史作业生成",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-history-lesson-planning": {
+      "slug": "teacher-history-lesson-planning",
+      "category": "teacher-tools",
+      "hub_sort": 17,
+      "title": "历史备课",
+      "description": "帮助历史老师把“这节课讲什么”升级为目标、活动、提问、练习和评价一致的课堂设计，重点围绕时空观念、史料实证、历史解释、因果关系和观点表达。",
+      "task_summary": "历史备课",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-history-unit-review": {
+      "slug": "teacher-history-unit-review",
+      "category": "teacher-tools",
+      "hub_sort": 18,
+      "title": "历史单元复习",
+      "description": "帮助历史老师把一个单元复习成知识结构、典型错因、主动回忆和再练习的闭环，而不是重新讲一遍。",
+      "task_summary": "历史单元复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-homework-generation": {
+      "slug": "teacher-homework-generation",
+      "category": "teacher-tools",
+      "hub_sort": 19,
+      "title": "作业生成",
+      "description": "帮助老师生成分层、可批改、不过量的作业，而不是堆题。",
+      "task_summary": "作业生成",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-lesson-planning": {
+      "slug": "teacher-lesson-planning",
+      "category": "teacher-tools",
+      "hub_sort": 20,
+      "title": "老师备课",
+      "description": "把备课从罗列知识点变成目标、活动、评价一致的课堂设计。",
+      "task_summary": "老师备课",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-math-homework-generation": {
+      "slug": "teacher-math-homework-generation",
+      "category": "teacher-tools",
+      "hub_sort": 21,
+      "title": "数学作业生成",
+      "description": "帮助数学老师生成少而准、可批改、能反映真实掌握情况的分层作业，避免把作业变成题量堆叠。",
+      "task_summary": "数学作业生成",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-math-lesson-planning": {
+      "slug": "teacher-math-lesson-planning",
+      "category": "teacher-tools",
+      "hub_sort": 22,
+      "title": "数学备课",
+      "description": "帮助数学老师把“这节课讲什么”升级为目标、活动、提问、练习和评价一致的课堂设计，重点围绕概念理解、运算方法、建模和解题表达。",
+      "task_summary": "数学备课",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-math-unit-review": {
+      "slug": "teacher-math-unit-review",
+      "category": "teacher-tools",
+      "hub_sort": 23,
+      "title": "数学单元复习",
+      "description": "帮助数学老师把一个单元复习成知识结构、典型错因、主动回忆和再练习的闭环，而不是重新讲一遍。",
+      "task_summary": "数学单元复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-parent-report-lite": {
+      "slug": "teacher-parent-report-lite",
+      "category": "teacher-tools",
+      "hub_sort": 24,
+      "title": "家长反馈报告 Lite",
+      "description": "帮助老师把学习表现转成家长听得懂、愿意配合、不过度焦虑的反馈报告。",
+      "task_summary": "家长反馈报告 Lite",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-physics-homework-generation": {
+      "slug": "teacher-physics-homework-generation",
+      "category": "teacher-tools",
+      "hub_sort": 25,
+      "title": "物理作业生成",
+      "description": "帮助物理老师生成少而准、可批改、能反映真实掌握情况的分层作业，避免把作业变成题量堆叠。",
+      "task_summary": "物理作业生成",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-physics-lesson-planning": {
+      "slug": "teacher-physics-lesson-planning",
+      "category": "teacher-tools",
+      "hub_sort": 26,
+      "title": "物理备课",
+      "description": "帮助物理老师把“这节课讲什么”升级为目标、活动、提问、练习和评价一致的课堂设计，重点围绕概念模型、实验探究、图像分析和受力/电路等推理过程。",
+      "task_summary": "物理备课",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-physics-unit-review": {
+      "slug": "teacher-physics-unit-review",
+      "category": "teacher-tools",
+      "hub_sort": 27,
+      "title": "物理单元复习",
+      "description": "帮助物理老师把一个单元复习成知识结构、典型错因、主动回忆和再练习的闭环，而不是重新讲一遍。",
+      "task_summary": "物理单元复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-politics-homework-generation": {
+      "slug": "teacher-politics-homework-generation",
+      "category": "teacher-tools",
+      "hub_sort": 28,
+      "title": "政治作业生成",
+      "description": "帮助政治老师生成少而准、可批改、能反映真实掌握情况的分层作业，避免把作业变成题量堆叠。",
+      "task_summary": "政治作业生成",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-politics-lesson-planning": {
+      "slug": "teacher-politics-lesson-planning",
+      "category": "teacher-tools",
+      "hub_sort": 29,
+      "title": "政治备课",
+      "description": "帮助政治老师把“这节课讲什么”升级为目标、活动、提问、练习和评价一致的课堂设计，重点围绕概念理解、材料分析、价值判断、现实情境和规范表达。",
+      "task_summary": "政治备课",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "teacher-politics-unit-review": {
+      "slug": "teacher-politics-unit-review",
+      "category": "teacher-tools",
+      "hub_sort": 30,
+      "title": "政治单元复习",
+      "description": "帮助政治老师把一个单元复习成知识结构、典型错因、主动回忆和再练习的闭环，而不是重新讲一遍。",
+      "task_summary": "政治单元复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "agent-question-explanation": {
+      "slug": "agent-question-explanation",
+      "category": "learning-assistant",
+      "hub_sort": 120,
+      "title": "AI 讲题",
+      "description": "把一道题讲到学生真正会复述思路：先定位卡点，再用年级能听懂的语言拆解，最后用变式题确认理解。",
+      "task_summary": "AI 讲题",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-biology-bs-textbook-sync": {
+      "slug": "senior-biology-bs-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 224,
+      "title": "北师大版高中生物同步",
+      "description": "把北师大版高中生物的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。把生物教材同步做成能看图、会解释、能用证据表达的学习过程。",
+      "task_summary": "北师大版高中生物同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-biology-exam-review": {
+      "slug": "senior-biology-exam-review",
+      "category": "exam-prep",
+      "hub_sort": 320,
+      "title": "高中生物考试复习",
+      "description": "把高中生物考试备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "高中生物考试复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-biology-quick-practice": {
+      "slug": "senior-biology-quick-practice",
+      "category": "daily-practice",
+      "hub_sort": 416,
+      "title": "高中生物快速巩固",
+      "description": "把高中生物每日打卡做成 10-15 分钟可坚持、可反馈、可复现的短训练。重点不是多刷题，而是围绕结构功能、生命过程、图表信息和实验变量形成当天闭环。",
+      "task_summary": "高中生物快速巩固",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-biology-rj-textbook-sync": {
+      "slug": "senior-biology-rj-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 225,
+      "title": "人教版高中生物同步",
+      "description": "把人教版高中生物的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。把生物教材同步做成能看图、会解释、能用证据表达的学习过程。",
+      "task_summary": "人教版高中生物同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-chemistry-exam-review": {
+      "slug": "senior-chemistry-exam-review",
+      "category": "exam-prep",
+      "hub_sort": 321,
+      "title": "高中化学考试复习",
+      "description": "把高中化学考试备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "高中化学考试复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-chemistry-lk-textbook-sync": {
+      "slug": "senior-chemistry-lk-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 226,
+      "title": "鲁科版高中化学同步",
+      "description": "把鲁科版高中化学的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。让化学同步学习不止记结论，而是能解释现象、写对符号、看懂实验。",
+      "task_summary": "鲁科版高中化学同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-chemistry-quick-practice": {
+      "slug": "senior-chemistry-quick-practice",
+      "category": "daily-practice",
+      "hub_sort": 417,
+      "title": "高中化学快速巩固",
+      "description": "把高中化学每日打卡做成 10-15 分钟可坚持、可反馈、可复现的短训练。重点不是多刷题，而是围绕概念辨析、实验现象、化学用语和反应规律形成当天闭环。",
+      "task_summary": "高中化学快速巩固",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-chemistry-rj-textbook-sync": {
+      "slug": "senior-chemistry-rj-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 227,
+      "title": "人教版高中化学同步",
+      "description": "把人教版高中化学的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。让化学同步学习不止记结论，而是能解释现象、写对符号、看懂实验。",
+      "task_summary": "人教版高中化学同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-chinese-essay": {
+      "slug": "senior-chinese-essay",
+      "category": "reading-writing",
+      "hub_sort": 508,
+      "title": "高中作文提升",
+      "description": "高中作文提升帮助学生把作文辅导从“代写一篇”变成审题、立意、选材、结构、语言和修改的全过程指导，输出可修改、可复盘、可继续练的阅读/写作任务，而不是替用户一次性完成任务。",
+      "task_summary": "高中作文提升",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-chinese-exam-review": {
+      "slug": "senior-chinese-exam-review",
+      "category": "exam-prep",
+      "hub_sort": 322,
+      "title": "高中语文考试复习",
+      "description": "把高中语文考试备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "高中语文考试复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-chinese-quick-practice": {
+      "slug": "senior-chinese-quick-practice",
+      "category": "daily-practice",
+      "hub_sort": 418,
+      "title": "高中语文快速巩固",
+      "description": "把高中语文每日打卡做成 10-15 分钟可坚持、可反馈、可复现的短训练。重点不是多刷题，而是围绕字词积累、阅读依据、表达完整度和错字订正形成当天闭环。",
+      "task_summary": "高中语文快速巩固",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-chinese-reading": {
+      "slug": "senior-chinese-reading",
+      "category": "reading-writing",
+      "hub_sort": 509,
+      "title": "高中语文阅读",
+      "description": "高中语文阅读帮助学生把阅读训练从“做题对答案”升级为读懂文本、找到依据、组织表达和迁移方法，输出可修改、可复盘、可继续练的阅读/写作任务，而不是替用户一次性完成任务。",
+      "task_summary": "高中语文阅读",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-chinese-tongbian-textbook-sync": {
+      "slug": "senior-chinese-tongbian-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 228,
+      "title": "统编版高中语文同步",
+      "description": "把统编版高中语文的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。让家长和学生知道今天这篇课文到底要学会什么、怎么练才不空泛。",
+      "task_summary": "统编版高中语文同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-english-exam-review": {
+      "slug": "senior-english-exam-review",
+      "category": "exam-prep",
+      "hub_sort": 323,
+      "title": "高中英语考试复习",
+      "description": "把高中英语考试备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "高中英语考试复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-english-quick-practice": {
+      "slug": "senior-english-quick-practice",
+      "category": "daily-practice",
+      "hub_sort": 419,
+      "title": "高中英语快速巩固",
+      "description": "把高中英语每日打卡做成 10-15 分钟可坚持、可反馈、可复现的短训练。重点不是多刷题，而是围绕词汇复现、语境理解、拼写准确和句子输出形成当天闭环。",
+      "task_summary": "高中英语快速巩固",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-english-rj-textbook-sync": {
+      "slug": "senior-english-rj-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 229,
+      "title": "人教版高中英语同步",
+      "description": "把人教版高中英语的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。让英语同步学习从背单词变成会听、会读、会说、会写的短任务。",
+      "task_summary": "人教版高中英语同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-english-vocabulary-daily": {
+      "slug": "senior-english-vocabulary-daily",
+      "category": "daily-practice",
+      "hub_sort": 420,
+      "title": "高中英语词汇每日练",
+      "description": "把高中英语每日打卡做成 10-15 分钟可坚持、可反馈、可复现的短训练。重点不是多刷题，而是围绕词汇复现、语境理解、拼写准确和句子输出形成当天闭环。",
+      "task_summary": "高中英语词汇每日练",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-english-writing": {
+      "slug": "senior-english-writing",
+      "category": "reading-writing",
+      "hub_sort": 510,
+      "title": "高中英语写作",
+      "description": "高中英语写作帮助英语学习者把英语写作从套模板变成任务回应、结构清楚、句子准确和表达有亮点，输出可修改、可复盘、可继续练的阅读/写作任务，而不是替用户一次性完成任务。",
+      "task_summary": "高中英语写作",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-english-wy-textbook-sync": {
+      "slug": "senior-english-wy-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 230,
+      "title": "外研版高中英语同步",
+      "description": "把外研版高中英语的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。让英语同步学习从背单词变成会听、会读、会说、会写的短任务。",
+      "task_summary": "外研版高中英语同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-gaokao-sprint": {
+      "slug": "senior-gaokao-sprint",
+      "category": "exam-prep",
+      "hub_sort": 324,
+      "title": "高考冲刺",
+      "description": "把高考备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "高考冲刺",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-geography-exam-review": {
+      "slug": "senior-geography-exam-review",
+      "category": "exam-prep",
+      "hub_sort": 325,
+      "title": "高中地理考试复习",
+      "description": "把高中地理考试备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "高中地理考试复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-geography-quick-practice": {
+      "slug": "senior-geography-quick-practice",
+      "category": "daily-practice",
+      "hub_sort": 421,
+      "title": "高中地理快速巩固",
+      "description": "把高中地理每日打卡做成 10-15 分钟可坚持、可反馈、可复现的短训练。重点不是多刷题，而是围绕地图判读、区域特征、成因解释和图表信息形成当天闭环。",
+      "task_summary": "高中地理快速巩固",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-geography-rj-textbook-sync": {
+      "slug": "senior-geography-rj-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 231,
+      "title": "人教版高中地理同步",
+      "description": "把人教版高中地理的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。让地理同步学习从背区域结论变成会读图、找证据、解释为什么。",
+      "task_summary": "人教版高中地理同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-geography-xj-textbook-sync": {
+      "slug": "senior-geography-xj-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 232,
+      "title": "湘教版高中地理同步",
+      "description": "把湘教版高中地理的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。让地理同步学习从背区域结论变成会读图、找证据、解释为什么。",
+      "task_summary": "湘教版高中地理同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-history-exam-review": {
+      "slug": "senior-history-exam-review",
+      "category": "exam-prep",
+      "hub_sort": 326,
+      "title": "高中历史考试复习",
+      "description": "把高中历史考试备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "高中历史考试复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-history-quick-practice": {
+      "slug": "senior-history-quick-practice",
+      "category": "daily-practice",
+      "hub_sort": 422,
+      "title": "高中历史快速巩固",
+      "description": "把高中历史每日打卡做成 10-15 分钟可坚持、可反馈、可复现的短训练。重点不是多刷题，而是围绕时间线、事件因果、材料信息和观点表达形成当天闭环。",
+      "task_summary": "高中历史快速巩固",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-history-tongbian-textbook-sync": {
+      "slug": "senior-history-tongbian-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 233,
+      "title": "统编版高中历史同步",
+      "description": "把统编版高中历史的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。让历史同步学习从背年代结论变成会用材料说明因果和观点。",
+      "task_summary": "统编版高中历史同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-math-bs-textbook-sync": {
+      "slug": "senior-math-bs-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 234,
+      "title": "北师大版高中数学同步",
+      "description": "把北师大版高中数学的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。把教材单元变成今天能做、明天能复盘、错了能追练的学习闭环。",
+      "task_summary": "北师大版高中数学同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-math-exam-review": {
+      "slug": "senior-math-exam-review",
+      "category": "exam-prep",
+      "hub_sort": 327,
+      "title": "高中数学考试复习",
+      "description": "把高中数学考试备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "高中数学考试复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-math-quick-practice": {
+      "slug": "senior-math-quick-practice",
+      "category": "daily-practice",
+      "hub_sort": 423,
+      "title": "高中数学快速巩固",
+      "description": "把高中数学每日打卡做成 10-15 分钟可坚持、可反馈、可复现的短训练。重点不是多刷题，而是围绕计算准确率、方法选择、解题步骤和错因复盘形成当天闭环。",
+      "task_summary": "高中数学快速巩固",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-math-rja-textbook-sync": {
+      "slug": "senior-math-rja-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 235,
+      "title": "人教A版高中数学同步",
+      "description": "把人教A版高中数学的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。把教材单元变成今天能做、明天能复盘、错了能追练的学习闭环。",
+      "task_summary": "人教A版高中数学同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-math-rjb-textbook-sync": {
+      "slug": "senior-math-rjb-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 236,
+      "title": "人教B版高中数学同步",
+      "description": "把人教B版高中数学的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。把教材单元变成今天能做、明天能复盘、错了能追练的学习闭环。",
+      "task_summary": "人教B版高中数学同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-physics-exam-review": {
+      "slug": "senior-physics-exam-review",
+      "category": "exam-prep",
+      "hub_sort": 328,
+      "title": "高中物理考试复习",
+      "description": "把高中物理考试备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "高中物理考试复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-physics-lk-textbook-sync": {
+      "slug": "senior-physics-lk-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 237,
+      "title": "鲁科版高中物理同步",
+      "description": "把鲁科版高中物理的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。把物理教材同步变成现象-模型-证据-应用的清晰学习路径。",
+      "task_summary": "鲁科版高中物理同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-physics-quick-practice": {
+      "slug": "senior-physics-quick-practice",
+      "category": "daily-practice",
+      "hub_sort": 424,
+      "title": "高中物理快速巩固",
+      "description": "把高中物理每日打卡做成 10-15 分钟可坚持、可反馈、可复现的短训练。重点不是多刷题，而是围绕概念辨析、模型条件、图像/实验信息和推理步骤形成当天闭环。",
+      "task_summary": "高中物理快速巩固",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-physics-rj-textbook-sync": {
+      "slug": "senior-physics-rj-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 238,
+      "title": "人教版高中物理同步",
+      "description": "把人教版高中物理的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。把物理教材同步变成现象-模型-证据-应用的清晰学习路径。",
+      "task_summary": "人教版高中物理同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-politics-exam-review": {
+      "slug": "senior-politics-exam-review",
+      "category": "exam-prep",
+      "hub_sort": 329,
+      "title": "高中政治考试复习",
+      "description": "把高中政治考试备考从“泛泛刷题”变成诊断、提分优先级、限时训练、错题复盘和下次复测的闭环，帮助用户知道现在最该抓什么、每天怎么练、怎么判断有没有进步。",
+      "task_summary": "高中政治考试复习",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-politics-quick-practice": {
+      "slug": "senior-politics-quick-practice",
+      "category": "daily-practice",
+      "hub_sort": 425,
+      "title": "高中政治快速巩固",
+      "description": "把高中政治每日打卡做成 10-15 分钟可坚持、可反馈、可复现的短训练。重点不是多刷题，而是围绕概念理解、材料提取、观点组织和规范表达形成当天闭环。",
+      "task_summary": "高中政治快速巩固",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    },
+    "senior-politics-tongbian-textbook-sync": {
+      "slug": "senior-politics-tongbian-textbook-sync",
+      "category": "textbook-sync",
+      "hub_sort": 239,
+      "title": "统编版高中政治同步",
+      "description": "把统编版高中政治的年级、册别、单元和学习场景，转成预习、同步练习、错题追练、单元复习和考前巩固等可直接执行的学习任务。让道法/政治同步学习从背模板变成会读材料、会表达观点。",
+      "task_summary": "统编版高中政治同步",
+      "integration_level": "L1",
+      "audience": [
+        "学生",
+        "家长",
+        "教师",
+        "教研"
+      ]
+    }
+  }
+}

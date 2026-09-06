@@ -1,0 +1,946 @@
+{
+  "codeBlock": {
+    "copy": "复制",
+    "copied": "已复制",
+    "copyCode": "复制代码"
+  },
+  "deliverables": {
+    "panelTitle": "本回合成果",
+    "panelCount": "{{count}} 项",
+    "moreHidden": "还有 {{count}} 项未展开，可在上文路径中点击查看",
+    "openFile": "打开文件",
+    "openFolder": "打开文件夹",
+    "openingFolder": "正在打开…",
+    "openLink": "打开链接",
+    "previewTab": "新标签预览",
+    "previewVideo": "播放视频",
+    "needProject": "请先选择项目后再打开文件夹",
+    "invalidPath": "无法解析文件路径",
+    "revealFailed": "无法打开文件夹",
+    "imagePreviewFailed": "预览加载失败，请用「打开文件夹」查看文件。",
+    "openInPanel": "在右栏打开",
+    "newTab": "新标签",
+    "shareMarkdown": "分享",
+    "shareMarkdownInvalid": "分享链接无效或已过期，请从预览页重新分享。",
+    "shareMarkdownCopied": "链接已复制",
+    "shareMarkdownHtmlHint": "以独立网页分享，无需登录即可阅读，可保存 PDF/Word",
+    "shareMarkdownDisabled": "公开分享暂不可用",
+    "shareMarkdownShadow": "已记录分享（灰度中），公开页尚未对外开放",
+    "shareMarkdownFailed": "分享失败，请稍后重试",
+    "shareMarkdownLegacy": "旧分享链接已停用，请从预览页重新分享以获取公开网页链接。",
+    "shareMarkdownOpening": "正在打开分享页…",
+    "enlargePreview": "放大预览",
+    "prev": "上一项",
+    "next": "下一项",
+    "closePreview": "关闭预览",
+    "imagePreview": "图片预览",
+    "previewUnavailable": "该文件暂不支持内联预览，请用「在右栏打开」或「打开文件夹」查看。",
+    "folderBadge": "文件夹",
+    "folderFiles": "{{count}} 个文件",
+    "openFolderSystem": "在系统中打开",
+    "loadingFolder": "正在读取文件夹…",
+    "emptyFolder": "该文件夹暂无可预览的文件",
+    "showMore": "展开其余 {{count}} 项",
+    "openTaskFolder": "前往任务所在文件夹",
+    "processFile": "过程文件",
+    "viewAll": "查看全部成果（{{count}}）",
+    "openDeliverables": "打开成果",
+    "moreCount": "还有 {{count}} 个",
+    "moreCountShort": "+{{count}}",
+    "moreCountAria": "还有 {{count}} 个成果",
+    "totalAndRemaining": "共 {{total}} 个，还有 {{remaining}} 个",
+    "totalAndRemainingAria": "共 {{total}} 个成果，还有 {{remaining}} 个未展示",
+    "filteredAllNotice": "部分成果未能自动匹配预览路径，您仍可从下方「前往任务所在文件夹」打开；如需补全可继续对话说明。",
+    "summaryTitle": "成果清单",
+    "summaryColName": "成果名称",
+    "summaryColType": "文件类型",
+    "summaryColLink": "文件链接",
+    "summaryColStatus": "状态",
+    "statusDelivered": "已完成",
+    "statusMissing": "未完成",
+    "statusNeedContinue": "需继续",
+    "statusChecking": "校验中…",
+    "statusRepairing": "补齐中…",
+    "statusBroken": "需修复",
+    "statusHidden": "已隐藏",
+    "statusInProgress": "进行中",
+    "turnPointerToSessionBar": "查看会话成果清单",
+    "historicalSummarySnapshot": "非当前清单",
+    "historicalTurnFootnote": "本回合曾交付 {{count}} 项 · 以底部成果清单为准",
+    "historicalTurnFootnoteEmpty": "本回合曾有成果记录 · 以底部成果清单为准",
+    "completionPulseAria": "又完成一项成果",
+    "sessionSummaryLabel": "成果",
+    "sessionSummaryProgress": "{{done}}/{{total}} 项成果",
+    "sessionSummaryEmpty": "成果清单对齐中…",
+    "sessionSummaryCollapsed": "成果 {{done}}/{{total}}",
+    "sessionSummaryAligning": "成果清单对齐中…",
+    "sessionSummaryInProgress": " · {{label}}",
+    "sessionSummaryTaskEnded": " · 任务已结束",
+    "sessionSummaryLiveUpdate": "成果清单 {{done}}/{{total}}，进行中：{{label}}",
+    "sessionSummaryLiveUpdateDone": "成果清单 {{done}}/{{total}}",
+    "dockTitle": "成果",
+    "dockEmpty": "暂无成果",
+    "dockClose": "关闭",
+    "dockBackToList": "返回成果列表",
+    "dockTabDeliverables": "成果",
+    "dockTabPreview": "预览",
+    "qualityHintOfficeOpen": "文件已生成，若预览异常可下载后用 Office 或 WPS 打开。",
+    "qualityHintPreviewLimited": "PDF 已就绪，可下载后在本地阅读器打开。",
+    "summaryPreviewExpand": "点击放大预览 {{name}}",
+    "qualityStatus": {
+      "complete": "质量验收通过",
+      "officialMediaDegraded": "已接受部分成果 · 官方素材已降级",
+      "userAcknowledged": "已按您的确认验收",
+      "blocked": "质量验收受阻",
+      "needsRepair": "质量仍需完善",
+      "contentPassedAligning": "内容已通过 · 清单对齐中",
+      "notApplicable": "质量检查不适用"
+    }
+  },
+  "copyMessage": {
+    "copy": "复制消息",
+    "copied": "消息已复制",
+    "selectFormat": "选择复制格式",
+    "copyAsMarkdown": "复制为 Markdown",
+    "copyAsText": "复制为纯文本"
+  },
+  "messageTypes": {
+    "user": "U",
+    "error": "错误",
+    "tool": "工具",
+    "claude": "Claude",
+    "pilotdeck": "Nova Ai-Studio",
+    "cursor": "Cursor",
+    "codex": "Codex",
+    "gemini": "Gemini"
+  },
+  "toolUseError": {
+    "title": "工具错误",
+    "recoverableTitle": "正在处理",
+    "recoverableSummary": "可能需要些时间，请稍后",
+    "networkTransient": "网络中断，您可以继续",
+    "inlineRetry": "可能需要些时间，请稍后",
+    "inlineNetwork": "网络中断，您可以继续",
+    "inlinePause": "可能需要些时间，请稍后",
+    "inlineExhausted": "您可以继续",
+    "inlinePermission": "需要确认一项权限",
+    "expandDetails": "查看详情",
+    "technicalDetail": "技术详情",
+    "description": ""
+  },
+  "userActionRequired": {
+    "confirmedAfterThree": "同一问题已确认 3 次，请按下列步骤处理后再继续",
+    "openSettings": "前往设置",
+    "hfMissingKey": {
+      "title": "HyperFrames 视频渲染需要配置",
+      "steps": "打开 设置 → 能力接入 → HyperFrames / 视频渲染；填入 API Key；回复「已配置，继续」"
+    },
+    "hfDegradedNotice": "HyperFrames 凭据未配置，已按降级路径继续（结果可能不含成片视频）。"
+  },
+  "toolDisplay": {
+    "parameters": "参数",
+    "details": "详情",
+    "success": "完成",
+    "diff": "差异",
+    "editBadge": "编辑",
+    "newBadge": "新建",
+    "patchBadge": "补丁",
+    "updatingTodoList": "正在更新待办清单",
+    "todoListUpdated": "待办清单已更新",
+    "readingTodoList": "读取待办清单",
+    "taskListTitle": "任务列表",
+    "taskDetails": "任务详情",
+    "subagentResult": "子任务结果",
+    "implementationPlan": "实施方案",
+    "questionPayload": "问题内容",
+    "noResponseText": "无回复文本",
+    "noResponse": "无回复",
+    "creatingTask": "正在创建任务",
+    "listingTasks": "列出任务",
+    "fetchingTask": "获取任务",
+    "updatingTask": "更新中",
+    "scheduleJob": "计划任务",
+    "cancelScheduledJob": "取消计划任务",
+    "listingScheduledJobs": "列出计划任务",
+    "scheduledJob": "已计划任务",
+    "cancelledScheduledJob": "已取消计划任务",
+    "runningTask": "运行中",
+    "agent": "智能体",
+    "question": "问题",
+    "foundFiles": "找到 {{count}} 个文件",
+    "inPath": "在 {{path}} 中",
+    "subagentTitle": "子任务 / {{type}}：{{description}}",
+    "scheduledJobId": "已计划 {{id}}",
+    "cancelledJobId": "已取消 {{id}}",
+    "scheduledJobCount": "{{count}} 个计划任务",
+    "questionAnswered": "{{header}} — 已回答",
+    "questionsAnswered": "{{count}} 个问题 — 已回答",
+    "questionCount": "{{count}} 个问题",
+    "questionSkipped": "已跳过",
+    "questionNoAnswer": "未作答",
+    "todoListHeader": "待办清单（{{count}} 项）",
+    "taskProgress": "{{completed}}/{{total}} 已完成",
+    "rawParams": "原始参数",
+    "renderFailed": "工具输出无法渲染",
+    "cadence": {
+      "one-shot": "单次",
+      "recurring": "周期"
+    },
+    "storage": {
+      "durable": "持久",
+      "session": "会话"
+    },
+    "todoStatus": {
+      "completed": "已完成",
+      "inProgress": "进行中",
+      "pending": "待处理"
+    }
+  },
+  "errors": {
+    "sessionRecoverable": "可能需要些时间，请稍后",
+    "sessionFatal": "暂时未能自动完成，您可以继续"
+  },
+  "recovery": {
+    "handling": "可能需要些时间，请稍后",
+    "pause": "可能需要些时间，请稍后",
+    "guidance": {
+      "title": "您可以继续",
+      "network": "您可以发「继续」，我会换种方式再试。",
+      "model": "您可以发「继续」，我会换种方式再试。",
+      "tool": "您可以发「继续」，我会换种方式再试。",
+      "stuck": "您可以发「继续」，我会换种方式再试。",
+      "generic": "您可以发「继续」，我会换种方式再试。",
+      "retry": "继续这一步",
+      "alternate": "换个方式继续"
+    },
+    "hints": {
+      "network": "",
+      "model": "",
+      "permission": "需要你在上方授权后我再继续",
+      "continue": "您可点击继续，我会换种方式再试",
+      "stuck": "您可点击继续，我会换种方式再试"
+    },
+    "formalStop": {
+      "title": "暂时未能自动完成",
+      "hint": "系统已尝试多种方式，仍未能自动完成本步。",
+      "retry": "换种方式继续"
+    }
+  },
+  "setupRequired": {
+    "title": "需要配置",
+    "openSettings": "前往设置"
+  },
+  "interrupted": {
+    "label": "已被用户暂停"
+  },
+  "compact": {
+    "label": "上下文已压缩",
+    "level": "{{level}} 级",
+    "tokens": "压缩前 {{tokens}} tokens",
+    "stages": {
+      "context_collapse": "上下文折叠",
+      "session_memory": "会话记忆压缩",
+      "summary": "摘要压缩",
+      "reactive": "响应式压缩",
+      "overflow_recovery": "溢出恢复调整"
+    }
+  },
+  "taskAcknowledgment": {
+    "message": "人工智能努力中..."
+  },
+  "working": {
+    "default": "处理中",
+    "processing": "处理中",
+    "thinking": "思考中",
+    "generating": "正在生成回复",
+    "making": "制作中",
+    "compacting": "正在压缩上下文...",
+    "compactingLevel": "正在触发 {{level}} 级压缩：{{label}}",
+    "waitingForPermission": "等待授权",
+    "needsYourInput": "请回答几个问题",
+    "elicitationHint": "请在下方表单中回答这些问题，完成后点击提交。",
+    "recoveryHandling": "可能需要些时间，请稍后",
+    "recoveryHandlingGeneric": "可能需要些时间，请稍后",
+    "recoveryPause": "可能需要些时间，请稍后",
+    "recoveryExhausted": "暂时未能自动完成",
+    "autoContinuing": "正在从上次步骤继续…",
+    "deliverableAligning": "正在核对成果清单…",
+    "networkInterrupt": "网络中断，您可以继续",
+    "networkInterruptAutoContinue": "网络连接中断，正在自动继续"
+  },
+  "elicitation": {
+    "yourChoices": "你的选择",
+    "customOption": "自定义",
+    "skippedAll": "已跳过作答"
+  },
+  "process": {
+    "summary": {
+      "inProgress": "进行中 {{duration}}",
+      "processed": "已处理 {{duration}}",
+      "completed": "过程已完成",
+      "failed": "过程未完成",
+      "cancelled": "过程已停止"
+    },
+    "informal": {
+      "collapsed": "已完成 · {{duration}}",
+      "running": "思考与制作中…"
+    },
+    "waitingForModel": "等待模型响应",
+    "sdmProgress": "成果进度 {{done}}/{{total}}",
+    "phase": {
+      "railLabel": "任务阶段",
+      "understand": "理解需求",
+      "gather": "搜集资料",
+      "analyze": "分析整理",
+      "produce": "生成成果",
+      "deliver": "自检成果"
+    },
+    "templateStage": {
+      "progress": "阶段 {{done}}/{{total}}",
+      "research": "调研",
+      "plan": "策划",
+      "brief": "Brief",
+      "visual": "主视觉",
+      "website": "官网",
+      "platform": "多平台",
+      "draft": "草稿",
+      "monitoring": "监测"
+    },
+    "clue": {
+      "search": "搜索",
+      "fetch": "阅读",
+      "read": "查阅",
+      "milestone": "已生成",
+      "milestoneWithFile": "已生成 {{file}}",
+      "localSearch": "检索项目",
+      "recovery": "调整中",
+      "continue": "继续推进"
+    },
+    "thinking": {
+      "placeholder": "正在整理思路…",
+      "activeTitle": "正在思考任务方案",
+      "planningTitle": "正在整理执行方案",
+      "repairTitle": "正在核对第 {{done}}/{{total}} 项成果"
+    },
+    "deliverable": {
+      "activeWrite": "正在写入 {{basename}}（{{index}}/{{total}}）",
+      "activePrep": "正在准备 {{basename}}（{{index}}/{{total}}）",
+      "activeExport": "正在导出 {{basename}}（{{index}}/{{total}}）"
+    },
+    "tool": {
+      "read": "读取",
+      "readFile": "读取文件",
+      "write": "写入",
+      "writeFile": "写入文件",
+      "edit": "编辑",
+      "editFile": "编辑文件",
+      "webSearch": "联网搜索",
+      "webFetch": "获取网页",
+      "fetchPageImages": "抓取页面图片",
+      "grep": "搜索代码",
+      "glob": "查找文件",
+      "bash": "运行命令",
+      "task": "子任务",
+      "generateImage": "生成图片",
+      "generateVideo": "生成视频",
+      "renderHtmlVideo": "渲染 HTML 视频",
+      "todoWrite": "更新待办",
+      "todoRead": "读取待办",
+      "readSkill": "读取技能",
+      "applyPatch": "应用补丁",
+      "taskCreate": "创建任务",
+      "taskUpdate": "更新任务",
+      "taskList": "任务列表",
+      "taskGet": "任务详情",
+      "tasks": "任务",
+      "cronCreate": "创建计划",
+      "cronDelete": "删除计划",
+      "cronList": "计划列表",
+      "askUserQuestion": "向用户提问",
+      "exitPlanMode": "退出计划模式",
+      "exportDocument": "导出文档",
+      "composeImages": "合成文档",
+      "ocrPptx": "OCR 转 PPT",
+      "multiEdit": "批量编辑",
+      "thinking": "思考",
+      "tool": "工具",
+      "generic": "使用 {{tool}}",
+      "externalService": "正在调用外部服务",
+      "canvasCreate": "创建画布",
+      "canvasUpdate": "更新画布",
+      "humanize": {
+        "processData": "处理数据",
+        "organizeContent": "整理内容",
+        "editContent": "编辑内容",
+        "searchProject": "检索资料"
+      }
+    },
+    "codeFold": {
+      "hiddenForAudience": "已隐藏技术细节，展开过程摘要即可查看进度"
+    },
+    "references": {
+      "title": "参考资料来源",
+      "empty": "本轮未记录联网来源",
+      "sourceCount": "{{count}} 条来源"
+    },
+    "replay": {
+      "title": "推理与过程回放",
+      "empty": "暂无过程记录",
+      "stepCount": "{{count}} 步",
+      "thinkingHint": "展开可回看推理摘要"
+    },
+    "completed": {
+      "withSteps": "过程已完成 · {{duration}}"
+    },
+    "timeline": {
+      "showAll": "查看全部过程",
+      "showLess": "收起过程",
+      "expandedTitle": "全部过程"
+    },
+    "stage": {
+      "sessionPrepare": "正在准备对话",
+      "pluginRefresh": "正在加载能力",
+      "mcpReady": "正在连接工具服务",
+      "memoryRetrieve": "正在读取相关记忆",
+      "routerJudge": "正在判断任务类型与执行方式",
+      "compact": "正在压缩上下文"
+    },
+    "status": {
+      "recoveryPause": "可能需要些时间，请稍后",
+      "recoveryHandling": "正在自动调整",
+      "infraInterrupt": "开发服务连接中断，正在自动续跑",
+      "deliverableRepair": "正在修复成果",
+      "acceptanceStarted": "正在检查成果",
+      "acceptanceCompleted": "已通过自检",
+      "acceptanceFailed": "正在补齐成果",
+      "elicitation": "需要确认偏好",
+      "permission": "需要授权"
+    },
+    "recovery": {
+      "retrying": "遇到一点阻碍，正在自动调整…",
+      "adjusting": "调整中",
+      "nextTurn": "继续下一步",
+      "modelError": "正在重新组织回复",
+      "maxTurns": "正在续跑任务",
+      "abortedStreaming": "正在恢复输出",
+      "abortedTools": "正在恢复工具执行",
+      "autoCompact": "压缩上下文",
+      "toolRecovery": "自动调整",
+      "autoContinue": "继续推进",
+      "softFetchRecovery": "换路处理中",
+      "deliverableValidateFailed": "调整中",
+      "retryAlternate": "尝试备用方案",
+      "stageHint": "正在推进"
+    },
+    "toolPrefix": "使用工具：{{title}}",
+    "step": "步骤",
+    "metrics": {
+      "toolCalls": "{{count}} 次工具调用",
+      "searches": "{{count}} 次搜索",
+      "errors": "{{count}} 个错误",
+      "adjusting": "正在调整（{{count}}）"
+    },
+    "live": {
+      "editedFiles": "已编辑 {{count}} 个文件",
+      "editedFiles_one": "已编辑 {{count}} 个文件",
+      "editedFiles_other": "已编辑 {{count}} 个文件",
+      "exploredFiles": "已探索 {{count}} 个文件",
+      "exploredFiles_one": "已探索 {{count}} 个文件",
+      "exploredFiles_other": "已探索 {{count}} 个文件",
+      "searches": "已搜索 {{count}} 次",
+      "searches_one": "已搜索 {{count}} 次",
+      "searches_other": "已搜索 {{count}} 次",
+      "commands": "已运行 {{count}} 条命令",
+      "commands_one": "已运行 {{count}} 条命令",
+      "commands_other": "已运行 {{count}} 条命令",
+      "toolCalls": "已调用 {{count}} 个工具",
+      "toolCalls_one": "已调用 {{count}} 个工具",
+      "toolCalls_other": "已调用 {{count}} 个工具",
+      "errors": "{{count}} 个错误",
+      "errors_one": "{{count}} 个错误",
+      "errors_other": "{{count}} 个错误",
+      "adjusting": "仍在思考与制作中",
+      "adjusting_one": "仍在思考与制作中",
+      "adjusting_other": "仍在思考与制作中",
+      "recovered": "已自动切换方案继续",
+      "subagentCompleted": "子任务已完成",
+      "compactCompleted": "已压缩上下文",
+      "thoughtCompleted": "已完成思考",
+      "runningEdit": "正在编辑文件",
+      "runningEditTarget": "正在编辑 {{target}}",
+      "runningRead": "正在读取文件",
+      "runningReadTarget": "正在读取 {{target}}",
+      "runningSearch": "正在搜索",
+      "runningSearchTarget": "正在搜索 {{target}}",
+      "runningCommand": "正在运行命令",
+      "runningCommandTarget": "正在运行 {{target}}",
+      "runningSubagent": "正在运行子任务"
+    },
+    "noSteps": "没有记录详细步骤。"
+  },
+  "tools": {
+    "settings": "工具设置",
+    "error": "工具错误",
+    "result": "工具结果",
+    "viewParams": "查看输入参数",
+    "viewRawParams": "查看原始参数",
+    "viewDiff": "查看编辑差异",
+    "creatingFile": "创建新文件：",
+    "updatingTodo": "更新待办事项",
+    "read": "读取",
+    "readFile": "读取文件",
+    "updateTodo": "更新待办列表",
+    "readTodo": "读取待办列表",
+    "searchResults": "结果"
+  },
+  "search": {
+    "found": "找到 {{count}} 个{{type}}",
+    "file": "文件",
+    "files": "文件",
+    "pattern": "模式：",
+    "in": "在："
+  },
+  "fileOperations": {
+    "updated": "文件更新成功",
+    "created": "文件创建成功",
+    "written": "文件写入成功",
+    "diff": "差异",
+    "newFile": "新文件",
+    "viewContent": "查看文件内容",
+    "viewFullOutput": "查看完整输出（{{count}} 个字符）",
+    "contentDisplayed": "文件内容显示在上面的差异视图中"
+  },
+  "interactive": {
+    "title": "交互式提示",
+    "waiting": "等待您在 CLI 中响应",
+    "instruction": "请在 Nova Ai-Studio 运行的终端中选择一个选项。",
+    "selectedOption": "✓ Nova Ai-Studio 选择了选项 {{number}}",
+    "instructionDetail": "在 CLI 中，您可以使用方向键或输入数字来交互式地选择此选项。"
+  },
+  "thinking": {
+    "title": "思考中...",
+    "emoji": "💭 思考中..."
+  },
+  "json": {
+    "response": "JSON 响应"
+  },
+  "permissions": {
+    "grant": "在本聊天中授权 {{tool}}",
+    "added": "已在本聊天中授权",
+    "addTo": "仅在本聊天中临时允许 {{entry}}。",
+    "retry": "在本聊天中重试即可使用该工具。",
+    "error": "无法授予本聊天权限。请重试。",
+    "openSettings": "打开设置"
+  },
+  "todo": {
+    "updated": "待办列表已成功更新",
+    "current": "当前待办列表"
+  },
+  "plan": {
+    "viewPlan": "📋 查看实施计划",
+    "title": "实施计划",
+    "exitMode": {
+      "header": "计划已准备好",
+      "subtitle": "确认后会退出 Plan 模式，并让模型开始按计划执行。",
+      "syncingPlan": "计划正文正在同步，请确认是否执行。",
+      "feedbackLabel": "继续讨论时可以补充说明",
+      "feedbackPlaceholder": "例如：再补充测试方案，或者先不要改数据库。",
+      "continueButton": "发送继续交流消息",
+      "executeButton": "按计划执行"
+    },
+    "approvedCard": {
+      "viewPlan": "查看方案"
+    }
+  },
+  "usageLimit": {
+    "resetAt": "使用限制已达到。您的限制将在 **{{time}} {{timezone}}** - {{date}} 重置"
+  },
+  "codex": {
+    "permissionMode": "权限模式",
+    "modes": {
+      "default": "默认模式",
+      "acceptEdits": "编辑模式",
+      "bypassPermissions": "无限制模式",
+      "plan": "计划模式"
+    },
+    "descriptions": {
+      "default": "只有受信任的命令（ls、cat、grep、git status 等）自动运行。其他命令将被跳过。可以写入工作区。",
+      "acceptEdits": "工作区内的所有命令自动运行。完全自动模式，具有沙盒执行功能。",
+      "bypassPermissions": "完全的系统访问，无限制。所有命令自动运行，具有完整的磁盘和网络访问权限。请谨慎使用。",
+      "plan": "计划模式 - 不执行任何命令"
+    },
+    "technicalDetails": "技术细节"
+  },
+  "input": {
+    "placeholder": "输入 / 调用命令，@ 选择文件，或向 {{provider}} 提问...",
+    "placeholderDefault": "输入您的消息...",
+    "disabled": "输入已禁用",
+    "attachFile": "上传附件",
+    "removeAttachment": "移除附件",
+    "attachFiles": "附加文件",
+    "attachImages": "附加图片",
+    "mentionFile": "引用文件",
+    "fileReference": {
+      "remove": "移除引用 {{name}}"
+    },
+    "slashCommand": "运行斜杠命令",
+    "send": "发送",
+    "stop": "停止",
+    "hintText": {
+      "ctrlEnter": "Ctrl+Enter 发送 • Shift+Enter 换行 • Tab 切换模式 • / 斜杠命令",
+      "enter": "Enter 发送 • Shift+Enter 换行 • Tab 切换模式 • / 斜杠命令"
+    },
+    "clickToChangeMode": "点击更改权限模式（或在输入框中按 Tab）",
+    "showAllCommands": "显示所有命令",
+    "clearInput": "清空输入",
+    "scrollToBottom": "滚动到底部",
+    "permissions": {
+      "default": "默认权限",
+      "defaultDescription": "需要风险操作时先询问",
+      "bypassPermissions": "完全访问权限",
+      "bypassPermissionsDescription": "跳过确认并允许完全访问",
+      "change": "选择权限模式"
+    },
+    "runModes": {
+      "agent": "智能体",
+      "plan": "计划",
+      "change": "选择运行模式",
+      "agentDescription": "直接处理并执行任务",
+      "planDescription": "先产出计划，确认后再执行",
+      "planUnavailable": "计划模式仅适用于 Anthropic 模型。"
+    },
+    "sending": "发送中…",
+    "stopping": "停止中…",
+    "contextStatus": "已用 {{percent}}%。{{used}} / {{total}} tokens。接近上限时将自动压缩。",
+    "contextStatusUnknown": "上下文用量未知，下次模型回复后将显示。",
+    "contextStatusTitle": "上下文窗口",
+    "contextStatusUsed": "已使用 {{used}} / {{total}} tokens。",
+    "contextStatusAutoCompact": "对话接近上限时将自动压缩上下文。",
+    "contextStatusUnknownBody": "尚未收到用量数据，下次模型回复后将显示。"
+  },
+  "loading": "正在载入对话",
+  "emptyChat": {
+    "title": "今天想做点什么？",
+    "noProject": "从左侧选择一个项目开始",
+    "prompts": {
+      "plan": "帮我规划这个项目的重构方案",
+      "summary": "总结最近的改动",
+      "review": "审查我最近动过的文件"
+    },
+    "readonlyBackgroundTitle": "此后台任务记录暂无可展示的消息",
+    "emptySessionTitle": "此对话暂无可展示的消息",
+    "readonlyBackgroundDescription": "只读后台任务记录中，仅有聊天视图无法渲染的条目。",
+    "emptySessionDescription": "对话存在，但其中没有可在此渲染的消息。"
+  },
+  "commandMenu": {
+    "listLabel": "可用命令",
+    "empty": "暂无可用命令",
+    "groups": {
+      "pinned": "常用",
+      "frequent": "最常用",
+      "builtin": "内置",
+      "project": "项目",
+      "user": "用户",
+      "other": "其他"
+    }
+  },
+  "thinkingMode": {
+    "selector": {
+      "title": "思考模式",
+      "description": "扩展思考给 Nova Ai-Studio 更多时间来评估替代方案",
+      "active": "激活",
+      "tip": "更高的思考模式需要更多时间，但提供更彻底的分析"
+    },
+    "modes": {
+      "none": {
+        "name": "标准",
+        "description": "常规 Nova Ai-Studio 响应",
+        "prefix": ""
+      },
+      "think": {
+        "name": "思考",
+        "description": "基本扩展思考",
+        "prefix": "思考"
+      },
+      "thinkHard": {
+        "name": "深入思考",
+        "description": "更彻底的评估",
+        "prefix": "深入思考"
+      },
+      "thinkHarder": {
+        "name": "更深入思考",
+        "description": "考虑替代方案的深度分析",
+        "prefix": "更深入思考"
+      },
+      "ultrathink": {
+        "name": "超级思考",
+        "description": "最大思考预算",
+        "prefix": "超级思考"
+      }
+    },
+    "buttonTitle": "思考模式：{{mode}}"
+  },
+  "providerSelection": {
+    "title": "选择您的 AI 助手",
+    "description": "选择一个供应商以开始新对话",
+    "selectModel": "选择模型",
+    "providerInfo": {
+      "anthropic": "由 Anthropic 提供",
+      "openai": "由 OpenAI 提供",
+      "cursorEditor": "AI 代码编辑器",
+      "google": "由 Google 提供"
+    },
+    "readyPrompt": {
+      "claude": "已就绪：使用 {{model}} 的 Nova Ai-Studio。请在下方开始输入您的消息。",
+      "cursor": "准备好使用带有 {{model}} 的 Cursor。请在下方开始输入您的消息。",
+      "codex": "准备好使用带有 {{model}} 的 Codex。请在下方开始输入您的消息。",
+      "gemini": "准备好使用带有 {{model}} 的 Gemini。请在下方开始输入您的消息。",
+      "pilotdeck": "准备好使用带有 {{model}} 的 Nova Ai-Studio。请在下方开始输入您的消息。",
+      "default": "请在上方选择一个提供者以开始"
+    }
+  },
+  "session": {
+    "loadFailedTitle": "无法加载此对话",
+    "orphanTitle": "此对话已失效",
+    "orphanBody": "未找到对话记录，可能从未成功开始或已被清理。侧栏右键删除即可移除索引。",
+    "readonlyBackground": "此后台任务记录为只读，无法继续发送消息。",
+    "readonlyLocked": "此对话已锁定，无法继续发送消息。请在侧栏右键菜单中解除锁定。",
+    "retryLoad": "重试",
+    "revalidating": "正在同步最新内容…",
+    "loadingConversation": "正在加载对话…",
+    "continue": {
+      "title": "继续您的对话",
+      "description": "询问有关代码的问题、请求更改或获取开发任务的帮助"
+    },
+    "loading": {
+      "olderMessages": "正在加载更早的消息...",
+      "sessionMessages": "正在加载会话消息..."
+    },
+    "messages": {
+      "showingOf": "显示 {{shown}} / {{total}} 条消息",
+      "scrollToLoad": "向上滚动以加载更多",
+      "showingLast": "显示最近 {{count}} 条消息（共 {{total}} 条）",
+      "loadEarlier": "加载更早的消息",
+      "loadAll": "加载全部消息",
+      "loadingAll": "正在加载全部消息...",
+      "allLoaded": "全部消息已加载",
+      "perfWarning": "已加载全部消息 - 滚动可能变慢。点击「滚动到底部」恢复性能。"
+    }
+  },
+  "shell": {
+    "selectProject": {
+      "title": "选择项目",
+      "description": "选择一个项目以在该目录中打开交互式 Shell"
+    },
+    "status": {
+      "newSession": "新会话",
+      "initializing": "初始化中...",
+      "restarting": "重启中..."
+    },
+    "actions": {
+      "disconnect": "断开连接",
+      "disconnectTitle": "断开 Shell 连接",
+      "restart": "重启",
+      "restartTitle": "重启 Shell（请先断开连接）",
+      "connect": "在 Shell 中继续",
+      "connectTitle": "连接到 Shell"
+    },
+    "loading": "正在加载终端...",
+    "connecting": "正在连接到 Shell...",
+    "startSession": "启动新的 Nova Ai-Studio 会话",
+    "resumeSession": "恢复会话：{{displayName}}...",
+    "runCommand": "在 {{projectName}} 中运行 {{command}}",
+    "startCli": "在 {{projectName}} 中启动 Nova Ai-Studio CLI",
+    "defaultCommand": "命令"
+  },
+  "pilotdeckStatus": {
+    "actions": {
+      "thinking": "思考中",
+      "processing": "处理中",
+      "analyzing": "分析中",
+      "working": "执行中",
+      "computing": "计算中",
+      "reasoning": "推理中"
+    },
+    "state": {
+      "live": "进行中",
+      "paused": "已暂停"
+    },
+    "elapsed": {
+      "seconds": "{{count}} 秒",
+      "minutesSeconds": "{{minutes}} 分 {{seconds}} 秒",
+      "label": "已用时 {{time}}",
+      "startingNow": "刚刚开始",
+      "longWait": "仍在继续处理，请稍候",
+      "running": "已用时 {{seconds}} 秒"
+    },
+    "controls": {
+      "stopGeneration": "停止生成",
+      "pressEscToStop": "随时按 Esc 停止"
+    },
+    "providers": {
+      "assistant": "助手"
+    }
+  },
+  "projectSelection": {
+    "startChatWithProvider": "选择一个项目以开始与 {{provider}} 聊天"
+  },
+  "tasks": {
+    "nextTaskPrompt": "开始下一个任务"
+  },
+  "composer": {
+    "placeholder": "告诉 Nova Ai-Studio 你想完成什么…",
+    "welcomePlaceholder": "告诉 Nova Ai-Studio 你想完成什么…",
+    "deliverablesOpen": "查看成果",
+    "deliverablesOpenList": "打开成果清单",
+    "deliverablesListLabel": "成果清单",
+    "deliverablesFolder": "打开任务文件夹",
+    "deliverablesFolderShort": "任务文件夹",
+    "deliverablesOpenShort": "成果",
+    "deliverablesInProgress": "成果进行中",
+    "deliverableIncompletePlaceholder": "成果尚未齐备，正在继续处理…如需确认完成可回复「可以了」",
+    "deliverableAligningPlaceholder": "正在核对成果清单（{{done}}/{{total}}），请稍候…",
+    "taskInFlightPlaceholder": "制作中，请稍候…",
+    "deliverableQueuedPlaceholder": "排队中（第 {{position}} 位），请稍候…",
+    "deliverableIncompleteManualPlaceholder": "还有 {{remaining}} 项成果，点「继续」或发消息说明即可",
+    "parallelLimitHint": "系统繁忙，请稍后再试",
+    "taskQueuedHint": "任务已加入队列，将按顺序自动开始",
+    "taskPausedHint": "任务已暂停，发送指令即可继续",
+    "taskMarkedCompletePlaceholder": "任务已结束。如需继续或有新需求，请先在侧栏右键「取消任务完成」。",
+    "taskMarkedCompleteSendBlocked": "任务已标记完成。如需继续，请先在侧栏右键「取消任务完成」。",
+    "taskMarkedCompleteBanner": "任务已结束，下方可查看当前成果。如需继续或有新需求，请先在侧栏右键「取消任务完成」。",
+    "unmarkCompletePlaceholder": "有什么新的想法？输入后发送即可继续…",
+    "unmarkCompleteHint": "已取消任务完成。有什么新的想法？",
+    "continueTask": "继续",
+    "manualContinueHint": "上次任务尚未完成，点击「继续」从断点接着做",
+    "manualContinueCold": "检测到未完成任务，点击「继续」恢复执行",
+    "manualContinueDeliverable": "成果尚未齐备，点击「继续」补齐交付",
+    "manualContinueAfterDisconnect": "连接已恢复，点击「继续」接着做",
+    "manualContinueStale": "本步耗时较长，点击「继续」尝试接着做",
+    "manualContinueFailed": "暂时未能继续，请稍后再试",
+    "manualContinueNotConnected": "连接尚未就绪，请稍后再试",
+    "manualContinuePaused": "此对话已暂停，请直接发送新消息继续"
+  },
+  "workspaceRail": {
+    "tabDeliverables": "成果",
+    "tabFolder": "文件夹",
+    "slideOut": "展开侧栏",
+    "slideIn": "收起侧栏"
+  },
+  "welcome": {
+    "greetingWithProject": "今天想做点什么？",
+    "noProject": "从左侧选择一个项目开始"
+  },
+  "export": {
+    "actions": {
+      "pdf": "导出 PDF",
+      "docx": "导出 Word",
+      "pptx": "导出 PPT",
+      "xlsx": "导出 Excel",
+      "deckPdf": "导出整套 PDF",
+      "deckPptx": "导出 PPT",
+      "deckPptxImages": "图片 PPT",
+      "deckPptxOcr": "可编辑 PPT",
+      "albumPdf": "合成 PDF",
+      "albumPptx": "导出 PPT"
+    },
+    "hint": {
+      "reportToPdf": "将报告导出为 PDF",
+      "reportToDocx": "将报告导出为 Word 文档",
+      "reportToPptx": "将报告导出为简报 PPT",
+      "reportToXlsx": "将表格内容导出为 Excel",
+      "htmlToPdf": "将 HTML 导出为 PDF",
+      "htmlToPptx": "将 HTML 导出为 PPT",
+      "htmlEditablePptx": "MinerU 识别 HTML 各页文字，导出可编辑 PPT（背景去字 + 文字可改）",
+      "htmlToPptxImages": "逐页截图合成图片 PPT（文字不可编辑）",
+      "slidesHtmlToPdf": "将演示 HTML 导出为 PDF",
+      "slidesHtmlToPptx": "将演示 HTML 导出为 PPT",
+      "slidesHtmlEditablePptx": "MinerU 识别演示 HTML 各页文字，导出可编辑 PPT",
+      "slidesHtmlToPptxImages": "逐页截图合成图片 PPT（文字不可编辑）",
+      "geoToPdf": "将当前文档导出为 PDF",
+      "geoToDocx": "将当前文档导出为 Word",
+      "slideDeckPdf": "将 {{count}} 页幻灯合成 PDF",
+      "slideDeckPptx": "将 {{count}} 页幻灯合成 PPT（图片）",
+      "slideDeckEditablePptx": "MinerU 定位文字并分层：背景去字 + 可编辑文字层（{{count}} 页，比例与 manifest 一致）",
+      "albumPdf": "将文件夹内图片合成 PDF",
+      "albumEditablePptx": "将文件夹内图片分层导出为可编辑 PPT（背景与文字分离）",
+      "pptxOcr": "分层导出可编辑 PPT（背景去字 + 文字可改）",
+      "scanToEditablePptx": "MinerU 定位文字，背景去字后导出可编辑 PPT",
+      "spreadsheetXlsx": "导出为 Excel",
+      "spreadsheetPdf": "导出为 PDF"
+    },
+    "failedBadImage": "图片格式无法识别",
+    "failedPath": "找不到源文件",
+    "reason": {
+      "checking": "正在检查导出能力…",
+      "needsOcrConfig": "请先在设置 → 文档工具中配置版面识别服务",
+      "unsupported": "当前文件暂不支持此格式导出"
+    },
+    "openResult": "打开导出文件",
+    "exportLabel": "导出",
+    "moreFormats": "更多导出格式",
+    "running": "正在导出…",
+    "downloading": "正在下载…",
+    "done": "导出完成",
+    "doneDownloaded": "已下载",
+    "retryDownload": "自动下载未成功，点击重试",
+    "retryDownloadShort": "点击下载",
+    "failed": "导出失败，请稍后重试"
+  },
+  "bentoDeck": {
+    "fallbackNotice": "当前文件暂不支持 Bento 编辑，已用网页预览打开。",
+    "validatingEdit": "正在检查是否可编辑…",
+    "regenerate": "重新生成",
+    "save": "保存",
+    "saved": "已保存",
+    "saveFailed": "暂时无法保存，请稍后重试",
+    "unsavedConfirm": "有未保存的修改，确定放弃吗？",
+    "iframeTitle": "Bento 演示稿",
+    "toolbar": "Bento 编辑"
+  },
+  "htmlStudio": {
+    "loading": "加载中…",
+    "loadingVisual": "加载视觉编辑器…",
+    "saved": "已保存",
+    "saveFailed": "暂时无法保存，请稍后重试或通过对话修改",
+    "save": "保存",
+    "undo": "撤销",
+    "redo": "恢复",
+    "aiAssist": "请 AI 协助修改版式",
+    "aiAssistDefault": "请帮我优化这份 HTML 报告的版式与文案，保持图表脚本不变。",
+    "unsavedConfirm": "有未保存的修改，确定放弃吗？",
+    "mobileReadonly": "请在桌面端右栏编辑，或发送到对话修改",
+    "narrowBanner": "右栏较窄，格式请点选文字后使用浮动菜单",
+    "toolbar": {
+      "editActions": "编辑操作"
+    }
+  },
+  "hfStudio": {
+    "loading": "加载 HyperFrames 编辑器…",
+    "saved": "已保存",
+    "saveFailed": "暂时无法保存",
+    "save": "保存",
+    "renderDraft": "草稿渲染",
+    "renderHigh": "高质量渲染",
+    "rendering": "正在渲染成片…",
+    "renderDone": "成片已更新",
+    "renderFailed": "渲染未完成，请稍后或通过对话协助",
+    "renderNeedsSave": "请先保存后再渲染",
+    "aiAssist": "请 AI 协助",
+    "unsavedConfirm": "有未保存的修改，确定放弃吗？",
+    "mobileReadonly": "请在桌面端右栏编辑工程",
+    "view": {
+      "projectPreview": "工程预览",
+      "promoPreview": "成片预览"
+    },
+    "toolbar": {
+      "editActions": "编辑操作"
+    },
+    "export": {
+      "draftRender": "草稿渲染",
+      "draftRenderHint": "快速渲染 promo.mp4",
+      "highRender": "高质量渲染",
+      "highRenderHint": "高质量渲染 promo.mp4"
+    }
+  }
+}

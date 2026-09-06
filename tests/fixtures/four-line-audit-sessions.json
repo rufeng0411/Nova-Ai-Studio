@@ -1,0 +1,29 @@
+{
+  "sessions": [
+    {
+      "tenantId": "default",
+      "projectKey": "general",
+      "projectRoot": "F:\\Ai-pilotdeck\\tests\\fixtures\\four-line-workspace",
+      "jsonlPath": "F:\\Ai-pilotdeck\\tests\\fixtures\\transcripts\\four-line\\multi-slot-dir.jsonl"
+    },
+    {
+      "tenantId": "default",
+      "projectKey": "general",
+      "projectRoot": "F:\\Ai-pilotdeck\\tests\\fixtures\\four-line-workspace",
+      "jsonlPath": "F:\\Ai-pilotdeck\\tests\\fixtures\\transcripts\\four-line\\slide-multi.jsonl"
+    },
+    {
+      "tenantId": "default",
+      "projectKey": "general",
+      "projectRoot": "F:\\Ai-pilotdeck\\tests\\fixtures\\four-line-workspace",
+      "jsonlPath": "F:\\Ai-pilotdeck\\tests\\fixtures\\transcripts\\four-line\\single-md.jsonl"
+    },
+    {
+      "tenantId": "default",
+      "projectKey": "general",
+      "projectRoot": "F:\\Ai-pilotdeck\\tests\\fixtures\\four-line-workspace",
+      "jsonlPath": "F:\\Ai-pilotdeck\\tests\\fixtures\\transcripts\\four-line\\multi-md.jsonl"
+    }
+  ],
+  "generatedAt": "2026-07-20T11:41:41.907Z"
+}

@@ -1,0 +1,154 @@
+{
+  "_comment": "示例 MCP 配置。复制到 ~/.pilotdeck/mcp.json 或项目 .pilotdeck/mcp.json，填写环境变量后重启 Gateway。",
+  "mcpServers": {
+    "firecrawl": {
+      "command": "npx",
+      "args": ["-y", "firecrawl-mcp"],
+      "env": {
+        "FIRECRAWL_API_KEY": "YOUR_FIRECRAWL_API_KEY"
+      }
+    },
+    "exa": {
+      "command": "npx",
+      "args": ["-y", "exa-mcp-server"],
+      "env": {
+        "EXA_API_KEY": "YOUR_EXA_API_KEY"
+      }
+    },
+    "figma": {
+      "command": "npx",
+      "args": ["-y", "figma-developer-mcp", "--stdio"],
+      "env": {
+        "FIGMA_TOKEN": "YOUR_FIGMA_TOKEN"
+      }
+    },
+    "postiz": {
+      "command": "npx",
+      "args": ["-y", "@postiz/mcp-server"],
+      "env": {
+        "POSTIZ_API_KEY": "YOUR_POSTIZ_API_KEY",
+        "POSTIZ_BASE_URL": "https://your-postiz-instance.example"
+      }
+    },
+    "similarweb": {
+      "_comment": "需 Similarweb API；或使用自建 MCP 桥接",
+      "command": "npx",
+      "args": ["-y", "similarweb-mcp-server"],
+      "env": {
+        "SIMILARWEB_API_KEY": "YOUR_SIMILARWEB_API_KEY"
+      }
+    },
+    "google-workspace": {
+      "_comment": "Google OAuth 或服务账号 JSON",
+      "command": "npx",
+      "args": ["-y", "@googleworkspace/mcp-server"],
+      "env": {
+        "GOOGLE_APPLICATION_CREDENTIALS": "/path/to/service-account.json"
+      }
+    },
+    "notion-collab": {
+      "_comment": "企业 MCP 首批：须后台「企业 MCP」→ Notion 协作 为 shadow/enforce 后才会加载。默认 PILOTDECK_MCP_NOTION=off。",
+      "command": "npx",
+      "args": ["-y", "@notionhq/notion-mcp-server"],
+      "env": {
+        "NOTION_TOKEN": "YOUR_NOTION_INTEGRATION_TOKEN"
+      }
+    },
+    "erp": {
+      "_comment": "企业 MCP 首批 P0：erp-mcp（金蝶/用友统一）。需 Python 3.10+ 与 ERP_* 凭据。默认只读；审批工具在 Nova 侧默认隐藏。与 kingdee 互斥启用。",
+      "command": "python",
+      "args": ["-m", "erp_mcp.server"],
+      "env": {
+        "ERP_TYPE": "kingdee",
+        "ERP_BASE_URL": "https://your-erp.example",
+        "ERP_ACCT_ID": "YOUR_ACCT",
+        "ERP_APP_ID": "YOUR_APP_ID",
+        "ERP_APP_SECRET": "YOUR_APP_SECRET",
+        "ERP_USERNAME": "YOUR_USER",
+        "ERP_PASSWORD": "YOUR_PASSWORD"
+      }
+    },
+    "kingdee": {
+      "_comment": "企业 MCP 首批 P0 备选：kingdee-k3cloud-mcp。强制 MCP_MODE=readonly。与 erp 互斥。",
+      "command": "npx",
+      "args": ["-y", "kingdee-k3cloud-mcp", "--mode", "readonly"],
+      "env": {
+        "MCP_MODE": "readonly",
+        "KD_X_KDAPI_ACCTID": "YOUR_ACCT",
+        "KD_X_KDAPI_USERID": "YOUR_USER",
+        "KD_X_KDAPI_APPID": "YOUR_APP_ID",
+        "KD_X_KDAPI_APPSECRET": "YOUR_APP_SECRET",
+        "KD_X_KDAPI_LCID": "2052",
+        "KD_X_KDAPI_SERVER_URL": "https://your-kingdee.example"
+      }
+    },
+    "yonyou-fin": {
+      "_comment": "企业 MCP 首批 P1：用友 YonSuite 财务。查询默认开；写凭证须确认。",
+      "command": "npx",
+      "args": ["-y", "@archiesun/yonsuit-fin-mcp"],
+      "env": {
+        "YONSUITE_APP_KEY": "YOUR_APP_KEY",
+        "YONSUITE_APP_SECRET": "YOUR_APP_SECRET",
+        "YONSUITE_TENANT_ID": "YOUR_TENANT"
+      }
+    },
+    "tax-invoice": {
+      "_comment": "企业 MCP 首批 P1：数电发票（fa-piao HTTP）。仅 query/verify；开票默认关。Token 勿入库。",
+      "url": "https://mcp.example-fapiao.com/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_TAX_INVOICE_TOKEN"
+      }
+    },
+    "postgres": {
+      "_comment": "企业 MCP 首批 P0：官方 Postgres 只读。连接串须指向客户业务库；禁止 SAAS_DATABASE_URL / 控制面库。",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-postgres", "postgresql://readonly_user:PASSWORD@db-host:5432/business_db"],
+      "env": {}
+    },
+    "playwright": {
+      "_comment": "Microsoft 官方 Playwright MCP；首次使用可运行 npm run install:browser",
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@0.0.75"],
+      "env": {}
+    },
+    "agent-aeo": {
+      "_comment": "GEO 监测 P0：四引擎 citation / SOV；需 AGENTAEO_API_KEY",
+      "command": "npx",
+      "args": ["-y", "@agentaeo/mcp-server"],
+      "env": {
+        "AGENTAEO_API_KEY": "YOUR_AGENTAEO_API_KEY"
+      }
+    },
+    "geo-optimizer": {
+      "_comment": "Auriti-Labs geo-optimizer；需 Python 3.10+ 并按上游 README 安装",
+      "command": "python",
+      "args": ["-m", "geo_optimizer.server"],
+      "env": {}
+    },
+    "ai-seo-mcp": {
+      "_comment": "AutomateLab ai-seo-mcp 页面 AEO 审计",
+      "command": "npx",
+      "args": ["-y", "ai-seo-mcp"],
+      "env": {}
+    },
+    "cn-central-policy": {
+      "_comment": "China-Central-Policy-MCP（gov.cn 政策检索）。本地：git clone guangxiangdebizi/China-Central-Policy-MCP && npm i && npm run build，将 args 改为该仓 build/index.js 绝对路径。管理员经后台 MCP 页写入 ~/.pilotdeck/mcp.json 后重启 Gateway。省惠企 URL 表不是 MCP。详见 docs/cn-compliance-mcp-setup.zh-CN.md",
+      "command": "node",
+      "args": ["/path/to/China-Central-Policy-MCP/build/index.js"],
+      "env": {}
+    },
+    "im-notify": {
+      "_comment": "出站通知 MCP（企微/钉钉/WhatsApp，无 LINE）。推荐走后台 → 消息通道 → 出站通知；或手填 env 后重启 Gateway。详见 docs/im-channels-admin-guide.zh-CN.md",
+      "command": "node",
+      "args": ["mcp-servers/im-notify/index.mjs"],
+      "env": {
+        "WECOM_WEBHOOK_URL": "",
+        "DINGTALK_WEBHOOK_URL": "",
+        "DINGTALK_SECRET": "",
+        "WHATSAPP_ACCESS_TOKEN": "",
+        "WHATSAPP_PHONE_NUMBER_ID": "",
+        "WHATSAPP_TO": ""
+      }
+    }
+  }
+}

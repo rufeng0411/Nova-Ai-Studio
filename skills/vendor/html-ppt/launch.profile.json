@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "slug": "html-ppt",
+  "display_name": "HTML 幻灯工作室",
+  "skill_root": "skills/vendor/html-ppt",
+  "launch_tier": "theme_deck",
+  "steps": [
+    {
+      "id": "theme",
+      "type": "visual_grid",
+      "title": "选择主题",
+      "required": true,
+      "source": "html-ppt-themes"
+    },
+    {
+      "id": "deck",
+      "type": "visual_grid",
+      "title": "选择整稿模板",
+      "required": true,
+      "source": "html-ppt-full-decks"
+    },
+    {
+      "id": "brief",
+      "type": "fields",
+      "title": "演讲要点",
+      "fields": [
+        {
+          "key": "brief",
+          "label": "主题与要点",
+          "type": "textarea",
+          "placeholder": "例如：产品发布会、核心功能与路线图"
+        },
+        {
+          "key": "page_count",
+          "label": "页数",
+          "type": "number",
+          "default": "8",
+          "min": 4,
+          "max": 40
+        }
+      ]
+    }
+  ],
+  "compile": {
+    "prompt_template": "用「HTML 幻灯工作室」制作 {page_count} 页 HTML 放映幻灯：{brief}。主题 `{theme}`（{theme_label}），整稿模板 `{deck}`（{deck_label}）。必须先 read_skill html-ppt 并按 SKILL 工作流 scaffold，写入系统分配任务目录，跳过主题问卷。"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "rog-0dd9097f-campaign-visual-canvas-misprofile",
+  "description": "Campaign full case must resolve profileId=campaign when goal mentions poster",
+  "userGoal": "帮我做【雷蛇2026主题】的品牌传播 campaign 全案，按阶段一次规划执行，产出存 artifacts/campaign 调研 策划 brief 主视觉 海报 发布 监测",
+  "capabilitySlug": "mkt-campaign",
+  "expectedProfileId": "campaign",
+  "verifiedPaths": [
+    "artifacts/campaign/razer-2026/04-key-visual-poster.html",
+    "artifacts/campaign/razer-2026/05-social-images.html"
+  ],
+  "missingPaths": ["artifacts/campaign/razer-2026/04-key-visual-poster.png"],
+  "expectCampaignPngDegrade": true
+}

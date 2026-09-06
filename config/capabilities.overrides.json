@@ -1,0 +1,419 @@
+{
+  "version": 1,
+  "updatedAt": "2026-06-02T12:00:00+08:00",
+  "stages": [
+    {
+      "id": "research",
+      "label": "调研洞察",
+      "stage_order": 1,
+      "summary": "摸清市场、用户、竞品和趋势"
+    },
+    {
+      "id": "strategy",
+      "label": "策略策划",
+      "stage_order": 2,
+      "summary": "明确定位、人群、路径和决策"
+    },
+    {
+      "id": "create",
+      "label": "创意内容",
+      "stage_order": 3,
+      "summary": "产出文案、视觉、页面和视频"
+    },
+    {
+      "id": "activate",
+      "label": "营销触达",
+      "stage_order": 4,
+      "summary": "组织活动、矩阵和渠道触达"
+    },
+    {
+      "id": "distribute",
+      "label": "发布分发",
+      "stage_order": 5,
+      "summary": "上线发布并规模化分发"
+    },
+    {
+      "id": "measure",
+      "label": "监测复盘",
+      "stage_order": 6,
+      "summary": "看数据、做实验、形成回流洞察"
+    },
+    {
+      "id": "education",
+      "label": "教育学习",
+      "stage_order": 7,
+      "summary": "教材同步、备考复习、教师备课、亲子陪学与学习助手（独立于营销飞轮）"
+    },
+    {
+      "id": "office",
+      "label": "办公",
+      "stage_order": 8,
+      "summary": "文档、表格、演示与协作"
+    },
+    {
+      "id": "creation",
+      "label": "创作",
+      "stage_order": 9,
+      "summary": "设计、视频、图像与模板全库"
+    },
+    {
+      "id": "development",
+      "label": "开发",
+      "stage_order": 10,
+      "summary": "工程、测试、部署与平台工具"
+    },
+    {
+      "id": "brainstorming",
+      "label": "脑爆",
+      "stage_order": 11,
+      "summary": "用不同视角脑暴、拆解问题与激发创意"
+    },
+    {
+      "id": "uncategorized",
+      "label": "待归类",
+      "stage_order": 99,
+      "summary": "未映射能力，待人工补充"
+    }
+  ],
+  "education_bands": [
+    {
+      "id": "preschool",
+      "label": "学前教育",
+      "band_order": 1,
+      "summary": "拼音、数感、专注力与入园前启蒙"
+    },
+    {
+      "id": "primary",
+      "label": "小学",
+      "band_order": 2,
+      "summary": "小学教材同步、每日练习与阅读写作"
+    },
+    {
+      "id": "junior",
+      "label": "初中",
+      "band_order": 3,
+      "summary": "初中同步、中考复习与学科专项"
+    },
+    {
+      "id": "senior",
+      "label": "高中",
+      "band_order": 4,
+      "summary": "高中同步、高考冲刺与选科备考"
+    },
+    {
+      "id": "general",
+      "label": "综合升学",
+      "band_order": 5,
+      "summary": "大学备考、公考、留学与成人学习"
+    },
+    {
+      "id": "edu_fun",
+      "label": "趣味学习",
+      "band_order": 6,
+      "summary": "趣味 CLI、游戏化探索（非课纲）"
+    },
+    {
+      "id": "academic_research",
+      "label": "学术研究",
+      "band_order": 7,
+      "summary": "论文阅读、文献综述、学术写作与引文"
+    }
+  ],
+  "defaults": {
+    "integration_level": "L1",
+    "audience": ["营销", "品牌", "运营", "产品"],
+    "stage": "uncategorized"
+  },
+  "welcome_examples": {
+    "education": [
+      "帮我出5道八年级下册物理力学选择题，附答案与解析，直接开始做，做完告诉我文件在哪。",
+      "我是初中数学老师，请按人教版八年级上册「一次函数」写一份45分钟教案，含教学目标与板书设计，直接开始做。",
+      "孩子三年级，帮我安排本周每天15分钟口算与听写练习，直接开始做。"
+    ],
+    "research": [
+      "帮我做一份竞品调研，先列框架再给结论，直接开始做，做完告诉我文件在哪。",
+      "围绕“AI 视频工具”做用户需求洞察，输出核心痛点和机会点。"
+    ],
+    "strategy": [
+      "给这个新产品做一版 GTM 策略，包含目标人群、差异化和3个月节奏。",
+      "基于现有信息做 SWOT，并给出接下来两周可执行动作。"
+    ],
+    "create": [
+      "做一套品牌官网首屏和核心卖点文案，简洁高级风，直接执行。",
+      "做5张社媒轮播图文案+视觉结构草案，适合小红书。"
+    ],
+    "activate": [
+      "给这个活动做全渠道触达计划，按社媒、邮件、社区拆分执行清单。",
+      "为新品发布做一套社媒+邮件联动内容日历。"
+    ],
+    "distribute": [
+      "帮我整理发布分发清单，按官网、SEO、社媒渠道输出上线步骤。",
+      "做一版 programmatic SEO 分发方案和执行优先级。",
+      "帮我把这篇图文存到小红书草稿箱，不要公开发布，做完告诉我任务编号。"
+    ],
+    "measure": [
+      "给我做一版投放复盘模板，包含指标、归因和下一轮优化建议。",
+      "基于最近数据做周报，标出增长点、问题点和下周动作。",
+      "帮【品牌名】做 AI 搜索可见度周报：品牌在对话里是否被提到、该优化哪些内容，直接开始做，做完告诉我文件在哪。",
+      "对【品牌名】做 AI 可见度快检：审计清单+关键词+验证问句，直接开始做，做完告诉我路径。"
+    ]
+  },
+  "rules": [
+    {
+      "matchSourceIncludes": "vendor/hermes-edu-skills",
+      "stage": "education",
+      "integration_level": "L1",
+      "audience": ["学生", "家长", "教师", "教研"]
+    },
+    {
+      "matchPrefix": "od-",
+      "stage": "create"
+    },
+    {
+      "matchSlug": "open-design",
+      "stage": "create"
+    },
+    {
+      "matchPrefix": "mkt-",
+      "stage": "uncategorized"
+    },
+    {
+      "matchPrefix": "df-",
+      "stage": "research"
+    },
+    {
+      "matchPrefix": "ala-",
+      "stage": "research"
+    },
+    {
+      "matchPrefix": "pms-",
+      "stage": "strategy"
+    },
+    {
+      "matchSlug": "yixiaoer",
+      "stage": "distribute"
+    }
+  ],
+  "skills": {
+    "mkt-content-strategy": { "stage": "strategy" },
+    "mkt-marketing-plan": { "stage": "strategy" },
+    "mkt-marketing-psychology": { "stage": "strategy" },
+    "mkt-marketing-ideas": { "stage": "strategy" },
+    "mkt-launch": { "stage": "strategy" },
+    "mkt-product-marketing": { "stage": "strategy" },
+    "mkt-copywriting": { "stage": "create" },
+    "mkt-copy-editing": { "stage": "create" },
+    "mkt-image": { "stage": "create" },
+    "mkt-video": { "stage": "create" },
+    "mkt-social": { "stage": "activate" },
+    "mkt-emails": { "stage": "activate" },
+    "mkt-cold-email": { "stage": "activate" },
+    "mkt-community-marketing": { "stage": "activate" },
+    "mkt-lead-magnets": { "stage": "activate" },
+    "mkt-paid-ads": { "stage": "activate" },
+    "mkt-programmatic-seo": { "stage": "distribute" },
+    "mkt-directory-submissions": { "stage": "distribute" },
+    "mkt-seo-audit": { "stage": "measure" },
+    "mkt-customer-research": { "stage": "research" },
+    "mkt-competitor-profiling": { "stage": "research" },
+    "mkt-competitors": { "stage": "research" },
+    "mkt-analytics-tracking": { "stage": "measure" },
+    "mkt-ab-testing": { "stage": "measure" },
+    "mkt-ad-creative": { "stage": "create" },
+    "mkt-ads": { "stage": "activate" },
+    "mkt-ai-seo": {
+      "stage": "measure",
+      "secondary_stages": ["research"],
+      "name": "AI 可见度审计清单",
+      "description": "检查内容是否容易被 AI 搜索与对话引用；适合监测复盘。完整成稿与评分请用「AI 搜索可见度全案」。",
+      "examples": [
+        "帮【品牌名】做 AI 搜索可见度审计清单，列出优先改进项，直接开始做，做完告诉我文件在哪。"
+      ]
+    },
+    "pd-geo": {
+      "stage": "strategy",
+      "integration_level": "L2",
+      "name": "AI 搜索可见度全案",
+      "description": "关键词策略、多平台成稿、内容评分与提及验证、可见度周报；帮助品牌在 AI 回答里被更可靠地提到。详见 docs/aigeo-user-guide.md",
+      "examples": [
+        "帮【品牌名】做 AI 搜索可见度标准包：审计、关键词、知乎和小红书成稿、评分验证和 HTML 周报，交付 keywords.md、aeo-audit.md、drafts/zhihu.md 等文件，直接开始做，做完告诉我各文件路径。",
+        "为【产品】生成 AI 搜索关键词和 10 条验证问句，并写一篇知乎结构稿，直接开始做，做完告诉我文件夹在哪。"
+      ]
+    },
+    "mkt-analytics": { "stage": "measure" },
+    "mkt-aso": { "stage": "distribute" },
+    "mkt-churn-prevention": { "stage": "measure" },
+    "mkt-co-marketing": { "stage": "activate" },
+    "mkt-cro": { "stage": "measure" },
+    "mkt-free-tools": { "stage": "activate" },
+    "mkt-onboarding": { "stage": "activate" },
+    "mkt-paywalls": { "stage": "create" },
+    "mkt-popups": { "stage": "activate" },
+    "mkt-pricing": { "stage": "strategy" },
+    "mkt-prospecting": { "stage": "activate" },
+    "mkt-referrals": { "stage": "activate" },
+    "mkt-revops": { "stage": "strategy" },
+    "mkt-sales-enablement": { "stage": "activate" },
+    "mkt-schema": { "stage": "distribute" },
+    "mkt-signup": { "stage": "activate" },
+    "mkt-site-architecture": { "stage": "strategy" },
+    "mkt-sms": { "stage": "activate" },
+    "df-deep-research": { "stage": "research" },
+    "df-github-deep-research": { "stage": "research" },
+    "df-systematic-literature-review": { "stage": "education", "education_bands": ["academic_research"] },
+    "df-academic-paper-review": { "stage": "education", "education_bands": ["academic_research"] },
+    "ala-academic-researcher": { "stage": "education", "education_bands": ["academic_research"] },
+    "college-academic-writing": { "stage": "education", "education_bands": ["academic_research"] },
+    "anth-pdf": { "stage": "education", "education_bands": ["academic_research"], "name": "PDF 论文解析", "task_summary": "提取、合并与分析学术论文 PDF", "examples": ["帮我从这篇论文 PDF 提取摘要、方法与结论，整理成结构化笔记，直接开始做，做完告诉我文件在哪。"] },
+    "ora-brainstorm-research": { "stage": "education", "education_bands": ["academic_research"], "name": "研究选题脑暴", "task_summary": "凝练研究问题、假设与实验方向", "examples": ["围绕【研究方向】做一轮选题脑暴，给出 3 个可验证假设与实验设计草图，直接开始做，做完告诉我文件在哪。"] },
+    "ora-research-manager": { "stage": "education", "education_bands": ["academic_research"], "name": "研究项目管理", "task_summary": "整理资料、里程碑与实验记录", "examples": ["帮我把【课题】的文献、实验与笔记整理成研究日志与下周计划，直接开始做，做完告诉我文件在哪。"] },
+    "ora-rigor-reviewer": { "stage": "education", "education_bands": ["academic_research"], "name": "论文严谨性评审", "task_summary": "六维打分与审稿式改进建议", "examples": ["按顶会审稿标准评审这篇【论文/草稿】，给出分项评分与修改清单，直接开始做，做完告诉我文件在哪。"] },
+    "ora-ml-paper-writing": { "stage": "education", "education_bands": ["academic_research"], "name": "ML 论文撰写", "task_summary": "NeurIPS/ICML 等 LaTeX 成稿与引文核验", "examples": ["基于【实验仓库/结果】撰写 NeurIPS 风格论文初稿，含摘要、方法与实验，直接开始做，做完告诉我文件在哪。"] },
+    "ora-systems-paper-writing": { "stage": "education", "education_bands": ["academic_research"], "name": "系统论文撰写", "task_summary": "OSDI/NSDI 等系统类论文结构与成稿", "examples": ["为【系统课题】写 OSDI 风格论文大纲与 Introduction 初稿，直接开始做，做完告诉我文件在哪。"] },
+    "ora-academic-plotting": { "stage": "education", "education_bands": ["academic_research"], "name": "学术图表绘制", "task_summary": "论文级 matplotlib 图与架构示意图", "examples": ["为【实验结果】生成论文级折线图与消融对比图（PDF/SVG），直接开始做，做完告诉我文件在哪。"] },
+    "nova-research-general": { "stage": "research", "name": "Nova-General Research", "display_name": "Nova-General Research", "task_summary": "Balanced market & sentiment research report", "examples": ["围绕【主题】写一份通用调研报告：背景、发现、舆情与建议，直接开始做，做完告诉我文件在哪。"] },
+    "nova-research-user-general": { "stage": "research", "name": "Nova-User Research", "display_name": "Nova-User Research", "task_summary": "Eight-section user research narrative", "examples": ["做【产品】八段式用户研究：画像、场景、痛点与决策因素，直接开始做，做完告诉我文件在哪。"] },
+    "nova-research-industry-market": { "stage": "research", "name": "Nova-Industry & Market", "display_name": "Nova-Industry & Market", "task_summary": "Industry size, chain, PEST/SWOT & entry decision", "examples": ["写【行业】市场研究报告：规模、产业链、PEST/SWOT 与进入建议，直接开始做，做完告诉我文件在哪。"] },
+    "nova-research-product-user": { "stage": "research", "name": "Nova-Product User Research", "display_name": "Nova-Product User Research", "task_summary": "Product-oriented user research (8 chapters)", "examples": ["为【产品】写产品用户研究报告，按固定八章骨架展开，直接开始做，做完告诉我文件在哪。"] },
+    "nova-research-competitor": { "stage": "research", "name": "Nova-Competitor Benchmark", "display_name": "Nova-Competitor Benchmark", "task_summary": "Full competitor pool C1..CN benchmark & breakout", "examples": ["对【品类】做竞品全量对标：C1..CN 对比表与突围策略，直接开始做，做完告诉我文件在哪。"] },
+    "nova-research-academic-professional": { "stage": "education", "education_bands": ["academic_research"], "name": "Nova-Academic & Professional", "display_name": "Nova-Academic & Professional", "task_summary": "Academic, government & professional report delivery", "examples": ["写【课题】学术/公文专业报告，权威信源、严谨结构与参考文献，直接开始做，做完告诉我文件在哪。"] },
+    "nova-ppt-aesthetic-slides": { "stage": "create", "name": "Nova-Aesthetic Slides", "display_name": "Nova-Aesthetic Slides", "task_summary": "Outline → page brief → generate_image PNG deck (not HTML)", "examples": ["用「Nova-美学幻灯」把【大明营造·中国古代建筑科学图解】做成【页数，如 8】页【画幅，如 16:9】国风手绘 PNG 幻灯（outline → 页描述 → 逐页 generate_image），逐页 PNG + slide-manifest.json，由系统写入本任务目录，不要 HTML，直接开始做，做完告诉我文件在哪。"] },
+    "nova-customer-acquisition-leads": { "stage": "activate", "name": "Nova-智能获客", "display_name": "Nova-智能获客", "task_summary": "B2B 智能获客：检索→抽取→评分线索表", "examples": ["按【北京地区的人工智能外包项目】智能获客：检索、抽取线索并输出评分清单；主成果 leads-report.md（Markdown 表格），对话里只给摘要和 Top 表格，不要贴 JSON，直接开始做，做完告诉我文件在哪。"] },
+    "df-consulting-analysis": { "stage": "research", "task_group": "market_landscape" },
+    "df-data-analysis": { "stage": "measure" },
+    "df-chart-visualization": { "stage": "measure" },
+    "df-newsletter-generation": { "stage": "activate" },
+    "df-podcast-generation": { "stage": "activate" },
+    "df-image-generation": { "stage": "create" },
+    "df-video-generation": { "stage": "create" },
+    "df-ppt-generation": { "stage": "create" },
+    "df-frontend-design": { "stage": "create" },
+    "df-web-design-guidelines": { "stage": "create" },
+    "ala-fact-checker": { "stage": "research" },
+    "ala-strategy-advisor": { "stage": "strategy" },
+    "ala-project-planner": { "stage": "strategy" },
+    "ala-sprint-planner": { "stage": "strategy" },
+    "ala-data-analyst": { "stage": "measure" },
+    "ala-visualization-expert": { "stage": "measure" },
+    "ala-content-creator": { "stage": "create" },
+    "ala-content-writer": { "stage": "create" },
+    "ala-ux-designer": { "stage": "create" },
+    "ala-email-drafter": { "stage": "activate" },
+    "pms-swot-analysis": { "stage": "strategy" },
+    "find-skills": { "stage": "strategy" },
+    "frontend-slides": { "stage": "create" },
+    "html-ppt": {
+      "stage": "create",
+      "display_name": "HTML演示稿",
+      "task_summary": "专业 HTML 演示稿：多主题模板与放映模式",
+      "examples": ["用「HTML演示稿」做 8 页【主题】技术分享 HTML 放映幻灯，主题 cyberpunk-neon，整稿 tech-sharing。须交付：index.html。写入系统分配任务目录。"]
+    },
+    "nova-bento-slides": {
+      "stage": "office",
+      "display_name": "Nova可编辑演示稿",
+      "task_summary": "原生 Bento 演示稿：配色/字体/配图/版式右栏所见即所得",
+      "description": "默认 PPT 路径：bento/slides JSON + morph/chart/table/image，按 layouts 配方排版，右栏 Bento 预览与编辑一致。禁止静态 HTML 或有损转换。用户明确要 Office .pptx 时改 ppt-master/anth-pptx；Reveal HTML 用 html-ppt；美学 PNG 用 nova-ppt-aesthetic-slides。",
+      "hub_sort": 0,
+      "hub_recommend_stars": 5,
+      "examples": [
+        "用 Nova可编辑演示稿 做雷蛇 2026 新品 16 页 16:9：品牌绿配色、官网产品图进 assets、封面 ken-burns、morph≥2，右栏所见即所得，直接开始做，交付 deck.bento.html",
+        "技术分享 RecoveryBudget 双轨 12 页：柱状图对比、每页 notes≥80 字、layouts 配方坐标，直接开始做"
+      ]
+    },
+    "ppt-master": {
+      "stage": "create",
+      "display_name": "原生可编辑 PPT",
+      "task_summary": "从文档生成 PowerPoint 原生形状/动画/备注的可编辑 PPTX",
+      "description": "输出真实 DrawingML 演示稿（非 HTML/整页图片），适合比稿、汇报与客户提案；与 HTML 幻灯、美学 PNG 幻灯互补。",
+      "examples": [
+        "用「原生可编辑 PPT」把下面这份 Markdown 做成 12 页可编辑 PPTX，16:9，直接开始做，做完告诉我文件在哪。",
+        "按附件 PDF 做一份客户提案 PPT，要原生文本框和过渡动画，直接开始做，做完告诉我文件路径。"
+      ]
+    },
+    "edu-sci-timesfm-forecasting": {
+      "display_name": "时序预测 TimesFM",
+      "task_summary": "Google TimesFM 2.5 零样本时序预测（销量/传感器/指标）",
+      "description": "上传 CSV 或序列数据即可做点预测与分位区间，无需自训模型；适合运营指标与科研时序分析。",
+      "examples": [
+        "用 TimesFM 对这份销量 CSV 预测未来 12 期并输出图表与结论，直接开始做，做完告诉我文件在哪。",
+        "对附件传感器数据做零样本预测并给出 90% 置信区间，直接开始做，做完告诉我结果文件路径。"
+      ]
+    },
+    "skill-creator": { "stage": "strategy" },
+    "pilotdeck-skills-migration": { "stage": "strategy" },
+    "yixiaoer": {
+      "stage": "distribute",
+      "integration_level": "L2",
+      "examples": [
+        "帮我查一下蚁小二里哪些账号登录失效了，直接查完告诉我。",
+        "把这篇图文存到小红书草稿箱，不要公开发布，做完告诉我任务编号。"
+      ]
+    },
+    "od-research-decision-room": { "stage": "research" },
+    "social-creative-matrix": {
+      "stage": "create",
+      "integration_level": "L2",
+      "name": "社媒矩阵创作",
+      "description": "一条创意生成国内 8 平台文案矩阵与 9:16/1:1/16:9/3:4 四套配图，可交接蚁小二图文草稿发布。",
+      "examples": [
+        "春季新品一条创意，全平台文案+四套配图，先不要发布，直接开始做。",
+        "办公室护眼灯，只要小红书和抖音，配图 9:16 和 3:4，做完告诉我文件夹在哪。"
+      ]
+    },
+    "anth-docx": {
+      "stage": "create",
+      "integration_level": "L2",
+      "name": "Word 文档（docx）",
+      "description": "生成与编辑正式 Word 文档：传播 brief、新闻通稿、备忘录、带目录/页眉页脚的报告等客户交付物（HTML 之外）。",
+      "examples": [
+        "帮我写一份【618 大促】传播活动 brief，输出 Word 文件，含背景目标、人群、核心信息、渠道节奏和成果清单，直接开始做，做完告诉我文件路径。",
+        "把下面这篇通稿整理成正式 Word 文档，标题居中、二级标题清晰、文末加媒体联系人，直接开始做，做完告诉我文件在哪。"
+      ]
+    },
+    "geo-keyword-research": { "stage": "research", "name": "AI 关键词调研", "task_summary": "梳理 AI 搜索场景下的关键词与用户提问句式", "description": "建立 GEO 基线问句库，覆盖用户在大模型里常搜的问题句式。", "examples": ["为【品牌】列出 20 个 AI 搜索关键词与用户常问句，直接开始做，做完告诉我文件在哪。"] },
+    "geo-competitor-analysis": { "stage": "research", "name": "AI 竞品可见度", "task_summary": "对比竞品在大模型回答中的提及与引用差距", "description": "比较你与竞品在 AI 回答中的提及与可见度差距；逐模型收录全量矩阵请用 geo-monitor 三件套（probe→hub→report），本能力不重复矩阵。", "examples": ["对比我们与 3 个竞品在 AI 搜索中的可见度，输出差距与行动清单，直接开始做，做完告诉我文件在哪。"] },
+    "geo-serp-analysis": { "stage": "research", "name": "AI 搜索格局分析", "task_summary": "分析 AI 搜索/SERP 结果页格局与机会", "description": "识别 AI 搜索结果页的可争取位次与内容切入机会。", "examples": ["分析【关键词】在 AI 搜索中的结果格局并给出内容机会，直接开始做，做完告诉我文件在哪。"] },
+    "geo-content-gap-analysis": { "stage": "strategy", "name": "AI 内容缺口分析", "task_summary": "找出竞品已覆盖、你方未布局的内容主题", "description": "发现 AI 可检索内容缺口，指导下一批选题与成稿。", "examples": ["对比我们与 3 个竞品的内容覆盖，列出 AI 搜索内容缺口，直接开始做，做完告诉我文件在哪。"] },
+    "geo-content-optimizer": { "stage": "create", "name": "AI 可引用内容优化", "task_summary": "改写内容以提高被大模型引用概率", "description": "优化段落结构与事实密度，提高被 AI 摘录与引用的概率。", "examples": ["优化下面这篇官网 FAQ，使其更易被 AI 引用，直接开始做，做完告诉我文件在哪。"] },
+    "geo-seo-content-writer": { "stage": "create", "name": "AI 搜索友好成稿", "task_summary": "撰写面向 AI 搜索与引用的长文", "description": "产出便于 AI 抓取、摘录与引用的权威长文与 FAQ。", "examples": ["写一篇关于【主题】的权威长文，结构清晰便于 AI 摘录，直接开始做，做完告诉我文件在哪。"] },
+    "geo-citability": { "stage": "create", "name": "AI 引用评分", "task_summary": "评估页面被 AI 引用的可能性", "description": "对页面做 citability 评分并给出可引用性改进建议。", "examples": ["对【URL】做 citability 评分并给出修改建议，直接开始做，做完告诉我文件在哪。"] },
+    "geo-cn-crawlers": { "stage": "distribute", "major_category": "geo", "geo_stage": "geo_technical", "name": "国内 AI 爬虫可达", "task_summary": "检查国内大模型爬虫与 llms.txt 技术可达", "description": "审计 robots、llms.txt 与国内 AI 爬虫可达性；逐模型收录矩阵见 geo-visibility-probe。", "examples": ["检查【官网】对国内 AI 爬虫的可达性与 llms.txt，直接开始做，做完告诉我文件在哪。"] },
+    "geo-technical-seo": { "stage": "distribute", "name": "AI 爬虫与技术可达", "task_summary": "检查 AI 爬虫可达性与技术 SEO", "description": "审计 robots、llms.txt、schema 与爬虫可达性等技术基线。", "examples": ["检查官网 robots、llms.txt 与结构化数据是否利于 AI 抓取，直接开始做，做完告诉我文件在哪。"] },
+    "geo-on-page-audit": { "stage": "measure", "name": "页面 AI 可见度审计", "task_summary": "单页 AI 可见度与 on-page 审计", "description": "检查单页标题、结构、关键词与内链，列出优先修复项。", "examples": ["审计【URL】的 AI 可见度并列出优先修复项，直接开始做，做完告诉我文件在哪。"] },
+    "geo-rank-track": { "stage": "measure", "name": "AI 可见度跟踪", "task_summary": "跟踪品牌在 AI 回答中的可见度变化", "description": "建立 AI 可见度基线并跟踪排名与提及趋势。", "examples": ["建立【品牌】AI 可见度跟踪表与本月基线，直接开始做，做完告诉我文件在哪。"] },
+    "geo-performance-reporter": { "stage": "measure", "name": "AI 可见度绩效报告", "task_summary": "汇总 AI 可见度与渠道绩效", "description": "汇总可见度、流量与转化指标，输出周期复盘报告。", "examples": ["生成本月 AI 可见度与 SEO 绩效报告，直接开始做，做完告诉我文件在哪。"] },
+    "geo-backlink-analyzer": { "stage": "measure", "name": "外链与引用分析", "task_summary": "分析外链与 AI 引用来源质量", "description": "评估外链与引用来源，辅助提升 AI 检索信任信号。", "examples": ["分析【域名】外链与引用来源并给出优化建议，直接开始做，做完告诉我文件在哪。"] },
+    "geo-aeo-audit": { "stage": "measure", "name": "AI 可见度审计", "task_summary": "Princeton GEO 四维评分与 llms.txt/schema 修复建议", "description": "全站 AEO/GEO 审计并输出 llms.txt 与 schema 修复清单；报告 MD 须同步 HTML。", "examples": ["对【官网 URL】做 AI 可见度审计并输出修复清单，直接开始做，做完告诉我文件在哪。"] },
+    "geo-dual-report": { "stage": "measure", "major_category": "geo", "geo_stage": "geo_monitor", "name": "GEO 报告 HTML 同步", "task_summary": "将 GEO 分析报告 MD 转为专业 HTML 仪表盘", "description": "读取同目录分析 MD，生成同名 HTML（Chart.js 图表、KPI 卡、CSS 动效）。", "examples": ["把任务目录里的 aeo-audit.md 同步成 aeo-audit.html，直接开始做，做完告诉我文件在哪。"] },
+    "mkt-competitive-brief": { "stage": "research", "name": "竞品简报", "task_summary": "输出结构化竞品简报", "examples": ["为【品类】写竞品简报，含定位、渠道与内容策略，直接开始做，做完告诉我文件在哪。"] },
+    "mkt-competitive-intel": { "stage": "research", "name": "竞争情报摘要", "task_summary": "汇总竞争动态与应对建议", "examples": ["整理近 30 天竞品动态与 3 条应对建议，直接开始做，做完告诉我文件在哪。"] },
+    "mkt-content-creation": { "stage": "create", "name": "营销内容创作", "task_summary": "按渠道创作营销内容", "examples": ["为新品写一条 LinkedIn 帖与一条小红书文案，直接开始做，做完告诉我文件在哪。"] },
+    "mkt-draft-content": { "stage": "activate", "name": "渠道草稿", "task_summary": "为各渠道起草待发布内容", "examples": ["为本周社媒日历起草 5 条草稿，直接开始做，做完告诉我文件在哪。"] },
+    "mkt-email-sequence": { "stage": "activate", "name": "邮件序列", "task_summary": "编写 AI 友好结构的邮件触达序列", "examples": ["为【产品】写 5 封 onboarding 邮件序列，直接开始做，做完告诉我文件在哪。"] },
+    "mkt-performance-report": { "stage": "measure", "name": "投放效果报告", "task_summary": "整理投放与渠道效果报告", "examples": ["根据下面数据写一页投放效果报告，直接开始做，做完告诉我文件在哪。"] },
+    "mkt-brand-mention": { "stage": "measure", "name": "品牌提及监测", "task_summary": "监测公开渠道品牌提及与情感", "description": "汇总新闻/社媒等公开提及与情感；不含逐大模型收录矩阵（矩阵见 geo-visibility-probe + geo-monitor-hub）。", "examples": ["汇总【品牌】近 7 天公开提及与情感，直接开始做，做完告诉我文件在哪。"] },
+    "geo-visibility-probe": { "stage": "measure", "major_category": "geo", "geo_stage": "geo_monitor", "name": "大模型收录探测", "task_summary": "探测品牌/产品/事件在主流大模型中的收录与可见度", "description": "必测国内豆包/DeepSeek/千问/百度/Kimi/腾讯元宝与国外 OpenAI/Gemini/Claude/Grok/Meta，写入 llm_coverage 供 hub 合并。", "examples": ["对【品牌/产品名】做十一模型收录探测（国内六+国外五），输出 llm_coverage 矩阵，直接开始做，做完告诉我文件在哪。"] },
+    "geo-monitor-hub": { "stage": "measure", "major_category": "geo", "geo_stage": "geo_monitor", "name": "GEO 监测编排", "task_summary": "聚合十一模型收录矩阵与多源指标为 monitor-data.json", "description": "合并 probe、AgentAEO；llm_coverage.models 须含全部 11 个必测 id。", "examples": ["为【品牌】聚合 GEO 监测数据，产出含十一模型收录矩阵的 monitor-data.json，直接开始做，做完告诉我文件在哪。"] },
+    "geo-monitor-report": { "stage": "measure", "major_category": "geo", "geo_stage": "geo_monitor", "name": "GEO 监测报告", "task_summary": "收录分析、优化建议与 HTML 仪表盘", "description": "从 monitor-data.json 生成 monitor-report.md + geo-monitor-report.html，含收录详情与 P0/P1 优化建议。", "examples": ["根据 monitor-data.json 生成 GEO 监测报告（含大模型收录分析与优化建议），直接开始做，做完告诉我文件在哪。"] },
+    "mkt-review-mining": { "stage": "research", "name": "评论舆情挖掘", "task_summary": "从评论中提炼主题与痛点", "examples": ["分析下面 50 条用户评论的主题与情感，直接开始做，做完告诉我文件在哪。"] },
+    "mcp-similarweb": { "stage": "research", "name": "竞品流量调研", "task_summary": "查网站流量与竞品对比", "availability": "needs_config" },
+    "mcp-google-workspace": { "stage": "office", "major_category": "office", "category_subtag": "office_google", "name": "Google 办公套件", "availability": "needs_config" },
+    "mcp-notion-collab": { "stage": "office", "major_category": "office", "category_subtag": "office_collab", "name": "Notion 协作", "availability": "needs_config" },
+    "od-after-hours-editorial": { "display_name": "深夜编辑风视频", "name": "深夜编辑风视频" },
+    "od-field-notes-editorial": { "display_name": "田野笔记视频", "name": "田野笔记视频" },
+    "fc-firecrawl-cli": { "stage": "research", "major_category": "marketing", "task_group": "web_fetch", "name": "Firecrawl 联网抓取", "task_summary": "搜索、抓取与结构化提取网页", "availability": "needs_config", "examples": ["抓取【竞品官网/pricing 页】并整理成对比表，直接开始做，做完告诉我文件在哪。"] },
+    "fc-firecrawl-search": { "stage": "research", "major_category": "marketing", "task_group": "web_fetch", "name": "Firecrawl 搜索发现", "task_summary": "查询优先的网页发现与抓取", "availability": "needs_config", "examples": ["搜索「【关键词】行业报告」并提取前 5 条来源摘要，直接开始做，做完告诉我文件在哪。"] },
+    "web-just-scrape": { "stage": "research", "major_category": "marketing", "task_group": "web_fetch", "name": "轻量网页抓取", "task_summary": "ScrapeGraph 轻量单页抓取备选", "availability": "needs_config", "examples": ["抓取【URL】正文并输出 markdown，直接开始做，做完告诉我文件在哪。"] },
+    "create-frontend-design": { "stage": "creation", "major_category": "creation", "category_subtag": "create_web", "name": "前端设计规范", "task_summary": "Anthropic 官方前端审美与实现规范", "examples": ["按 frontend-design 规范为【落地页】给出布局与组件建议，直接开始做。"] },
+    "create-ui-ux-pro-max": { "stage": "creation", "major_category": "creation", "category_subtag": "create_web", "name": "UI/UX 专业审查", "task_summary": "UX checklist 与界面改进建议", "examples": ["审查下面页面结构的可用性与视觉层次，直接开始做，做完告诉我修改清单。"] },
+    "remotion-best-practices": { "stage": "creation", "major_category": "creation", "category_subtag": "create_video", "name": "Remotion 最佳实践", "task_summary": "代码视频工程规范与模板", "examples": ["按 Remotion 最佳实践审查这段视频组件代码，直接开始做。"] },
+    "create-ai-video-gen": { "stage": "creation", "major_category": "creation", "category_subtag": "create_video", "name": "AI 视频生成工作流", "task_summary": "热榜视频生成 skill，对齐模型池", "availability": "needs_config", "examples": ["为【产品】生成 15 秒竖版宣传视频脚本与分镜，直接开始做，做完告诉我文件在哪。"] },
+    "legal-risk-assessment": { "stage": "office", "major_category": "office", "category_subtag": "legal_compliance", "name": "法务风险评估", "task_summary": "严重度×可能性框架；非律师意见", "examples": ["评估下面合同条款的法律风险并分级，注明非律师意见，直接开始做，做完告诉我文件在哪。"] },
+    "legal-response": { "stage": "office", "major_category": "office", "category_subtag": "legal_compliance", "name": "法律回应草稿", "task_summary": "函件/回应草稿；非律师意见", "examples": ["起草对【函件/投诉】的初步回应草稿，注明非律师意见，直接开始做，做完告诉我文件在哪。"] },
+    "edu-fun-caveman": { "stage": "education", "major_category": "education", "education_bands": ["edu_fun"], "name": "趣味 CLI 学习", "task_summary": "趣味向探索（非课纲）", "examples": ["用趣味方式解释【概念】，适合轻松探索，直接开始做。"] },
+    "brainstorm-structured": { "stage": "brainstorming", "major_category": "brainstorming", "category_subtag": "methodology", "name": "结构化脑暴（Superpowers）", "task_summary": "Obra Superpowers 对话式脑暴流程", "examples": ["围绕【议题】做一轮结构化脑暴，直接开始做，做完告诉我文件在哪。"] },
+    "mkt-sales-enablement": { "stage": "activate", "major_category": "marketing", "task_group": "sales_enablement", "name": "销售赋能", "task_summary": "销售话术、培训与 enablement 材料", "examples": ["为【产品】写销售一页纸与常见异议回应，直接开始做，做完告诉我文件在哪。"] },
+    "pms-competitive-battlecard": { "stage": "strategy", "major_category": "marketing", "task_group": "sales_enablement", "name": "竞品 Battlecard", "task_summary": "销售用竞品对比卡", "examples": ["做【我方 vs 竞品】battlecard，直接开始做，做完告诉我文件在哪。"] },
+    "mcp-playwright": { "stage": "development", "major_category": "development", "category_subtag": "dev_test", "name": "浏览器自动化 MCP", "task_summary": "Playwright MCP 驱动浏览器", "availability": "ready" }
+  }
+}

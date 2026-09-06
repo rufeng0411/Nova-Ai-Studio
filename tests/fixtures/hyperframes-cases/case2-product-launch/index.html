@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>Case2 Product Launch</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #111; overflow: hidden; }
+    #stage {
+      width: 1280px; height: 720px; position: relative;
+      background: linear-gradient(120deg, #1e1b4b, #312e81 40%, #4c1d95);
+      padding: 64px; box-sizing: border-box;
+    }
+    #badge {
+      display: inline-block; padding: 8px 16px; border-radius: 999px;
+      background: rgba(255,255,255,0.12); color: #c4b5fd; font: 600 18px system-ui;
+      transform: translateY(16px);
+    }
+    #product {
+      margin-top: 24px; font: 800 64px/1.1 system-ui; color: #fff; max-width: 900px;
+      transform: translateY(32px);
+    }
+    #cta {
+      position: absolute; left: 64px; bottom: 64px;
+      font: 600 24px system-ui; color: #f8fafc;
+    }
+  </style>
+</head>
+<body>
+  <div id="stage" data-composition-id="case2-launch" data-start="0" data-duration="6" data-width="1280" data-height="720">
+    <div id="badge" class="clip" data-start="0.3" data-duration="5">全新发布</div>
+    <div id="product" class="clip" data-start="0.8" data-duration="4.5">PilotDeck 营销飞轮 2.0</div>
+    <div id="cta" class="clip" data-start="2.0" data-duration="3.5">立即体验 → nova.ai</div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    tl.from("#badge", { y: 16, opacity: 0, duration: 0.5 }, 0.3);
+    tl.from("#product", { y: 32, opacity: 0, duration: 0.8, ease: "power3.out" }, 0.8);
+    tl.from("#cta", { opacity: 0, duration: 0.6 }, 2.0);
+    window.__timelines["case2-launch"] = tl;
+  </script>
+</body>
+</html>

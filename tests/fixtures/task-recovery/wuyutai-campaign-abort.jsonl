@@ -1,0 +1,5 @@
+{"type":"metadata","id":"wuyutai-campaign-abort","expectedStatus":"repairable"}
+{"role":"user","content":"帮我做某茶品牌 2026 夏季营销 campaign 全案，产出存 artifacts/ 报路径。直接开始做，每阶段完成告诉我文件路径。"}
+{"role":"assistant","content":"开始执行，先确认资料，然后逐一推进。"}
+{"type":"turn_outcome","aborted":true,"userAborted":false,"stopReason":"aborted_streaming"}
+{"type":"deliverable_validation","verified":[],"missing":["artifacts/campaign/research.md","artifacts/campaign/brief.docx"],"broken":[]}

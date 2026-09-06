@@ -1,0 +1,21 @@
+# Small UI bundled images — keep as regular git blobs so Vite can inline them
+
+# Desktop app icon sources are tiny; avoid LFS (OpenBMB budget) and release-time smudge failures
+
+# Shell scripts MUST stay LF — CRLF breaks the Docker entrypoint (`bash\r` not found)
+*.sh text eol=lf
+docker-entrypoint.sh text eol=lf
+
+# === Nova Ai-Studio brand assets — keep OUR version on upstream merges ===
+# One-time enable on each clone: `git config merge.ours.driver true`
+# (regenerate any time from logo-3.png via `npm run brand:assets`).
+ui/public/favicon.svg merge=ours
+ui/public/favicon.png merge=ours
+ui/public/logo-128.png merge=ours
+ui/public/logo-256.png merge=ours
+ui/public/icons/icon-*.png merge=ours
+ui/public/manifest.json merge=ours
+ui/src/assets/pilotdeck-wordmark-light.png merge=ours
+ui/src/assets/pilotdeck-wordmark-dark.png merge=ours
+assets/banner.png merge=ours
+logo-3.png merge=ours

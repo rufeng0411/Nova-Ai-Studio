@@ -1,0 +1,2795 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-19T22:54:10.905Z",
+  "profileRef": "open-design",
+  "recommend": [
+    "linear-app",
+    "supabase",
+    "stripe",
+    "notion",
+    "vercel"
+  ],
+  "heroPreviewIds": [
+    "linear-app",
+    "stripe",
+    "notion",
+    "vercel",
+    "supabase",
+    "perplexity",
+    "elevenlabs",
+    "framer",
+    "coinbase",
+    "posthog",
+    "openai",
+    "mistral-ai",
+    "resend",
+    "airbnb",
+    "tesla",
+    "bugatti",
+    "atelier-zero",
+    "zapier",
+    "claude",
+    "figma"
+  ],
+  "count": 151,
+  "entries": [
+    {
+      "id": "_index",
+      "label": "设计系统索引（完整版，同步自 OpenDesign/design-systems）",
+      "category": "General",
+      "tagline": "",
+      "accent": "#6366f1",
+      "colors": [
+        "#6366f1",
+        "#0f1115",
+        "#f7f8f8",
+        "#8a8f98",
+        "#8a8f98"
+      ],
+      "previewUrl": "/api/launch/static/open-design/_index.html",
+      "thumbHint": "od:_index",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "agentic",
+      "label": "Agentic",
+      "category": "Themed & Unique",
+      "tagline": "Conversational AI-first interface with minimal controls, clear outcomes, and delegated task flows for agentic workflows.",
+      "accent": "#ff5701",
+      "colors": [
+        "#ff5701",
+        "#111827",
+        "#f6f6f1",
+        "#16a34a",
+        "#d97706"
+      ],
+      "previewUrl": "/api/launch/static/open-design/agentic.html",
+      "thumbHint": "od:agentic",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "airbnb",
+      "label": "Airbnb",
+      "category": "E-Commerce & Retail",
+      "tagline": "Travel marketplace. Warm coral accent, photography-driven, rounded UI.",
+      "accent": "#460479",
+      "colors": [
+        "#460479",
+        "#222222",
+        "#ffffff",
+        "#ff385c",
+        "#92174d"
+      ],
+      "previewUrl": "/api/launch/static/open-design/airbnb.html",
+      "thumbHint": "od:airbnb",
+      "recommended": false,
+      "heroPreview": true,
+      "previewThumbUrl": "/api/launch/static/open-design/thumbs/airbnb.webp",
+      "previewImageUrl": "/api/launch/static/open-design/detail/airbnb.webp"
+    },
+    {
+      "id": "airtable",
+      "label": "Airtable",
+      "category": "Design & Creative",
+      "tagline": "Spreadsheet-database hybrid. Colorful, friendly, structured data aesthetic.",
+      "accent": "#1b61c9",
+      "colors": [
+        "#1b61c9",
+        "#181d26",
+        "#ffffff",
+        "#006400",
+        "#333333"
+      ],
+      "previewUrl": "/api/launch/static/open-design/airtable.html",
+      "thumbHint": "od:airtable",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "ant",
+      "label": "Ant",
+      "category": "Professional & Corporate",
+      "tagline": "Structured, enterprise-focused design system emphasizing clarity, consistency, and efficiency for data-dense web applications.",
+      "accent": "#1677ff",
+      "colors": [
+        "#1677ff",
+        "#111827",
+        "#ffffff",
+        "#8b5cf6",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/ant.html",
+      "thumbHint": "od:ant",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "apple",
+      "label": "Apple",
+      "category": "Media & Consumer",
+      "tagline": "Consumer electronics. Premium white space, SF Pro, cinematic imagery.",
+      "accent": "#0071e3",
+      "colors": [
+        "#0071e3",
+        "#000000",
+        "#f5f5f7",
+        "#2997ff",
+        "#0066cc"
+      ],
+      "previewUrl": "/api/launch/static/open-design/apple.html",
+      "thumbHint": "od:apple",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "application",
+      "label": "Application",
+      "category": "Professional & Corporate",
+      "tagline": "App dashboard with purple-themed aesthetic, top-bar navigation, card-based layouts, and developer-first workflows.",
+      "accent": "#9333ea",
+      "colors": [
+        "#9333ea",
+        "#09090b",
+        "#ffffff",
+        "#a855f7",
+        "#10b981"
+      ],
+      "previewUrl": "/api/launch/static/open-design/application.html",
+      "thumbHint": "od:application",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "arc",
+      "label": "Arc Browser",
+      "category": "Productivity & SaaS",
+      "tagline": "\"The browser that browses for you.\" Translucent surfaces, gradient warmth, sidebar-first layout.",
+      "accent": "#1a1a1f",
+      "colors": [
+        "#1a1a1f",
+        "#1a1a1f",
+        "#fafafa",
+        "#ff7e5f",
+        "#feb47b"
+      ],
+      "previewUrl": "/api/launch/static/open-design/arc.html",
+      "thumbHint": "od:arc",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "artistic",
+      "label": "Artistic",
+      "category": "Creative & Artistic",
+      "tagline": "High-contrast, expressive style with creative typography and bold color choices for visually striking interfaces.",
+      "accent": "#3b82f6",
+      "colors": [
+        "#3b82f6",
+        "#111827",
+        "#ffffff",
+        "#8b5cf6",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/artistic.html",
+      "thumbHint": "od:artistic",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "atelier-zero",
+      "label": "Atelier Zero",
+      "category": "Editorial · Studio",
+      "tagline": "A magazine-grade, collage-driven visual system: warm paper canvas, surreal",
+      "accent": "#ed6f5c",
+      "colors": [
+        "#ed6f5c",
+        "#15140f",
+        "#efe7d2",
+        "#8b8676",
+        "#ece4cf"
+      ],
+      "previewUrl": "/api/launch/static/open-design/atelier-zero.html",
+      "thumbHint": "od:atelier-zero",
+      "recommended": false,
+      "heroPreview": true,
+      "previewThumbUrl": "/api/launch/static/open-design/thumbs/atelier-zero.webp",
+      "previewImageUrl": "/api/launch/static/open-design/detail/atelier-zero.webp"
+    },
+    {
+      "id": "bento",
+      "label": "Bento",
+      "category": "Layout & Structure",
+      "tagline": "Modular grid layout with card-like blocks, clear hierarchy, soft spacing, and subtle visual contrast for organized, scannable interfaces.",
+      "accent": "#fad4c0",
+      "colors": [
+        "#fad4c0",
+        "#111827",
+        "#fad4c0",
+        "#80a1c1",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/bento.html",
+      "thumbHint": "od:bento",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "binance",
+      "label": "Binance.US",
+      "category": "Fintech & Crypto",
+      "tagline": "Crypto exchange. Bold yellow accent on monochrome, trading-floor urgency.",
+      "accent": "#1e2026",
+      "colors": [
+        "#1e2026",
+        "#222126",
+        "#ffffff",
+        "#d0980b",
+        "#f0b90b"
+      ],
+      "previewUrl": "/api/launch/static/open-design/binance.html",
+      "thumbHint": "od:binance",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "bmw",
+      "label": "BMW",
+      "category": "Automotive",
+      "tagline": "Luxury automotive. Dark premium surfaces, precise German engineering aesthetic.",
+      "accent": "#1c69d4",
+      "colors": [
+        "#1c69d4",
+        "#262626",
+        "#ffffff",
+        "#757575",
+        "#0653b6"
+      ],
+      "previewUrl": "/api/launch/static/open-design/bmw.html",
+      "thumbHint": "od:bmw",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "bmw-m",
+      "label": "BMW M",
+      "category": "Automotive",
+      "tagline": "Motorsport performance sub-brand. Near-black cockpit surfaces, BMW M tricolor accents, sharp engineering geometry.",
+      "accent": "#ffffff",
+      "colors": [
+        "#ffffff",
+        "#000000",
+        "#ffffff",
+        "#1c69d4",
+        "#0066b1"
+      ],
+      "previewUrl": "/api/launch/static/open-design/bmw-m.html",
+      "thumbHint": "od:bmw-m",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "bold",
+      "label": "Bold",
+      "category": "Bold & Expressive",
+      "tagline": "Strong visual presence with heavyweight typography, high-contrast colors, and commanding layouts.",
+      "accent": "#0077bc",
+      "colors": [
+        "#0077bc",
+        "#111111",
+        "#f7f8f8",
+        "#009866",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/bold.html",
+      "thumbHint": "od:bold",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "brutalism",
+      "label": "Brutalism",
+      "category": "Bold & Expressive",
+      "tagline": "Raw, anti-design aesthetic inspired by concrete architecture with unadorned elements, jarring layouts, and functional minimalism.",
+      "accent": "#dd614c",
+      "colors": [
+        "#dd614c",
+        "#111827",
+        "#ffffff",
+        "#daa144",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/brutalism.html",
+      "thumbHint": "od:brutalism",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "bugatti",
+      "label": "Bugatti",
+      "category": "Automotive",
+      "tagline": "Hypercar brand. Cinema-black canvas, monochrome austerity, monumental display type.",
+      "accent": "#ffffff",
+      "colors": [
+        "#ffffff",
+        "#000000",
+        "#ffffff",
+        "#999999",
+        "#0070cc"
+      ],
+      "previewUrl": "/api/launch/static/open-design/bugatti.html",
+      "thumbHint": "od:bugatti",
+      "recommended": false,
+      "heroPreview": true,
+      "previewThumbUrl": "/api/launch/static/open-design/thumbs/bugatti.webp",
+      "previewImageUrl": "/api/launch/static/open-design/detail/bugatti.webp"
+    },
+    {
+      "id": "cafe",
+      "label": "Cafe",
+      "category": "Creative & Artistic",
+      "tagline": "Cozy cafe-inspired interface with warm tones, soft typography, and clean layouts for a relaxed browsing experience.",
+      "accent": "#5d4432",
+      "colors": [
+        "#5d4432",
+        "#3e2b1e",
+        "#e9e3dd",
+        "#16a34a",
+        "#d97706"
+      ],
+      "previewUrl": "/api/launch/static/open-design/cafe.html",
+      "thumbHint": "od:cafe",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "cal",
+      "label": "Cal.com",
+      "category": "Productivity & SaaS",
+      "tagline": "Open-source scheduling. Clean neutral UI, developer-oriented simplicity.",
+      "accent": "#242424",
+      "colors": [
+        "#242424",
+        "#242424",
+        "#ffffff",
+        "#898989",
+        "#111111"
+      ],
+      "previewUrl": "/api/launch/static/open-design/cal.html",
+      "thumbHint": "od:cal",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "canva",
+      "label": "Canva",
+      "category": "Design & Creative",
+      "tagline": "Visual creation platform. Vivid purple-blue gradient, generous spacing, friendly geometry.",
+      "accent": "#ffffff",
+      "colors": [
+        "#ffffff",
+        "#0e1318",
+        "#ffffff",
+        "#00c4cc",
+        "#7d2ae8"
+      ],
+      "previewUrl": "/api/launch/static/open-design/canva.html",
+      "thumbHint": "od:canva",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "cisco",
+      "label": "Cisco",
+      "category": "Backend & Data",
+      "tagline": "Enterprise infrastructure brand. Dark trust surfaces, Cisco Blue signal, technical clarity.",
+      "accent": "#005073",
+      "colors": [
+        "#005073",
+        "#0f1115",
+        "#e8ebf1",
+        "#049fd9",
+        "#64bbe3"
+      ],
+      "previewUrl": "/api/launch/static/open-design/cisco.html",
+      "thumbHint": "od:cisco",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "claude",
+      "label": "Claude (Anthropic)",
+      "category": "AI & LLM",
+      "tagline": "Anthropic's AI assistant. Warm terracotta accent, clean editorial layout.",
+      "accent": "#c96442",
+      "colors": [
+        "#c96442",
+        "#141413",
+        "#f5f4ed",
+        "#5e5d59",
+        "#87867f"
+      ],
+      "previewUrl": "/api/launch/static/open-design/claude.html",
+      "thumbHint": "od:claude",
+      "recommended": false,
+      "heroPreview": true,
+      "previewThumbUrl": "/api/launch/static/open-design/thumbs/claude.webp",
+      "previewImageUrl": "/api/launch/static/open-design/detail/claude.webp"
+    },
+    {
+      "id": "clay",
+      "label": "Clay",
+      "category": "Design & Creative",
+      "tagline": "Creative agency. Organic shapes, soft gradients, art-directed layout.",
+      "accent": "#078a52",
+      "colors": [
+        "#078a52",
+        "#000000",
+        "#faf9f7",
+        "#0089ad",
+        "#dad4c8"
+      ],
+      "previewUrl": "/api/launch/static/open-design/clay.html",
+      "thumbHint": "od:clay",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "claymorphism",
+      "label": "Claymorphism",
+      "category": "Morphism & Effects",
+      "tagline": "Soft, rounded 3D-like shapes mimicking malleable clay with playful, puffy elements and colorful surfaces.",
+      "accent": "#3b82f6",
+      "colors": [
+        "#3b82f6",
+        "#0f1115",
+        "#ffffff",
+        "#16a34a",
+        "#d97706"
+      ],
+      "previewUrl": "/api/launch/static/open-design/claymorphism.html",
+      "thumbHint": "od:claymorphism",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "clean",
+      "label": "Clean",
+      "category": "Modern & Minimal",
+      "tagline": "Simplicity-focused design with ample whitespace, legible typography, and a limited color palette to reduce visual clutter.",
+      "accent": "#3b82f6",
+      "colors": [
+        "#3b82f6",
+        "#111827",
+        "#ffffff",
+        "#8b5cf6",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/clean.html",
+      "thumbHint": "od:clean",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "clickhouse",
+      "label": "ClickHouse",
+      "category": "Backend & Data",
+      "tagline": "Fast analytics database. Yellow-accented, technical documentation style.",
+      "accent": "#166534",
+      "colors": [
+        "#166534",
+        "#000000",
+        "#faff69",
+        "#166534",
+        "#414141"
+      ],
+      "previewUrl": "/api/launch/static/open-design/clickhouse.html",
+      "thumbHint": "od:clickhouse",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "cohere",
+      "label": "Cohere",
+      "category": "AI & LLM",
+      "tagline": "Enterprise AI platform. Vibrant gradients, data-rich dashboard aesthetic.",
+      "accent": "#1863dc",
+      "colors": [
+        "#1863dc",
+        "#000000",
+        "#d9d9dd",
+        "#4c6ee6",
+        "#e5e7eb"
+      ],
+      "previewUrl": "/api/launch/static/open-design/cohere.html",
+      "thumbHint": "od:cohere",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "coinbase",
+      "label": "Coinbase",
+      "category": "Fintech & Crypto",
+      "tagline": "Crypto exchange. Clean blue identity, trust-focused, institutional feel.",
+      "accent": "#0052ff",
+      "colors": [
+        "#0052ff",
+        "#0a0b0d",
+        "#eef0f3",
+        "#578bfa",
+        "#282b31"
+      ],
+      "previewUrl": "/api/launch/static/open-design/coinbase.html",
+      "thumbHint": "od:coinbase",
+      "recommended": false,
+      "heroPreview": true,
+      "previewThumbUrl": "/api/launch/static/open-design/thumbs/coinbase.webp",
+      "previewImageUrl": "/api/launch/static/open-design/detail/coinbase.webp"
+    },
+    {
+      "id": "colorful",
+      "label": "Colorful",
+      "category": "Bold & Expressive",
+      "tagline": "Vibrant, high-contrast palettes and gradients for engaging, memorable, and modern user experiences.",
+      "accent": "#3b82f6",
+      "colors": [
+        "#3b82f6",
+        "#111827",
+        "#ffffff",
+        "#8b5cf6",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/colorful.html",
+      "thumbHint": "od:colorful",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "composio",
+      "label": "Composio",
+      "category": "Backend & Data",
+      "tagline": "Tool integration platform. Modern dark with colorful integration icons.",
+      "accent": "#0007cd",
+      "colors": [
+        "#0007cd",
+        "#0f0f0f",
+        "#ffffff",
+        "#0089ff",
+        "#00ffff"
+      ],
+      "previewUrl": "/api/launch/static/open-design/composio.html",
+      "thumbHint": "od:composio",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "contemporary",
+      "label": "Contemporary",
+      "category": "Modern & Minimal",
+      "tagline": "Current-era minimalist design with bento grids, dark mode support, and high-performance accessible layouts.",
+      "accent": "#c800df",
+      "colors": [
+        "#c800df",
+        "#111827",
+        "#ffffff",
+        "#16a34a",
+        "#e60076"
+      ],
+      "previewUrl": "/api/launch/static/open-design/contemporary.html",
+      "thumbHint": "od:contemporary",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "corporate",
+      "label": "Corporate",
+      "category": "Professional & Corporate",
+      "tagline": "Professional, brand-aligned design with structured grids, minimalist layouts, and consistent enterprise patterns.",
+      "accent": "#3b82f6",
+      "colors": [
+        "#3b82f6",
+        "#111827",
+        "#ffffff",
+        "#8b5cf6",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/corporate.html",
+      "thumbHint": "od:corporate",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "cosmic",
+      "label": "Cosmic",
+      "category": "Creative & Artistic",
+      "tagline": "Futuristic sci-fi aesthetic with dark themes, vibrant neon accents, and immersive spatial elements.",
+      "accent": "#3b82f6",
+      "colors": [
+        "#3b82f6",
+        "#111827",
+        "#ffffff",
+        "#8b5cf6",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/cosmic.html",
+      "thumbHint": "od:cosmic",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "creative",
+      "label": "Creative",
+      "category": "Creative & Artistic",
+      "tagline": "Playful, character-driven design with expressive typography and bold graphics for landing pages and creative projects.",
+      "accent": "#3b82f6",
+      "colors": [
+        "#3b82f6",
+        "#111827",
+        "#ffffff",
+        "#8b5cf6",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/creative.html",
+      "thumbHint": "od:creative",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "cursor",
+      "label": "Cursor",
+      "category": "Developer Tools",
+      "tagline": "AI-first code editor. Sleek dark interface, gradient accents.",
+      "accent": "#f54e00",
+      "colors": [
+        "#f54e00",
+        "#26251e",
+        "#f2f1ed",
+        "#c08532",
+        "#e6e5e0"
+      ],
+      "previewUrl": "/api/launch/static/open-design/cursor.html",
+      "thumbHint": "od:cursor",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "dashboard",
+      "label": "Dashboard",
+      "category": "Professional & Corporate",
+      "tagline": "Dark-themed cloud-platform aesthetic with modular grids, glass-like panels, and strong data hierarchy for productivity dashboards.",
+      "accent": "#0c5cab",
+      "colors": [
+        "#0c5cab",
+        "#09090b",
+        "#fafafa",
+        "#10b981",
+        "#0a4a8a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/dashboard.html",
+      "thumbHint": "od:dashboard",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "default",
+      "label": "Neutral Modern",
+      "category": "Starter",
+      "tagline": "A clean, product-oriented default. Use when the brief doesn't call for a",
+      "accent": "#2f6feb",
+      "colors": [
+        "#2f6feb",
+        "#111111",
+        "#fafafa",
+        "#6b6b6b",
+        "#e5e5e5"
+      ],
+      "previewUrl": "/api/launch/static/open-design/default.html",
+      "thumbHint": "od:default",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "discord",
+      "label": "Discord",
+      "category": "Productivity & SaaS",
+      "tagline": "Voice / chat platform. Deep blurple, dark-first surfaces, playful accent moments.",
+      "accent": "#313338",
+      "colors": [
+        "#313338",
+        "#313338",
+        "#ffffff",
+        "#5865f2",
+        "#1e1f22"
+      ],
+      "previewUrl": "/api/launch/static/open-design/discord.html",
+      "thumbHint": "od:discord",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "dithered",
+      "label": "Dithered",
+      "category": "Retro & Nostalgic",
+      "tagline": "Dot-pattern rendering technique that simulates shades with a limited palette for nostalgic, retro, high-contrast visuals.",
+      "accent": "#3b82f6",
+      "colors": [
+        "#3b82f6",
+        "#111827",
+        "#ffffff",
+        "#8b5cf6",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/dithered.html",
+      "thumbHint": "od:dithered",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "doodle",
+      "label": "Doodle",
+      "category": "Creative & Artistic",
+      "tagline": "Hand-drawn, sketch-like style with doodles, handwritten fonts, and imperfect lines for a playful, informal feel.",
+      "accent": "#49b6e5",
+      "colors": [
+        "#49b6e5",
+        "#111827",
+        "#ffffff",
+        "#16a34a",
+        "#263d5b"
+      ],
+      "previewUrl": "/api/launch/static/open-design/doodle.html",
+      "thumbHint": "od:doodle",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "dramatic",
+      "label": "Dramatic",
+      "category": "Bold & Expressive",
+      "tagline": "High-contrast, theatrical design with bold layouts, immersive visuals, and unconventional compositions that command attention.",
+      "accent": "#8b5cf6",
+      "colors": [
+        "#8b5cf6",
+        "#09090b",
+        "#fafafa",
+        "#f43f5e",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/dramatic.html",
+      "thumbHint": "od:dramatic",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "duolingo",
+      "label": "Duolingo",
+      "category": "Productivity & SaaS",
+      "tagline": "Language-learning platform. Bright owl green, chunky shadows, gamified joy.",
+      "accent": "#ffffff",
+      "colors": [
+        "#ffffff",
+        "#0f1115",
+        "#ffffff",
+        "#58cc02",
+        "#e5e5e5"
+      ],
+      "previewUrl": "/api/launch/static/open-design/duolingo.html",
+      "thumbHint": "od:duolingo",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "editorial",
+      "label": "Editorial",
+      "category": "Creative & Artistic",
+      "tagline": "Magazine-inspired editorial layout with refined serif typography, structured grids, and elegant reading experiences.",
+      "accent": "#111111",
+      "colors": [
+        "#111111",
+        "#111111",
+        "#f1f1f1",
+        "#16a34a",
+        "#d97706"
+      ],
+      "previewUrl": "/api/launch/static/open-design/editorial.html",
+      "thumbHint": "od:editorial",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "elegant",
+      "label": "Elegant",
+      "category": "Professional & Corporate",
+      "tagline": "Graceful, refined aesthetic with delicate typography, minimal palettes, and polished layouts that exude sophistication.",
+      "accent": "#3b82f6",
+      "colors": [
+        "#3b82f6",
+        "#111827",
+        "#ffffff",
+        "#8b5cf6",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/elegant.html",
+      "thumbHint": "od:elegant",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "elevenlabs",
+      "label": "ElevenLabs",
+      "category": "AI & LLM",
+      "tagline": "AI voice platform. Dark cinematic UI, audio-waveform aesthetics.",
+      "accent": "#ffffff",
+      "colors": [
+        "#ffffff",
+        "#000000",
+        "#ffffff",
+        "#777169",
+        "#f5f5f5"
+      ],
+      "previewUrl": "/api/launch/static/open-design/elevenlabs.html",
+      "thumbHint": "od:elevenlabs",
+      "recommended": false,
+      "heroPreview": true,
+      "previewThumbUrl": "/api/launch/static/open-design/thumbs/elevenlabs.webp",
+      "previewImageUrl": "/api/launch/static/open-design/detail/elevenlabs.webp"
+    },
+    {
+      "id": "energetic",
+      "label": "Energetic",
+      "category": "Bold & Expressive",
+      "tagline": "Dynamic, vibrant style with thick borders, geometric shapes, high-contrast colors, and expressive typography conveying motion and vitality.",
+      "accent": "#ea580b",
+      "colors": [
+        "#ea580b",
+        "#0f1115",
+        "#ffedd5",
+        "#f59e0b",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/energetic.html",
+      "thumbHint": "od:energetic",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "enterprise",
+      "label": "Enterprise",
+      "category": "Professional & Corporate",
+      "tagline": "Clean, high-contrast enterprise design for data-driven workflows with intuitive drag-and-drop patterns and structured layouts.",
+      "accent": "#072c2c",
+      "colors": [
+        "#072c2c",
+        "#072c2c",
+        "#edeade",
+        "#ff5f03",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/enterprise.html",
+      "thumbHint": "od:enterprise",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "expo",
+      "label": "Expo",
+      "category": "Developer Tools",
+      "tagline": "React Native platform. Dark theme, tight letter-spacing, code-centric.",
+      "accent": "#000000",
+      "colors": [
+        "#000000",
+        "#000000",
+        "#f0f0f3",
+        "#60646c",
+        "#b0b4ba"
+      ],
+      "previewUrl": "/api/launch/static/open-design/expo.html",
+      "thumbHint": "od:expo",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "expressive",
+      "label": "Expressive",
+      "category": "Bold & Expressive",
+      "tagline": "Vibrant, personality-driven design with bold colors, playful graphics, and dynamic layouts that balance creativity with structure.",
+      "accent": "#db2777",
+      "colors": [
+        "#db2777",
+        "#111827",
+        "#ffffff",
+        "#2563eb",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/expressive.html",
+      "thumbHint": "od:expressive",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "fantasy",
+      "label": "Fantasy",
+      "category": "Creative & Artistic",
+      "tagline": "Game-inspired fantasy aesthetic with bold, premium visuals, rich color palettes, and immersive thematic elements.",
+      "accent": "#0250cc",
+      "colors": [
+        "#0250cc",
+        "#111827",
+        "#ffffff",
+        "#16a34a",
+        "#fdc800"
+      ],
+      "previewUrl": "/api/launch/static/open-design/fantasy.html",
+      "thumbHint": "od:fantasy",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "ferrari",
+      "label": "Ferrari",
+      "category": "Automotive",
+      "tagline": "Luxury automotive. Chiaroscuro editorial, Ferrari Red accents, cinematic black.",
+      "accent": "#da291c",
+      "colors": [
+        "#da291c",
+        "#303030",
+        "#fff200",
+        "#8f8f8f",
+        "#d2d2d2"
+      ],
+      "previewUrl": "/api/launch/static/open-design/ferrari.html",
+      "thumbHint": "od:ferrari",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "figma",
+      "label": "Figma",
+      "category": "Design & Creative",
+      "tagline": "Collaborative design tool. Vibrant multi-color, playful yet professional.",
+      "accent": "#000000",
+      "colors": [
+        "#000000",
+        "#000000",
+        "#ffffff",
+        "#8a8f98",
+        "#8a8f98"
+      ],
+      "previewUrl": "/api/launch/static/open-design/figma.html",
+      "thumbHint": "od:figma",
+      "recommended": false,
+      "heroPreview": true,
+      "previewThumbUrl": "/api/launch/static/open-design/thumbs/figma.webp",
+      "previewImageUrl": "/api/launch/static/open-design/detail/figma.webp"
+    },
+    {
+      "id": "flat",
+      "label": "Flat",
+      "category": "Modern & Minimal",
+      "tagline": "Two-dimensional minimalist style with vibrant colors, clean typography, and no 3D effects for fast, user-friendly interfaces.",
+      "accent": "#f2673c",
+      "colors": [
+        "#f2673c",
+        "#111827",
+        "#ffffff",
+        "#8b5cf6",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/flat.html",
+      "thumbHint": "od:flat",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "framer",
+      "label": "Framer",
+      "category": "Design & Creative",
+      "tagline": "Website builder. Bold black and blue, motion-first, design-forward.",
+      "accent": "#0099ff",
+      "colors": [
+        "#0099ff",
+        "#000000",
+        "#ffffff",
+        "#a6a6a6",
+        "#090909"
+      ],
+      "previewUrl": "/api/launch/static/open-design/framer.html",
+      "thumbHint": "od:framer",
+      "recommended": false,
+      "heroPreview": true,
+      "previewThumbUrl": "/api/launch/static/open-design/thumbs/framer.webp",
+      "previewImageUrl": "/api/launch/static/open-design/detail/framer.webp"
+    },
+    {
+      "id": "friendly",
+      "label": "Friendly",
+      "category": "Creative & Artistic",
+      "tagline": "Approachable, intuitive design with rounded elements, ample whitespace, and soft pastel color palettes.",
+      "accent": "#f2d9dc",
+      "colors": [
+        "#f2d9dc",
+        "#111827",
+        "#f2d9dc",
+        "#16a34a",
+        "#d9f2d8"
+      ],
+      "previewUrl": "/api/launch/static/open-design/friendly.html",
+      "thumbHint": "od:friendly",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "futuristic",
+      "label": "Futuristic",
+      "category": "Themed & Unique",
+      "tagline": "Forward-looking design with tech-inspired typography, modern layouts, and a sleek, innovation-driven aesthetic.",
+      "accent": "#3b82f6",
+      "colors": [
+        "#3b82f6",
+        "#111827",
+        "#ffffff",
+        "#8b5cf6",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/futuristic.html",
+      "thumbHint": "od:futuristic",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "github",
+      "label": "GitHub",
+      "category": "Developer Tools",
+      "tagline": "Code-forward platform. Functional density, blue-on-white precision, Primer foundations.",
+      "accent": "#0969da",
+      "colors": [
+        "#0969da",
+        "#0d1117",
+        "#ffffff",
+        "#1a7f37",
+        "#d0d7de"
+      ],
+      "previewUrl": "/api/launch/static/open-design/github.html",
+      "thumbHint": "od:github",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "glassmorphism",
+      "label": "Glassmorphism",
+      "category": "Morphism & Effects",
+      "tagline": "Frosted glass effect with translucent layers, subtle blur, and luminous borders for depth and modern elegance.",
+      "accent": "#1856ff",
+      "colors": [
+        "#1856ff",
+        "#141414",
+        "#ffffff",
+        "#07ca6b",
+        "#3a344e"
+      ],
+      "previewUrl": "/api/launch/static/open-design/glassmorphism.html",
+      "thumbHint": "od:glassmorphism",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "gradient",
+      "label": "Gradient",
+      "category": "Morphism & Effects",
+      "tagline": "Smooth color transitions and gradient-rich surfaces for modern, playful interfaces with visual depth.",
+      "accent": "#990ffa",
+      "colors": [
+        "#990ffa",
+        "#111827",
+        "#ffffff",
+        "#16a34a",
+        "#e60076"
+      ],
+      "previewUrl": "/api/launch/static/open-design/gradient.html",
+      "thumbHint": "od:gradient",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "hashicorp",
+      "label": "HashiCorp",
+      "category": "Backend & Data",
+      "tagline": "Infrastructure automation. Enterprise-clean, black and white.",
+      "accent": "#7b42bc",
+      "colors": [
+        "#7b42bc",
+        "#15181e",
+        "#f1f2f3",
+        "#14c6cb",
+        "#0d0e12"
+      ],
+      "previewUrl": "/api/launch/static/open-design/hashicorp.html",
+      "thumbHint": "od:hashicorp",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "hud",
+      "label": "HUD Design System",
+      "category": "Themed & Unique",
+      "tagline": "Fighter jet / helicopter head-up display. Phosphor green on near-black, all-caps data overlays, angular geometry. Zero ambiguity at speed and altitude.",
+      "accent": "#00ff41",
+      "colors": [
+        "#00ff41",
+        "#0a0a0a",
+        "#f7f8f8",
+        "#5a9a5a",
+        "#111316"
+      ],
+      "previewUrl": "/api/launch/static/open-design/hud.html",
+      "thumbHint": "od:hud",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "huggingface",
+      "label": "Hugging Face",
+      "category": "AI & LLM",
+      "tagline": "ML community hub. Sunny yellow accent, monospace identity, cheerful and dense.",
+      "accent": "#ffd21e",
+      "colors": [
+        "#ffd21e",
+        "#0d1117",
+        "#fafafa",
+        "#f59e0b",
+        "#f3f4f6"
+      ],
+      "previewUrl": "/api/launch/static/open-design/huggingface.html",
+      "thumbHint": "od:huggingface",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "ibm",
+      "label": "IBM",
+      "category": "Media & Consumer",
+      "tagline": "Enterprise technology. Carbon design system, structured blue palette.",
+      "accent": "#0f62fe",
+      "colors": [
+        "#0f62fe",
+        "#161616",
+        "#ffffff",
+        "#6f6f6f",
+        "#f4f4f4"
+      ],
+      "previewUrl": "/api/launch/static/open-design/ibm.html",
+      "thumbHint": "od:ibm",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "intercom",
+      "label": "Intercom",
+      "category": "Productivity & SaaS",
+      "tagline": "Customer messaging. Friendly blue palette, conversational UI patterns.",
+      "accent": "#ff5600",
+      "colors": [
+        "#ff5600",
+        "#111111",
+        "#faf9f6",
+        "#fe4c02",
+        "#dedbd6"
+      ],
+      "previewUrl": "/api/launch/static/open-design/intercom.html",
+      "thumbHint": "od:intercom",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "kami",
+      "label": "kami (紙 / 纸)",
+      "category": "Editorial & Print",
+      "tagline": "Editorial paper system: warm parchment canvas, ink-blue accent, serif-led hierarchy. Built for resumes, one-pagers, white papers, portfolios, slide decks — anything that should feel like high-quality print rather than UI. Multilingual by design (EN · zh-CN · ja).",
+      "accent": "#1b365d",
+      "colors": [
+        "#1b365d",
+        "#30302e",
+        "#f5f4ed",
+        "#e4ecf5",
+        "#ffffff"
+      ],
+      "previewUrl": "/api/launch/static/open-design/kami.html",
+      "thumbHint": "od:kami",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "kraken",
+      "label": "Kraken",
+      "category": "Fintech & Crypto",
+      "tagline": "Crypto trading. Purple-accented dark UI, data-dense dashboards.",
+      "accent": "#7132f5",
+      "colors": [
+        "#7132f5",
+        "#101114",
+        "#ffffff",
+        "#149e61",
+        "#5741d8"
+      ],
+      "previewUrl": "/api/launch/static/open-design/kraken.html",
+      "thumbHint": "od:kraken",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "lamborghini",
+      "label": "Lamborghini",
+      "category": "Automotive",
+      "tagline": "Supercar brand. True black surfaces, gold accents, dramatic uppercase typography.",
+      "accent": "#29abe2",
+      "colors": [
+        "#29abe2",
+        "#000000",
+        "#ffffff",
+        "#917300",
+        "#ffc000"
+      ],
+      "previewUrl": "/api/launch/static/open-design/lamborghini.html",
+      "thumbHint": "od:lamborghini",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "levels",
+      "label": "Levels",
+      "category": "Layout & Structure",
+      "tagline": "Conversion-focused design that removes friction and guides users toward action through clarity, trust, and speed.",
+      "accent": "#27272a",
+      "colors": [
+        "#27272a",
+        "#27272a",
+        "#ffffff",
+        "#8b5cf6",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/levels.html",
+      "thumbHint": "od:levels",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "linear-app",
+      "label": "Linear",
+      "category": "Productivity & SaaS",
+      "tagline": "Project management. Ultra-minimal, precise, purple accent.",
+      "accent": "#5e6ad2",
+      "colors": [
+        "#5e6ad2",
+        "#08090a",
+        "#f7f8f8",
+        "#7170ff",
+        "#0f1011"
+      ],
+      "previewUrl": "/api/launch/static/open-design/linear-app.html",
+      "thumbHint": "od:linear-app",
+      "recommended": true,
+      "heroPreview": true,
+      "previewThumbUrl": "/api/launch/static/open-design/thumbs/linear-app.webp",
+      "previewImageUrl": "/api/launch/static/open-design/detail/linear-app.webp"
+    },
+    {
+      "id": "lingo",
+      "label": "Lingo",
+      "category": "Creative & Artistic",
+      "tagline": "Playful, minimal design with bright colors, rounded shapes, tactile 3D borders, and friendly illustrations for approachable interfaces.",
+      "accent": "#58cc02",
+      "colors": [
+        "#58cc02",
+        "#0f1115",
+        "#ffffff",
+        "#ce82ff",
+        "#ffc800"
+      ],
+      "previewUrl": "/api/launch/static/open-design/lingo.html",
+      "thumbHint": "od:lingo",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "loom",
+      "label": "Loom Design System",
+      "category": "Themed & Unique",
+      "tagline": "Loom async video. Purple primary, friendly surfaces, video-first layout. Clean and professional without being corporate.",
+      "accent": "#625df5",
+      "colors": [
+        "#625df5",
+        "#1f1f23",
+        "#ffffff",
+        "#6b6d76",
+        "#f7f7f8"
+      ],
+      "previewUrl": "/api/launch/static/open-design/loom.html",
+      "thumbHint": "od:loom",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "lovable",
+      "label": "Lovable",
+      "category": "Developer Tools",
+      "tagline": "AI full-stack builder. Playful gradients, friendly dev aesthetic.",
+      "accent": "#1c1c1c",
+      "colors": [
+        "#1c1c1c",
+        "#1c1c1c",
+        "#f7f4ed",
+        "#5f5f5d",
+        "#eceae4"
+      ],
+      "previewUrl": "/api/launch/static/open-design/lovable.html",
+      "thumbHint": "od:lovable",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "luxury",
+      "label": "Luxury",
+      "category": "Professional & Corporate",
+      "tagline": "High-end dark aesthetic with bold headings, monochromatic palette, and premium feel for luxury brand experiences.",
+      "accent": "#fafafa",
+      "colors": [
+        "#fafafa",
+        "#000000",
+        "#fafafa",
+        "#16a34a",
+        "#d97706"
+      ],
+      "previewUrl": "/api/launch/static/open-design/luxury.html",
+      "thumbHint": "od:luxury",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "mastercard",
+      "label": "Mastercard",
+      "category": "Fintech & Crypto",
+      "tagline": "Global payments network. Warm cream canvas, orbital pill shapes, editorial warmth.",
+      "accent": "#f37338",
+      "colors": [
+        "#f37338",
+        "#141413",
+        "#f3f0ee",
+        "#f79e1b",
+        "#eb001b"
+      ],
+      "previewUrl": "/api/launch/static/open-design/mastercard.html",
+      "thumbHint": "od:mastercard",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "material",
+      "label": "Material",
+      "category": "Professional & Corporate",
+      "tagline": "Google's Material Design with layered surfaces, dynamic theming, built-in motion, and responsive cross-platform patterns.",
+      "accent": "#6442d6",
+      "colors": [
+        "#6442d6",
+        "#111827",
+        "#ffffff",
+        "#16a34a",
+        "#c8b3fd"
+      ],
+      "previewUrl": "/api/launch/static/open-design/material.html",
+      "thumbHint": "od:material",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "meta",
+      "label": "Meta (Store)",
+      "category": "E-Commerce & Retail",
+      "tagline": "Tech retail store. Photography-first, binary light/dark surfaces, Meta Blue CTAs.",
+      "accent": "#a121ce",
+      "colors": [
+        "#a121ce",
+        "#0f1115",
+        "#c8e4e8",
+        "#47a5fa",
+        "#0064e0"
+      ],
+      "previewUrl": "/api/launch/static/open-design/meta.html",
+      "thumbHint": "od:meta",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "minimal",
+      "label": "Minimal",
+      "category": "Modern & Minimal",
+      "tagline": "Stripped-back design emphasizing whitespace, clean typography, and restrained color for maximum clarity and focus.",
+      "accent": "#0c0c09",
+      "colors": [
+        "#0c0c09",
+        "#0c0c09",
+        "#f4f4f1",
+        "#16a34a",
+        "#312c85"
+      ],
+      "previewUrl": "/api/launch/static/open-design/minimal.html",
+      "thumbHint": "od:minimal",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "minimax",
+      "label": "MiniMax",
+      "category": "AI & LLM",
+      "tagline": "AI model provider. Bold dark interface with neon accents.",
+      "accent": "#1456f0",
+      "colors": [
+        "#1456f0",
+        "#222222",
+        "#ffffff",
+        "#3b82f6",
+        "#60a5fa"
+      ],
+      "previewUrl": "/api/launch/static/open-design/minimax.html",
+      "thumbHint": "od:minimax",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "mintlify",
+      "label": "Mintlify",
+      "category": "Productivity & SaaS",
+      "tagline": "Documentation platform. Clean, green-accented, reading-optimized.",
+      "accent": "#18e299",
+      "colors": [
+        "#18e299",
+        "#0d0d0d",
+        "#ffffff",
+        "#0fa76e",
+        "#d4fae8"
+      ],
+      "previewUrl": "/api/launch/static/open-design/mintlify.html",
+      "thumbHint": "od:mintlify",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "miro",
+      "label": "Miro",
+      "category": "Design & Creative",
+      "tagline": "Visual collaboration. Bright yellow accent, infinite canvas aesthetic.",
+      "accent": "#1c1c1e",
+      "colors": [
+        "#1c1c1e",
+        "#1c1c1e",
+        "#ffffff",
+        "#5b76fe",
+        "#00b473"
+      ],
+      "previewUrl": "/api/launch/static/open-design/miro.html",
+      "thumbHint": "od:miro",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "mission-control",
+      "label": "Mission Control Design System",
+      "category": "Developer Tools",
+      "tagline": "Space/aerospace mission monitoring. Dark command center, amber telemetry, monospace precision. Functional clarity above all else.",
+      "accent": "#00d4ff",
+      "colors": [
+        "#00d4ff",
+        "#0b1120",
+        "#e8f0fe",
+        "#ff4757",
+        "#111827"
+      ],
+      "previewUrl": "/api/launch/static/open-design/mission-control.html",
+      "thumbHint": "od:mission-control",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "mistral-ai",
+      "label": "Mistral AI",
+      "category": "AI & LLM",
+      "tagline": "Open-weight LLM provider. French-engineered minimalism, purple-toned.",
+      "accent": "#fa520f",
+      "colors": [
+        "#fa520f",
+        "#0f1115",
+        "#fffaeb",
+        "#ffa110",
+        "#ffd900"
+      ],
+      "previewUrl": "/api/launch/static/open-design/mistral-ai.html",
+      "thumbHint": "od:mistral-ai",
+      "recommended": false,
+      "heroPreview": true,
+      "previewThumbUrl": "/api/launch/static/open-design/thumbs/mistral-ai.webp",
+      "previewImageUrl": "/api/launch/static/open-design/detail/mistral-ai.webp"
+    },
+    {
+      "id": "modern",
+      "label": "Modern",
+      "category": "Modern & Minimal",
+      "tagline": "Contemporary editorial style with serif typography, minimal palettes, and clean layouts for polished digital products.",
+      "accent": "#553f83",
+      "colors": [
+        "#553f83",
+        "#111111",
+        "#ffffff",
+        "#16a34a",
+        "#d97706"
+      ],
+      "previewUrl": "/api/launch/static/open-design/modern.html",
+      "thumbHint": "od:modern",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "mongodb",
+      "label": "MongoDB",
+      "category": "Backend & Data",
+      "tagline": "Document database. Green leaf branding, developer documentation focus.",
+      "accent": "#00ed64",
+      "colors": [
+        "#00ed64",
+        "#001e2b",
+        "#e8edeb",
+        "#006cfa",
+        "#b8c4c2"
+      ],
+      "previewUrl": "/api/launch/static/open-design/mongodb.html",
+      "thumbHint": "od:mongodb",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "mono",
+      "label": "Mono",
+      "category": "Modern & Minimal",
+      "tagline": "Monospace-driven, matrix-inspired design with high-contrast elements, compact density, and a hacker-chic aesthetic.",
+      "accent": "#37f712",
+      "colors": [
+        "#37f712",
+        "#0f1115",
+        "#e7e5e4",
+        "#00a6f4",
+        "#00a63d"
+      ],
+      "previewUrl": "/api/launch/static/open-design/mono.html",
+      "thumbHint": "od:mono",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "neobrutalism",
+      "label": "Neobrutalism",
+      "category": "Bold & Expressive",
+      "tagline": "Modern take on brutalism with bold borders, vivid accent colors, and raw, high-contrast layouts on warm surfaces.",
+      "accent": "#fdc800",
+      "colors": [
+        "#fdc800",
+        "#1c293c",
+        "#fbfbf9",
+        "#16a34a",
+        "#432dd7"
+      ],
+      "previewUrl": "/api/launch/static/open-design/neobrutalism.html",
+      "thumbHint": "od:neobrutalism",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "neon",
+      "label": "Neon",
+      "category": "Morphism & Effects",
+      "tagline": "Electric neon glow effects with high-contrast color pairings for bold, attention-grabbing interfaces.",
+      "accent": "#bbf351",
+      "colors": [
+        "#bbf351",
+        "#111827",
+        "#bbf351",
+        "#00bcff",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/neon.html",
+      "thumbHint": "od:neon",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "neumorphism",
+      "label": "Neumorphism",
+      "category": "Morphism & Effects",
+      "tagline": "Soft, extruded UI elements with inner and outer shadows on monochromatic surfaces for a tactile, embedded look.",
+      "accent": "#006666",
+      "colors": [
+        "#006666",
+        "#1e2938",
+        "#f1f2f5",
+        "#00a63d",
+        "#fe9900"
+      ],
+      "previewUrl": "/api/launch/static/open-design/neumorphism.html",
+      "thumbHint": "od:neumorphism",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "nike",
+      "label": "Nike",
+      "category": "E-Commerce & Retail",
+      "tagline": "Athletic retail. Monochrome UI, massive uppercase type, full-bleed photography.",
+      "accent": "#000000",
+      "colors": [
+        "#000000",
+        "#111111",
+        "#ffffff",
+        "#707072",
+        "#fafafa"
+      ],
+      "previewUrl": "/api/launch/static/open-design/nike.html",
+      "thumbHint": "od:nike",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "notion",
+      "label": "Notion",
+      "category": "Productivity & SaaS",
+      "tagline": "All-in-one workspace. Warm minimalism, serif headings, soft surfaces.",
+      "accent": "#0075de",
+      "colors": [
+        "#0075de",
+        "#31302e",
+        "#ffffff",
+        "#615d59",
+        "#f6f5f4"
+      ],
+      "previewUrl": "/api/launch/static/open-design/notion.html",
+      "thumbHint": "od:notion",
+      "recommended": true,
+      "heroPreview": true,
+      "previewThumbUrl": "/api/launch/static/open-design/thumbs/notion.webp",
+      "previewImageUrl": "/api/launch/static/open-design/detail/notion.webp"
+    },
+    {
+      "id": "nvidia",
+      "label": "NVIDIA",
+      "category": "Media & Consumer",
+      "tagline": "GPU computing. Green-black energy, technical power aesthetic.",
+      "accent": "#76b900",
+      "colors": [
+        "#76b900",
+        "#000000",
+        "#ffffff",
+        "#df6500",
+        "#bff230"
+      ],
+      "previewUrl": "/api/launch/static/open-design/nvidia.html",
+      "thumbHint": "od:nvidia",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "ollama",
+      "label": "Ollama",
+      "category": "AI & LLM",
+      "tagline": "Run LLMs locally. Terminal-first, monochrome simplicity.",
+      "accent": "#000000",
+      "colors": [
+        "#000000",
+        "#000000",
+        "#ffffff",
+        "#737373",
+        "#262626"
+      ],
+      "previewUrl": "/api/launch/static/open-design/ollama.html",
+      "thumbHint": "od:ollama",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "openai",
+      "label": "OpenAI",
+      "category": "AI & LLM",
+      "tagline": "Calm, near-monochrome system anchored in deep teal-black with generous white space and editorial typography.",
+      "accent": "#ffffff",
+      "colors": [
+        "#ffffff",
+        "#0d0d0d",
+        "#ffffff",
+        "#10a37f",
+        "#e5e5e5"
+      ],
+      "previewUrl": "/api/launch/static/open-design/openai.html",
+      "thumbHint": "od:openai",
+      "recommended": false,
+      "heroPreview": true,
+      "previewThumbUrl": "/api/launch/static/open-design/thumbs/openai.webp",
+      "previewImageUrl": "/api/launch/static/open-design/detail/openai.webp"
+    },
+    {
+      "id": "opencode-ai",
+      "label": "OpenCode",
+      "category": "AI & LLM",
+      "tagline": "AI coding platform. Developer-centric dark theme.",
+      "accent": "#007aff",
+      "colors": [
+        "#007aff",
+        "#201d1d",
+        "#fdfcfc",
+        "#9a9898",
+        "#ff3b30"
+      ],
+      "previewUrl": "/api/launch/static/open-design/opencode-ai.html",
+      "thumbHint": "od:opencode-ai",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "pacman",
+      "label": "Pacman",
+      "category": "Themed & Unique",
+      "tagline": "Retro arcade-inspired design with pixel fonts, dotted borders, playful high-contrast colors, and 8-bit game aesthetics.",
+      "accent": "#2a3fe5",
+      "colors": [
+        "#2a3fe5",
+        "#000000",
+        "#f7f8f8",
+        "#16a34a",
+        "#f4b9b0"
+      ],
+      "previewUrl": "/api/launch/static/open-design/pacman.html",
+      "thumbHint": "od:pacman",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "paper",
+      "label": "Paper",
+      "category": "Retro & Nostalgic",
+      "tagline": "Paper-textured, print-inspired design with minimal colors, clean serif/sans typography, and tactile surface qualities.",
+      "accent": "#111111",
+      "colors": [
+        "#111111",
+        "#111111",
+        "#ffffff",
+        "#8b5cf6",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/paper.html",
+      "thumbHint": "od:paper",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "perplexity",
+      "label": "Perplexity AI",
+      "category": "AI & LLM",
+      "tagline": "Conversational AI search engine. Deep-dark canvas, sharp typography, single violet accent, dense information hierarchy.",
+      "accent": "#a855f7",
+      "colors": [
+        "#a855f7",
+        "#0f0f10",
+        "#f0f0f0",
+        "#9b9b9b",
+        "#19191a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/perplexity.html",
+      "thumbHint": "od:perplexity",
+      "recommended": false,
+      "heroPreview": true,
+      "previewThumbUrl": "/api/launch/static/open-design/thumbs/perplexity.webp",
+      "previewImageUrl": "/api/launch/static/open-design/detail/perplexity.webp"
+    },
+    {
+      "id": "perspective",
+      "label": "Perspective",
+      "category": "Layout & Structure",
+      "tagline": "Spatial depth design with isometric views, vanishing points, and layered elements that guide attention through 3D-like realism.",
+      "accent": "#00bd7d",
+      "colors": [
+        "#00bd7d",
+        "#111827",
+        "#ffffff",
+        "#16a34a",
+        "#d97706"
+      ],
+      "previewUrl": "/api/launch/static/open-design/perspective.html",
+      "thumbHint": "od:perspective",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "pinterest",
+      "label": "Pinterest",
+      "category": "Media & Consumer",
+      "tagline": "Visual discovery. Red accent, masonry grid, image-first.",
+      "accent": "#91918c",
+      "colors": [
+        "#91918c",
+        "#211922",
+        "#e5e5e0",
+        "#62625b",
+        "#e60023"
+      ],
+      "previewUrl": "/api/launch/static/open-design/pinterest.html",
+      "thumbHint": "od:pinterest",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "playstation",
+      "label": "PlayStation",
+      "category": "Media & Consumer",
+      "tagline": "Gaming console retail. Three-surface channel layout, quiet-authority display type, cyan hover-scale.",
+      "accent": "#1eaedb",
+      "colors": [
+        "#1eaedb",
+        "#000000",
+        "#ffffff",
+        "#0070cc",
+        "#d53b00"
+      ],
+      "previewUrl": "/api/launch/static/open-design/playstation.html",
+      "thumbHint": "od:playstation",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "posthog",
+      "label": "PostHog",
+      "category": "Backend & Data",
+      "tagline": "Product analytics. Playful hedgehog branding, developer-friendly dark UI.",
+      "accent": "#1e1f23",
+      "colors": [
+        "#1e1f23",
+        "#1e1f23",
+        "#fdfdf8",
+        "#f54e00",
+        "#bfc1b7"
+      ],
+      "previewUrl": "/api/launch/static/open-design/posthog.html",
+      "thumbHint": "od:posthog",
+      "recommended": false,
+      "heroPreview": true,
+      "previewThumbUrl": "/api/launch/static/open-design/thumbs/posthog.webp",
+      "previewImageUrl": "/api/launch/static/open-design/detail/posthog.webp"
+    },
+    {
+      "id": "premium",
+      "label": "Premium",
+      "category": "Professional & Corporate",
+      "tagline": "Apple-inspired premium aesthetic with precise spacing, modern typography, and a refined, polished visual language.",
+      "accent": "#3b82f6",
+      "colors": [
+        "#3b82f6",
+        "#111827",
+        "#ffffff",
+        "#8b5cf6",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/premium.html",
+      "thumbHint": "od:premium",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "professional",
+      "label": "Professional",
+      "category": "Professional & Corporate",
+      "tagline": "Polished, business-ready design with modern typography, structured layouts, and a trustworthy visual identity.",
+      "accent": "#fece14",
+      "colors": [
+        "#fece14",
+        "#000000",
+        "#ffffff",
+        "#16a34a",
+        "#d97706"
+      ],
+      "previewUrl": "/api/launch/static/open-design/professional.html",
+      "thumbHint": "od:professional",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "publication",
+      "label": "Publication",
+      "category": "Creative & Artistic",
+      "tagline": "Print-inspired visual language for books, magazines, and reports with editorial grids and expressive typography.",
+      "accent": "#a855f7",
+      "colors": [
+        "#a855f7",
+        "#0a1829",
+        "#ffffff",
+        "#16a34a",
+        "#d97706"
+      ],
+      "previewUrl": "/api/launch/static/open-design/publication.html",
+      "thumbHint": "od:publication",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "raycast",
+      "label": "Raycast",
+      "category": "Developer Tools",
+      "tagline": "Productivity launcher. Sleek dark chrome, vibrant gradient accents.",
+      "accent": "#ff6363",
+      "colors": [
+        "#ff6363",
+        "#07080a",
+        "#ffffff",
+        "#55b3ff",
+        "#5fc992"
+      ],
+      "previewUrl": "/api/launch/static/open-design/raycast.html",
+      "thumbHint": "od:raycast",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "refined",
+      "label": "Refined",
+      "category": "Modern & Minimal",
+      "tagline": "Carefully curated, modern minimal style with elegant serif typography and understated, sophisticated palettes.",
+      "accent": "#3b82f6",
+      "colors": [
+        "#3b82f6",
+        "#111827",
+        "#ffffff",
+        "#8b5cf6",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/refined.html",
+      "thumbHint": "od:refined",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "renault",
+      "label": "Renault",
+      "category": "Automotive",
+      "tagline": "French automotive. Vibrant aurora gradients, NouvelR typography, bold energy.",
+      "accent": "#efdf00",
+      "colors": [
+        "#efdf00",
+        "#000000",
+        "#ffffff",
+        "#1883fd",
+        "#f8eb4c"
+      ],
+      "previewUrl": "/api/launch/static/open-design/renault.html",
+      "thumbHint": "od:renault",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "replicate",
+      "label": "Replicate",
+      "category": "AI & LLM",
+      "tagline": "Run ML models via API. Clean white canvas, code-forward.",
+      "accent": "#ea2804",
+      "colors": [
+        "#ea2804",
+        "#202020",
+        "#ffffff",
+        "#2b9a66",
+        "#000000"
+      ],
+      "previewUrl": "/api/launch/static/open-design/replicate.html",
+      "thumbHint": "od:replicate",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "resend",
+      "label": "Resend",
+      "category": "Productivity & SaaS",
+      "tagline": "Email API. Minimal dark theme, monospace accents.",
+      "accent": "#ff801f",
+      "colors": [
+        "#ff801f",
+        "#000000",
+        "#f0f0f0",
+        "#ff5900",
+        "#ffffff"
+      ],
+      "previewUrl": "/api/launch/static/open-design/resend.html",
+      "thumbHint": "od:resend",
+      "recommended": false,
+      "heroPreview": true,
+      "previewThumbUrl": "/api/launch/static/open-design/thumbs/resend.webp",
+      "previewImageUrl": "/api/launch/static/open-design/detail/resend.webp"
+    },
+    {
+      "id": "retro",
+      "label": "Retro",
+      "category": "Retro & Nostalgic",
+      "tagline": "Throwback design with vintage-inspired typography, high-contrast retro palettes, and nostalgic visual elements.",
+      "accent": "#3b82f6",
+      "colors": [
+        "#3b82f6",
+        "#111827",
+        "#ffffff",
+        "#8b5cf6",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/retro.html",
+      "thumbHint": "od:retro",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "revolut",
+      "label": "Revolut",
+      "category": "Fintech & Crypto",
+      "tagline": "Digital banking. Sleek dark interface, gradient cards, fintech precision.",
+      "accent": "#191c1f",
+      "colors": [
+        "#191c1f",
+        "#191c1f",
+        "#ffffff",
+        "#e23b4a",
+        "#ec7e00"
+      ],
+      "previewUrl": "/api/launch/static/open-design/revolut.html",
+      "thumbHint": "od:revolut",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "runwayml",
+      "label": "Runway",
+      "category": "AI & LLM",
+      "tagline": "AI video generation. Cinematic dark UI, media-rich layout.",
+      "accent": "#404040",
+      "colors": [
+        "#404040",
+        "#000000",
+        "#ffffff",
+        "#767d88",
+        "#7d848e"
+      ],
+      "previewUrl": "/api/launch/static/open-design/runwayml.html",
+      "thumbHint": "od:runwayml",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "sanity",
+      "label": "Sanity",
+      "category": "Backend & Data",
+      "tagline": "Headless CMS. Red accent, content-first editorial layout.",
+      "accent": "#f36458",
+      "colors": [
+        "#f36458",
+        "#0b0b0b",
+        "#ededed",
+        "#797979",
+        "#212121"
+      ],
+      "previewUrl": "/api/launch/static/open-design/sanity.html",
+      "thumbHint": "od:sanity",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "sentry",
+      "label": "Sentry",
+      "category": "Backend & Data",
+      "tagline": "Error monitoring. Dark dashboard, data-dense, pink-purple accent.",
+      "accent": "#c2ef4e",
+      "colors": [
+        "#c2ef4e",
+        "#1f1633",
+        "#c2ef4e",
+        "#79628c",
+        "#150f23"
+      ],
+      "previewUrl": "/api/launch/static/open-design/sentry.html",
+      "thumbHint": "od:sentry",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "shadcn",
+      "label": "Shadcn",
+      "category": "Modern & Minimal",
+      "tagline": "Shadcn/ui-inspired design with minimal, clean components, monochrome palette, and utility-first patterns.",
+      "accent": "#000000",
+      "colors": [
+        "#000000",
+        "#000000",
+        "#ffffff",
+        "#16a34a",
+        "#111111"
+      ],
+      "previewUrl": "/api/launch/static/open-design/shadcn.html",
+      "thumbHint": "od:shadcn",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "shopify",
+      "label": "Shopify",
+      "category": "E-Commerce & Retail",
+      "tagline": "E-commerce platform. Dark-first cinematic, neon green accent, ultra-light type.",
+      "accent": "#36f4a4",
+      "colors": [
+        "#36f4a4",
+        "#02090a",
+        "#c1fbd4",
+        "#a1a1aa",
+        "#061a1c"
+      ],
+      "previewUrl": "/api/launch/static/open-design/shopify.html",
+      "thumbHint": "od:shopify",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "simple",
+      "label": "Simple",
+      "category": "Modern & Minimal",
+      "tagline": "Straightforward, no-frills design with clean typography, neutral colors, and intuitive layouts that stay out of the way.",
+      "accent": "#3b82f6",
+      "colors": [
+        "#3b82f6",
+        "#111827",
+        "#ffffff",
+        "#8b5cf6",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/simple.html",
+      "thumbHint": "od:simple",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "skeumorphism",
+      "label": "Skeumorphism",
+      "category": "Morphism & Effects",
+      "tagline": "Real-world mimicry with textured surfaces, 3D effects, and familiar physical metaphors for intuitive digital interfaces.",
+      "accent": "#fa3c00",
+      "colors": [
+        "#fa3c00",
+        "#111827",
+        "#ffffff",
+        "#f08321",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/skeumorphism.html",
+      "thumbHint": "od:skeumorphism",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "slack",
+      "label": "Slack",
+      "category": "Productivity & SaaS",
+      "tagline": "Workplace communication platform. Aubergine-primary, multi-accent logo palette, light surfaces with dark sidebar, warm and approachable.",
+      "accent": "#ffffff",
+      "colors": [
+        "#ffffff",
+        "#4a154b",
+        "#ffffff",
+        "#36c5f0",
+        "#f8f8f8"
+      ],
+      "previewUrl": "/api/launch/static/open-design/slack.html",
+      "thumbHint": "od:slack",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "sleek",
+      "label": "Sleek",
+      "category": "Modern & Minimal",
+      "tagline": "Modern minimalist aesthetic with clean lines, intentional color palette, subtle interactions, and consistent spacing.",
+      "accent": "#3b82f6",
+      "colors": [
+        "#3b82f6",
+        "#111827",
+        "#ffffff",
+        "#8b5cf6",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/sleek.html",
+      "thumbHint": "od:sleek",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "spacex",
+      "label": "SpaceX",
+      "category": "Media & Consumer",
+      "tagline": "Space technology. Stark black and white, full-bleed imagery, futuristic.",
+      "accent": "#000000",
+      "colors": [
+        "#000000",
+        "#000000",
+        "#f0f0fa",
+        "#8a8f98",
+        "#8a8f98"
+      ],
+      "previewUrl": "/api/launch/static/open-design/spacex.html",
+      "thumbHint": "od:spacex",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "spacious",
+      "label": "Spacious",
+      "category": "Layout & Structure",
+      "tagline": "Generous whitespace, consistent padding, and grid-based layouts for clean, readable, and breathing interfaces.",
+      "accent": "#3b82f6",
+      "colors": [
+        "#3b82f6",
+        "#111827",
+        "#ffffff",
+        "#8b5cf6",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/spacious.html",
+      "thumbHint": "od:spacious",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "spotify",
+      "label": "Spotify",
+      "category": "Media & Consumer",
+      "tagline": "Music streaming. Vibrant green on dark, bold type, album-art-driven.",
+      "accent": "#1ed760",
+      "colors": [
+        "#1ed760",
+        "#121212",
+        "#ffffff",
+        "#f3727f",
+        "#181818"
+      ],
+      "previewUrl": "/api/launch/static/open-design/spotify.html",
+      "thumbHint": "od:spotify",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "starbucks",
+      "label": "Starbucks",
+      "category": "E-Commerce & Retail",
+      "tagline": "Global coffee retail brand. Four-tier green system, warm cream canvas, full-pill buttons.",
+      "accent": "#cba258",
+      "colors": [
+        "#cba258",
+        "#1e3932",
+        "#f2f0eb",
+        "#cba258",
+        "#edebe9"
+      ],
+      "previewUrl": "/api/launch/static/open-design/starbucks.html",
+      "thumbHint": "od:starbucks",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "storytelling",
+      "label": "Storytelling",
+      "category": "Creative & Artistic",
+      "tagline": "Narrative-driven design using visuals, copy, and interaction to guide users through engaging, emotionally resonant journeys.",
+      "accent": "#3b82f6",
+      "colors": [
+        "#3b82f6",
+        "#111827",
+        "#ffffff",
+        "#8b5cf6",
+        "#16a34a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/storytelling.html",
+      "thumbHint": "od:storytelling",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "stripe",
+      "label": "Stripe",
+      "category": "Fintech & Crypto",
+      "tagline": "Payment infrastructure. Signature purple gradients, weight-300 elegance.",
+      "accent": "#1c1e54",
+      "colors": [
+        "#1c1e54",
+        "#061b31",
+        "#ffffff",
+        "#f96bee",
+        "#533afd"
+      ],
+      "previewUrl": "/api/launch/static/open-design/stripe.html",
+      "thumbHint": "od:stripe",
+      "recommended": true,
+      "heroPreview": true,
+      "previewThumbUrl": "/api/launch/static/open-design/thumbs/stripe.webp",
+      "previewImageUrl": "/api/launch/static/open-design/detail/stripe.webp"
+    },
+    {
+      "id": "supabase",
+      "label": "Supabase",
+      "category": "Backend & Data",
+      "tagline": "Open-source Firebase alternative. Dark emerald theme, code-first.",
+      "accent": "#3ecf8e",
+      "colors": [
+        "#3ecf8e",
+        "#0f0f0f",
+        "#fafafa",
+        "#00c573",
+        "#171717"
+      ],
+      "previewUrl": "/api/launch/static/open-design/supabase.html",
+      "thumbHint": "od:supabase",
+      "recommended": true,
+      "heroPreview": true,
+      "previewThumbUrl": "/api/launch/static/open-design/thumbs/supabase.webp",
+      "previewImageUrl": "/api/launch/static/open-design/detail/supabase.webp"
+    },
+    {
+      "id": "superhuman",
+      "label": "Superhuman",
+      "category": "Developer Tools",
+      "tagline": "Fast email client. Premium dark UI, keyboard-first, purple glow.",
+      "accent": "#cbb7fb",
+      "colors": [
+        "#cbb7fb",
+        "#1b1938",
+        "#e9e5dd",
+        "#714cb6",
+        "#292827"
+      ],
+      "previewUrl": "/api/launch/static/open-design/superhuman.html",
+      "thumbHint": "od:superhuman",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "tesla",
+      "label": "Tesla",
+      "category": "Automotive",
+      "tagline": "Electric automotive. Radical subtraction, full-viewport photography, near-zero UI.",
+      "accent": "#3e6ae1",
+      "colors": [
+        "#3e6ae1",
+        "#171a20",
+        "#ffffff",
+        "#5c5e62",
+        "#f4f4f4"
+      ],
+      "previewUrl": "/api/launch/static/open-design/tesla.html",
+      "thumbHint": "od:tesla",
+      "recommended": false,
+      "heroPreview": true,
+      "previewThumbUrl": "/api/launch/static/open-design/thumbs/tesla.webp",
+      "previewImageUrl": "/api/launch/static/open-design/detail/tesla.webp"
+    },
+    {
+      "id": "tetris",
+      "label": "Tetris",
+      "category": "Themed & Unique",
+      "tagline": "Classic block-game inspired design with playful colors, bold display fonts, and compact, high-energy layouts.",
+      "accent": "#1c202b",
+      "colors": [
+        "#1c202b",
+        "#1c202b",
+        "#dfe7ff",
+        "#16a34a",
+        "#7107e7"
+      ],
+      "previewUrl": "/api/launch/static/open-design/tetris.html",
+      "thumbHint": "od:tetris",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "theverge",
+      "label": "The Verge",
+      "category": "Media & Consumer",
+      "tagline": "Tech editorial media. Acid-mint and ultraviolet accents, Manuka display, rave-flyer story tiles.",
+      "accent": "#2d2d2d",
+      "colors": [
+        "#2d2d2d",
+        "#131313",
+        "#ffffff",
+        "#309875",
+        "#3cffd0"
+      ],
+      "previewUrl": "/api/launch/static/open-design/theverge.html",
+      "thumbHint": "od:theverge",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "together-ai",
+      "label": "Together AI",
+      "category": "AI & LLM",
+      "tagline": "Open-source AI infrastructure. Technical, blueprint-style design.",
+      "accent": "#ef2cc1",
+      "colors": [
+        "#ef2cc1",
+        "#010120",
+        "#ffffff",
+        "#fc4c02",
+        "#bdbbff"
+      ],
+      "previewUrl": "/api/launch/static/open-design/together-ai.html",
+      "thumbHint": "od:together-ai",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "totality-festival",
+      "label": "Totality Festival",
+      "category": "Themed & Unique",
+      "tagline": "Surface: web",
+      "accent": "#fff6df",
+      "colors": [
+        "#fff6df",
+        "#121318",
+        "#e3e1e9",
+        "#999077",
+        "#38393f"
+      ],
+      "previewUrl": "/api/launch/static/open-design/totality-festival.html",
+      "thumbHint": "od:totality-festival",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "trading-terminal",
+      "label": "Trading Terminal Design System",
+      "category": "Themed & Unique",
+      "tagline": "Bloomberg-style financial trading terminal. Dark-only, data-dense, cyan/coral buy/sell signals. Everything readable at a glance from two meters away.",
+      "accent": "#00d4aa",
+      "colors": [
+        "#00d4aa",
+        "#0d0d0d",
+        "#ffffff",
+        "#ff4757",
+        "#141414"
+      ],
+      "previewUrl": "/api/launch/static/open-design/trading-terminal.html",
+      "thumbHint": "od:trading-terminal",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "uber",
+      "label": "Uber",
+      "category": "Media & Consumer",
+      "tagline": "Mobility platform. Bold black and white, tight type, urban energy.",
+      "accent": "#000000",
+      "colors": [
+        "#000000",
+        "#000000",
+        "#ffffff",
+        "#afafaf",
+        "#e2e2e2"
+      ],
+      "previewUrl": "/api/launch/static/open-design/uber.html",
+      "thumbHint": "od:uber",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "urdu",
+      "label": "Urdu Modern (Indus Script System)",
+      "category": "Editorial / Personal / Publication",
+      "tagline": "",
+      "accent": "#0f595e",
+      "colors": [
+        "#0f595e",
+        "#1a202c",
+        "#f4f1ea",
+        "#c05621",
+        "#4a5568"
+      ],
+      "previewUrl": "/api/launch/static/open-design/urdu.html",
+      "thumbHint": "od:urdu",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "vercel",
+      "label": "Vercel",
+      "category": "Developer Tools",
+      "tagline": "Frontend deployment. Black and white precision, Geist font.",
+      "accent": "#ff5b4f",
+      "colors": [
+        "#ff5b4f",
+        "#171717",
+        "#ffffff",
+        "#0a72ef",
+        "#de1d8d"
+      ],
+      "previewUrl": "/api/launch/static/open-design/vercel.html",
+      "thumbHint": "od:vercel",
+      "recommended": true,
+      "heroPreview": true,
+      "previewThumbUrl": "/api/launch/static/open-design/thumbs/vercel.webp",
+      "previewImageUrl": "/api/launch/static/open-design/detail/vercel.webp"
+    },
+    {
+      "id": "vibrant",
+      "label": "Vibrant",
+      "category": "Bold & Expressive",
+      "tagline": "Lively, colorful design with bold playful typography, warm accents, and dynamic visual energy.",
+      "accent": "#7c61d4",
+      "colors": [
+        "#7c61d4",
+        "#2f281d",
+        "#ffffff",
+        "#16a34a",
+        "#eaae87"
+      ],
+      "previewUrl": "/api/launch/static/open-design/vibrant.html",
+      "thumbHint": "od:vibrant",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "vintage",
+      "label": "Vintage",
+      "category": "Retro & Nostalgic",
+      "tagline": "1950s-1990s nostalgia with skeuomorphic touches, grainy textures, retro color palettes, and pixel-style typography.",
+      "accent": "#008080",
+      "colors": [
+        "#008080",
+        "#000000",
+        "#f7f8f8",
+        "#16a34a",
+        "#c0c0c0"
+      ],
+      "previewUrl": "/api/launch/static/open-design/vintage.html",
+      "thumbHint": "od:vintage",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "vodafone",
+      "label": "Vodafone",
+      "category": "Media & Consumer",
+      "tagline": "Global telecom brand. Monumental uppercase display, Vodafone Red chapter bands.",
+      "accent": "#ac1811",
+      "colors": [
+        "#ac1811",
+        "#e60000",
+        "#ffffff",
+        "#3860be",
+        "#25282b"
+      ],
+      "previewUrl": "/api/launch/static/open-design/vodafone.html",
+      "thumbHint": "od:vodafone",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "voltagent",
+      "label": "VoltAgent",
+      "category": "AI & LLM",
+      "tagline": "AI agent framework. Void-black canvas, emerald accent, terminal-native.",
+      "accent": "#00d992",
+      "colors": [
+        "#00d992",
+        "#050507",
+        "#f7f8f8",
+        "#8b949e",
+        "#3d3a39"
+      ],
+      "previewUrl": "/api/launch/static/open-design/voltagent.html",
+      "thumbHint": "od:voltagent",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "warm-editorial",
+      "label": "Warm Editorial",
+      "category": "Starter",
+      "tagline": "A serif-led magazine aesthetic. Terracotta accent on warm off-white paper —",
+      "accent": "#c0512f",
+      "colors": [
+        "#c0512f",
+        "#1c1a17",
+        "#faf7f2",
+        "#8a817a",
+        "#2f5b4f"
+      ],
+      "previewUrl": "/api/launch/static/open-design/warm-editorial.html",
+      "thumbHint": "od:warm-editorial",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "warp",
+      "label": "Warp",
+      "category": "Developer Tools",
+      "tagline": "Modern terminal. Dark IDE-like interface, block-based command UI.",
+      "accent": "#faf9f6",
+      "colors": [
+        "#faf9f6",
+        "#0f1115",
+        "#faf9f6",
+        "#868584",
+        "#353534"
+      ],
+      "previewUrl": "/api/launch/static/open-design/warp.html",
+      "thumbHint": "od:warp",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "webex",
+      "label": "Webex",
+      "category": "Productivity & SaaS",
+      "tagline": "Collaboration platform. Momentum typography, blue action system, multi-user accent spectrum.",
+      "accent": "#64b4fa",
+      "colors": [
+        "#64b4fa",
+        "#000000",
+        "#ffffff",
+        "#1170cf",
+        "#0353a8"
+      ],
+      "previewUrl": "/api/launch/static/open-design/webex.html",
+      "thumbHint": "od:webex",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "webflow",
+      "label": "Webflow",
+      "category": "Design & Creative",
+      "tagline": "Visual web builder. Blue-accented, polished marketing site aesthetic.",
+      "accent": "#146ef5",
+      "colors": [
+        "#146ef5",
+        "#080808",
+        "#f7f8f8",
+        "#ed52cb",
+        "#7a3dff"
+      ],
+      "previewUrl": "/api/launch/static/open-design/webflow.html",
+      "thumbHint": "od:webflow",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "wechat",
+      "label": "WeChat Design System",
+      "category": "Social & Messaging",
+      "tagline": "Brand visual language for WeChat Mini Programs, official accounts, and open ecosystem extensions.",
+      "accent": "#07c160",
+      "colors": [
+        "#07c160",
+        "#1a1a1a",
+        "#ffffff",
+        "#10b160",
+        "#059050"
+      ],
+      "previewUrl": "/api/launch/static/open-design/wechat.html",
+      "thumbHint": "od:wechat",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "wired",
+      "label": "WIRED",
+      "category": "Media & Consumer",
+      "tagline": "Tech magazine. Paper-white broadsheet density, custom serif display, mono kickers, ink-blue links.",
+      "accent": "#057dbc",
+      "colors": [
+        "#057dbc",
+        "#000000",
+        "#ffffff",
+        "#757575",
+        "#1a1a1a"
+      ],
+      "previewUrl": "/api/launch/static/open-design/wired.html",
+      "thumbHint": "od:wired",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "wise",
+      "label": "Wise",
+      "category": "Fintech & Crypto",
+      "tagline": "Money transfer. Bright green accent, friendly and clear.",
+      "accent": "#0e0f0c",
+      "colors": [
+        "#0e0f0c",
+        "#0e0f0c",
+        "#e2f6d5",
+        "#868685",
+        "#9fe870"
+      ],
+      "previewUrl": "/api/launch/static/open-design/wise.html",
+      "thumbHint": "od:wise",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "x-ai",
+      "label": "xAI",
+      "category": "AI & LLM",
+      "tagline": "Elon Musk's AI lab. Stark monochrome, futuristic minimalism.",
+      "accent": "#ffffff",
+      "colors": [
+        "#ffffff",
+        "#1f2228",
+        "#ffffff",
+        "#8a8f98",
+        "#000000"
+      ],
+      "previewUrl": "/api/launch/static/open-design/x-ai.html",
+      "thumbHint": "od:x-ai",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "xiaohongshu",
+      "label": "Xiaohongshu",
+      "category": "Media & Consumer",
+      "tagline": "Lifestyle UGC social platform. Singular brand red, generous radius, content-first.",
+      "accent": "#ff2442",
+      "colors": [
+        "#ff2442",
+        "#0f1115",
+        "#ffffff",
+        "#ff2e4d",
+        "#f5f5f5"
+      ],
+      "previewUrl": "/api/launch/static/open-design/xiaohongshu.html",
+      "thumbHint": "od:xiaohongshu",
+      "recommended": false,
+      "heroPreview": false
+    },
+    {
+      "id": "zapier",
+      "label": "Zapier",
+      "category": "Productivity & SaaS",
+      "tagline": "Automation platform. Warm orange, friendly illustration-driven.",
+      "accent": "#ff4f00",
+      "colors": [
+        "#ff4f00",
+        "#201515",
+        "#fffefb",
+        "#939084",
+        "#c5c0b1"
+      ],
+      "previewUrl": "/api/launch/static/open-design/zapier.html",
+      "thumbHint": "od:zapier",
+      "recommended": false,
+      "heroPreview": true,
+      "previewThumbUrl": "/api/launch/static/open-design/thumbs/zapier.webp",
+      "previewImageUrl": "/api/launch/static/open-design/detail/zapier.webp"
+    }
+  ]
+}

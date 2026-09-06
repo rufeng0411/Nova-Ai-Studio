@@ -1,0 +1,21 @@
+{
+  "id": "rog-f8795d13-campaign-phase-pass",
+  "description": "f8795d13: campaign core stages satisfied, PNG broken cleared with HTML sibling",
+  "userGoal": "帮【吴裕泰2026新品上市】做品牌传播 campaign 全案，按阶段一次规划执行",
+  "capabilitySlug": "brand-campaign-full",
+  "expectedProfileId": "campaign",
+  "verifiedPaths": [
+    "artifacts/campaign/wuyutai/01-research.md",
+    "artifacts/campaign/wuyutai/03-brief.md",
+    "artifacts/campaign/wuyutai/06-platform-content.md",
+    "artifacts/campaign/wuyutai/04-visual-kv.html",
+    "artifacts/campaign/wuyutai/05-website/index.html"
+  ],
+  "missingPaths": [
+    "artifacts/campaign/wuyutai/04-visual-kv.png"
+  ],
+  "brokenPaths": [
+    "artifacts/campaign/wuyutai/04-visual-kv.png"
+  ],
+  "expectCampaignPhasePass": true
+}

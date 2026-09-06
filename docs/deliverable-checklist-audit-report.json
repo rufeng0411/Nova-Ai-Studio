@@ -1,0 +1,362 @@
+{
+  "at": "2026-07-11T15:38:30.789Z",
+  "stats": {
+    "totalTemplates": 35,
+    "withChecklist": 35,
+    "vagueChecklist": 0,
+    "authoritySynced": 10,
+    "concreteFileInChecklist": 35
+  },
+  "rows": [
+    {
+      "id": "press-release-pack",
+      "complexity": "light",
+      "flowSteps": 2,
+      "hasChecklist": true,
+      "checklistItems": 2,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    },
+    {
+      "id": "competitor-landing",
+      "complexity": "light",
+      "flowSteps": 2,
+      "hasChecklist": true,
+      "checklistItems": 2,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    },
+    {
+      "id": "single-social-post",
+      "complexity": "light",
+      "flowSteps": 2,
+      "hasChecklist": true,
+      "checklistItems": 2,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    },
+    {
+      "id": "content-flywheel",
+      "complexity": "standard",
+      "flowSteps": 3,
+      "hasChecklist": true,
+      "checklistItems": 3,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    },
+    {
+      "id": "research-report",
+      "complexity": "standard",
+      "flowSteps": 3,
+      "hasChecklist": true,
+      "checklistItems": 3,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    },
+    {
+      "id": "landing-acquisition-kit",
+      "complexity": "standard",
+      "flowSteps": 3,
+      "hasChecklist": true,
+      "checklistItems": 3,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    },
+    {
+      "id": "social-matrix-pipeline",
+      "complexity": "standard",
+      "flowSteps": 4,
+      "hasChecklist": true,
+      "checklistItems": 9,
+      "vagueChecklist": false,
+      "authoritySynced": true,
+      "profileId": null
+    },
+    {
+      "id": "campaign-retrospective",
+      "complexity": "standard",
+      "flowSteps": 3,
+      "hasChecklist": true,
+      "checklistItems": 3,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    },
+    {
+      "id": "product-launch-full",
+      "complexity": "full",
+      "flowSteps": 7,
+      "hasChecklist": true,
+      "checklistItems": 7,
+      "vagueChecklist": false,
+      "authoritySynced": true,
+      "profileId": null
+    },
+    {
+      "id": "saas-growth-full",
+      "complexity": "full",
+      "flowSteps": 8,
+      "hasChecklist": true,
+      "checklistItems": 8,
+      "vagueChecklist": false,
+      "authoritySynced": true,
+      "profileId": null
+    },
+    {
+      "id": "content-ip-full",
+      "complexity": "full",
+      "flowSteps": 5,
+      "hasChecklist": true,
+      "checklistItems": 5,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    },
+    {
+      "id": "brand-campaign-full",
+      "complexity": "full",
+      "flowSteps": 7,
+      "hasChecklist": true,
+      "checklistItems": 6,
+      "vagueChecklist": false,
+      "authoritySynced": true,
+      "profileId": "campaign"
+    },
+    {
+      "id": "geo-visibility-quick",
+      "complexity": "light",
+      "flowSteps": 2,
+      "hasChecklist": true,
+      "checklistItems": 3,
+      "vagueChecklist": false,
+      "authoritySynced": true,
+      "profileId": null
+    },
+    {
+      "id": "geo-visibility-standard",
+      "complexity": "standard",
+      "flowSteps": 5,
+      "hasChecklist": true,
+      "checklistItems": 5,
+      "vagueChecklist": false,
+      "authoritySynced": true,
+      "profileId": null
+    },
+    {
+      "id": "competitive-intel-quick",
+      "complexity": "light",
+      "flowSteps": 2,
+      "hasChecklist": true,
+      "checklistItems": 2,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    },
+    {
+      "id": "geo-brand-full",
+      "complexity": "full",
+      "flowSteps": 7,
+      "hasChecklist": true,
+      "checklistItems": 7,
+      "vagueChecklist": false,
+      "authoritySynced": true,
+      "profileId": "geo"
+    },
+    {
+      "id": "ai-citable-content",
+      "complexity": "light",
+      "flowSteps": 2,
+      "hasChecklist": true,
+      "checklistItems": 2,
+      "vagueChecklist": false,
+      "authoritySynced": true,
+      "profileId": null
+    },
+    {
+      "id": "campaign-strategy-pack",
+      "complexity": "standard",
+      "flowSteps": 4,
+      "hasChecklist": true,
+      "checklistItems": 4,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    },
+    {
+      "id": "geo-monitor-loop",
+      "complexity": "standard",
+      "flowSteps": 3,
+      "hasChecklist": true,
+      "checklistItems": 3,
+      "vagueChecklist": false,
+      "authoritySynced": true,
+      "profileId": null
+    },
+    {
+      "id": "outline-ppt-video",
+      "complexity": "full",
+      "flowSteps": 3,
+      "hasChecklist": true,
+      "checklistItems": 3,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    },
+    {
+      "id": "website-promo-video",
+      "complexity": "standard",
+      "flowSteps": 3,
+      "hasChecklist": true,
+      "checklistItems": 2,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    },
+    {
+      "id": "research-podcast",
+      "complexity": "standard",
+      "flowSteps": 3,
+      "hasChecklist": true,
+      "checklistItems": 3,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    },
+    {
+      "id": "one-article-matrix",
+      "complexity": "standard",
+      "flowSteps": 3,
+      "hasChecklist": true,
+      "checklistItems": 2,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    },
+    {
+      "id": "data-story-video",
+      "complexity": "full",
+      "flowSteps": 3,
+      "hasChecklist": true,
+      "checklistItems": 3,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    },
+    {
+      "id": "xhs-hit-factory",
+      "complexity": "standard",
+      "flowSteps": 3,
+      "hasChecklist": true,
+      "checklistItems": 3,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    },
+    {
+      "id": "meeting-to-deck",
+      "complexity": "light",
+      "flowSteps": 2,
+      "hasChecklist": true,
+      "checklistItems": 3,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    },
+    {
+      "id": "doc-to-course",
+      "complexity": "standard",
+      "flowSteps": 3,
+      "hasChecklist": true,
+      "checklistItems": 3,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    },
+    {
+      "id": "md-html-office-pack",
+      "complexity": "light",
+      "flowSteps": 2,
+      "hasChecklist": true,
+      "checklistItems": 4,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    },
+    {
+      "id": "persona-debate-article",
+      "complexity": "light",
+      "flowSteps": 3,
+      "hasChecklist": true,
+      "checklistItems": 3,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    },
+    {
+      "id": "sales-battlecard-full",
+      "complexity": "standard",
+      "flowSteps": 3,
+      "hasChecklist": true,
+      "checklistItems": 3,
+      "vagueChecklist": false,
+      "authoritySynced": true,
+      "profileId": null
+    },
+    {
+      "id": "legal-risk-quick",
+      "complexity": "light",
+      "flowSteps": 2,
+      "hasChecklist": true,
+      "checklistItems": 2,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    },
+    {
+      "id": "ad-storyboard-seedance",
+      "complexity": "standard",
+      "flowSteps": 4,
+      "hasChecklist": true,
+      "checklistItems": 4,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    },
+    {
+      "id": "viral-talking-script",
+      "complexity": "light",
+      "flowSteps": 2,
+      "hasChecklist": true,
+      "checklistItems": 3,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    },
+    {
+      "id": "short-drama-seedance-pack",
+      "complexity": "full",
+      "flowSteps": 4,
+      "hasChecklist": true,
+      "checklistItems": 5,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    },
+    {
+      "id": "saas-demo-remotion-full",
+      "complexity": "full",
+      "flowSteps": 3,
+      "hasChecklist": true,
+      "checklistItems": 3,
+      "vagueChecklist": false,
+      "authoritySynced": false,
+      "profileId": null
+    }
+  ]
+}

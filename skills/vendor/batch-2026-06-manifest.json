@@ -1,0 +1,98 @@
+{
+  "generatedAt": "2026-06-19T12:37:54.447Z",
+  "results": [
+    {
+      "pack": "web-scrape",
+      "repo": "https://github.com/scrapegraphai/just-scrape.git",
+      "commit": "240ae1f8475ca5fc740c745fd8350881c8adcf17",
+      "copied": [
+        {
+          "sourcePath": "skills/just-scrape",
+          "vendoredSlug": "web-just-scrape",
+          "commit": "240ae1f8475ca5fc740c745fd8350881c8adcf17"
+        }
+      ],
+      "failures": [
+        {
+          "slug": "web-just-scrape",
+          "reason": "missing just-scrape"
+        },
+        {
+          "slug": "web-just-scrape",
+          "reason": "missing ."
+        }
+      ],
+      "needsConfig": true
+    },
+    {
+      "pack": "creation-ecosystem",
+      "repo": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
+      "commit": "b7e3af80f6e331f6fb456667b82b12cade7c9d35",
+      "copied": [
+        {
+          "sourcePath": ".claude/skills/ui-ux-pro-max",
+          "vendoredSlug": "create-ui-ux-pro-max",
+          "commit": "b7e3af80f6e331f6fb456667b82b12cade7c9d35"
+        }
+      ],
+      "failures": [],
+      "needsConfig": false
+    },
+    {
+      "pack": "creation-ecosystem",
+      "repo": "https://github.com/qu-skills/skills.git",
+      "commit": "601a457f7ecf8e11da24ceb5dcef77980349bce1",
+      "copied": [
+        {
+          "sourcePath": "tools/video/ai-video-generation",
+          "vendoredSlug": "create-ai-video-gen",
+          "commit": "601a457f7ecf8e11da24ceb5dcef77980349bce1"
+        }
+      ],
+      "failures": [],
+      "needsConfig": true
+    },
+    {
+      "pack": "education-ecosystem",
+      "repo": "https://github.com/juliusbrussee/caveman.git",
+      "commit": "25d22f864ad68cc447a4cb93aefde918aa4aec9f",
+      "copied": [
+        {
+          "sourcePath": "skills/caveman",
+          "vendoredSlug": "edu-fun-caveman",
+          "commit": "25d22f864ad68cc447a4cb93aefde918aa4aec9f"
+        }
+      ],
+      "failures": [],
+      "needsConfig": false
+    },
+    {
+      "pack": "legal",
+      "repo": "https://github.com/anthropics/knowledge-work-plugins.git",
+      "commit": "2e2d008d0ac7f9a988778b324ba1614bc09764d1",
+      "copied": [
+        {
+          "sourcePath": "legal\\skills\\legal-risk-assessment",
+          "vendoredSlug": "legal-risk-assessment",
+          "commit": "2e2d008d0ac7f9a988778b324ba1614bc09764d1"
+        },
+        {
+          "sourcePath": "legal\\skills\\legal-response",
+          "vendoredSlug": "legal-response",
+          "commit": "2e2d008d0ac7f9a988778b324ba1614bc09764d1"
+        }
+      ],
+      "failures": [
+        {
+          "slug": "legal-risk-assessment",
+          "reason": "missing legal-risk-assessment"
+        },
+        {
+          "slug": "legal-response",
+          "reason": "missing legal-response"
+        }
+      ],
+      "needsConfig": false
+    }
+  ]
+}

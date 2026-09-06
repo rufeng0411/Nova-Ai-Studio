@@ -1,0 +1,357 @@
+import { jsonrepair } from "jsonrepair";
+import type { CanonicalModelEvent, CanonicalToolCall } from "../../protocol/canonical.js";
+import { ModelProviderError } from "../../protocol/errors.js";
+import { normalizeOpenAIFinishReason } from "../../response/normalizeFinishReason.js";
+import { normalizeOpenAIUsage } from "../../response/normalizeUsage.js";
+import {
+  FILE_WRITE_TOOL_NAMES,
+  readWriteToolContent,
+  salvageDegenerateContent,
+  withSalvagedContent,
+} from "../../streaming/degenerateContentSalvage.js";
+
+export type ThinkFsmMode = "NORMAL" | "THINKING";
+
+export type OpenAIStreamState = {
+  started: boolean;
+  toolCalls: Map<number, Partial<CanonicalToolCall> & { argumentsBuffer?: string }>;
+  thinkFsm: ThinkFsmMode;
+  tagBuffer: string;
+  reasoningSnapshot: string;
+  // PD-SAAS-FORK: when ON, a truncated file-write whose content shows runaway repetition is
+  // salvaged into a clean-prefix file instead of being discarded (→ retry loop → zero files).
+  salvageDegenerateWrites: boolean;
+};
+
+export function createOpenAIStreamState(
+  opts: { salvageDegenerateWrites?: boolean } = {},
+): OpenAIStreamState {
+  return {
+    started: false,
+    toolCalls: new Map(),
+    thinkFsm: "NORMAL",
+    tagBuffer: "",
+    reasoningSnapshot: "",
+    salvageDegenerateWrites: opts.salvageDegenerateWrites ?? false,
+  };
+}
+
+const THINK_OPEN = "<think>";
+const THINK_CLOSE = "</think>";
+
+/**
+ * FSM-based parser that splits `<think>...</think>` tags from streamed
+ * `delta.content` into separate `thinking_delta` / `text_delta` events.
+ * Handles tags split across multiple chunks via `state.tagBuffer`.
+ *
+ * FSM that splits reasoning tags from streamed content deltas.
+ */
+export function splitThinkContent(
+  content: string,
+  state: OpenAIStreamState,
+  raw: unknown,
+): CanonicalModelEvent[] {
+  const events: CanonicalModelEvent[] = [];
+  let current = state.tagBuffer + content;
+  state.tagBuffer = "";
+
+  while (current.length > 0) {
+    if (state.thinkFsm === "NORMAL") {
+      const idx = current.indexOf(THINK_OPEN);
+      if (idx !== -1) {
+        const before = current.substring(0, idx);
+        if (before.length > 0) {
+          events.push({ type: "text_delta", text: before, raw });
+        }
+        current = current.substring(idx + THINK_OPEN.length);
+        state.thinkFsm = "THINKING";
+      } else {
+        // Check if the tail could be a partial `<think>` open tag
+        const buffered = bufferPartialTag(current, THINK_OPEN);
+        if (buffered > 0) {
+          state.tagBuffer = current.substring(current.length - buffered);
+          const safe = current.substring(0, current.length - buffered);
+          if (safe.length > 0) {
+            events.push({ type: "text_delta", text: safe, raw });
+          }
+        } else {
+          events.push({ type: "text_delta", text: current, raw });
+        }
+        current = "";
+      }
+    } else {
+      // THINKING state
+      const idx = current.indexOf(THINK_CLOSE);
+      if (idx !== -1) {
+        const before = current.substring(0, idx);
+        if (before.length > 0) {
+          events.push({ type: "thinking_delta", text: before, raw });
+        }
+        current = current.substring(idx + THINK_CLOSE.length);
+        state.thinkFsm = "NORMAL";
+      } else {
+        // Check if the tail could be a partial `</think>` close tag
+        const buffered = bufferPartialTag(current, THINK_CLOSE);
+        if (buffered > 0) {
+          state.tagBuffer = current.substring(current.length - buffered);
+          const safe = current.substring(0, current.length - buffered);
+          if (safe.length > 0) {
+            events.push({ type: "thinking_delta", text: safe, raw });
+          }
+        } else {
+          events.push({ type: "thinking_delta", text: current, raw });
+        }
+        current = "";
+      }
+    }
+  }
+
+  return events;
+}
+
+/**
+ * Returns the number of characters at the end of `text` that match a
+ * prefix of `tag`. Used to detect partial tags split across chunks.
+ */
+function bufferPartialTag(text: string, tag: string): number {
+  const maxCheck = Math.min(tag.length - 1, text.length);
+  for (let i = maxCheck; i > 0; i--) {
+    if (text.endsWith(tag.substring(0, i))) {
+      return i;
+    }
+  }
+  return 0;
+}
+
+export function normalizeOpenAIStreamEvent(
+  raw: unknown,
+  state: OpenAIStreamState = createOpenAIStreamState(),
+): CanonicalModelEvent[] {
+  const chunk = asRecord(raw);
+  const events: CanonicalModelEvent[] = [];
+
+  if (!state.started) {
+    state.started = true;
+    events.push({ type: "message_start", role: "assistant", raw });
+  }
+
+  const usage = normalizeOpenAIUsage(chunk.usage);
+  if (usage) {
+    events.push({ type: "usage", usage, raw });
+  }
+
+  const choices = Array.isArray(chunk.choices) ? chunk.choices : [];
+  for (const choice of choices) {
+    const choiceRecord = asRecord(choice);
+    const delta = asRecord(choiceRecord.delta);
+
+    if (typeof delta.content === "string" && delta.content.length > 0) {
+      events.push(...splitThinkContent(delta.content, state, raw));
+    }
+
+    const reasoning = delta.reasoning ?? delta.reasoning_content;
+    if (typeof reasoning === "string" && reasoning.length > 0) {
+      const prev = state.reasoningSnapshot;
+      let emit: string;
+      if (reasoning.startsWith(prev)) {
+        emit = reasoning.slice(prev.length);
+        state.reasoningSnapshot = reasoning;
+      } else {
+        emit = reasoning;
+        state.reasoningSnapshot = prev + reasoning;
+      }
+      if (emit.length > 0) {
+        events.push({ type: "thinking_delta", text: emit, raw });
+      }
+    }
+
+    if (Array.isArray(delta.tool_calls)) {
+      events.push(...toolCallEvents(delta.tool_calls, state, raw));
+    }
+
+    if (choiceRecord.finish_reason) {
+      const fr = normalizeOpenAIFinishReason(choiceRecord.finish_reason);
+      events.push(...finishToolCalls(state, raw, fr));
+      events.push({ type: "message_end", finishReason: fr, raw });
+    }
+  }
+
+  return events;
+}
+
+function toolCallEvents(
+  deltas: unknown[],
+  state: OpenAIStreamState,
+  raw: unknown,
+): CanonicalModelEvent[] {
+  const events: CanonicalModelEvent[] = [];
+
+  for (const delta of deltas) {
+    const record = asRecord(delta);
+    const index = typeof record.index === "number" ? record.index : 0;
+    const fn = asRecord(record.function);
+    const current = state.toolCalls.get(index) ?? {};
+
+    if (typeof record.id === "string") {
+      current.id = record.id;
+    }
+    // Only adopt a non-empty name. Some providers send the real name in the
+    // first chunk, then `function.name: ""` in later argument-only chunks;
+    // overwriting with the empty string would emit a nameless tool call and
+    // trigger a `tool_not_found: Tool "" does not exist` loop.
+    const name = readNonEmptyString(fn.name);
+    if (name !== undefined) {
+      current.name = name;
+    }
+
+    if (!state.toolCalls.has(index)) {
+      current.id = readNonEmptyString(current.id) ?? generateStreamToolCallId(index);
+      state.toolCalls.set(index, current);
+      events.push({
+        type: "tool_call_start",
+        id: current.id,
+        name: current.name ?? "",
+        raw,
+      });
+    }
+
+    if (typeof fn.arguments === "string") {
+      current.argumentsBuffer = `${current.argumentsBuffer ?? ""}${fn.arguments}`;
+      events.push({
+        type: "tool_call_delta",
+        id: current.id ?? generateStreamToolCallId(index),
+        delta: fn.arguments,
+        raw,
+      });
+    }
+
+    state.toolCalls.set(index, current);
+  }
+
+  return events;
+}
+
+function finishToolCalls(
+  state: OpenAIStreamState,
+  raw: unknown,
+  finishReason?: string,
+): CanonicalModelEvent[] {
+  const events: CanonicalModelEvent[] = [];
+  const isTruncation = finishReason === "length";
+
+  for (const [index, toolCall] of state.toolCalls.entries()) {
+    const rawArguments = toolCall.argumentsBuffer ?? "{}";
+    let input: unknown;
+    let wasRepaired = false;
+    try {
+      input = JSON.parse(rawArguments);
+    } catch {
+      try {
+        const repaired = jsonrepair(rawArguments);
+        input = JSON.parse(repaired);
+        wasRepaired = true;
+        console.warn(
+          `[openai-stream] repaired invalid JSON for tool "${toolCall.name ?? "?"}" (buf_len=${rawArguments.length})`,
+        );
+      } catch {
+        const preview = rawArguments.length > 500
+          ? rawArguments.slice(0, 250) + "\n…[truncated]…\n" + rawArguments.slice(-250)
+          : rawArguments;
+        const code = isTruncation ? "max_output_reached" : "invalid_tool_arguments";
+        console.error(
+          `[openai-stream] ${code} for tool "${toolCall.name ?? "?"}" (index=${index}, `
+          + `buf_len=${rawArguments.length}):\n${preview}`,
+        );
+        throw new ModelProviderError({
+          provider: "openai",
+          protocol: "openai",
+          code,
+          message: isTruncation
+            ? "Output token limit reached — tool call arguments were truncated."
+            : "OpenAI stream tool call arguments are not valid JSON.",
+          retryable: true,
+          raw,
+        });
+      }
+    }
+
+    // jsonrepair may silently produce truncated content values; when the
+    // response was cut by max_tokens, treat repaired tool calls the same
+    // as parse failures so the recovery loop retries with more tokens.
+    if (wasRepaired && isTruncation) {
+      // PD-SAAS-FORK (flag-gated): before discarding, try to salvage a clean prefix from a
+      // file-write whose content ran away into verbatim repetition. Retrying just re-generates the
+      // same loop (hours wasted, zero files); a shorter-but-valid file is a usable deliverable and
+      // breaks the cross-call retry loop. Only trims on detected runaway repetition — a legitimately
+      // large truncated file (no repetition) still falls through to retry-with-more-tokens.
+      const toolName = toolCall.name ?? "";
+      if (state.salvageDegenerateWrites && FILE_WRITE_TOOL_NAMES.has(toolName)) {
+        const content = readWriteToolContent(input);
+        if (content !== null) {
+          const salvage = salvageDegenerateContent(content);
+          if (salvage.trimmed) {
+            console.warn(
+              `[openai-stream] salvaged degenerate ${toolName} (${salvage.reason}): kept `
+              + `${content.length - salvage.removedChars}/${content.length} chars (index=${index})`,
+            );
+            // wasRepaired:false on purpose — the salvage finalized a CLEAN, COMPLETE tool call (we cut
+            // at the repetition boundary), so the agent loop must EXECUTE it (write the file) rather
+            // than treat it as repaired-but-truncated and block it into the retry loop again.
+            events.push({
+              type: "tool_call_end",
+              toolCall: {
+                id: readNonEmptyString(toolCall.id) ?? generateStreamToolCallId(index),
+                name: toolName,
+                input: withSalvagedContent(input, salvage.content),
+                raw,
+              },
+              wasRepaired: false,
+              raw,
+            });
+            continue;
+          }
+        }
+      }
+      console.warn(
+        `[openai-stream] discarding repaired-but-truncated tool call "${toolCall.name ?? "?"}" (index=${index})`,
+      );
+      throw new ModelProviderError({
+        provider: "openai",
+        protocol: "openai",
+        code: "max_output_reached",
+        message: "Output token limit reached — repaired tool call arguments are likely incomplete.",
+        retryable: true,
+        raw,
+      });
+    }
+
+    events.push({
+      type: "tool_call_end",
+      toolCall: {
+        id: readNonEmptyString(toolCall.id) ?? generateStreamToolCallId(index),
+        name: toolCall.name ?? "",
+        input,
+        raw,
+      },
+      wasRepaired,
+      raw,
+    });
+  }
+
+  state.toolCalls.clear();
+  return events;
+}
+
+function asRecord(value: unknown): Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value)
+    ? (value as Record<string, unknown>)
+    : {};
+}
+
+function readNonEmptyString(value: unknown): string | undefined {
+  return typeof value === "string" && value.trim().length > 0 ? value : undefined;
+}
+
+function generateStreamToolCallId(index: number): string {
+  return `call_${index}`;
+}

@@ -1,0 +1,21 @@
+{
+  "scenario": "modric-partial-1-of-5",
+  "description": "MOD-07 — 5 SDM slots with 1 verified path",
+  "expectedManifest": [
+    { "id": "slot_1", "label": "交付物 1", "kind": "markdown", "path": "artifacts/campaign/item-1.md" },
+    { "id": "slot_2", "label": "交付物 2", "kind": "markdown", "path": "artifacts/campaign/item-2.md" },
+    { "id": "slot_3", "label": "交付物 3", "kind": "markdown", "path": "artifacts/campaign/item-3.md" },
+    { "id": "slot_4", "label": "交付物 4", "kind": "markdown", "path": "artifacts/campaign/item-4.md" },
+    { "id": "slot_5", "label": "交付物 5", "kind": "markdown", "path": "artifacts/campaign/item-5.md" }
+  ],
+  "items": [
+    {
+      "path": "artifacts/campaign/item-1.md",
+      "kind": "document",
+      "validationStatus": "verified"
+    }
+  ],
+  "verifiedPaths": ["artifacts/campaign/item-1.md"],
+  "expectDeliveredCount": 1,
+  "expectMissingCount": 4
+}

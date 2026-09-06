@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "updatedAt": "2026-08-07T15:13:51.349Z",
+  "categories": {
+    "development": false,
+    "brainstorming": false,
+    "education": false,
+    "media": false,
+    "finance": false,
+    "enterprise_compliance": false
+  },
+  "subcategories": {},
+  "capabilities": {
+    "fc-firecrawl-cli": false,
+    "fc-firecrawl-search": false,
+    "web-just-scrape": false
+  },
+  "templates": {},
+  "templateGroups": {}
+}

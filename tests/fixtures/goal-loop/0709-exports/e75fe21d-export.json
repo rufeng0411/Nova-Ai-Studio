@@ -1,0 +1,28 @@
+{
+  "sessionIdPrefix": "e75fe21d",
+  "title": "增长全案 C8",
+  "userGoal": "增长全案八步",
+  "manifest": {
+    "manifestVersion": 2,
+    "goalVersion": 1,
+    "profileId": "mkt_growth",
+    "baselineLocked": true,
+    "sessionGoalAnchor": "增长全案",
+    "slots": [
+      { "id": "slot_1", "label": "市场洞察", "required": true, "status": "pending" },
+      { "id": "slot_2", "label": "用户画像", "required": true, "status": "pending" },
+      { "id": "slot_3", "label": "渠道策略", "required": true, "status": "pending" },
+      { "id": "slot_4", "label": "内容矩阵", "required": true, "status": "pending" },
+      { "id": "slot_5", "label": "投放计划", "required": true, "status": "pending" },
+      { "id": "slot_6", "label": "邮件培育", "required": true, "status": "pending" },
+      { "id": "slot_7", "label": "程序化 SEO", "required": true, "status": "pending" },
+      { "id": "slot_8", "label": "复盘报告", "required": true, "status": "pending" }
+    ]
+  },
+  "verifiedPaths": [],
+  "expect": {
+    "exportRowCount": 8,
+    "allPending": true,
+    "mustRenderSection": true
+  }
+}

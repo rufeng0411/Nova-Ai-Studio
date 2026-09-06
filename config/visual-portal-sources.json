@@ -1,0 +1,30 @@
+{
+  "$comment": "PD-SAAS-FORK VAP: tier-4 portal / vertical fallbacks when official + authority fail",
+  "version": 1,
+  "sources": [
+    {
+      "id": "zol-auto",
+      "label": "中关村在线汽车",
+      "buildUrl": "https://search.zol.com.cn/s?k={subject}",
+      "sourceTier": "portal_general"
+    },
+    {
+      "id": "yoojia",
+      "label": "有驾",
+      "buildUrl": "https://www.yoojia.com/search?q={subject}",
+      "sourceTier": "portal_general"
+    },
+    {
+      "id": "sogou-web",
+      "label": "搜狗网页",
+      "buildUrl": "https://www.sogou.com/web?query={subject}",
+      "sourceTier": "portal_general"
+    },
+    {
+      "id": "baidu-web",
+      "label": "百度网页",
+      "buildUrl": "https://www.baidu.com/s?wd={subject}",
+      "sourceTier": "portal_general"
+    }
+  ]
+}

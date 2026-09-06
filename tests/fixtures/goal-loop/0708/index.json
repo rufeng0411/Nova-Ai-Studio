@@ -1,0 +1,74 @@
+{
+  "suite": "0708-1-golden",
+  "cases": [
+    {
+      "id": "0708-01",
+      "sessionIdPrefix": "a7023e53",
+      "userGoal": "杂志风长文 index.html",
+      "manifest": {
+        "manifestVersion": 1,
+        "goalVersion": 1,
+        "sessionGoalAnchor": "杂志风长文",
+        "slots": [{ "id": "required_html_1", "label": "网页", "kind": "html", "pathHint": "index.html", "required": true, "status": "active" }]
+      },
+      "verifiedPaths": [],
+      "expect": { "minContractRows": 1, "maxContractRows": 1 }
+    },
+    {
+      "id": "0708-02",
+      "sessionIdPrefix": "6d40823c",
+      "userGoal": "campaign 全案",
+      "manifest": {
+        "manifestVersion": 1,
+        "goalVersion": 1,
+        "sessionGoalAnchor": "campaign 全案",
+        "profileId": "campaign",
+        "slots": [
+          { "id": "stage_research", "label": "调研", "required": true, "status": "done" },
+          { "id": "stage_brief", "label": "brief", "pathHint": "brief.md", "required": true, "status": "active" }
+        ]
+      },
+      "verifiedPaths": ["artifacts/campaign/brief.md"],
+      "expect": { "minContractRows": 2, "forbiddenBasenames": ["build-brief.mjs"] }
+    },
+    {
+      "id": "0708-07",
+      "sessionIdPrefix": "350cb55e",
+      "userGoal": "内容营销三步",
+      "manifest": {
+        "manifestVersion": 1,
+        "goalVersion": 1,
+        "sessionGoalAnchor": "内容营销三步",
+        "slots": [
+          { "id": "s1", "label": "主题", "pathHint": "01-topics.md", "kind": "markdown", "required": true, "status": "done" },
+          { "id": "s2", "label": "日历", "pathHint": "02-calendar.md", "kind": "markdown", "required": true, "status": "done" },
+          { "id": "s3", "label": "分发", "pathHint": "03-distribution.md", "kind": "markdown", "required": true, "status": "done" }
+        ]
+      },
+      "verifiedPaths": ["artifacts/01-topics.md", "artifacts/02-calendar.md", "artifacts/03-distribution.md"],
+      "expect": { "contractRowCount": 3 }
+    },
+    {
+      "id": "0708-10",
+      "sessionIdPrefix": "d26c105d",
+      "userGoal": "付费投放计划",
+      "capabilitySlug": "mkt-ads",
+      "manifest": {
+        "manifestVersion": 1,
+        "goalVersion": 1,
+        "sessionGoalAnchor": "付费投放计划",
+        "profileId": "mkt_ads",
+        "capabilitySlug": "mkt-ads",
+        "slots": [
+          { "id": "required_markdown_1", "label": "模板", "kind": "markdown", "pathHint": "skills/mkt-ads/references/ad-copy-templates.md", "required": true, "status": "active" }
+        ]
+      },
+      "verifiedPaths": ["artifacts/ads-plan.md", "artifacts/channel-matrix.md"],
+      "expect": {
+        "minContractRows": 2,
+        "forbiddenExclusiveBasenames": ["ad-copy-templates.md"],
+        "forbiddenGoalTerms": ["足球", "世界杯"]
+      }
+    }
+  ]
+}

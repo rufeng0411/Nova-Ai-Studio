@@ -1,0 +1,23 @@
+{
+  "id": "rog-battlecard-3slot-partial",
+  "description": "Battlecard 1/3 files verified should trigger engine deliverable_repair via SDM",
+  "userGoal": "为【ROG vs 竞品】做销售 Battlecard 全链路，三步一次做完：\n1. intel.md\n2. battlecard.md\n3. talk-track.md\n直接开始做，做完告诉我各文件路径。",
+  "capabilitySlug": "sales-battlecard-full",
+  "sessionManifest": {
+    "manifestVersion": 1,
+    "goalVersion": 1,
+    "sessionGoalAnchor": "battlecard",
+    "profileId": "sales_enablement",
+    "slots": [
+      { "id": "slot_1", "label": "intel.md", "pathHint": "intel.md", "required": true, "status": "done" },
+      { "id": "slot_2", "label": "battlecard.md", "pathHint": "battlecard.md", "required": true, "status": "pending" },
+      { "id": "slot_3", "label": "talk-track.md", "pathHint": "talk-track.md", "required": true, "status": "pending" }
+    ]
+  },
+  "validationResult": {
+    "verified": ["artifacts/sales/rog/intel.md"],
+    "missing": ["artifacts/sales/rog/battlecard.md", "artifacts/sales/rog/talk-track.md"],
+    "broken": []
+  },
+  "expectedContinuationAction": "deliverable_repair"
+}

@@ -1,0 +1,30 @@
+/* PD-SAAS-FORK: 18px N2 Bot chip only — do not import HUD CSS from the workbench shell. */
+.n2b-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 36px;
+  width: calc(100% - 4px);
+  margin: 0 0 8px;
+  padding: 0 10px;
+  border-radius: 999px;
+  border: 1px solid hsl(240 5% 24% / 0.7);
+  background: transparent;
+  color: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+.n2b-chip-orb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  flex: none;
+  background: radial-gradient(circle at 40% 35%, hsl(217 90% 72%), hsl(217 90% 48%));
+}
+.n2b-chip-orb.is-needs_you { box-shadow: 0 0 0 2px hsl(32 80% 48% / 0.55); }
+.n2b-chip-orb.is-active { box-shadow: 0 0 8px hsl(217 90% 58% / 0.55); }
+.n2b-chip-beta {
+  margin-left: auto;
+  font-size: 10px;
+  opacity: 0.65;
+}

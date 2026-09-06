@@ -1,0 +1,4 @@
+{"type":"accepted_input","sessionId":"web-s_empty_table","turnId":"t-1","sequence":1,"createdAt":"2026-07-02T00:00:01.000Z","entryId":"e-1","messages":[{"role":"user","content":[{"type":"text","text":"做一份杂志长文报告并交付 md 文件"}]}]}
+{"type":"assistant_message","sessionId":"web-s_empty_table","turnId":"t-1","sequence":2,"createdAt":"2026-07-02T00:00:02.000Z","entryId":"e-2","message":{"role":"assistant","content":[{"type":"text","text":"✅ 杂志长文已交付。"}]}}
+{"type":"turn_acceptance_meta","sessionId":"web-s_empty_table","turnId":"t-1","sequence":3,"createdAt":"2026-07-02T00:00:03.000Z","entryId":"e-3","expectedManifest":[{"path":"article.md","kind":"md"}],"verifiedPaths":[],"missingPaths":["article.md"],"acceptanceStatus":"passed"}
+{"type":"turn_result","sessionId":"web-s_empty_table","turnId":"t-1","sequence":4,"createdAt":"2026-07-02T00:00:04.000Z","entryId":"e-4","result":{"type":"success","stopReason":"completed","turns":1,"startedAt":"2026-07-02T00:00:01.000Z"}}

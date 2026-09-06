@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "updatedAt": null,
+  "defaultGroupId": "normal",
+  "groups": [
+    {
+      "id": "normal",
+      "name": "普通组",
+      "description": "默认用户组。可见能力与全案模板由后台「能力中心可见性」统一控制；本组不额外隐藏。",
+      "isDefault": true,
+      "mode": "inherit_global",
+      "permissions": {
+        "categories": {},
+        "subcategories": {},
+        "capabilities": {},
+        "templates": {},
+        "templateGroups": {}
+      }
+    }
+  ]
+}

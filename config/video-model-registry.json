@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "provider": "qwen",
+  "fallbackChain": [
+    {
+      "id": "happyhorse-1.0-t2v",
+      "label": "Happy Horse 1.0 文生视频",
+      "dashScopeModel": "happyhorse-1.0-t2v",
+      "kind": "t2v"
+    },
+    {
+      "id": "wanx2.1-t2v-turbo",
+      "label": "万相 2.1 文生视频 Turbo",
+      "dashScopeModel": "wanx2.1-t2v-turbo",
+      "kind": "t2v"
+    },
+    {
+      "id": "wanx2.1-t2v-plus",
+      "label": "万相 2.1 文生视频 Plus",
+      "dashScopeModel": "wanx2.1-t2v-plus",
+      "kind": "t2v"
+    }
+  ],
+  "modelNotExistPatterns": [
+    "model not exist",
+    "model_not_exist",
+    "InvalidModel",
+    "model does not exist"
+  ]
+}

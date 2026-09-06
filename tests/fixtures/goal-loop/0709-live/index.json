@@ -1,0 +1,78 @@
+{
+  "suite": "0709-live-udc-r11",
+  "cases": [
+    {
+      "id": "geo-razer-dc7a63d3",
+      "sessionIdPrefix": "dc7a63d3",
+      "capabilitySlug": "pd-geo",
+      "userGoal": "雷蛇 GEO 全案，七步一次做完：\n1. geo-aeo-audit 审计清单\n2. 关键词调研 pd-geo\n3. 平台成稿（知乎/小红书/什么值得买）\n4. 引用优化\n5. schema.jsonld\n6. citability 评分\n7. 可选：小红书草稿",
+      "scopeDir": "artifacts/razer-geo-dc7a63d3/",
+      "diskFiles": ["artifacts/razer-geo-dc7a63d3/01-aeo-audit-checklist.md"],
+      "expect": {
+        "slotCount": 6,
+        "profileId": "geo",
+        "requiredTotal": 6,
+        "bindBasename": "01-aeo-audit-checklist.md",
+        "bindSlotIndex": 0,
+        "forbiddenVerifiedBasenames": ["README.md", "deliverables-index.md"]
+      }
+    },
+    {
+      "id": "geo-proclick-d7890d1d",
+      "sessionIdPrefix": "d7890d1d",
+      "capabilitySlug": "pd-geo",
+      "userGoal": "Razer Pro Click GEO，七步：\n1. geo-aeo-audit 审计清单\n2. 关键词调研\n3. 平台成稿\n4. 引用优化\n5. schema.jsonld\n6. citability 评分\n7. visibility-report.html 可见度报告",
+      "scopeDir": "artifacts/razer-pro-click-geo/",
+      "diskFiles": [
+        "artifacts/razer-pro-click-geo/01-aeo-audit-checklist.md",
+        "artifacts/razer-pro-click-geo/visibility-report.html"
+      ],
+      "expect": {
+        "slotCount": 6,
+        "profileId": "geo",
+        "bindBasename": "01-aeo-audit-checklist.md",
+        "bindSlotIndex": 0,
+        "diskEnrichDelivered": 2
+      }
+    },
+    {
+      "id": "growth-8step-e75fe21d",
+      "sessionIdPrefix": "e75fe21d",
+      "capabilitySlug": "mkt-growth",
+      "userGoal": "增长全案八步：\n1. 市场洞察\n2. 用户画像\n3. 渠道策略\n4. 内容矩阵\n5. 投放计划\n6. 邮件培育\n7. 程序化 SEO\n8. 复盘报告",
+      "expect": {
+        "slotCount": 8,
+        "profileIdNot": "geo",
+        "exportRowCount": 8
+      }
+    },
+    {
+      "id": "battlecard-3step-eca4cc5d",
+      "sessionIdPrefix": "eca4cc5d",
+      "userGoal": "销售 battlecard 三步：\n1. artifacts/sales/intel.md 竞品情报\n2. battlecard.md 作战卡\n3. talk-track.md 话术",
+      "expect": {
+        "slotCount": 3,
+        "firstPathHint": "intel.md"
+      }
+    },
+    {
+      "id": "monitor-3step-d45a0ed0",
+      "sessionIdPrefix": "d45a0ed0",
+      "userGoal": "可见度监测三步：\n1. geo-rank-track.csv 排名追踪\n2. brand-mention-report.md 提及报告\n3. monitor-report.html 监测页",
+      "expect": {
+        "slotCount": 3,
+        "pathHintContains": ["rank", "mention", "monitor"]
+      }
+    },
+    {
+      "id": "video-1d1bf62f",
+      "sessionIdPrefix": "1d1bf62f",
+      "userGoal": "广告视频一条：\n1. commercial.mp4 成片",
+      "capabilitySlug": "ad-storyboard-seedance",
+      "expect": {
+        "slotCount": 1,
+        "pathHintContains": ["mp4", "commercial"]
+      }
+    }
+  ]
+}

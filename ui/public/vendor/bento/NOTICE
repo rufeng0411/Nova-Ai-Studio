@@ -1,0 +1,4 @@
+Bento Slides shell (bento/slides v1)
+Guide version: 1.0.11
+Source: nyblnet/bento (MIT)
+Vendored for Nova splice + iframe preview; #bento-doc JSON is authoritative.

@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "builtin": [
+    { "id": "mupdf-pdf", "kinds": ["pdf"], "integrationLevel": "L2", "priority": 50 },
+    { "id": "mammoth-docx", "kinds": ["docx"], "integrationLevel": "L2", "priority": 50 },
+    { "id": "exceljs-xlsx", "kinds": ["xlsx", "csv"], "integrationLevel": "L2", "priority": 50 },
+    { "id": "python-pptx", "kinds": ["pptx"], "integrationLevel": "L2", "priority": 40 },
+    { "id": "mineru-cloud", "kinds": ["pdf", "docx", "pptx", "xlsx"], "integrationLevel": "cloud", "priority": 60 }
+  ]
+}
