@@ -17,8 +17,9 @@ git clone https://github.com/rufeng0411/Nova-Ai-Studio.git
 cd Nova-Ai-Studio
 cp .env.example .env          # Windows: Copy-Item .env.example .env
 # 填写 SAAS_ADMIN_PASSWORD（不要用历史默认弱口令）
-npm install
-npm run dev
+corepack enable
+pnpm install
+pnpm run dev
 ```
 
 打开启动器打印的 **Vite URL**，进入 `/login`，用 `admin` + `.env` 口令登录，落到 **`/app`**。

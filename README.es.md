@@ -8,8 +8,9 @@ Full docs: [English README](README.md) · [简体中文](README.zh-CN.md)
 
 ```bash
 cp .env.example .env
-npm install
-npm run dev
+corepack enable
+pnpm install
+pnpm run dev
 ```
 
 Open the Vite URL → `/login` → `admin` + `SAAS_ADMIN_PASSWORD` → `/app`.

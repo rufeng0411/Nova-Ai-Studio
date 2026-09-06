@@ -35,9 +35,9 @@ export function SaasAdminRoutes() {
  <Route path="dashboard" element={<DashboardPage />} />
  <Route path="users" element={<Navigate to="/admin/dashboard" replace />} />
  <Route path="user-groups" element={<Navigate to="/admin/dashboard" replace />} />
- <Route path="usage" element={<Navigate to="platform/usage" replace />} />
- <Route path="skills" element={<Navigate to="platform/skills" replace />} />
- <Route path="hub-visibility" element={<Navigate to="platform/hub-visibility" replace />} />
+ <Route path="usage" element={<Navigate to="/admin/platform/usage" replace />} />
+ <Route path="skills" element={<Navigate to="/admin/platform/skills" replace />} />
+ <Route path="hub-visibility" element={<Navigate to="/admin/platform/hub-visibility" replace />} />
  <Route path="marketing-leads" element={<Navigate to="/admin/dashboard" replace />} />
  <Route path="invite-codes" element={<Navigate to="/admin/dashboard" replace />} />
  <Route path="marketing-analytics" element={<Navigate to="/admin/dashboard" replace />} />

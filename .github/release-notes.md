@@ -4,8 +4,9 @@ Personal SaaS community edition.
 
 ```bash
 cp .env.example .env
-npm install
-npm run dev
+corepack enable
+pnpm install
+pnpm run dev
 ```
 
 Open the Vite URL → `/login` → `/app`. Probe `GET /api/saas/health/ready`.

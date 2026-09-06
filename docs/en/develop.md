@@ -4,8 +4,9 @@ Config-level only.
 
 ```bash
 cp .env.example .env
-npm install
-npm --workspace ui run build
+corepack enable
+pnpm install
+pnpm --dir ui run build
 ```
 
 CI is Node + UI build, not Python unittest.

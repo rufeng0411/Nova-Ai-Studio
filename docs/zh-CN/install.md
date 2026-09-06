@@ -13,7 +13,7 @@
 
 ## 前置
 
-- Node.js **20+**
+- Node.js **20+**（自带 corepack；本仓库用 pnpm，见 `packageManager`）
 - Git
 - 不必装 Docker / PostgreSQL（社区黄金路径用 SQLite）
 
@@ -56,8 +56,9 @@ cp .env.example .env
 ### 3. 安装并启动
 
 ```bash
-npm install
-npm run dev
+corepack enable
+pnpm install
+pnpm run dev
 ```
 
 在终端找到 Vite URL（常见 `http://127.0.0.1:5173`，占用会换端口）。浏览器打开后应落到 **`/login`**，不是营销站。
@@ -86,4 +87,4 @@ npm run dev
 | `health/ready` 连不上 3001 | 看启动器打印的 **server** 端口，可能是 3002 |
 | `/` 仍像营销站 | 确认 `.env` 里 `PILOTDECK_MARKETING_SITE=0` 后重启 |
 | 对话 402 积分不足 | 社区 overlay 应跳过配额；确认 `PILOTDECK_COMMUNITY_PERSONAL=1` |
-| `npm --workspace ui run build` 失败 | Node 20+，删 `node_modules` 后重装 |
+| `pnpm --dir ui run build` 失败 | Node 20+，`corepack enable` 后删 `node_modules` 再 `pnpm install` |

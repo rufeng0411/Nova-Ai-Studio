@@ -13,7 +13,7 @@ You can sign in without model keys. Add keys in Admin when you want to run a tas
 
 ## Prerequisites
 
-- Node.js **20+**
+- Node.js **20+** (corepack / pnpm; see `packageManager`)
 - Git
 - No Docker / PostgreSQL on this path
 
@@ -24,8 +24,9 @@ git clone https://github.com/rufeng0411/Nova-Ai-Studio.git
 cd Nova-Ai-Studio
 cp .env.example .env
 # set SAAS_ADMIN_PASSWORD — never the historic default
-npm install
-npm run dev
+corepack enable
+pnpm install
+pnpm run dev
 ```
 
 Open the printed Vite URL → `/login` → `admin` + `.env` password → `/app`.

@@ -17,8 +17,9 @@ git clone https://github.com/rufeng0411/Nova-Ai-Studio.git
 cd Nova-Ai-Studio
 cp .env.example .env
 # set SAAS_ADMIN_PASSWORD (never the historic default)
-npm install
-npm run dev
+corepack enable
+pnpm install
+pnpm run dev
 ```
 
 Open the **Vite URL** printed by the launcher → `/login` → `admin` + the password in `.env` → **`/app`**.
