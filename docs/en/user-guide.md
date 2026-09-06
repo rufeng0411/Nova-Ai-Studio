@@ -8,7 +8,7 @@ After login you always land on `/app`.
 
 ## Workbench
 
-`/app` is chat plus deliverables.
+`/app` is chat plus deliverables. There is no **N2 Bot** chip; `/tools/n2-bot` redirects to `/app`.
 
 ## Hub
 

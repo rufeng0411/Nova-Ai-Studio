@@ -7,6 +7,7 @@ import { getPilotDeckGateway, getPilotDeckGatewayIfReady } from '../pilotdeck-br
 import { reloadGatewayExtensionsBestEffort } from '../utils/reloadGatewayExtensionsBestEffort.js';
 import { resolvePilotHome } from '../utils/pilotPaths.js';
 import { isSaasMode } from '../saas/mode.js';
+import { isCommunityPersonal } from '../saas/communityPersonal.js';
 import { getLegacyPilotHome } from '../saas/legacyBridge.js';
 import { compareCapabilitiesForHub } from '../../../scripts/lib/capabilityHubSort.mjs';
 import { applyTaxonomyToSkill, matchesMajorCategory } from '../../../scripts/lib/capabilityHubTaxonomy.mjs';
@@ -711,7 +712,7 @@ router.put('/admin/platform-features', requireAdmin, async (req, res) => {
       preflightStudio: normalizePreflightStudioMode(nextPreflight),
       bentoDeckEditor: normalizeBooleanFeature(nextBento, false),
       mdBrowserTool: normalizeBooleanFeature(nextMdBrowser, true),
-      n2Bot: normalizeBooleanFeature(nextN2Bot, false),
+      n2Bot: isCommunityPersonal() ? false : normalizeBooleanFeature(nextN2Bot, false),
       mcpFeatures: mcpNorm.features,
     });
     // PD-SAAS-FORK: do not await cold Gateway connect (60s) — admin UI aborts at 12s.

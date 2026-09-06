@@ -6,4 +6,4 @@
 - SQLite control plane; no Docker Postgres on the golden path.
 - One Admin for models, MCP, and skills.
 
-Limits: no multi-tenant billing, invite growth, or site CMS. Hub Try needs your own model key.
+Limits: no multi-tenant billing, invite growth, site CMS, or N2 Bot. Hub Try needs your own model key.

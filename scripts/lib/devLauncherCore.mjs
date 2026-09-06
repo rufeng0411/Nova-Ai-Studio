@@ -209,6 +209,7 @@ export async function prepareSaasDevRuntime(repoRoot, options = {}) {
   if (!String(process.env.PILOTDECK_REGISTER_INVITE_CODE || '').trim()) {
     process.env.PILOTDECK_REGISTER_INVITE_CODE = '0';
   }
+  process.env.PILOTDECK_N2_BOT = 'off';
   const dataRoot = getSaasDataRoot(repoRoot);
   mkdirSync(dataRoot, { recursive: true });
 

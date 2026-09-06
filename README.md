@@ -45,7 +45,7 @@ The community cut is for **one operator**: username `admin`, SQLite control plan
 
 ## What we removed
 
-Marketing homepage, registration, invite codes, user lists, groups, leads, Showcase CMS, wallet UI. Control-plane code remains; runtime returns 403 and the nav is gone.
+Marketing homepage, registration, invite codes, user lists, groups, leads, Showcase CMS, wallet UI, and the workbench **N2 Bot** chip. Control-plane code remains; runtime returns 403 and the nav is gone. N2 Bot stays off.
 
 ## Collaborate
 

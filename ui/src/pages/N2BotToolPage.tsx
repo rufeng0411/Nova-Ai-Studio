@@ -1,4 +1,5 @@
 import { Suspense, lazy, useEffect, useState } from 'react';
+import { Navigate } from 'react-router-dom';
 import ErrorBoundary from '../components/main-content/view/ErrorBoundary';
 import {
   getRuntimeFeatureFlags,
@@ -19,16 +20,17 @@ export default function N2BotToolPage() {
   }), []);
 
   useEffect(() => {
+    if (!enabled) return undefined;
     const prev = document.title;
     document.title = 'N2 Bot β';
     return () => {
       document.title = prev;
     };
-  }, []);
+  }, [enabled]);
 
   if (!hydrated) return null;
   if (!enabled) {
-    return <p style={{ padding: 24 }}>N2 Bot</p>;
+    return <Navigate to="/app" replace />;
   }
   return (
     <ErrorBoundary>

@@ -2,7 +2,7 @@
 
 Environment variables and Admin forms only — not an architecture guide.
 
-Required: `SAAS_ADMIN_PASSWORD`. Keep `PILOTDECK_COMMUNITY_PERSONAL=1`, `DEV_SAAS_SQLITE=1`, and marketing/register flags at `0`.
+Required: `SAAS_ADMIN_PASSWORD`. Keep `PILOTDECK_COMMUNITY_PERSONAL=1`, `DEV_SAAS_SQLITE=1`, `PILOTDECK_N2_BOT=off`, and marketing/register flags at `0`.
 
 Add model keys in Admin → platform service → models. Never commit `.env`.
 

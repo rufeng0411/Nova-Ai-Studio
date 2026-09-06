@@ -50,6 +50,7 @@ cp .env.example .env
 | `PILOTDECK_COMMUNITY_PERSONAL` | `1` |
 | `DEV_SAAS_SQLITE` | `1` |
 | `PILOTDECK_MARKETING_SITE` | `0` |
+| `PILOTDECK_N2_BOT` | `off`（社区版锁定） |
 
 未设置 `SAAS_ADMIN_PASSWORD` 时进程拒绝启动。
 
@@ -76,7 +77,7 @@ pnpm run dev
 - `npm run dev:standalone`
 - 把 Nova Dev Console / Launcher 当主安装路径
 - 在文档或 `.env` 里写历史默认弱口令
-- 期待注册页、邀请码、用户管理
+- 期待注册页、邀请码、用户管理、工作台 N2 Bot
 - 用 uvicorn `8000` / `GET /healthz`（那是另一个产品）
 
 ## 若出现 X 则做 Y
@@ -88,3 +89,4 @@ pnpm run dev
 | `/` 仍像营销站 | 确认 `.env` 里 `PILOTDECK_MARKETING_SITE=0` 后重启 |
 | 对话 402 积分不足 | 社区 overlay 应跳过配额；确认 `PILOTDECK_COMMUNITY_PERSONAL=1` |
 | `pnpm --dir ui run build` 失败 | Node 20+，`corepack enable` 后删 `node_modules` 再 `pnpm install` |
+| 工作台仍有 N2 Bot | 确认已拉最新社区版；`PILOTDECK_COMMUNITY_PERSONAL=1` 后重启 |

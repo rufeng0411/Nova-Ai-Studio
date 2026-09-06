@@ -12,6 +12,10 @@
 
 Bridge：`/api/saas/health` 与 `/api/saas/health/ready`。不是 `:8000/healthz`。
 
+## 为什么看不到 N2 Bot？
+
+社区版关掉工作台左下角的 N2 Bot 入口，后台也打不开。请用普通对话和工作台能力。
+
 ## 为什么是 AGPL？
 
 通过网络提供服务时需要开放对应源码。见 LICENSE。

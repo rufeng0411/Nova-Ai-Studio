@@ -4,7 +4,7 @@
   "preflightStudio": "off",
   "bentoDeckEditor": false,
   "mdBrowserTool": true,
-  "n2Bot": true,
+  "n2Bot": false,
   "mcpFeatures": {
     "cnErp": "off",
     "kingdee": "off",

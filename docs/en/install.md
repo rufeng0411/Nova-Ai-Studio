@@ -38,5 +38,5 @@ Configure models at `/admin/platform/service/models`.
 - Run `npm run dev:standalone`
 - Treat the desktop launcher as the install path
 - Put the historic default password in docs or `.env`
-- Expect registration, invite codes, or a user list
+- Expect registration, invite codes, a user list, or a workbench N2 Bot chip
 - Probe uvicorn `:8000/healthz` (different product)

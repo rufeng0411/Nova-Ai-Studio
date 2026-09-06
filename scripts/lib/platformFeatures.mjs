@@ -181,6 +181,9 @@ export function readN2BotEnvOverride() {
 }
 
 export function resolveN2BotModeEffective() {
+  // N2-COMMUNITY-OVERLAY: N2 Bot is not a community surface
+  const community = String(process.env.PILOTDECK_COMMUNITY_PERSONAL || '').trim().toLowerCase();
+  if (community === '1' || community === 'true') return 'off';
   const envHit = readN2BotEnvOverride();
   if (envHit && (envHit.mode === 'shadow' || envHit.mode === 'enforce')) {
     return envHit.mode;

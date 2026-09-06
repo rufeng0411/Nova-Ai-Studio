@@ -12,6 +12,10 @@ export default function N2BotOverlayHost() {
   useEffect(() => subscribeRuntimeFeatureFlags(() => setEnabled(isN2BotHudEnabled())), []);
 
   useEffect(() => {
+    if (!enabled) {
+      setOpen(false);
+      return undefined;
+    }
     const onOpen = () => setOpen(true);
     const onKey = (event: KeyboardEvent) => {
       if (event.key === 'Escape') setOpen(false);
@@ -52,7 +56,7 @@ export default function N2BotOverlayHost() {
       window.removeEventListener('keydown', onKey);
       window.removeEventListener('n2-bot:offer-open', onOffer);
     };
-  }, []);
+  }, [enabled]);
 
   if (!enabled || !open) return null;
   return (

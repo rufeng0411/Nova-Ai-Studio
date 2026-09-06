@@ -30,37 +30,7 @@ export type PluginCardDetail = {
 };
 
 export const UI_PLUGIN_CARDS: PluginCardDetail[] = [
-  {
-    id: 'n2Bot',
-    label: 'N2 Bot',
-    summary: '工作台左下角的 Nova 助手。默认关闭；打开后才显示芯片与对话界面。',
-    description:
-      'N2 Bot 是聊天秘书：她本人不写报告或幻灯，而是派人在工作台项目里做事。关闭时工作台不出现入口；打开后左下显示 N2 Bot β。保存后用户刷新工作台生效。',
-    canDo: [
-      '在工作台左下显示 N2 Bot 入口',
-      '打开助手界面：左侧对话、右侧手头任务',
-      '按口令派人到「通用」或某个项目文件夹做事',
-    ],
-    cannotDo: [
-      '关闭时工作台不出现芯片，也无法用「Hello Nova」打开',
-      '她不自己产出成果文件，成果在工人对话里',
-      '显式环境变量 shadow/enforce 会强制开启，后台关不掉',
-    ],
-    tools: [
-      {
-        name: '工作台芯片',
-        access: '读',
-        defaultOn: false,
-        detail: '正式工作台与 Beta 左下账户区上方；flag 关闭时从页面移除。',
-      },
-      {
-        name: '助手界面',
-        access: '系统',
-        defaultOn: false,
-        detail: '弹出窗或同页浮层。左侧对话高度固定，右侧滚动手头任务。',
-      },
-    ],
-  },
+  // N2-COMMUNITY-OVERLAY: N2 Bot admin card removed
   {
     id: 'preflightStudio',
     label: '预览模板选型（Preflight Studio）',
