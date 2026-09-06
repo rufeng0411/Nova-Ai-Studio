@@ -1,111 +1,132 @@
-# Nova Ai-Studio
+# Nova Studio
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md) · [Français](README.fr.md)
 
 <p align="center">
-  <img src="assets/community/official/home-hero.png" width="920" alt="Nova Ai-Studio: deliver a whole project through conversation">
+  <img src="assets/community/official/nova-logo-mark.png" height="48" alt="Nova Studio">
 </p>
 
-**AGPL community edition: run the Agent workbench on your own machine.** Speak in plain language. Get files you can open — not a chat log that evaporates.
+<p align="center"><strong>Nova Ai-Studio 2.0</strong> · Enterprise AI Agent platform</p>
 
-[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/rufeng0411/Nova-Ai-Studio)](https://github.com/rufeng0411/Nova-Ai-Studio/releases)
+<h1 align="center">Deliver a whole project through conversation</h1>
 
----
+<p align="center">Understand the ask, orchestrate tools, write the files, accept against a Goal-Loop checklist.<br>Hand over reports, decks, pages, and video — not a chat log.</p>
 
-## What you get in this repo
+<p align="center">
+  <a href="https://www.novapage.online/en/">Site</a> ·
+  <a href="https://www.novapage.online/en/docs/">Whitepaper</a> ·
+  <a href="https://www.novapage.online/en/showcase/">Showcase</a> ·
+  <a href="https://www.novapage.online/contact/">Contact</a>
+</p>
 
-Clone, install, sign in. You have a local workbench: Hub, workflow templates, a deliverable checklist, multi-format preview. You paste your own model keys. Data stays in SQLite next to the repo (`.saas-dev-data/`, gitignored).
-
-The product line is simple: **deliver a whole project through conversation.**
-
-Goal-Loop: listen → analyze → set targets → produce → accept. Acceptance is real files (reports, decks, pages, video), not a model saying “done”.
-
-The name is **Nova Ai-Studio**. Unrelated to Amazon Nova / Nova Act. Office, research, marketing, GEO, creation, media, engineering, education — not “ads AI only”.
-
----
-
-## Why clone this
-
-- **Files are the handoff; chat is the process.** A screenshot of a transcript is not a project.
-- **Keys and data stay on your box.** One `admin`, local SQLite. No default “ship the conversation to someone else’s SaaS”.
-- **A workbench, not a prompt toy.** Browse the Hub after login; add keys and run a template.
-- **Same public numbers as the product whitepaper** (do not turn them into guarantees):
-
-| | Wording | Notes |
-| --- | --- | --- |
-| Capabilities | **400+** | Hub domains, not a flat skill dump |
-| Templates | **35** | A starting conversation when you do not know the first sentence |
-| Tokens | Up to about **70%** vs all-flagship; some heavy jobs about **1/6** | Scenario-dependent; [claims](https://www.novapage.online/claims/) |
-| Preview | **40+** formats | SuperPreview against the checklist |
-| Domains | **Eight** | Office, research, flywheel, GEO, creation, media, engineering, education |
-
-More: [capabilities](docs/en/capabilities.md) · [whitepaper digest](docs/en/whitepaper.md)
+<p align="center">
+  <a href="https://www.novapage.online/"><img src="assets/community/official/home-hero.png" width="920" alt="Nova Studio: deliver a whole project through conversation"></a>
+</p>
 
 ---
 
-## How it differs from tools you already have
+## The workbench
 
-Not a dunk list. Pick the right shape. The hosted-product comparison also lives on the official [FAQ](https://www.novapage.online/faq/#q-compare).
+Speak in plain language. Hub, templates, and files live on one screen.
 
-| You might be using | It is good at | This community repo is for |
-| --- | --- | --- |
-| ChatGPT / web chat | Fluent answers | Turning a conversation into files that open, with a checklist |
-| Thin open-source prompt wrappers | Proving an API key works | Hub, templates, preview, acceptance — not one text box |
-| Dify / FastGPT | DIY workflows, knowledge-base Q&A | “Understand the ask → write the files → accept against disk” rather than drawing nodes first |
-| Coze and similar bot builders | Chat bots and channel distribution | Reports / decks / pages on disk, not a customer-service bot |
-| Hosted chat that holds your keys | Zero install | When keys and deliverables must stay local |
+<p align="center">
+  <img src="assets/community/official/workbench.png" width="920" alt="Nova Studio workbench">
+</p>
 
-This cut is one-operator self-host, `pnpm`, AGPL. Team accounts or hosted service: see the short collab note at the bottom.
+<p align="center">
+  <img src="assets/community/official/hub.png" width="920" alt="Capability Hub">
+</p>
 
 ---
 
-## Install
+## Not another chat window
 
-Follow **[install](docs/en/install.md)** only.
+Official FAQ line: **files you can accept, not a string of chat bubbles.**
+
+ChatGPT / Codex can sit beside it. They are strong at fluent answers and code. Nova Studio is for understand → write deliverables → accept against a checklist.
+
+<p align="center">
+  <img src="assets/community/official/compare-faq.png" width="920" alt="Official comparison vs Dify, FastGPT, Coze">
+</p>
+
+| | Web chat | Bot / KB / workflow builders | **Nova Studio** |
+| --- | --- | --- | --- |
+| You get | A transcript | An app, Q&A, or channel bot | **Real files: reports, decks, pages, video** |
+| “Done” means | The model said so | Debug looks fine | **Checklist vs files on disk** |
+| Preview | Text in bubbles | Chat debug | **SuperPreview, 40+ formats** |
+| First step | Write a prompt | Draw nodes / load a KB | **Hub + 35 workflow templates** |
+
+Full table: [FAQ vs Dify / FastGPT / Coze](https://www.novapage.online/faq/#q-compare). Unrelated to **Amazon Nova / Nova Act**.
+
+---
+
+## What delivery looks like
+
+Official showcase: shops, SaaS pages, key visuals — brand assets you can open.
+
+<p align="center">
+  <a href="https://www.novapage.online/showcase/"><img src="assets/community/official/showcase-design.png" width="920" alt="Official design showcase"></a>
+</p>
+
+<p align="center">
+  <img src="assets/community/official/templates.png" width="920" alt="Workflow templates">
+</p>
+
+---
+
+## Goal-Loop
+
+Freeze the checklist at start. Listen → analyze → set targets → produce → accept.
+
+<p align="center">
+  <img src="assets/community/official/goal-loop.svg" width="920" alt="Goal-Loop">
+</p>
+
+---
+
+## Public numbers (not SLAs)
+
+| | Wording |
+| --- | --- |
+| Capabilities | **400+** across eight domains |
+| Templates | **35** (whitepaper ch. 2) |
+| Tokens | Up to about **70%** vs all-flagship on typical multi-step jobs; some heavy jobs about **1/6**. [claims](https://www.novapage.online/claims/) |
+| Preview | **40+** formats · SuperPreview |
+
+Not “ads AI only”.
+
+---
+
+## Run it locally
 
 ```bash
 git clone https://github.com/rufeng0411/Nova-Ai-Studio.git
 cd Nova-Ai-Studio
 cp .env.example .env
-# set SAAS_ADMIN_PASSWORD (never the historic default)
+# set SAAS_ADMIN_PASSWORD
 corepack enable
 pnpm install
 pnpm run dev
 ```
 
-Open the printed **Vite URL** (port may shift) → `/login` → `admin` → the workbench. Browse the Hub without keys; running a task needs keys in Admin.
+Follow [install](docs/en/install.md). Use **pnpm**, not bare `npm install`.
 
-Health: `GET /api/saas/health` and `GET /api/saas/health/ready` (Bridge port is printed at boot).
-
-Do not use bare `npm install` (pnpm lockfile). Do not use `dev:standalone` as this path.
-
-This cut is single-operator: no sign-up, no multi-user ops console, no workbench N2 Bot. Leftover control-plane code is not a feature promise.
+Hosted SaaS, teams, private deploy: [novapage.online](https://www.novapage.online/).
 
 ---
 
 ## Docs
 
-- [Install](docs/en/install.md)
-- [User guide](docs/en/user-guide.md)
-- [Product overview](docs/en/product.md)
-- [Whitepaper digest](docs/en/whitepaper.md)
-- [Capabilities](docs/en/capabilities.md)
-- [Trust](docs/en/trust.md)
-- [Configure](docs/en/configure.md)
-- [Develop (config-level)](docs/en/develop.md)
-- [FAQ](docs/en/faq.md)
+[Install](docs/en/install.md) · [Guide](docs/en/user-guide.md) · [Capabilities](docs/en/capabilities.md) · [Whitepaper digest](docs/en/whitepaper.md) · [FAQ](docs/en/faq.md)
+
+Canonical text: [official whitepaper](https://www.novapage.online/en/docs/).
 
 ---
 
-## Official site and collab
+## Collaborate
 
-Product story, demos, team / hosted options: [novapage.online](https://www.novapage.online/). Business: [contact](https://www.novapage.online/contact/) or WeChat **山君**:
+[Contact](https://www.novapage.online/contact/) · WeChat **山君**
 
 <p align="center">
-  <img src="assets/community/wechat-contact.png" width="280" alt="WeChat: 山君">
+  <img src="assets/community/wechat-contact.png" width="240" alt="WeChat: 山君">
 </p>
-
-## License
-
-GNU Affero General Public License v3.0. See [LICENSE](LICENSE). Network use of a modified version requires corresponding source.

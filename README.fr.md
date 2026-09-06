@@ -1,20 +1,15 @@
-# Nova Ai-Studio
+# Nova Studio
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md) · [Français](README.fr.md)
 
-Édition communautaire **AGPL** : un atelier Agent sur votre machine. La conversation livre des fichiers, pas un fil de chat. Texte intégral : [English README](README.md) · [简体中文](README.zh-CN.md).
+**Nova Ai-Studio 2.0** — un atelier Agent qui livre un projet entier par la conversation. Texte : [English](README.md) · [简体中文](README.zh-CN.md).
+
+Site : [novapage.online](https://www.novapage.online/)
 
 ```bash
-cp .env.example .env
-corepack enable
-pnpm install
-pnpm run dev
+cp .env.example .env && corepack enable && pnpm install && pnpm run dev
 ```
 
-URL Vite → `/login` → `admin` + `SAAS_ADMIN_PASSWORD` → atelier.
-
-Site / collaboration : [novapage.online](https://www.novapage.online/) · WeChat 山君
-
 <p align="center">
-  <img src="assets/community/wechat-contact.png" width="280" alt="WeChat: 山君">
+  <img src="assets/community/wechat-contact.png" width="240" alt="WeChat: 山君">
 </p>

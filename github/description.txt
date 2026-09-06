@@ -1,1 +1,1 @@
-Self-host Nova Ai-Studio: Agent workbench that writes files, not chat logs. AGPL. 400+ Hub skills, Goal-Loop acceptance, keys stay on your machine.
+Nova Studio — deliver a whole project through conversation. Agent workbench that writes files, not chat. 400+ Hub skills, Goal-Loop acceptance.
