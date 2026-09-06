@@ -2,6 +2,12 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md) · [Français](README.fr.md)
 
+| | |
+| --- | --- |
+| 官网 | [https://www.novapage.online/](https://www.novapage.online/) |
+| 官方文档（白皮书） | [https://www.novapage.online/docs/](https://www.novapage.online/docs/) |
+| 演示案例 | [https://www.novapage.online/showcase/](https://www.novapage.online/showcase/) |
+
 <p align="center">
   <img src="assets/community/official/nova-logo-mark.png" height="48" alt="Nova Studio">
 </p>
@@ -11,13 +17,6 @@
 <h1 align="center">用对话，交付整个项目</h1>
 
 <p align="center">听懂需求、编排工具、写好成果、Goal-Loop 严验收。<br>交给同事的是报告、PPT、网页、视频——不是一屏聊完就散的文字。</p>
-
-<p align="center">
-  <a href="https://www.novapage.online/">官网</a> ·
-  <a href="https://www.novapage.online/docs/">白皮书</a> ·
-  <a href="https://www.novapage.online/showcase/">演示案例</a> ·
-  <a href="https://www.novapage.online/contact/">联系我们</a>
-</p>
 
 <p align="center">
   <a href="https://www.novapage.online/"><img src="assets/community/official/home-hero.png" width="920" alt="Nova Studio 官网：用对话，交付整个项目"></a>

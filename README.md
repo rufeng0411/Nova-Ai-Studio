@@ -2,6 +2,12 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md) · [Français](README.fr.md)
 
+| | |
+| --- | --- |
+| Official site | [https://www.novapage.online/](https://www.novapage.online/) |
+| Docs (whitepaper) | [https://www.novapage.online/en/docs/](https://www.novapage.online/en/docs/) |
+| Showcase | [https://www.novapage.online/en/showcase/](https://www.novapage.online/en/showcase/) |
+
 <p align="center">
   <img src="assets/community/official/nova-logo-mark.png" height="48" alt="Nova Studio">
 </p>
@@ -11,13 +17,6 @@
 <h1 align="center">Deliver a whole project through conversation</h1>
 
 <p align="center">Understand the ask, orchestrate tools, write the files, accept against a Goal-Loop checklist.<br>Hand over reports, decks, pages, and video — not a chat log.</p>
-
-<p align="center">
-  <a href="https://www.novapage.online/en/">Site</a> ·
-  <a href="https://www.novapage.online/en/docs/">Whitepaper</a> ·
-  <a href="https://www.novapage.online/en/showcase/">Showcase</a> ·
-  <a href="https://www.novapage.online/contact/">Contact</a>
-</p>
 
 <p align="center">
   <a href="https://www.novapage.online/"><img src="assets/community/official/home-hero.png" width="920" alt="Nova Studio: deliver a whole project through conversation"></a>
