@@ -247,6 +247,7 @@ export async function prepareSaasDevRuntime(repoRoot, options = {}) {
       PILOTDECK_DISABLE_LOCAL_AUTH: '0',
       DATA_ROOT: dataRoot,
       SERVER_PORT: String(server.port),
+      PROXY_HOST: process.env.PROXY_HOST?.trim() || '127.0.0.1',
       PILOTDECK_GATEWAY_PORT: String(gateway.port),
       PILOTDECK_GATEWAY_URL: gatewayUrl,
       VITE_PORT: String(vite.port),
